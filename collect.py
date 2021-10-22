@@ -65,7 +65,7 @@ for subdir, dirs, files in os.walk(start_path):
     if filepath.endswith(".out"):
         retrieve_info(filepath)
 
-with open('raw_data.csv', 'w') as csv_file:
+with open('effective_data.csv', 'w') as csv_file:
   csv_writer = csv.writer(csv_file, delimiter=',')
   num = 0
   for key in sorted(my_dict):
