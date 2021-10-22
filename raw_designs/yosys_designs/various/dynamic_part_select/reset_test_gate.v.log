@@ -1,0 +1,840 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.10+12 (git sha1 4d87019, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+
+
+-- Executing script file `out.ys' --
+
+1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/reset_test_gate.v
+Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/reset_test_gate.v' to AST representation.
+Storing AST representation for module `$abstract\reset_test_gate'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Finding top of design hierarchy..
+root of   0 design levels: $abstract\reset_test_gate
+Automatically selected $abstract\reset_test_gate as design top module.
+
+2.2. Analyzing design hierarchy..
+Top module:  $abstract\reset_test_gate
+
+2.3. Analyzing design hierarchy..
+Top module:  $abstract\reset_test_gate
+Removed 0 unused modules.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Executing AST frontend in derive mode using pre-parsed AST for module `\reset_test_gate'.
+Generating RTLIL representation for module `\reset_test_gate'.
+
+3.2. Analyzing design hierarchy..
+Top module:  \reset_test_gate
+
+3.3. Analyzing design hierarchy..
+Top module:  \reset_test_gate
+Removing unused module `$abstract\reset_test_gate'.
+Removed 1 unused modules.
+
+4. Executing PROC pass (convert processes to netlists).
+
+4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/reset_test_gate.v:12$1 in module reset_test_gate.
+Removed a total of 0 dead cases.
+
+4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 1 assignment to connection.
+
+4.4. Executing PROC_INIT pass (extract init attributes).
+
+4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\reset_test_gate.$proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/reset_test_gate.v:12$1'.
+     1/33: $0\dout[31:0] [31]
+     2/33: $0\dout[31:0] [30]
+     3/33: $0\dout[31:0] [14]
+     4/33: $0\dout[31:0] [22]
+     5/33: $0\dout[31:0] [13]
+     6/33: $0\dout[31:0] [26]
+     7/33: $0\dout[31:0] [12]
+     8/33: $0\dout[31:0] [21]
+     9/33: $0\dout[31:0] [11]
+    10/33: $0\dout[31:0] [28]
+    11/33: $0\dout[31:0] [10]
+    12/33: $0\dout[31:0] [20]
+    13/33: $0\dout[31:0] [9]
+    14/33: $0\dout[31:0] [25]
+    15/33: $0\dout[31:0] [8]
+    16/33: $0\dout[31:0] [19]
+    17/33: $0\dout[31:0] [7]
+    18/33: $0\dout[31:0] [29]
+    19/33: $0\dout[31:0] [6]
+    20/33: $0\dout[31:0] [18]
+    21/33: $0\dout[31:0] [5]
+    22/33: $0\dout[31:0] [24]
+    23/33: $0\dout[31:0] [4]
+    24/33: $0\dout[31:0] [17]
+    25/33: $0\dout[31:0] [3]
+    26/33: $0\dout[31:0] [27]
+    27/33: $0\dout[31:0] [2]
+    28/33: $0\dout[31:0] [16]
+    29/33: $0\dout[31:0] [1]
+    30/33: $0\dout[31:0] [23]
+    31/33: $0\dout[31:0] [0]
+    32/33: $0\dout[31:0] [15]
+    33/33: $1\i[1:0]
+
+4.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+4.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\reset_test_gate.\dout' using process `\reset_test_gate.$proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/reset_test_gate.v:12$1'.
+  created $dff cell `$procdff$2218' with positive edge clock.
+Creating register for signal `\reset_test_gate.\i' using process `\reset_test_gate.$proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/reset_test_gate.v:12$1'.
+  created $dff cell `$procdff$2219' with positive edge clock.
+
+4.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 3 empty switches in `\reset_test_gate.$proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/reset_test_gate.v:12$1'.
+Removing empty process `reset_test_gate.$proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/reset_test_gate.v:12$1'.
+Cleaned up 3 empty switches.
+
+4.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module reset_test_gate.
+<suppressed ~1092 debug messages>
+
+5. Executing OPT pass (performing simple optimizations).
+
+5.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module reset_test_gate.
+<suppressed ~1 debug messages>
+
+5.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\reset_test_gate'.
+<suppressed ~1488 debug messages>
+Removed a total of 496 cells.
+
+5.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \reset_test_gate..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/30 on $pmux $procmux$632.
+    dead port 2/30 on $pmux $procmux$632.
+    dead port 3/30 on $pmux $procmux$632.
+    dead port 4/30 on $pmux $procmux$632.
+    dead port 5/30 on $pmux $procmux$632.
+    dead port 6/30 on $pmux $procmux$632.
+    dead port 7/30 on $pmux $procmux$632.
+    dead port 8/30 on $pmux $procmux$632.
+    dead port 9/30 on $pmux $procmux$632.
+    dead port 10/30 on $pmux $procmux$632.
+    dead port 11/30 on $pmux $procmux$632.
+    dead port 12/30 on $pmux $procmux$632.
+    dead port 13/30 on $pmux $procmux$632.
+    dead port 14/30 on $pmux $procmux$632.
+    dead port 15/30 on $pmux $procmux$632.
+    dead port 16/30 on $pmux $procmux$632.
+    dead port 17/30 on $pmux $procmux$632.
+    dead port 18/30 on $pmux $procmux$632.
+    dead port 19/30 on $pmux $procmux$632.
+    dead port 20/30 on $pmux $procmux$632.
+    dead port 21/30 on $pmux $procmux$632.
+    dead port 22/30 on $pmux $procmux$632.
+    dead port 23/30 on $pmux $procmux$632.
+    dead port 24/30 on $pmux $procmux$632.
+    dead port 25/30 on $pmux $procmux$632.
+    dead port 26/30 on $pmux $procmux$632.
+    dead port 27/30 on $pmux $procmux$632.
+    dead port 28/30 on $pmux $procmux$632.
+    dead port 30/30 on $pmux $procmux$632.
+    dead port 1/20 on $pmux $procmux$1332.
+    dead port 2/20 on $pmux $procmux$1332.
+    dead port 3/20 on $pmux $procmux$1332.
+    dead port 4/20 on $pmux $procmux$1332.
+    dead port 5/20 on $pmux $procmux$1332.
+    dead port 6/20 on $pmux $procmux$1332.
+    dead port 7/20 on $pmux $procmux$1332.
+    dead port 8/20 on $pmux $procmux$1332.
+    dead port 9/20 on $pmux $procmux$1332.
+    dead port 10/20 on $pmux $procmux$1332.
+    dead port 11/20 on $pmux $procmux$1332.
+    dead port 12/20 on $pmux $procmux$1332.
+    dead port 13/20 on $pmux $procmux$1332.
+    dead port 14/20 on $pmux $procmux$1332.
+    dead port 15/20 on $pmux $procmux$1332.
+    dead port 16/20 on $pmux $procmux$1332.
+    dead port 17/20 on $pmux $procmux$1332.
+    dead port 18/20 on $pmux $procmux$1332.
+    dead port 20/20 on $pmux $procmux$1332.
+    dead port 1/27 on $pmux $procmux$911.
+    dead port 2/27 on $pmux $procmux$911.
+    dead port 3/27 on $pmux $procmux$911.
+    dead port 4/27 on $pmux $procmux$911.
+    dead port 5/27 on $pmux $procmux$911.
+    dead port 6/27 on $pmux $procmux$911.
+    dead port 7/27 on $pmux $procmux$911.
+    dead port 8/27 on $pmux $procmux$911.
+    dead port 9/27 on $pmux $procmux$911.
+    dead port 10/27 on $pmux $procmux$911.
+    dead port 11/27 on $pmux $procmux$911.
+    dead port 12/27 on $pmux $procmux$911.
+    dead port 13/27 on $pmux $procmux$911.
+    dead port 14/27 on $pmux $procmux$911.
+    dead port 15/27 on $pmux $procmux$911.
+    dead port 16/27 on $pmux $procmux$911.
+    dead port 17/27 on $pmux $procmux$911.
+    dead port 18/27 on $pmux $procmux$911.
+    dead port 19/27 on $pmux $procmux$911.
+    dead port 20/27 on $pmux $procmux$911.
+    dead port 21/27 on $pmux $procmux$911.
+    dead port 22/27 on $pmux $procmux$911.
+    dead port 23/27 on $pmux $procmux$911.
+    dead port 24/27 on $pmux $procmux$911.
+    dead port 25/27 on $pmux $procmux$911.
+    dead port 27/27 on $pmux $procmux$911.
+    dead port 1/12 on $pmux $procmux$719.
+    dead port 2/12 on $pmux $procmux$719.
+    dead port 3/12 on $pmux $procmux$719.
+    dead port 4/12 on $pmux $procmux$719.
+    dead port 5/12 on $pmux $procmux$719.
+    dead port 6/12 on $pmux $procmux$719.
+    dead port 7/12 on $pmux $procmux$719.
+    dead port 8/12 on $pmux $procmux$719.
+    dead port 9/12 on $pmux $procmux$719.
+    dead port 10/12 on $pmux $procmux$719.
+    dead port 12/12 on $pmux $procmux$719.
+    dead port 1/15 on $pmux $procmux$302.
+    dead port 2/15 on $pmux $procmux$302.
+    dead port 3/15 on $pmux $procmux$302.
+    dead port 4/15 on $pmux $procmux$302.
+    dead port 5/15 on $pmux $procmux$302.
+    dead port 6/15 on $pmux $procmux$302.
+    dead port 7/15 on $pmux $procmux$302.
+    dead port 8/15 on $pmux $procmux$302.
+    dead port 9/15 on $pmux $procmux$302.
+    dead port 10/15 on $pmux $procmux$302.
+    dead port 11/15 on $pmux $procmux$302.
+    dead port 12/15 on $pmux $procmux$302.
+    dead port 13/15 on $pmux $procmux$302.
+    dead port 15/15 on $pmux $procmux$302.
+    dead port 1/31 on $pmux $procmux$1183.
+    dead port 2/31 on $pmux $procmux$1183.
+    dead port 3/31 on $pmux $procmux$1183.
+    dead port 4/31 on $pmux $procmux$1183.
+    dead port 5/31 on $pmux $procmux$1183.
+    dead port 6/31 on $pmux $procmux$1183.
+    dead port 7/31 on $pmux $procmux$1183.
+    dead port 8/31 on $pmux $procmux$1183.
+    dead port 9/31 on $pmux $procmux$1183.
+    dead port 10/31 on $pmux $procmux$1183.
+    dead port 11/31 on $pmux $procmux$1183.
+    dead port 12/31 on $pmux $procmux$1183.
+    dead port 13/31 on $pmux $procmux$1183.
+    dead port 14/31 on $pmux $procmux$1183.
+    dead port 15/31 on $pmux $procmux$1183.
+    dead port 16/31 on $pmux $procmux$1183.
+    dead port 17/31 on $pmux $procmux$1183.
+    dead port 18/31 on $pmux $procmux$1183.
+    dead port 19/31 on $pmux $procmux$1183.
+    dead port 20/31 on $pmux $procmux$1183.
+    dead port 21/31 on $pmux $procmux$1183.
+    dead port 22/31 on $pmux $procmux$1183.
+    dead port 23/31 on $pmux $procmux$1183.
+    dead port 24/31 on $pmux $procmux$1183.
+    dead port 25/31 on $pmux $procmux$1183.
+    dead port 26/31 on $pmux $procmux$1183.
+    dead port 27/31 on $pmux $procmux$1183.
+    dead port 28/31 on $pmux $procmux$1183.
+    dead port 29/31 on $pmux $procmux$1183.
+    dead port 31/31 on $pmux $procmux$1183.
+    dead port 1/14 on $pmux $procmux$441.
+    dead port 2/14 on $pmux $procmux$441.
+    dead port 3/14 on $pmux $procmux$441.
+    dead port 4/14 on $pmux $procmux$441.
+    dead port 5/14 on $pmux $procmux$441.
+    dead port 6/14 on $pmux $procmux$441.
+    dead port 7/14 on $pmux $procmux$441.
+    dead port 8/14 on $pmux $procmux$441.
+    dead port 9/14 on $pmux $procmux$441.
+    dead port 10/14 on $pmux $procmux$441.
+    dead port 11/14 on $pmux $procmux$441.
+    dead port 12/14 on $pmux $procmux$441.
+    dead port 14/14 on $pmux $procmux$441.
+    dead port 1/4 on $pmux $procmux$1831.
+    dead port 2/4 on $pmux $procmux$1831.
+    dead port 4/4 on $pmux $procmux$1831.
+    dead port 1/13 on $pmux $procmux$580.
+    dead port 2/13 on $pmux $procmux$580.
+    dead port 3/13 on $pmux $procmux$580.
+    dead port 4/13 on $pmux $procmux$580.
+    dead port 5/13 on $pmux $procmux$580.
+    dead port 6/13 on $pmux $procmux$580.
+    dead port 7/13 on $pmux $procmux$580.
+    dead port 8/13 on $pmux $procmux$580.
+    dead port 9/13 on $pmux $procmux$580.
+    dead port 10/13 on $pmux $procmux$580.
+    dead port 11/13 on $pmux $procmux$580.
+    dead port 13/13 on $pmux $procmux$580.
+    dead port 1/10 on $pmux $procmux$997.
+    dead port 2/10 on $pmux $procmux$997.
+    dead port 3/10 on $pmux $procmux$997.
+    dead port 4/10 on $pmux $procmux$997.
+    dead port 5/10 on $pmux $procmux$997.
+    dead port 6/10 on $pmux $procmux$997.
+    dead port 7/10 on $pmux $procmux$997.
+    dead port 8/10 on $pmux $procmux$997.
+    dead port 10/10 on $pmux $procmux$997.
+    dead port 1/22 on $pmux $procmux$778.
+    dead port 2/22 on $pmux $procmux$778.
+    dead port 3/22 on $pmux $procmux$778.
+    dead port 4/22 on $pmux $procmux$778.
+    dead port 5/22 on $pmux $procmux$778.
+    dead port 6/22 on $pmux $procmux$778.
+    dead port 7/22 on $pmux $procmux$778.
+    dead port 8/22 on $pmux $procmux$778.
+    dead port 9/22 on $pmux $procmux$778.
+    dead port 10/22 on $pmux $procmux$778.
+    dead port 11/22 on $pmux $procmux$778.
+    dead port 12/22 on $pmux $procmux$778.
+    dead port 13/22 on $pmux $procmux$778.
+    dead port 14/22 on $pmux $procmux$778.
+    dead port 15/22 on $pmux $procmux$778.
+    dead port 16/22 on $pmux $procmux$778.
+    dead port 17/22 on $pmux $procmux$778.
+    dead port 18/22 on $pmux $procmux$778.
+    dead port 19/22 on $pmux $procmux$778.
+    dead port 20/22 on $pmux $procmux$778.
+    dead port 22/22 on $pmux $procmux$778.
+    dead port 1/17 on $pmux $procmux$2163.
+    dead port 2/17 on $pmux $procmux$2163.
+    dead port 3/17 on $pmux $procmux$2163.
+    dead port 4/17 on $pmux $procmux$2163.
+    dead port 5/17 on $pmux $procmux$2163.
+    dead port 6/17 on $pmux $procmux$2163.
+    dead port 7/17 on $pmux $procmux$2163.
+    dead port 8/17 on $pmux $procmux$2163.
+    dead port 9/17 on $pmux $procmux$2163.
+    dead port 10/17 on $pmux $procmux$2163.
+    dead port 11/17 on $pmux $procmux$2163.
+    dead port 12/17 on $pmux $procmux$2163.
+    dead port 13/17 on $pmux $procmux$2163.
+    dead port 14/17 on $pmux $procmux$2163.
+    dead port 15/17 on $pmux $procmux$2163.
+    dead port 17/17 on $pmux $procmux$2163.
+    dead port 1/32 on $pmux $procmux$78.
+    dead port 2/32 on $pmux $procmux$78.
+    dead port 3/32 on $pmux $procmux$78.
+    dead port 4/32 on $pmux $procmux$78.
+    dead port 5/32 on $pmux $procmux$78.
+    dead port 6/32 on $pmux $procmux$78.
+    dead port 7/32 on $pmux $procmux$78.
+    dead port 8/32 on $pmux $procmux$78.
+    dead port 9/32 on $pmux $procmux$78.
+    dead port 10/32 on $pmux $procmux$78.
+    dead port 11/32 on $pmux $procmux$78.
+    dead port 12/32 on $pmux $procmux$78.
+    dead port 13/32 on $pmux $procmux$78.
+    dead port 14/32 on $pmux $procmux$78.
+    dead port 15/32 on $pmux $procmux$78.
+    dead port 16/32 on $pmux $procmux$78.
+    dead port 17/32 on $pmux $procmux$78.
+    dead port 18/32 on $pmux $procmux$78.
+    dead port 19/32 on $pmux $procmux$78.
+    dead port 20/32 on $pmux $procmux$78.
+    dead port 21/32 on $pmux $procmux$78.
+    dead port 22/32 on $pmux $procmux$78.
+    dead port 23/32 on $pmux $procmux$78.
+    dead port 24/32 on $pmux $procmux$78.
+    dead port 25/32 on $pmux $procmux$78.
+    dead port 26/32 on $pmux $procmux$78.
+    dead port 27/32 on $pmux $procmux$78.
+    dead port 28/32 on $pmux $procmux$78.
+    dead port 29/32 on $pmux $procmux$78.
+    dead port 30/32 on $pmux $procmux$78.
+    dead port 32/32 on $pmux $procmux$78.
+    dead port 1/3 on $pmux $procmux$1970.
+    dead port 3/3 on $pmux $procmux$1970.
+    dead port 1/19 on $pmux $procmux$1609.
+    dead port 2/19 on $pmux $procmux$1609.
+    dead port 3/19 on $pmux $procmux$1609.
+    dead port 4/19 on $pmux $procmux$1609.
+    dead port 5/19 on $pmux $procmux$1609.
+    dead port 6/19 on $pmux $procmux$1609.
+    dead port 7/19 on $pmux $procmux$1609.
+    dead port 8/19 on $pmux $procmux$1609.
+    dead port 9/19 on $pmux $procmux$1609.
+    dead port 10/19 on $pmux $procmux$1609.
+    dead port 11/19 on $pmux $procmux$1609.
+    dead port 12/19 on $pmux $procmux$1609.
+    dead port 13/19 on $pmux $procmux$1609.
+    dead port 14/19 on $pmux $procmux$1609.
+    dead port 15/19 on $pmux $procmux$1609.
+    dead port 16/19 on $pmux $procmux$1609.
+    dead port 17/19 on $pmux $procmux$1609.
+    dead port 19/19 on $pmux $procmux$1609.
+    dead port 1/25 on $pmux $procmux$2017.
+    dead port 2/25 on $pmux $procmux$2017.
+    dead port 3/25 on $pmux $procmux$2017.
+    dead port 4/25 on $pmux $procmux$2017.
+    dead port 5/25 on $pmux $procmux$2017.
+    dead port 6/25 on $pmux $procmux$2017.
+    dead port 7/25 on $pmux $procmux$2017.
+    dead port 8/25 on $pmux $procmux$2017.
+    dead port 9/25 on $pmux $procmux$2017.
+    dead port 10/25 on $pmux $procmux$2017.
+    dead port 11/25 on $pmux $procmux$2017.
+    dead port 12/25 on $pmux $procmux$2017.
+    dead port 13/25 on $pmux $procmux$2017.
+    dead port 14/25 on $pmux $procmux$2017.
+    dead port 15/25 on $pmux $procmux$2017.
+    dead port 16/25 on $pmux $procmux$2017.
+    dead port 17/25 on $pmux $procmux$2017.
+    dead port 18/25 on $pmux $procmux$2017.
+    dead port 19/25 on $pmux $procmux$2017.
+    dead port 20/25 on $pmux $procmux$2017.
+    dead port 21/25 on $pmux $procmux$2017.
+    dead port 22/25 on $pmux $procmux$2017.
+    dead port 23/25 on $pmux $procmux$2017.
+    dead port 25/25 on $pmux $procmux$2017.
+    dead port 1/11 on $pmux $procmux$858.
+    dead port 2/11 on $pmux $procmux$858.
+    dead port 3/11 on $pmux $procmux$858.
+    dead port 4/11 on $pmux $procmux$858.
+    dead port 5/11 on $pmux $procmux$858.
+    dead port 6/11 on $pmux $procmux$858.
+    dead port 7/11 on $pmux $procmux$858.
+    dead port 8/11 on $pmux $procmux$858.
+    dead port 9/11 on $pmux $procmux$858.
+    dead port 11/11 on $pmux $procmux$858.
+    dead port 1/5 on $pmux $procmux$1692.
+    dead port 2/5 on $pmux $procmux$1692.
+    dead port 3/5 on $pmux $procmux$1692.
+    dead port 5/5 on $pmux $procmux$1692.
+    dead port 1/24 on $pmux $procmux$224.
+    dead port 2/24 on $pmux $procmux$224.
+    dead port 3/24 on $pmux $procmux$224.
+    dead port 4/24 on $pmux $procmux$224.
+    dead port 5/24 on $pmux $procmux$224.
+    dead port 6/24 on $pmux $procmux$224.
+    dead port 7/24 on $pmux $procmux$224.
+    dead port 8/24 on $pmux $procmux$224.
+    dead port 9/24 on $pmux $procmux$224.
+    dead port 10/24 on $pmux $procmux$224.
+    dead port 11/24 on $pmux $procmux$224.
+    dead port 12/24 on $pmux $procmux$224.
+    dead port 13/24 on $pmux $procmux$224.
+    dead port 14/24 on $pmux $procmux$224.
+    dead port 15/24 on $pmux $procmux$224.
+    dead port 16/24 on $pmux $procmux$224.
+    dead port 17/24 on $pmux $procmux$224.
+    dead port 18/24 on $pmux $procmux$224.
+    dead port 19/24 on $pmux $procmux$224.
+    dead port 20/24 on $pmux $procmux$224.
+    dead port 21/24 on $pmux $procmux$224.
+    dead port 22/24 on $pmux $procmux$224.
+    dead port 24/24 on $pmux $procmux$224.
+    dead port 1/8 on $pmux $procmux$1275.
+    dead port 2/8 on $pmux $procmux$1275.
+    dead port 3/8 on $pmux $procmux$1275.
+    dead port 4/8 on $pmux $procmux$1275.
+    dead port 5/8 on $pmux $procmux$1275.
+    dead port 6/8 on $pmux $procmux$1275.
+    dead port 8/8 on $pmux $procmux$1275.
+    dead port 1/18 on $pmux $procmux$1886.
+    dead port 2/18 on $pmux $procmux$1886.
+    dead port 3/18 on $pmux $procmux$1886.
+    dead port 4/18 on $pmux $procmux$1886.
+    dead port 5/18 on $pmux $procmux$1886.
+    dead port 6/18 on $pmux $procmux$1886.
+    dead port 7/18 on $pmux $procmux$1886.
+    dead port 8/18 on $pmux $procmux$1886.
+    dead port 9/18 on $pmux $procmux$1886.
+    dead port 10/18 on $pmux $procmux$1886.
+    dead port 11/18 on $pmux $procmux$1886.
+    dead port 12/18 on $pmux $procmux$1886.
+    dead port 13/18 on $pmux $procmux$1886.
+    dead port 14/18 on $pmux $procmux$1886.
+    dead port 15/18 on $pmux $procmux$1886.
+    dead port 16/18 on $pmux $procmux$1886.
+    dead port 18/18 on $pmux $procmux$1886.
+    dead port 1/26 on $pmux $procmux$1464.
+    dead port 2/26 on $pmux $procmux$1464.
+    dead port 3/26 on $pmux $procmux$1464.
+    dead port 4/26 on $pmux $procmux$1464.
+    dead port 5/26 on $pmux $procmux$1464.
+    dead port 6/26 on $pmux $procmux$1464.
+    dead port 7/26 on $pmux $procmux$1464.
+    dead port 8/26 on $pmux $procmux$1464.
+    dead port 9/26 on $pmux $procmux$1464.
+    dead port 10/26 on $pmux $procmux$1464.
+    dead port 11/26 on $pmux $procmux$1464.
+    dead port 12/26 on $pmux $procmux$1464.
+    dead port 13/26 on $pmux $procmux$1464.
+    dead port 14/26 on $pmux $procmux$1464.
+    dead port 15/26 on $pmux $procmux$1464.
+    dead port 16/26 on $pmux $procmux$1464.
+    dead port 17/26 on $pmux $procmux$1464.
+    dead port 18/26 on $pmux $procmux$1464.
+    dead port 19/26 on $pmux $procmux$1464.
+    dead port 20/26 on $pmux $procmux$1464.
+    dead port 21/26 on $pmux $procmux$1464.
+    dead port 22/26 on $pmux $procmux$1464.
+    dead port 23/26 on $pmux $procmux$1464.
+    dead port 24/26 on $pmux $procmux$1464.
+    dead port 26/26 on $pmux $procmux$1464.
+    dead port 1/9 on $pmux $procmux$1136.
+    dead port 2/9 on $pmux $procmux$1136.
+    dead port 3/9 on $pmux $procmux$1136.
+    dead port 4/9 on $pmux $procmux$1136.
+    dead port 5/9 on $pmux $procmux$1136.
+    dead port 6/9 on $pmux $procmux$1136.
+    dead port 7/9 on $pmux $procmux$1136.
+    dead port 9/9 on $pmux $procmux$1136.
+    dead port 1/21 on $pmux $procmux$1055.
+    dead port 2/21 on $pmux $procmux$1055.
+    dead port 3/21 on $pmux $procmux$1055.
+    dead port 4/21 on $pmux $procmux$1055.
+    dead port 5/21 on $pmux $procmux$1055.
+    dead port 6/21 on $pmux $procmux$1055.
+    dead port 7/21 on $pmux $procmux$1055.
+    dead port 8/21 on $pmux $procmux$1055.
+    dead port 9/21 on $pmux $procmux$1055.
+    dead port 10/21 on $pmux $procmux$1055.
+    dead port 11/21 on $pmux $procmux$1055.
+    dead port 12/21 on $pmux $procmux$1055.
+    dead port 13/21 on $pmux $procmux$1055.
+    dead port 14/21 on $pmux $procmux$1055.
+    dead port 15/21 on $pmux $procmux$1055.
+    dead port 16/21 on $pmux $procmux$1055.
+    dead port 17/21 on $pmux $procmux$1055.
+    dead port 18/21 on $pmux $procmux$1055.
+    dead port 19/21 on $pmux $procmux$1055.
+    dead port 21/21 on $pmux $procmux$1055.
+    dead port 1/29 on $pmux $procmux$1737.
+    dead port 2/29 on $pmux $procmux$1737.
+    dead port 3/29 on $pmux $procmux$1737.
+    dead port 4/29 on $pmux $procmux$1737.
+    dead port 5/29 on $pmux $procmux$1737.
+    dead port 6/29 on $pmux $procmux$1737.
+    dead port 7/29 on $pmux $procmux$1737.
+    dead port 8/29 on $pmux $procmux$1737.
+    dead port 9/29 on $pmux $procmux$1737.
+    dead port 10/29 on $pmux $procmux$1737.
+    dead port 11/29 on $pmux $procmux$1737.
+    dead port 12/29 on $pmux $procmux$1737.
+    dead port 13/29 on $pmux $procmux$1737.
+    dead port 14/29 on $pmux $procmux$1737.
+    dead port 15/29 on $pmux $procmux$1737.
+    dead port 16/29 on $pmux $procmux$1737.
+    dead port 17/29 on $pmux $procmux$1737.
+    dead port 18/29 on $pmux $procmux$1737.
+    dead port 19/29 on $pmux $procmux$1737.
+    dead port 20/29 on $pmux $procmux$1737.
+    dead port 21/29 on $pmux $procmux$1737.
+    dead port 22/29 on $pmux $procmux$1737.
+    dead port 23/29 on $pmux $procmux$1737.
+    dead port 24/29 on $pmux $procmux$1737.
+    dead port 25/29 on $pmux $procmux$1737.
+    dead port 26/29 on $pmux $procmux$1737.
+    dead port 27/29 on $pmux $procmux$1737.
+    dead port 29/29 on $pmux $procmux$1737.
+    dead port 1/28 on $pmux $procmux$358.
+    dead port 2/28 on $pmux $procmux$358.
+    dead port 3/28 on $pmux $procmux$358.
+    dead port 4/28 on $pmux $procmux$358.
+    dead port 5/28 on $pmux $procmux$358.
+    dead port 6/28 on $pmux $procmux$358.
+    dead port 7/28 on $pmux $procmux$358.
+    dead port 8/28 on $pmux $procmux$358.
+    dead port 9/28 on $pmux $procmux$358.
+    dead port 10/28 on $pmux $procmux$358.
+    dead port 11/28 on $pmux $procmux$358.
+    dead port 12/28 on $pmux $procmux$358.
+    dead port 13/28 on $pmux $procmux$358.
+    dead port 14/28 on $pmux $procmux$358.
+    dead port 15/28 on $pmux $procmux$358.
+    dead port 16/28 on $pmux $procmux$358.
+    dead port 17/28 on $pmux $procmux$358.
+    dead port 18/28 on $pmux $procmux$358.
+    dead port 19/28 on $pmux $procmux$358.
+    dead port 20/28 on $pmux $procmux$358.
+    dead port 21/28 on $pmux $procmux$358.
+    dead port 22/28 on $pmux $procmux$358.
+    dead port 23/28 on $pmux $procmux$358.
+    dead port 24/28 on $pmux $procmux$358.
+    dead port 25/28 on $pmux $procmux$358.
+    dead port 26/28 on $pmux $procmux$358.
+    dead port 28/28 on $pmux $procmux$358.
+    dead port 1/6 on $pmux $procmux$1553.
+    dead port 2/6 on $pmux $procmux$1553.
+    dead port 3/6 on $pmux $procmux$1553.
+    dead port 4/6 on $pmux $procmux$1553.
+    dead port 6/6 on $pmux $procmux$1553.
+    dead port 1/7 on $pmux $procmux$1414.
+    dead port 2/7 on $pmux $procmux$1414.
+    dead port 3/7 on $pmux $procmux$1414.
+    dead port 4/7 on $pmux $procmux$1414.
+    dead port 5/7 on $pmux $procmux$1414.
+    dead port 7/7 on $pmux $procmux$1414.
+    dead port 1/16 on $pmux $procmux$163.
+    dead port 2/16 on $pmux $procmux$163.
+    dead port 3/16 on $pmux $procmux$163.
+    dead port 4/16 on $pmux $procmux$163.
+    dead port 5/16 on $pmux $procmux$163.
+    dead port 6/16 on $pmux $procmux$163.
+    dead port 7/16 on $pmux $procmux$163.
+    dead port 8/16 on $pmux $procmux$163.
+    dead port 9/16 on $pmux $procmux$163.
+    dead port 10/16 on $pmux $procmux$163.
+    dead port 11/16 on $pmux $procmux$163.
+    dead port 12/16 on $pmux $procmux$163.
+    dead port 13/16 on $pmux $procmux$163.
+    dead port 14/16 on $pmux $procmux$163.
+    dead port 16/16 on $pmux $procmux$163.
+    dead port 1/23 on $pmux $procmux$501.
+    dead port 2/23 on $pmux $procmux$501.
+    dead port 3/23 on $pmux $procmux$501.
+    dead port 4/23 on $pmux $procmux$501.
+    dead port 5/23 on $pmux $procmux$501.
+    dead port 6/23 on $pmux $procmux$501.
+    dead port 7/23 on $pmux $procmux$501.
+    dead port 8/23 on $pmux $procmux$501.
+    dead port 9/23 on $pmux $procmux$501.
+    dead port 10/23 on $pmux $procmux$501.
+    dead port 11/23 on $pmux $procmux$501.
+    dead port 12/23 on $pmux $procmux$501.
+    dead port 13/23 on $pmux $procmux$501.
+    dead port 14/23 on $pmux $procmux$501.
+    dead port 15/23 on $pmux $procmux$501.
+    dead port 16/23 on $pmux $procmux$501.
+    dead port 17/23 on $pmux $procmux$501.
+    dead port 18/23 on $pmux $procmux$501.
+    dead port 19/23 on $pmux $procmux$501.
+    dead port 20/23 on $pmux $procmux$501.
+    dead port 21/23 on $pmux $procmux$501.
+    dead port 23/23 on $pmux $procmux$501.
+    dead port 1/33 on $pmux $procmux$8.
+    dead port 2/33 on $pmux $procmux$8.
+    dead port 3/33 on $pmux $procmux$8.
+    dead port 4/33 on $pmux $procmux$8.
+    dead port 5/33 on $pmux $procmux$8.
+    dead port 6/33 on $pmux $procmux$8.
+    dead port 7/33 on $pmux $procmux$8.
+    dead port 8/33 on $pmux $procmux$8.
+    dead port 9/33 on $pmux $procmux$8.
+    dead port 10/33 on $pmux $procmux$8.
+    dead port 11/33 on $pmux $procmux$8.
+    dead port 12/33 on $pmux $procmux$8.
+    dead port 13/33 on $pmux $procmux$8.
+    dead port 14/33 on $pmux $procmux$8.
+    dead port 15/33 on $pmux $procmux$8.
+    dead port 16/33 on $pmux $procmux$8.
+    dead port 17/33 on $pmux $procmux$8.
+    dead port 18/33 on $pmux $procmux$8.
+    dead port 19/33 on $pmux $procmux$8.
+    dead port 20/33 on $pmux $procmux$8.
+    dead port 21/33 on $pmux $procmux$8.
+    dead port 22/33 on $pmux $procmux$8.
+    dead port 23/33 on $pmux $procmux$8.
+    dead port 24/33 on $pmux $procmux$8.
+    dead port 25/33 on $pmux $procmux$8.
+    dead port 26/33 on $pmux $procmux$8.
+    dead port 27/33 on $pmux $procmux$8.
+    dead port 28/33 on $pmux $procmux$8.
+    dead port 29/33 on $pmux $procmux$8.
+    dead port 30/33 on $pmux $procmux$8.
+    dead port 31/33 on $pmux $procmux$8.
+    dead port 33/33 on $pmux $procmux$8.
+Removed 527 multiplexer ports.
+<suppressed ~33 debug messages>
+
+5.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \reset_test_gate.
+    New ctrl vector for $pmux cell $procmux$1218: { $auto$opt_reduce.cc:134:opt_mux$2221 $procmux$1220_CMP $procmux$1219_CMP }
+    New ctrl vector for $pmux cell $procmux$337: { $auto$opt_reduce.cc:134:opt_mux$2223 $procmux$960_CMP $procmux$959_CMP }
+    New ctrl vector for $pmux cell $procmux$1499: { $auto$opt_reduce.cc:134:opt_mux$2225 $procmux$1501_CMP $procmux$1500_CMP }
+    New ctrl vector for $pmux cell $procmux$1367: { $auto$opt_reduce.cc:134:opt_mux$2227 $procmux$1231_CMP $procmux$954_CMP }
+    New ctrl vector for $pmux cell $procmux$1921: { $auto$opt_reduce.cc:134:opt_mux$2229 $procmux$957_CMP $procmux$956_CMP }
+    New ctrl vector for $pmux cell $procmux$893: { $auto$opt_reduce.cc:134:opt_mux$2231 $procmux$964_CMP $procmux$963_CMP }
+    New ctrl vector for $pmux cell $procmux$1588: { $auto$opt_reduce.cc:134:opt_mux$2233 $procmux$969_CMP $procmux$968_CMP }
+    New ctrl vector for $pmux cell $procmux$1644: { $auto$opt_reduce.cc:134:opt_mux$2235 $procmux$956_CMP $procmux$1231_CMP }
+    New ctrl vector for $pmux cell $procmux$259: { $auto$opt_reduce.cc:134:opt_mux$2237 $procmux$1503_CMP $procmux$1502_CMP }
+    New ctrl vector for $pmux cell $procmux$667: { $auto$opt_reduce.cc:134:opt_mux$2239 $procmux$1221_CMP $procmux$1220_CMP }
+    New ctrl vector for $pmux cell $procmux$946: { $auto$opt_reduce.cc:134:opt_mux$2241 $procmux$1500_CMP $procmux$947_CMP }
+    New ctrl vector for $pmux cell $procmux$476: { $auto$opt_reduce.cc:134:opt_mux$2243 $procmux$961_CMP $procmux$960_CMP }
+    New ctrl vector for $pmux cell $procmux$813: { $auto$opt_reduce.cc:134:opt_mux$2245 $procmux$953_CMP $procmux$1504_CMP }
+    New ctrl vector for $pmux cell $procmux$393: { $auto$opt_reduce.cc:134:opt_mux$2247 $procmux$947_CMP $procmux$1222_CMP }
+    New ctrl vector for $pmux cell $procmux$1090: { $auto$opt_reduce.cc:134:opt_mux$2249 $procmux$954_CMP $procmux$953_CMP }
+    New ctrl vector for $pmux cell $procmux$536: { $auto$opt_reduce.cc:134:opt_mux$2251 $procmux$1504_CMP $procmux$1503_CMP }
+    New ctrl vector for $pmux cell $procmux$615: { $auto$opt_reduce.cc:134:opt_mux$2253 $procmux$962_CMP $procmux$961_CMP }
+    New ctrl vector for $pmux cell $procmux$1171: { $auto$opt_reduce.cc:134:opt_mux$2255 $procmux$966_CMP $procmux$965_CMP }
+    New ctrl vector for $pmux cell $procmux$43: { $auto$opt_reduce.cc:134:opt_mux$2257 $procmux$114_CMP $procmux$44_CMP }
+    New ctrl vector for $pmux cell $procmux$1772: { $auto$opt_reduce.cc:134:opt_mux$2259 $procmux$1222_CMP $procmux$1221_CMP }
+    New ctrl vector for $pmux cell $procmux$1727: { $auto$opt_reduce.cc:134:opt_mux$2261 $procmux$970_CMP $procmux$969_CMP }
+    New ctrl vector for $pmux cell $procmux$198: { $auto$opt_reduce.cc:134:opt_mux$2263 $procmux$959_CMP $procmux$958_CMP }
+    New ctrl vector for $pmux cell $procmux$754: { $auto$opt_reduce.cc:134:opt_mux$2265 $procmux$963_CMP $procmux$962_CMP }
+    New ctrl vector for $pmux cell $procmux$1032: { $auto$opt_reduce.cc:134:opt_mux$2267 $procmux$965_CMP $procmux$964_CMP }
+    New ctrl vector for $pmux cell $procmux$1449: { $auto$opt_reduce.cc:134:opt_mux$2269 $procmux$968_CMP $procmux$967_CMP }
+    New ctrl vector for $pmux cell $procmux$2198: { $auto$opt_reduce.cc:134:opt_mux$2271 $procmux$958_CMP $procmux$957_CMP }
+    New ctrl vector for $pmux cell $procmux$113: { $auto$opt_reduce.cc:134:opt_mux$2273 $procmux$1219_CMP $procmux$114_CMP }
+    New ctrl vector for $pmux cell $procmux$2052: { $auto$opt_reduce.cc:134:opt_mux$2275 $procmux$1502_CMP $procmux$1501_CMP }
+    New ctrl vector for $pmux cell $procmux$1310: { $auto$opt_reduce.cc:134:opt_mux$2277 $procmux$967_CMP $procmux$966_CMP }
+  Optimizing cells in module \reset_test_gate.
+Performed a total of 29 changes.
+
+5.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\reset_test_gate'.
+Removed a total of 0 cells.
+
+5.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$2219 ($dff) from module reset_test_gate (D = 2'01, Q = \i).
+Setting constant 1-bit at position 0 on $auto$ff.cc:262:slice$2278 ($dffe) from module reset_test_gate.
+Setting constant 0-bit at position 1 on $auto$ff.cc:262:slice$2278 ($dffe) from module reset_test_gate.
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$43_Y, Q = \dout [31]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$113_Y, Q = \dout [30]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$1499_Y, Q = \dout [24]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$1218_Y, Q = \dout [29]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$393_Y, Q = \dout [26]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$946_Y, Q = \dout [25]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$1090_Y, Q = \dout [19]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$813_Y, Q = \dout [20]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$1367_Y, Q = \dout [18]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$1921_Y, Q = \dout [16]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$1644_Y, Q = \dout [17]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$2198_Y, Q = \dout [15]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$198_Y, Q = \dout [14]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$337_Y, Q = \dout [13]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$476_Y, Q = \dout [12]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$615_Y, Q = \dout [11]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$754_Y, Q = \dout [10]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$893_Y, Q = \dout [9]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$1032_Y, Q = \dout [8]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$1171_Y, Q = \dout [7]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$1310_Y, Q = \dout [6]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$1449_Y, Q = \dout [5]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$1588_Y, Q = \dout [4]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$1727_Y, Q = \dout [3]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$1866_Y, Q = \dout [2]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$2005_Y, Q = \dout [1]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$2144_Y, Q = \dout [0]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$2052_Y, Q = \dout [23]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$667_Y, Q = \dout [28]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$1772_Y, Q = \dout [27]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$259_Y, Q = \dout [22]).
+Adding EN signal on $procdff$2218 ($dff) from module reset_test_gate (D = $procmux$536_Y, Q = \dout [21]).
+
+5.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \reset_test_gate..
+Removed 1 unused cells and 1128 unused wires.
+<suppressed ~3 debug messages>
+
+5.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module reset_test_gate.
+<suppressed ~32 debug messages>
+
+5.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \reset_test_gate..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~32 debug messages>
+
+5.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \reset_test_gate.
+Performed a total of 0 changes.
+
+5.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\reset_test_gate'.
+<suppressed ~90 debug messages>
+Removed a total of 30 cells.
+
+5.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \reset_test_gate..
+Removed 0 unused cells and 30 unused wires.
+<suppressed ~1 debug messages>
+
+5.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module reset_test_gate.
+
+5.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \reset_test_gate..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~34 debug messages>
+
+5.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \reset_test_gate.
+Performed a total of 0 changes.
+
+5.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\reset_test_gate'.
+Removed a total of 0 cells.
+
+5.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \reset_test_gate..
+
+5.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module reset_test_gate.
+
+5.23. Finished OPT passes. (There is nothing left to do.)
+
+6. Printing statistics.
+
+=== reset_test_gate ===
+
+   Number of wires:                105
+   Number of wire bits:            204
+   Number of public wires:           8
+   Number of public wire bits:      45
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                160
+     $dffe                          32
+     $eq                            31
+     $logic_not                      1
+     $mul                            1
+     $mux                            3
+     $pmux                          31
+     $reduce_bool                   32
+     $reduce_or                     29
+
+End of script. Logfile hash: b7df1e2628, CPU: user 0.31s system 0.01s, MEM: 19.67 MB peak
+Yosys 0.10+12 (git sha1 4d87019, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+Time spent: 47% 5x opt_expr (0 sec), 23% 1x proc_mux (0 sec), ...

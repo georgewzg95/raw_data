@@ -1,0 +1,612 @@
+
+5. Printing statistics.
+
+=== DataTransferUnit ===
+
+   Number of wires:                149
+   Number of wire bits:           7251
+   Number of public wires:          69
+   Number of public wire bits:    6779
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                113
+     $add                            3
+     $dff                            1
+     $eq                             2
+     $ge                             1
+     $logic_and                     10
+     $logic_not                      4
+     $logic_or                       2
+     $lt                             2
+     $mux                           38
+     $ne                             5
+     $not                            4
+     $pmux                           1
+     $reduce_and                     4
+     $reduce_bool                    3
+     $reduce_or                      3
+     $sdff                           3
+     $sdffe                         20
+     $sub                            3
+     addr_fifo                       1
+     memcmd_fifo                     1
+     rfifo                           1
+     wfifo                           1
+
+=== LU ===
+
+   Number of wires:                314
+   Number of wire bits:          40347
+   Number of public wires:         261
+   Number of public wire bits:   35565
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                186
+     $dff                           55
+     $dffe                           1
+     $eq                            31
+     $logic_not                      1
+     $mux                           56
+     $pmux                           2
+     $sdffe                          1
+     LUControl                       1
+     fpu_div                         1
+     mult_add                       32
+     ram                             1
+     ram1                            1
+     ram2                            1
+     ram3                            1
+     top_ram                         1
+
+=== LU32PEEng ===
+
+   Number of wires:                 50
+   Number of wire bits:           5829
+   Number of public wires:          49
+   Number of public wire bits:    5828
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $logic_and                      2
+     $not                            1
+     DataTransferUnit                1
+     LU                              1
+     MarshallerController            1
+
+=== LUControl ===
+
+   Number of wires:                480
+   Number of wire bits:           8077
+   Number of public wires:         214
+   Number of public wire bits:    5911
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                463
+     $add                           30
+     $dff                          163
+     $dffe                           5
+     $eq                            72
+     $ge                             3
+     $gt                             1
+     $logic_and                     23
+     $logic_not                      4
+     $logic_or                      11
+     $lt                             3
+     $mux                           89
+     $ne                             4
+     $not                            2
+     $pmux                           4
+     $reduce_and                     1
+     $reduce_bool                    6
+     $reduce_or                     10
+     $sdff                          10
+     $sdffe                         15
+     $sub                            7
+
+=== MarshallerController ===
+
+   Number of wires:                232
+   Number of wire bits:           1700
+   Number of public wires:          49
+   Number of public wire bits:     483
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                217
+     $add                           13
+     $dff                            4
+     $dffe                          11
+     $eq                            50
+     $le                             1
+     $logic_and                      5
+     $logic_not                      5
+     $logic_or                      28
+     $lt                             2
+     $mux                           58
+     $ne                             2
+     $not                            2
+     $pmux                           3
+     $reduce_and                     3
+     $reduce_bool                    7
+     $reduce_or                      3
+     $sdff                           4
+     $sdffe                         10
+     $sub                            6
+
+=== addr_fifo ===
+
+   Number of wires:                 28
+   Number of wire bits:            117
+   Number of public wires:          13
+   Number of public wire bits:      53
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $add                            3
+     $dffe                           4
+     $eq                             1
+     $logic_and                      4
+     $logic_not                      3
+     $mux                            2
+     $ne                             1
+     $reduce_bool                    2
+     $sub                            1
+     dual_port_ram                   1
+
+=== assemble ===
+
+   Number of wires:                 16
+   Number of wire bits:            257
+   Number of public wires:          12
+   Number of public wire bits:     163
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $mux                            6
+     $xor                            1
+
+=== div_24b ===
+
+   Number of wires:                 75
+   Number of wire bits:           2076
+   Number of public wires:          28
+   Number of public wire bits:    1247
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 94
+     $le                            24
+     $mux                           47
+     $sub                           23
+
+=== exponent ===
+
+   Number of wires:                 10
+   Number of wire bits:            130
+   Number of public wires:           5
+   Number of public wire bits:      32
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $add                            2
+     $logic_not                      1
+     $or                             1
+     $reduce_or                      1
+     $sub                            1
+
+=== flag ===
+
+   Number of wires:                 10
+   Number of wire bits:             14
+   Number of public wires:           7
+   Number of public wire bits:      11
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            2
+     $not                            1
+     $or                             2
+
+=== fpmul ===
+
+   Number of wires:                 42
+   Number of wire bits:            502
+   Number of public wires:          41
+   Number of public wire bits:     501
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $and                            1
+     $dff                            1
+     $or                             2
+     assemble                        1
+     exponent                        1
+     flag                            1
+     multiply_a                      1
+     normalize                       1
+     prenorm                         1
+     preprocess                      1
+     round                           1
+     shift                           1
+     special                         1
+
+=== fpu_add ===
+
+   Number of wires:                126
+   Number of wire bits:           1419
+   Number of public wires:          11
+   Number of public wire bits:     243
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                148
+     $add                            2
+     $dff                            2
+     $eq                            46
+     $gt                             1
+     $logic_and                      3
+     $lt                             2
+     $mux                           61
+     $not                            2
+     $pmux                           2
+     $sub                           27
+
+=== fpu_div ===
+
+   Number of wires:                 62
+   Number of wire bits:           1094
+   Number of public wires:          12
+   Number of public wire bits:     195
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 83
+     $add                            1
+     $dff                            6
+     $ge                             1
+     $mux                           47
+     $sub                           26
+     $xor                            1
+     div_24b                         1
+
+=== memcmd_fifo ===
+
+   Number of wires:                 28
+   Number of wire bits:            195
+   Number of public wires:          13
+   Number of public wire bits:     158
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $add                            3
+     $dffe                           4
+     $eq                             1
+     $logic_and                      4
+     $logic_not                      3
+     $mux                            2
+     $ne                             1
+     $reduce_bool                    2
+     $sub                            1
+     dual_port_ram                   1
+
+=== mult_add ===
+
+   Number of wires:                 10
+   Number of wire bits:            262
+   Number of public wires:          10
+   Number of public wire bits:     262
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $dff                            2
+     fpmul                           1
+     fpu_add                         1
+
+=== multiply_a ===
+
+   Number of wires:                  4
+   Number of wire bits:             97
+   Number of public wires:           4
+   Number of public wire bits:      97
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $mul                            1
+
+=== normalize ===
+
+   Number of wires:                  7
+   Number of wire bits:            148
+   Number of public wires:           4
+   Number of public wire bits:      98
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $and                            1
+     $mux                            2
+     $xor                            1
+
+=== prenorm ===
+
+   Number of wires:                108
+   Number of wire bits:           1792
+   Number of public wires:          14
+   Number of public wire bits:     210
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 98
+     $eq                            46
+     $mux                           48
+     $pmux                           2
+     $sub                            2
+
+=== preprocess ===
+
+   Number of wires:                 31
+   Number of wire bits:            153
+   Number of public wires:          23
+   Number of public wire bits:     145
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 21
+     $and                            8
+     $logic_not                      4
+     $or                             2
+     $reduce_and                     2
+     $reduce_or                      4
+     $xor                            1
+
+=== ram ===
+
+   Number of wires:                 11
+   Number of wire bits:           6288
+   Number of public wires:          11
+   Number of public wire bits:    6288
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $and                            1
+     $or                             1
+     dual_port_ram                   1
+
+=== ram1 ===
+
+   Number of wires:                 11
+   Number of wire bits:           6288
+   Number of public wires:          11
+   Number of public wire bits:    6288
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $and                            1
+     $or                             1
+     dual_port_ram                   1
+
+=== ram2 ===
+
+   Number of wires:                 11
+   Number of wire bits:           6288
+   Number of public wires:          11
+   Number of public wire bits:    6288
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $and                            1
+     $or                             1
+     dual_port_ram                   1
+
+=== ram3 ===
+
+   Number of wires:                 11
+   Number of wire bits:           6288
+   Number of public wires:          11
+   Number of public wire bits:    6288
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $and                            1
+     $or                             1
+     dual_port_ram                   1
+
+=== rfifo ===
+
+   Number of wires:                 73
+   Number of wire bits:           1386
+   Number of public wires:          13
+   Number of public wire bits:    1301
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 82
+     $add                            4
+     $dffe                          19
+     $eq                            15
+     $logic_and                      3
+     $logic_not                      4
+     $mux                            2
+     $not                           15
+     $reduce_and                    15
+     $reduce_bool                    2
+     $sdff                           1
+     $sub                            1
+     dual_port_ram                   1
+
+=== round ===
+
+   Number of wires:                 45
+   Number of wire bits:            327
+   Number of public wires:          22
+   Number of public wire bits:     211
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 34
+     $add                            2
+     $and                           10
+     $logic_not                      1
+     $mux                            2
+     $not                            4
+     $or                             9
+     $reduce_and                     1
+     $reduce_or                      4
+     $xor                            1
+
+=== shift ===
+
+   Number of wires:                 47
+   Number of wire bits:            472
+   Number of public wires:          11
+   Number of public wire bits:     374
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 42
+     $and                            2
+     $eq                            31
+     $gt                             1
+     $mux                            3
+     $neg                            1
+     $not                            1
+     $or                             1
+     $pmux                           1
+     $reduce_or                      1
+
+=== special ===
+
+   Number of wires:                 24
+   Number of wire bits:            206
+   Number of public wires:          14
+   Number of public wire bits:     136
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $and                            2
+     $ge                             1
+     $mux                            6
+     $not                            1
+     $or                             7
+
+=== top_ram ===
+
+   Number of wires:                  9
+   Number of wire bits:            186
+   Number of public wires:           9
+   Number of public wire bits:     186
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $and                            1
+     $or                             1
+     dual_port_ram                   1
+
+=== wfifo ===
+
+   Number of wires:                 63
+   Number of wire bits:           5267
+   Number of public wires:          14
+   Number of public wire bits:    4185
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 56
+     $add                            4
+     $dffe                           4
+     $eq                            15
+     $logic_and                      4
+     $logic_not                      4
+     $mux                           18
+     $ne                             1
+     $reduce_bool                    3
+     $sdff                           1
+     $sub                            1
+     dual_port_ram                   1
+
+=== design hierarchy ===
+
+   LU32PEEng                         1
+     DataTransferUnit                1
+       addr_fifo                     1
+       memcmd_fifo                   1
+       rfifo                         1
+       wfifo                         1
+     LU                              1
+       LUControl                     1
+       fpu_div                       1
+         div_24b                     1
+       mult_add                     32
+         fpmul                       1
+           assemble                  1
+           exponent                  1
+           flag                      1
+           multiply_a                1
+           normalize                 1
+           prenorm                   1
+           preprocess                1
+           round                     1
+           shift                     1
+           special                   1
+         fpu_add                     1
+       ram                           1
+       ram1                          1
+       ram2                          1
+       ram3                          1
+       top_ram                       1
+     MarshallerController            1
+
+   Number of wires:              16967
+   Number of wire bits:         283605
+   Number of public wires:        6484
+   Number of public wire bits:  166499
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              13760
+     $add                          253
+     $and                          837
+     $dff                          389
+     $dffe                          48
+     $eq                          4123
+     $ge                            37
+     $gt                            65
+     $le                            25
+     $logic_and                    151
+     $logic_not                    220
+     $logic_or                      41
+     $lt                            71
+     $mul                           32
+     $mux                         4455
+     $ne                            14
+     $neg                           32
+     $not                          312
+     $or                           773
+     $pmux                         170
+     $reduce_and                   119
+     $reduce_bool                   25
+     $reduce_or                    336
+     $sdff                          19
+     $sdffe                         46
+     $sub                         1029
+     $xor                          129
+     dual_port_ram                   9
+

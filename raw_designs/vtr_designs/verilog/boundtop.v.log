@@ -1,0 +1,2742 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.10+12 (git sha1 4d87019, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+
+
+-- Executing script file `out.ys' --
+
+1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v
+Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v' to AST representation.
+Generating RTLIL representation for module `\paj_boundtop_hierarchy_no_mem'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:237.5-251.8 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\resulttransmit'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:409.5-490.8 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\boundcontroller'.
+Generating RTLIL representation for module `\onlyonecycle'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1401.5-1446.8 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\vblockramcontroller'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1512.5-1627.8 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\spramblock'.
+Generating RTLIL representation for module `\sramcontroller'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1737.5-1884.8 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\resultinterface'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012.5-2091.8 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\rayinterface'.
+Generating RTLIL representation for module `\sortedstack'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2220.5-2256.8 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\listhandler'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2501.5-2522.8 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2553.5-2761.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\spram'.
+Generating RTLIL representation for module `\resultcounter'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Finding top of design hierarchy..
+root of   0 design levels: resultcounter       
+root of   0 design levels: spram               
+root of   1 design levels: listhandler         
+root of   0 design levels: sortedstack         
+root of   0 design levels: rayinterface        
+root of   0 design levels: resultinterface     
+root of   0 design levels: sramcontroller      
+root of   0 design levels: spramblock          
+root of   1 design levels: vblockramcontroller 
+root of   0 design levels: onlyonecycle        
+root of   0 design levels: boundcontroller     
+root of   0 design levels: resulttransmit      
+root of   2 design levels: paj_boundtop_hierarchy_no_mem
+Automatically selected paj_boundtop_hierarchy_no_mem as design top module.
+
+2.2. Analyzing design hierarchy..
+Top module:  \paj_boundtop_hierarchy_no_mem
+Used module:     \resultcounter
+Used module:     \listhandler
+Used module:         \spram
+Used module:     \sortedstack
+Used module:     \resulttransmit
+Used module:     \boundcontroller
+Used module:     \rayinterface
+Used module:     \resultinterface
+Used module:     \sramcontroller
+Used module:     \vblockramcontroller
+Used module:         \spramblock
+Used module:     \onlyonecycle
+
+2.3. Analyzing design hierarchy..
+Top module:  \paj_boundtop_hierarchy_no_mem
+Used module:     \resultcounter
+Used module:     \listhandler
+Used module:         \spram
+Used module:     \sortedstack
+Used module:     \resulttransmit
+Used module:     \boundcontroller
+Used module:     \rayinterface
+Used module:     \resultinterface
+Used module:     \sramcontroller
+Used module:     \vblockramcontroller
+Used module:         \spramblock
+Used module:     \onlyonecycle
+Removed 0 unused modules.
+Mapping positional arguments of cell listhandler.ram (spram).
+Mapping positional arguments of cell vblockramcontroller.ramblock (spramblock).
+Mapping positional arguments of cell paj_boundtop_hierarchy_no_mem.rc (resultcounter).
+Mapping positional arguments of cell paj_boundtop_hierarchy_no_mem.lh02 (listhandler).
+Mapping positional arguments of cell paj_boundtop_hierarchy_no_mem.lh01 (listhandler).
+Mapping positional arguments of cell paj_boundtop_hierarchy_no_mem.st (sortedstack).
+Mapping positional arguments of cell paj_boundtop_hierarchy_no_mem.restransinst (resulttransmit).
+Mapping positional arguments of cell paj_boundtop_hierarchy_no_mem.boundcont10 (boundcontroller).
+Mapping positional arguments of cell paj_boundtop_hierarchy_no_mem.boundcont01 (boundcontroller).
+Mapping positional arguments of cell paj_boundtop_hierarchy_no_mem.rayint (rayinterface).
+Mapping positional arguments of cell paj_boundtop_hierarchy_no_mem.ri (resultinterface).
+Mapping positional arguments of cell paj_boundtop_hierarchy_no_mem.trilist (sramcontroller).
+Mapping positional arguments of cell paj_boundtop_hierarchy_no_mem.offsettable (vblockramcontroller).
+Mapping positional arguments of cell paj_boundtop_hierarchy_no_mem.oc (onlyonecycle).
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2808$464 in module resultcounter.
+Marked 36 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2553$403 in module listhandler.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2524$401 in module listhandler.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2501$397 in module listhandler.
+Marked 8 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360 in module sortedstack.
+Marked 7 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2220$337 in module sortedstack.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2122$306 in module rayinterface.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303 in module resultinterface.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301 in module resultinterface.
+Marked 11 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1737$287 in module sramcontroller.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1717$285 in module sramcontroller.
+Marked 11 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1512$271 in module vblockramcontroller.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1493$269 in module vblockramcontroller.
+Marked 4 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1401$262 in module onlyonecycle.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1386$260 in module onlyonecycle.
+Marked 61 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71 in module boundcontroller.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62 in module boundcontroller.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:409$40 in module resulttransmit.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:365$34 in module resulttransmit.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:261$30 in module paj_boundtop_hierarchy_no_mem.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:237$12 in module paj_boundtop_hierarchy_no_mem.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 86 redundant assignments.
+Promoted 104 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\resultcounter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2808$464'.
+     1/2: $0\curr[1:0]
+     2/2: $0\count[3:0]
+Creating decoders for process `\spram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2780$458'.
+     1/2: $0\mem2[12:0]
+     2/2: $0\mem1[12:0]
+Creating decoders for process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2553$403'.
+     1/86: $10\temp_readlevel[1:0]
+     2/86: $9\temp_readlevel[1:0]
+     3/86: $13\temp_lvempty[2:2]
+     4/86: $14\temp_offset2[2:0]
+     5/86: $13\temp_offset2[2:0]
+     6/86: $8\temp_readlevel[1:0]
+     7/86: $12\temp_lvempty[2:2]
+     8/86: $7\temp_readlevel[1:0]
+     9/86: $11\temp_lvempty[1:1]
+    10/86: $11\temp_offset1[2:0]
+    11/86: $10\temp_offset1[2:0]
+    12/86: $6\temp_readlevel[1:0]
+    13/86: $10\temp_lvempty[2:1] [0]
+    14/86: $12\temp_offset2[2:0]
+    15/86: $10\temp_lvempty[2:1] [1]
+    16/86: $9\temp_lvempty[0:0]
+    17/86: $8\temp_offset0[2:0]
+    18/86: $7\temp_offset0[2:0]
+    19/86: $8\temp_lvempty[2:0] [0]
+    20/86: $11\temp_offset2[2:0]
+    21/86: $9\temp_offset1[2:0]
+    22/86: $5\temp_readlevel[1:0]
+    23/86: $8\temp_lvempty[2:0] [2:1]
+    24/86: $10\temp_offset2[2:0]
+    25/86: $8\temp_offset1[2:0]
+    26/86: $6\temp_offset0[2:0]
+    27/86: $4\temp_readlevel[1:0]
+    28/86: $7\temp_lvempty[2:0]
+    29/86: $6\next_state[1:0]
+    30/86: $6\temp_lvempty[2:2]
+    31/86: $5\temp_lvempty[2:1] [0]
+    32/86: $5\temp_lvempty[2:1] [1]
+    33/86: $4\temp_lvempty[2:0] [0]
+    34/86: $4\temp_lvempty[2:0] [2:1]
+    35/86: $3\temp_lvempty[2:0]
+    36/86: $5\temp_busy[0:0]
+    37/86: $9\temp_offset2[2:0]
+    38/86: $7\temp_offset1[2:0]
+    39/86: $8\temp_offset2[2:0]
+    40/86: $5\temp_offset0[2:0]
+    41/86: $7\temp_offset2[2:0]
+    42/86: $6\temp_offset1[2:0]
+    43/86: $5\next_state[1:0]
+    44/86: $9\datain[12:0]
+    45/86: $8\datain[12:0]
+    46/86: $7\datain[12:0]
+    47/86: $6\datain[12:0]
+    48/86: $5\datain[12:0]
+    49/86: $4\datain[12:0]
+    50/86: $3\datain[12:0]
+    51/86: $2\datain[12:0]
+    52/86: $4\temp_busy[0:0]
+    53/86: $4\temp_writelevel[1:0]
+    54/86: $6\temp_offset2[2:0]
+    55/86: $5\temp_offset1[2:0]
+    56/86: $5\temp_offset2[2:0]
+    57/86: $4\temp_offset0[2:0]
+    58/86: $4\temp_offset2[2:0]
+    59/86: $4\temp_offset1[2:0]
+    60/86: $3\temp_readlevel[1:0]
+    61/86: $3\temp_offset2[2:0]
+    62/86: $3\temp_offset1[2:0]
+    63/86: $3\temp_offset0[2:0]
+    64/86: $3\temp_busy[0:0]
+    65/86: $3\temp_writelevel[1:0]
+    66/86: $2\temp_offset2[2:0]
+    67/86: $2\temp_offset1[2:0]
+    68/86: $2\temp_offset0[2:0]
+    69/86: $2\temp_writelevel[1:0]
+    70/86: $2\temp_readlevel[1:0]
+    71/86: $2\temp_lvempty[2:0]
+    72/86: $2\temp_busy[0:0]
+    73/86: $4\next_state[1:0]
+    74/86: $3\next_state[1:0]
+    75/86: $2\next_state[1:0]
+    76/86: $1\temp_offset2[2:0]
+    77/86: $1\temp_offset1[2:0]
+    78/86: $1\temp_offset0[2:0]
+    79/86: $1\temp_writelevel[1:0]
+    80/86: $1\temp_readlevel[1:0]
+    81/86: $1\temp_lvempty[2:0]
+    82/86: $1\temp_busy[0:0]
+    83/86: $1\temp_peekstate[1:0]
+    84/86: $1\next_state[1:0]
+    85/86: $1\datain[12:0]
+    86/86: $1\we[0:0]
+Creating decoders for process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2524$401'.
+     1/9: $0\offset2[2:0]
+     2/9: $0\offset1[2:0]
+     3/9: $0\offset0[2:0]
+     4/9: $0\writelevel[1:0]
+     5/9: $0\readlevel[1:0]
+     6/9: $0\busy[0:0]
+     7/9: $0\lvempty[2:0]
+     8/9: $0\state[1:0]
+     9/9: $0\peekstate[1:0]
+Creating decoders for process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2501$397'.
+     1/3: $3\address[2:0]
+     2/3: $2\address[2:0]
+     3/3: $1\address[2:0]
+Creating decoders for process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+     1/24: $0\full7[0:0]
+     2/24: $0\full6[0:0]
+     3/24: $0\full5[0:0]
+     4/24: $0\full4[0:0]
+     5/24: $0\full3[0:0]
+     6/24: $0\full2[0:0]
+     7/24: $0\full1[0:0]
+     8/24: $0\full0[0:0]
+     9/24: $0\data7[12:0]
+    10/24: $0\data6[12:0]
+    11/24: $0\data5[12:0]
+    12/24: $0\data4[12:0]
+    13/24: $0\data3[12:0]
+    14/24: $0\data2[12:0]
+    15/24: $0\data1[12:0]
+    16/24: $0\data0[12:0]
+    17/24: $0\key7[31:0]
+    18/24: $0\key6[31:0]
+    19/24: $0\key5[31:0]
+    20/24: $0\key4[31:0]
+    21/24: $0\key3[31:0]
+    22/24: $0\key2[31:0]
+    23/24: $0\key1[31:0]
+    24/24: $0\key0[31:0]
+Creating decoders for process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2220$337'.
+     1/7: $7\location[2:0]
+     2/7: $6\location[2:0]
+     3/7: $5\location[2:0]
+     4/7: $4\location[2:0]
+     5/7: $3\location[2:0]
+     6/7: $2\location[2:0]
+     7/7: $1\location[2:0]
+Creating decoders for process `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2122$306'.
+     1/9: $0\raydata[31:0] [31:1]
+     2/9: $0\raydata[31:0] [0]
+     3/9: $0\rgWEl[2:0]
+     4/9: $0\rgAddrl[3:0]
+     5/9: $0\rgDatal[31:0]
+     6/9: $0\raywe[2:0]
+     7/9: $0\rgDone[0:0]
+     8/9: $0\rayaddr[3:0]
+     9/9: $0\rgAddrValidl[0:0]
+Creating decoders for process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303'.
+     1/20: $2\temp_t1b[31:0]
+     2/20: $2\next_state[3:0]
+     3/20: $1\temp_t1b[31:0]
+     4/20: $1\temp_newdata[0:0]
+     5/20: $1\next_state[3:0]
+     6/20: $1\temp_resultID[1:0]
+     7/20: $1\temp_hit3b[0:0]
+     8/20: $1\temp_hit2b[0:0]
+     9/20: $1\temp_hit1b[0:0]
+    10/20: $1\temp_id3b[15:0]
+    11/20: $1\temp_id2b[15:0]
+    12/20: $1\temp_id1b[15:0]
+    13/20: $1\temp_v3b[15:0]
+    14/20: $1\temp_v2b[15:0]
+    15/20: $1\temp_v1b[15:0]
+    16/20: $1\temp_u3b[15:0]
+    17/20: $1\temp_u2b[15:0]
+    18/20: $1\temp_u1b[15:0]
+    19/20: $1\temp_t3b[31:0]
+    20/20: $1\temp_t2b[31:0]
+Creating decoders for process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+     1/18: $0\newdata[0:0]
+     2/18: $0\resultID[1:0]
+     3/18: $0\hit3b[0:0]
+     4/18: $0\hit2b[0:0]
+     5/18: $0\hit1b[0:0]
+     6/18: $0\id3b[15:0]
+     7/18: $0\id2b[15:0]
+     8/18: $0\id1b[15:0]
+     9/18: $0\v3b[15:0]
+    10/18: $0\v2b[15:0]
+    11/18: $0\v1b[15:0]
+    12/18: $0\u3b[15:0]
+    13/18: $0\u2b[15:0]
+    14/18: $0\u1b[15:0]
+    15/18: $0\t3b[31:0]
+    16/18: $0\t2b[31:0]
+    17/18: $0\t1b[31:0]
+    18/18: $0\state[3:0]
+Creating decoders for process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1737$287'.
+     1/32: $8\next_state[2:0]
+     2/32: $7\next_state[2:0]
+     3/32: $3\temp_waddress[17:0]
+     4/32: $6\next_state[2:0]
+     5/32: $5\tm3_sram_adsp[0:0]
+     6/32: $3\tm3_sram_we[7:0]
+     7/32: $5\next_state[2:0]
+     8/32: $4\tm3_sram_adsp[0:0]
+     9/32: $2\tm3_sram_we[7:0]
+    10/32: $4\next_state[2:0]
+    11/32: $2\temp_datavalid[0:0]
+    12/32: $2\temp_waddress[17:0]
+    13/32: $3\tm3_sram_oe[1:0]
+    14/32: $3\tm3_sram_adsp[0:0]
+    15/32: $3\tm3_sram_addr[18:0]
+    16/32: $3\next_state[2:0]
+    17/32: $2\next_state[2:0]
+    18/32: $2\tm3_sram_adsp[0:0]
+    19/32: $2\tm3_sram_oe[1:0]
+    20/32: $2\tm3_sram_addr[18:0]
+    21/32: $1\temp_datavalid[0:0]
+    22/32: $1\temp_waddress[17:0]
+    23/32: $1\temp_statepeek[2:0]
+    24/32: $1\next_state[2:0]
+    25/32: $1\tm3_sram_adsp[0:0]
+    26/32: $1\tm3_sram_oe[1:0]
+    27/32: $1\tm3_sram_addr[18:0]
+    28/32: $1\want_data[0:0]
+    29/32: $1\want_addr[0:0]
+    30/32: $1\tm3_sram_data_xhdl0[63:0]
+    31/32: $1\tm3_sram_we[7:0]
+    32/32: $1\temp_data[63:0]
+Creating decoders for process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1717$285'.
+     1/5: $0\datavalid[0:0]
+     2/5: $0\data[63:0]
+     3/5: $0\waddress[17:0]
+     4/5: $0\state[2:0]
+     5/5: $0\statepeek[2:0]
+Creating decoders for process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1512$271'.
+     1/19: $8\next_state[2:0]
+     2/19: $7\next_state[2:0]
+     3/19: $3\temp_waddr[9:0]
+     4/19: $6\next_state[2:0]
+     5/19: $3\we[0:0]
+     6/19: $5\next_state[2:0]
+     7/19: $2\we[0:0]
+     8/19: $4\next_state[2:0]
+     9/19: $2\temp_datavalid[0:0]
+    10/19: $2\temp_waddr[9:0]
+    11/19: $3\next_state[2:0]
+    12/19: $2\next_state[2:0]
+    13/19: $1\temp_datavalid[0:0]
+    14/19: $1\temp_waddr[9:0]
+    15/19: $1\next_state[2:0]
+    16/19: $1\want_data[0:0]
+    17/19: $1\want_addr[0:0]
+    18/19: $1\we[0:0]
+    19/19: $1\temp_data[31:0]
+Creating decoders for process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1493$269'.
+     1/4: $0\datavalid[0:0]
+     2/4: $0\data[31:0]
+     3/4: $0\waddr[9:0]
+     4/4: $0\state[2:0]
+Creating decoders for process `\onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1401$262'.
+     1/6: $4\next_state[1:0]
+     2/6: $3\next_state[1:0]
+     3/6: $2\next_state[1:0]
+     4/6: $1\temp_count[0:0]
+     5/6: $1\next_state[1:0]
+     6/6: $1\output_xhdl0[0:0]
+Creating decoders for process `\onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1386$260'.
+     1/2: $0\count[0:0]
+     2/2: $0\state[1:0]
+Creating decoders for process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71'.
+     1/165: $1\temp_hitmask[2:0] [2]
+     2/165: $28\temp_busy[0:0]
+     3/165: $28\next_state[4:0]
+     4/165: $1\temp_hitmask[2:0] [1]
+     5/165: $12\temp_passCTSout[0:0]
+     6/165: $4\temp_hitmask[2:2]
+     7/165: $2\temp_hit3[0:0]
+     8/165: $2\temp_id3[15:0]
+     9/165: $2\temp_v3[15:0]
+    10/165: $2\temp_u3[15:0]
+    11/165: $2\temp_t3[31:0]
+    12/165: $3\temp_hitmask[1:1]
+    13/165: $2\temp_hit2[0:0]
+    14/165: $2\temp_id2[15:0]
+    15/165: $2\temp_v2[15:0]
+    16/165: $2\temp_u2[15:0]
+    17/165: $2\temp_t2[31:0]
+    18/165: $2\temp_hitmask[0:0]
+    19/165: $2\temp_hit1[0:0]
+    20/165: $2\temp_id1[15:0]
+    21/165: $2\temp_v1[15:0]
+    22/165: $2\temp_u1[15:0]
+    23/165: $2\temp_t1[31:0]
+    24/165: $27\temp_busy[0:0]
+    25/165: $27\next_state[4:0]
+    26/165: $4\bcvalid[0:0]
+    27/165: $26\temp_busy[0:0]
+    28/165: $26\next_state[4:0]
+    29/165: $3\bcvalid[0:0]
+    30/165: $1\temp_hitmask[2:0] [0]
+    31/165: $13\temp_passCTSout[0:0]
+    32/165: $7\temp_cts[0:0]
+    33/165: $25\temp_busy[0:0]
+    34/165: $25\next_state[4:0]
+    35/165: $10\temp_passCTSout[0:0]
+    36/165: $24\temp_busy[0:0]
+    37/165: $24\next_state[4:0]
+    38/165: $23\temp_busy[0:0]
+    39/165: $23\next_state[4:0]
+    40/165: $9\temp_passCTSout[0:0]
+    41/165: $6\temp_cts[0:0]
+    42/165: $22\temp_busy[0:0]
+    43/165: $22\next_state[4:0]
+    44/165: $21\temp_busy[0:0]
+    45/165: $21\next_state[4:0]
+    46/165: $2\temp_triDatalatch[63:0]
+    47/165: $6\temp_tladdrvalid[0:0]
+    48/165: $3\temp_tladdr[17:0]
+    49/165: $2\temp_subcount[1:0]
+    50/165: $5\temp_tladdrvalid[0:0]
+    51/165: $4\temp_triIDvalid[0:0]
+    52/165: $4\temp_tladdrvalid[0:0]
+    53/165: $3\temp_triIDvalid[0:0]
+    54/165: $2\temp_count[13:0]
+    55/165: $4\temp_triID[15:0]
+    56/165: $3\temp_triID[15:0]
+    57/165: $2\temp_triID[15:0]
+    58/165: $3\raygroupwe[0:0]
+    59/165: $3\raygroupid[1:0]
+    60/165: $20\temp_busy[0:0]
+    61/165: $20\next_state[4:0]
+    62/165: $3\temp_tladdrvalid[0:0]
+    63/165: $2\temp_tladdr[17:0]
+    64/165: $19\temp_busy[0:0]
+    65/165: $19\next_state[4:0]
+    66/165: $18\temp_busy[0:0]
+    67/165: $18\next_state[4:0]
+    68/165: $2\temp_tladdrvalid[0:0]
+    69/165: $3\temp_addrindvalid[0:0]
+    70/165: $17\temp_busy[0:0]
+    71/165: $17\next_state[4:0]
+    72/165: $2\temp_addrindvalid[0:0]
+    73/165: $2\temp_addrind[9:0]
+    74/165: $2\temp_l0reset[0:0]
+    75/165: $2\temp_lack[0:0]
+    76/165: $16\temp_busy[0:0]
+    77/165: $16\next_state[4:0]
+    78/165: $15\temp_busy[0:0]
+    79/165: $15\next_state[4:0]
+    80/165: $2\bcvalid[0:0]
+    81/165: $14\temp_busy[0:0]
+    82/165: $14\next_state[4:0]
+    83/165: $8\temp_passCTSout[0:0]
+    84/165: $13\temp_busy[0:0]
+    85/165: $13\next_state[4:0]
+    86/165: $7\temp_passCTSout[0:0]
+    87/165: $12\temp_busy[0:0]
+    88/165: $12\next_state[4:0]
+    89/165: $6\temp_passCTSout[0:0]
+    90/165: $5\temp_cts[0:0]
+    91/165: $5\temp_passCTSout[0:0]
+    92/165: $4\temp_cts[0:0]
+    93/165: $11\temp_busy[0:0]
+    94/165: $11\next_state[4:0]
+    95/165: $10\temp_busy[0:0]
+    96/165: $10\next_state[4:0]
+    97/165: $9\temp_busy[0:0]
+    98/165: $9\next_state[4:0]
+    99/165: $2\temp_resetcount[2:0]
+   100/165: $8\temp_busy[0:0]
+   101/165: $8\next_state[4:0]
+   102/165: $2\temp_triIDvalid[0:0]
+   103/165: $2\raygroupwe[0:0]
+   104/165: $2\raygroupid[1:0]
+   105/165: $7\temp_busy[0:0]
+   106/165: $7\next_state[4:0]
+   107/165: $4\temp_passCTSout[0:0]
+   108/165: $6\temp_busy[0:0]
+   109/165: $6\next_state[4:0]
+   110/165: $5\temp_busy[0:0]
+   111/165: $5\next_state[4:0]
+   112/165: $3\temp_passCTSout[0:0]
+   113/165: $3\temp_cts[0:0]
+   114/165: $2\temp_passCTSout[0:0]
+   115/165: $2\temp_cts[0:0]
+   116/165: $4\temp_busy[0:0]
+   117/165: $4\next_state[4:0]
+   118/165: $3\temp_busy[0:0]
+   119/165: $3\next_state[4:0]
+   120/165: $2\temp_busy[0:0]
+   121/165: $2\next_state[4:0]
+   122/165: $1\temp_passCTSout[0:0]
+   123/165: $1\temp_cts[0:0]
+   124/165: $1\temp_raygroupoutl[1:0]
+   125/165: $1\temp_statepeek[4:0]
+   126/165: $1\temp_busy[0:0]
+   127/165: $1\next_state[4:0]
+   128/165: $1\lhreset[0:0]
+   129/165: $1\bcvalid[0:0]
+   130/165: $1\raygroupwe[0:0]
+   131/165: $1\enablenear[0:0]
+   132/165: $1\raygroupid[1:0]
+   133/165: $1\temp_id3[15:0]
+   134/165: $1\temp_v3[15:0]
+   135/165: $1\temp_u3[15:0]
+   136/165: $1\temp_t3[31:0]
+   137/165: $1\temp_id2[15:0]
+   138/165: $1\temp_v2[15:0]
+   139/165: $1\temp_u2[15:0]
+   140/165: $1\temp_t2[31:0]
+   141/165: $1\temp_id1[15:0]
+   142/165: $1\temp_v1[15:0]
+   143/165: $1\temp_u1[15:0]
+   144/165: $1\temp_t1[31:0]
+   145/165: $1\temp_triDatalatch[63:0]
+   146/165: $1\temp_maskcount[1:0]
+   147/165: $1\temp_subcount[1:0]
+   148/165: $1\temp_count[13:0]
+   149/165: $1\temp_tladdr[17:0]
+   150/165: $1\temp_tladdrvalid[0:0]
+   151/165: $1\temp_addrindvalid[0:0]
+   152/165: $1\temp_addrind[9:0]
+   153/165: $1\temp_lack[0:0]
+   154/165: $1\temp_triID[15:0]
+   155/165: $1\temp_triIDvalid[0:0]
+   156/165: $1\temp_hit3[0:0]
+   157/165: $1\temp_hit2[0:0]
+   158/165: $1\temp_hit1[0:0]
+   159/165: $11\temp_passCTSout[0:0]
+   160/165: $1\temp_baseaddress[1:0]
+   161/165: $1\temp_boundNodeIDout[9:0]
+   162/165: $1\temp_startAddr[11:0]
+   163/165: $1\temp_addr[11:0]
+   164/165: $1\temp_l0reset[0:0]
+   165/165: $1\temp_resetcount[2:0]
+Creating decoders for process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+     1/40: $0\busy[0:0]
+     2/40: $0\id3[15:0]
+     3/40: $0\id2[15:0]
+     4/40: $0\id1[15:0]
+     5/40: $0\v3[15:0]
+     6/40: $0\v2[15:0]
+     7/40: $0\v1[15:0]
+     8/40: $0\u3[15:0]
+     9/40: $0\u2[15:0]
+    10/40: $0\u1[15:0]
+    11/40: $0\t3[31:0]
+    12/40: $0\t2[31:0]
+    13/40: $0\t1[31:0]
+    14/40: $0\hit3[0:0]
+    15/40: $0\hit2[0:0]
+    16/40: $0\hit1[0:0]
+    17/40: $0\count[13:0]
+    18/40: $0\subcount[1:0]
+    19/40: $0\maskcount[1:0]
+    20/40: $0\triDatalatch[63:0]
+    21/40: $0\tladdr[17:0]
+    22/40: $0\tladdrvalid[0:0]
+    23/40: $0\addrindvalid[0:0]
+    24/40: $0\addrind[9:0]
+    25/40: $0\triID[15:0]
+    26/40: $0\triIDvalid[0:0]
+    27/40: $0\resetcnt[0:0]
+    28/40: $0\l0reset[0:0]
+    29/40: $0\baseaddress[1:0]
+    30/40: $0\lack[0:0]
+    31/40: $0\hitmask[2:0]
+    32/40: $0\resetcount[2:0]
+    33/40: $0\boundNodeIDout[9:0]
+    34/40: $0\startAddr[11:0]
+    35/40: $0\addr[11:0]
+    36/40: $0\passCTSout[0:0]
+    37/40: $0\cts[0:0]
+    38/40: $0\raygroupoutl[1:0]
+    39/40: $0\state[4:0]
+    40/40: $0\statepeek[4:0]
+Creating decoders for process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:409$40'.
+     1/6: $3\next_state[3:0]
+     2/6: $2\next_state[3:0]
+     3/6: $1\next_state[3:0]
+     4/6: $1\temp_rgResultSource[1:0]
+     5/6: $1\temp_rgResultReady[0:0]
+     6/6: $1\temp_rgResultData[31:0]
+Creating decoders for process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:365$34'.
+     1/14: $0\rgResultReady[0:0]
+     2/14: $0\rgResultSource[1:0]
+     3/14: $0\rgResultData[31:0]
+     4/14: $0\state[3:0]
+     5/14: $0\valid10d[0:0]
+     6/14: $0\valid01d[0:0]
+     7/14: $0\pending10[0:0]
+     8/14: $0\pending01[0:0]
+     9/14: $0\hit10cl[0:0]
+    10/14: $0\hit10bl[0:0]
+    11/14: $0\hit10al[0:0]
+    12/14: $0\hit01cl[0:0]
+    13/14: $0\hit01bl[0:0]
+    14/14: $0\hit01al[0:0]
+Creating decoders for process `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:261$30'.
+     1/3: $0\oldresultid[1:0]
+     2/3: $0\reset[0:0]
+     3/3: $0\peeklatch[103:0]
+Creating decoders for process `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:237$12'.
+     1/2: $2\boundNodeID[9:0]
+     2/2: $1\boundNodeID[9:0]
+
+3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+Latch inferred for signal `\listhandler.\next_state' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2553$403': $auto$proc_dlatch.cc:427:proc_dlatch$5361
+Latch inferred for signal `\listhandler.\temp_busy' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2553$403': $auto$proc_dlatch.cc:427:proc_dlatch$5472
+Latch inferred for signal `\listhandler.\datain' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2553$403': $auto$proc_dlatch.cc:427:proc_dlatch$5829
+Latch inferred for signal `\listhandler.\we' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2553$403': $auto$proc_dlatch.cc:427:proc_dlatch$5846
+Latch inferred for signal `\listhandler.\temp_peekstate' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2553$403': $auto$proc_dlatch.cc:427:proc_dlatch$5869
+Latch inferred for signal `\listhandler.\temp_lvempty [0]' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2553$403': $auto$proc_dlatch.cc:427:proc_dlatch$6024
+Latch inferred for signal `\listhandler.\temp_lvempty [1]' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2553$403': $auto$proc_dlatch.cc:427:proc_dlatch$6203
+Latch inferred for signal `\listhandler.\temp_lvempty [2]' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2553$403': $auto$proc_dlatch.cc:427:proc_dlatch$6462
+Latch inferred for signal `\listhandler.\temp_readlevel' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2553$403': $auto$proc_dlatch.cc:427:proc_dlatch$6633
+Latch inferred for signal `\listhandler.\temp_writelevel' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2553$403': $auto$proc_dlatch.cc:427:proc_dlatch$6694
+Latch inferred for signal `\listhandler.\temp_offset0' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2553$403': $auto$proc_dlatch.cc:427:proc_dlatch$6859
+Latch inferred for signal `\listhandler.\temp_offset1' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2553$403': $auto$proc_dlatch.cc:427:proc_dlatch$7126
+Latch inferred for signal `\listhandler.\temp_offset2' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2553$403': $auto$proc_dlatch.cc:427:proc_dlatch$7511
+No latch inferred for signal `\listhandler.\address' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2501$397'.
+No latch inferred for signal `\sortedstack.\location' from process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2220$337'.
+Latch inferred for signal `\resultinterface.\next_state' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303': $auto$proc_dlatch.cc:427:proc_dlatch$7570
+Latch inferred for signal `\resultinterface.\temp_t1b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303': $auto$proc_dlatch.cc:427:proc_dlatch$7599
+Latch inferred for signal `\resultinterface.\temp_t2b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303': $auto$proc_dlatch.cc:427:proc_dlatch$7610
+Latch inferred for signal `\resultinterface.\temp_t3b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303': $auto$proc_dlatch.cc:427:proc_dlatch$7621
+Latch inferred for signal `\resultinterface.\temp_u1b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303': $auto$proc_dlatch.cc:427:proc_dlatch$7632
+Latch inferred for signal `\resultinterface.\temp_u2b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303': $auto$proc_dlatch.cc:427:proc_dlatch$7643
+Latch inferred for signal `\resultinterface.\temp_u3b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303': $auto$proc_dlatch.cc:427:proc_dlatch$7654
+Latch inferred for signal `\resultinterface.\temp_v1b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303': $auto$proc_dlatch.cc:427:proc_dlatch$7665
+Latch inferred for signal `\resultinterface.\temp_v2b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303': $auto$proc_dlatch.cc:427:proc_dlatch$7676
+Latch inferred for signal `\resultinterface.\temp_v3b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303': $auto$proc_dlatch.cc:427:proc_dlatch$7687
+Latch inferred for signal `\resultinterface.\temp_id1b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303': $auto$proc_dlatch.cc:427:proc_dlatch$7698
+Latch inferred for signal `\resultinterface.\temp_id2b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303': $auto$proc_dlatch.cc:427:proc_dlatch$7709
+Latch inferred for signal `\resultinterface.\temp_id3b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303': $auto$proc_dlatch.cc:427:proc_dlatch$7720
+Latch inferred for signal `\resultinterface.\temp_hit1b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303': $auto$proc_dlatch.cc:427:proc_dlatch$7731
+Latch inferred for signal `\resultinterface.\temp_hit2b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303': $auto$proc_dlatch.cc:427:proc_dlatch$7742
+Latch inferred for signal `\resultinterface.\temp_hit3b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303': $auto$proc_dlatch.cc:427:proc_dlatch$7753
+Latch inferred for signal `\resultinterface.\temp_resultID' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303': $auto$proc_dlatch.cc:427:proc_dlatch$7764
+Latch inferred for signal `\resultinterface.\temp_newdata' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303': $auto$proc_dlatch.cc:427:proc_dlatch$7823
+Latch inferred for signal `\sramcontroller.\tm3_sram_data_xhdl0' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1737$287': $auto$proc_dlatch.cc:427:proc_dlatch$7864
+Latch inferred for signal `\sramcontroller.\tm3_sram_addr' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1737$287': $auto$proc_dlatch.cc:427:proc_dlatch$7949
+Latch inferred for signal `\sramcontroller.\tm3_sram_we' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1737$287': $auto$proc_dlatch.cc:427:proc_dlatch$8034
+Latch inferred for signal `\sramcontroller.\tm3_sram_oe' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1737$287': $auto$proc_dlatch.cc:427:proc_dlatch$8099
+Latch inferred for signal `\sramcontroller.\tm3_sram_adsp' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1737$287': $auto$proc_dlatch.cc:427:proc_dlatch$8188
+Latch inferred for signal `\sramcontroller.\next_state' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1737$287': $auto$proc_dlatch.cc:427:proc_dlatch$8229
+Latch inferred for signal `\sramcontroller.\temp_statepeek' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1737$287': $auto$proc_dlatch.cc:427:proc_dlatch$8270
+Latch inferred for signal `\sramcontroller.\want_addr' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1737$287': $auto$proc_dlatch.cc:427:proc_dlatch$8311
+Latch inferred for signal `\sramcontroller.\want_data' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1737$287': $auto$proc_dlatch.cc:427:proc_dlatch$8352
+Latch inferred for signal `\sramcontroller.\temp_data' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1737$287': $auto$proc_dlatch.cc:427:proc_dlatch$8363
+Latch inferred for signal `\sramcontroller.\temp_datavalid' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1737$287': $auto$proc_dlatch.cc:427:proc_dlatch$8398
+Latch inferred for signal `\sramcontroller.\temp_waddress' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1737$287': $auto$proc_dlatch.cc:427:proc_dlatch$8451
+Latch inferred for signal `\vblockramcontroller.\next_state' from process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1512$271': $auto$proc_dlatch.cc:427:proc_dlatch$8492
+Latch inferred for signal `\vblockramcontroller.\want_addr' from process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1512$271': $auto$proc_dlatch.cc:427:proc_dlatch$8533
+Latch inferred for signal `\vblockramcontroller.\want_data' from process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1512$271': $auto$proc_dlatch.cc:427:proc_dlatch$8574
+Latch inferred for signal `\vblockramcontroller.\we' from process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1512$271': $auto$proc_dlatch.cc:427:proc_dlatch$8659
+Latch inferred for signal `\vblockramcontroller.\temp_data' from process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1512$271': $auto$proc_dlatch.cc:427:proc_dlatch$8670
+Latch inferred for signal `\vblockramcontroller.\temp_waddr' from process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1512$271': $auto$proc_dlatch.cc:427:proc_dlatch$8723
+Latch inferred for signal `\vblockramcontroller.\temp_datavalid' from process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1512$271': $auto$proc_dlatch.cc:427:proc_dlatch$8758
+Latch inferred for signal `\onlyonecycle.\next_state' from process `\onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1401$262': $auto$proc_dlatch.cc:427:proc_dlatch$8781
+Latch inferred for signal `\onlyonecycle.\temp_count' from process `\onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1401$262': $auto$proc_dlatch.cc:427:proc_dlatch$8798
+Latch inferred for signal `\onlyonecycle.\output_xhdl0' from process `\onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1401$262': $auto$proc_dlatch.cc:427:proc_dlatch$8821
+Latch inferred for signal `\boundcontroller.\raygroupwe' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$8880
+Latch inferred for signal `\boundcontroller.\raygroupid' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$8921
+Latch inferred for signal `\boundcontroller.\enablenear' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$8944
+Latch inferred for signal `\boundcontroller.\next_state' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$9069
+Latch inferred for signal `\boundcontroller.\temp_busy' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$9194
+Latch inferred for signal `\boundcontroller.\lhreset' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$9205
+Latch inferred for signal `\boundcontroller.\bcvalid' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$9288
+Latch inferred for signal `\boundcontroller.\temp_statepeek' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$9413
+Latch inferred for signal `\boundcontroller.\temp_raygroupoutl' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$9424
+Latch inferred for signal `\boundcontroller.\temp_cts' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$9569
+Latch inferred for signal `\boundcontroller.\temp_passCTSout' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$9810
+Latch inferred for signal `\boundcontroller.\temp_resetcount' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$9833
+Latch inferred for signal `\boundcontroller.\temp_l0reset' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$9868
+Latch inferred for signal `\boundcontroller.\temp_addr' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$9891
+Latch inferred for signal `\boundcontroller.\temp_startAddr' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$9908
+Latch inferred for signal `\boundcontroller.\temp_boundNodeIDout' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$9925
+Latch inferred for signal `\boundcontroller.\temp_baseaddress' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$9942
+Latch inferred for signal `\boundcontroller.\temp_hitmask [0]' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$9977
+Latch inferred for signal `\boundcontroller.\temp_hitmask [1]' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10012
+Latch inferred for signal `\boundcontroller.\temp_hitmask [2]' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10047
+Latch inferred for signal `\boundcontroller.\temp_hit1' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10074
+Latch inferred for signal `\boundcontroller.\temp_hit2' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10101
+Latch inferred for signal `\boundcontroller.\temp_hit3' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10128
+Latch inferred for signal `\boundcontroller.\temp_triIDvalid' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10205
+Latch inferred for signal `\boundcontroller.\temp_triID' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10222
+Latch inferred for signal `\boundcontroller.\temp_lack' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10243
+Latch inferred for signal `\boundcontroller.\temp_addrind' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10272
+Latch inferred for signal `\boundcontroller.\temp_addrindvalid' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10317
+Latch inferred for signal `\boundcontroller.\temp_tladdrvalid' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10434
+Latch inferred for signal `\boundcontroller.\temp_tladdr' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10483
+Latch inferred for signal `\boundcontroller.\temp_count' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10512
+Latch inferred for signal `\boundcontroller.\temp_subcount' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10547
+Latch inferred for signal `\boundcontroller.\temp_maskcount' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10564
+Latch inferred for signal `\boundcontroller.\temp_triDatalatch' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10591
+Latch inferred for signal `\boundcontroller.\temp_t1' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10612
+Latch inferred for signal `\boundcontroller.\temp_u1' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10633
+Latch inferred for signal `\boundcontroller.\temp_v1' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10654
+Latch inferred for signal `\boundcontroller.\temp_id1' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10675
+Latch inferred for signal `\boundcontroller.\temp_t2' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10696
+Latch inferred for signal `\boundcontroller.\temp_u2' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10717
+Latch inferred for signal `\boundcontroller.\temp_v2' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10738
+Latch inferred for signal `\boundcontroller.\temp_id2' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10759
+Latch inferred for signal `\boundcontroller.\temp_t3' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10780
+Latch inferred for signal `\boundcontroller.\temp_u3' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10801
+Latch inferred for signal `\boundcontroller.\temp_v3' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10822
+Latch inferred for signal `\boundcontroller.\temp_id3' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71': $auto$proc_dlatch.cc:427:proc_dlatch$10843
+Latch inferred for signal `\resulttransmit.\next_state' from process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:409$40': $auto$proc_dlatch.cc:427:proc_dlatch$10902
+Latch inferred for signal `\resulttransmit.\temp_rgResultData' from process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:409$40': $auto$proc_dlatch.cc:427:proc_dlatch$10955
+Latch inferred for signal `\resulttransmit.\temp_rgResultReady' from process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:409$40': $auto$proc_dlatch.cc:427:proc_dlatch$10964
+Latch inferred for signal `\resulttransmit.\temp_rgResultSource' from process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:409$40': $auto$proc_dlatch.cc:427:proc_dlatch$11017
+No latch inferred for signal `\paj_boundtop_hierarchy_no_mem.\boundNodeID' from process `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:237$12'.
+
+3.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\resultcounter.\count' using process `\resultcounter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2808$464'.
+  created $dff cell `$procdff$11018' with positive edge clock.
+Creating register for signal `\resultcounter.\curr' using process `\resultcounter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2808$464'.
+  created $dff cell `$procdff$11019' with positive edge clock.
+Creating register for signal `\spram.\temp_reg' using process `\spram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2780$458'.
+  created $dff cell `$procdff$11020' with positive edge clock.
+Creating register for signal `\spram.\mem1' using process `\spram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2780$458'.
+  created $dff cell `$procdff$11021' with positive edge clock.
+Creating register for signal `\spram.\mem2' using process `\spram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2780$458'.
+  created $dff cell `$procdff$11022' with positive edge clock.
+Creating register for signal `\listhandler.\state' using process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2524$401'.
+  created $dff cell `$procdff$11023' with positive edge clock.
+Creating register for signal `\listhandler.\busy' using process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2524$401'.
+  created $dff cell `$procdff$11024' with positive edge clock.
+Creating register for signal `\listhandler.\peekstate' using process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2524$401'.
+  created $dff cell `$procdff$11025' with positive edge clock.
+Creating register for signal `\listhandler.\readlevel' using process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2524$401'.
+  created $dff cell `$procdff$11026' with positive edge clock.
+Creating register for signal `\listhandler.\writelevel' using process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2524$401'.
+  created $dff cell `$procdff$11027' with positive edge clock.
+Creating register for signal `\listhandler.\offset0' using process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2524$401'.
+  created $dff cell `$procdff$11028' with positive edge clock.
+Creating register for signal `\listhandler.\offset1' using process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2524$401'.
+  created $dff cell `$procdff$11029' with positive edge clock.
+Creating register for signal `\listhandler.\offset2' using process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2524$401'.
+  created $dff cell `$procdff$11030' with positive edge clock.
+Creating register for signal `\listhandler.\lvempty' using process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2524$401'.
+  created $dff cell `$procdff$11031' with positive edge clock.
+Creating register for signal `\sortedstack.\key0' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11032' with positive edge clock.
+Creating register for signal `\sortedstack.\key1' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11033' with positive edge clock.
+Creating register for signal `\sortedstack.\key2' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11034' with positive edge clock.
+Creating register for signal `\sortedstack.\key3' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11035' with positive edge clock.
+Creating register for signal `\sortedstack.\key4' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11036' with positive edge clock.
+Creating register for signal `\sortedstack.\key5' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11037' with positive edge clock.
+Creating register for signal `\sortedstack.\key6' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11038' with positive edge clock.
+Creating register for signal `\sortedstack.\key7' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11039' with positive edge clock.
+Creating register for signal `\sortedstack.\data0' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11040' with positive edge clock.
+Creating register for signal `\sortedstack.\data1' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11041' with positive edge clock.
+Creating register for signal `\sortedstack.\data2' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11042' with positive edge clock.
+Creating register for signal `\sortedstack.\data3' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11043' with positive edge clock.
+Creating register for signal `\sortedstack.\data4' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11044' with positive edge clock.
+Creating register for signal `\sortedstack.\data5' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11045' with positive edge clock.
+Creating register for signal `\sortedstack.\data6' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11046' with positive edge clock.
+Creating register for signal `\sortedstack.\data7' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11047' with positive edge clock.
+Creating register for signal `\sortedstack.\full0' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11048' with positive edge clock.
+Creating register for signal `\sortedstack.\full1' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11049' with positive edge clock.
+Creating register for signal `\sortedstack.\full2' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11050' with positive edge clock.
+Creating register for signal `\sortedstack.\full3' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11051' with positive edge clock.
+Creating register for signal `\sortedstack.\full4' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11052' with positive edge clock.
+Creating register for signal `\sortedstack.\full5' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11053' with positive edge clock.
+Creating register for signal `\sortedstack.\full6' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11054' with positive edge clock.
+Creating register for signal `\sortedstack.\full7' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+  created $dff cell `$procdff$11055' with positive edge clock.
+Creating register for signal `\rayinterface.\raydata' using process `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2122$306'.
+  created $dff cell `$procdff$11056' with positive edge clock.
+Creating register for signal `\rayinterface.\rayaddr' using process `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2122$306'.
+  created $dff cell `$procdff$11057' with positive edge clock.
+Creating register for signal `\rayinterface.\raywe' using process `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2122$306'.
+  created $dff cell `$procdff$11058' with positive edge clock.
+Creating register for signal `\rayinterface.\rgDone' using process `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2122$306'.
+  created $dff cell `$procdff$11059' with positive edge clock.
+Creating register for signal `\rayinterface.\rgDatal' using process `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2122$306'.
+  created $dff cell `$procdff$11060' with positive edge clock.
+Creating register for signal `\rayinterface.\rgAddrl' using process `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2122$306'.
+  created $dff cell `$procdff$11061' with positive edge clock.
+Creating register for signal `\rayinterface.\rgWEl' using process `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2122$306'.
+  created $dff cell `$procdff$11062' with positive edge clock.
+Creating register for signal `\rayinterface.\rgAddrValidl' using process `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2122$306'.
+  created $dff cell `$procdff$11063' with positive edge clock.
+Creating register for signal `\resultinterface.\state' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+  created $dff cell `$procdff$11064' with positive edge clock.
+Creating register for signal `\resultinterface.\newdata' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+  created $dff cell `$procdff$11065' with positive edge clock.
+Creating register for signal `\resultinterface.\resultID' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+  created $dff cell `$procdff$11066' with positive edge clock.
+Creating register for signal `\resultinterface.\t1b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+  created $dff cell `$procdff$11067' with positive edge clock.
+Creating register for signal `\resultinterface.\t2b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+  created $dff cell `$procdff$11068' with positive edge clock.
+Creating register for signal `\resultinterface.\t3b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+  created $dff cell `$procdff$11069' with positive edge clock.
+Creating register for signal `\resultinterface.\u1b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+  created $dff cell `$procdff$11070' with positive edge clock.
+Creating register for signal `\resultinterface.\u2b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+  created $dff cell `$procdff$11071' with positive edge clock.
+Creating register for signal `\resultinterface.\u3b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+  created $dff cell `$procdff$11072' with positive edge clock.
+Creating register for signal `\resultinterface.\v1b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+  created $dff cell `$procdff$11073' with positive edge clock.
+Creating register for signal `\resultinterface.\v2b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+  created $dff cell `$procdff$11074' with positive edge clock.
+Creating register for signal `\resultinterface.\v3b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+  created $dff cell `$procdff$11075' with positive edge clock.
+Creating register for signal `\resultinterface.\id1b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+  created $dff cell `$procdff$11076' with positive edge clock.
+Creating register for signal `\resultinterface.\id2b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+  created $dff cell `$procdff$11077' with positive edge clock.
+Creating register for signal `\resultinterface.\id3b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+  created $dff cell `$procdff$11078' with positive edge clock.
+Creating register for signal `\resultinterface.\hit1b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+  created $dff cell `$procdff$11079' with positive edge clock.
+Creating register for signal `\resultinterface.\hit2b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+  created $dff cell `$procdff$11080' with positive edge clock.
+Creating register for signal `\resultinterface.\hit3b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+  created $dff cell `$procdff$11081' with positive edge clock.
+Creating register for signal `\sramcontroller.\state' using process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1717$285'.
+  created $dff cell `$procdff$11082' with positive edge clock.
+Creating register for signal `\sramcontroller.\statepeek' using process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1717$285'.
+  created $dff cell `$procdff$11083' with positive edge clock.
+Creating register for signal `\sramcontroller.\data' using process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1717$285'.
+  created $dff cell `$procdff$11084' with positive edge clock.
+Creating register for signal `\sramcontroller.\datavalid' using process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1717$285'.
+  created $dff cell `$procdff$11085' with positive edge clock.
+Creating register for signal `\sramcontroller.\waddress' using process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1717$285'.
+  created $dff cell `$procdff$11086' with positive edge clock.
+Creating register for signal `\vblockramcontroller.\state' using process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1493$269'.
+  created $dff cell `$procdff$11087' with positive edge clock.
+Creating register for signal `\vblockramcontroller.\data' using process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1493$269'.
+  created $dff cell `$procdff$11088' with positive edge clock.
+Creating register for signal `\vblockramcontroller.\datavalid' using process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1493$269'.
+  created $dff cell `$procdff$11089' with positive edge clock.
+Creating register for signal `\vblockramcontroller.\waddr' using process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1493$269'.
+  created $dff cell `$procdff$11090' with positive edge clock.
+Creating register for signal `\onlyonecycle.\state' using process `\onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1386$260'.
+  created $dff cell `$procdff$11091' with positive edge clock.
+Creating register for signal `\onlyonecycle.\count' using process `\onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1386$260'.
+  created $dff cell `$procdff$11092' with positive edge clock.
+Creating register for signal `\boundcontroller.\triIDvalid' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11093' with positive edge clock.
+Creating register for signal `\boundcontroller.\triID' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11094' with positive edge clock.
+Creating register for signal `\boundcontroller.\tladdr' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11095' with positive edge clock.
+Creating register for signal `\boundcontroller.\tladdrvalid' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11096' with positive edge clock.
+Creating register for signal `\boundcontroller.\state' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11097' with positive edge clock.
+Creating register for signal `\boundcontroller.\busy' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11098' with positive edge clock.
+Creating register for signal `\boundcontroller.\l0reset' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11099' with positive edge clock.
+Creating register for signal `\boundcontroller.\baseaddress' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11100' with positive edge clock.
+Creating register for signal `\boundcontroller.\boundNodeIDout' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11101' with positive edge clock.
+Creating register for signal `\boundcontroller.\hitmask' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11102' with positive edge clock.
+Creating register for signal `\boundcontroller.\lack' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11103' with positive edge clock.
+Creating register for signal `\boundcontroller.\addrind' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11104' with positive edge clock.
+Creating register for signal `\boundcontroller.\addrindvalid' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11105' with positive edge clock.
+Creating register for signal `\boundcontroller.\t1' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11106' with positive edge clock.
+Creating register for signal `\boundcontroller.\t2' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11107' with positive edge clock.
+Creating register for signal `\boundcontroller.\t3' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11108' with positive edge clock.
+Creating register for signal `\boundcontroller.\u1' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11109' with positive edge clock.
+Creating register for signal `\boundcontroller.\u2' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11110' with positive edge clock.
+Creating register for signal `\boundcontroller.\u3' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11111' with positive edge clock.
+Creating register for signal `\boundcontroller.\v1' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11112' with positive edge clock.
+Creating register for signal `\boundcontroller.\v2' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11113' with positive edge clock.
+Creating register for signal `\boundcontroller.\v3' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11114' with positive edge clock.
+Creating register for signal `\boundcontroller.\id1' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11115' with positive edge clock.
+Creating register for signal `\boundcontroller.\id2' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11116' with positive edge clock.
+Creating register for signal `\boundcontroller.\id3' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11117' with positive edge clock.
+Creating register for signal `\boundcontroller.\hit1' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11118' with positive edge clock.
+Creating register for signal `\boundcontroller.\hit2' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11119' with positive edge clock.
+Creating register for signal `\boundcontroller.\hit3' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11120' with positive edge clock.
+Creating register for signal `\boundcontroller.\resetcnt' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11121' with positive edge clock.
+Creating register for signal `\boundcontroller.\passCTSout' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11122' with positive edge clock.
+Creating register for signal `\boundcontroller.\statepeek' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11123' with positive edge clock.
+Creating register for signal `\boundcontroller.\cts' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11124' with positive edge clock.
+Creating register for signal `\boundcontroller.\addr' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11125' with positive edge clock.
+Creating register for signal `\boundcontroller.\startAddr' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11126' with positive edge clock.
+Creating register for signal `\boundcontroller.\resetcount' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11127' with positive edge clock.
+Creating register for signal `\boundcontroller.\raygroupoutl' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11128' with positive edge clock.
+Creating register for signal `\boundcontroller.\count' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11129' with positive edge clock.
+Creating register for signal `\boundcontroller.\triDatalatch' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11130' with positive edge clock.
+Creating register for signal `\boundcontroller.\subcount' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11131' with positive edge clock.
+Creating register for signal `\boundcontroller.\maskcount' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+  created $dff cell `$procdff$11132' with positive edge clock.
+Creating register for signal `\resulttransmit.\rgResultData' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:365$34'.
+  created $dff cell `$procdff$11133' with positive edge clock.
+Creating register for signal `\resulttransmit.\rgResultReady' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:365$34'.
+  created $dff cell `$procdff$11134' with positive edge clock.
+Creating register for signal `\resulttransmit.\rgResultSource' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:365$34'.
+  created $dff cell `$procdff$11135' with positive edge clock.
+Creating register for signal `\resulttransmit.\state' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:365$34'.
+  created $dff cell `$procdff$11136' with positive edge clock.
+Creating register for signal `\resulttransmit.\hit01al' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:365$34'.
+  created $dff cell `$procdff$11137' with positive edge clock.
+Creating register for signal `\resulttransmit.\hit01bl' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:365$34'.
+  created $dff cell `$procdff$11138' with positive edge clock.
+Creating register for signal `\resulttransmit.\hit01cl' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:365$34'.
+  created $dff cell `$procdff$11139' with positive edge clock.
+Creating register for signal `\resulttransmit.\hit10al' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:365$34'.
+  created $dff cell `$procdff$11140' with positive edge clock.
+Creating register for signal `\resulttransmit.\hit10bl' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:365$34'.
+  created $dff cell `$procdff$11141' with positive edge clock.
+Creating register for signal `\resulttransmit.\hit10cl' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:365$34'.
+  created $dff cell `$procdff$11142' with positive edge clock.
+Creating register for signal `\resulttransmit.\pending01' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:365$34'.
+  created $dff cell `$procdff$11143' with positive edge clock.
+Creating register for signal `\resulttransmit.\pending10' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:365$34'.
+  created $dff cell `$procdff$11144' with positive edge clock.
+Creating register for signal `\resulttransmit.\valid01d' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:365$34'.
+  created $dff cell `$procdff$11145' with positive edge clock.
+Creating register for signal `\resulttransmit.\valid10d' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:365$34'.
+  created $dff cell `$procdff$11146' with positive edge clock.
+Creating register for signal `\paj_boundtop_hierarchy_no_mem.\oldresultid' using process `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:261$30'.
+  created $dff cell `$procdff$11147' with positive edge clock.
+Creating register for signal `\paj_boundtop_hierarchy_no_mem.\reset' using process `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:261$30'.
+  created $dff cell `$procdff$11148' with positive edge clock.
+Creating register for signal `\paj_boundtop_hierarchy_no_mem.\peeklatch' using process `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:261$30'.
+  created $dff cell `$procdff$11149' with positive edge clock.
+
+3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\resultcounter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2808$464'.
+Removing empty process `resultcounter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2808$464'.
+Found and cleaned up 1 empty switch in `\spram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2780$458'.
+Removing empty process `spram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2780$458'.
+Found and cleaned up 36 empty switches in `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2553$403'.
+Removing empty process `listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2553$403'.
+Found and cleaned up 1 empty switch in `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2524$401'.
+Removing empty process `listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2524$401'.
+Found and cleaned up 3 empty switches in `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2501$397'.
+Removing empty process `listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2501$397'.
+Found and cleaned up 10 empty switches in `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+Removing empty process `sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2259$360'.
+Found and cleaned up 7 empty switches in `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2220$337'.
+Removing empty process `sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2220$337'.
+Found and cleaned up 4 empty switches in `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2122$306'.
+Removing empty process `rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2122$306'.
+Found and cleaned up 3 empty switches in `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303'.
+Removing empty process `resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2012$303'.
+Found and cleaned up 1 empty switch in `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+Removing empty process `resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1964$301'.
+Found and cleaned up 11 empty switches in `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1737$287'.
+Removing empty process `sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1737$287'.
+Found and cleaned up 1 empty switch in `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1717$285'.
+Removing empty process `sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1717$285'.
+Found and cleaned up 11 empty switches in `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1512$271'.
+Removing empty process `vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1512$271'.
+Found and cleaned up 1 empty switch in `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1493$269'.
+Removing empty process `vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1493$269'.
+Found and cleaned up 4 empty switches in `\onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1401$262'.
+Removing empty process `onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1401$262'.
+Found and cleaned up 1 empty switch in `\onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1386$260'.
+Removing empty process `onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1386$260'.
+Found and cleaned up 61 empty switches in `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71'.
+Removing empty process `boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:783$71'.
+Found and cleaned up 2 empty switches in `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+Removing empty process `boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:684$62'.
+Found and cleaned up 3 empty switches in `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:409$40'.
+Removing empty process `resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:409$40'.
+Found and cleaned up 5 empty switches in `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:365$34'.
+Removing empty process `resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:365$34'.
+Found and cleaned up 3 empty switches in `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:261$30'.
+Removing empty process `paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:261$30'.
+Found and cleaned up 2 empty switches in `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:237$12'.
+Removing empty process `paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:237$12'.
+Cleaned up 173 empty switches.
+
+3.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module resultcounter.
+<suppressed ~5 debug messages>
+Optimizing module spram.
+<suppressed ~1 debug messages>
+Optimizing module listhandler.
+<suppressed ~930 debug messages>
+Optimizing module sortedstack.
+<suppressed ~18 debug messages>
+Optimizing module rayinterface.
+<suppressed ~6 debug messages>
+Optimizing module resultinterface.
+<suppressed ~120 debug messages>
+Optimizing module sramcontroller.
+<suppressed ~226 debug messages>
+Optimizing module spramblock.
+Optimizing module vblockramcontroller.
+<suppressed ~123 debug messages>
+Optimizing module onlyonecycle.
+<suppressed ~30 debug messages>
+Optimizing module boundcontroller.
+<suppressed ~897 debug messages>
+Optimizing module resulttransmit.
+<suppressed ~52 debug messages>
+Optimizing module paj_boundtop_hierarchy_no_mem.
+<suppressed ~7 debug messages>
+
+4. Executing OPT pass (performing simple optimizations).
+
+4.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module resultcounter.
+Optimizing module spram.
+Optimizing module listhandler.
+Optimizing module sortedstack.
+Optimizing module rayinterface.
+Optimizing module resultinterface.
+Optimizing module sramcontroller.
+Optimizing module spramblock.
+Optimizing module vblockramcontroller.
+Optimizing module onlyonecycle.
+Optimizing module boundcontroller.
+Optimizing module resulttransmit.
+Optimizing module paj_boundtop_hierarchy_no_mem.
+
+4.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\resultcounter'.
+Finding identical cells in module `\spram'.
+Finding identical cells in module `\listhandler'.
+<suppressed ~837 debug messages>
+Finding identical cells in module `\sortedstack'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\rayinterface'.
+Finding identical cells in module `\resultinterface'.
+<suppressed ~183 debug messages>
+Finding identical cells in module `\sramcontroller'.
+<suppressed ~585 debug messages>
+Finding identical cells in module `\spramblock'.
+Finding identical cells in module `\vblockramcontroller'.
+<suppressed ~234 debug messages>
+Finding identical cells in module `\onlyonecycle'.
+<suppressed ~48 debug messages>
+Finding identical cells in module `\boundcontroller'.
+<suppressed ~1785 debug messages>
+Finding identical cells in module `\resulttransmit'.
+<suppressed ~177 debug messages>
+Finding identical cells in module `\paj_boundtop_hierarchy_no_mem'.
+Removed a total of 1284 cells.
+
+4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \resultcounter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \spram..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \listhandler..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$1475.
+    dead port 1/2 on $mux $procmux$1469.
+    dead port 1/2 on $mux $procmux$1466.
+Running muxtree optimizer on module \sortedstack..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$2000.
+    dead port 1/2 on $mux $procmux$1994.
+    dead port 1/2 on $mux $procmux$1991.
+    dead port 1/2 on $mux $procmux$1985.
+    dead port 1/2 on $mux $procmux$1982.
+    dead port 1/2 on $mux $procmux$1979.
+    dead port 1/2 on $mux $procmux$1973.
+    dead port 1/2 on $mux $procmux$1970.
+    dead port 1/2 on $mux $procmux$1967.
+    dead port 1/2 on $mux $procmux$1964.
+    dead port 1/2 on $mux $procmux$1958.
+    dead port 1/2 on $mux $procmux$1955.
+    dead port 1/2 on $mux $procmux$1952.
+    dead port 1/2 on $mux $procmux$1949.
+    dead port 1/2 on $mux $procmux$1946.
+    dead port 1/2 on $mux $procmux$1940.
+    dead port 1/2 on $mux $procmux$1937.
+    dead port 1/2 on $mux $procmux$1934.
+    dead port 1/2 on $mux $procmux$1931.
+    dead port 1/2 on $mux $procmux$1928.
+    dead port 1/2 on $mux $procmux$1925.
+    dead port 1/2 on $mux $procmux$1872.
+    dead port 1/2 on $mux $procmux$1855.
+    dead port 1/2 on $mux $procmux$1835.
+    dead port 1/2 on $mux $procmux$1812.
+    dead port 1/2 on $mux $procmux$1786.
+    dead port 1/2 on $mux $procmux$1725.
+    dead port 1/2 on $mux $procmux$1708.
+    dead port 1/2 on $mux $procmux$1688.
+    dead port 1/2 on $mux $procmux$1665.
+    dead port 1/2 on $mux $procmux$1639.
+    dead port 1/2 on $mux $procmux$1578.
+    dead port 1/2 on $mux $procmux$1561.
+    dead port 1/2 on $mux $procmux$1541.
+    dead port 1/2 on $mux $procmux$1518.
+    dead port 1/2 on $mux $procmux$1492.
+Running muxtree optimizer on module \rayinterface..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \resultinterface..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \sramcontroller..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \spramblock..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \vblockramcontroller..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \onlyonecycle..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \boundcontroller..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \resulttransmit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \paj_boundtop_hierarchy_no_mem..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$5334.
+Removed 40 multiplexer ports.
+<suppressed ~220 debug messages>
+
+4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \resultcounter.
+  Optimizing cells in module \spram.
+  Optimizing cells in module \listhandler.
+    New ctrl vector for $pmux cell $procmux$1387: $auto$opt_reduce.cc:134:opt_mux$11151
+    New ctrl vector for $pmux cell $procmux$1382: $auto$opt_reduce.cc:134:opt_mux$11153
+    New ctrl vector for $pmux cell $procmux$1392: $auto$opt_reduce.cc:134:opt_mux$11155
+    New ctrl vector for $pmux cell $procmux$1416: { $procmux$1433_CMP $procmux$1422_CMP }
+    New ctrl vector for $pmux cell $procmux$1411: $auto$opt_reduce.cc:134:opt_mux$11157
+    New ctrl vector for $pmux cell $procmux$1432: $procmux$1433_CMP
+    New ctrl vector for $pmux cell $procmux$1427: $procmux$1433_CMP
+    New ctrl vector for $pmux cell $procmux$1421: { $procmux$1433_CMP $procmux$1422_CMP }
+    New ctrl vector for $pmux cell $procmux$1402: $procmux$1422_CMP
+    New ctrl vector for $pmux cell $procmux$1406: { $procmux$1433_CMP $procmux$1422_CMP }
+  Optimizing cells in module \listhandler.
+  Optimizing cells in module \sortedstack.
+  Optimizing cells in module \rayinterface.
+  Optimizing cells in module \resultinterface.
+    New ctrl vector for $pmux cell $procmux$2115: { $procmux$2211_CMP $procmux$2169_CMP $procmux$2224_CMP $procmux$2201_CMP $procmux$2160_CMP $procmux$2216_CMP $procmux$2194_CMP $procmux$2154_CMP }
+    New ctrl vector for $pmux cell $procmux$2104: $procmux$2154_CMP
+  Optimizing cells in module \resultinterface.
+  Optimizing cells in module \sramcontroller.
+    New ctrl vector for $pmux cell $procmux$2558: $auto$opt_reduce.cc:134:opt_mux$11159
+    New ctrl vector for $pmux cell $procmux$2510: { $procmux$2579_CMP $procmux$2578_CMP $procmux$2577_CMP $procmux$2576_CMP $procmux$2583_CMP }
+    New ctrl vector for $pmux cell $procmux$2506: $procmux$2578_CMP
+    New ctrl vector for $pmux cell $procmux$2499: $procmux$2583_CMP
+    New ctrl vector for $pmux cell $procmux$2542: { $procmux$2578_CMP $auto$opt_reduce.cc:134:opt_mux$11161 }
+    New ctrl vector for $pmux cell $procmux$2566: $procmux$2578_CMP
+    New ctrl vector for $pmux cell $procmux$2526: $auto$opt_reduce.cc:134:opt_mux$11163
+    New ctrl vector for $pmux cell $procmux$2550: $auto$opt_reduce.cc:134:opt_mux$11165
+    New ctrl vector for $pmux cell $procmux$2534: $auto$opt_reduce.cc:134:opt_mux$11167
+    New ctrl vector for $pmux cell $procmux$2518: { $procmux$2579_CMP $procmux$2578_CMP $procmux$2577_CMP $procmux$2576_CMP $procmux$2583_CMP }
+    New ctrl vector for $pmux cell $procmux$2574: $procmux$2578_CMP
+  Optimizing cells in module \sramcontroller.
+  Optimizing cells in module \spramblock.
+  Optimizing cells in module \vblockramcontroller.
+    New ctrl vector for $pmux cell $procmux$2737: $auto$opt_reduce.cc:134:opt_mux$11169
+    New ctrl vector for $pmux cell $procmux$2729: { $procmux$2766_CMP $procmux$2757_CMP $procmux$2756_CMP $procmux$2755_CMP $procmux$2754_CMP }
+    New ctrl vector for $pmux cell $procmux$2753: $procmux$2756_CMP
+    New ctrl vector for $pmux cell $procmux$2725: $procmux$2756_CMP
+    New ctrl vector for $pmux cell $procmux$2719: $procmux$2766_CMP
+    New ctrl vector for $pmux cell $procmux$2745: $auto$opt_reduce.cc:134:opt_mux$11171
+  Optimizing cells in module \vblockramcontroller.
+  Optimizing cells in module \onlyonecycle.
+    New ctrl vector for $pmux cell $procmux$2811: $procmux$2813_CMP
+    New ctrl vector for $pmux cell $procmux$2806: { $procmux$2813_CMP $procmux$2812_CMP }
+    New ctrl vector for $pmux cell $procmux$2802: $procmux$2813_CMP
+  Optimizing cells in module \onlyonecycle.
+  Optimizing cells in module \boundcontroller.
+    New ctrl vector for $pmux cell $procmux$4781: { }
+    New ctrl vector for $pmux cell $procmux$4769: $procmux$4952_CMP
+    New ctrl vector for $pmux cell $procmux$4757: $auto$opt_reduce.cc:134:opt_mux$11173
+    New ctrl vector for $pmux cell $procmux$4745: $auto$opt_reduce.cc:134:opt_mux$11175
+    New ctrl vector for $pmux cell $procmux$4857: $procmux$4888_CMP
+    New ctrl vector for $pmux cell $procmux$4700: { $procmux$4719_CMP $procmux$5061_CMP $procmux$4952_CMP $procmux$4716_CMP $procmux$5060_CMP $procmux$4714_CMP $procmux$4713_CMP $procmux$4712_CMP $procmux$5059_CMP $procmux$4903_CMP $procmux$4890_CMP $procmux$4951_CMP $procmux$4707_CMP $procmux$4888_CMP $procmux$4887_CMP $procmux$4704_CMP $procmux$4975_CMP $procmux$4966_CMP $procmux$4701_CMP }
+    New ctrl vector for $pmux cell $procmux$4902: $procmux$4903_CMP
+    New ctrl vector for $pmux cell $procmux$4848: $procmux$4888_CMP
+    New ctrl vector for $pmux cell $procmux$4678: { $procmux$4719_CMP $procmux$5059_CMP $procmux$4966_CMP $auto$opt_reduce.cc:134:opt_mux$11177 }
+    New ctrl vector for $pmux cell $procmux$3028: $procmux$4966_CMP
+    New ctrl vector for $pmux cell $procmux$4876: { $auto$opt_reduce.cc:134:opt_mux$11179 $procmux$4887_CMP }
+    New ctrl vector for $pmux cell $procmux$4886: $auto$opt_reduce.cc:134:opt_mux$11181
+    New ctrl vector for $pmux cell $procmux$4615: $auto$opt_reduce.cc:134:opt_mux$11183
+    New ctrl vector for $pmux cell $procmux$4656: { $procmux$4719_CMP $procmux$5061_CMP $procmux$4952_CMP $procmux$4716_CMP $procmux$5060_CMP $auto$opt_reduce.cc:134:opt_mux$11185 $procmux$4712_CMP $procmux$5059_CMP $procmux$4903_CMP $procmux$4890_CMP $procmux$4951_CMP $procmux$4707_CMP $procmux$4888_CMP $procmux$4887_CMP $procmux$4704_CMP $procmux$4975_CMP $procmux$4966_CMP $procmux$4701_CMP }
+    New ctrl vector for $pmux cell $procmux$2839: { }
+    New ctrl vector for $pmux cell $procmux$2823: { }
+    New ctrl vector for $pmux cell $procmux$4868: $procmux$4951_CMP
+    New ctrl vector for $pmux cell $procmux$5058: $procmux$5060_CMP
+    New ctrl vector for $pmux cell $procmux$5044: { }
+    New ctrl vector for $pmux cell $procmux$4628: { $procmux$4714_CMP $procmux$4887_CMP $procmux$4966_CMP }
+    New ctrl vector for $pmux cell $procmux$5029: { $procmux$5060_CMP $procmux$5059_CMP }
+    New ctrl vector for $pmux cell $procmux$5015: $procmux$5059_CMP
+    New ctrl vector for $pmux cell $procmux$5001: $procmux$5059_CMP
+    New ctrl vector for $pmux cell $procmux$4987: $procmux$5059_CMP
+    New ctrl vector for $pmux cell $procmux$4965: $procmux$4966_CMP
+    New ctrl vector for $pmux cell $procmux$4839: { }
+    New ctrl vector for $pmux cell $procmux$4960: $procmux$4966_CMP
+    New ctrl vector for $pmux cell $procmux$4955: $procmux$4966_CMP
+    New ctrl vector for $pmux cell $procmux$4950: { }
+    New ctrl vector for $pmux cell $procmux$4939: $procmux$4951_CMP
+  Optimizing cells in module \boundcontroller.
+  Optimizing cells in module \resulttransmit.
+    New ctrl vector for $pmux cell $procmux$5249: { $procmux$5256_CMP $procmux$5255_CMP $procmux$5254_CMP $procmux$5253_CMP $procmux$5252_CMP $procmux$5251_CMP $procmux$5250_CMP }
+    New ctrl vector for $pmux cell $procmux$5238: { $auto$opt_reduce.cc:134:opt_mux$11189 $auto$opt_reduce.cc:134:opt_mux$11187 }
+    New ctrl vector for $pmux cell $procmux$5228: $auto$opt_reduce.cc:134:opt_mux$11191
+    New ctrl vector for $pmux cell $procmux$5217: { $procmux$5257_CMP $procmux$5256_CMP $procmux$5255_CMP $procmux$5253_CMP $procmux$5252_CMP $procmux$5251_CMP $auto$opt_reduce.cc:134:opt_mux$11193 }
+  Optimizing cells in module \resulttransmit.
+  Optimizing cells in module \paj_boundtop_hierarchy_no_mem.
+Performed a total of 66 changes.
+
+4.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\resultcounter'.
+Finding identical cells in module `\spram'.
+Finding identical cells in module `\listhandler'.
+<suppressed ~9 debug messages>
+Finding identical cells in module `\sortedstack'.
+Finding identical cells in module `\rayinterface'.
+Finding identical cells in module `\resultinterface'.
+Finding identical cells in module `\sramcontroller'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\spramblock'.
+Finding identical cells in module `\vblockramcontroller'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\onlyonecycle'.
+Finding identical cells in module `\boundcontroller'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\resulttransmit'.
+Finding identical cells in module `\paj_boundtop_hierarchy_no_mem'.
+Removed a total of 8 cells.
+
+4.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$11018 ($dff) from module resultcounter (D = $procmux$477_Y, Q = \count, rval = 4'1000).
+Adding EN signal on $auto$ff.cc:262:slice$11194 ($sdff) from module resultcounter (D = $sub$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2819$471_Y [3:0], Q = \count).
+Adding SRST signal on $procdff$11019 ($dff) from module resultcounter (D = $procmux$472_Y, Q = \curr, rval = 2'00).
+Adding EN signal on $auto$ff.cc:262:slice$11196 ($sdff) from module resultcounter (D = \resultID, Q = \curr).
+Adding EN signal on $procdff$11022 ($dff) from module spram (D = \mem1, Q = \mem2).
+Setting constant 0-bit at position 0 on $procdff$11020 ($dff) from module spram.
+Setting constant 0-bit at position 1 on $procdff$11020 ($dff) from module spram.
+Setting constant 0-bit at position 2 on $procdff$11020 ($dff) from module spram.
+Setting constant 0-bit at position 3 on $procdff$11020 ($dff) from module spram.
+Setting constant 0-bit at position 4 on $procdff$11020 ($dff) from module spram.
+Setting constant 0-bit at position 5 on $procdff$11020 ($dff) from module spram.
+Setting constant 0-bit at position 6 on $procdff$11020 ($dff) from module spram.
+Setting constant 0-bit at position 7 on $procdff$11020 ($dff) from module spram.
+Setting constant 0-bit at position 8 on $procdff$11020 ($dff) from module spram.
+Setting constant 0-bit at position 9 on $procdff$11020 ($dff) from module spram.
+Setting constant 0-bit at position 10 on $procdff$11020 ($dff) from module spram.
+Setting constant 0-bit at position 11 on $procdff$11020 ($dff) from module spram.
+Setting constant 0-bit at position 12 on $procdff$11020 ($dff) from module spram.
+Adding EN signal on $procdff$11021 ($dff) from module spram (D = $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2785$460_Y, Q = \mem1).
+Adding SRST signal on $procdff$11023 ($dff) from module listhandler (D = \next_state, Q = \state, rval = 2'00).
+Adding SRST signal on $procdff$11031 ($dff) from module listhandler (D = \temp_lvempty, Q = \lvempty, rval = 3'001).
+Adding SRST signal on $procdff$11027 ($dff) from module listhandler (D = \temp_writelevel, Q = \writelevel, rval = 2'00).
+Adding SRST signal on $procdff$11026 ($dff) from module listhandler (D = \temp_readlevel, Q = \readlevel, rval = 2'00).
+Adding EN signal on $procdff$11025 ($dff) from module listhandler (D = \temp_peekstate, Q = \peekstate).
+Adding SRST signal on $procdff$11024 ($dff) from module listhandler (D = \temp_busy, Q = \busy, rval = 1'0).
+Adding SRST signal on $procdff$11030 ($dff) from module listhandler (D = \temp_offset2, Q = \offset2, rval = 3'000).
+Adding SRST signal on $procdff$11029 ($dff) from module listhandler (D = \temp_offset1, Q = \offset1, rval = 3'000).
+Adding SRST signal on $procdff$11028 ($dff) from module listhandler (D = \temp_offset0, Q = \offset0, rval = 3'000).
+Adding SRST signal on $procdff$11055 ($dff) from module sortedstack (D = $procmux$1503_Y, Q = \full7, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$11209 ($sdff) from module sortedstack (D = $procmux$1501_Y, Q = \full7).
+Adding SRST signal on $procdff$11054 ($dff) from module sortedstack (D = $procmux$1529_Y, Q = \full6, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$11215 ($sdff) from module sortedstack (D = $procmux$1527_Y, Q = \full6).
+Adding SRST signal on $procdff$11053 ($dff) from module sortedstack (D = $procmux$1552_Y, Q = \full5, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$11221 ($sdff) from module sortedstack (D = $procmux$1550_Y, Q = \full5).
+Adding SRST signal on $procdff$11052 ($dff) from module sortedstack (D = $procmux$1572_Y, Q = \full4, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$11227 ($sdff) from module sortedstack (D = $procmux$1570_Y, Q = \full4).
+Adding SRST signal on $procdff$11051 ($dff) from module sortedstack (D = $procmux$1589_Y, Q = \full3, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$11233 ($sdff) from module sortedstack (D = $procmux$1587_Y, Q = \full3).
+Adding SRST signal on $procdff$11050 ($dff) from module sortedstack (D = $procmux$1603_Y, Q = \full2, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$11239 ($sdff) from module sortedstack (D = $procmux$1601_Y, Q = \full2).
+Adding SRST signal on $procdff$11049 ($dff) from module sortedstack (D = $procmux$1614_Y, Q = \full1, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$11245 ($sdff) from module sortedstack (D = $procmux$1612_Y, Q = \full1).
+Adding SRST signal on $procdff$11048 ($dff) from module sortedstack (D = $procmux$1622_Y, Q = \full0, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$11251 ($sdff) from module sortedstack (D = 1'1, Q = \full0).
+Adding SRST signal on $procdff$11047 ($dff) from module sortedstack (D = $procmux$1650_Y, Q = \data7, rval = 13'0000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$11255 ($sdff) from module sortedstack (D = $procmux$1648_Y, Q = \data7).
+Adding SRST signal on $procdff$11046 ($dff) from module sortedstack (D = $procmux$1676_Y, Q = \data6, rval = 13'0000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$11261 ($sdff) from module sortedstack (D = $procmux$1674_Y, Q = \data6).
+Adding SRST signal on $procdff$11045 ($dff) from module sortedstack (D = $procmux$1699_Y, Q = \data5, rval = 13'0000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$11267 ($sdff) from module sortedstack (D = $procmux$1697_Y, Q = \data5).
+Adding SRST signal on $procdff$11043 ($dff) from module sortedstack (D = $procmux$1736_Y, Q = \data3, rval = 13'0000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$11273 ($sdff) from module sortedstack (D = $procmux$1734_Y, Q = \data3).
+Adding SRST signal on $procdff$11044 ($dff) from module sortedstack (D = $procmux$1719_Y, Q = \data4, rval = 13'0000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$11279 ($sdff) from module sortedstack (D = $procmux$1717_Y, Q = \data4).
+Adding SRST signal on $procdff$11032 ($dff) from module sortedstack (D = $procmux$1916_Y, Q = \key0, rval = 0).
+Adding EN signal on $auto$ff.cc:262:slice$11285 ($sdff) from module sortedstack (D = \keyin, Q = \key0).
+Adding SRST signal on $procdff$11033 ($dff) from module sortedstack (D = $procmux$1908_Y, Q = \key1, rval = 0).
+Adding EN signal on $auto$ff.cc:262:slice$11289 ($sdff) from module sortedstack (D = $procmux$1906_Y, Q = \key1).
+Adding SRST signal on $procdff$11034 ($dff) from module sortedstack (D = $procmux$1897_Y, Q = \key2, rval = 0).
+Adding EN signal on $auto$ff.cc:262:slice$11295 ($sdff) from module sortedstack (D = $procmux$1895_Y, Q = \key2).
+Adding SRST signal on $procdff$11035 ($dff) from module sortedstack (D = $procmux$1883_Y, Q = \key3, rval = 0).
+Adding EN signal on $auto$ff.cc:262:slice$11301 ($sdff) from module sortedstack (D = $procmux$1881_Y, Q = \key3).
+Adding SRST signal on $procdff$11036 ($dff) from module sortedstack (D = $procmux$1866_Y, Q = \key4, rval = 0).
+Adding EN signal on $auto$ff.cc:262:slice$11307 ($sdff) from module sortedstack (D = $procmux$1864_Y, Q = \key4).
+Adding SRST signal on $procdff$11037 ($dff) from module sortedstack (D = $procmux$1846_Y, Q = \key5, rval = 0).
+Adding EN signal on $auto$ff.cc:262:slice$11313 ($sdff) from module sortedstack (D = $procmux$1844_Y, Q = \key5).
+Adding SRST signal on $procdff$11038 ($dff) from module sortedstack (D = $procmux$1823_Y, Q = \key6, rval = 0).
+Adding EN signal on $auto$ff.cc:262:slice$11319 ($sdff) from module sortedstack (D = $procmux$1821_Y, Q = \key6).
+Adding SRST signal on $procdff$11039 ($dff) from module sortedstack (D = $procmux$1797_Y, Q = \key7, rval = 0).
+Adding EN signal on $auto$ff.cc:262:slice$11325 ($sdff) from module sortedstack (D = $procmux$1795_Y, Q = \key7).
+Adding SRST signal on $procdff$11040 ($dff) from module sortedstack (D = $procmux$1769_Y, Q = \data0, rval = 13'0000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$11331 ($sdff) from module sortedstack (D = \datain, Q = \data0).
+Adding SRST signal on $procdff$11041 ($dff) from module sortedstack (D = $procmux$1761_Y, Q = \data1, rval = 13'0000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$11335 ($sdff) from module sortedstack (D = $procmux$1759_Y, Q = \data1).
+Adding SRST signal on $procdff$11042 ($dff) from module sortedstack (D = $procmux$1750_Y, Q = \data2, rval = 13'0000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$11341 ($sdff) from module sortedstack (D = $procmux$1748_Y, Q = \data2).
+Adding SRST signal on $procdff$11063 ($dff) from module rayinterface (D = \rgAddrValid, Q = \rgAddrValidl, rval = 1'0).
+Adding SRST signal on $procdff$11062 ($dff) from module rayinterface (D = \rgWE, Q = \rgWEl, rval = 3'000).
+Adding SRST signal on $procdff$11061 ($dff) from module rayinterface (D = \rgAddr, Q = \rgAddrl, rval = 4'0000).
+Adding SRST signal on $procdff$11056 ($dff) from module rayinterface (D = $procmux$2018_Y, Q = \raydata [0], rval = 1'0).
+Adding SRST signal on $procdff$11056 ($dff) from module rayinterface (D = $procmux$2006_Y, Q = \raydata [31:1], rval = 31'0000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$11351 ($sdff) from module rayinterface (D = \rgDatal [31:1], Q = \raydata [31:1]).
+Adding EN signal on $auto$ff.cc:262:slice$11350 ($sdff) from module rayinterface (D = $procmux$2018_Y, Q = \raydata [0]).
+Adding SRST signal on $procdff$11057 ($dff) from module rayinterface (D = $procmux$2056_Y, Q = \rayaddr, rval = 4'0000).
+Adding EN signal on $auto$ff.cc:262:slice$11358 ($sdff) from module rayinterface (D = $procmux$2056_Y, Q = \rayaddr).
+Adding SRST signal on $procdff$11058 ($dff) from module rayinterface (D = $procmux$2036_Y, Q = \raywe, rval = 3'000).
+Adding SRST signal on $procdff$11059 ($dff) from module rayinterface (D = $procmux$2047_Y, Q = \rgDone, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$11363 ($sdff) from module rayinterface (D = $procmux$2047_Y, Q = \rgDone).
+Adding SRST signal on $procdff$11060 ($dff) from module rayinterface (D = \rgData, Q = \rgDatal, rval = 0).
+Adding SRST signal on $procdff$11081 ($dff) from module resultinterface (D = \temp_hit3b, Q = \hit3b, rval = 1'0).
+Adding SRST signal on $procdff$11080 ($dff) from module resultinterface (D = \temp_hit2b, Q = \hit2b, rval = 1'0).
+Adding SRST signal on $procdff$11079 ($dff) from module resultinterface (D = \temp_hit1b, Q = \hit1b, rval = 1'0).
+Adding SRST signal on $procdff$11078 ($dff) from module resultinterface (D = \temp_id3b, Q = \id3b, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11077 ($dff) from module resultinterface (D = \temp_id2b, Q = \id2b, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11076 ($dff) from module resultinterface (D = \temp_id1b, Q = \id1b, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11075 ($dff) from module resultinterface (D = \temp_v3b, Q = \v3b, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11074 ($dff) from module resultinterface (D = \temp_v2b, Q = \v2b, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11073 ($dff) from module resultinterface (D = \temp_v1b, Q = \v1b, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11072 ($dff) from module resultinterface (D = \temp_u3b, Q = \u3b, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11071 ($dff) from module resultinterface (D = \temp_u2b, Q = \u2b, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11070 ($dff) from module resultinterface (D = \temp_u1b, Q = \u1b, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11069 ($dff) from module resultinterface (D = \temp_t3b, Q = \t3b, rval = 0).
+Adding SRST signal on $procdff$11068 ($dff) from module resultinterface (D = \temp_t2b, Q = \t2b, rval = 0).
+Adding SRST signal on $procdff$11067 ($dff) from module resultinterface (D = \temp_t1b, Q = \t1b, rval = 0).
+Adding SRST signal on $procdff$11066 ($dff) from module resultinterface (D = \temp_resultID, Q = \resultID, rval = 2'00).
+Adding SRST signal on $procdff$11065 ($dff) from module resultinterface (D = \temp_newdata, Q = \newdata, rval = 1'0).
+Adding SRST signal on $procdff$11064 ($dff) from module resultinterface (D = \next_state, Q = \state, rval = 4'0000).
+Adding SRST signal on $procdff$11086 ($dff) from module sramcontroller (D = \temp_waddress, Q = \waddress, rval = 18'000000000000000000).
+Adding SRST signal on $procdff$11085 ($dff) from module sramcontroller (D = \temp_datavalid, Q = \datavalid, rval = 1'0).
+Adding SRST signal on $procdff$11084 ($dff) from module sramcontroller (D = \temp_data, Q = \data, rval = 64'0000000000000000000000000000000000000000000000000000000000000000).
+Adding EN signal on $procdff$11083 ($dff) from module sramcontroller (D = \temp_statepeek, Q = \statepeek).
+Adding SRST signal on $procdff$11082 ($dff) from module sramcontroller (D = \next_state, Q = \state, rval = 3'000).
+Adding SRST signal on $procdff$11090 ($dff) from module vblockramcontroller (D = \temp_waddr, Q = \waddr, rval = 10'0000000000).
+Adding SRST signal on $procdff$11089 ($dff) from module vblockramcontroller (D = \temp_datavalid, Q = \datavalid, rval = 1'0).
+Adding SRST signal on $procdff$11088 ($dff) from module vblockramcontroller (D = \temp_data, Q = \data, rval = 0).
+Adding SRST signal on $procdff$11087 ($dff) from module vblockramcontroller (D = \next_state, Q = \state, rval = 3'000).
+Adding SRST signal on $procdff$11092 ($dff) from module onlyonecycle (D = \temp_count, Q = \count, rval = 1'0).
+Adding SRST signal on $procdff$11091 ($dff) from module onlyonecycle (D = \next_state, Q = \state, rval = 2'00).
+Adding SRST signal on $procdff$11132 ($dff) from module boundcontroller (D = \temp_maskcount, Q = \maskcount, rval = 2'00).
+Adding SRST signal on $procdff$11131 ($dff) from module boundcontroller (D = \temp_subcount, Q = \subcount, rval = 2'00).
+Adding SRST signal on $procdff$11130 ($dff) from module boundcontroller (D = \temp_triDatalatch, Q = \triDatalatch, rval = 64'0000000000000000000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$11129 ($dff) from module boundcontroller (D = \temp_count, Q = \count, rval = 14'00000000000000).
+Adding SRST signal on $procdff$11128 ($dff) from module boundcontroller (D = \temp_raygroupoutl, Q = \raygroupoutl, rval = 2'00).
+Adding SRST signal on $procdff$11127 ($dff) from module boundcontroller (D = \temp_resetcount, Q = \resetcount, rval = 3'000).
+Adding SRST signal on $procdff$11126 ($dff) from module boundcontroller (D = \temp_startAddr, Q = \startAddr, rval = 12'000000000000).
+Adding SRST signal on $procdff$11125 ($dff) from module boundcontroller (D = \temp_addr, Q = \addr, rval = 12'000000000000).
+Adding SRST signal on $procdff$11124 ($dff) from module boundcontroller (D = \temp_cts, Q = \cts, rval = 1'0).
+Adding EN signal on $procdff$11123 ($dff) from module boundcontroller (D = \temp_statepeek, Q = \statepeek).
+Adding SRST signal on $procdff$11122 ($dff) from module boundcontroller (D = \temp_passCTSout, Q = \passCTSout, rval = 1'0).
+Adding SRST signal on $procdff$11121 ($dff) from module boundcontroller (D = $procmux$5141_Y, Q = \resetcnt, rval = 1'0).
+Adding SRST signal on $procdff$11120 ($dff) from module boundcontroller (D = \temp_hit3, Q = \hit3, rval = 1'0).
+Adding SRST signal on $procdff$11119 ($dff) from module boundcontroller (D = \temp_hit2, Q = \hit2, rval = 1'0).
+Adding SRST signal on $procdff$11118 ($dff) from module boundcontroller (D = \temp_hit1, Q = \hit1, rval = 1'0).
+Adding SRST signal on $procdff$11117 ($dff) from module boundcontroller (D = \temp_id3, Q = \id3, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11116 ($dff) from module boundcontroller (D = \temp_id2, Q = \id2, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11115 ($dff) from module boundcontroller (D = \temp_id1, Q = \id1, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11114 ($dff) from module boundcontroller (D = \temp_v3, Q = \v3, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11113 ($dff) from module boundcontroller (D = \temp_v2, Q = \v2, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11112 ($dff) from module boundcontroller (D = \temp_v1, Q = \v1, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11111 ($dff) from module boundcontroller (D = \temp_u3, Q = \u3, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11110 ($dff) from module boundcontroller (D = \temp_u2, Q = \u2, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11109 ($dff) from module boundcontroller (D = \temp_u1, Q = \u1, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11108 ($dff) from module boundcontroller (D = \temp_t3, Q = \t3, rval = 0).
+Adding SRST signal on $procdff$11107 ($dff) from module boundcontroller (D = \temp_t2, Q = \t2, rval = 0).
+Adding SRST signal on $procdff$11106 ($dff) from module boundcontroller (D = \temp_t1, Q = \t1, rval = 0).
+Adding SRST signal on $procdff$11105 ($dff) from module boundcontroller (D = \temp_addrindvalid, Q = \addrindvalid, rval = 1'0).
+Adding SRST signal on $procdff$11104 ($dff) from module boundcontroller (D = \temp_addrind, Q = \addrind, rval = 10'0000000000).
+Adding SRST signal on $procdff$11103 ($dff) from module boundcontroller (D = \temp_lack, Q = \lack, rval = 1'0).
+Adding SRST signal on $procdff$11102 ($dff) from module boundcontroller (D = \temp_hitmask, Q = \hitmask, rval = 3'001).
+Adding SRST signal on $procdff$11101 ($dff) from module boundcontroller (D = \temp_boundNodeIDout, Q = \boundNodeIDout, rval = 10'0000000000).
+Adding SRST signal on $procdff$11100 ($dff) from module boundcontroller (D = \temp_baseaddress, Q = \baseaddress, rval = 2'00).
+Adding SRST signal on $procdff$11099 ($dff) from module boundcontroller (D = \temp_l0reset, Q = \l0reset, rval = 1'0).
+Adding SRST signal on $procdff$11098 ($dff) from module boundcontroller (D = \temp_busy, Q = \busy, rval = 1'0).
+Adding SRST signal on $procdff$11097 ($dff) from module boundcontroller (D = \next_state, Q = \state, rval = 5'00000).
+Adding SRST signal on $procdff$11096 ($dff) from module boundcontroller (D = \temp_tladdrvalid, Q = \tladdrvalid, rval = 1'0).
+Adding SRST signal on $procdff$11095 ($dff) from module boundcontroller (D = \temp_tladdr, Q = \tladdr, rval = 18'000000000000000000).
+Adding SRST signal on $procdff$11094 ($dff) from module boundcontroller (D = \temp_triID, Q = \triID, rval = 16'0000000000000000).
+Adding SRST signal on $procdff$11093 ($dff) from module boundcontroller (D = \temp_triIDvalid, Q = \triIDvalid, rval = 1'0).
+Setting constant 1-bit at position 0 on $auto$proc_dlatch.cc:427:proc_dlatch$9205 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 0 on $auto$proc_dlatch.cc:427:proc_dlatch$10243 ($dlatch) from module boundcontroller.
+Adding EN signal on $procdff$11146 ($dff) from module resulttransmit (D = \valid10, Q = \valid10d).
+Adding EN signal on $procdff$11145 ($dff) from module resulttransmit (D = \valid01, Q = \valid01d).
+Adding SRST signal on $procdff$11144 ($dff) from module resulttransmit (D = $procmux$5276_Y, Q = \pending10, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$11443 ($sdff) from module resulttransmit (D = 1'1, Q = \pending10).
+Adding SRST signal on $procdff$11143 ($dff) from module resulttransmit (D = $procmux$5281_Y, Q = \pending01, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$11445 ($sdff) from module resulttransmit (D = 1'1, Q = \pending01).
+Adding EN signal on $procdff$11142 ($dff) from module resulttransmit (D = \hit10c, Q = \hit10cl).
+Adding EN signal on $procdff$11141 ($dff) from module resulttransmit (D = \hit10b, Q = \hit10bl).
+Adding EN signal on $procdff$11140 ($dff) from module resulttransmit (D = \hit10a, Q = \hit10al).
+Adding EN signal on $procdff$11139 ($dff) from module resulttransmit (D = \hit01c, Q = \hit01cl).
+Adding EN signal on $procdff$11138 ($dff) from module resulttransmit (D = \hit01b, Q = \hit01bl).
+Adding SRST signal on $procdff$11134 ($dff) from module resulttransmit (D = \temp_rgResultReady, Q = \rgResultReady, rval = 1'0).
+Adding EN signal on $procdff$11137 ($dff) from module resulttransmit (D = \hit01a, Q = \hit01al).
+Adding SRST signal on $procdff$11136 ($dff) from module resulttransmit (D = \next_state, Q = \state, rval = 4'0000).
+Adding SRST signal on $procdff$11135 ($dff) from module resulttransmit (D = \temp_rgResultSource, Q = \rgResultSource, rval = 2'00).
+Adding SRST signal on $procdff$11133 ($dff) from module resulttransmit (D = \temp_rgResultData, Q = \rgResultData, rval = 0).
+Adding SRST signal on $procdff$11149 ($dff) from module paj_boundtop_hierarchy_no_mem (D = $procmux$5325_Y, Q = \peeklatch, rval = 104'00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$11481 ($sdff) from module paj_boundtop_hierarchy_no_mem (D = \peekdata, Q = \peeklatch).
+Adding SRST signal on $procdff$11148 ($dff) from module paj_boundtop_hierarchy_no_mem (D = $procmux$5320_Y, Q = \reset, rval = 1'0).
+Adding SRST signal on $procdff$11147 ($dff) from module paj_boundtop_hierarchy_no_mem (D = \resultid, Q = \oldresultid, rval = 2'00).
+
+4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \resultcounter..
+Finding unused cells or wires in module \spram..
+Finding unused cells or wires in module \listhandler..
+Finding unused cells or wires in module \sortedstack..
+Finding unused cells or wires in module \rayinterface..
+Finding unused cells or wires in module \resultinterface..
+Finding unused cells or wires in module \sramcontroller..
+Finding unused cells or wires in module \spramblock..
+Finding unused cells or wires in module \vblockramcontroller..
+Finding unused cells or wires in module \onlyonecycle..
+Finding unused cells or wires in module \boundcontroller..
+Finding unused cells or wires in module \resulttransmit..
+Finding unused cells or wires in module \paj_boundtop_hierarchy_no_mem..
+Removed 243 unused cells and 5046 unused wires.
+<suppressed ~269 debug messages>
+
+4.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boundcontroller.
+Optimizing module listhandler.
+Optimizing module onlyonecycle.
+Optimizing module paj_boundtop_hierarchy_no_mem.
+Optimizing module rayinterface.
+<suppressed ~3 debug messages>
+Optimizing module resultcounter.
+Optimizing module resultinterface.
+Optimizing module resulttransmit.
+Optimizing module sortedstack.
+<suppressed ~20 debug messages>
+Optimizing module spram.
+<suppressed ~1 debug messages>
+Optimizing module spramblock.
+Optimizing module sramcontroller.
+Optimizing module vblockramcontroller.
+
+4.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \boundcontroller..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \listhandler..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \onlyonecycle..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \paj_boundtop_hierarchy_no_mem..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \rayinterface..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \resultcounter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \resultinterface..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \resulttransmit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \sortedstack..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \spram..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \spramblock..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sramcontroller..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \vblockramcontroller..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~108 debug messages>
+
+4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \boundcontroller.
+  Optimizing cells in module \listhandler.
+  Optimizing cells in module \onlyonecycle.
+  Optimizing cells in module \paj_boundtop_hierarchy_no_mem.
+  Optimizing cells in module \rayinterface.
+  Optimizing cells in module \resultcounter.
+  Optimizing cells in module \resultinterface.
+  Optimizing cells in module \resulttransmit.
+  Optimizing cells in module \sortedstack.
+  Optimizing cells in module \spram.
+  Optimizing cells in module \spramblock.
+  Optimizing cells in module \sramcontroller.
+  Optimizing cells in module \vblockramcontroller.
+Performed a total of 0 changes.
+
+4.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boundcontroller'.
+Finding identical cells in module `\listhandler'.
+Finding identical cells in module `\onlyonecycle'.
+Finding identical cells in module `\paj_boundtop_hierarchy_no_mem'.
+Finding identical cells in module `\rayinterface'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\resultcounter'.
+Finding identical cells in module `\resultinterface'.
+Finding identical cells in module `\resulttransmit'.
+<suppressed ~27 debug messages>
+Finding identical cells in module `\sortedstack'.
+<suppressed ~90 debug messages>
+Finding identical cells in module `\spram'.
+Finding identical cells in module `\spramblock'.
+Finding identical cells in module `\sramcontroller'.
+Finding identical cells in module `\vblockramcontroller'.
+Removed a total of 41 cells.
+
+4.13. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 1-bit at position 0 on $auto$proc_dlatch.cc:427:proc_dlatch$9868 ($dlatch) from module boundcontroller.
+Setting constant 0-bit at position 0 on $auto$proc_dlatch.cc:427:proc_dlatch$8921 ($dlatch) from module boundcontroller.
+Setting constant 0-bit at position 1 on $auto$proc_dlatch.cc:427:proc_dlatch$8921 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 0 on $auto$proc_dlatch.cc:427:proc_dlatch$10205 ($dlatch) from module boundcontroller.
+Setting constant 0-bit at position 0 on $auto$proc_dlatch.cc:427:proc_dlatch$10047 ($dlatch) from module boundcontroller.
+Setting constant 0-bit at position 0 on $auto$proc_dlatch.cc:427:proc_dlatch$10012 ($dlatch) from module boundcontroller.
+
+4.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boundcontroller..
+Finding unused cells or wires in module \listhandler..
+Finding unused cells or wires in module \onlyonecycle..
+Finding unused cells or wires in module \paj_boundtop_hierarchy_no_mem..
+Finding unused cells or wires in module \rayinterface..
+Finding unused cells or wires in module \resultcounter..
+Finding unused cells or wires in module \resultinterface..
+Finding unused cells or wires in module \resulttransmit..
+Finding unused cells or wires in module \sortedstack..
+Finding unused cells or wires in module \spram..
+Finding unused cells or wires in module \spramblock..
+Finding unused cells or wires in module \sramcontroller..
+Finding unused cells or wires in module \vblockramcontroller..
+Removed 27 unused cells and 69 unused wires.
+<suppressed ~33 debug messages>
+
+4.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boundcontroller.
+Optimizing module listhandler.
+Optimizing module onlyonecycle.
+Optimizing module paj_boundtop_hierarchy_no_mem.
+Optimizing module rayinterface.
+Optimizing module resultcounter.
+Optimizing module resultinterface.
+Optimizing module resulttransmit.
+Optimizing module sortedstack.
+Optimizing module spram.
+Optimizing module spramblock.
+Optimizing module sramcontroller.
+Optimizing module vblockramcontroller.
+
+4.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \boundcontroller..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \listhandler..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \onlyonecycle..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \paj_boundtop_hierarchy_no_mem..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \rayinterface..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \resultcounter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \resultinterface..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \resulttransmit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \sortedstack..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \spram..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \spramblock..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sramcontroller..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \vblockramcontroller..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~108 debug messages>
+
+4.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \boundcontroller.
+  Optimizing cells in module \listhandler.
+  Optimizing cells in module \onlyonecycle.
+  Optimizing cells in module \paj_boundtop_hierarchy_no_mem.
+  Optimizing cells in module \rayinterface.
+  Optimizing cells in module \resultcounter.
+  Optimizing cells in module \resultinterface.
+  Optimizing cells in module \resulttransmit.
+  Optimizing cells in module \sortedstack.
+  Optimizing cells in module \spram.
+  Optimizing cells in module \spramblock.
+  Optimizing cells in module \sramcontroller.
+  Optimizing cells in module \vblockramcontroller.
+Performed a total of 0 changes.
+
+4.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boundcontroller'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\listhandler'.
+Finding identical cells in module `\onlyonecycle'.
+Finding identical cells in module `\paj_boundtop_hierarchy_no_mem'.
+Finding identical cells in module `\rayinterface'.
+Finding identical cells in module `\resultcounter'.
+Finding identical cells in module `\resultinterface'.
+Finding identical cells in module `\resulttransmit'.
+Finding identical cells in module `\sortedstack'.
+Finding identical cells in module `\spram'.
+Finding identical cells in module `\spramblock'.
+Finding identical cells in module `\sramcontroller'.
+Finding identical cells in module `\vblockramcontroller'.
+Removed a total of 2 cells.
+
+4.20. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 1 on $auto$ff.cc:262:slice$11431 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 2 on $auto$ff.cc:262:slice$11431 ($sdff) from module boundcontroller.
+
+4.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boundcontroller..
+Finding unused cells or wires in module \listhandler..
+Finding unused cells or wires in module \onlyonecycle..
+Finding unused cells or wires in module \paj_boundtop_hierarchy_no_mem..
+Finding unused cells or wires in module \rayinterface..
+Finding unused cells or wires in module \resultcounter..
+Finding unused cells or wires in module \resultinterface..
+Finding unused cells or wires in module \resulttransmit..
+Finding unused cells or wires in module \sortedstack..
+Finding unused cells or wires in module \spram..
+Finding unused cells or wires in module \spramblock..
+Finding unused cells or wires in module \sramcontroller..
+Finding unused cells or wires in module \vblockramcontroller..
+
+4.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boundcontroller.
+<suppressed ~14 debug messages>
+Optimizing module listhandler.
+Optimizing module onlyonecycle.
+Optimizing module paj_boundtop_hierarchy_no_mem.
+Optimizing module rayinterface.
+Optimizing module resultcounter.
+Optimizing module resultinterface.
+Optimizing module resulttransmit.
+Optimizing module sortedstack.
+Optimizing module spram.
+Optimizing module spramblock.
+Optimizing module sramcontroller.
+Optimizing module vblockramcontroller.
+
+4.23. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.24. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \boundcontroller..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \listhandler..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \onlyonecycle..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \paj_boundtop_hierarchy_no_mem..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \rayinterface..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \resultcounter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \resultinterface..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \resulttransmit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \sortedstack..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \spram..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \spramblock..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sramcontroller..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \vblockramcontroller..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~108 debug messages>
+
+4.25. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \boundcontroller.
+  Optimizing cells in module \listhandler.
+  Optimizing cells in module \onlyonecycle.
+  Optimizing cells in module \paj_boundtop_hierarchy_no_mem.
+  Optimizing cells in module \rayinterface.
+  Optimizing cells in module \resultcounter.
+  Optimizing cells in module \resultinterface.
+  Optimizing cells in module \resulttransmit.
+  Optimizing cells in module \sortedstack.
+  Optimizing cells in module \spram.
+  Optimizing cells in module \spramblock.
+  Optimizing cells in module \sramcontroller.
+  Optimizing cells in module \vblockramcontroller.
+Performed a total of 0 changes.
+
+4.26. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boundcontroller'.
+<suppressed ~9 debug messages>
+Finding identical cells in module `\listhandler'.
+Finding identical cells in module `\onlyonecycle'.
+Finding identical cells in module `\paj_boundtop_hierarchy_no_mem'.
+Finding identical cells in module `\rayinterface'.
+Finding identical cells in module `\resultcounter'.
+Finding identical cells in module `\resultinterface'.
+Finding identical cells in module `\resulttransmit'.
+Finding identical cells in module `\sortedstack'.
+Finding identical cells in module `\spram'.
+Finding identical cells in module `\spramblock'.
+Finding identical cells in module `\sramcontroller'.
+Finding identical cells in module `\vblockramcontroller'.
+Removed a total of 3 cells.
+
+4.27. Executing OPT_DFF pass (perform DFF optimizations).
+Removing never-active async load on $auto$proc_dlatch.cc:427:proc_dlatch$10843 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 0 on $auto$proc_dlatch.cc:427:proc_dlatch$10843 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 1 on $auto$proc_dlatch.cc:427:proc_dlatch$10843 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 2 on $auto$proc_dlatch.cc:427:proc_dlatch$10843 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 3 on $auto$proc_dlatch.cc:427:proc_dlatch$10843 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 4 on $auto$proc_dlatch.cc:427:proc_dlatch$10843 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 5 on $auto$proc_dlatch.cc:427:proc_dlatch$10843 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 6 on $auto$proc_dlatch.cc:427:proc_dlatch$10843 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 7 on $auto$proc_dlatch.cc:427:proc_dlatch$10843 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 8 on $auto$proc_dlatch.cc:427:proc_dlatch$10843 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 9 on $auto$proc_dlatch.cc:427:proc_dlatch$10843 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 10 on $auto$proc_dlatch.cc:427:proc_dlatch$10843 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 11 on $auto$proc_dlatch.cc:427:proc_dlatch$10843 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 12 on $auto$proc_dlatch.cc:427:proc_dlatch$10843 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 13 on $auto$proc_dlatch.cc:427:proc_dlatch$10843 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 14 on $auto$proc_dlatch.cc:427:proc_dlatch$10843 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 15 on $auto$proc_dlatch.cc:427:proc_dlatch$10843 ($dlatch) from module boundcontroller.
+Removing never-active async load on $auto$proc_dlatch.cc:427:proc_dlatch$10822 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 0 on $auto$proc_dlatch.cc:427:proc_dlatch$10822 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 1 on $auto$proc_dlatch.cc:427:proc_dlatch$10822 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 2 on $auto$proc_dlatch.cc:427:proc_dlatch$10822 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 3 on $auto$proc_dlatch.cc:427:proc_dlatch$10822 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 4 on $auto$proc_dlatch.cc:427:proc_dlatch$10822 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 5 on $auto$proc_dlatch.cc:427:proc_dlatch$10822 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 6 on $auto$proc_dlatch.cc:427:proc_dlatch$10822 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 7 on $auto$proc_dlatch.cc:427:proc_dlatch$10822 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 8 on $auto$proc_dlatch.cc:427:proc_dlatch$10822 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 9 on $auto$proc_dlatch.cc:427:proc_dlatch$10822 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 10 on $auto$proc_dlatch.cc:427:proc_dlatch$10822 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 11 on $auto$proc_dlatch.cc:427:proc_dlatch$10822 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 12 on $auto$proc_dlatch.cc:427:proc_dlatch$10822 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 13 on $auto$proc_dlatch.cc:427:proc_dlatch$10822 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 14 on $auto$proc_dlatch.cc:427:proc_dlatch$10822 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 15 on $auto$proc_dlatch.cc:427:proc_dlatch$10822 ($dlatch) from module boundcontroller.
+Removing never-active async load on $auto$proc_dlatch.cc:427:proc_dlatch$10801 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 0 on $auto$proc_dlatch.cc:427:proc_dlatch$10801 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 1 on $auto$proc_dlatch.cc:427:proc_dlatch$10801 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 2 on $auto$proc_dlatch.cc:427:proc_dlatch$10801 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 3 on $auto$proc_dlatch.cc:427:proc_dlatch$10801 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 4 on $auto$proc_dlatch.cc:427:proc_dlatch$10801 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 5 on $auto$proc_dlatch.cc:427:proc_dlatch$10801 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 6 on $auto$proc_dlatch.cc:427:proc_dlatch$10801 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 7 on $auto$proc_dlatch.cc:427:proc_dlatch$10801 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 8 on $auto$proc_dlatch.cc:427:proc_dlatch$10801 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 9 on $auto$proc_dlatch.cc:427:proc_dlatch$10801 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 10 on $auto$proc_dlatch.cc:427:proc_dlatch$10801 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 11 on $auto$proc_dlatch.cc:427:proc_dlatch$10801 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 12 on $auto$proc_dlatch.cc:427:proc_dlatch$10801 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 13 on $auto$proc_dlatch.cc:427:proc_dlatch$10801 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 14 on $auto$proc_dlatch.cc:427:proc_dlatch$10801 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 15 on $auto$proc_dlatch.cc:427:proc_dlatch$10801 ($dlatch) from module boundcontroller.
+Removing never-active async load on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 0 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 1 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 2 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 3 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 4 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 5 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 6 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 7 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 8 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 9 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 10 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 11 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 12 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 13 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 14 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 15 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 16 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 17 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 18 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 19 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 20 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 21 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 22 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 23 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 24 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 25 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 26 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 27 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 28 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 29 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 30 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 31 on $auto$proc_dlatch.cc:427:proc_dlatch$10780 ($dlatch) from module boundcontroller.
+Removing never-active async load on $auto$proc_dlatch.cc:427:proc_dlatch$10759 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 0 on $auto$proc_dlatch.cc:427:proc_dlatch$10759 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 1 on $auto$proc_dlatch.cc:427:proc_dlatch$10759 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 2 on $auto$proc_dlatch.cc:427:proc_dlatch$10759 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 3 on $auto$proc_dlatch.cc:427:proc_dlatch$10759 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 4 on $auto$proc_dlatch.cc:427:proc_dlatch$10759 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 5 on $auto$proc_dlatch.cc:427:proc_dlatch$10759 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 6 on $auto$proc_dlatch.cc:427:proc_dlatch$10759 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 7 on $auto$proc_dlatch.cc:427:proc_dlatch$10759 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 8 on $auto$proc_dlatch.cc:427:proc_dlatch$10759 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 9 on $auto$proc_dlatch.cc:427:proc_dlatch$10759 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 10 on $auto$proc_dlatch.cc:427:proc_dlatch$10759 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 11 on $auto$proc_dlatch.cc:427:proc_dlatch$10759 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 12 on $auto$proc_dlatch.cc:427:proc_dlatch$10759 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 13 on $auto$proc_dlatch.cc:427:proc_dlatch$10759 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 14 on $auto$proc_dlatch.cc:427:proc_dlatch$10759 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 15 on $auto$proc_dlatch.cc:427:proc_dlatch$10759 ($dlatch) from module boundcontroller.
+Removing never-active async load on $auto$proc_dlatch.cc:427:proc_dlatch$10738 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 0 on $auto$proc_dlatch.cc:427:proc_dlatch$10738 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 1 on $auto$proc_dlatch.cc:427:proc_dlatch$10738 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 2 on $auto$proc_dlatch.cc:427:proc_dlatch$10738 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 3 on $auto$proc_dlatch.cc:427:proc_dlatch$10738 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 4 on $auto$proc_dlatch.cc:427:proc_dlatch$10738 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 5 on $auto$proc_dlatch.cc:427:proc_dlatch$10738 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 6 on $auto$proc_dlatch.cc:427:proc_dlatch$10738 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 7 on $auto$proc_dlatch.cc:427:proc_dlatch$10738 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 8 on $auto$proc_dlatch.cc:427:proc_dlatch$10738 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 9 on $auto$proc_dlatch.cc:427:proc_dlatch$10738 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 10 on $auto$proc_dlatch.cc:427:proc_dlatch$10738 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 11 on $auto$proc_dlatch.cc:427:proc_dlatch$10738 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 12 on $auto$proc_dlatch.cc:427:proc_dlatch$10738 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 13 on $auto$proc_dlatch.cc:427:proc_dlatch$10738 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 14 on $auto$proc_dlatch.cc:427:proc_dlatch$10738 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 15 on $auto$proc_dlatch.cc:427:proc_dlatch$10738 ($dlatch) from module boundcontroller.
+Removing never-active async load on $auto$proc_dlatch.cc:427:proc_dlatch$10717 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 0 on $auto$proc_dlatch.cc:427:proc_dlatch$10717 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 1 on $auto$proc_dlatch.cc:427:proc_dlatch$10717 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 2 on $auto$proc_dlatch.cc:427:proc_dlatch$10717 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 3 on $auto$proc_dlatch.cc:427:proc_dlatch$10717 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 4 on $auto$proc_dlatch.cc:427:proc_dlatch$10717 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 5 on $auto$proc_dlatch.cc:427:proc_dlatch$10717 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 6 on $auto$proc_dlatch.cc:427:proc_dlatch$10717 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 7 on $auto$proc_dlatch.cc:427:proc_dlatch$10717 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 8 on $auto$proc_dlatch.cc:427:proc_dlatch$10717 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 9 on $auto$proc_dlatch.cc:427:proc_dlatch$10717 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 10 on $auto$proc_dlatch.cc:427:proc_dlatch$10717 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 11 on $auto$proc_dlatch.cc:427:proc_dlatch$10717 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 12 on $auto$proc_dlatch.cc:427:proc_dlatch$10717 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 13 on $auto$proc_dlatch.cc:427:proc_dlatch$10717 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 14 on $auto$proc_dlatch.cc:427:proc_dlatch$10717 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 15 on $auto$proc_dlatch.cc:427:proc_dlatch$10717 ($dlatch) from module boundcontroller.
+Removing never-active async load on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 0 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 1 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 2 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 3 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 4 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 5 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 6 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 7 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 8 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 9 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 10 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 11 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 12 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 13 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 14 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 15 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 16 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 17 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 18 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 19 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 20 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 21 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 22 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 23 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 24 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 25 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 26 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 27 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 28 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 29 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 30 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+Setting constant 1-bit at position 31 on $auto$proc_dlatch.cc:427:proc_dlatch$10696 ($dlatch) from module boundcontroller.
+
+4.28. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boundcontroller..
+Finding unused cells or wires in module \listhandler..
+Finding unused cells or wires in module \onlyonecycle..
+Finding unused cells or wires in module \paj_boundtop_hierarchy_no_mem..
+Finding unused cells or wires in module \rayinterface..
+Finding unused cells or wires in module \resultcounter..
+Finding unused cells or wires in module \resultinterface..
+Finding unused cells or wires in module \resulttransmit..
+Finding unused cells or wires in module \sortedstack..
+Finding unused cells or wires in module \spram..
+Finding unused cells or wires in module \spramblock..
+Finding unused cells or wires in module \sramcontroller..
+Finding unused cells or wires in module \vblockramcontroller..
+Removed 2 unused cells and 17 unused wires.
+<suppressed ~3 debug messages>
+
+4.29. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boundcontroller.
+Optimizing module listhandler.
+Optimizing module onlyonecycle.
+Optimizing module paj_boundtop_hierarchy_no_mem.
+Optimizing module rayinterface.
+Optimizing module resultcounter.
+Optimizing module resultinterface.
+Optimizing module resulttransmit.
+Optimizing module sortedstack.
+Optimizing module spram.
+Optimizing module spramblock.
+Optimizing module sramcontroller.
+Optimizing module vblockramcontroller.
+
+4.30. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.31. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \boundcontroller..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \listhandler..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \onlyonecycle..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \paj_boundtop_hierarchy_no_mem..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \rayinterface..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \resultcounter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \resultinterface..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \resulttransmit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \sortedstack..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \spram..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \spramblock..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sramcontroller..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \vblockramcontroller..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~108 debug messages>
+
+4.32. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \boundcontroller.
+  Optimizing cells in module \listhandler.
+  Optimizing cells in module \onlyonecycle.
+  Optimizing cells in module \paj_boundtop_hierarchy_no_mem.
+  Optimizing cells in module \rayinterface.
+  Optimizing cells in module \resultcounter.
+  Optimizing cells in module \resultinterface.
+  Optimizing cells in module \resulttransmit.
+  Optimizing cells in module \sortedstack.
+  Optimizing cells in module \spram.
+  Optimizing cells in module \spramblock.
+  Optimizing cells in module \sramcontroller.
+  Optimizing cells in module \vblockramcontroller.
+Performed a total of 0 changes.
+
+4.33. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boundcontroller'.
+<suppressed ~18 debug messages>
+Finding identical cells in module `\listhandler'.
+Finding identical cells in module `\onlyonecycle'.
+Finding identical cells in module `\paj_boundtop_hierarchy_no_mem'.
+Finding identical cells in module `\rayinterface'.
+Finding identical cells in module `\resultcounter'.
+Finding identical cells in module `\resultinterface'.
+Finding identical cells in module `\resulttransmit'.
+Finding identical cells in module `\sortedstack'.
+Finding identical cells in module `\spram'.
+Finding identical cells in module `\spramblock'.
+Finding identical cells in module `\sramcontroller'.
+Finding identical cells in module `\vblockramcontroller'.
+Removed a total of 6 cells.
+
+4.34. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 0 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 1 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 2 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 3 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 4 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 5 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 6 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 7 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 8 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 9 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 10 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 11 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 12 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 13 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 14 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 15 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 16 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 17 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 18 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 19 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 20 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 21 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 22 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 23 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 24 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 25 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 26 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 27 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 28 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 29 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 30 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 31 on $auto$ff.cc:262:slice$11425 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 0 on $auto$ff.cc:262:slice$11416 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 1 on $auto$ff.cc:262:slice$11416 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 2 on $auto$ff.cc:262:slice$11416 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 3 on $auto$ff.cc:262:slice$11416 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 4 on $auto$ff.cc:262:slice$11416 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 5 on $auto$ff.cc:262:slice$11416 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 6 on $auto$ff.cc:262:slice$11416 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 7 on $auto$ff.cc:262:slice$11416 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 8 on $auto$ff.cc:262:slice$11416 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 9 on $auto$ff.cc:262:slice$11416 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 10 on $auto$ff.cc:262:slice$11416 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 11 on $auto$ff.cc:262:slice$11416 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 12 on $auto$ff.cc:262:slice$11416 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 13 on $auto$ff.cc:262:slice$11416 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 14 on $auto$ff.cc:262:slice$11416 ($sdff) from module boundcontroller.
+Setting constant 0-bit at position 15 on $auto$ff.cc:262:slice$11416 ($sdff) from module boundcontroller.
+
+4.35. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boundcontroller..
+Finding unused cells or wires in module \listhandler..
+Finding unused cells or wires in module \onlyonecycle..
+Finding unused cells or wires in module \paj_boundtop_hierarchy_no_mem..
+Finding unused cells or wires in module \rayinterface..
+Finding unused cells or wires in module \resultcounter..
+Finding unused cells or wires in module \resultinterface..
+Finding unused cells or wires in module \resulttransmit..
+Finding unused cells or wires in module \sortedstack..
+Finding unused cells or wires in module \spram..
+Finding unused cells or wires in module \spramblock..
+Finding unused cells or wires in module \sramcontroller..
+Finding unused cells or wires in module \vblockramcontroller..
+
+4.36. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boundcontroller.
+Optimizing module listhandler.
+Optimizing module onlyonecycle.
+Optimizing module paj_boundtop_hierarchy_no_mem.
+Optimizing module rayinterface.
+Optimizing module resultcounter.
+Optimizing module resultinterface.
+Optimizing module resulttransmit.
+Optimizing module sortedstack.
+Optimizing module spram.
+Optimizing module spramblock.
+Optimizing module sramcontroller.
+Optimizing module vblockramcontroller.
+
+4.37. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.38. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \boundcontroller..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \listhandler..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \onlyonecycle..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \paj_boundtop_hierarchy_no_mem..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \rayinterface..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \resultcounter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \resultinterface..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \resulttransmit..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \sortedstack..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \spram..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \spramblock..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sramcontroller..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \vblockramcontroller..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~108 debug messages>
+
+4.39. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \boundcontroller.
+  Optimizing cells in module \listhandler.
+  Optimizing cells in module \onlyonecycle.
+  Optimizing cells in module \paj_boundtop_hierarchy_no_mem.
+  Optimizing cells in module \rayinterface.
+  Optimizing cells in module \resultcounter.
+  Optimizing cells in module \resultinterface.
+  Optimizing cells in module \resulttransmit.
+  Optimizing cells in module \sortedstack.
+  Optimizing cells in module \spram.
+  Optimizing cells in module \spramblock.
+  Optimizing cells in module \sramcontroller.
+  Optimizing cells in module \vblockramcontroller.
+Performed a total of 0 changes.
+
+4.40. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\boundcontroller'.
+Finding identical cells in module `\listhandler'.
+Finding identical cells in module `\onlyonecycle'.
+Finding identical cells in module `\paj_boundtop_hierarchy_no_mem'.
+Finding identical cells in module `\rayinterface'.
+Finding identical cells in module `\resultcounter'.
+Finding identical cells in module `\resultinterface'.
+Finding identical cells in module `\resulttransmit'.
+Finding identical cells in module `\sortedstack'.
+Finding identical cells in module `\spram'.
+Finding identical cells in module `\spramblock'.
+Finding identical cells in module `\sramcontroller'.
+Finding identical cells in module `\vblockramcontroller'.
+Removed a total of 0 cells.
+
+4.41. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.42. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \boundcontroller..
+Finding unused cells or wires in module \listhandler..
+Finding unused cells or wires in module \onlyonecycle..
+Finding unused cells or wires in module \paj_boundtop_hierarchy_no_mem..
+Finding unused cells or wires in module \rayinterface..
+Finding unused cells or wires in module \resultcounter..
+Finding unused cells or wires in module \resultinterface..
+Finding unused cells or wires in module \resulttransmit..
+Finding unused cells or wires in module \sortedstack..
+Finding unused cells or wires in module \spram..
+Finding unused cells or wires in module \spramblock..
+Finding unused cells or wires in module \sramcontroller..
+Finding unused cells or wires in module \vblockramcontroller..
+
+4.43. Executing OPT_EXPR pass (perform const folding).
+Optimizing module boundcontroller.
+Optimizing module listhandler.
+Optimizing module onlyonecycle.
+Optimizing module paj_boundtop_hierarchy_no_mem.
+Optimizing module rayinterface.
+Optimizing module resultcounter.
+Optimizing module resultinterface.
+Optimizing module resulttransmit.
+Optimizing module sortedstack.
+Optimizing module spram.
+Optimizing module spramblock.
+Optimizing module sramcontroller.
+Optimizing module vblockramcontroller.
+
+4.44. Finished OPT passes. (There is nothing left to do.)
+
+5. Printing statistics.
+
+=== boundcontroller ===
+
+   Number of wires:                436
+   Number of wire bits:           2161
+   Number of public wires:         119
+   Number of public wire bits:    1254
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                373
+     $add                            7
+     $and                          127
+     $dffe                           1
+     $dlatch                        30
+     $eq                            29
+     $logic_not                      4
+     $lt                             1
+     $mux                           56
+     $ne                             3
+     $not                           44
+     $or                             7
+     $pmux                           6
+     $reduce_bool                    3
+     $reduce_or                     23
+     $sdff                          28
+     $sub                            4
+
+=== listhandler ===
+
+   Number of wires:                436
+   Number of wire bits:            872
+   Number of public wires:          37
+   Number of public wire bits:     210
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                422
+     $add                            4
+     $and                          257
+     $dffe                           1
+     $dlatch                        13
+     $eq                            17
+     $logic_not                      4
+     $mux                           31
+     $not                           28
+     $or                             7
+     $pmux                           3
+     $reduce_or                     48
+     $sdff                           8
+     spram                           1
+
+=== onlyonecycle ===
+
+   Number of wires:                 24
+   Number of wire bits:             61
+   Number of public wires:           8
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 21
+     $and                            3
+     $dlatch                         3
+     $eq                             2
+     $logic_not                      1
+     $mux                            5
+     $not                            3
+     $pmux                           1
+     $sdff                           2
+     $sub                            1
+
+=== paj_boundtop_hierarchy_no_mem ===
+
+   Number of wires:                191
+   Number of wire bits:           1830
+   Number of public wires:         178
+   Number of public wire bits:    1808
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 44
+     $and                            2
+     $eq                             4
+     $mux                            6
+     $ne                             1
+     $or                            14
+     $reduce_bool                    2
+     $sdff                           2
+     $sdffe                          1
+     boundcontroller                 2
+     listhandler                     2
+     onlyonecycle                    1
+     rayinterface                    1
+     resultcounter                   1
+     resultinterface                 1
+     resulttransmit                  1
+     sortedstack                     1
+     sramcontroller                  1
+     vblockramcontroller             1
+
+=== rayinterface ===
+
+   Number of wires:                 33
+   Number of wire bits:            153
+   Number of public wires:          18
+   Number of public wire bits:     128
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 24
+     $and                            1
+     $mux                            9
+     $ne                             1
+     $not                            1
+     $reduce_and                     1
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdff                           5
+     $sdffe                          4
+
+=== resultcounter ===
+
+   Number of wires:                 15
+   Number of wire bits:             52
+   Number of public wires:           9
+   Number of public wire bits:      15
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $and                            2
+     $logic_not                      1
+     $mux                            1
+     $or                             1
+     $reduce_bool                    2
+     $sdffe                          2
+     $sub                            1
+
+=== resultinterface ===
+
+   Number of wires:                 73
+   Number of wire bits:            574
+   Number of public wires:          40
+   Number of public wire bits:     535
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 69
+     $and                           10
+     $dlatch                        18
+     $eq                             8
+     $logic_not                      1
+     $mux                            2
+     $not                           10
+     $pmux                           1
+     $reduce_or                      1
+     $sdff                          18
+
+=== resulttransmit ===
+
+   Number of wires:                 96
+   Number of wire bits:            477
+   Number of public wires:          46
+   Number of public wire bits:     386
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 68
+     $and                            8
+     $dffe                           8
+     $dlatch                         4
+     $eq                             8
+     $logic_not                      1
+     $logic_or                      11
+     $mux                            3
+     $not                           10
+     $pmux                           3
+     $reduce_and                     2
+     $reduce_or                      4
+     $sdff                           4
+     $sdffe                          2
+
+=== sortedstack ===
+
+   Number of wires:                170
+   Number of wire bits:           1964
+   Number of public wires:          32
+   Number of public wire bits:     493
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                163
+     $eq                             6
+     $logic_not                      1
+     $lt                             7
+     $mux                           98
+     $not                            7
+     $or                             8
+     $reduce_and                     7
+     $reduce_bool                    6
+     $sdffe                         23
+
+=== spram ===
+
+   Number of wires:                  7
+   Number of wire bits:             67
+   Number of public wires:           7
+   Number of public wire bits:      67
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $dffe                           2
+
+=== spramblock ===
+
+   Number of wires:                  5
+   Number of wire bits:             76
+   Number of public wires:           5
+   Number of public wire bits:      76
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     single_port_ram                 1
+
+=== sramcontroller ===
+
+   Number of wires:                 97
+   Number of wire bits:            747
+   Number of public wires:          27
+   Number of public wire bits:     507
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 86
+     $add                            1
+     $and                           24
+     $dffe                           1
+     $dlatch                        12
+     $eq                             5
+     $logic_not                      1
+     $mux                           14
+     $not                           10
+     $pmux                           3
+     $reduce_or                     11
+     $sdff                           4
+
+=== vblockramcontroller ===
+
+   Number of wires:                 76
+   Number of wire bits:            312
+   Number of public wires:          21
+   Number of public wire bits:     194
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 67
+     $add                            1
+     $and                           19
+     $dlatch                         7
+     $eq                             5
+     $logic_not                      1
+     $mux                           12
+     $not                            9
+     $pmux                           1
+     $reduce_bool                    1
+     $reduce_or                      6
+     $sdff                           4
+     spramblock                      1
+
+=== design hierarchy ===
+
+   paj_boundtop_hierarchy_no_mem      1
+     boundcontroller                 2
+     listhandler                     2
+       spram                         1
+     onlyonecycle                    1
+     rayinterface                    1
+     resultcounter                   1
+     resultinterface                 1
+     resulttransmit                  1
+     sortedstack                     1
+     sramcontroller                  1
+     vblockramcontroller             1
+       spramblock                    1
+
+   Number of wires:               2538
+   Number of wire bits:          12446
+   Number of public wires:         710
+   Number of public wire bits:    7214
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2132
+     $add                           24
+     $and                          837
+     $dffe                          17
+     $dlatch                       130
+     $eq                           130
+     $logic_not                     23
+     $logic_or                      11
+     $lt                             9
+     $mux                          324
+     $ne                             8
+     $not                          194
+     $or                            51
+     $pmux                          27
+     $reduce_and                    10
+     $reduce_bool                   18
+     $reduce_or                    165
+     $sdff                         111
+     $sdffe                         32
+     $sub                           10
+     single_port_ram                 1
+
+End of script. Logfile hash: 2f0ea5c9d3, CPU: user 1.76s system 0.00s, MEM: 34.89 MB peak
+Yosys 0.10+12 (git sha1 4d87019, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+Time spent: 26% 8x opt_expr (0 sec), 19% 7x opt_merge (0 sec), ...

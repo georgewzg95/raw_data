@@ -1,0 +1,1132 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.10+12 (git sha1 4d87019, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+
+
+-- Executing script file `out.ys' --
+
+1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v
+Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v' to AST representation.
+Generating RTLIL representation for module `\td_fused_top_Block_entry_proc_proc392'.
+Generating RTLIL representation for module `\td_fused_top_Block_entry_proc_proc397'.
+Generating RTLIL representation for module `\td_fused_top_Block_entry_proc_proc403'.
+Generating RTLIL representation for module `\td_fused_top_Block_entry_proc_proc408'.
+Generating RTLIL representation for module `\td_fused_top_Block_entry_proc_proc413'.
+Generating RTLIL representation for module `\td_fused_top_Block_entry_proc_proc419'.
+Generating RTLIL representation for module `\td_fused_top_Block_entry_proc_proc424'.
+Generating RTLIL representation for module `\td_fused_top_Block_entry_proc_proc429'.
+Generating RTLIL representation for module `\td_fused_top_Block_entry_proc_proc435'.
+Generating RTLIL representation for module `\td_fused_top_Block_entry_proc_proc441'.
+Generating RTLIL representation for module `\td_fused_top_Block_entry_proc_proc446'.
+Generating RTLIL representation for module `\td_fused_top_Block_entry_proc_proc'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37360_accum1_out_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37360_accum1_out_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37360_accum1_out_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37360_ifmap_vec_0_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37360_ifmap_vec_0_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37360_ifmap_vec_0_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37360_products_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37360_products_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37360_products_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37360'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37360_weight_vecs_0_0_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37360_weight_vecs_0_0_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37360_weight_vecs_0_0_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37454_accum1_out_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37454_accum1_out_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37454_accum1_out_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37454_ifmap_vec_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37454_ifmap_vec_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37454_ifmap_vec'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37454_products_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37454_products_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37454_products_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37454'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37454_weight_vecs_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37454_weight_vecs_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37454_weight_vecs_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37548_accum1_out_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37548_accum1_out_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37548_accum1_out_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37548_ifmap_vec_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37548_ifmap_vec_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37548_ifmap_vec'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37548_l2_products_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37548_l2_products_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37548_l2_products'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37548_products_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37548_products_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37548_products_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37548'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37548_weight_vecs_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37548_weight_vecs_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37548_weight_vecs_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37644_accum1_out_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37644_accum1_out_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37644_accum1_out_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37644_ifmap_vec_0_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37644_ifmap_vec_0_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37644_ifmap_vec_0_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37644_products_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37644_products_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37644_products_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37644'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37644_weight_vecs_0_0_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37644_weight_vecs_0_0_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37644_weight_vecs_0_0_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37738_accum1_out_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37738_accum1_out_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37738_accum1_out_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37738_ifmap_vec_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37738_ifmap_vec_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37738_ifmap_vec'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37738_products_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37738_products_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37738_products_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37738'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37738_weight_vecs_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37738_weight_vecs_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37738_weight_vecs_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37832_accum1_out_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37832_accum1_out_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37832_accum1_out_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37832_ifmap_vec_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37832_ifmap_vec_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37832_ifmap_vec'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37832_l2_products_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37832_l2_products_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37832_l2_products'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37832_products_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37832_products_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37832_products_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37832'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37832_weight_vecs_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37832_weight_vecs_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37832_weight_vecs_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37928_accum1_out_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37928_accum1_out_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37928_accum1_out_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37928_ifmap_vec_0_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37928_ifmap_vec_0_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37928_ifmap_vec_0_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37928_products_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37928_products_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37928_products_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37928'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37928_weight_vecs_0_0_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37928_weight_vecs_0_0_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP37928_weight_vecs_0_0_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38022_accum1_out_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38022_accum1_out_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38022_accum1_out_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38022_ifmap_vec_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38022_ifmap_vec_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38022_ifmap_vec'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38022_products_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38022_products_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38022_products_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38022'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38022_weight_vecs_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38022_weight_vecs_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38022_weight_vecs_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38116_accum1_out_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38116_accum1_out_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38116_accum1_out_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38116_accum2_out_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38116_accum2_out_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38116_accum2_out_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38116_ifmap_vec_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38116_ifmap_vec_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38116_ifmap_vec'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38116_products_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38116_products_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38116_products_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38116'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38270_accum1_out_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38270_accum1_out_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38270_accum1_out_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38270_ifmap_vec_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38270_ifmap_vec_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38270_ifmap_vec'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38270_l2_products_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38270_l2_products_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38270_l2_products'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38270_products_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38270_products_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38270_products_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38270'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38364_accum1_out_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38364_accum1_out_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38364_accum1_out_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38364_ifmap_vec_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38364_ifmap_vec_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38364_ifmap_vec'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38364_l2_products_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38364_l2_products_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38364_l2_products'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38364_products_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38364_products_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38364_products_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP38364'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP76_accum1_out_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP76_accum1_out_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP76_accum1_out_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP76_ifmap_vec_0_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP76_ifmap_vec_0_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP76_ifmap_vec_0_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP76_products_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP76_products_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP76_products_0'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP76'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP76_weight_vecs_0_0_0_memcore_ram'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP76_weight_vecs_0_0_0_memcore'.
+Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP76_weight_vecs_0_0_0'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w10_d2_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29587.13-29587.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29588.13-29588.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29589.16-29589.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29585.1-29591.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w10_d2_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w10_d7_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29721.13-29721.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29722.13-29722.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29723.13-29723.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29724.13-29724.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29725.13-29725.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29726.13-29726.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29727.13-29727.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29728.16-29728.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29719.1-29730.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w10_d7_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w10_d7_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29860.13-29860.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29861.13-29861.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29862.13-29862.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29863.13-29863.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29864.13-29864.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29865.13-29865.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29866.13-29866.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29867.16-29867.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29858.1-29869.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w10_d7_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w10_d8_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30000.13-30000.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30001.13-30001.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30002.13-30002.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30003.13-30003.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30004.13-30004.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30005.13-30005.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30006.13-30006.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30007.13-30007.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30008.16-30008.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:29998.1-30010.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w10_d8_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w10_d8_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30141.13-30141.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30142.13-30142.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30143.13-30143.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30144.13-30144.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30145.13-30145.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30146.13-30146.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30147.13-30147.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30148.13-30148.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30149.16-30149.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30139.1-30151.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w10_d8_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w11_d2_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30276.13-30276.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30277.13-30277.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30278.16-30278.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30274.1-30280.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w11_d2_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w11_d7_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30410.13-30410.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30411.13-30411.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30412.13-30412.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30413.13-30413.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30414.13-30414.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30415.13-30415.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30416.13-30416.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30417.16-30417.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30408.1-30419.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w11_d7_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w12_d7_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30549.13-30549.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30550.13-30550.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30551.13-30551.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30552.13-30552.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30553.13-30553.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30554.13-30554.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30555.13-30555.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30556.16-30556.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30547.1-30558.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w12_d7_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w12_d8_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30689.13-30689.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30690.13-30690.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30691.13-30691.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30692.13-30692.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30693.13-30693.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30694.13-30694.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30695.13-30695.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30696.13-30696.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30697.16-30697.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30687.1-30699.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w12_d8_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w12_d8_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30830.13-30830.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30831.13-30831.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30832.13-30832.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30833.13-30833.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30834.13-30834.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30835.13-30835.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30836.13-30836.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30837.13-30837.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30838.16-30838.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30828.1-30840.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w12_d8_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w13_d2_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30965.13-30965.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30966.13-30966.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30967.16-30967.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:30963.1-30969.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w13_d2_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w13_d7_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31099.13-31099.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31100.13-31100.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31101.13-31101.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31102.13-31102.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31103.13-31103.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31104.13-31104.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31105.13-31105.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31106.16-31106.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31097.1-31108.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w13_d7_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w14_d9_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31240.13-31240.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31241.13-31241.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31242.13-31242.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31243.13-31243.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31244.13-31244.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31245.13-31245.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31246.13-31246.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31247.13-31247.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31248.13-31248.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31249.16-31249.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31238.1-31251.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w14_d9_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w15_d2_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31376.13-31376.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31377.13-31377.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31378.16-31378.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31374.1-31380.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w15_d2_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w15_d7_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31510.13-31510.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31511.13-31511.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31512.13-31512.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31513.13-31513.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31514.13-31514.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31515.13-31515.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31516.13-31516.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31517.16-31517.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31508.1-31519.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w15_d7_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31644.13-31644.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31645.13-31645.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31646.16-31646.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31642.1-31648.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31773.13-31773.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31774.13-31774.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31775.16-31775.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31771.1-31777.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x0'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x1_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31902.13-31902.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31903.13-31903.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31904.16-31904.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:31900.1-31906.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x1'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x2_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32031.13-32031.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32032.13-32032.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32033.16-32033.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32029.1-32035.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x2'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x3_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32160.13-32160.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32161.13-32161.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32162.16-32162.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32158.1-32164.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x3'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x4_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32289.13-32289.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32290.13-32290.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32291.16-32291.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32287.1-32293.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x4'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x5_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32418.13-32418.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32419.13-32419.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32420.16-32420.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32416.1-32422.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x5'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x6_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32547.13-32547.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32548.13-32548.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32549.16-32549.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32545.1-32551.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x6'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x7_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32676.13-32676.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32677.13-32677.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32678.16-32678.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32674.1-32680.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x7'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x8_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32805.13-32805.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32806.13-32806.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32807.16-32807.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32803.1-32809.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x8'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x9_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32934.13-32934.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32935.13-32935.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32936.16-32936.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:32932.1-32938.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x9'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33063.13-33063.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33064.13-33064.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33065.16-33065.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33061.1-33067.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w16_d2_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w1_d8_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33198.13-33198.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33199.13-33199.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33200.13-33200.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33201.13-33201.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33202.13-33202.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33203.13-33203.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33204.13-33204.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33205.13-33205.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33206.16-33206.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33196.1-33208.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w1_d8_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w1_d8_S_x0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33339.13-33339.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33340.13-33340.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33341.13-33341.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33342.13-33342.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33343.13-33343.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33344.13-33344.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33345.13-33345.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33346.13-33346.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33347.16-33347.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33337.1-33349.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w1_d8_S_x0'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w1_d8_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33480.13-33480.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33481.13-33481.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33482.13-33482.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33483.13-33483.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33484.13-33484.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33485.13-33485.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33486.13-33486.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33487.13-33487.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33488.16-33488.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33478.1-33490.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w1_d8_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w1_d9_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33622.13-33622.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33623.13-33623.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33624.13-33624.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33625.13-33625.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33626.13-33626.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33627.13-33627.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33628.13-33628.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33629.13-33629.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33630.13-33630.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33631.16-33631.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33620.1-33633.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w1_d9_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w1_d9_S_x0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33765.13-33765.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33766.13-33766.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33767.13-33767.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33768.13-33768.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33769.13-33769.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33770.13-33770.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33771.13-33771.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33772.13-33772.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33773.13-33773.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33774.16-33774.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33763.1-33776.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w1_d9_S_x0'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w1_d9_S_x1_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33908.13-33908.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33909.13-33909.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33910.13-33910.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33911.13-33911.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33912.13-33912.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33913.13-33913.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33914.13-33914.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33915.13-33915.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33916.13-33916.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33917.16-33917.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:33906.1-33919.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w1_d9_S_x1'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w1_d9_S_x2_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34051.13-34051.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34052.13-34052.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34053.13-34053.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34054.13-34054.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34055.13-34055.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34056.13-34056.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34057.13-34057.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34058.13-34058.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34059.13-34059.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34060.16-34060.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34049.1-34062.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w1_d9_S_x2'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w1_d9_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34194.13-34194.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34195.13-34195.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34196.13-34196.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34197.13-34197.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34198.13-34198.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34199.13-34199.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34200.13-34200.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34201.13-34201.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34202.13-34202.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34203.16-34203.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34192.1-34205.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w1_d9_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w4_d2_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34330.13-34330.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34331.13-34331.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34332.16-34332.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34328.1-34334.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w4_d2_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w4_d2_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34459.13-34459.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34460.13-34460.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34461.16-34461.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34457.1-34463.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w4_d2_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w4_d7_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34593.13-34593.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34594.13-34594.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34595.13-34595.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34596.13-34596.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34597.13-34597.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34598.13-34598.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34599.13-34599.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34600.16-34600.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34591.1-34602.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w4_d7_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w4_d7_S_x0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34732.13-34732.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34733.13-34733.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34734.13-34734.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34735.13-34735.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34736.13-34736.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34737.13-34737.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34738.13-34738.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34739.16-34739.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34730.1-34741.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w4_d7_S_x0'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w4_d7_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34871.13-34871.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34872.13-34872.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34873.13-34873.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34874.13-34874.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34875.13-34875.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34876.13-34876.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34877.13-34877.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34878.16-34878.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:34869.1-34880.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w4_d7_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w4_d8_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35011.13-35011.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35012.13-35012.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35013.13-35013.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35014.13-35014.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35015.13-35015.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35016.13-35016.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35017.13-35017.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35018.13-35018.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35019.16-35019.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35009.1-35021.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w4_d8_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w4_d8_S_x0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35152.13-35152.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35153.13-35153.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35154.13-35154.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35155.13-35155.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35156.13-35156.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35157.13-35157.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35158.13-35158.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35159.13-35159.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35160.16-35160.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35150.1-35162.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w4_d8_S_x0'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w4_d8_S_x1_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35293.13-35293.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35294.13-35294.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35295.13-35295.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35296.13-35296.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35297.13-35297.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35298.13-35298.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35299.13-35299.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35300.13-35300.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35301.16-35301.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35291.1-35303.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w4_d8_S_x1'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w4_d8_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35434.13-35434.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35435.13-35435.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35436.13-35436.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35437.13-35437.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35438.13-35438.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35439.13-35439.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35440.13-35440.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35441.13-35441.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35442.16-35442.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35432.1-35444.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w4_d8_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w5_d2_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35569.13-35569.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35570.13-35570.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35571.16-35571.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35567.1-35573.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w5_d2_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w5_d2_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35698.13-35698.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35699.13-35699.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35700.16-35700.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35696.1-35702.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w5_d2_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w5_d7_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35832.13-35832.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35833.13-35833.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35834.13-35834.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35835.13-35835.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35836.13-35836.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35837.13-35837.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35838.13-35838.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35839.16-35839.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35830.1-35841.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w5_d7_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w5_d7_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35971.13-35971.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35972.13-35972.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35973.13-35973.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35974.13-35974.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35975.13-35975.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35976.13-35976.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35977.13-35977.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35978.16-35978.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:35969.1-35980.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w5_d7_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w5_d8_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36111.13-36111.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36112.13-36112.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36113.13-36113.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36114.13-36114.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36115.13-36115.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36116.13-36116.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36117.13-36117.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36118.13-36118.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36119.16-36119.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36109.1-36121.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w5_d8_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w5_d8_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36252.13-36252.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36253.13-36253.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36254.13-36254.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36255.13-36255.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36256.13-36256.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36257.13-36257.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36258.13-36258.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36259.13-36259.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36260.16-36260.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36250.1-36262.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w5_d8_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w6_d2_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36387.13-36387.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36388.13-36388.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36389.16-36389.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36385.1-36391.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w6_d2_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w6_d7_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36521.13-36521.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36522.13-36522.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36523.13-36523.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36524.13-36524.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36525.13-36525.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36526.13-36526.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36527.13-36527.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36528.16-36528.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36519.1-36530.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w6_d7_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w6_d7_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36660.13-36660.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36661.13-36661.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36662.13-36662.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36663.13-36663.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36664.13-36664.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36665.13-36665.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36666.13-36666.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36667.16-36667.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36658.1-36669.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w6_d7_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w6_d8_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36800.13-36800.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36801.13-36801.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36802.13-36802.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36803.13-36803.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36804.13-36804.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36805.13-36805.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36806.13-36806.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36807.13-36807.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36808.16-36808.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36798.1-36810.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w6_d8_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w6_d8_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36941.13-36941.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36942.13-36942.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36943.13-36943.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36944.13-36944.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36945.13-36945.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36946.13-36946.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36947.13-36947.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36948.13-36948.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36949.16-36949.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:36939.1-36951.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w6_d8_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w7_d2_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37076.13-37076.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37077.13-37077.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37078.16-37078.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37074.1-37080.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w7_d2_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w7_d2_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37205.13-37205.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37206.13-37206.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37207.16-37207.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37203.1-37209.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w7_d2_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w7_d7_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37339.13-37339.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37340.13-37340.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37341.13-37341.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37342.13-37342.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37343.13-37343.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37344.13-37344.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37345.13-37345.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37346.16-37346.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37337.1-37348.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w7_d7_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w7_d9_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37480.13-37480.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37481.13-37481.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37482.13-37482.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37483.13-37483.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37484.13-37484.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37485.13-37485.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37486.13-37486.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37487.13-37487.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37488.13-37488.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37489.16-37489.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37478.1-37491.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w7_d9_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w8_d2_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37616.13-37616.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37617.13-37617.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37618.16-37618.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37614.1-37620.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w8_d2_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w8_d2_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37745.13-37745.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37746.13-37746.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37747.16-37747.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37743.1-37749.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w8_d2_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w8_d7_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37879.13-37879.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37880.13-37880.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37881.13-37881.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37882.13-37882.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37883.13-37883.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37884.13-37884.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37885.13-37885.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37886.16-37886.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:37877.1-37888.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w8_d7_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w8_d7_S_x0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38018.13-38018.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38019.13-38019.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38020.13-38020.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38021.13-38021.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38022.13-38022.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38023.13-38023.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38024.13-38024.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38025.16-38025.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38016.1-38027.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w8_d7_S_x0'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w8_d7_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38157.13-38157.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38158.13-38158.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38159.13-38159.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38160.13-38160.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38161.13-38161.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38162.13-38162.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38163.13-38163.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38164.16-38164.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38155.1-38166.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w8_d7_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w8_d8_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38297.13-38297.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38298.13-38298.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38299.13-38299.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38300.13-38300.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38301.13-38301.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38302.13-38302.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38303.13-38303.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38304.13-38304.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38305.16-38305.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38295.1-38307.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w8_d8_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w8_d8_S_x0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38438.13-38438.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38439.13-38439.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38440.13-38440.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38441.13-38441.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38442.13-38442.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38443.13-38443.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38444.13-38444.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38445.13-38445.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38446.16-38446.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38436.1-38448.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w8_d8_S_x0'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w8_d8_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38579.13-38579.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38580.13-38580.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38581.13-38581.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38582.13-38582.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38583.13-38583.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38584.13-38584.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38585.13-38585.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38586.13-38586.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38587.16-38587.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38577.1-38589.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w8_d8_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w9_d2_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38714.13-38714.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38715.13-38715.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38716.16-38716.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38712.1-38718.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w9_d2_S'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w9_d2_S_x_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38843.13-38843.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38844.13-38844.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38845.16-38845.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38841.1-38847.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w9_d2_S_x'.
+Generating RTLIL representation for module `\td_fused_top_fifo_w9_d7_S_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38977.13-38977.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38978.13-38978.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38979.13-38979.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38980.13-38980.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38981.13-38981.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38982.13-38982.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38983.13-38983.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38984.16-38984.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:38975.1-38986.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_fifo_w9_d7_S'.
+Generating RTLIL representation for module `\td_fused_top_ap_hadd_3_full_dsp_16'.
+Generating RTLIL representation for module `\td_fused_top_hadd_16ns_16ns_16_5_full_dsp_1'.
+Generating RTLIL representation for module `\td_fused_top_ap_hcmp_0_no_dsp_16'.
+Generating RTLIL representation for module `\td_fused_top_hcmp_16ns_16ns_1_2_no_dsp_1'.
+Generating RTLIL representation for module `\td_fused_top_ap_hmul_2_max_dsp_16'.
+Generating RTLIL representation for module `\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1'.
+Generating RTLIL representation for module `\td_fused_top_hsub_16ns_16ns_16_5_full_dsp_1'.
+Generating RTLIL representation for module `\td_fused_top_mac_muladd_10s_9ns_8ns_16_4_1_DSP48_0'.
+Generating RTLIL representation for module `\td_fused_top_mac_muladd_10s_9ns_8ns_16_4_1'.
+Generating RTLIL representation for module `\td_fused_top_mul_10s_9ns_16_1_1_Multiplier_0'.
+Generating RTLIL representation for module `\td_fused_top_mul_10s_9ns_16_1_1'.
+Generating RTLIL representation for module `\td_fused_top_regslice_both'.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf10_readFilters68_U0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:39793.13-39793.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:39794.13-39794.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:39795.16-39795.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:39791.1-39797.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf10_readFilters68_U0'.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf11_readFilters74_U0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:39922.13-39922.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:39923.13-39923.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:39924.16-39924.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:39920.1-39926.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf11_readFilters74_U0'.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf12_readFilters78_U0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40051.13-40051.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40052.13-40052.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40053.16-40053.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40049.1-40055.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf12_readFilters78_U0'.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf1_readFilters18_U0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40180.13-40180.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40181.13-40181.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40182.16-40182.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40178.1-40184.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf1_readFilters18_U0'.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf2_readFilters24_U0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40309.13-40309.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40310.13-40310.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40311.16-40311.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40307.1-40313.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf2_readFilters24_U0'.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf3_readFilters30_U0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40438.13-40438.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40439.13-40439.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40440.16-40440.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40436.1-40442.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf3_readFilters30_U0'.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf4_readFilters36_U0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40567.13-40567.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40568.13-40568.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40569.16-40569.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40565.1-40571.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf4_readFilters36_U0'.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf5_readFilters40_U0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40696.13-40696.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40697.13-40697.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40698.16-40698.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40694.1-40700.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf5_readFilters40_U0'.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf6_readFilters46_U0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40825.13-40825.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40826.13-40826.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40827.16-40827.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40823.1-40829.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf6_readFilters46_U0'.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf7_readFilters52_U0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40954.13-40954.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40955.13-40955.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40956.16-40956.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:40952.1-40958.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf7_readFilters52_U0'.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf8_readFilters56_U0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:41083.13-41083.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:41084.13-41084.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:41085.16-41085.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:41081.1-41087.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf8_readFilters56_U0'.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf9_readFilters62_U0_shiftReg'.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:41212.13-41212.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:41213.13-41213.21.
+Warning: wire '\q' is assigned in a block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:41214.16-41214.24.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:41210.1-41216.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\td_fused_top_start_for_tdf9_readFilters62_U0'.
+Generating RTLIL representation for module `\td_fused_top_tdf10_15'.
+Generating RTLIL representation for module `\td_fused_top_tdf10_accum_1'.
+Generating RTLIL representation for module `\td_fused_top_tdf10_accum_2'.
+Generating RTLIL representation for module `\td_fused_top_tdf10_adjustments_ram'.
+Generating RTLIL representation for module `\td_fused_top_tdf10_adjustments'.
+Generating RTLIL representation for module `\td_fused_top_tdf10_adjust'.
+Generating RTLIL representation for module `\td_fused_top_tdf10_dot_product'.
+Generating RTLIL representation for module `\td_fused_top_tdf10_filters_ram'.
+Generating RTLIL representation for module `\td_fused_top_tdf10_filters'.
+Generating RTLIL representation for module `\td_fused_top_tdf10_get_next_ijk'.
+Generating RTLIL representation for module `\td_fused_top_tdf10_l2_filters_ram'.
+Generating RTLIL representation for module `\td_fused_top_tdf10_l2_filters'.
+Generating RTLIL representation for module `\td_fused_top_tdf10_l2_multiply66'.
+Generating RTLIL representation for module `\td_fused_top_tdf10_l2_writeOutputs_165_running_sums_3_ram'.
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small.v:0: ERROR: Can not open file `./td_fused_top_tdf10_l2_writeOutputs_165_running_sums_3_ram.dat` for \$readmemh.

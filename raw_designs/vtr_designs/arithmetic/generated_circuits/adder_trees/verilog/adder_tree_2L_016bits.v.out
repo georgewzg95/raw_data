@@ -1,0 +1,70 @@
+
+5. Printing statistics.
+
+=== $paramod\adder_tree_branch\EXTRA_BITS=s32'00000000000000000000000000000000 ===
+
+   Number of wires:                  3
+   Number of wire bits:             49
+   Number of public wires:           3
+   Number of public wire bits:      49
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $add                            1
+
+=== $paramod\adder_tree_branch\EXTRA_BITS=s32'00000000000000000000000000000001 ===
+
+   Number of wires:                  3
+   Number of wire bits:             52
+   Number of public wires:           3
+   Number of public wire bits:      52
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $add                            1
+
+=== $paramod\adder_tree_branch\EXTRA_BITS=s32'00000000000000000000000000000010 ===
+
+   Number of wires:                  3
+   Number of wire bits:             55
+   Number of public wires:           3
+   Number of public wire bits:      55
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $add                            1
+
+=== adder_tree_top ===
+
+   Number of wires:                 17
+   Number of wire bits:            262
+   Number of public wires:          17
+   Number of public wire bits:     262
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $dff                            5
+     $paramod\adder_tree_branch\EXTRA_BITS=s32'00000000000000000000000000000000      2
+     $paramod\adder_tree_branch\EXTRA_BITS=s32'00000000000000000000000000000001      1
+
+=== design hierarchy ===
+
+   adder_tree_top                    1
+     $paramod\adder_tree_branch\EXTRA_BITS=s32'00000000000000000000000000000000      2
+     $paramod\adder_tree_branch\EXTRA_BITS=s32'00000000000000000000000000000001      1
+
+   Number of wires:                 26
+   Number of wire bits:            412
+   Number of public wires:          26
+   Number of public wire bits:     412
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add                            3
+     $dff                            5
+

@@ -1,0 +1,270 @@
+
+5. Printing statistics.
+
+=== $paramod$22dc68451fcf4317fe294a8b8f6b7ec558c9fd5a\vecmat_add_h ===
+
+   Number of wires:                 83
+   Number of wire bits:           2306
+   Number of public wires:          83
+   Number of public wire bits:    2306
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 80
+     $dffe                          17
+     qadd2                          63
+
+=== $paramod$22dc68451fcf4317fe294a8b8f6b7ec558c9fd5a\vecmat_mul_h ===
+
+   Number of wires:                  7
+   Number of wire bits:           5122
+   Number of public wires:           7
+   Number of public wire bits:    5122
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 66
+     $dffe                           2
+     signedmul                      64
+
+=== $paramod$e3a666739cb884d69c4ef7b922d700778df0ab7e\vecmat_add_x ===
+
+   Number of wires:                116
+   Number of wire bits:           3410
+   Number of public wires:         116
+   Number of public wire bits:    3410
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                113
+     $dffe                          14
+     qadd2                          99
+
+=== $paramod$e3a666739cb884d69c4ef7b922d700778df0ab7e\vecmat_mul_x ===
+
+   Number of wires:                  7
+   Number of wire bits:           8002
+   Number of public wires:           7
+   Number of public wire bits:    8002
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                102
+     $dffe                           2
+     signedmul                     100
+
+=== lstm_top ===
+
+   Number of wires:                 84
+   Number of wire bits:          35010
+   Number of public wires:          84
+   Number of public wire bits:   35010
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 66
+     $dff                           33
+     $paramod$22dc68451fcf4317fe294a8b8f6b7ec558c9fd5a\vecmat_add_h      4
+     $paramod$22dc68451fcf4317fe294a8b8f6b7ec558c9fd5a\vecmat_mul_h      4
+     $paramod$e3a666739cb884d69c4ef7b922d700778df0ab7e\vecmat_add_x      4
+     $paramod$e3a666739cb884d69c4ef7b922d700778df0ab7e\vecmat_mul_x      4
+     qadd2                           9
+     sigmoid                         3
+     signedmul                       3
+     tanh                            2
+
+=== qadd2 ===
+
+   Number of wires:                  3
+   Number of wire bits:             48
+   Number of public wires:           3
+   Number of public wire bits:      48
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $add                            1
+
+=== sigmoid ===
+
+   Number of wires:                229
+   Number of wire bits:            424
+   Number of public wires:           4
+   Number of public wire bits:      54
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                227
+     $and                          116
+     $dlatch                         1
+     $eq                            58
+     $ge                             1
+     $gt                             4
+     $le                             4
+     $logic_and                      4
+     $logic_not                      2
+     $mux                           28
+     $not                            5
+     $pmux                           2
+     $reduce_or                      2
+
+=== signedmul ===
+
+   Number of wires:                 21
+   Number of wire bits:            278
+   Number of public wires:          14
+   Number of public wire bits:     181
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $add                            3
+     $dff                            7
+     $eq                             1
+     $mul                            1
+     $mux                            3
+     $not                            3
+     $sdff                           2
+
+=== spram_b ===
+
+   Number of wires:                  5
+   Number of wire bits:             41
+   Number of public wires:           5
+   Number of public wire bits:      41
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     single_port_ram                 1
+
+=== spram_u ===
+
+   Number of wires:                  5
+   Number of wire bits:           2057
+   Number of public wires:           5
+   Number of public wire bits:    2057
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     single_port_ram                 1
+
+=== spram_v ===
+
+   Number of wires:                  5
+   Number of wire bits:           3209
+   Number of public wires:           5
+   Number of public wire bits:    3209
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     single_port_ram                 1
+
+=== tanh ===
+
+   Number of wires:                254
+   Number of wire bits:            465
+   Number of public wires:           5
+   Number of public wire bits:      69
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                253
+     $add                            2
+     $and                          145
+     $dlatch                         1
+     $eq                            25
+     $ge                            13
+     $logic_and                     11
+     $logic_not                      2
+     $lt                            11
+     $mux                           23
+     $not                           16
+     $pmux                           2
+     $reduce_or                      2
+
+=== top ===
+
+   Number of wires:                585
+   Number of wire bits:          19807
+   Number of public wires:          41
+   Number of public wire bits:   18007
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                696
+     $add                            7
+     $dffe                           1
+     $eq                           190
+     $gt                             4
+     $logic_not                      3
+     $logic_or                       1
+     $mux                            8
+     $ne                             2
+     $not                           66
+     $pmux                          65
+     $reduce_and                   131
+     $reduce_bool                    2
+     $reduce_or                     65
+     $sdff                           3
+     $sdffe                        134
+     lstm_top                        1
+     spram_b                         4
+     spram_u                         4
+     spram_v                         5
+
+=== design hierarchy ===
+
+   top                               1
+     lstm_top                        1
+       $paramod$22dc68451fcf4317fe294a8b8f6b7ec558c9fd5a\vecmat_add_h      4
+         qadd2                      63
+       $paramod$22dc68451fcf4317fe294a8b8f6b7ec558c9fd5a\vecmat_mul_h      4
+         signedmul                  64
+       $paramod$e3a666739cb884d69c4ef7b922d700778df0ab7e\vecmat_add_x      4
+         qadd2                      99
+       $paramod$e3a666739cb884d69c4ef7b922d700778df0ab7e\vecmat_mul_x      4
+         signedmul                 100
+       qadd2                         9
+       sigmoid                       3
+       signedmul                     3
+       tanh                          2
+     spram_b                         4
+     spram_u                         4
+     spram_v                         5
+
+   Number of wires:              18591
+   Number of wire bits:         371554
+   Number of public wires:       12261
+   Number of public wire bits:  303929
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              15892
+     $add                         2645
+     $and                          638
+     $dff                         4646
+     $dffe                         141
+     $dlatch                         5
+     $eq                          1073
+     $ge                            29
+     $gt                            16
+     $le                            12
+     $logic_and                     34
+     $logic_not                     13
+     $logic_or                       1
+     $lt                            22
+     $mul                          659
+     $mux                         2115
+     $ne                             2
+     $not                         2090
+     $pmux                          75
+     $reduce_and                   131
+     $reduce_bool                    2
+     $reduce_or                     75
+     $sdff                        1321
+     $sdffe                        134
+     single_port_ram                13
+

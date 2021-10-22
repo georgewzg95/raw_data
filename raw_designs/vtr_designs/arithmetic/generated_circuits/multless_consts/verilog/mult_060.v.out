@@ -1,0 +1,46 @@
+
+5. Printing statistics.
+
+=== multiplier_block ===
+
+   Number of wires:                 13
+   Number of wire bits:            416
+   Number of public wires:          13
+   Number of public wire bits:     416
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $add                            1
+     $sub                            4
+
+=== surround_with_regs ===
+
+   Number of wires:                  6
+   Number of wire bits:            129
+   Number of public wires:           5
+   Number of public wire bits:     128
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $dff                            2
+     multiplier_block                1
+
+=== design hierarchy ===
+
+   surround_with_regs                1
+     multiplier_block                1
+
+   Number of wires:                 19
+   Number of wire bits:            545
+   Number of public wires:          18
+   Number of public wire bits:     544
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add                            1
+     $dff                            2
+     $sub                            4
+

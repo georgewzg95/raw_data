@@ -1,0 +1,90 @@
+
+5. Printing statistics.
+
+=== $paramod\input_pipeline\WIDTH=s32'00000000000000000000000000010010 ===
+
+   Number of wires:                 19
+   Number of wire bits:            291
+   Number of public wires:          19
+   Number of public wire bits:     291
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $adffe                         15
+
+=== adder_with_1_reg ===
+
+   Number of wires:                  6
+   Number of wire bits:             74
+   Number of public wires:           5
+   Number of public wire bits:      56
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $add                            1
+     $dffe                           1
+
+=== fir ===
+
+   Number of wires:                 54
+   Number of wire bits:            889
+   Number of public wires:          54
+   Number of public wire bits:     889
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 25
+     $adffe                          1
+     $paramod\input_pipeline\WIDTH=s32'00000000000000000000000000010010      1
+     adder_with_1_reg               14
+     multiplier_with_reg             8
+     one_register                    1
+
+=== multiplier_with_reg ===
+
+   Number of wires:                  6
+   Number of wire bits:             74
+   Number of public wires:           5
+   Number of public wire bits:      56
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $dffe                           1
+     $mul                            1
+
+=== one_register ===
+
+   Number of wires:                  4
+   Number of wire bits:             38
+   Number of public wires:           4
+   Number of public wire bits:      38
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $dffe                           1
+
+=== design hierarchy ===
+
+   fir                               1
+     $paramod\input_pipeline\WIDTH=s32'00000000000000000000000000010010      1
+     adder_with_1_reg               14
+     multiplier_with_reg             8
+     one_register                    1
+
+   Number of wires:                209
+   Number of wire bits:           2846
+   Number of public wires:         187
+   Number of public wire bits:    2450
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 61
+     $add                           14
+     $adffe                         16
+     $dffe                          23
+     $mul                            8
+

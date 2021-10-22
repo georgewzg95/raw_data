@@ -1,0 +1,343 @@
+
+5. Printing statistics.
+
+=== bilinearintrp ===
+
+   Number of wires:                 72
+   Number of wire bits:            669
+   Number of public wires:          49
+   Number of public wire bits:     422
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 46
+     $add                            6
+     $dff                           21
+     $eq                             5
+     $logic_not                      1
+     $mul                            9
+     $pmux                           2
+     $sub                            2
+
+=== col16to21 ===
+
+   Number of wires:                 10
+   Number of wire bits:            107
+   Number of public wires:           6
+   Number of public wire bits:     103
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             3
+     $logic_not                      1
+     $pmux                           1
+
+=== delay1x3 ===
+
+   Number of wires:                  6
+   Number of wire bits:              6
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $dff                            3
+
+=== fifo3 ===
+
+   Number of wires:                 48
+   Number of wire bits:            453
+   Number of public wires:          10
+   Number of public wire bits:      96
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 42
+     $add                            1
+     $and                            1
+     $eq                             3
+     $logic_not                      1
+     $mux                           14
+     $ne                             4
+     $not                            1
+     $pmux                           3
+     $reduce_and                     4
+     $reduce_bool                    2
+     $reduce_or                      3
+     $sdffe                          4
+     $sub                            1
+
+=== linearmap ===
+
+   Number of wires:                 28
+   Number of wire bits:            259
+   Number of public wires:          10
+   Number of public wire bits:      71
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 21
+     $add                            9
+     $dff                            1
+     $dffe                           2
+     $eq                             7
+     $logic_not                      1
+     $pmux                           1
+
+=== matmult ===
+
+   Number of wires:                 40
+   Number of wire bits:            913
+   Number of public wires:          25
+   Number of public wire bits:     529
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 27
+     $add                            6
+     $dff                           12
+     $mul                            9
+
+=== onlyonecycle ===
+
+   Number of wires:                 24
+   Number of wire bits:             61
+   Number of public wires:           8
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 21
+     $and                            3
+     $dlatch                         3
+     $eq                             2
+     $logic_not                      1
+     $mux                            5
+     $not                            3
+     $pmux                           1
+     $sdff                           2
+     $sub                            1
+
+=== paj_raygentop_hierarchy_no_mem ===
+
+   Number of wires:                113
+   Number of wire bits:           1514
+   Number of public wires:         113
+   Number of public wire bits:    1514
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $not                            1
+     $or                             1
+     $sdff                           1
+     delay1x3                        1
+     matmult                         1
+     onlyonecycle                    1
+     raygencont                      1
+     raysend                         1
+     resultrecieve                   1
+     resultwriter                    1
+     rgconfigmemory                  1
+     rgsramcontroller                1
+
+=== raygencont ===
+
+   Number of wires:                245
+   Number of wire bits:            707
+   Number of public wires:          46
+   Number of public wire bits:     354
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                227
+     $add                            2
+     $and                          111
+     $dffe                           1
+     $dlatch                        17
+     $eq                             5
+     $gt                             1
+     $logic_not                      2
+     $mux                           25
+     $ne                             2
+     $not                           17
+     $pmux                           4
+     $reduce_or                     29
+     $sdff                          10
+     $sub                            1
+
+=== raysend ===
+
+   Number of wires:                 96
+   Number of wire bits:            363
+   Number of public wires:          22
+   Number of public wire bits:     233
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 87
+     $and                           32
+     $dlatch                         7
+     $eq                             9
+     $logic_not                      1
+     $mux                            8
+     $not                           15
+     $pmux                           4
+     $reduce_or                      5
+     $sdff                           6
+
+=== resultrecieve ===
+
+   Number of wires:                 90
+   Number of wire bits:            435
+   Number of public wires:          56
+   Number of public wire bits:     395
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 82
+     $and                           10
+     $dlatch                        24
+     $eq                             8
+     $logic_not                      1
+     $mux                            4
+     $not                            8
+     $pmux                           1
+     $reduce_or                      2
+     $sdff                          24
+
+=== resultwriter ===
+
+   Number of wires:                271
+   Number of wire bits:           1209
+   Number of public wires:          83
+   Number of public wire bits:     794
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                237
+     $and                          106
+     $dffe                           1
+     $dlatch                        23
+     $eq                            14
+     $logic_not                      1
+     $mux                           27
+     $not                           23
+     $or                             5
+     $pmux                          12
+     $reduce_or                     11
+     $sdff                           9
+     bilinearintrp                   1
+     col16to21                       1
+     fifo3                           2
+     linearmap                       1
+
+=== rgconfigmemory ===
+
+   Number of wires:                594
+   Number of wire bits:           1096
+   Number of public wires:          35
+   Number of public wire bits:     537
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                588
+     $and                          443
+     $dlatch                        12
+     $eq                            13
+     $logic_and                     12
+     $mux                            2
+     $not                           13
+     $pmux                           1
+     $reduce_or                     78
+     $sdff                          13
+     spram21x4                       1
+
+=== rgsramcontroller ===
+
+   Number of wires:                154
+   Number of wire bits:           1255
+   Number of public wires:          50
+   Number of public wire bits:     850
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                127
+     $add                            2
+     $and                           28
+     $dlatch                        16
+     $eq                            12
+     $logic_not                      1
+     $mux                           27
+     $not                           14
+     $or                             5
+     $pmux                           3
+     $reduce_bool                    1
+     $reduce_or                      7
+     $sdff                          10
+     $sub                            1
+
+=== spram21x4 ===
+
+   Number of wires:                  5
+   Number of wire bits:             52
+   Number of public wires:           5
+   Number of public wire bits:      52
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $dff                            1
+     single_port_ram                 1
+
+=== design hierarchy ===
+
+   paj_raygentop_hierarchy_no_mem      1
+     delay1x3                        1
+     matmult                         1
+     onlyonecycle                    1
+     raygencont                      1
+     raysend                         1
+     resultrecieve                   1
+     resultwriter                    1
+       bilinearintrp                 1
+       col16to21                     1
+       fifo3                         2
+       linearmap                     1
+     rgconfigmemory                  1
+       spram21x4                     1
+     rgsramcontroller                1
+
+   Number of wires:               1844
+   Number of wire bits:           9552
+   Number of public wires:         534
+   Number of public wire bits:    6062
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1554
+     $add                           27
+     $and                          735
+     $dff                           38
+     $dffe                           4
+     $dlatch                       102
+     $eq                            84
+     $gt                             1
+     $logic_and                     12
+     $logic_not                     12
+     $mul                           18
+     $mux                          126
+     $ne                            10
+     $not                           96
+     $or                            11
+     $pmux                          36
+     $reduce_and                     8
+     $reduce_bool                    5
+     $reduce_or                    138
+     $sdff                          75
+     $sdffe                          8
+     $sub                            7
+     single_port_ram                 1
+

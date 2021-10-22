@@ -1,0 +1,73 @@
+
+5. Printing statistics.
+
+=== memory_controller ===
+
+   Number of wires:                 13
+   Number of wire bits:            124
+   Number of public wires:          11
+   Number of public wire bits:     122
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and                            1
+     $dff                            1
+     $dlatch                         4
+     $reduce_or                      2
+     single_port_ram                 1
+
+=== memset ===
+
+   Number of wires:                 60
+   Number of wire bits:            571
+   Number of public wires:          22
+   Number of public wire bits:     428
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 51
+     $and                            1
+     $dffe                           9
+     $dlatch                         2
+     $eq                            15
+     $logic_not                      1
+     $mux                            4
+     $ne                             1
+     $not                            1
+     $pmux                           3
+     $reduce_and                     8
+     $reduce_bool                    3
+     $reduce_or                      1
+     $sdffe                          1
+     memory_controller               1
+
+=== design hierarchy ===
+
+   memset                            1
+     memory_controller               1
+
+   Number of wires:                 73
+   Number of wire bits:            695
+   Number of public wires:          33
+   Number of public wire bits:     550
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 59
+     $and                            2
+     $dff                            1
+     $dffe                           9
+     $dlatch                         6
+     $eq                            15
+     $logic_not                      1
+     $mux                            4
+     $ne                             1
+     $not                            1
+     $pmux                           3
+     $reduce_and                     8
+     $reduce_bool                    3
+     $reduce_or                      3
+     $sdffe                          1
+     single_port_ram                 1
+

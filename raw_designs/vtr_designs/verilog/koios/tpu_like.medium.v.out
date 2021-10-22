@@ -1,0 +1,347 @@
+
+5. Printing statistics.
+
+=== activation ===
+
+   Number of wires:               1749
+   Number of wire bits:           6723
+   Number of public wires:          28
+   Number of public wire bits:    3339
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1833
+     $add                           33
+     $dffe                           1
+     $eq                           292
+     $ge                           160
+     $gt                           128
+     $le                           160
+     $logic_and                    256
+     $logic_not                     64
+     $logic_or                       2
+     $lt                           128
+     $mul                           32
+     $mux                          397
+     $ne                             2
+     $not                            2
+     $pmux                          64
+     $reduce_and                     2
+     $reduce_bool                    2
+     $reduce_or                     97
+     $sdff                           4
+     $sdffe                          7
+
+=== cfg ===
+
+   Number of wires:                125
+   Number of wire bits:            677
+   Number of public wires:          50
+   Number of public wire bits:     508
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                117
+     $eq                            23
+     $logic_and                      4
+     $logic_not                      3
+     $mux                            6
+     $ne                             3
+     $not                            1
+     $pmux                           4
+     $reduce_and                    27
+     $reduce_bool                    3
+     $reduce_or                      1
+     $sdffe                         42
+
+=== control ===
+
+   Number of wires:                 51
+   Number of wire bits:             90
+   Number of public wires:          15
+   Number of public wire bits:      18
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 39
+     $eq                             5
+     $logic_and                      1
+     $logic_not                      1
+     $mux                           15
+     $ne                             7
+     $not                            1
+     $pmux                           2
+     $reduce_and                     2
+     $reduce_bool                    2
+     $sdffe                          3
+
+=== matmul_32x32_systolic ===
+
+   Number of wires:               1256
+   Number of wire bits:          12097
+   Number of public wires:        1249
+   Number of public wire bits:   12059
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 76
+     $add                            1
+     $eq                             1
+     $logic_not                      2
+     $logic_or                       1
+     $mux                           65
+     $not                            1
+     $sdff                           2
+     output_logic                    1
+     systolic_data_setup             1
+     systolic_pe_matrix              1
+
+=== norm ===
+
+   Number of wires:                157
+   Number of wire bits:           2690
+   Number of public wires:          20
+   Number of public wire bits:    1626
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                148
+     $add                            1
+     $dffe                           2
+     $eq                             2
+     $logic_or                       2
+     $mul                           32
+     $mux                           68
+     $not                            2
+     $reduce_or                      1
+     $sdff                           4
+     $sdffe                          2
+     $sub                           32
+
+=== output_logic ===
+
+   Number of wires:               1227
+   Number of wire bits:          49758
+   Number of public wires:        1071
+   Number of public wire bits:   16732
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                193
+     $add                            2
+     $dffe                           1
+     $eq                             1
+     $ge                             1
+     $mux                          143
+     $ne                             2
+     $not                            1
+     $or                             1
+     $reduce_and                     2
+     $reduce_bool                    3
+     $sdffe                         35
+     $sub                            1
+
+=== pool ===
+
+   Number of wires:                 38
+   Number of wire bits:           1226
+   Number of public wires:          17
+   Number of public wire bits:    1132
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $add                            5
+     $dffe                           2
+     $eq                             4
+     $logic_or                       2
+     $mux                            3
+     $not                            2
+     $pmux                           2
+     $reduce_and                     4
+     $reduce_bool                    2
+     $sdffe                          6
+
+=== processing_element ===
+
+   Number of wires:                  8
+   Number of wire bits:             50
+   Number of public wires:           8
+   Number of public wire bits:      50
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $sdff                           2
+     seq_mac                         1
+
+=== qadd ===
+
+   Number of wires:                  3
+   Number of wire bits:             48
+   Number of public wires:           3
+   Number of public wire bits:      48
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $add                            1
+
+=== qmult ===
+
+   Number of wires:                  3
+   Number of wire bits:             32
+   Number of public wires:           3
+   Number of public wire bits:      32
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $mul                            1
+
+=== ram ===
+
+   Number of wires:                 11
+   Number of wire bits:           1111
+   Number of public wires:          11
+   Number of public wire bits:    1111
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $reduce_or                      2
+     dual_port_ram                   1
+
+=== seq_mac ===
+
+   Number of wires:                 14
+   Number of wire bits:            123
+   Number of public wires:          11
+   Number of public wire bits:     106
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $dff                            4
+     $mux                            3
+     $reduce_or                      1
+     qadd                            1
+     qmult                           1
+
+=== systolic_data_setup ===
+
+   Number of wires:               1433
+   Number of wire bits:          10235
+   Number of public wires:        1081
+   Number of public wire bits:    9215
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1416
+     $add                            6
+     $and                          128
+     $dffe                           2
+     $eq                            64
+     $ge                             6
+     $logic_and                     66
+     $logic_not                      1
+     $logic_or                      66
+     $lt                             2
+     $mux                            6
+     $not                           67
+     $reduce_bool                    2
+     $reduce_or                      2
+     $sdff                         994
+     $sdffe                          2
+     $sub                            2
+
+=== systolic_pe_matrix ===
+
+   Number of wires:               3142
+   Number of wire bits:          25604
+   Number of public wires:        3142
+   Number of public wire bits:   25604
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1025
+     $or                             1
+     processing_element           1024
+
+=== top ===
+
+   Number of wires:                 96
+   Number of wire bits:           4837
+   Number of public wires:          89
+   Number of public wire bits:    4782
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $add                            1
+     $dff                            1
+     $mux                            5
+     $not                            1
+     $reduce_or                      1
+     $sdff                           2
+     $sub                            1
+     activation                      1
+     cfg                             1
+     control                         1
+     matmul_32x32_systolic           1
+     norm                            1
+     pool                            1
+     ram                             2
+
+=== design hierarchy ===
+
+   top                               1
+     activation                      1
+     cfg                             1
+     control                         1
+     matmul_32x32_systolic           1
+       output_logic                  1
+       systolic_data_setup           1
+       systolic_pe_matrix            1
+         processing_element       1024
+           seq_mac                   1
+             qadd                    1
+             qmult                   1
+     norm                            1
+     pool                            1
+     ram                             2
+
+   Number of wires:              37968
+   Number of wire bits:         375231
+   Number of public wires:       32384
+   Number of public wire bits:  318901
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              16158
+     $add                         1073
+     $and                          128
+     $dff                         4097
+     $dffe                           8
+     $eq                           392
+     $ge                           167
+     $gt                           128
+     $le                           160
+     $logic_and                    327
+     $logic_not                     71
+     $logic_or                      73
+     $lt                           130
+     $mul                         1088
+     $mux                         3780
+     $ne                            14
+     $not                           78
+     $or                             2
+     $pmux                          72
+     $reduce_and                    37
+     $reduce_bool                   14
+     $reduce_or                   1130
+     $sdff                        3054
+     $sdffe                         97
+     $sub                           36
+     dual_port_ram                   2
+

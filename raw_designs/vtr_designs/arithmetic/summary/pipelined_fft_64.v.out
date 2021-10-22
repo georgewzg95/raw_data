@@ -1,0 +1,324 @@
+
+5. Printing statistics.
+
+=== $paramod\CNORM\nb=s32'00000000000000000000000000010000 ===
+
+   Number of wires:                 30
+   Number of wire bits:            173
+   Number of public wires:          14
+   Number of public wire bits:     157
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 26
+     $dffe                           3
+     $eq                             3
+     $logic_not                      1
+     $logic_or                       4
+     $ne                             4
+     $pmux                           7
+     $reduce_and                     1
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdffce                         1
+
+=== $paramod\CNORM\nb=s32'00000000000000000000000000010010 ===
+
+   Number of wires:                 30
+   Number of wire bits:            189
+   Number of public wires:          14
+   Number of public wire bits:     173
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 26
+     $dffe                           3
+     $eq                             3
+     $logic_not                      1
+     $logic_or                       4
+     $ne                             4
+     $pmux                           7
+     $reduce_and                     1
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdffce                         1
+
+=== $paramod\FFT8\nb=s32'00000000000000000000000000010000 ===
+
+   Number of wires:                168
+   Number of wire bits:           2189
+   Number of public wires:          64
+   Number of public wire bits:     995
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                160
+     $add                           22
+     $dffe                          50
+     $eq                             8
+     $logic_and                      2
+     $logic_not                      1
+     $logic_or                      10
+     $mux                            8
+     $ne                             2
+     $paramod\MPU707\nb=s32'00000000000000000000000000010000      2
+     $pmux                           8
+     $reduce_and                    14
+     $reduce_bool                    5
+     $reduce_or                      2
+     $sdffe                          3
+     $sub                           23
+
+=== $paramod\FFT8\nb=s32'00000000000000000000000000010010 ===
+
+   Number of wires:                168
+   Number of wire bits:           2405
+   Number of public wires:          64
+   Number of public wire bits:    1107
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                160
+     $add                           22
+     $dffe                          50
+     $eq                             8
+     $logic_and                      2
+     $logic_not                      1
+     $logic_or                      10
+     $mux                            8
+     $ne                             2
+     $paramod\MPU707\nb=s32'00000000000000000000000000010000      2
+     $pmux                           8
+     $reduce_and                    14
+     $reduce_bool                    5
+     $reduce_or                      2
+     $sdffe                          3
+     $sub                           23
+
+=== $paramod\MPU707\nb=s32'00000000000000000000000000010000 ===
+
+   Number of wires:                 10
+   Number of wire bits:            170
+   Number of public wires:           8
+   Number of public wire bits:     125
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add                            4
+     $dffe                           3
+
+=== $paramod\RAM2x64C_1\nb=s32'00000000000000000000000000010000 ===
+
+   Number of wires:                 21
+   Number of wire bits:            307
+   Number of public wires:          15
+   Number of public wire bits:     165
+   Number of memories:               1
+   Number of memory bits:         4096
+   Number of processes:              0
+   Number of cells:                 10
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            6
+     $not                            1
+
+=== $paramod\RAM2x64C_1\nb=s32'00000000000000000000000000010010 ===
+
+   Number of wires:                 21
+   Number of wire bits:            339
+   Number of public wires:          15
+   Number of public wire bits:     181
+   Number of memories:               1
+   Number of memory bits:         4608
+   Number of processes:              0
+   Number of cells:                 10
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            6
+     $not                            1
+
+=== $paramod\RAM2x64C_1\nb=s32'00000000000000000000000000010011 ===
+
+   Number of wires:                 21
+   Number of wire bits:            355
+   Number of public wires:          15
+   Number of public wire bits:     189
+   Number of memories:               1
+   Number of memory bits:         4864
+   Number of processes:              0
+   Number of cells:                 10
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            6
+     $not                            1
+
+=== BUFRAM64C1_NB16 ===
+
+   Number of wires:                 28
+   Number of wire bits:            194
+   Number of public wires:          15
+   Number of public wire bits:      98
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     $add                            2
+     $eq                             1
+     $mux                            4
+     $ne                             2
+     $paramod\RAM2x64C_1\nb=s32'00000000000000000000000000010000      1
+     $reduce_and                     2
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdffe                          4
+
+=== BUFRAM64C1_NB18 ===
+
+   Number of wires:                 28
+   Number of wire bits:            202
+   Number of public wires:          15
+   Number of public wire bits:     106
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     $add                            2
+     $eq                             1
+     $mux                            4
+     $ne                             2
+     $paramod\RAM2x64C_1\nb=s32'00000000000000000000000000010010      1
+     $reduce_and                     2
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdffe                          4
+
+=== BUFRAM64C1_NB19 ===
+
+   Number of wires:                 28
+   Number of wire bits:            206
+   Number of public wires:          15
+   Number of public wire bits:     110
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     $add                            2
+     $eq                             1
+     $mux                            4
+     $ne                             2
+     $paramod\RAM2x64C_1\nb=s32'00000000000000000000000000010011      1
+     $reduce_and                     2
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdffe                          4
+
+=== ROTATOR64 ===
+
+   Number of wires:                 39
+   Number of wire bits:            505
+   Number of public wires:          28
+   Number of public wire bits:     427
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $add                            2
+     $dffe                          11
+     $logic_and                      1
+     $mul                            4
+     $mux                            2
+     $not                            2
+     $reduce_and                     1
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdffe                          3
+     $sub                            1
+     WROM64                          1
+
+=== USFFT64_2B ===
+
+   Number of wires:                 44
+   Number of wire bits:            436
+   Number of public wires:          40
+   Number of public wire bits:     401
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $add                            1
+     $paramod\CNORM\nb=s32'00000000000000000000000000010000      1
+     $paramod\CNORM\nb=s32'00000000000000000000000000010010      1
+     $paramod\FFT8\nb=s32'00000000000000000000000000010000      1
+     $paramod\FFT8\nb=s32'00000000000000000000000000010010      1
+     $reduce_or                      1
+     $sdffe                          1
+     BUFRAM64C1_NB16                 1
+     BUFRAM64C1_NB18                 1
+     BUFRAM64C1_NB19                 1
+     ROTATOR64                       1
+
+=== WROM64 ===
+
+   Number of wires:                215
+   Number of wire bits:           4247
+   Number of public wires:         132
+   Number of public wire bits:    4164
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 84
+     $eq                            62
+     $logic_not                      1
+     $pmux                           1
+     $reduce_or                     20
+
+=== design hierarchy ===
+
+   USFFT64_2B                        1
+     $paramod\CNORM\nb=s32'00000000000000000000000000010000      1
+     $paramod\CNORM\nb=s32'00000000000000000000000000010010      1
+     $paramod\FFT8\nb=s32'00000000000000000000000000010000      1
+       $paramod\MPU707\nb=s32'00000000000000000000000000010000      2
+     $paramod\FFT8\nb=s32'00000000000000000000000000010010      1
+       $paramod\MPU707\nb=s32'00000000000000000000000000010000      2
+     BUFRAM64C1_NB16                 1
+       $paramod\RAM2x64C_1\nb=s32'00000000000000000000000000010000      1
+     BUFRAM64C1_NB18                 1
+       $paramod\RAM2x64C_1\nb=s32'00000000000000000000000000010010      1
+     BUFRAM64C1_NB19                 1
+       $paramod\RAM2x64C_1\nb=s32'00000000000000000000000000010011      1
+     ROTATOR64                       1
+       WROM64                        1
+
+   Number of wires:                881
+   Number of wire bits:          12427
+   Number of public wires:         478
+   Number of public wire bits:    8773
+   Number of memories:               3
+   Number of memory bits:        13568
+   Number of processes:              0
+   Number of cells:                593
+     $add                           69
+     $dffe                         132
+     $eq                            87
+     $logic_and                      5
+     $logic_not                      5
+     $logic_or                      28
+     $memrd                          3
+     $memwr_v2                       3
+     $mul                            4
+     $mux                           48
+     $ne                            18
+     $not                            5
+     $pmux                          31
+     $reduce_and                    37
+     $reduce_bool                   16
+     $reduce_or                     31
+     $sdffce                         2
+     $sdffe                         22
+     $sub                           47
+

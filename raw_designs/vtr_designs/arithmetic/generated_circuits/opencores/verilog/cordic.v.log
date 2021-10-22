@@ -1,0 +1,343 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.10+12 (git sha1 4d87019, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+
+
+-- Executing script file `out.ys' --
+
+1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v
+Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v' to AST representation.
+Generating RTLIL representation for module `\signed_shifter'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:178.3-247.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\rotator'.
+Generating RTLIL representation for module `\cordic'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:407.3-426.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Finding top of design hierarchy..
+root of   2 design levels: cordic              
+root of   1 design levels: rotator             
+root of   0 design levels: signed_shifter      
+Automatically selected cordic as design top module.
+
+2.2. Analyzing design hierarchy..
+Top module:  \cordic
+Used module:     \rotator
+Used module:         \signed_shifter
+
+2.3. Analyzing design hierarchy..
+Top module:  \cordic
+Used module:     \rotator
+Used module:         \signed_shifter
+Removed 0 unused modules.
+Mapping positional arguments of cell cordic.U (rotator).
+Mapping positional arguments of cell rotator.y_shifter (signed_shifter).
+Mapping positional arguments of cell rotator.x_shifter (signed_shifter).
+Warning: Resizing cell port cordic.U.iteration from 5 bits to 4 bits.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:432$14 in module cordic.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:407$10 in module cordic.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:289$2 in module rotator.
+Removed 1 dead cases from process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:178$1 in module signed_shifter.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:178$1 in module signed_shifter.
+Removed a total of 1 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 4 redundant assignments.
+Promoted 2 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \init in `\cordic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:432$14'.
+
+3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\cordic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:432$14'.
+     1/1: $0\iteration[4:0]
+Creating decoders for process `\cordic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:407$10'.
+     1/1: $1\tanangle_of_iteration[16:0]
+Creating decoders for process `\rotator.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:289$2'.
+     1/3: $0\z_1[16:0]
+     2/3: $0\y_1[16:0]
+     3/3: $0\x_1[16:0]
+Creating decoders for process `\signed_shifter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:178$1'.
+     1/16: $1\Q[16:0] [16]
+     2/16: $1\Q[16:0] [1:0]
+     3/16: $1\Q[16:0] [15]
+     4/16: $1\Q[16:0] [14]
+     5/16: $1\Q[16:0] [13]
+     6/16: $1\Q[16:0] [12]
+     7/16: $1\Q[16:0] [11]
+     8/16: $1\Q[16:0] [10]
+     9/16: $1\Q[16:0] [9]
+    10/16: $1\Q[16:0] [8]
+    11/16: $1\Q[16:0] [7]
+    12/16: $1\Q[16:0] [6]
+    13/16: $1\Q[16:0] [5]
+    14/16: $1\Q[16:0] [4]
+    15/16: $1\Q[16:0] [3]
+    16/16: $1\Q[16:0] [2]
+
+3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\cordic.\tanangle_of_iteration' from process `\cordic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:407$10'.
+No latch inferred for signal `\signed_shifter.\Q' from process `\signed_shifter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:178$1'.
+
+3.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\cordic.\iteration' using process `\cordic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:432$14'.
+  created $adff cell `$procdff$332' with positive edge clock and positive level reset.
+Creating register for signal `\rotator.\x_1' using process `\rotator.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:289$2'.
+  created $dff cell `$procdff$333' with positive edge clock.
+Creating register for signal `\rotator.\y_1' using process `\rotator.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:289$2'.
+  created $dff cell `$procdff$334' with positive edge clock.
+Creating register for signal `\rotator.\z_1' using process `\rotator.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:289$2'.
+  created $dff cell `$procdff$335' with positive edge clock.
+
+3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `cordic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:432$14'.
+Found and cleaned up 1 empty switch in `\cordic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:407$10'.
+Removing empty process `cordic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:407$10'.
+Found and cleaned up 3 empty switches in `\rotator.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:289$2'.
+Removing empty process `rotator.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:289$2'.
+Found and cleaned up 1 empty switch in `\signed_shifter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:178$1'.
+Removing empty process `signed_shifter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/arithmetic/generated_circuits/opencores/verilog/cordic.v:178$1'.
+Cleaned up 5 empty switches.
+
+3.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic.
+<suppressed ~1 debug messages>
+Optimizing module rotator.
+Optimizing module signed_shifter.
+<suppressed ~16 debug messages>
+
+4. Executing OPT pass (performing simple optimizations).
+
+4.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic.
+Optimizing module rotator.
+Optimizing module signed_shifter.
+
+4.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic'.
+Finding identical cells in module `\rotator'.
+Finding identical cells in module `\signed_shifter'.
+<suppressed ~720 debug messages>
+Removed a total of 240 cells.
+
+4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cordic..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \rotator..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \signed_shifter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~23 debug messages>
+
+4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cordic.
+  Optimizing cells in module \rotator.
+  Optimizing cells in module \signed_shifter.
+    New ctrl vector for $pmux cell $procmux$264: { $procmux$331_CMP $procmux$330_CMP $procmux$329_CMP $procmux$328_CMP $procmux$327_CMP $procmux$326_CMP $procmux$325_CMP $procmux$324_CMP $procmux$323_CMP $procmux$322_CMP $procmux$321_CMP $procmux$320_CMP $auto$opt_reduce.cc:134:opt_mux$337 }
+    New ctrl vector for $pmux cell $procmux$145: { $procmux$331_CMP $procmux$330_CMP $procmux$329_CMP $procmux$328_CMP $procmux$327_CMP $auto$opt_reduce.cc:134:opt_mux$339 }
+    New ctrl vector for $pmux cell $procmux$196: { $procmux$331_CMP $procmux$330_CMP $procmux$329_CMP $procmux$328_CMP $procmux$327_CMP $procmux$326_CMP $procmux$325_CMP $procmux$324_CMP $auto$opt_reduce.cc:134:opt_mux$341 }
+    New ctrl vector for $pmux cell $procmux$281: { $procmux$331_CMP $procmux$330_CMP $procmux$329_CMP $procmux$328_CMP $procmux$327_CMP $procmux$326_CMP $procmux$325_CMP $procmux$324_CMP $procmux$323_CMP $procmux$322_CMP $procmux$321_CMP $procmux$320_CMP $procmux$319_CMP $auto$opt_reduce.cc:134:opt_mux$343 }
+    New ctrl vector for $pmux cell $procmux$298: { $procmux$331_CMP $procmux$330_CMP $procmux$329_CMP $procmux$328_CMP $procmux$327_CMP $procmux$326_CMP $procmux$325_CMP $procmux$324_CMP $procmux$323_CMP $procmux$322_CMP $procmux$321_CMP $procmux$320_CMP $procmux$319_CMP $procmux$318_CMP $auto$opt_reduce.cc:134:opt_mux$345 }
+    New ctrl vector for $pmux cell $procmux$111: { $procmux$331_CMP $procmux$330_CMP $procmux$329_CMP $auto$opt_reduce.cc:134:opt_mux$347 }
+    New ctrl vector for $pmux cell $procmux$213: { $procmux$331_CMP $procmux$330_CMP $procmux$329_CMP $procmux$328_CMP $procmux$327_CMP $procmux$326_CMP $procmux$325_CMP $procmux$324_CMP $procmux$323_CMP $auto$opt_reduce.cc:134:opt_mux$349 }
+    New ctrl vector for $pmux cell $procmux$162: { $procmux$331_CMP $procmux$330_CMP $procmux$329_CMP $procmux$328_CMP $procmux$327_CMP $procmux$326_CMP $auto$opt_reduce.cc:134:opt_mux$351 }
+    New ctrl vector for $pmux cell $procmux$230: { $procmux$331_CMP $procmux$330_CMP $procmux$329_CMP $procmux$328_CMP $procmux$327_CMP $procmux$326_CMP $procmux$325_CMP $procmux$324_CMP $procmux$323_CMP $procmux$322_CMP $auto$opt_reduce.cc:134:opt_mux$353 }
+    New ctrl vector for $pmux cell $procmux$128: { $procmux$331_CMP $procmux$330_CMP $procmux$329_CMP $procmux$328_CMP $auto$opt_reduce.cc:134:opt_mux$355 }
+    New ctrl vector for $pmux cell $procmux$179: { $procmux$331_CMP $procmux$330_CMP $procmux$329_CMP $procmux$328_CMP $procmux$327_CMP $procmux$326_CMP $procmux$325_CMP $auto$opt_reduce.cc:134:opt_mux$357 }
+    New ctrl vector for $pmux cell $procmux$94: { $procmux$331_CMP $procmux$330_CMP $auto$opt_reduce.cc:134:opt_mux$359 }
+    New ctrl vector for $pmux cell $procmux$247: { $procmux$331_CMP $procmux$330_CMP $procmux$329_CMP $procmux$328_CMP $procmux$327_CMP $procmux$326_CMP $procmux$325_CMP $procmux$324_CMP $procmux$323_CMP $procmux$322_CMP $procmux$321_CMP $auto$opt_reduce.cc:134:opt_mux$361 }
+    New ctrl vector for $pmux cell $procmux$60: { $procmux$331_CMP $auto$opt_reduce.cc:134:opt_mux$363 }
+  Optimizing cells in module \signed_shifter.
+Performed a total of 14 changes.
+
+4.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic'.
+Finding identical cells in module `\rotator'.
+Finding identical cells in module `\signed_shifter'.
+Removed a total of 0 cells.
+
+4.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$333 ($dff) from module rotator (D = $procmux$55_Y, Q = \x_1, rval = 17'00000000000000000).
+Adding SRST signal on $procdff$334 ($dff) from module rotator (D = $procmux$46_Y, Q = \y_1, rval = 17'00000000000000000).
+Adding SRST signal on $procdff$335 ($dff) from module rotator (D = $procmux$37_Y, Q = \z_1, rval = 17'00000000000000000).
+
+4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic..
+Finding unused cells or wires in module \rotator..
+Finding unused cells or wires in module \signed_shifter..
+Removed 3 unused cells and 279 unused wires.
+<suppressed ~6 debug messages>
+
+4.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic.
+Optimizing module rotator.
+Optimizing module signed_shifter.
+
+4.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \cordic..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \rotator..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \signed_shifter..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~23 debug messages>
+
+4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \cordic.
+  Optimizing cells in module \rotator.
+  Optimizing cells in module \signed_shifter.
+Performed a total of 0 changes.
+
+4.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\cordic'.
+Finding identical cells in module `\rotator'.
+Finding identical cells in module `\signed_shifter'.
+Removed a total of 0 cells.
+
+4.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \cordic..
+Finding unused cells or wires in module \rotator..
+Finding unused cells or wires in module \signed_shifter..
+
+4.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module cordic.
+Optimizing module rotator.
+Optimizing module signed_shifter.
+
+4.16. Finished OPT passes. (There is nothing left to do.)
+
+5. Printing statistics.
+
+=== cordic ===
+
+   Number of wires:                 47
+   Number of wire bits:            502
+   Number of public wires:          30
+   Number of public wire bits:     450
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $add                            1
+     $adff                           1
+     $eq                            14
+     $logic_not                      1
+     $mux                            3
+     $pmux                           1
+     rotator                         1
+
+=== rotator ===
+
+   Number of wires:                 29
+   Number of wire bits:            416
+   Number of public wires:          16
+   Number of public wire bits:     211
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     $add                            3
+     $lt                             1
+     $mux                            6
+     $sdff                           3
+     $sub                            3
+     signed_shifter                  2
+
+=== signed_shifter ===
+
+   Number of wires:                 33
+   Number of wire bits:             68
+   Number of public wires:           3
+   Number of public wire bits:      38
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 46
+     $eq                            15
+     $logic_not                      1
+     $pmux                          16
+     $reduce_or                     14
+
+=== design hierarchy ===
+
+   cordic                            1
+     rotator                         1
+       signed_shifter                2
+
+   Number of wires:                142
+   Number of wire bits:           1054
+   Number of public wires:          52
+   Number of public wire bits:     737
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                129
+     $add                            4
+     $adff                           1
+     $eq                            44
+     $logic_not                      3
+     $lt                             1
+     $mux                            9
+     $pmux                          33
+     $reduce_or                     28
+     $sdff                           3
+     $sub                            3
+
+Warnings: 1 unique messages, 1 total
+End of script. Logfile hash: 5a849cbfdc, CPU: user 0.09s system 0.00s, MEM: 13.07 MB peak
+Yosys 0.10+12 (git sha1 4d87019, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+Time spent: 36% 4x opt_expr (0 sec), 13% 1x proc_mux (0 sec), ...

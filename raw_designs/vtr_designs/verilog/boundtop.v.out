@@ -1,0 +1,319 @@
+
+5. Printing statistics.
+
+=== boundcontroller ===
+
+   Number of wires:                436
+   Number of wire bits:           2161
+   Number of public wires:         119
+   Number of public wire bits:    1254
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                373
+     $add                            7
+     $and                          127
+     $dffe                           1
+     $dlatch                        30
+     $eq                            29
+     $logic_not                      4
+     $lt                             1
+     $mux                           56
+     $ne                             3
+     $not                           44
+     $or                             7
+     $pmux                           6
+     $reduce_bool                    3
+     $reduce_or                     23
+     $sdff                          28
+     $sub                            4
+
+=== listhandler ===
+
+   Number of wires:                436
+   Number of wire bits:            872
+   Number of public wires:          37
+   Number of public wire bits:     210
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                422
+     $add                            4
+     $and                          257
+     $dffe                           1
+     $dlatch                        13
+     $eq                            17
+     $logic_not                      4
+     $mux                           31
+     $not                           28
+     $or                             7
+     $pmux                           3
+     $reduce_or                     48
+     $sdff                           8
+     spram                           1
+
+=== onlyonecycle ===
+
+   Number of wires:                 24
+   Number of wire bits:             61
+   Number of public wires:           8
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 21
+     $and                            3
+     $dlatch                         3
+     $eq                             2
+     $logic_not                      1
+     $mux                            5
+     $not                            3
+     $pmux                           1
+     $sdff                           2
+     $sub                            1
+
+=== paj_boundtop_hierarchy_no_mem ===
+
+   Number of wires:                191
+   Number of wire bits:           1830
+   Number of public wires:         178
+   Number of public wire bits:    1808
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 44
+     $and                            2
+     $eq                             4
+     $mux                            6
+     $ne                             1
+     $or                            14
+     $reduce_bool                    2
+     $sdff                           2
+     $sdffe                          1
+     boundcontroller                 2
+     listhandler                     2
+     onlyonecycle                    1
+     rayinterface                    1
+     resultcounter                   1
+     resultinterface                 1
+     resulttransmit                  1
+     sortedstack                     1
+     sramcontroller                  1
+     vblockramcontroller             1
+
+=== rayinterface ===
+
+   Number of wires:                 33
+   Number of wire bits:            153
+   Number of public wires:          18
+   Number of public wire bits:     128
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 24
+     $and                            1
+     $mux                            9
+     $ne                             1
+     $not                            1
+     $reduce_and                     1
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdff                           5
+     $sdffe                          4
+
+=== resultcounter ===
+
+   Number of wires:                 15
+   Number of wire bits:             52
+   Number of public wires:           9
+   Number of public wire bits:      15
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $and                            2
+     $logic_not                      1
+     $mux                            1
+     $or                             1
+     $reduce_bool                    2
+     $sdffe                          2
+     $sub                            1
+
+=== resultinterface ===
+
+   Number of wires:                 73
+   Number of wire bits:            574
+   Number of public wires:          40
+   Number of public wire bits:     535
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 69
+     $and                           10
+     $dlatch                        18
+     $eq                             8
+     $logic_not                      1
+     $mux                            2
+     $not                           10
+     $pmux                           1
+     $reduce_or                      1
+     $sdff                          18
+
+=== resulttransmit ===
+
+   Number of wires:                 96
+   Number of wire bits:            477
+   Number of public wires:          46
+   Number of public wire bits:     386
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 68
+     $and                            8
+     $dffe                           8
+     $dlatch                         4
+     $eq                             8
+     $logic_not                      1
+     $logic_or                      11
+     $mux                            3
+     $not                           10
+     $pmux                           3
+     $reduce_and                     2
+     $reduce_or                      4
+     $sdff                           4
+     $sdffe                          2
+
+=== sortedstack ===
+
+   Number of wires:                170
+   Number of wire bits:           1964
+   Number of public wires:          32
+   Number of public wire bits:     493
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                163
+     $eq                             6
+     $logic_not                      1
+     $lt                             7
+     $mux                           98
+     $not                            7
+     $or                             8
+     $reduce_and                     7
+     $reduce_bool                    6
+     $sdffe                         23
+
+=== spram ===
+
+   Number of wires:                  7
+   Number of wire bits:             67
+   Number of public wires:           7
+   Number of public wire bits:      67
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $dffe                           2
+
+=== spramblock ===
+
+   Number of wires:                  5
+   Number of wire bits:             76
+   Number of public wires:           5
+   Number of public wire bits:      76
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     single_port_ram                 1
+
+=== sramcontroller ===
+
+   Number of wires:                 97
+   Number of wire bits:            747
+   Number of public wires:          27
+   Number of public wire bits:     507
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 86
+     $add                            1
+     $and                           24
+     $dffe                           1
+     $dlatch                        12
+     $eq                             5
+     $logic_not                      1
+     $mux                           14
+     $not                           10
+     $pmux                           3
+     $reduce_or                     11
+     $sdff                           4
+
+=== vblockramcontroller ===
+
+   Number of wires:                 76
+   Number of wire bits:            312
+   Number of public wires:          21
+   Number of public wire bits:     194
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 67
+     $add                            1
+     $and                           19
+     $dlatch                         7
+     $eq                             5
+     $logic_not                      1
+     $mux                           12
+     $not                            9
+     $pmux                           1
+     $reduce_bool                    1
+     $reduce_or                      6
+     $sdff                           4
+     spramblock                      1
+
+=== design hierarchy ===
+
+   paj_boundtop_hierarchy_no_mem      1
+     boundcontroller                 2
+     listhandler                     2
+       spram                         1
+     onlyonecycle                    1
+     rayinterface                    1
+     resultcounter                   1
+     resultinterface                 1
+     resulttransmit                  1
+     sortedstack                     1
+     sramcontroller                  1
+     vblockramcontroller             1
+       spramblock                    1
+
+   Number of wires:               2538
+   Number of wire bits:          12446
+   Number of public wires:         710
+   Number of public wire bits:    7214
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2132
+     $add                           24
+     $and                          837
+     $dffe                          17
+     $dlatch                       130
+     $eq                           130
+     $logic_not                     23
+     $logic_or                      11
+     $lt                             9
+     $mux                          324
+     $ne                             8
+     $not                          194
+     $or                            51
+     $pmux                          27
+     $reduce_and                    10
+     $reduce_bool                   18
+     $reduce_or                    165
+     $sdff                         111
+     $sdffe                         32
+     $sub                           10
+     single_port_ram                 1
+

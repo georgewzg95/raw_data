@@ -1,0 +1,251 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.10+12 (git sha1 4d87019, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+
+
+-- Executing script file `out.ys' --
+
+1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/forloop_select_gate.v
+Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/forloop_select_gate.v' to AST representation.
+Storing AST representation for module `$abstract\forloop_select_gate'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Finding top of design hierarchy..
+root of   0 design levels: $abstract\forloop_select_gate
+Automatically selected $abstract\forloop_select_gate as design top module.
+
+2.2. Analyzing design hierarchy..
+Top module:  $abstract\forloop_select_gate
+
+2.3. Analyzing design hierarchy..
+Top module:  $abstract\forloop_select_gate
+Removed 0 unused modules.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Executing AST frontend in derive mode using pre-parsed AST for module `\forloop_select_gate'.
+Generating RTLIL representation for module `\forloop_select_gate'.
+
+3.2. Analyzing design hierarchy..
+Top module:  \forloop_select_gate
+
+3.3. Analyzing design hierarchy..
+Top module:  \forloop_select_gate
+Removing unused module `$abstract\forloop_select_gate'.
+Removed 1 unused modules.
+
+4. Executing PROC pass (convert processes to netlists).
+
+4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/forloop_select_gate.v:9$1 in module forloop_select_gate.
+Removed a total of 0 dead cases.
+
+4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 1 assignment to connection.
+
+4.4. Executing PROC_INIT pass (extract init attributes).
+
+4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\forloop_select_gate.$proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/forloop_select_gate.v:9$1'.
+     1/17: $0\dout[15:0] [15]
+     2/17: $0\dout[15:0] [14]
+     3/17: $0\dout[15:0] [13]
+     4/17: $0\dout[15:0] [12]
+     5/17: $0\dout[15:0] [11]
+     6/17: $0\dout[15:0] [10]
+     7/17: $0\dout[15:0] [9]
+     8/17: $0\dout[15:0] [8]
+     9/17: $0\dout[15:0] [7]
+    10/17: $0\dout[15:0] [6]
+    11/17: $0\dout[15:0] [5]
+    12/17: $0\dout[15:0] [4]
+    13/17: $0\dout[15:0] [3]
+    14/17: $0\dout[15:0] [2]
+    15/17: $0\dout[15:0] [1]
+    16/17: $0\dout[15:0] [0]
+    17/17: $1\sel[4:0]
+
+4.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+4.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\forloop_select_gate.\dout' using process `\forloop_select_gate.$proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/forloop_select_gate.v:9$1'.
+  created $dff cell `$procdff$2518' with positive edge clock.
+Creating register for signal `\forloop_select_gate.\sel' using process `\forloop_select_gate.$proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/forloop_select_gate.v:9$1'.
+  created $dff cell `$procdff$2519' with positive edge clock.
+
+4.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 17 empty switches in `\forloop_select_gate.$proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/forloop_select_gate.v:9$1'.
+Removing empty process `forloop_select_gate.$proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/forloop_select_gate.v:9$1'.
+Cleaned up 17 empty switches.
+
+4.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module forloop_select_gate.
+<suppressed ~17 debug messages>
+
+5. Executing OPT pass (performing simple optimizations).
+
+5.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module forloop_select_gate.
+<suppressed ~91 debug messages>
+
+5.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\forloop_select_gate'.
+Removed a total of 0 cells.
+
+5.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \forloop_select_gate..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~17 debug messages>
+
+5.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \forloop_select_gate.
+Performed a total of 0 changes.
+
+5.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\forloop_select_gate'.
+Removed a total of 0 cells.
+
+5.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$2519 ($dff) from module forloop_select_gate (D = 5'10000, Q = \sel).
+Setting constant 0-bit at position 0 on $auto$ff.cc:262:slice$2520 ($dffe) from module forloop_select_gate.
+Setting constant 0-bit at position 1 on $auto$ff.cc:262:slice$2520 ($dffe) from module forloop_select_gate.
+Setting constant 0-bit at position 2 on $auto$ff.cc:262:slice$2520 ($dffe) from module forloop_select_gate.
+Setting constant 0-bit at position 3 on $auto$ff.cc:262:slice$2520 ($dffe) from module forloop_select_gate.
+Setting constant 1-bit at position 4 on $auto$ff.cc:262:slice$2520 ($dffe) from module forloop_select_gate.
+Adding EN signal on $procdff$2518 ($dff) from module forloop_select_gate (D = \din [0], Q = \dout [0]).
+Adding EN signal on $procdff$2518 ($dff) from module forloop_select_gate (D = $procmux$66_Y, Q = \dout [15]).
+Adding EN signal on $procdff$2518 ($dff) from module forloop_select_gate (D = $procmux$117_Y, Q = \dout [14]).
+Adding EN signal on $procdff$2518 ($dff) from module forloop_select_gate (D = $procmux$184_Y, Q = \dout [13]).
+Adding EN signal on $procdff$2518 ($dff) from module forloop_select_gate (D = $procmux$267_Y, Q = \dout [12]).
+Adding EN signal on $procdff$2518 ($dff) from module forloop_select_gate (D = $procmux$366_Y, Q = \dout [11]).
+Adding EN signal on $procdff$2518 ($dff) from module forloop_select_gate (D = $procmux$481_Y, Q = \dout [10]).
+Adding EN signal on $procdff$2518 ($dff) from module forloop_select_gate (D = $procmux$612_Y, Q = \dout [9]).
+Adding EN signal on $procdff$2518 ($dff) from module forloop_select_gate (D = $procmux$759_Y, Q = \dout [8]).
+Adding EN signal on $procdff$2518 ($dff) from module forloop_select_gate (D = $procmux$922_Y, Q = \dout [7]).
+Adding EN signal on $procdff$2518 ($dff) from module forloop_select_gate (D = $procmux$1101_Y, Q = \dout [6]).
+Adding EN signal on $procdff$2518 ($dff) from module forloop_select_gate (D = $procmux$1296_Y, Q = \dout [5]).
+Adding EN signal on $procdff$2518 ($dff) from module forloop_select_gate (D = $procmux$1507_Y, Q = \dout [4]).
+Adding EN signal on $procdff$2518 ($dff) from module forloop_select_gate (D = $procmux$1734_Y, Q = \dout [3]).
+Adding EN signal on $procdff$2518 ($dff) from module forloop_select_gate (D = $procmux$1977_Y, Q = \dout [2]).
+Adding EN signal on $procdff$2518 ($dff) from module forloop_select_gate (D = $procmux$2236_Y, Q = \dout [1]).
+
+5.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \forloop_select_gate..
+Removed 32 unused cells and 121 unused wires.
+<suppressed ~48 debug messages>
+
+5.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module forloop_select_gate.
+<suppressed ~155 debug messages>
+
+5.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \forloop_select_gate..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~15 debug messages>
+
+5.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \forloop_select_gate.
+Performed a total of 0 changes.
+
+5.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\forloop_select_gate'.
+<suppressed ~21 debug messages>
+Removed a total of 7 cells.
+
+5.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \forloop_select_gate..
+Removed 0 unused cells and 147 unused wires.
+<suppressed ~1 debug messages>
+
+5.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module forloop_select_gate.
+
+5.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \forloop_select_gate..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~15 debug messages>
+
+5.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \forloop_select_gate.
+Performed a total of 0 changes.
+
+5.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\forloop_select_gate'.
+Removed a total of 0 cells.
+
+5.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \forloop_select_gate..
+
+5.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module forloop_select_gate.
+
+5.23. Finished OPT passes. (There is nothing left to do.)
+
+6. Printing statistics.
+
+=== forloop_select_gate ===
+
+   Number of wires:                350
+   Number of wire bits:            728
+   Number of public wires:           6
+   Number of public wire bits:      43
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                360
+     $dffe                          16
+     $eq                           148
+     $mul                           11
+     $mux                          155
+     $reduce_and                    15
+     $reduce_bool                   15
+
+End of script. Logfile hash: 9b7a696725, CPU: user 0.28s system 0.00s, MEM: 16.14 MB peak
+Yosys 0.10+12 (git sha1 4d87019, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+Time spent: 49% 5x opt_expr (0 sec), 10% 1x proc_mux (0 sec), ...

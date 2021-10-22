@@ -1,0 +1,252 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.10+12 (git sha1 4d87019, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+
+
+-- Executing script file `out.ys' --
+
+1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/multiple_blocking_gate.v
+Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/multiple_blocking_gate.v' to AST representation.
+Storing AST representation for module `$abstract\multiple_blocking_gate'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Finding top of design hierarchy..
+root of   0 design levels: $abstract\multiple_blocking_gate
+Automatically selected $abstract\multiple_blocking_gate as design top module.
+
+2.2. Analyzing design hierarchy..
+Top module:  $abstract\multiple_blocking_gate
+
+2.3. Analyzing design hierarchy..
+Top module:  $abstract\multiple_blocking_gate
+Removed 0 unused modules.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Executing AST frontend in derive mode using pre-parsed AST for module `\multiple_blocking_gate'.
+Generating RTLIL representation for module `\multiple_blocking_gate'.
+
+3.2. Analyzing design hierarchy..
+Top module:  \multiple_blocking_gate
+
+3.3. Analyzing design hierarchy..
+Top module:  \multiple_blocking_gate
+Removing unused module `$abstract\multiple_blocking_gate'.
+Removed 1 unused modules.
+
+4. Executing PROC pass (convert processes to netlists).
+
+4.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+4.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/multiple_blocking_gate.v:11$1 in module multiple_blocking_gate.
+Removed a total of 0 dead cases.
+
+4.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 4 assignments to connections.
+
+4.4. Executing PROC_INIT pass (extract init attributes).
+
+4.5. Executing PROC_ARST pass (detect async resets in processes).
+
+4.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\multiple_blocking_gate.$proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/multiple_blocking_gate.v:11$1'.
+     1/32: $1\dout[31:0] [31]
+     2/32: $1\dout[31:0] [29]
+     3/32: $1\dout[31:0] [27]
+     4/32: $1\dout[31:0] [25]
+     5/32: $1\dout[31:0] [23]
+     6/32: $1\dout[31:0] [21]
+     7/32: $1\dout[31:0] [19]
+     8/32: $1\dout[31:0] [17]
+     9/32: $1\dout[31:0] [15]
+    10/32: $1\dout[31:0] [13]
+    11/32: $1\dout[31:0] [11]
+    12/32: $1\dout[31:0] [9]
+    13/32: $1\dout[31:0] [7]
+    14/32: $1\dout[31:0] [5]
+    15/32: $1\dout[31:0] [3]
+    16/32: $1\dout[31:0] [1]
+    17/32: $1\dout[31:0] [30]
+    18/32: $1\dout[31:0] [26]
+    19/32: $1\dout[31:0] [22]
+    20/32: $1\dout[31:0] [18]
+    21/32: $1\dout[31:0] [14]
+    22/32: $1\dout[31:0] [10]
+    23/32: $1\dout[31:0] [6]
+    24/32: $1\dout[31:0] [2]
+    25/32: $1\dout[31:0] [28]
+    26/32: $1\dout[31:0] [20]
+    27/32: $1\dout[31:0] [12]
+    28/32: $1\dout[31:0] [4]
+    29/32: $1\dout[31:0] [24]
+    30/32: $1\dout[31:0] [8]
+    31/32: $1\dout[31:0] [16]
+    32/32: $1\dout[31:0] [0]
+
+4.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+4.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\multiple_blocking_gate.\dout' using process `\multiple_blocking_gate.$proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/multiple_blocking_gate.v:11$1'.
+  created $dff cell `$procdff$1097' with positive edge clock.
+Creating register for signal `\multiple_blocking_gate.\a' using process `\multiple_blocking_gate.$proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/multiple_blocking_gate.v:11$1'.
+  created $dff cell `$procdff$1098' with positive edge clock.
+Creating register for signal `\multiple_blocking_gate.\b' using process `\multiple_blocking_gate.$proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/multiple_blocking_gate.v:11$1'.
+  created $dff cell `$procdff$1099' with positive edge clock.
+Creating register for signal `\multiple_blocking_gate.\c' using process `\multiple_blocking_gate.$proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/multiple_blocking_gate.v:11$1'.
+  created $dff cell `$procdff$1100' with positive edge clock.
+
+4.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+4.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\multiple_blocking_gate.$proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/multiple_blocking_gate.v:11$1'.
+Removing empty process `multiple_blocking_gate.$proc$/home/zhigang/DATA/raw_designs/yosys_designs/various/dynamic_part_select/multiple_blocking_gate.v:11$1'.
+Cleaned up 1 empty switch.
+
+4.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiple_blocking_gate.
+<suppressed ~32 debug messages>
+
+5. Executing OPT pass (performing simple optimizations).
+
+5.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiple_blocking_gate.
+<suppressed ~1 debug messages>
+
+5.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiple_blocking_gate'.
+<suppressed ~1488 debug messages>
+Removed a total of 496 cells.
+
+5.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \multiple_blocking_gate..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~32 debug messages>
+
+5.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \multiple_blocking_gate.
+    New ctrl vector for $pmux cell $procmux$1045: { $auto$opt_reduce.cc:134:opt_mux$1102 $procmux$1048_CMP $procmux$1047_CMP $procmux$1046_CMP }
+    New ctrl vector for $pmux cell $procmux$82: { $auto$opt_reduce.cc:134:opt_mux$1104 $procmux$833_CMP $procmux$832_CMP $procmux$831_CMP }
+    New ctrl vector for $pmux cell $procmux$262: { $auto$opt_reduce.cc:134:opt_mux$1106 $procmux$1047_CMP $procmux$1046_CMP $procmux$977_CMP }
+    New ctrl vector for $pmux cell $procmux$631: { $auto$opt_reduce.cc:134:opt_mux$1108 $procmux$974_CMP $procmux$973_CMP $procmux$972_CMP }
+    New ctrl vector for $pmux cell $procmux$154: { $auto$opt_reduce.cc:134:opt_mux$1110 $procmux$973_CMP $procmux$972_CMP $procmux$971_CMP }
+    New ctrl vector for $pmux cell $procmux$707: { $auto$opt_reduce.cc:134:opt_mux$1112 $procmux$1050_CMP $procmux$1049_CMP $procmux$1048_CMP }
+    New ctrl vector for $pmux cell $procmux$370: { $auto$opt_reduce.cc:134:opt_mux$1114 $procmux$1053_CMP $procmux$1052_CMP $procmux$1051_CMP }
+    New ctrl vector for $pmux cell $procmux$829: { $auto$opt_reduce.cc:134:opt_mux$1116 $procmux$832_CMP $procmux$831_CMP $procmux$830_CMP }
+    New ctrl vector for $pmux cell $procmux$555: { $auto$opt_reduce.cc:134:opt_mux$1118 $procmux$830_CMP $procmux$557_CMP $procmux$556_CMP }
+    New ctrl vector for $pmux cell $procmux$226: { $auto$opt_reduce.cc:134:opt_mux$1120 $procmux$977_CMP $procmux$976_CMP $procmux$975_CMP }
+    New ctrl vector for $pmux cell $procmux$969: { $auto$opt_reduce.cc:134:opt_mux$1122 $procmux$972_CMP $procmux$971_CMP $procmux$970_CMP }
+    New ctrl vector for $pmux cell $procmux$334: { $auto$opt_reduce.cc:134:opt_mux$1124 $procmux$1051_CMP $procmux$1050_CMP $procmux$1049_CMP }
+    New ctrl vector for $pmux cell $procmux$46: { $auto$opt_reduce.cc:134:opt_mux$1126 $procmux$831_CMP $procmux$830_CMP $procmux$557_CMP }
+    New ctrl vector for $pmux cell $procmux$955: { $auto$opt_reduce.cc:134:opt_mux$1128 $procmux$1060_CMP $procmux$1059_CMP $procmux$1058_CMP }
+    New ctrl vector for $pmux cell $procmux$118: { $auto$opt_reduce.cc:134:opt_mux$1130 $procmux$971_CMP $procmux$970_CMP $procmux$833_CMP }
+    New ctrl vector for $pmux cell $procmux$783: { $auto$opt_reduce.cc:134:opt_mux$1132 $procmux$1058_CMP $procmux$1057_CMP $procmux$1056_CMP }
+    New ctrl vector for $pmux cell $procmux$871: { $auto$opt_reduce.cc:134:opt_mux$1134 $procmux$976_CMP $procmux$975_CMP $procmux$974_CMP }
+    New ctrl vector for $pmux cell $procmux$478: { $auto$opt_reduce.cc:134:opt_mux$1136 $procmux$1059_CMP $procmux$1058_CMP $procmux$1057_CMP }
+    New ctrl vector for $pmux cell $procmux$669: { $auto$opt_reduce.cc:134:opt_mux$1138 $procmux$1046_CMP $procmux$977_CMP $procmux$976_CMP }
+    New ctrl vector for $pmux cell $procmux$1019: { $auto$opt_reduce.cc:134:opt_mux$1140 $procmux$1056_CMP $procmux$1055_CMP $procmux$1054_CMP }
+    New ctrl vector for $pmux cell $procmux$298: { $auto$opt_reduce.cc:134:opt_mux$1142 $procmux$1049_CMP $procmux$1048_CMP $procmux$1047_CMP }
+    New ctrl vector for $pmux cell $procmux$593: { $auto$opt_reduce.cc:134:opt_mux$1144 $procmux$970_CMP $procmux$833_CMP $procmux$832_CMP }
+    New ctrl vector for $pmux cell $procmux$190: { $auto$opt_reduce.cc:134:opt_mux$1146 $procmux$975_CMP $procmux$974_CMP $procmux$973_CMP }
+    New ctrl vector for $pmux cell $procmux$442: { $auto$opt_reduce.cc:134:opt_mux$1148 $procmux$1057_CMP $procmux$1056_CMP $procmux$1055_CMP }
+    New ctrl vector for $pmux cell $procmux$745: { $auto$opt_reduce.cc:134:opt_mux$1150 $procmux$1054_CMP $procmux$1053_CMP $procmux$1052_CMP }
+    New ctrl vector for $pmux cell $procmux$913: { $auto$opt_reduce.cc:134:opt_mux$1152 $procmux$1052_CMP $procmux$1051_CMP $procmux$1050_CMP }
+    New ctrl vector for $pmux cell $procmux$406: { $auto$opt_reduce.cc:134:opt_mux$1154 $procmux$1055_CMP $procmux$1054_CMP $procmux$1053_CMP }
+    New ctrl vector for $pmux cell $procmux$10: { $auto$opt_reduce.cc:134:opt_mux$1156 $procmux$557_CMP $procmux$556_CMP $procmux$11_CMP }
+  Optimizing cells in module \multiple_blocking_gate.
+Performed a total of 28 changes.
+
+5.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiple_blocking_gate'.
+Removed a total of 0 cells.
+
+5.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \multiple_blocking_gate..
+Removed 3 unused cells and 535 unused wires.
+<suppressed ~9 debug messages>
+
+5.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiple_blocking_gate.
+
+5.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+5.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \multiple_blocking_gate..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~32 debug messages>
+
+5.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \multiple_blocking_gate.
+Performed a total of 0 changes.
+
+5.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiple_blocking_gate'.
+Removed a total of 0 cells.
+
+5.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+5.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \multiple_blocking_gate..
+
+5.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiple_blocking_gate.
+
+5.16. Finished OPT passes. (There is nothing left to do.)
+
+6. Printing statistics.
+
+=== multiple_blocking_gate ===
+
+   Number of wires:                 73
+   Number of wire bits:            271
+   Number of public wires:           5
+   Number of public wire bits:      41
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 98
+     $add                            2
+     $dff                            1
+     $eq                            31
+     $logic_not                      1
+     $mul                            1
+     $mux                            1
+     $not                            1
+     $pmux                          31
+     $reduce_or                     28
+     $sub                            1
+
+End of script. Logfile hash: 4e9c524647, CPU: user 0.17s system 0.00s, MEM: 15.26 MB peak
+Yosys 0.10+12 (git sha1 4d87019, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+Time spent: 56% 4x opt_expr (0 sec), 14% 1x proc_mux (0 sec), ...

@@ -1,0 +1,462 @@
+
+5. Printing statistics.
+
+=== a25_alu ===
+
+   Number of wires:                 56
+   Number of wire bits:            786
+   Number of public wires:          27
+   Number of public wire bits:     477
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 41
+     $add                            2
+     $and                            1
+     $eq                             8
+     $logic_and                      5
+     $logic_not                      5
+     $logic_or                       1
+     $mux                           14
+     $not                            2
+     $or                             1
+     $reduce_or                      1
+     $xor                            1
+
+=== a25_barrel_shift ===
+
+   Number of wires:                 18
+   Number of wire bits:            181
+   Number of public wires:          16
+   Number of public wire bits:     179
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $and                            1
+     $dff                            3
+     $logic_not                      1
+     $mux                            2
+     $reduce_or                      1
+     a25_shifter_full                1
+     a25_shifter_quick               1
+
+=== a25_coprocessor ===
+
+   Number of wires:                 37
+   Number of wire bits:            336
+   Number of public wires:          19
+   Number of public wire bits:     287
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 26
+     $dffe                           7
+     $eq                             8
+     $logic_and                      2
+     $logic_not                      2
+     $not                            1
+     $pmux                           1
+     $reduce_and                     5
+
+=== a25_dcache ===
+
+   Number of wires:                260
+   Number of wire bits:           4014
+   Number of public wires:          76
+   Number of public wire bits:    2178
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                255
+     $add                            2
+     $dff                            1
+     $dffe                          10
+     $eq                            27
+     $logic_and                     58
+     $logic_not                      9
+     $logic_or                      32
+     $lt                             1
+     $mux                           74
+     $ne                             8
+     $not                            1
+     $or                             1
+     $pmux                           3
+     $reduce_and                     6
+     $reduce_bool                    5
+     $reduce_or                      3
+     $sdffe                          5
+     $xor                            1
+     single_port_ram_128_8           4
+     single_port_ram_21_8            4
+
+=== a25_decode ===
+
+   Number of wires:               1092
+   Number of wire bits:           5245
+   Number of public wires:         207
+   Number of public wire bits:    1104
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1063
+     $add                           15
+     $and                           16
+     $dffe                          71
+     $eq                           184
+     $gt                             2
+     $logic_and                    182
+     $logic_not                     33
+     $logic_or                      77
+     $mux                          409
+     $ne                            14
+     $not                            4
+     $reduce_and                     7
+     $reduce_bool                   24
+     $reduce_or                      8
+     $sdffce                        17
+
+=== a25_execute ===
+
+   Number of wires:                316
+   Number of wire bits:           2563
+   Number of public wires:         140
+   Number of public wire bits:    1520
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                250
+     $add                            4
+     $and                            7
+     $dff                            2
+     $dffe                          17
+     $eq                            54
+     $logic_and                     37
+     $logic_not                     19
+     $logic_or                      23
+     $mux                           71
+     $ne                             1
+     $not                            2
+     $reduce_and                     1
+     $reduce_bool                    3
+     $reduce_or                      1
+     $sdffce                         3
+     $sub                            1
+     a25_alu                         1
+     a25_barrel_shift                1
+     a25_multiply                    1
+     a25_register_bank               1
+
+=== a25_fetch ===
+
+   Number of wires:                119
+   Number of wire bits:            745
+   Number of public wires:          28
+   Number of public wire bits:     499
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                103
+     $dff                            1
+     $eq                            33
+     $ge                             1
+     $logic_and                     10
+     $logic_not                      7
+     $logic_or                       9
+     $lt                             2
+     $mux                           39
+     a25_icache                      1
+
+=== a25_icache ===
+
+   Number of wires:                134
+   Number of wire bits:           2151
+   Number of public wires:          52
+   Number of public wire bits:    1438
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                136
+     $add                            2
+     $dff                            2
+     $dffe                           7
+     $eq                            15
+     $logic_and                     28
+     $logic_not                      6
+     $logic_or                       7
+     $lt                             1
+     $mux                           32
+     $ne                             5
+     $not                            1
+     $pmux                           2
+     $reduce_and                     7
+     $reduce_bool                    3
+     $reduce_or                      2
+     $sdffce                         3
+     $sdffe                          4
+     $xor                            1
+     single_port_ram_128_8           4
+     single_port_ram_21_8            4
+
+=== a25_mem ===
+
+   Number of wires:                166
+   Number of wire bits:           1036
+   Number of public wires:          55
+   Number of public wire bits:     802
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                142
+     $dff                            6
+     $dffe                           3
+     $eq                            33
+     $ge                             1
+     $logic_and                     28
+     $logic_not                     15
+     $logic_or                      11
+     $lt                             2
+     $mux                           42
+     a25_dcache                      1
+
+=== a25_multiply ===
+
+   Number of wires:                 46
+   Number of wire bits:            665
+   Number of public wires:          21
+   Number of public wire bits:     425
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 37
+     $add                            4
+     $dffe                           3
+     $eq                             5
+     $le                             1
+     $logic_and                      3
+     $logic_not                      3
+     $logic_or                       1
+     $mux                            8
+     $ne                             1
+     $not                            2
+     $reduce_and                     3
+     $reduce_bool                    1
+     $sdffce                         2
+
+=== a25_register_bank ===
+
+   Number of wires:                314
+   Number of wire bits:           5009
+   Number of public wires:          91
+   Number of public wire bits:    2012
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                280
+     $and                            5
+     $dffe                          27
+     $eq                            65
+     $logic_and                     36
+     $logic_not                      8
+     $mux                          106
+     $ne                             1
+     $not                            2
+     $pmux                           3
+     $reduce_bool                   27
+
+=== a25_shifter_full ===
+
+   Number of wires:                210
+   Number of wire bits:           4632
+   Number of public wires:          11
+   Number of public wire bits:     209
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                204
+     $eq                            64
+     $logic_not                      3
+     $mux                          137
+
+=== a25_shifter_quick ===
+
+   Number of wires:                 34
+   Number of wire bits:            680
+   Number of public wires:          11
+   Number of public wire bits:     209
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 28
+     $eq                             6
+     $logic_not                      3
+     $mux                           19
+
+=== a25_wishbone ===
+
+   Number of wires:                 70
+   Number of wire bits:           2322
+   Number of public wires:          45
+   Number of public wire bits:    1774
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 40
+     $and                            2
+     $dffe                           4
+     $logic_and                      5
+     $logic_not                      3
+     $logic_or                       1
+     $mux                           15
+     $not                            1
+     $reduce_and                     1
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdffce                         3
+     a25_wishbone_buf                3
+
+=== a25_wishbone_buf ===
+
+   Number of wires:                 71
+   Number of wire bits:           1211
+   Number of public wires:          32
+   Number of public wire bits:     980
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 62
+     $add                            1
+     $dffe                          11
+     $eq                             1
+     $logic_and                     14
+     $logic_not                      9
+     $logic_or                       3
+     $mux                           12
+     $not                            2
+     $reduce_and                     3
+     $reduce_bool                    2
+     $sdffe                          3
+     $sub                            1
+
+=== a25_write_back ===
+
+   Number of wires:                 12
+   Number of wire bits:            166
+   Number of public wires:          12
+   Number of public wire bits:     166
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $dffe                           3
+
+=== arm_core ===
+
+   Number of wires:                116
+   Number of wire bits:           1628
+   Number of public wires:         115
+   Number of public wire bits:    1627
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $logic_or                       2
+     $mux                            2
+     $or                             1
+     a25_coprocessor                 1
+     a25_decode                      1
+     a25_execute                     1
+     a25_fetch                       1
+     a25_mem                         1
+     a25_wishbone                    1
+     a25_write_back                  1
+
+=== single_port_ram_128_8 ===
+
+   Number of wires:                  9
+   Number of wire bits:            658
+   Number of public wires:           5
+   Number of public wire bits:     266
+   Number of memories:               1
+   Number of memory bits:        32768
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
+
+=== single_port_ram_21_8 ===
+
+   Number of wires:                  9
+   Number of wire bits:            123
+   Number of public wires:           5
+   Number of public wire bits:      52
+   Number of memories:               1
+   Number of memory bits:         5376
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
+
+=== design hierarchy ===
+
+   arm_core                          1
+     a25_coprocessor                 1
+     a25_decode                      1
+     a25_execute                     1
+       a25_alu                       1
+       a25_barrel_shift              1
+         a25_shifter_full            1
+         a25_shifter_quick           1
+       a25_multiply                  1
+       a25_register_bank             1
+     a25_fetch                       1
+       a25_icache                    1
+         single_port_ram_128_8       4
+         single_port_ram_21_8        4
+     a25_mem                         1
+       a25_dcache                    1
+         single_port_ram_128_8       4
+         single_port_ram_21_8        4
+     a25_wishbone                    1
+       a25_wishbone_buf              3
+     a25_write_back                  1
+
+   Number of wires:               3357
+   Number of wire bits:          42040
+   Number of public wires:        1102
+   Number of public wire bits:   20390
+   Number of memories:              16
+   Number of memory bits:       305152
+   Number of processes:              0
+   Number of cells:               2878
+     $add                           32
+     $and                           32
+     $dff                           15
+     $dffe                         201
+     $eq                           505
+     $ge                             2
+     $gt                             2
+     $le                             1
+     $logic_and                    436
+     $logic_not                    144
+     $logic_or                     173
+     $lt                             6
+     $memrd                         16
+     $memwr_v2                      16
+     $mux                         1054
+     $ne                            30
+     $not                           22
+     $or                             3
+     $pmux                           9
+     $reduce_and                    39
+     $reduce_bool                   70
+     $reduce_or                     17
+     $sdffce                        28
+     $sdffe                         18
+     $sub                            4
+     $xor                            3
+

@@ -1,0 +1,5 @@
+read_verilog -sv /home/zhigang/DATA/raw_designs/vtr_designs/fpu/softlogic/fir.v;
+hierarchy -auto-top;
+proc; 
+opt;
+tee -o /home/zhigang/DATA/raw_designs/vtr_designs/fpu/softlogic/fir.v.out stat;

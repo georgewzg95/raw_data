@@ -1,0 +1,1947 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.10+12 (git sha1 4d87019, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+
+
+-- Executing script file `out.ys' --
+
+1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v
+Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v' to AST representation.
+Warning: Encountered `parallel_case' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using the Verilog `parallel_case' attribute or the SystemVerilog `unique' or `priority' keywords is recommended!
+Warning: Literal has a width of 3 bit, but value requires 4 bit. (/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4513)
+Warning: Literal has a width of 3 bit, but value requires 4 bit. (/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4518)
+Generating RTLIL representation for module `\or1200_flat'.
+Generating RTLIL representation for module `\or1200_genpc'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1693.1-1784.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\or1200_if'.
+Generating RTLIL representation for module `\or1200_ctrl'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2215.1-2221.17 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2226.1-2234.17 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2271.1-2317.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2322.1-2360.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2365.1-2379.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\or1200_rf'.
+Generating RTLIL representation for module `\or1200_operandmuxes'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3260.1-3270.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3275.1-3288.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\or1200_alu'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3372.1-3428.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3435.1-3456.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3461.1-3488.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3493.1-3514.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3519.1-3532.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3537.1-3554.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\or1200_mult_mac'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3657.1-3674.9 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\or1200_sprs'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3942.1-3976.9 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4066.1-4104.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\or1200_freeze'.
+Generating RTLIL representation for module `\or1200_except'.
+Generating RTLIL representation for module `\or1200_cfgr'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4601.1-4688.10 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\or1200_wbmux'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4755.1-4768.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\or1200_lsu'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4846.1-4870.9 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\or1200_reg2mem'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4922.1-4928.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4933.1-4938.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4943.1-4948.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4953.1-4954.28 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\or1200_mem2reg'.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4989.1-5002.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5007.1-5024.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5029.1-5050.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5055.1-5076.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5081.1-5099.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5104.1-5131.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5136.1-5160.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5165.1-5187.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5198.1-5209.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Finding top of design hierarchy..
+root of   0 design levels: or1200_mem2reg      
+root of   0 design levels: or1200_reg2mem      
+root of   1 design levels: or1200_lsu          
+root of   0 design levels: or1200_wbmux        
+root of   0 design levels: or1200_cfgr         
+root of   0 design levels: or1200_except       
+root of   0 design levels: or1200_freeze       
+root of   0 design levels: or1200_sprs         
+root of   0 design levels: or1200_mult_mac     
+root of   0 design levels: or1200_alu          
+root of   0 design levels: or1200_operandmuxes 
+root of   0 design levels: or1200_rf           
+root of   0 design levels: or1200_ctrl         
+root of   0 design levels: or1200_if           
+root of   0 design levels: or1200_genpc        
+root of   2 design levels: or1200_flat         
+Automatically selected or1200_flat as design top module.
+
+2.2. Analyzing design hierarchy..
+Top module:  \or1200_flat
+Used module:     \or1200_cfgr
+Used module:     \or1200_except
+Used module:     \or1200_freeze
+Used module:     \or1200_wbmux
+Used module:     \or1200_lsu
+Used module:         \or1200_reg2mem
+Used module:         \or1200_mem2reg
+Used module:     \or1200_sprs
+Used module:     \or1200_mult_mac
+Used module:     \or1200_alu
+Used module:     \or1200_operandmuxes
+Used module:     \or1200_rf
+Used module:     \or1200_ctrl
+Used module:     \or1200_if
+Used module:     \or1200_genpc
+
+2.3. Analyzing design hierarchy..
+Top module:  \or1200_flat
+Used module:     \or1200_cfgr
+Used module:     \or1200_except
+Used module:     \or1200_freeze
+Used module:     \or1200_wbmux
+Used module:     \or1200_lsu
+Used module:         \or1200_reg2mem
+Used module:         \or1200_mem2reg
+Used module:     \or1200_sprs
+Used module:     \or1200_mult_mac
+Used module:     \or1200_alu
+Used module:     \or1200_operandmuxes
+Used module:     \or1200_rf
+Used module:     \or1200_ctrl
+Used module:     \or1200_if
+Used module:     \or1200_genpc
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed 1 dead cases from process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5198$689 in module or1200_mem2reg.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5198$689 in module or1200_mem2reg.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5165$688 in module or1200_mem2reg.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5136$687 in module or1200_mem2reg.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5104$686 in module or1200_mem2reg.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5081$685 in module or1200_mem2reg.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5055$684 in module or1200_mem2reg.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5029$683 in module or1200_mem2reg.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5007$682 in module or1200_mem2reg.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4989$681 in module or1200_mem2reg.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4943$679 in module or1200_reg2mem.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4933$678 in module or1200_reg2mem.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4922$677 in module or1200_reg2mem.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4846$676 in module or1200_lsu.
+Removed 1 dead cases from process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4755$647 in module or1200_wbmux.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4755$647 in module or1200_wbmux.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4741$645 in module or1200_wbmux.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4601$642 in module or1200_cfgr.
+Marked 7 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4487$612 in module or1200_except.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4460$604 in module or1200_except.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4426$600 in module or1200_except.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4415$598 in module or1200_except.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4399$596 in module or1200_except.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4376$594 in module or1200_except.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4205$514 in module or1200_freeze.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4188$510 in module or1200_freeze.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4066$493 in module or1200_sprs.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4050$492 in module or1200_sprs.
+Removed 1 dead cases from process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3942$424 in module or1200_sprs.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3942$424 in module or1200_sprs.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3778$373 in module or1200_mult_mac.
+Marked 5 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3754$365 in module or1200_mult_mac.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3745$364 in module or1200_mult_mac.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3736$363 in module or1200_mult_mac.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3727$362 in module or1200_mult_mac.
+Marked 4 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3697$356 in module or1200_mult_mac.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3657$350 in module or1200_mult_mac.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3537$316 in module or1200_alu.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3519$311 in module or1200_alu.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3493$310 in module or1200_alu.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3461$306 in module or1200_alu.
+Removed 1 dead cases from process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3435$302 in module or1200_alu.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3435$302 in module or1200_alu.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3372$264 in module or1200_alu.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3275$252 in module or1200_operandmuxes.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3260$251 in module or1200_operandmuxes.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3244$240 in module or1200_operandmuxes.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3228$229 in module or1200_operandmuxes.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3078$224 in module or1200_rf.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3065$220 in module or1200_rf.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3038$203 in module or1200_rf.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2912$185 in module or1200_ctrl.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2898$179 in module or1200_ctrl.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2886$174 in module or1200_ctrl.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2835$169 in module or1200_ctrl.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2824$164 in module or1200_ctrl.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2777$162 in module or1200_ctrl.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2681$157 in module or1200_ctrl.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2668$152 in module or1200_ctrl.
+Marked 4 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2639$147 in module or1200_ctrl.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2544$142 in module or1200_ctrl.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2531$137 in module or1200_ctrl.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2453$135 in module or1200_ctrl.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2440$133 in module or1200_ctrl.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2427$128 in module or1200_ctrl.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2413$126 in module or1200_ctrl.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2403$124 in module or1200_ctrl.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2384$120 in module or1200_ctrl.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2365$119 in module or1200_ctrl.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2322$118 in module or1200_ctrl.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2271$117 in module or1200_ctrl.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2251$112 in module or1200_ctrl.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2240$107 in module or1200_ctrl.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2226$102 in module or1200_ctrl.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2215$97 in module or1200_ctrl.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1943$75 in module or1200_if.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1930$70 in module or1200_if.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1917$65 in module or1200_if.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1789$26 in module or1200_genpc.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1693$11 in module or1200_genpc.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1682$10 in module or1200_genpc.
+Removed a total of 4 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 8 redundant assignments.
+Promoted 39 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5198$689'.
+     1/1: $1\aligned[31:0]
+Creating decoders for process `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5165$688'.
+     1/1: $1\regdata_hh[7:0]
+Creating decoders for process `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5136$687'.
+     1/1: $1\regdata_hl[7:0]
+Creating decoders for process `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5104$686'.
+     1/1: $1\regdata_lh[7:0]
+Creating decoders for process `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5081$685'.
+     1/1: $1\regdata_ll[7:0]
+Creating decoders for process `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5055$684'.
+     1/1: $1\sel_byte3[3:0]
+Creating decoders for process `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5029$683'.
+     1/1: $1\sel_byte2[3:0]
+Creating decoders for process `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5007$682'.
+     1/1: $1\sel_byte1[3:0]
+Creating decoders for process `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4989$681'.
+     1/1: $1\sel_byte0[3:0]
+Creating decoders for process `\or1200_reg2mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4953$680'.
+Creating decoders for process `\or1200_reg2mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4943$679'.
+     1/1: $1\memdata_lh[7:0]
+Creating decoders for process `\or1200_reg2mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4933$678'.
+     1/1: $1\memdata_hl[7:0]
+Creating decoders for process `\or1200_reg2mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4922$677'.
+     1/1: $1\memdata_hh[7:0]
+Creating decoders for process `\or1200_lsu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4846$676'.
+     1/1: $1\dcpu_sel_o[3:0]
+Creating decoders for process `\or1200_wbmux.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4755$647'.
+     1/1: $1\muxout[31:0]
+Creating decoders for process `\or1200_wbmux.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4741$645'.
+     1/2: $0\muxreg_valid[0:0]
+     2/2: $0\muxreg[31:0]
+Creating decoders for process `\or1200_cfgr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4601$642'.
+     1/19: $2\spr_dat_o[31:0] [31:24]
+     2/19: $2\spr_dat_o[31:0] [12]
+     3/19: $2\spr_dat_o[31:0] [11]
+     4/19: $2\spr_dat_o[31:0] [10]
+     5/19: $2\spr_dat_o[31:0] [9]
+     6/19: $2\spr_dat_o[31:0] [14]
+     7/19: $2\spr_dat_o[31:0] [7]
+     8/19: $2\spr_dat_o[31:0] [6]
+     9/19: $2\spr_dat_o[31:0] [2]
+    10/19: $2\spr_dat_o[31:0] [0]
+    11/19: $2\spr_dat_o[31:0] [16:15]
+    12/19: $2\spr_dat_o[31:0] [13]
+    13/19: $2\spr_dat_o[31:0] [4]
+    14/19: $2\spr_dat_o[31:0] [3]
+    15/19: $2\spr_dat_o[31:0] [1]
+    16/19: $2\spr_dat_o[31:0] [8]
+    17/19: $2\spr_dat_o[31:0] [23:17]
+    18/19: $2\spr_dat_o[31:0] [5]
+    19/19: $1\spr_dat_o[31:0]
+Creating decoders for process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4487$612'.
+     1/7: $0\extend_flush_last[0:0]
+     2/7: $0\state[2:0]
+     3/7: $0\esr[15:0]
+     4/7: $0\eear[31:0]
+     5/7: $0\epcr[31:0]
+     6/7: $0\extend_flush[0:0]
+     7/7: $0\except_type[3:0]
+Creating decoders for process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4460$604'.
+     1/1: $0\wb_pc[31:0]
+Creating decoders for process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4426$600'.
+     1/5: $0\delayed2_ex_dslot[0:0]
+     2/5: $0\delayed1_ex_dslot[0:0]
+     3/5: $0\ex_dslot[0:0]
+     4/5: $0\ex_exceptflags[2:0]
+     5/5: $0\ex_pc[31:0]
+Creating decoders for process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4415$598'.
+     1/1: $0\delayed_tee[2:0]
+Creating decoders for process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4399$596'.
+     1/1: $0\delayed_iee[2:0]
+Creating decoders for process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4376$594'.
+     1/2: $0\id_exceptflags[2:0]
+     2/2: $0\id_pc[31:0]
+Creating decoders for process `\or1200_freeze.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4205$514'.
+     1/1: $0\multicycle_cnt[1:0]
+Creating decoders for process `\or1200_freeze.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4188$510'.
+     1/1: $0\flushpipe_r[0:0]
+Creating decoders for process `\or1200_sprs.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4066$493'.
+     1/4: $2\to_wbmux[31:0]
+     2/4: $1\to_wbmux[31:0]
+     3/4: $1\read_spr[0:0]
+     4/4: $1\write_spr[0:0]
+Creating decoders for process `\or1200_sprs.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4050$492'.
+     1/7: $0\sr[15:0] [15:7]
+     2/7: $0\sr[15:0] [5]
+     3/7: $0\sr[15:0] [4:3]
+     4/7: $0\sr[15:0] [2]
+     5/7: $0\sr[15:0] [1]
+     6/7: $0\sr[15:0] [0]
+     7/7: $0\sr[15:0] [6]
+Creating decoders for process `\or1200_sprs.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3942$424'.
+     1/1: $1\unqualified_cs[31:0]
+Creating decoders for process `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3778$373'.
+     1/1: $0\mac_stall_r[0:0]
+Creating decoders for process `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3754$365'.
+     1/2: $0\mac_r[63:0] [63:32]
+     2/2: $0\mac_r[63:0] [31:0]
+Creating decoders for process `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3745$364'.
+     1/1: $0\mac_op_r3[1:0]
+Creating decoders for process `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3736$363'.
+     1/1: $0\mac_op_r2[1:0]
+Creating decoders for process `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3727$362'.
+     1/1: $0\mac_op_r1[1:0]
+Creating decoders for process `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3697$356'.
+     1/3: $0\div_cntr[5:0]
+     2/3: $0\div_free[0:0]
+     3/3: $0\mul_prod_r[63:0]
+Creating decoders for process `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3657$350'.
+     1/1: $1\result[31:0]
+Creating decoders for process `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3537$316'.
+     1/1: $1\flagcomp[0:0]
+Creating decoders for process `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3519$311'.
+     1/1: $1\shifted_rotated[31:0]
+Creating decoders for process `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3493$310'.
+     1/2: $1\cy_we[0:0]
+     2/2: $1\cyforw[0:0]
+Creating decoders for process `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3461$306'.
+     1/2: $1\flag_we[0:0]
+     2/2: $1\flagforw[0:0]
+Creating decoders for process `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3435$302'.
+     1/2: $2\result_cust5[31:0]
+     2/2: $1\result_cust5[31:0]
+Creating decoders for process `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3372$264'.
+     1/2: $2\result[31:0]
+     2/2: $1\result[31:0]
+Creating decoders for process `\or1200_operandmuxes.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3275$252'.
+     1/1: $1\muxed_b[31:0]
+Creating decoders for process `\or1200_operandmuxes.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3260$251'.
+     1/1: $1\muxed_a[31:0]
+Creating decoders for process `\or1200_operandmuxes.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3244$240'.
+     1/2: $0\saved_b[0:0]
+     2/2: $0\operand_b[31:0]
+Creating decoders for process `\or1200_operandmuxes.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3228$229'.
+     1/2: $0\saved_a[0:0]
+     2/2: $0\operand_a[31:0]
+Creating decoders for process `\or1200_rf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3078$224'.
+     1/1: $0\datab_saved[32:0]
+Creating decoders for process `\or1200_rf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3065$220'.
+     1/1: $0\dataa_saved[32:0]
+Creating decoders for process `\or1200_rf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3038$203'.
+     1/1: $0\rf_we_allow[0:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2912$185'.
+     1/1: $0\sig_trap[0:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2898$179'.
+     1/1: $0\sig_syscall[0:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2886$174'.
+     1/1: $0\comp_op[3:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2835$169'.
+     1/1: $0\lsu_op[3:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2824$164'.
+     1/1: $0\branch_op[2:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2777$162'.
+     1/1: $0\pre_branch_op[2:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2681$157'.
+     1/1: $0\rfwb_op[2:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2668$152'.
+     1/1: $0\shrot_op[1:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2639$147'.
+     1/1: $0\mac_op[1:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2544$142'.
+     1/1: $0\alu_op[3:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2531$137'.
+     1/1: $0\except_illegal[0:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2453$135'.
+     1/1: $0\sel_imm[0:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2440$133'.
+     1/1: $0\wb_insn[31:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2427$128'.
+     1/1: $0\ex_insn[31:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2413$126'.
+     1/1: $0\id_insn[31:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2403$124'.
+     1/1: $0\wb_rfaddrw[4:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2384$120'.
+     1/1: $0\rf_addrw[4:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2365$119'.
+     1/1: $1\lsu_addrofs[31:11]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2322$118'.
+     1/1: $1\imm_signextend[0:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2271$117'.
+     1/1: $1\multicycle[1:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2251$112'.
+     1/1: $0\spr_addrimm[15:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2240$107'.
+     1/1: $0\ex_macrc_op[0:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2226$102'.
+     1/3: $3\sel_b[1:0]
+     2/3: $2\sel_b[1:0]
+     3/3: $1\sel_b[1:0]
+Creating decoders for process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2215$97'.
+     1/2: $2\sel_a[1:0]
+     2/2: $1\sel_a[1:0]
+Creating decoders for process `\or1200_if.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1943$75'.
+     1/1: $0\addr_saved[31:0]
+Creating decoders for process `\or1200_if.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1930$70'.
+     1/1: $0\insn_saved[31:0]
+Creating decoders for process `\or1200_if.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1917$65'.
+     1/1: $0\saved[0:0]
+Creating decoders for process `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1789$26'.
+     1/1: $0\pcreg[29:0]
+Creating decoders for process `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1693$11'.
+     1/6: $3\taken[0:0]
+     2/6: $3\pc[31:0]
+     3/6: $2\taken[0:0]
+     4/6: $2\pc[31:0]
+     5/6: $1\taken[0:0]
+     6/6: $1\pc[31:0]
+Creating decoders for process `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1682$10'.
+     1/1: $0\genpc_refetch_r[0:0]
+
+3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\or1200_mem2reg.\aligned' from process `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5198$689'.
+Latch inferred for signal `\or1200_mem2reg.\regdata_hh' from process `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5165$688': $auto$proc_dlatch.cc:427:proc_dlatch$2051
+No latch inferred for signal `\or1200_mem2reg.\regdata_hl' from process `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5136$687'.
+No latch inferred for signal `\or1200_mem2reg.\regdata_lh' from process `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5104$686'.
+No latch inferred for signal `\or1200_mem2reg.\regdata_ll' from process `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5081$685'.
+No latch inferred for signal `\or1200_mem2reg.\sel_byte3' from process `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5055$684'.
+No latch inferred for signal `\or1200_mem2reg.\sel_byte2' from process `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5029$683'.
+No latch inferred for signal `\or1200_mem2reg.\sel_byte1' from process `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5007$682'.
+No latch inferred for signal `\or1200_mem2reg.\sel_byte0' from process `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4989$681'.
+No latch inferred for signal `\or1200_reg2mem.\memdata_ll' from process `\or1200_reg2mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4953$680'.
+No latch inferred for signal `\or1200_reg2mem.\memdata_lh' from process `\or1200_reg2mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4943$679'.
+No latch inferred for signal `\or1200_reg2mem.\memdata_hl' from process `\or1200_reg2mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4933$678'.
+No latch inferred for signal `\or1200_reg2mem.\memdata_hh' from process `\or1200_reg2mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4922$677'.
+No latch inferred for signal `\or1200_lsu.\dcpu_sel_o' from process `\or1200_lsu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4846$676'.
+No latch inferred for signal `\or1200_wbmux.\muxout' from process `\or1200_wbmux.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4755$647'.
+Latch inferred for signal `\or1200_cfgr.\spr_dat_o' from process `\or1200_cfgr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4601$642': $auto$proc_dlatch.cc:427:proc_dlatch$2062
+No latch inferred for signal `\or1200_sprs.\to_wbmux' from process `\or1200_sprs.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4066$493'.
+No latch inferred for signal `\or1200_sprs.\write_spr' from process `\or1200_sprs.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4066$493'.
+No latch inferred for signal `\or1200_sprs.\read_spr' from process `\or1200_sprs.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4066$493'.
+No latch inferred for signal `\or1200_sprs.\unqualified_cs' from process `\or1200_sprs.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3942$424'.
+No latch inferred for signal `\or1200_mult_mac.\result' from process `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3657$350'.
+No latch inferred for signal `\or1200_alu.\flagcomp' from process `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3537$316'.
+No latch inferred for signal `\or1200_alu.\shifted_rotated' from process `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3519$311'.
+No latch inferred for signal `\or1200_alu.\cyforw' from process `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3493$310'.
+No latch inferred for signal `\or1200_alu.\cy_we' from process `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3493$310'.
+No latch inferred for signal `\or1200_alu.\flagforw' from process `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3461$306'.
+No latch inferred for signal `\or1200_alu.\flag_we' from process `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3461$306'.
+No latch inferred for signal `\or1200_alu.\result_cust5' from process `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3435$302'.
+No latch inferred for signal `\or1200_alu.\result' from process `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3372$264'.
+No latch inferred for signal `\or1200_operandmuxes.\muxed_b' from process `\or1200_operandmuxes.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3275$252'.
+No latch inferred for signal `\or1200_operandmuxes.\muxed_a' from process `\or1200_operandmuxes.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3260$251'.
+No latch inferred for signal `\or1200_ctrl.\lsu_addrofs' from process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2365$119'.
+No latch inferred for signal `\or1200_ctrl.\imm_signextend' from process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2322$118'.
+No latch inferred for signal `\or1200_ctrl.\multicycle' from process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2271$117'.
+No latch inferred for signal `\or1200_ctrl.\sel_b' from process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2226$102'.
+No latch inferred for signal `\or1200_ctrl.\sel_a' from process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2215$97'.
+No latch inferred for signal `\or1200_genpc.\taken' from process `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1693$11'.
+No latch inferred for signal `\or1200_genpc.\pc' from process `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1693$11'.
+
+3.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\or1200_wbmux.\muxreg' using process `\or1200_wbmux.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4741$645'.
+  created $dff cell `$procdff$2063' with positive edge clock.
+Creating register for signal `\or1200_wbmux.\muxreg_valid' using process `\or1200_wbmux.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4741$645'.
+  created $dff cell `$procdff$2064' with positive edge clock.
+Creating register for signal `\or1200_except.\except_type' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4487$612'.
+  created $dff cell `$procdff$2065' with positive edge clock.
+Creating register for signal `\or1200_except.\extend_flush' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4487$612'.
+  created $dff cell `$procdff$2066' with positive edge clock.
+Creating register for signal `\or1200_except.\epcr' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4487$612'.
+  created $dff cell `$procdff$2067' with positive edge clock.
+Creating register for signal `\or1200_except.\eear' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4487$612'.
+  created $dff cell `$procdff$2068' with positive edge clock.
+Creating register for signal `\or1200_except.\esr' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4487$612'.
+  created $dff cell `$procdff$2069' with positive edge clock.
+Creating register for signal `\or1200_except.\state' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4487$612'.
+  created $dff cell `$procdff$2070' with positive edge clock.
+Creating register for signal `\or1200_except.\extend_flush_last' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4487$612'.
+  created $dff cell `$procdff$2071' with positive edge clock.
+Creating register for signal `\or1200_except.\wb_pc' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4460$604'.
+  created $dff cell `$procdff$2072' with positive edge clock.
+Creating register for signal `\or1200_except.\ex_pc' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4426$600'.
+  created $dff cell `$procdff$2073' with positive edge clock.
+Creating register for signal `\or1200_except.\ex_exceptflags' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4426$600'.
+  created $dff cell `$procdff$2074' with positive edge clock.
+Creating register for signal `\or1200_except.\ex_dslot' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4426$600'.
+  created $dff cell `$procdff$2075' with positive edge clock.
+Creating register for signal `\or1200_except.\delayed1_ex_dslot' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4426$600'.
+  created $dff cell `$procdff$2076' with positive edge clock.
+Creating register for signal `\or1200_except.\delayed2_ex_dslot' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4426$600'.
+  created $dff cell `$procdff$2077' with positive edge clock.
+Creating register for signal `\or1200_except.\delayed_tee' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4415$598'.
+  created $dff cell `$procdff$2078' with positive edge clock.
+Creating register for signal `\or1200_except.\delayed_iee' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4399$596'.
+  created $dff cell `$procdff$2079' with positive edge clock.
+Creating register for signal `\or1200_except.\id_pc' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4376$594'.
+  created $dff cell `$procdff$2080' with positive edge clock.
+Creating register for signal `\or1200_except.\id_exceptflags' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4376$594'.
+  created $dff cell `$procdff$2081' with positive edge clock.
+Creating register for signal `\or1200_freeze.\multicycle_cnt' using process `\or1200_freeze.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4205$514'.
+  created $dff cell `$procdff$2082' with positive edge clock.
+Creating register for signal `\or1200_freeze.\flushpipe_r' using process `\or1200_freeze.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4188$510'.
+  created $dff cell `$procdff$2083' with positive edge clock.
+Creating register for signal `\or1200_sprs.\sr' using process `\or1200_sprs.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4050$492'.
+  created $dff cell `$procdff$2084' with positive edge clock.
+Creating register for signal `\or1200_mult_mac.\mac_stall_r' using process `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3778$373'.
+  created $dff cell `$procdff$2085' with positive edge clock.
+Creating register for signal `\or1200_mult_mac.\mac_r' using process `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3754$365'.
+  created $dff cell `$procdff$2086' with positive edge clock.
+Creating register for signal `\or1200_mult_mac.\mac_op_r3' using process `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3745$364'.
+  created $dff cell `$procdff$2087' with positive edge clock.
+Creating register for signal `\or1200_mult_mac.\mac_op_r2' using process `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3736$363'.
+  created $dff cell `$procdff$2088' with positive edge clock.
+Creating register for signal `\or1200_mult_mac.\mac_op_r1' using process `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3727$362'.
+  created $dff cell `$procdff$2089' with positive edge clock.
+Creating register for signal `\or1200_mult_mac.\mul_prod_r' using process `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3697$356'.
+  created $dff cell `$procdff$2090' with positive edge clock.
+Creating register for signal `\or1200_mult_mac.\div_free' using process `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3697$356'.
+  created $dff cell `$procdff$2091' with positive edge clock.
+Creating register for signal `\or1200_mult_mac.\div_cntr' using process `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3697$356'.
+  created $dff cell `$procdff$2092' with positive edge clock.
+Creating register for signal `\or1200_operandmuxes.\operand_b' using process `\or1200_operandmuxes.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3244$240'.
+  created $dff cell `$procdff$2093' with positive edge clock.
+Creating register for signal `\or1200_operandmuxes.\saved_b' using process `\or1200_operandmuxes.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3244$240'.
+  created $dff cell `$procdff$2094' with positive edge clock.
+Creating register for signal `\or1200_operandmuxes.\operand_a' using process `\or1200_operandmuxes.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3228$229'.
+  created $dff cell `$procdff$2095' with positive edge clock.
+Creating register for signal `\or1200_operandmuxes.\saved_a' using process `\or1200_operandmuxes.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3228$229'.
+  created $dff cell `$procdff$2096' with positive edge clock.
+Creating register for signal `\or1200_rf.\datab_saved' using process `\or1200_rf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3078$224'.
+  created $dff cell `$procdff$2097' with positive edge clock.
+Creating register for signal `\or1200_rf.\dataa_saved' using process `\or1200_rf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3065$220'.
+  created $dff cell `$procdff$2098' with positive edge clock.
+Creating register for signal `\or1200_rf.\rf_we_allow' using process `\or1200_rf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3038$203'.
+  created $dff cell `$procdff$2099' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\sig_trap' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2912$185'.
+  created $dff cell `$procdff$2100' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\sig_syscall' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2898$179'.
+  created $dff cell `$procdff$2101' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\comp_op' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2886$174'.
+  created $dff cell `$procdff$2102' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\lsu_op' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2835$169'.
+  created $dff cell `$procdff$2103' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\branch_op' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2824$164'.
+  created $dff cell `$procdff$2104' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\pre_branch_op' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2777$162'.
+  created $dff cell `$procdff$2105' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\rfwb_op' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2681$157'.
+  created $dff cell `$procdff$2106' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\shrot_op' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2668$152'.
+  created $dff cell `$procdff$2107' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\mac_op' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2639$147'.
+  created $dff cell `$procdff$2108' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\alu_op' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2544$142'.
+  created $dff cell `$procdff$2109' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\except_illegal' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2531$137'.
+  created $dff cell `$procdff$2110' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\sel_imm' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2453$135'.
+  created $dff cell `$procdff$2111' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\wb_insn' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2440$133'.
+  created $dff cell `$procdff$2112' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\ex_insn' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2427$128'.
+  created $dff cell `$procdff$2113' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\id_insn' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2413$126'.
+  created $dff cell `$procdff$2114' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\wb_rfaddrw' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2403$124'.
+  created $dff cell `$procdff$2115' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\rf_addrw' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2384$120'.
+  created $dff cell `$procdff$2116' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\spr_addrimm' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2251$112'.
+  created $dff cell `$procdff$2117' with positive edge clock.
+Creating register for signal `\or1200_ctrl.\ex_macrc_op' using process `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2240$107'.
+  created $dff cell `$procdff$2118' with positive edge clock.
+Creating register for signal `\or1200_if.\addr_saved' using process `\or1200_if.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1943$75'.
+  created $dff cell `$procdff$2119' with positive edge clock.
+Creating register for signal `\or1200_if.\insn_saved' using process `\or1200_if.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1930$70'.
+  created $dff cell `$procdff$2120' with positive edge clock.
+Creating register for signal `\or1200_if.\saved' using process `\or1200_if.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1917$65'.
+  created $dff cell `$procdff$2121' with positive edge clock.
+Creating register for signal `\or1200_genpc.\pcreg' using process `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1789$26'.
+  created $dff cell `$procdff$2122' with positive edge clock.
+Creating register for signal `\or1200_genpc.\genpc_refetch_r' using process `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1682$10'.
+  created $dff cell `$procdff$2123' with positive edge clock.
+
+3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5198$689'.
+Removing empty process `or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5198$689'.
+Found and cleaned up 1 empty switch in `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5165$688'.
+Removing empty process `or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5165$688'.
+Found and cleaned up 1 empty switch in `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5136$687'.
+Removing empty process `or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5136$687'.
+Found and cleaned up 1 empty switch in `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5104$686'.
+Removing empty process `or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5104$686'.
+Found and cleaned up 1 empty switch in `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5081$685'.
+Removing empty process `or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5081$685'.
+Found and cleaned up 1 empty switch in `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5055$684'.
+Removing empty process `or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5055$684'.
+Found and cleaned up 1 empty switch in `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5029$683'.
+Removing empty process `or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5029$683'.
+Found and cleaned up 1 empty switch in `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5007$682'.
+Removing empty process `or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:5007$682'.
+Found and cleaned up 1 empty switch in `\or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4989$681'.
+Removing empty process `or1200_mem2reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4989$681'.
+Removing empty process `or1200_reg2mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4953$680'.
+Found and cleaned up 1 empty switch in `\or1200_reg2mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4943$679'.
+Removing empty process `or1200_reg2mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4943$679'.
+Found and cleaned up 1 empty switch in `\or1200_reg2mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4933$678'.
+Removing empty process `or1200_reg2mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4933$678'.
+Found and cleaned up 1 empty switch in `\or1200_reg2mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4922$677'.
+Removing empty process `or1200_reg2mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4922$677'.
+Found and cleaned up 1 empty switch in `\or1200_lsu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4846$676'.
+Removing empty process `or1200_lsu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4846$676'.
+Found and cleaned up 1 empty switch in `\or1200_wbmux.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4755$647'.
+Removing empty process `or1200_wbmux.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4755$647'.
+Found and cleaned up 2 empty switches in `\or1200_wbmux.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4741$645'.
+Removing empty process `or1200_wbmux.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4741$645'.
+Found and cleaned up 2 empty switches in `\or1200_cfgr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4601$642'.
+Removing empty process `or1200_cfgr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4601$642'.
+Found and cleaned up 12 empty switches in `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4487$612'.
+Removing empty process `or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4487$612'.
+Found and cleaned up 2 empty switches in `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4460$604'.
+Removing empty process `or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4460$604'.
+Found and cleaned up 4 empty switches in `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4426$600'.
+Removing empty process `or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4426$600'.
+Found and cleaned up 2 empty switches in `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4415$598'.
+Removing empty process `or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4415$598'.
+Found and cleaned up 2 empty switches in `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4399$596'.
+Removing empty process `or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4399$596'.
+Found and cleaned up 3 empty switches in `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4376$594'.
+Removing empty process `or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4376$594'.
+Found and cleaned up 3 empty switches in `\or1200_freeze.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4205$514'.
+Removing empty process `or1200_freeze.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4205$514'.
+Found and cleaned up 3 empty switches in `\or1200_freeze.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4188$510'.
+Removing empty process `or1200_freeze.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4188$510'.
+Found and cleaned up 2 empty switches in `\or1200_sprs.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4066$493'.
+Removing empty process `or1200_sprs.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4066$493'.
+Found and cleaned up 3 empty switches in `\or1200_sprs.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4050$492'.
+Removing empty process `or1200_sprs.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4050$492'.
+Found and cleaned up 1 empty switch in `\or1200_sprs.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3942$424'.
+Removing empty process `or1200_sprs.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3942$424'.
+Found and cleaned up 1 empty switch in `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3778$373'.
+Removing empty process `or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3778$373'.
+Found and cleaned up 6 empty switches in `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3754$365'.
+Removing empty process `or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3754$365'.
+Found and cleaned up 1 empty switch in `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3745$364'.
+Removing empty process `or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3745$364'.
+Found and cleaned up 1 empty switch in `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3736$363'.
+Removing empty process `or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3736$363'.
+Found and cleaned up 1 empty switch in `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3727$362'.
+Removing empty process `or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3727$362'.
+Found and cleaned up 5 empty switches in `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3697$356'.
+Removing empty process `or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3697$356'.
+Found and cleaned up 1 empty switch in `\or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3657$350'.
+Removing empty process `or1200_mult_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3657$350'.
+Found and cleaned up 1 empty switch in `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3537$316'.
+Removing empty process `or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3537$316'.
+Found and cleaned up 1 empty switch in `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3519$311'.
+Removing empty process `or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3519$311'.
+Found and cleaned up 1 empty switch in `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3493$310'.
+Removing empty process `or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3493$310'.
+Found and cleaned up 1 empty switch in `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3461$306'.
+Removing empty process `or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3461$306'.
+Found and cleaned up 2 empty switches in `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3435$302'.
+Removing empty process `or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3435$302'.
+Found and cleaned up 2 empty switches in `\or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3372$264'.
+Removing empty process `or1200_alu.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3372$264'.
+Found and cleaned up 1 empty switch in `\or1200_operandmuxes.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3275$252'.
+Removing empty process `or1200_operandmuxes.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3275$252'.
+Found and cleaned up 1 empty switch in `\or1200_operandmuxes.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3260$251'.
+Removing empty process `or1200_operandmuxes.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3260$251'.
+Found and cleaned up 4 empty switches in `\or1200_operandmuxes.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3244$240'.
+Removing empty process `or1200_operandmuxes.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3244$240'.
+Found and cleaned up 4 empty switches in `\or1200_operandmuxes.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3228$229'.
+Removing empty process `or1200_operandmuxes.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3228$229'.
+Found and cleaned up 3 empty switches in `\or1200_rf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3078$224'.
+Removing empty process `or1200_rf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3078$224'.
+Found and cleaned up 3 empty switches in `\or1200_rf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3065$220'.
+Removing empty process `or1200_rf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3065$220'.
+Found and cleaned up 2 empty switches in `\or1200_rf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3038$203'.
+Removing empty process `or1200_rf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3038$203'.
+Found and cleaned up 3 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2912$185'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2912$185'.
+Found and cleaned up 3 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2898$179'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2898$179'.
+Found and cleaned up 3 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2886$174'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2886$174'.
+Found and cleaned up 4 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2835$169'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2835$169'.
+Found and cleaned up 3 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2824$164'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2824$164'.
+Found and cleaned up 4 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2777$162'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2777$162'.
+Found and cleaned up 4 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2681$157'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2681$157'.
+Found and cleaned up 3 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2668$152'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2668$152'.
+Found and cleaned up 4 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2639$147'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2639$147'.
+Found and cleaned up 4 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2544$142'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2544$142'.
+Found and cleaned up 3 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2531$137'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2531$137'.
+Found and cleaned up 3 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2453$135'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2453$135'.
+Found and cleaned up 3 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2440$133'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2440$133'.
+Found and cleaned up 3 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2427$128'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2427$128'.
+Found and cleaned up 3 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2413$126'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2413$126'.
+Found and cleaned up 2 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2403$124'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2403$124'.
+Found and cleaned up 4 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2384$120'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2384$120'.
+Found and cleaned up 1 empty switch in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2365$119'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2365$119'.
+Found and cleaned up 1 empty switch in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2322$118'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2322$118'.
+Found and cleaned up 1 empty switch in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2271$117'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2271$117'.
+Found and cleaned up 4 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2251$112'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2251$112'.
+Found and cleaned up 3 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2240$107'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2240$107'.
+Found and cleaned up 3 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2226$102'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2226$102'.
+Found and cleaned up 2 empty switches in `\or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2215$97'.
+Removing empty process `or1200_ctrl.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2215$97'.
+Found and cleaned up 4 empty switches in `\or1200_if.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1943$75'.
+Removing empty process `or1200_if.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1943$75'.
+Found and cleaned up 4 empty switches in `\or1200_if.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1930$70'.
+Removing empty process `or1200_if.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1930$70'.
+Found and cleaned up 4 empty switches in `\or1200_if.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1917$65'.
+Removing empty process `or1200_if.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1917$65'.
+Found and cleaned up 3 empty switches in `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1789$26'.
+Removing empty process `or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1789$26'.
+Found and cleaned up 3 empty switches in `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1693$11'.
+Removing empty process `or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1693$11'.
+Found and cleaned up 2 empty switches in `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1682$10'.
+Removing empty process `or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:1682$10'.
+Cleaned up 188 empty switches.
+
+3.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module or1200_mem2reg.
+<suppressed ~14 debug messages>
+Optimizing module or1200_reg2mem.
+Optimizing module or1200_lsu.
+Optimizing module or1200_wbmux.
+<suppressed ~3 debug messages>
+Optimizing module or1200_cfgr.
+<suppressed ~45 debug messages>
+Optimizing module or1200_except.
+<suppressed ~29 debug messages>
+Optimizing module or1200_freeze.
+<suppressed ~1 debug messages>
+Optimizing module or1200_sprs.
+<suppressed ~3 debug messages>
+Optimizing module or1200_mult_mac.
+Optimizing module or1200_alu.
+<suppressed ~16 debug messages>
+Optimizing module or1200_operandmuxes.
+Optimizing module or1200_rf.
+<suppressed ~3 debug messages>
+Optimizing module or1200_ctrl.
+<suppressed ~22 debug messages>
+Optimizing module or1200_if.
+<suppressed ~3 debug messages>
+Optimizing module or1200_genpc.
+<suppressed ~3 debug messages>
+Optimizing module or1200_flat.
+
+4. Executing OPT pass (performing simple optimizations).
+
+4.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module or1200_mem2reg.
+Optimizing module or1200_reg2mem.
+Optimizing module or1200_lsu.
+Optimizing module or1200_wbmux.
+Optimizing module or1200_cfgr.
+Optimizing module or1200_except.
+Optimizing module or1200_freeze.
+Optimizing module or1200_sprs.
+Optimizing module or1200_mult_mac.
+Optimizing module or1200_alu.
+Optimizing module or1200_operandmuxes.
+Optimizing module or1200_rf.
+Optimizing module or1200_ctrl.
+Optimizing module or1200_if.
+Optimizing module or1200_genpc.
+Optimizing module or1200_flat.
+
+4.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\or1200_mem2reg'.
+<suppressed ~54 debug messages>
+Finding identical cells in module `\or1200_reg2mem'.
+Finding identical cells in module `\or1200_lsu'.
+Finding identical cells in module `\or1200_wbmux'.
+Finding identical cells in module `\or1200_cfgr'.
+<suppressed ~72 debug messages>
+Finding identical cells in module `\or1200_except'.
+<suppressed ~87 debug messages>
+Finding identical cells in module `\or1200_freeze'.
+<suppressed ~15 debug messages>
+Finding identical cells in module `\or1200_sprs'.
+<suppressed ~147 debug messages>
+Finding identical cells in module `\or1200_mult_mac'.
+<suppressed ~33 debug messages>
+Finding identical cells in module `\or1200_alu'.
+<suppressed ~48 debug messages>
+Finding identical cells in module `\or1200_operandmuxes'.
+<suppressed ~30 debug messages>
+Finding identical cells in module `\or1200_rf'.
+<suppressed ~15 debug messages>
+Finding identical cells in module `\or1200_ctrl'.
+<suppressed ~276 debug messages>
+Finding identical cells in module `\or1200_if'.
+<suppressed ~33 debug messages>
+Finding identical cells in module `\or1200_genpc'.
+<suppressed ~69 debug messages>
+Finding identical cells in module `\or1200_flat'.
+Removed a total of 293 cells.
+
+4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \or1200_mem2reg..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/5 on $pmux $procmux$690.
+    dead port 2/5 on $pmux $procmux$690.
+    dead port 3/5 on $pmux $procmux$690.
+    dead port 4/5 on $pmux $procmux$690.
+    dead port 5/5 on $pmux $procmux$690.
+Running muxtree optimizer on module \or1200_reg2mem..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_lsu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_wbmux..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_cfgr..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_except..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_freeze..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_sprs..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$1262.
+Running muxtree optimizer on module \or1200_mult_mac..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_alu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$1502.
+    dead port 2/2 on $mux $procmux$1489.
+Running muxtree optimizer on module \or1200_operandmuxes..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_rf..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_ctrl..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$1864.
+    dead port 1/2 on $mux $procmux$1855.
+    dead port 1/2 on $mux $procmux$1849.
+    dead port 1/2 on $mux $procmux$1846.
+Running muxtree optimizer on module \or1200_if..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_genpc..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$1970.
+    dead port 2/2 on $mux $procmux$1954.
+    dead port 2/2 on $mux $procmux$1938.
+    dead port 2/2 on $mux $procmux$1923.
+Running muxtree optimizer on module \or1200_flat..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 16 multiplexer ports.
+<suppressed ~137 debug messages>
+
+4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \or1200_mem2reg.
+    New ctrl vector for $pmux cell $procmux$734: { $auto$opt_reduce.cc:134:opt_mux$2129 $auto$opt_reduce.cc:134:opt_mux$2127 $procmux$755_CMP $auto$opt_reduce.cc:134:opt_mux$2125 $procmux$746_CMP }
+    New ctrl vector for $pmux cell $procmux$752: { $procmux$756_CMP $auto$opt_reduce.cc:134:opt_mux$2131 $procmux$753_CMP }
+    New ctrl vector for $pmux cell $procmux$724: { $auto$opt_reduce.cc:134:opt_mux$2137 $auto$opt_reduce.cc:134:opt_mux$2135 $procmux$755_CMP $auto$opt_reduce.cc:134:opt_mux$2133 $procmux$746_CMP }
+    New ctrl vector for $pmux cell $procmux$696: { $procmux$701_CMP $procmux$700_CMP $procmux$699_CMP $procmux$698_CMP $procmux$697_CMP }
+  Optimizing cells in module \or1200_mem2reg.
+  Optimizing cells in module \or1200_reg2mem.
+  Optimizing cells in module \or1200_lsu.
+    New ctrl vector for $pmux cell $procmux$768: { $auto$opt_reduce.cc:134:opt_mux$2151 $auto$opt_reduce.cc:134:opt_mux$2149 $auto$opt_reduce.cc:134:opt_mux$2147 $auto$opt_reduce.cc:134:opt_mux$2145 $auto$opt_reduce.cc:134:opt_mux$2143 $auto$opt_reduce.cc:134:opt_mux$2141 $auto$opt_reduce.cc:134:opt_mux$2139 }
+  Optimizing cells in module \or1200_lsu.
+  Optimizing cells in module \or1200_wbmux.
+  Optimizing cells in module \or1200_cfgr.
+    New ctrl vector for $pmux cell $procmux$877: $auto$opt_reduce.cc:134:opt_mux$2153
+    New ctrl vector for $pmux cell $procmux$998: $auto$opt_reduce.cc:134:opt_mux$2155
+    New ctrl vector for $pmux cell $procmux$909: $auto$opt_reduce.cc:134:opt_mux$2157
+    New ctrl vector for $pmux cell $procmux$939: $auto$opt_reduce.cc:134:opt_mux$2159
+    New ctrl vector for $pmux cell $procmux$856: $auto$opt_reduce.cc:134:opt_mux$2161
+    New ctrl vector for $pmux cell $procmux$896: $auto$opt_reduce.cc:134:opt_mux$2163
+    New ctrl vector for $pmux cell $procmux$929: $auto$opt_reduce.cc:134:opt_mux$2165
+    New ctrl vector for $pmux cell $procmux$845: $auto$opt_reduce.cc:134:opt_mux$2167
+    New ctrl vector for $pmux cell $procmux$885: $auto$opt_reduce.cc:134:opt_mux$2169
+    New ctrl vector for $pmux cell $procmux$948: $auto$opt_reduce.cc:134:opt_mux$2171
+  Optimizing cells in module \or1200_cfgr.
+  Optimizing cells in module \or1200_except.
+    New ctrl vector for $pmux cell $procmux$1126: { $procmux$1143_CMP $auto$opt_reduce.cc:134:opt_mux$2173 }
+    New ctrl vector for $pmux cell $procmux$1009: { $auto$opt_reduce.cc:134:opt_mux$2175 $procmux$1127_CMP }
+  Optimizing cells in module \or1200_except.
+  Optimizing cells in module \or1200_freeze.
+  Optimizing cells in module \or1200_sprs.
+  Optimizing cells in module \or1200_mult_mac.
+    New ctrl vector for $pmux cell $procmux$1444: { $procmux$1447_CMP $auto$opt_reduce.cc:134:opt_mux$2177 }
+  Optimizing cells in module \or1200_mult_mac.
+  Optimizing cells in module \or1200_alu.
+    New ctrl vector for $pmux cell $procmux$1470: $auto$opt_reduce.cc:134:opt_mux$2179
+    New ctrl vector for $pmux cell $procmux$1462: $auto$opt_reduce.cc:134:opt_mux$2181
+    New ctrl vector for $pmux cell $procmux$1457: { $procmux$1460_CMP $procmux$1459_CMP }
+  Optimizing cells in module \or1200_alu.
+  Optimizing cells in module \or1200_operandmuxes.
+  Optimizing cells in module \or1200_rf.
+  Optimizing cells in module \or1200_ctrl.
+    New ctrl vector for $pmux cell $procmux$1705: { $auto$opt_reduce.cc:134:opt_mux$2185 $procmux$1718_CMP $procmux$1825_CMP $procmux$1716_CMP $procmux$1810_CMP $procmux$1714_CMP $procmux$1713_CMP $procmux$1809_CMP $procmux$1808_CMP $procmux$1710_CMP $procmux$1814_CMP $auto$opt_reduce.cc:134:opt_mux$2183 $procmux$1706_CMP }
+    New ctrl vector for $pmux cell $procmux$1656: { $auto$opt_reduce.cc:134:opt_mux$2191 $procmux$1825_CMP $auto$opt_reduce.cc:134:opt_mux$2189 $auto$opt_reduce.cc:134:opt_mux$2187 }
+    New ctrl vector for $pmux cell $procmux$1639: { $auto$opt_reduce.cc:134:opt_mux$2195 $auto$opt_reduce.cc:134:opt_mux$2193 $procmux$1642_CMP $procmux$1641_CMP $procmux$1750_CMP }
+    New ctrl vector for $pmux cell $procmux$1813: { $auto$opt_reduce.cc:134:opt_mux$2197 $procmux$1814_CMP }
+    New ctrl vector for $pmux cell $procmux$1805: $auto$opt_reduce.cc:134:opt_mux$2199
+    New ctrl vector for $pmux cell $procmux$1738: $auto$opt_reduce.cc:134:opt_mux$2201
+    New ctrl vector for $pmux cell $procmux$1800: $auto$opt_reduce.cc:134:opt_mux$2203
+    New ctrl vector for $pmux cell $procmux$1788: $auto$opt_reduce.cc:134:opt_mux$2205
+  Optimizing cells in module \or1200_ctrl.
+  Optimizing cells in module \or1200_if.
+  Optimizing cells in module \or1200_genpc.
+    New ctrl vector for $pmux cell $procmux$1973: { $procmux$2000_CMP $procmux$1999_CMP $auto$opt_reduce.cc:134:opt_mux$2207 }
+  Optimizing cells in module \or1200_genpc.
+  Optimizing cells in module \or1200_flat.
+Performed a total of 30 changes.
+
+4.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\or1200_mem2reg'.
+<suppressed ~9 debug messages>
+Finding identical cells in module `\or1200_reg2mem'.
+Finding identical cells in module `\or1200_lsu'.
+Finding identical cells in module `\or1200_wbmux'.
+Finding identical cells in module `\or1200_cfgr'.
+<suppressed ~15 debug messages>
+Finding identical cells in module `\or1200_except'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\or1200_freeze'.
+Finding identical cells in module `\or1200_sprs'.
+Finding identical cells in module `\or1200_mult_mac'.
+Finding identical cells in module `\or1200_alu'.
+Finding identical cells in module `\or1200_operandmuxes'.
+Finding identical cells in module `\or1200_rf'.
+Finding identical cells in module `\or1200_ctrl'.
+Finding identical cells in module `\or1200_if'.
+Finding identical cells in module `\or1200_genpc'.
+<suppressed ~24 debug messages>
+Finding identical cells in module `\or1200_flat'.
+Removed a total of 17 cells.
+
+4.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$2063 ($dff) from module or1200_wbmux (D = $procmux$800_Y, Q = \muxreg, rval = 0).
+Adding EN signal on $auto$ff.cc:262:slice$2208 ($sdff) from module or1200_wbmux (D = \muxout, Q = \muxreg).
+Adding SRST signal on $procdff$2064 ($dff) from module or1200_wbmux (D = $procmux$795_Y, Q = \muxreg_valid, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$2210 ($sdff) from module or1200_wbmux (D = \rfwb_op [0], Q = \muxreg_valid).
+Adding SRST signal on $procdff$2081 ($dff) from module or1200_except (D = $procmux$1219_Y, Q = \id_exceptflags, rval = 3'000).
+Adding EN signal on $auto$ff.cc:262:slice$2212 ($sdff) from module or1200_except (D = { \sig_ibuserr \sig_itlbmiss \sig_immufault }, Q = \id_exceptflags).
+Adding SRST signal on $procdff$2080 ($dff) from module or1200_except (D = $procmux$1227_Y, Q = \id_pc, rval = 0).
+Adding EN signal on $auto$ff.cc:262:slice$2216 ($sdff) from module or1200_except (D = \if_pc, Q = \id_pc).
+Adding SRST signal on $procdff$2079 ($dff) from module or1200_except (D = $procmux$1214_Y [0], Q = \delayed_iee [0], rval = 1'0).
+Adding SRST signal on $procdff$2079 ($dff) from module or1200_except (D = \delayed_iee [1:0], Q = \delayed_iee [2:1], rval = 2'00).
+Adding SRST signal on $procdff$2078 ($dff) from module or1200_except (D = $procmux$1208_Y [0], Q = \delayed_tee [0], rval = 1'0).
+Adding SRST signal on $procdff$2078 ($dff) from module or1200_except (D = \delayed_tee [1:0], Q = \delayed_tee [2:1], rval = 2'00).
+Adding SRST signal on $procdff$2077 ($dff) from module or1200_except (D = $procmux$1155_Y, Q = \delayed2_ex_dslot, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$2232 ($sdff) from module or1200_except (D = $procmux$1155_Y, Q = \delayed2_ex_dslot).
+Adding SRST signal on $procdff$2076 ($dff) from module or1200_except (D = $procmux$1166_Y, Q = \delayed1_ex_dslot, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$2238 ($sdff) from module or1200_except (D = $procmux$1166_Y, Q = \delayed1_ex_dslot).
+Adding SRST signal on $procdff$2075 ($dff) from module or1200_except (D = $procmux$1174_Y, Q = \ex_dslot, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$2244 ($sdff) from module or1200_except (D = \branch_taken, Q = \ex_dslot).
+Adding SRST signal on $procdff$2065 ($dff) from module or1200_except (D = $procmux$1126_Y, Q = \except_type, rval = 4'0000).
+Adding EN signal on $auto$ff.cc:262:slice$2248 ($sdff) from module or1200_except (D = $procmux$1126_Y, Q = \except_type).
+Adding SRST signal on $procdff$2066 ($dff) from module or1200_except (D = $procmux$1111_Y, Q = \extend_flush, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$2258 ($sdff) from module or1200_except (D = $procmux$1111_Y, Q = \extend_flush).
+Adding SRST signal on $procdff$2067 ($dff) from module or1200_except (D = $procmux$1105_Y, Q = \epcr, rval = 0).
+Adding EN signal on $auto$ff.cc:262:slice$2266 ($sdff) from module or1200_except (D = $procmux$1103_Y, Q = \epcr).
+Adding SRST signal on $procdff$2068 ($dff) from module or1200_except (D = $procmux$1078_Y, Q = \eear, rval = 0).
+Adding EN signal on $auto$ff.cc:262:slice$2276 ($sdff) from module or1200_except (D = $procmux$1076_Y, Q = \eear).
+Adding SRST signal on $procdff$2069 ($dff) from module or1200_except (D = $procmux$1051_Y, Q = \esr, rval = 16'0000000000000001).
+Adding EN signal on $auto$ff.cc:262:slice$2290 ($sdff) from module or1200_except (D = $procmux$1049_Y, Q = \esr).
+Adding SRST signal on $procdff$2070 ($dff) from module or1200_except (D = $procmux$1021_Y, Q = \state, rval = 3'000).
+Adding EN signal on $auto$ff.cc:262:slice$2298 ($sdff) from module or1200_except (D = $procmux$1021_Y, Q = \state).
+Adding SRST signal on $procdff$2071 ($dff) from module or1200_except (D = $procmux$1009_Y, Q = \extend_flush_last, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$2308 ($sdff) from module or1200_except (D = $procmux$1009_Y, Q = \extend_flush_last).
+Adding SRST signal on $procdff$2072 ($dff) from module or1200_except (D = $procmux$1147_Y, Q = \wb_pc, rval = 0).
+Adding EN signal on $auto$ff.cc:262:slice$2316 ($sdff) from module or1200_except (D = \ex_pc, Q = \wb_pc).
+Adding SRST signal on $procdff$2073 ($dff) from module or1200_except (D = $procmux$1199_Y, Q = \ex_pc, rval = 0).
+Adding EN signal on $auto$ff.cc:262:slice$2318 ($sdff) from module or1200_except (D = $procmux$1199_Y, Q = \ex_pc).
+Adding SRST signal on $procdff$2074 ($dff) from module or1200_except (D = $procmux$1185_Y, Q = \ex_exceptflags, rval = 3'000).
+Adding EN signal on $auto$ff.cc:262:slice$2324 ($sdff) from module or1200_except (D = \id_exceptflags, Q = \ex_exceptflags).
+Adding SRST signal on $procdff$2082 ($dff) from module or1200_freeze (D = $procmux$1238_Y, Q = \multicycle_cnt, rval = 2'00).
+Adding EN signal on $auto$ff.cc:262:slice$2328 ($sdff) from module or1200_freeze (D = $procmux$1238_Y, Q = \multicycle_cnt).
+Adding SRST signal on $procdff$2083 ($dff) from module or1200_freeze (D = $procmux$1246_Y, Q = \flushpipe_r, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$2332 ($sdff) from module or1200_freeze (D = $procmux$1246_Y, Q = \flushpipe_r).
+Adding SRST signal on $procdff$2084 ($dff) from module or1200_sprs (D = { $procmux$1277_Y $procmux$1293_Y }, Q = { \sr [15:7] \sr [4:3] }, rval = 11'10000000000).
+Adding SRST signal on $procdff$2084 ($dff) from module or1200_sprs (D = { $procmux$1322_Y $procmux$1282_Y $procmux$1298_Y $procmux$1306_Y $procmux$1314_Y }, Q = { \sr [6:5] \sr [2:0] }, rval = 5'00001).
+Adding EN signal on $auto$ff.cc:262:slice$2337 ($sdff) from module or1200_sprs (D = { $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4000$442_Y [6:5] $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4000$442_Y [2:0] }, Q = { \sr [6:5] \sr [2:0] }).
+Adding EN signal on $auto$ff.cc:262:slice$2336 ($sdff) from module or1200_sprs (D = { $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3986$428_Y $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3990$433_Y $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3995$438_Y $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4000$442_Y [8:7] $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:4000$442_Y [4:3] }, Q = { \sr [15:7] \sr [4:3] }).
+Adding SRST signal on $procdff$2085 ($dff) from module or1200_mult_mac (D = $or$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3782$381_Y, Q = \mac_stall_r, rval = 1'0).
+Adding SRST signal on $procdff$2086 ($dff) from module or1200_mult_mac (D = { $procmux$1378_Y $procmux$1395_Y }, Q = \mac_r, rval = 64'0000000000000000000000000000000000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$2347 ($sdff) from module or1200_mult_mac (D = $procmux$1395_Y, Q = \mac_r [31:0]).
+Adding EN signal on $auto$ff.cc:262:slice$2347 ($sdff) from module or1200_mult_mac (D = $procmux$1375_Y, Q = \mac_r [63:32]).
+Adding SRST signal on $procdff$2087 ($dff) from module or1200_mult_mac (D = \mac_op_r2, Q = \mac_op_r3, rval = 2'00).
+Adding SRST signal on $procdff$2088 ($dff) from module or1200_mult_mac (D = \mac_op_r1, Q = \mac_op_r2, rval = 2'00).
+Adding SRST signal on $procdff$2089 ($dff) from module or1200_mult_mac (D = \mac_op, Q = \mac_op_r1, rval = 2'00).
+Adding SRST signal on $procdff$2090 ($dff) from module or1200_mult_mac (D = $procmux$1438_Y, Q = \mul_prod_r, rval = 64'0000000000000000000000000000000000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$2365 ($sdff) from module or1200_mult_mac (D = $procmux$1438_Y, Q = \mul_prod_r).
+Adding SRST signal on $procdff$2091 ($dff) from module or1200_mult_mac (D = $procmux$1424_Y, Q = \div_free, rval = 1'1).
+Adding EN signal on $auto$ff.cc:262:slice$2369 ($sdff) from module or1200_mult_mac (D = $procmux$1421_Y, Q = \div_free).
+Adding SRST signal on $procdff$2092 ($dff) from module or1200_mult_mac (D = $procmux$1413_Y, Q = \div_cntr, rval = 6'000000).
+Adding EN signal on $auto$ff.cc:262:slice$2377 ($sdff) from module or1200_mult_mac (D = $procmux$1413_Y, Q = \div_cntr).
+Adding SRST signal on $procdff$2093 ($dff) from module or1200_operandmuxes (D = $procmux$1542_Y, Q = \operand_b, rval = 0).
+Adding EN signal on $auto$ff.cc:262:slice$2381 ($sdff) from module or1200_operandmuxes (D = $procmux$1542_Y, Q = \operand_b).
+Adding SRST signal on $procdff$2094 ($dff) from module or1200_operandmuxes (D = $procmux$1533_Y, Q = \saved_b, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$2385 ($sdff) from module or1200_operandmuxes (D = $procmux$1533_Y, Q = \saved_b).
+Adding SRST signal on $procdff$2095 ($dff) from module or1200_operandmuxes (D = $procmux$1562_Y, Q = \operand_a, rval = 0).
+Adding EN signal on $auto$ff.cc:262:slice$2393 ($sdff) from module or1200_operandmuxes (D = $procmux$1562_Y, Q = \operand_a).
+Adding SRST signal on $procdff$2096 ($dff) from module or1200_operandmuxes (D = $procmux$1553_Y, Q = \saved_a, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$2397 ($sdff) from module or1200_operandmuxes (D = $procmux$1553_Y, Q = \saved_a).
+Adding SRST signal on $procdff$2097 ($dff) from module or1200_rf (D = $procmux$1570_Y, Q = \datab_saved, rval = 33'000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$2405 ($sdff) from module or1200_rf (D = $procmux$1570_Y, Q = \datab_saved).
+Adding SRST signal on $procdff$2098 ($dff) from module or1200_rf (D = $procmux$1578_Y, Q = \dataa_saved, rval = 33'000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$2409 ($sdff) from module or1200_rf (D = $procmux$1578_Y, Q = \dataa_saved).
+Adding SRST signal on $procdff$2099 ($dff) from module or1200_rf (D = $procmux$1583_Y, Q = \rf_we_allow, rval = 1'1).
+Adding EN signal on $auto$ff.cc:262:slice$2413 ($sdff) from module or1200_rf (D = $not$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:3042$205_Y, Q = \rf_we_allow).
+Adding SRST signal on $procdff$2118 ($dff) from module or1200_ctrl (D = $procmux$1834_Y, Q = \ex_macrc_op, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$2415 ($sdff) from module or1200_ctrl (D = $and$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2199$93_Y, Q = \ex_macrc_op).
+Adding SRST signal on $procdff$2100 ($dff) from module or1200_ctrl (D = $procmux$1588_Y, Q = \sig_trap, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$2419 ($sdff) from module or1200_ctrl (D = $or$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2919$191_Y, Q = \sig_trap).
+Adding SRST signal on $procdff$2101 ($dff) from module or1200_ctrl (D = $procmux$1596_Y, Q = \sig_syscall, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$2423 ($sdff) from module or1200_ctrl (D = $eq$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200.v:2905$184_Y, Q = \sig_syscall).
+Adding SRST signal on $procdff$2102 ($dff) from module or1200_ctrl (D = $procmux$1604_Y, Q = \comp_op, rval = 4'0000).
+Adding EN signal on $auto$ff.cc:262:slice$2427 ($sdff) from module or1200_ctrl (D = \id_insn [24:21], Q = \comp_op).
+Adding SRST signal on $procdff$2103 ($dff) from module or1200_ctrl (D = $procmux$1622_Y, Q = \lsu_op, rval = 4'0000).
+Adding EN signal on $auto$ff.cc:262:slice$2431 ($sdff) from module or1200_ctrl (D = $procmux$1613_Y, Q = \lsu_op).
+Adding SRST signal on $procdff$2104 ($dff) from module or1200_ctrl (D = $procmux$1630_Y, Q = \branch_op, rval = 3'000).
+Adding EN signal on $auto$ff.cc:262:slice$2435 ($sdff) from module or1200_ctrl (D = \pre_branch_op, Q = \branch_op).
+Adding SRST signal on $procdff$2105 ($dff) from module or1200_ctrl (D = $procmux$1647_Y, Q = \pre_branch_op, rval = 3'000).
+Adding EN signal on $auto$ff.cc:262:slice$2439 ($sdff) from module or1200_ctrl (D = $procmux$1639_Y, Q = \pre_branch_op).
+Adding SRST signal on $procdff$2106 ($dff) from module or1200_ctrl (D = $procmux$1675_Y, Q = \rfwb_op, rval = 3'000).
+Adding EN signal on $auto$ff.cc:262:slice$2443 ($sdff) from module or1200_ctrl (D = $procmux$1656_Y, Q = \rfwb_op).
+Adding SRST signal on $procdff$2107 ($dff) from module or1200_ctrl (D = $procmux$1683_Y, Q = \shrot_op, rval = 2'00).
+Adding EN signal on $auto$ff.cc:262:slice$2447 ($sdff) from module or1200_ctrl (D = \id_insn [7:6], Q = \shrot_op).
+Adding SRST signal on $procdff$2108 ($dff) from module or1200_ctrl (D = $procmux$1693_Y, Q = \mac_op, rval = 2'00).
+Adding SRST signal on $procdff$2109 ($dff) from module or1200_ctrl (D = $procmux$1721_Y, Q = \alu_op, rval = 4'0000).
+Adding EN signal on $auto$ff.cc:262:slice$2454 ($sdff) from module or1200_ctrl (D = $procmux$1705_Y, Q = \alu_op).
+Adding SRST signal on $procdff$2110 ($dff) from module or1200_ctrl (D = $procmux$1729_Y, Q = \except_illegal, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$2458 ($sdff) from module or1200_ctrl (D = 1'1, Q = \except_illegal).
+Adding SRST signal on $procdff$2111 ($dff) from module or1200_ctrl (D = $procmux$1753_Y, Q = \sel_imm, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$2462 ($sdff) from module or1200_ctrl (D = $procmux$1738_Y, Q = \sel_imm).
+Adding SRST signal on $procdff$2112 ($dff) from module or1200_ctrl (D = $procmux$1758_Y, Q = \wb_insn, rval = 339804160).
+Adding EN signal on $auto$ff.cc:262:slice$2464 ($sdff) from module or1200_ctrl (D = \ex_insn, Q = \wb_insn).
+Adding SRST signal on $procdff$2113 ($dff) from module or1200_ctrl (D = $procmux$1766_Y, Q = \ex_insn, rval = 339804160).
+Adding EN signal on $auto$ff.cc:262:slice$2468 ($sdff) from module or1200_ctrl (D = \id_insn, Q = \ex_insn).
+Adding SRST signal on $procdff$2114 ($dff) from module or1200_ctrl (D = $procmux$1774_Y, Q = \id_insn, rval = 339804160).
+Adding EN signal on $auto$ff.cc:262:slice$2472 ($sdff) from module or1200_ctrl (D = \if_insn, Q = \id_insn).
+Adding SRST signal on $procdff$2115 ($dff) from module or1200_ctrl (D = $procmux$1782_Y, Q = \wb_rfaddrw, rval = 5'00000).
+Adding EN signal on $auto$ff.cc:262:slice$2476 ($sdff) from module or1200_ctrl (D = \rf_addrw, Q = \wb_rfaddrw).
+Adding SRST signal on $procdff$2116 ($dff) from module or1200_ctrl (D = $procmux$1791_Y, Q = \rf_addrw, rval = 5'00000).
+Adding EN signal on $auto$ff.cc:262:slice$2478 ($sdff) from module or1200_ctrl (D = $procmux$1788_Y, Q = \rf_addrw).
+Adding SRST signal on $procdff$2117 ($dff) from module or1200_ctrl (D = $procmux$1826_Y, Q = \spr_addrimm, rval = 16'0000000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$2482 ($sdff) from module or1200_ctrl (D = $procmux$1824_Y, Q = \spr_addrimm).
+Adding SRST signal on $procdff$2119 ($dff) from module or1200_if (D = $procmux$1872_Y, Q = \addr_saved, rval = 0).
+Adding EN signal on $auto$ff.cc:262:slice$2486 ($sdff) from module or1200_if (D = $procmux$1872_Y, Q = \addr_saved).
+Adding SRST signal on $procdff$2120 ($dff) from module or1200_if (D = $procmux$1883_Y, Q = \insn_saved, rval = 339804160).
+Adding EN signal on $auto$ff.cc:262:slice$2492 ($sdff) from module or1200_if (D = $procmux$1883_Y, Q = \insn_saved).
+Adding SRST signal on $procdff$2121 ($dff) from module or1200_if (D = $procmux$1894_Y, Q = \saved, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$2498 ($sdff) from module or1200_if (D = $procmux$1894_Y, Q = \saved).
+Adding SRST signal on $procdff$2123 ($dff) from module or1200_genpc (D = $procmux$2006_Y, Q = \genpc_refetch_r, rval = 1'0).
+Adding EN signal on $procdff$2122 ($dff) from module or1200_genpc (D = $procmux$1908_Y, Q = \pcreg).
+
+4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \or1200_mem2reg..
+Finding unused cells or wires in module \or1200_reg2mem..
+Finding unused cells or wires in module \or1200_lsu..
+Finding unused cells or wires in module \or1200_wbmux..
+Finding unused cells or wires in module \or1200_cfgr..
+Finding unused cells or wires in module \or1200_except..
+Finding unused cells or wires in module \or1200_freeze..
+Finding unused cells or wires in module \or1200_sprs..
+Finding unused cells or wires in module \or1200_mult_mac..
+Finding unused cells or wires in module \or1200_alu..
+Finding unused cells or wires in module \or1200_operandmuxes..
+Finding unused cells or wires in module \or1200_rf..
+Finding unused cells or wires in module \or1200_ctrl..
+Finding unused cells or wires in module \or1200_if..
+Finding unused cells or wires in module \or1200_genpc..
+Finding unused cells or wires in module \or1200_flat..
+Removed 199 unused cells and 1123 unused wires.
+<suppressed ~226 debug messages>
+
+4.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module or1200_alu.
+Optimizing module or1200_cfgr.
+Optimizing module or1200_ctrl.
+Optimizing module or1200_except.
+<suppressed ~7 debug messages>
+Optimizing module or1200_flat.
+Optimizing module or1200_freeze.
+<suppressed ~1 debug messages>
+Optimizing module or1200_genpc.
+<suppressed ~1 debug messages>
+Optimizing module or1200_if.
+Optimizing module or1200_lsu.
+Optimizing module or1200_mem2reg.
+Optimizing module or1200_mult_mac.
+<suppressed ~5 debug messages>
+Optimizing module or1200_operandmuxes.
+<suppressed ~4 debug messages>
+Optimizing module or1200_reg2mem.
+Optimizing module or1200_rf.
+Optimizing module or1200_sprs.
+Optimizing module or1200_wbmux.
+
+4.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \or1200_alu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_cfgr..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_ctrl..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_except..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_flat..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \or1200_freeze..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_genpc..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_if..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_lsu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_mem2reg..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_mult_mac..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_operandmuxes..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_reg2mem..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_rf..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_sprs..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_wbmux..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~100 debug messages>
+
+4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \or1200_alu.
+  Optimizing cells in module \or1200_cfgr.
+  Optimizing cells in module \or1200_ctrl.
+  Optimizing cells in module \or1200_except.
+  Optimizing cells in module \or1200_flat.
+  Optimizing cells in module \or1200_freeze.
+  Optimizing cells in module \or1200_genpc.
+    New ctrl vector for $pmux cell $procmux$1989: { $procmux$2004_CMP $procmux$1987_CMP $procmux$1986_CMP $procmux$1985_CMP $procmux$1955_CMP $procmux$1924_CMP $procmux$1982_CMP $auto$opt_reduce.cc:134:opt_mux$2509 }
+  Optimizing cells in module \or1200_genpc.
+  Optimizing cells in module \or1200_if.
+  Optimizing cells in module \or1200_lsu.
+  Optimizing cells in module \or1200_mem2reg.
+  Optimizing cells in module \or1200_mult_mac.
+  Optimizing cells in module \or1200_operandmuxes.
+  Optimizing cells in module \or1200_reg2mem.
+  Optimizing cells in module \or1200_rf.
+  Optimizing cells in module \or1200_sprs.
+  Optimizing cells in module \or1200_wbmux.
+Performed a total of 1 changes.
+
+4.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\or1200_alu'.
+Finding identical cells in module `\or1200_cfgr'.
+Finding identical cells in module `\or1200_ctrl'.
+<suppressed ~39 debug messages>
+Finding identical cells in module `\or1200_except'.
+<suppressed ~21 debug messages>
+Finding identical cells in module `\or1200_flat'.
+Finding identical cells in module `\or1200_freeze'.
+Finding identical cells in module `\or1200_genpc'.
+Finding identical cells in module `\or1200_if'.
+<suppressed ~12 debug messages>
+Finding identical cells in module `\or1200_lsu'.
+Finding identical cells in module `\or1200_mem2reg'.
+Finding identical cells in module `\or1200_mult_mac'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\or1200_operandmuxes'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\or1200_reg2mem'.
+Finding identical cells in module `\or1200_rf'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\or1200_sprs'.
+Finding identical cells in module `\or1200_wbmux'.
+Removed a total of 27 cells.
+
+4.13. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 11 on $auto$proc_dlatch.cc:427:proc_dlatch$2062 ($dlatch) from module or1200_cfgr.
+Setting constant 0-bit at position 12 on $auto$proc_dlatch.cc:427:proc_dlatch$2062 ($dlatch) from module or1200_cfgr.
+Setting constant 0-bit at position 14 on $auto$proc_dlatch.cc:427:proc_dlatch$2062 ($dlatch) from module or1200_cfgr.
+Setting constant 0-bit at position 15 on $auto$proc_dlatch.cc:427:proc_dlatch$2062 ($dlatch) from module or1200_cfgr.
+Setting constant 0-bit at position 16 on $auto$proc_dlatch.cc:427:proc_dlatch$2062 ($dlatch) from module or1200_cfgr.
+Setting constant 0-bit at position 17 on $auto$proc_dlatch.cc:427:proc_dlatch$2062 ($dlatch) from module or1200_cfgr.
+Setting constant 0-bit at position 18 on $auto$proc_dlatch.cc:427:proc_dlatch$2062 ($dlatch) from module or1200_cfgr.
+Setting constant 0-bit at position 19 on $auto$proc_dlatch.cc:427:proc_dlatch$2062 ($dlatch) from module or1200_cfgr.
+Setting constant 0-bit at position 20 on $auto$proc_dlatch.cc:427:proc_dlatch$2062 ($dlatch) from module or1200_cfgr.
+Setting constant 0-bit at position 21 on $auto$proc_dlatch.cc:427:proc_dlatch$2062 ($dlatch) from module or1200_cfgr.
+Setting constant 0-bit at position 22 on $auto$proc_dlatch.cc:427:proc_dlatch$2062 ($dlatch) from module or1200_cfgr.
+Setting constant 0-bit at position 23 on $auto$proc_dlatch.cc:427:proc_dlatch$2062 ($dlatch) from module or1200_cfgr.
+
+4.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \or1200_alu..
+Finding unused cells or wires in module \or1200_cfgr..
+Finding unused cells or wires in module \or1200_ctrl..
+Finding unused cells or wires in module \or1200_except..
+Finding unused cells or wires in module \or1200_flat..
+Finding unused cells or wires in module \or1200_freeze..
+Finding unused cells or wires in module \or1200_genpc..
+Finding unused cells or wires in module \or1200_if..
+Finding unused cells or wires in module \or1200_lsu..
+Finding unused cells or wires in module \or1200_mem2reg..
+Finding unused cells or wires in module \or1200_mult_mac..
+Finding unused cells or wires in module \or1200_operandmuxes..
+Finding unused cells or wires in module \or1200_reg2mem..
+Finding unused cells or wires in module \or1200_rf..
+Finding unused cells or wires in module \or1200_sprs..
+Finding unused cells or wires in module \or1200_wbmux..
+Removed 0 unused cells and 27 unused wires.
+<suppressed ~6 debug messages>
+
+4.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module or1200_alu.
+Optimizing module or1200_cfgr.
+Optimizing module or1200_ctrl.
+Optimizing module or1200_except.
+Optimizing module or1200_flat.
+Optimizing module or1200_freeze.
+Optimizing module or1200_genpc.
+Optimizing module or1200_if.
+Optimizing module or1200_lsu.
+Optimizing module or1200_mem2reg.
+Optimizing module or1200_mult_mac.
+Optimizing module or1200_operandmuxes.
+Optimizing module or1200_reg2mem.
+Optimizing module or1200_rf.
+Optimizing module or1200_sprs.
+Optimizing module or1200_wbmux.
+
+4.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \or1200_alu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_cfgr..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_ctrl..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_except..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_flat..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \or1200_freeze..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_genpc..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_if..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_lsu..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_mem2reg..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_mult_mac..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_operandmuxes..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_reg2mem..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_rf..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_sprs..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \or1200_wbmux..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~103 debug messages>
+
+4.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \or1200_alu.
+  Optimizing cells in module \or1200_cfgr.
+  Optimizing cells in module \or1200_ctrl.
+  Optimizing cells in module \or1200_except.
+  Optimizing cells in module \or1200_flat.
+  Optimizing cells in module \or1200_freeze.
+  Optimizing cells in module \or1200_genpc.
+  Optimizing cells in module \or1200_if.
+  Optimizing cells in module \or1200_lsu.
+  Optimizing cells in module \or1200_mem2reg.
+  Optimizing cells in module \or1200_mult_mac.
+  Optimizing cells in module \or1200_operandmuxes.
+  Optimizing cells in module \or1200_reg2mem.
+  Optimizing cells in module \or1200_rf.
+  Optimizing cells in module \or1200_sprs.
+  Optimizing cells in module \or1200_wbmux.
+Performed a total of 0 changes.
+
+4.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\or1200_alu'.
+Finding identical cells in module `\or1200_cfgr'.
+Finding identical cells in module `\or1200_ctrl'.
+Finding identical cells in module `\or1200_except'.
+Finding identical cells in module `\or1200_flat'.
+Finding identical cells in module `\or1200_freeze'.
+Finding identical cells in module `\or1200_genpc'.
+Finding identical cells in module `\or1200_if'.
+Finding identical cells in module `\or1200_lsu'.
+Finding identical cells in module `\or1200_mem2reg'.
+Finding identical cells in module `\or1200_mult_mac'.
+Finding identical cells in module `\or1200_operandmuxes'.
+Finding identical cells in module `\or1200_reg2mem'.
+Finding identical cells in module `\or1200_rf'.
+Finding identical cells in module `\or1200_sprs'.
+Finding identical cells in module `\or1200_wbmux'.
+Removed a total of 0 cells.
+
+4.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \or1200_alu..
+Finding unused cells or wires in module \or1200_cfgr..
+Finding unused cells or wires in module \or1200_ctrl..
+Finding unused cells or wires in module \or1200_except..
+Finding unused cells or wires in module \or1200_flat..
+Finding unused cells or wires in module \or1200_freeze..
+Finding unused cells or wires in module \or1200_genpc..
+Finding unused cells or wires in module \or1200_if..
+Finding unused cells or wires in module \or1200_lsu..
+Finding unused cells or wires in module \or1200_mem2reg..
+Finding unused cells or wires in module \or1200_mult_mac..
+Finding unused cells or wires in module \or1200_operandmuxes..
+Finding unused cells or wires in module \or1200_reg2mem..
+Finding unused cells or wires in module \or1200_rf..
+Finding unused cells or wires in module \or1200_sprs..
+Finding unused cells or wires in module \or1200_wbmux..
+
+4.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module or1200_alu.
+Optimizing module or1200_cfgr.
+Optimizing module or1200_ctrl.
+Optimizing module or1200_except.
+Optimizing module or1200_flat.
+Optimizing module or1200_freeze.
+Optimizing module or1200_genpc.
+Optimizing module or1200_if.
+Optimizing module or1200_lsu.
+Optimizing module or1200_mem2reg.
+Optimizing module or1200_mult_mac.
+Optimizing module or1200_operandmuxes.
+Optimizing module or1200_reg2mem.
+Optimizing module or1200_rf.
+Optimizing module or1200_sprs.
+Optimizing module or1200_wbmux.
+
+4.23. Finished OPT passes. (There is nothing left to do.)
+
+5. Printing statistics.
+
+=== or1200_alu ===
+
+   Number of wires:                109
+   Number of wire bits:           1801
+   Number of public wires:          28
+   Number of public wire bits:     385
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 95
+     $add                            3
+     $and                            2
+     $eq                            26
+     $logic_not                      7
+     $lt                             1
+     $mux                           36
+     $not                            3
+     $or                             3
+     $pmux                           7
+     $reduce_or                      2
+     $sub                            1
+     $xor                            4
+
+=== or1200_cfgr ===
+
+   Number of wires:                 19
+   Number of wire bits:            112
+   Number of public wires:           2
+   Number of public wire bits:      64
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 27
+     $dlatch                         1
+     $eq                             6
+     $logic_not                      1
+     $mux                           10
+     $reduce_or                      9
+
+=== or1200_ctrl ===
+
+   Number of wires:                147
+   Number of wire bits:            455
+   Number of public wires:          48
+   Number of public wire bits:     323
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                129
+     $and                            6
+     $eq                            58
+     $logic_and                      4
+     $logic_not                      4
+     $mux                           11
+     $or                             4
+     $pmux                           6
+     $reduce_or                     17
+     $sdff                           1
+     $sdffe                         18
+
+=== or1200_except ===
+
+   Number of wires:                176
+   Number of wire bits:           1194
+   Number of public wires:          62
+   Number of public wire bits:     494
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                162
+     $and                           45
+     $eq                             4
+     $logic_and                      3
+     $logic_not                      5
+     $mux                           33
+     $ne                             8
+     $not                           20
+     $or                             8
+     $pmux                           3
+     $reduce_and                     6
+     $reduce_bool                    7
+     $reduce_or                      6
+     $sdff                           2
+     $sdffe                         12
+
+=== or1200_flat ===
+
+   Number of wires:                143
+   Number of wire bits:           1691
+   Number of public wires:         143
+   Number of public wire bits:    1691
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     or1200_alu                      1
+     or1200_cfgr                     1
+     or1200_ctrl                     1
+     or1200_except                   1
+     or1200_freeze                   1
+     or1200_genpc                    1
+     or1200_if                       1
+     or1200_lsu                      1
+     or1200_mult_mac                 1
+     or1200_operandmuxes             1
+     or1200_rf                       1
+     or1200_sprs                     1
+     or1200_wbmux                    1
+
+=== or1200_freeze ===
+
+   Number of wires:                 41
+   Number of wire bits:             46
+   Number of public wires:          22
+   Number of public wire bits:      24
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 26
+     $and                            2
+     $logic_not                      1
+     $mux                            4
+     $ne                             1
+     $not                            1
+     $or                            11
+     $reduce_bool                    1
+     $reduce_or                      2
+     $sdffe                          2
+     $sub                            1
+
+=== or1200_genpc ===
+
+   Number of wires:                 69
+   Number of wire bits:            649
+   Number of public wires:          26
+   Number of public wire bits:     310
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 47
+     $add                            2
+     $and                            5
+     $dffe                           1
+     $eq                            14
+     $logic_not                      7
+     $mux                            9
+     $or                             3
+     $pmux                           2
+     $reduce_bool                    1
+     $reduce_or                      2
+     $sub                            1
+
+=== or1200_if ===
+
+   Number of wires:                 46
+   Number of wire bits:            421
+   Number of public wires:          21
+   Number of public wire bits:     210
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 35
+     $and                           11
+     $eq                             3
+     $logic_not                      4
+     $mux                           10
+     $ne                             1
+     $or                             2
+     $reduce_or                      1
+     $sdffe                          3
+
+=== or1200_lsu ===
+
+   Number of wires:                 70
+   Number of wire bits:            299
+   Number of public wires:          23
+   Number of public wire bits:     252
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 58
+     $add                            1
+     $and                            6
+     $eq                            30
+     $mux                            2
+     $or                             7
+     $pmux                           1
+     $reduce_or                      9
+     or1200_mem2reg                  1
+     or1200_reg2mem                  1
+
+=== or1200_mem2reg ===
+
+   Number of wires:                 57
+   Number of wire bits:            178
+   Number of public wires:          13
+   Number of public wire bits:     127
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 52
+     $and                            5
+     $dlatch                         1
+     $eq                            24
+     $logic_not                      4
+     $not                            6
+     $pmux                           8
+     $reduce_or                      4
+
+=== or1200_mult_mac ===
+
+   Number of wires:                 94
+   Number of wire bits:           1494
+   Number of public wires:          31
+   Number of public wire bits:     511
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 82
+     $add                            4
+     $and                            7
+     $eq                             5
+     $logic_and                      1
+     $logic_not                      2
+     $mul                            1
+     $mux                           22
+     $ne                             1
+     $not                            5
+     $or                             7
+     $pmux                           1
+     $reduce_and                     3
+     $reduce_bool                    5
+     $reduce_or                      5
+     $sdff                           4
+     $sdffe                          5
+     $sub                            3
+     $xor                            1
+
+=== or1200_operandmuxes ===
+
+   Number of wires:                 49
+   Number of wire bits:            454
+   Number of public wires:          17
+   Number of public wire bits:     298
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 38
+     $eq                             5
+     $logic_and                      6
+     $logic_not                      4
+     $mux                            9
+     $ne                             2
+     $pmux                           2
+     $reduce_and                     2
+     $reduce_bool                    4
+     $sdffe                          4
+
+=== or1200_reg2mem ===
+
+   Number of wires:                 12
+   Number of wire bits:            106
+   Number of public wires:           8
+   Number of public wire bits:     102
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq                             4
+     $mux                            2
+     $pmux                           1
+
+=== or1200_rf ===
+
+   Number of wires:                 55
+   Number of wire bits:            607
+   Number of public wires:          35
+   Number of public wire bits:     491
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $and                            8
+     $eq                             1
+     $logic_not                      3
+     $mux                            8
+     $ne                             2
+     $not                            2
+     $or                             2
+     $reduce_or                      1
+     $sdffe                          3
+     dual_port_ram                   2
+
+=== or1200_sprs ===
+
+   Number of wires:                142
+   Number of wire bits:           1496
+   Number of public wires:          59
+   Number of public wire bits:     871
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                114
+     $and                           17
+     $eq                            41
+     $logic_and                     13
+     $logic_not                      2
+     $mux                           19
+     $not                            1
+     $or                            15
+     $pmux                           2
+     $reduce_and                     1
+     $reduce_or                      1
+     $sdffe                          2
+
+=== or1200_wbmux ===
+
+   Number of wires:                 16
+   Number of wire bits:            235
+   Number of public wires:          11
+   Number of public wire bits:     199
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add                            1
+     $eq                             3
+     $logic_not                      1
+     $pmux                           1
+     $sdffe                          2
+
+=== design hierarchy ===
+
+   or1200_flat                       1
+     or1200_alu                      1
+     or1200_cfgr                     1
+     or1200_ctrl                     1
+     or1200_except                   1
+     or1200_freeze                   1
+     or1200_genpc                    1
+     or1200_if                       1
+     or1200_lsu                      1
+       or1200_mem2reg                1
+       or1200_reg2mem                1
+     or1200_mult_mac                 1
+     or1200_operandmuxes             1
+     or1200_rf                       1
+     or1200_sprs                     1
+     or1200_wbmux                    1
+
+   Number of wires:               1245
+   Number of wire bits:          11238
+   Number of public wires:         549
+   Number of public wire bits:    6352
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                910
+     $add                           11
+     $and                          114
+     $dffe                           1
+     $dlatch                         2
+     $eq                           224
+     $logic_and                     27
+     $logic_not                     45
+     $lt                             1
+     $mul                            1
+     $mux                          175
+     $ne                            15
+     $not                           38
+     $or                            62
+     $pmux                          34
+     $reduce_and                    12
+     $reduce_bool                   18
+     $reduce_or                     59
+     $sdff                           7
+     $sdffe                         51
+     $sub                            6
+     $xor                            5
+     dual_port_ram                   2
+
+Warnings: 3 unique messages, 3 total
+End of script. Logfile hash: b057011e11, CPU: user 0.80s system 0.01s, MEM: 24.17 MB peak
+Yosys 0.10+12 (git sha1 4d87019, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+Time spent: 26% 5x opt_expr (0 sec), 16% 2x read_verilog (0 sec), ...
