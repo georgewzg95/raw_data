@@ -14,6 +14,84 @@
 //3. 2D mac array. Centralized weight buffer for processing elements. 
 //4. Double-buffering after each layer. 
 ///////////////////////////////////////////////////////////////////////////////
+`define SIMULATION_MEMORY
+`ifdef SIMULATION_MEMORY
+module single_port_ram(
+clk,
+addr,
+data,
+we,
+out
+);
+
+parameter DATA_WIDTH = 256;
+parameter ADDR_WIDTH = 10;
+input clk;
+input [ADDR_WIDTH-1:0] addr;
+input [DATA_WIDTH-1:0] data;
+input we;
+output reg [DATA_WIDTH-1:0] out;
+
+reg [DATA_WIDTH-1:0] ram[ADDR_WIDTH-1:0];
+
+always @(posedge clk) begin
+  if (we) begin
+    ram[addr] <= data;
+  end
+  else begin
+    out <= ram[addr];
+  end
+end
+
+endmodule
+
+module dual_port_ram(
+clk,
+addr1,
+addr2,
+data1,
+data2,
+we1,
+we2,
+out1,
+out2
+);
+
+parameter DATA_WIDTH = 256;
+parameter ADDR_WIDTH = 10;
+input clk;
+input [ADDR_WIDTH-1:0] addr1;
+input [ADDR_WIDTH-1:0] addr2;
+input [DATA_WIDTH-1:0] data1;
+input [DATA_WIDTH-1:0] data2;
+input we1;
+input we2;
+output reg [DATA_WIDTH-1:0] out1;
+output reg [DATA_WIDTH-1:0] out2;
+
+reg [DATA_WIDTH-1:0] ram[ADDR_WIDTH-1:0];
+
+always @(posedge clk) begin
+  if (we1) begin
+    ram[addr1] <= data1;
+  end
+  else begin
+    out1 <= ram[addr1];
+  end
+end
+
+always @(posedge clk) begin
+  if (we2) begin
+    ram [addr2] <= data2;
+  end
+  else begin
+    out2 <= ram[addr2];
+  end
+end
+
+endmodule
+
+`endif
 
 
 module DLA (
@@ -11011,7 +11089,10 @@ always @(posedge clk) begin
 	raddr_reg <= raddr;
 	pipeline_reg_0 <= rdata_reg;
 end
-
+`ifdef SIMULATION_MEMORY
+defparam u_dual_port_ram.DATA_WIDTH = 16;
+defparam u_dual_port_ram.ADDR_WIDTH = 15;
+`endif
 dual_port_ram u_dual_port_ram(
 	.addr1(waddr),
 	.we1(wen),
@@ -11205,6 +11286,10 @@ always @(posedge clk) begin
 	pipeline_reg_0 <= rdata_reg;
 end
 
+`ifdef SIMULATION_MEMORY
+defparam u_dual_port_ram.DATA_WIDTH = 16;
+defparam u_dual_port_ram.ADDR_WIDTH = 15;
+`endif
 dual_port_ram u_dual_port_ram(
 	.addr1(waddr),
 	.we1(wen),
@@ -11763,6 +11848,10 @@ always @(posedge clk) begin
 	pipeline1_reg_0 <= data1_reg;
 end
 
+`ifdef SIMULATION_MEMORY
+defparam u_dual_port_ram.DATA_WIDTH = 8;
+defparam u_dual_port_ram.ADDR_WIDTH = 11;
+`endif
 dual_port_ram u_dual_port_ram(
 	.addr1(addr0_reg),
 	.we1(wen0),
@@ -11805,6 +11894,10 @@ always @(posedge clk) begin
 	pipeline1_reg_0 <= data1_reg;
 end
 
+`ifdef SIMULATION_MEMORY
+defparam u_dual_port_ram.DATA_WIDTH = 8;
+defparam u_dual_port_ram.ADDR_WIDTH = 11;
+`endif
 dual_port_ram u_dual_port_ram(
 	.addr1(addr0_reg),
 	.we1(wen0),
@@ -11847,6 +11940,10 @@ always @(posedge clk) begin
 	pipeline1_reg_0 <= data1_reg;
 end
 
+`ifdef SIMULATION_MEMORY
+defparam u_dual_port_ram.DATA_WIDTH = 8;
+defparam u_dual_port_ram.ADDR_WIDTH = 11;
+`endif
 dual_port_ram u_dual_port_ram(
 	.addr1(addr0_reg),
 	.we1(wen0),
@@ -11889,6 +11986,10 @@ always @(posedge clk) begin
 	pipeline1_reg_0 <= data1_reg;
 end
 
+`ifdef SIMULATION_MEMORY
+defparam u_dual_port_ram.DATA_WIDTH = 8;
+defparam u_dual_port_ram.ADDR_WIDTH = 11;
+`endif
 dual_port_ram u_dual_port_ram(
 	.addr1(addr0_reg),
 	.we1(wen0),
@@ -11931,6 +12032,10 @@ always @(posedge clk) begin
 	pipeline1_reg_0 <= data1_reg;
 end
 
+`ifdef SIMULATION_MEMORY
+defparam u_dual_port_ram.DATA_WIDTH = 8;
+defparam u_dual_port_ram.ADDR_WIDTH = 11;
+`endif
 dual_port_ram u_dual_port_ram(
 	.addr1(addr0_reg),
 	.we1(wen0),
@@ -12015,6 +12120,10 @@ always @(posedge clk) begin
 	pipeline1_reg_0 <= data1_reg;
 end
 
+`ifdef SIMULATION_MEMORY
+defparam u_dual_port_ram.DATA_WIDTH = 8;
+defparam u_dual_port_ram.ADDR_WIDTH = 11;
+`endif
 dual_port_ram u_dual_port_ram(
 	.addr1(addr0_reg),
 	.we1(wen0),
@@ -12210,6 +12319,10 @@ always @(posedge clk) begin
 	pipeline_reg_0 <= rdata_reg;
 end
 
+`ifdef SIMULATION_MEMORY
+defparam u_dual_port_ram.DATA_WIDTH = 16;
+defparam u_dual_port_ram.ADDR_WIDTH = 15;
+`endif
 dual_port_ram u_dual_port_ram(
 	.addr1(waddr),
 	.we1(wen),
@@ -12403,6 +12516,10 @@ always @(posedge clk) begin
 	pipeline_reg_0 <= rdata_reg;
 end
 
+`ifdef SIMULATION_MEMORY
+defparam u_dual_port_ram.DATA_WIDTH = 16;
+defparam u_dual_port_ram.ADDR_WIDTH = 15;
+`endif
 dual_port_ram u_dual_port_ram(
 	.addr1(waddr),
 	.we1(wen),
@@ -12596,6 +12713,10 @@ always @(posedge clk) begin
 	pipeline_reg_0 <= rdata_reg;
 end
 
+`ifdef SIMULATION_MEMORY
+defparam u_dual_port_ram.DATA_WIDTH = 16;
+defparam u_dual_port_ram.ADDR_WIDTH = 15;
+`endif
 dual_port_ram u_dual_port_ram(
 	.addr1(waddr),
 	.we1(wen),
@@ -12789,6 +12910,10 @@ always @(posedge clk) begin
 	pipeline_reg_0 <= rdata_reg;
 end
 
+`ifdef SIMULATION_MEMORY
+defparam u_dual_port_ram.DATA_WIDTH = 16;
+defparam u_dual_port_ram.ADDR_WIDTH = 15;
+`endif
 dual_port_ram u_dual_port_ram(
 	.addr1(waddr),
 	.we1(wen),
@@ -12982,6 +13107,10 @@ always @(posedge clk) begin
 	pipeline_reg_0 <= rdata_reg;
 end
 
+`ifdef SIMULATION_MEMORY
+defparam u_dual_port_ram.DATA_WIDTH = 16;
+defparam u_dual_port_ram.ADDR_WIDTH = 15;
+`endif
 dual_port_ram u_dual_port_ram(
 	.addr1(waddr),
 	.we1(wen),
@@ -13175,6 +13304,10 @@ always @(posedge clk) begin
 	pipeline_reg_0 <= rdata_reg;
 end
 
+`ifdef SIMULATION_MEMORY
+defparam u_dual_port_ram.DATA_WIDTH = 16;
+defparam u_dual_port_ram.ADDR_WIDTH = 15;
+`endif
 dual_port_ram u_dual_port_ram(
 	.addr1(waddr),
 	.we1(wen),
@@ -13368,6 +13501,10 @@ always @(posedge clk) begin
 	pipeline_reg_0 <= rdata_reg;
 end
 
+`ifdef SIMULATION_MEMORY
+defparam u_dual_port_ram.DATA_WIDTH = 16;
+defparam u_dual_port_ram.ADDR_WIDTH = 15;
+`endif
 dual_port_ram u_dual_port_ram(
 	.addr1(waddr),
 	.we1(wen),
@@ -13561,6 +13698,10 @@ always @(posedge clk) begin
 	pipeline_reg_0 <= rdata_reg;
 end
 
+`ifdef SIMULATION_MEMORY
+defparam u_dual_port_ram.DATA_WIDTH = 16;
+defparam u_dual_port_ram.ADDR_WIDTH = 15;
+`endif
 dual_port_ram u_dual_port_ram(
 	.addr1(waddr),
 	.we1(wen),
@@ -14282,6 +14423,10 @@ always @(posedge clk) begin
 	pipeline_reg_0 <= rdata_reg;
 end
 
+`ifdef SIMULATION_MEMORY
+defparam u_dual_port_ram.DATA_WIDTH = 16;
+defparam u_dual_port_ram.ADDR_WIDTH = 15;
+`endif
 dual_port_ram u_dual_port_ram(
 	.addr1(waddr),
 	.we1(wen),
@@ -14475,6 +14620,10 @@ always @(posedge clk) begin
 	pipeline_reg_0 <= rdata_reg;
 end
 
+`ifdef SIMULATION_MEMORY
+defparam u_dual_port_ram.DATA_WIDTH = 16;
+defparam u_dual_port_ram.ADDR_WIDTH = 15;
+`endif
 dual_port_ram u_dual_port_ram(
 	.addr1(waddr),
 	.we1(wen),

@@ -21,7 +21,7 @@
 // Author: Aatman Borda
 //////////////////////////////////////////////////////////////////////////////
 
-//`define SIMULATION
+`define SIMULATION
 `define COL_ID_BITS 8
 `define ROW_ID_BITS 8
 `define MAT_VAL_BITS 8

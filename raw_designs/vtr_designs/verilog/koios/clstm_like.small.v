@@ -13,6 +13,86 @@
 //5. Element-wise addition, multiplication and activation blocks. 
 ///////////////////////////////////////////////////////////////////////////////
 
+`define SIMULATION_MEMORY
+`ifdef SIMULATION_MEMORY
+module single_port_ram(
+clk,
+addr,
+data,
+we,
+out
+);
+
+parameter DATA_WIDTH = 288;
+parameter ADDR_WIDTH = 6;
+input clk;
+input [ADDR_WIDTH-1:0] addr;
+input [DATA_WIDTH-1:0] data;
+input we;
+output reg [DATA_WIDTH-1:0] out;
+
+reg [DATA_WIDTH-1:0] ram[ADDR_WIDTH-1:0];
+
+always @(posedge clk) begin
+  if (we) begin
+    ram[addr] <= data;
+  end
+  else begin
+    out <= ram[addr];
+  end
+end
+
+endmodule
+
+module dual_port_ram(
+clk,
+addr1,
+addr2,
+data1,
+data2,
+we1,
+we2,
+out1,
+out2
+);
+
+parameter DATA_WIDTH = 288;
+parameter ADDR_WIDTH = 6;
+input clk;
+input [ADDR_WIDTH-1:0] addr1;
+input [ADDR_WIDTH-1:0] addr2;
+input [DATA_WIDTH-1:0] data1;
+input [DATA_WIDTH-1:0] data2;
+input we1;
+input we2;
+output reg [DATA_WIDTH-1:0] out1;
+output reg [DATA_WIDTH-1:0] out2;
+
+reg [DATA_WIDTH-1:0] ram[ADDR_WIDTH-1:0];
+
+always @(posedge clk) begin
+  if (we1) begin
+    ram[addr1] <= data1;
+  end
+  else begin
+    out1 <= ram[addr1];
+  end
+end
+
+always @(posedge clk) begin
+  if (we2) begin
+    ram [addr2] <= data2;
+  end
+  else begin
+    out2 <= ram[addr2];
+  end
+end
+
+endmodule
+
+`endif
+
+
 module C_LSTM_datapath (
 	input clk,
 	input reset,
@@ -2164,6 +2244,10 @@ end
 
 wire rom_we;
 assign rom_we = 1'b0;
+`ifdef SIMULATION_MEMORY
+defparam ram_inst_0.DATA_WIDTH = 162;
+defparam ram_inst_0.ADDR_WIDTH = 12;
+`endif
 
 single_port_ram ram_inst_0 (
 	.we(rom_we),
@@ -2212,6 +2296,10 @@ end
 wire rom_we;
 assign rom_we = 1'b0;
 
+`ifdef SIMULATION_MEMORY
+defparam ram_inst_0.DATA_WIDTH = 162;
+defparam ram_inst_0.ADDR_WIDTH = 12;
+`endif
 single_port_ram ram_inst_0 (
 	.we(rom_we),
 	.addr(addrs_0),
@@ -2259,6 +2347,10 @@ end
 wire rom_we;
 assign rom_we = 1'b0;
 
+`ifdef SIMULATION_MEMORY
+defparam ram_inst_0.DATA_WIDTH = 162;
+defparam ram_inst_0.ADDR_WIDTH = 12;
+`endif
 single_port_ram ram_inst_0 (
 	.we(rom_we),
 	.addr(addrs_0),
@@ -2306,6 +2398,10 @@ end
 wire rom_we;
 assign rom_we = 1'b0;
 
+`ifdef SIMULATION_MEMORY
+defparam ram_inst_0.DATA_WIDTH = 162;
+defparam ram_inst_0.ADDR_WIDTH = 12;
+`endif
 single_port_ram ram_inst_0 (
 	.we(rom_we),
 	.addr(addrs_0),
@@ -2374,6 +2470,10 @@ end
 wire rom_we;
 assign rom_we = 1'b0;
 
+`ifdef SIMULATION_MEMORY
+defparam ram_inst_0.DATA_WIDTH = 162;
+defparam ram_inst_0.ADDR_WIDTH = 12;
+`endif
 single_port_ram ram_inst_0 (
 	.we(rom_we),
 	.addr(addrs_0),
@@ -2421,6 +2521,10 @@ end
 wire rom_we;
 assign rom_we = 1'b0;
 
+`ifdef SIMULATION_MEMORY
+defparam ram_inst_0.DATA_WIDTH = 162;
+defparam ram_inst_0.ADDR_WIDTH = 12;
+`endif
 single_port_ram ram_inst_0 (
 	.we(rom_we),
 	.addr(addrs_0),
@@ -2489,6 +2593,10 @@ end
 wire rom_we;
 assign rom_we = 1'b0;
 
+`ifdef SIMULATION_MEMORY
+defparam ram_inst_0.DATA_WIDTH = 162;
+defparam ram_inst_0.ADDR_WIDTH = 12;
+`endif
 single_port_ram ram_inst_0 (
 	.we(rom_we),
 	.addr(addrs_0),
@@ -2536,6 +2644,10 @@ end
 wire rom_we;
 assign rom_we = 1'b0;
 
+`ifdef SIMULATION_MEMORY
+defparam ram_inst_0.DATA_WIDTH = 162;
+defparam ram_inst_0.ADDR_WIDTH = 12;
+`endif
 single_port_ram ram_inst_0 (
 	.we(rom_we),
 	.addr(addrs_0),
@@ -9520,6 +9632,10 @@ end
 wire rom_we;
 assign rom_we = 1'b0;
 
+`ifdef SIMULATION_MEMORY
+defparam ram_inst_0.DATA_WIDTH = 162;
+defparam ram_inst_0.ADDR_WIDTH = 12;
+`endif
 single_port_ram ram_inst_0 (
 	.we(rom_we),
 	.addr(addrs_0),
@@ -9567,6 +9683,10 @@ end
 wire rom_we;
 assign rom_we = 1'b0;
 
+`ifdef SIMULATION_MEMORY
+defparam ram_inst_0.DATA_WIDTH = 162;
+defparam ram_inst_0.ADDR_WIDTH = 12;
+`endif
 single_port_ram ram_inst_0 (
 	.we(rom_we),
 	.addr(addrs_0),

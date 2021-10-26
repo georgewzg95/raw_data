@@ -11,6 +11,7 @@
 
 `timescale 1ns/1ns
 //`define ARCH_SPECIFIC_IMP 1
+`define VCS
 `define DWIDTH 16
 `define AWIDTH 10
 `define MEM_SIZE 1024

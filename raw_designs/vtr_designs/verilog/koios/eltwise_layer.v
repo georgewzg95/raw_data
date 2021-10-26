@@ -62,6 +62,7 @@
 // IEEE Half Precision => EXPONENT = 5, MANTISSA = 10
 // BFLOAT16 => EXPONENT = 8, MANTISSA = 7 
 
+`define VCS
 `ifdef BFLOAT16
 `define EXPONENT 8
 `define MANTISSA 7

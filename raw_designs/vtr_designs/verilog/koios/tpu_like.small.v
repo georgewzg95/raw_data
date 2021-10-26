@@ -67,6 +67,7 @@
 //////////////////////////////////////
 // Parameters
 //////////////////////////////////////
+`define SIMULATION
 
 //The width of the data. This design uses int8 precision. So, DWIDTH is 8
 //To change to a floating point 16 version, change this to 16 and also

@@ -2,7 +2,7 @@
 // Author: Aishwarya Rajen
 //////////////////////////////////////////////////////////////////////////////
 
-//`define SIMULATION_MEMORY
+`define SIMULATION_MEMORY
 `define ARRAY_DEPTH 64      //Number of Hidden neurons
 `define INPUT_DEPTH 100	    //LSTM input vector dimensions
 `define DATA_WIDTH 16		//16 bit representation

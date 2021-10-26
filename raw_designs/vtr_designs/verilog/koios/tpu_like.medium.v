@@ -288,7 +288,7 @@
 //That's because it's not required to be a variable in this design.
 //And ODIN doesn't seem to propagate constants properly.
 `define final_mat_mul_size 32
-
+`define SIMULATION
 /////////////////////////////////////
 // Matrix multiplication unit
 ////////////////////////////////////
