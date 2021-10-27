@@ -1,6 +1,21 @@
 
 5. Printing statistics.
 
+=== $paramod$9b20c7c7990eeca2a248be4fd72c1393416d670c\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            343
+   Number of public wires:           9
+   Number of public wire bits:     141
+   Number of memories:               1
+   Number of memory bits:          160
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
 === or1200_alu ===
 
    Number of wires:                109
@@ -290,9 +305,9 @@
      $ne                             2
      $not                            2
      $or                             2
+     $paramod$9b20c7c7990eeca2a248be4fd72c1393416d670c\dual_port_ram      2
      $reduce_or                      1
      $sdffe                          3
-     dual_port_ram                   2
 
 === or1200_sprs ===
 
@@ -348,27 +363,30 @@
      or1200_mult_mac                 1
      or1200_operandmuxes             1
      or1200_rf                       1
+       $paramod$9b20c7c7990eeca2a248be4fd72c1393416d670c\dual_port_ram      2
      or1200_sprs                     1
      or1200_wbmux                    1
 
-   Number of wires:               1245
-   Number of wire bits:          11238
-   Number of public wires:         549
-   Number of public wire bits:    6352
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of wires:               1279
+   Number of wire bits:          11924
+   Number of public wires:         567
+   Number of public wire bits:    6634
+   Number of memories:               2
+   Number of memory bits:          320
    Number of processes:              0
-   Number of cells:                910
+   Number of cells:                932
      $add                           11
      $and                          114
-     $dffe                           1
+     $dffe                           5
      $dlatch                         2
      $eq                           224
      $logic_and                     27
      $logic_not                     45
      $lt                             1
+     $memrd                          4
+     $memwr_v2                       4
      $mul                            1
-     $mux                          175
+     $mux                          187
      $ne                            15
      $not                           38
      $or                            62
@@ -380,5 +398,4 @@
      $sdffe                         51
      $sub                            6
      $xor                            5
-     dual_port_ram                   2
 

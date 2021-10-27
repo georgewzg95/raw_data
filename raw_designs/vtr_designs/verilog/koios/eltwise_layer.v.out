@@ -378,16 +378,19 @@
 
 === ram ===
 
-   Number of wires:                 11
-   Number of wire bits:            287
-   Number of public wires:          11
-   Number of public wire bits:     287
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of wires:                 42
+   Number of wire bits:           1149
+   Number of public wires:          10
+   Number of public wire bits:     317
+   Number of memories:               1
+   Number of memory bits:        16384
    Number of processes:              0
-   Number of cells:                  3
-     $reduce_or                      2
-     dual_port_ram                   1
+   Number of cells:                 48
+     $add                            6
+     $dff                            2
+     $memrd                          8
+     $memwr_v2                       8
+     $mux                           24
 
 === seq_add ===
 
@@ -468,16 +471,17 @@
                FPAddSub_RoundModule      1
      ram                            18
 
-   Number of wires:              15621
-   Number of wire bits:         135912
-   Number of public wires:       10740
-   Number of public wire bits:  110759
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of wires:              16179
+   Number of wire bits:         151428
+   Number of public wires:       10722
+   Number of public wire bits:  111299
+   Number of memories:              18
+   Number of memory bits:       294912
    Number of processes:              0
-   Number of cells:               9261
-     $add                          486
+   Number of cells:              10071
+     $add                          594
      $and                         1080
+     $dff                           36
      $dffe                          22
      $dlatch                       198
      $eq                           539
@@ -488,18 +492,19 @@
      $logic_not                    412
      $logic_or                      48
      $lt                            48
+     $memrd                        144
+     $memwr_v2                     144
      $mul                           24
-     $mux                         1562
+     $mux                         1994
      $ne                             3
      $not                          555
      $or                           737
      $pmux                        1494
      $reduce_and                   204
      $reduce_bool                   16
-     $reduce_or                    763
+     $reduce_or                    727
      $sdff                         558
      $sdffe                         34
      $sub                          168
      $xor                          216
-     dual_port_ram                  18
 

@@ -45023,9 +45023,9 @@ input clk;
 
  reg [DWIDTH-1:0] ram[MEM_SIZE-1:0];
 
-initial begin
-    $readmemh("./td_fused_top_tdf10_l2_writeOutputs_165_running_sums_3_ram.dat", ram);
-end
+//initial begin
+//    $readmemh("./td_fused_top_tdf10_l2_writeOutputs_165_running_sums_3_ram.dat", ram);
+//end
 
 
 
@@ -51868,9 +51868,9 @@ input clk;
 
  reg [DWIDTH-1:0] ram[MEM_SIZE-1:0];
 
-initial begin
-    $readmemh("./td_fused_top_tdf11_l2_writeOutputs_171_running_sums_2_ram.dat", ram);
-end
+//initial begin
+//    $readmemh("./td_fused_top_tdf11_l2_writeOutputs_171_running_sums_2_ram.dat", ram);
+//end
 
 
 
@@ -76881,9 +76881,9 @@ input clk;
 
  reg [DWIDTH-1:0] ram[MEM_SIZE-1:0];
 
-initial begin
-    $readmemh("./td_fused_top_tdf4_l2_writeOutputs_133_running_sums_1_ram.dat", ram);
-end
+//initial begin
+//    $readmemh("./td_fused_top_tdf4_l2_writeOutputs_133_running_sums_1_ram.dat", ram);
+//end
 
 
 
@@ -92497,9 +92497,9 @@ input clk;
 
  reg [DWIDTH-1:0] ram[MEM_SIZE-1:0];
 
-initial begin
-    $readmemh("./td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.dat", ram);
-end
+//initial begin
+//    $readmemh("./td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.dat", ram);
+//end
 
 
 

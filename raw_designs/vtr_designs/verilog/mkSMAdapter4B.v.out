@@ -1,6 +1,51 @@
 
 5. Printing statistics.
 
+=== $paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            627
+   Number of public wires:           9
+   Number of public wire bits:     255
+   Number of memories:               1
+   Number of memory bits:          360
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== $paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            625
+   Number of public wires:           9
+   Number of public wire bits:     253
+   Number of memories:               1
+   Number of memory bits:          183
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== $paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            331
+   Number of public wires:           9
+   Number of public wire bits:     135
+   Number of memories:               1
+   Number of memory bits:           64
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
 === ResetToBool ===
 
    Number of wires:                  2
@@ -69,10 +114,10 @@
      $ne                             3
      $not                            1
      $or                             3
+     $paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram      1
      $reduce_bool                    7
      $reduce_or                      1
      $sdffe                          9
-     dual_port_ram                   1
 
 === generic_fifo_sc_b ===
 
@@ -95,10 +140,10 @@
      $ne                             3
      $not                            1
      $or                             3
+     $paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram      1
      $reduce_bool                    7
      $reduce_or                      1
      $sdffe                          9
-     dual_port_ram                   1
 
 === generic_fifo_sc_c ===
 
@@ -121,10 +166,10 @@
      $ne                             3
      $not                            1
      $or                             3
+     $paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram      1
      $reduce_bool                    7
      $reduce_or                      1
      $sdffe                          9
-     dual_port_ram                   1
 
 === mkSMAdapter4B ===
 
@@ -169,23 +214,26 @@
      ResetToBool                     4
      SizedFIFO_a                     1
        generic_fifo_sc_a             1
+         $paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram      1
      SizedFIFO_b                     1
        generic_fifo_sc_b             1
+         $paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram      1
      SizedFIFO_c                     1
        generic_fifo_sc_c             1
+         $paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram      1
 
-   Number of wires:               1304
-   Number of wire bits:           6832
-   Number of public wires:         807
-   Number of public wire bits:    6234
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of wires:               1355
+   Number of wire bits:           8415
+   Number of public wires:         834
+   Number of public wire bits:    6877
+   Number of memories:               3
+   Number of memory bits:          607
    Number of processes:              0
-   Number of cells:                866
+   Number of cells:                899
      $add                           33
      $and                           77
      $dff                            2
-     $dffe                           1
+     $dffe                           7
      $eq                            61
      $ge                             6
      $gt                             3
@@ -194,7 +242,9 @@
      $logic_not                     66
      $logic_or                     110
      $lt                             6
-     $mux                          105
+     $memrd                          6
+     $memwr_v2                       6
+     $mux                          123
      $ne                            27
      $not                            4
      $or                             9
@@ -207,5 +257,4 @@
      $sdffe                         77
      $sub                           10
      $xor                            1
-     dual_port_ram                   3
 

@@ -1,6 +1,21 @@
 
 5. Printing statistics.
 
+=== $paramod$bd8b0969ac295d564193c3d912540151d67604d4\single_port_ram ===
+
+   Number of wires:                  9
+   Number of wire bits:             52
+   Number of public wires:           5
+   Number of public wire bits:      23
+   Number of memories:               1
+   Number of memory bits:           40
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
+
 === memory_controller ===
 
    Number of wires:                 13
@@ -14,8 +29,8 @@
      $and                            1
      $dff                            1
      $dlatch                         4
+     $paramod$bd8b0969ac295d564193c3d912540151d67604d4\single_port_ram      1
      $reduce_or                      2
-     single_port_ram                 1
 
 === memset ===
 
@@ -46,22 +61,25 @@
 
    memset                            1
      memory_controller               1
+       $paramod$bd8b0969ac295d564193c3d912540151d67604d4\single_port_ram      1
 
-   Number of wires:                 73
-   Number of wire bits:            695
-   Number of public wires:          33
-   Number of public wire bits:     550
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of wires:                 82
+   Number of wire bits:            747
+   Number of public wires:          38
+   Number of public wire bits:     573
+   Number of memories:               1
+   Number of memory bits:           40
    Number of processes:              0
-   Number of cells:                 59
+   Number of cells:                 64
      $and                            2
      $dff                            1
-     $dffe                           9
+     $dffe                          10
      $dlatch                         6
      $eq                            15
      $logic_not                      1
-     $mux                            4
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            7
      $ne                             1
      $not                            1
      $pmux                           3
@@ -69,5 +87,4 @@
      $reduce_bool                    3
      $reduce_or                      3
      $sdffe                          1
-     single_port_ram                 1
 

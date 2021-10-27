@@ -1,6 +1,51 @@
 
 5. Printing statistics.
 
+=== $paramod$9936372f316bf60d356d28d2b2dbe4757dd7b6b8\single_port_ram ===
+
+   Number of wires:                  9
+   Number of wire bits:            834
+   Number of public wires:           5
+   Number of public wire bits:     337
+   Number of memories:               1
+   Number of memory bits:         1782
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
+
+=== $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram ===
+
+   Number of wires:                  9
+   Number of wire bits:           1454
+   Number of public wires:           5
+   Number of public wire bits:     584
+   Number of memories:               1
+   Number of memory bits:         1728
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
+
+=== $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram ===
+
+   Number of wires:                  9
+   Number of wire bits:            836
+   Number of public wires:           5
+   Number of public wire bits:     338
+   Number of memories:               1
+   Number of memory bits:         1944
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
+
 === C_LSTM_datapath ===
 
    Number of wires:               1647
@@ -351,6 +396,21 @@
      $dff                            2
      $mul                            2
      $sdffe                          3
+
+=== dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:           2907
+   Number of public wires:           9
+   Number of public wire bits:    1167
+   Number of memories:               1
+   Number of memory bits:         1728
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
 
 === elementwise_add_core_18_18_48 ===
 
@@ -1053,7 +1113,7 @@
    Number of cells:                  8
      $add                            2
      $dff                            3
-     single_port_ram                 3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
 
 === weight_buffer_18_16_3_64_Wic_0 ===
 
@@ -1067,7 +1127,7 @@
    Number of cells:                  8
      $add                            2
      $dff                            3
-     single_port_ram                 3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
 
 === weight_buffer_18_16_3_64_Woc_0 ===
 
@@ -1081,7 +1141,7 @@
    Number of cells:                  8
      $add                            2
      $dff                            3
-     single_port_ram                 3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
 
 === weight_buffer_18_16_3_64_bc_0 ===
 
@@ -1095,7 +1155,7 @@
    Number of cells:                  8
      $add                            2
      $dff                            3
-     single_port_ram                 3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
 
 === weight_buffer_18_16_3_64_bf_0 ===
 
@@ -1109,7 +1169,7 @@
    Number of cells:                  8
      $add                            2
      $dff                            3
-     single_port_ram                 3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
 
 === weight_buffer_18_16_3_64_bi_0 ===
 
@@ -1123,7 +1183,7 @@
    Number of cells:                  8
      $add                            2
      $dff                            3
-     single_port_ram                 3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
 
 === weight_buffer_18_16_3_64_bo_0 ===
 
@@ -1137,7 +1197,7 @@
    Number of cells:                  8
      $add                            2
      $dff                            3
-     single_port_ram                 3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
 
 === weight_buffer_18_9_3_64_2048_Wym_imag_half_0 ===
 
@@ -1151,7 +1211,7 @@
    Number of cells:                  8
      $add                            2
      $dff                            3
-     single_port_ram                 3
+     $paramod$9936372f316bf60d356d28d2b2dbe4757dd7b6b8\single_port_ram      3
 
 === weight_buffer_18_9_3_64_2048_Wym_real_half_0 ===
 
@@ -1165,7 +1225,7 @@
    Number of cells:                  8
      $add                            2
      $dff                            3
-     single_port_ram                 3
+     $paramod$9936372f316bf60d356d28d2b2dbe4757dd7b6b8\single_port_ram      3
 
 === weight_buffer_18_9_42_3_2688Wcxr_imag_half_0 ===
 
@@ -1179,7 +1239,7 @@
    Number of cells:                  8
      $add                            2
      $dff                            3
-     single_port_ram                 3
+     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
 
 === weight_buffer_18_9_42_3_2688Wcxr_real_half_0 ===
 
@@ -1193,7 +1253,7 @@
    Number of cells:                  8
      $add                            2
      $dff                            3
-     single_port_ram                 3
+     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
 
 === weight_buffer_18_9_42_3_2688Wfxr_imag_half_0 ===
 
@@ -1207,7 +1267,7 @@
    Number of cells:                  8
      $add                            2
      $dff                            3
-     single_port_ram                 3
+     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
 
 === weight_buffer_18_9_42_3_2688Wfxr_real_half_0 ===
 
@@ -1221,7 +1281,7 @@
    Number of cells:                  8
      $add                            2
      $dff                            3
-     single_port_ram                 3
+     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
 
 === weight_buffer_18_9_42_3_2688Wixr_imag_half_0 ===
 
@@ -1235,7 +1295,7 @@
    Number of cells:                  8
      $add                            2
      $dff                            3
-     single_port_ram                 3
+     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
 
 === weight_buffer_18_9_42_3_2688Wixr_real_half_0 ===
 
@@ -1249,7 +1309,7 @@
    Number of cells:                  8
      $add                            2
      $dff                            3
-     single_port_ram                 3
+     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
 
 === weight_buffer_18_9_42_3_2688Woxr_imag_half_0 ===
 
@@ -1263,7 +1323,7 @@
    Number of cells:                  8
      $add                            2
      $dff                            3
-     single_port_ram                 3
+     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
 
 === weight_buffer_18_9_42_3_2688Woxr_real_half_0 ===
 
@@ -1277,7 +1337,7 @@
    Number of cells:                  8
      $add                            2
      $dff                            3
-     single_port_ram                 3
+     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
 
 === design hierarchy ===
 
@@ -1395,7 +1455,9 @@
          counter_31_3                1
          counter_63_1                1
          weight_buffer_18_9_3_64_2048_Wym_imag_half_0      1
+           $paramod$9936372f316bf60d356d28d2b2dbe4757dd7b6b8\single_port_ram      3
          weight_buffer_18_9_3_64_2048_Wym_real_half_0      1
+           $paramod$9936372f316bf60d356d28d2b2dbe4757dd7b6b8\single_port_ram      3
      pipelined_input_18_3_16         3
      shift_register_group_18_16_3      1
        shift_register_unit_18_3     16
@@ -1406,57 +1468,77 @@
        counter_41_1                  1
        counter_63_3                  1
        weight_buffer_18_9_42_3_2688Wcxr_imag_half_0      1
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
        weight_buffer_18_9_42_3_2688Wcxr_real_half_0      1
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
        weight_buffer_18_9_42_3_2688Wfxr_imag_half_0      1
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
        weight_buffer_18_9_42_3_2688Wfxr_real_half_0      1
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
        weight_buffer_18_9_42_3_2688Wixr_imag_half_0      1
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
        weight_buffer_18_9_42_3_2688Wixr_real_half_0      1
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
        weight_buffer_18_9_42_3_2688Woxr_imag_half_0      1
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
        weight_buffer_18_9_42_3_2688Woxr_real_half_0      1
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
      stage2_Ct_buffer_18_3_16_64      1
        counter_63_1                  1
        ram_288_0_64                  3
+         dual_port_ram               1
      stage2_mt_buffer_18_3_16_64_32      1
        counter_63_1                  2
        counter_8_1                   1
        ram_288_0_64                  1
+         dual_port_ram               1
        shift_register_unit_12        3
      stage2_parameter_buffer_18_3_16_64      1
        counter_63_3                  1
        weight_buffer_18_16_3_64_Wfc_0      1
+         $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
        weight_buffer_18_16_3_64_Wic_0      1
+         $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
        weight_buffer_18_16_3_64_Woc_0      1
+         $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
        weight_buffer_18_16_3_64_bc_0      1
+         $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
        weight_buffer_18_16_3_64_bf_0      1
+         $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
        weight_buffer_18_16_3_64_bi_0      1
+         $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
        weight_buffer_18_16_3_64_bo_0      1
+         $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
      stage3_X_Y_buffer_18_16_3_10_32_64      1
        counter_20_1                  1
        counter_41_1                  1
        counter_41_1_32               1
        ram_288_0_42                  1
+         dual_port_ram               1
        shift_register_unit_1_2       1
 
-   Number of wires:             169394
-   Number of wire bits:         2452242
-   Number of public wires:      137282
-   Number of public wire bits:  2040286
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of wires:             169938
+   Number of wire bits:         2522379
+   Number of public wires:      137582
+   Number of public wire bits:  2068519
+   Number of memories:              56
+   Number of memory bits:       102276
    Number of processes:              0
-   Number of cells:              71602
+   Number of cells:              71912
      $add                         5332
      $and                          423
      $dff                         3411
-     $dffe                        2480
+     $dffe                        2541
      $eq                          7462
      $ge                           241
      $le                            12
      $logic_and                     15
      $logic_not                    244
      $lt                             3
+     $memrd                         61
+     $memwr_v2                      61
      $mul                         1609
-     $mux                        18417
+     $mux                        18600
      $neg                          345
      $not                          329
      $reduce_and                   255
@@ -1464,6 +1546,4 @@
      $sdff                        1146
      $sdffe                      29443
      $sub                          375
-     dual_port_ram                   5
-     single_port_ram                51
 

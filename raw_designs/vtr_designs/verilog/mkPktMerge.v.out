@@ -1,6 +1,21 @@
 
 5. Printing statistics.
 
+=== $paramod$787b2b116888960e7723a738800dc0d62f27a28e\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:           1549
+   Number of public wires:           9
+   Number of public wire bits:     623
+   Number of memories:               1
+   Number of memory bits:          612
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
 === arSRLFIFO_a ===
 
    Number of wires:                 18
@@ -58,10 +73,10 @@
      $ne                             3
      $not                            1
      $or                             3
+     $paramod$787b2b116888960e7723a738800dc0d62f27a28e\dual_port_ram      1
      $reduce_bool                    7
      $reduce_or                      1
      $sdffe                          9
-     dual_port_ram                   1
 
 === generic_fifo_sc_b ===
 
@@ -84,10 +99,10 @@
      $ne                             3
      $not                            1
      $or                             3
+     $paramod$787b2b116888960e7723a738800dc0d62f27a28e\dual_port_ram      1
      $reduce_bool                    7
      $reduce_or                      1
      $sdffe                          9
-     dual_port_ram                   1
 
 === generic_fifo_sc_c ===
 
@@ -110,10 +125,10 @@
      $ne                             3
      $not                            1
      $or                             3
+     $paramod$787b2b116888960e7723a738800dc0d62f27a28e\dual_port_ram      1
      $reduce_bool                    7
      $reduce_or                      1
      $sdffe                          9
-     dual_port_ram                   1
 
 === mkPktMerge ===
 
@@ -139,20 +154,24 @@
    mkPktMerge                        1
      arSRLFIFO_a                     1
        generic_fifo_sc_a             1
+         $paramod$787b2b116888960e7723a738800dc0d62f27a28e\dual_port_ram      1
      arSRLFIFO_b                     1
        generic_fifo_sc_b             1
+         $paramod$787b2b116888960e7723a738800dc0d62f27a28e\dual_port_ram      1
      arSRLFIFO_c                     1
        generic_fifo_sc_c             1
+         $paramod$787b2b116888960e7723a738800dc0d62f27a28e\dual_port_ram      1
 
-   Number of wires:                408
-   Number of wire bits:           5231
-   Number of public wires:         196
-   Number of public wire bits:    4971
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of wires:                459
+   Number of wire bits:           9878
+   Number of public wires:         223
+   Number of public wire bits:    6840
+   Number of memories:               3
+   Number of memory bits:         1836
    Number of processes:              0
-   Number of cells:                285
+   Number of cells:                318
      $add                           15
+     $dffe                           6
      $eq                            12
      $ge                             6
      $le                             6
@@ -160,12 +179,13 @@
      $logic_not                     22
      $logic_or                       4
      $lt                             6
-     $mux                           47
+     $memrd                          6
+     $memwr_v2                       6
+     $mux                           65
      $ne                             9
      $not                            3
      $or                             9
      $reduce_bool                   21
      $reduce_or                      3
      $sdffe                         30
-     dual_port_ram                   3
 

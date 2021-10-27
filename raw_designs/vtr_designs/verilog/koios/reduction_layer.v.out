@@ -89,15 +89,18 @@
 
 === spram ===
 
-   Number of wires:                  5
-   Number of wire bits:           4103
+   Number of wires:                  9
+   Number of wire bits:          10252
    Number of public wires:           5
    Number of public wire bits:    4103
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of memories:               1
+   Number of memory bits:        65536
    Number of processes:              0
-   Number of cells:                  1
-     single_port_ram                 1
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
 
 === design hierarchy ===
 
@@ -108,21 +111,23 @@
        $paramod$ab59b465056463fc04d10aed504d582ed3f913f6\processing_element     64
      spram                           1
 
-   Number of wires:               1984
-   Number of wire bits:          33830
+   Number of wires:               1988
+   Number of wire bits:          39979
    Number of public wires:        1311
    Number of public wire bits:   30640
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of memories:               1
+   Number of memory bits:        65536
    Number of processes:              0
-   Number of cells:               1322
+   Number of cells:               1327
      $add                          131
-     $dffe                           1
+     $dffe                           2
      $eq                           133
      $gt                           128
      $logic_not                    131
      $lt                           128
-     $mux                          520
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                          523
      $ne                             4
      $pmux                           4
      $reduce_and                     4
@@ -130,5 +135,4 @@
      $reduce_or                      1
      $sdff                         128
      $sdffe                          4
-     single_port_ram                 1
 

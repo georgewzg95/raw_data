@@ -3675,9 +3675,9 @@ endmodule
 
 
 module spram #(
-`ifdef SIMULATION
-	parameter INIT="init.txt",
-`endif
+//`ifdef SIMULATION
+//	parameter INIT="init.txt",
+//`endif
 	parameter AWIDTH=5,
 	parameter NUM_WORDS=32,
 	parameter DWIDTH=16)
@@ -3691,9 +3691,9 @@ module spram #(
 	`ifdef SIMULATION
 		reg [DWIDTH-1:0] mem [NUM_WORDS-1:0];
 
-		initial begin
-			$readmemh(INIT, mem);
-		end
+		//initial begin
+		//	$readmemh(INIT, mem);
+		//end
 
 		always @ (posedge clk) begin 
 			if (wren) begin

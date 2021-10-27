@@ -1,6 +1,96 @@
 
 5. Printing statistics.
 
+=== $paramod$35e32131298f7a240f6a52c825655e8aa5be1149\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            147
+   Number of public wires:           9
+   Number of public wire bits:      67
+   Number of memories:               1
+   Number of memory bits:          128
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== $paramod$60024a837e75472e1cd5919794d9ec384e722ccc\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            375
+   Number of public wires:           9
+   Number of public wire bits:     157
+   Number of memories:               1
+   Number of memory bits:          416
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== $paramod$798857012a7831740475cc59e38e3cb1685f4f23\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            427
+   Number of public wires:           9
+   Number of public wire bits:     179
+   Number of memories:               1
+   Number of memory bits:          576
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== $paramod$af5eb2417a99fbdccc048a055f25a88ec12c1790\single_port_ram ===
+
+   Number of wires:                  9
+   Number of wire bits:            182
+   Number of public wires:           5
+   Number of public wire bits:      76
+   Number of memories:               1
+   Number of memory bits:          320
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
+
+=== $paramod$b72768599b9b489648632fa68f4d692be1ec37c1\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            247
+   Number of public wires:           9
+   Number of public wire bits:     107
+   Number of memories:               1
+   Number of memory bits:          288
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram ===
+
+   Number of wires:                  9
+   Number of wire bits:            182
+   Number of public wires:           5
+   Number of public wire bits:      76
+   Number of memories:               1
+   Number of memory bits:          320
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
+
 === Absorber ===
 
    Number of wires:                240
@@ -151,9 +241,9 @@
      $ge                             2
      $mul                            1
      $mux                           55
+     $paramod$af5eb2417a99fbdccc048a055f25a88ec12c1790\single_port_ram      1
      $sdffe                          2
      $sub                            2
-     single_port_ram                 1
 
 === Memory_Wrapper ===
 
@@ -165,7 +255,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     single_port_ram                 2
+     $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram      2
 
 === Move ===
 
@@ -399,7 +489,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     dual_port_ram                   1
+     $paramod$798857012a7831740475cc59e38e3cb1685f4f23\dual_port_ram      1
 
 === dual2 ===
 
@@ -411,7 +501,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     dual_port_ram                   1
+     $paramod$b72768599b9b489648632fa68f4d692be1ec37c1\dual_port_ram      1
 
 === dual3 ===
 
@@ -423,7 +513,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     dual_port_ram                   1
+     $paramod$35e32131298f7a240f6a52c825655e8aa5be1149\dual_port_ram      1
 
 === dual_port_mem_ww ===
 
@@ -435,7 +525,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     dual_port_ram                   1
+     $paramod$60024a837e75472e1cd5919794d9ec384e722ccc\dual_port_ram      1
 
 === dual_port_mem_xx ===
 
@@ -447,7 +537,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     dual_port_ram                   1
+     $paramod$60024a837e75472e1cd5919794d9ec384e722ccc\dual_port_ram      1
 
 === dual_port_mem_yy ===
 
@@ -459,7 +549,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     dual_port_ram                   1
+     $paramod$60024a837e75472e1cd5919794d9ec384e722ccc\dual_port_ram      1
 
 === dual_port_mem_zz ===
 
@@ -471,7 +561,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     dual_port_ram                   1
+     $paramod$60024a837e75472e1cd5919794d9ec384e722ccc\dual_port_ram      1
 
 === mcml ===
 
@@ -606,6 +696,7 @@
            Div_64b                   1
              Div_64b_unsigned        1
            Memory_Wrapper            1
+             $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram      2
            Mult_32b                 15
            Reflector                 1
              InternalsBlock_Reflector     37
@@ -619,30 +710,38 @@
        Hop                           1
          mult_signed_32              3
        LogCalc                       1
+         $paramod$af5eb2417a99fbdccc048a055f25a88ec12c1790\single_port_ram      1
        Move                          1
        Roulette                      1
        rng                           5
      dual                            1
+       $paramod$798857012a7831740475cc59e38e3cb1685f4f23\dual_port_ram      1
      dual2                           1
+       $paramod$b72768599b9b489648632fa68f4d692be1ec37c1\dual_port_ram      1
      dual3                           1
+       $paramod$35e32131298f7a240f6a52c825655e8aa5be1149\dual_port_ram      1
      dual_port_mem_ww                1
+       $paramod$60024a837e75472e1cd5919794d9ec384e722ccc\dual_port_ram      1
      dual_port_mem_xx                1
+       $paramod$60024a837e75472e1cd5919794d9ec384e722ccc\dual_port_ram      1
      dual_port_mem_yy                1
+       $paramod$60024a837e75472e1cd5919794d9ec384e722ccc\dual_port_ram      1
      dual_port_mem_zz                1
+       $paramod$60024a837e75472e1cd5919794d9ec384e722ccc\dual_port_ram      1
 
-   Number of wires:              11677
-   Number of wire bits:         355582
-   Number of public wires:        9972
-   Number of public wire bits:  315939
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of wires:              11823
+   Number of wire bits:         358449
+   Number of public wires:       10050
+   Number of public wire bits:  317148
+   Number of memories:              10
+   Number of memory bits:         3616
    Number of processes:              0
-   Number of cells:               5607
+   Number of cells:               5699
      $add                          149
      $adffe                         15
      $and                          269
      $dff                          179
-     $dffe                           1
+     $dffe                          18
      $eq                            98
      $ge                           202
      $gt                             3
@@ -651,8 +750,10 @@
      $logic_not                     74
      $logic_or                       8
      $lt                             2
+     $memrd                         17
+     $memwr_v2                      17
      $mul                           27
-     $mux                          895
+     $mux                          946
      $ne                            24
      $neg                           62
      $not                          121
@@ -665,6 +766,4 @@
      $sdffe                       2874
      $sub                          264
      $xor                           55
-     dual_port_ram                   7
-     single_port_ram                 3
 

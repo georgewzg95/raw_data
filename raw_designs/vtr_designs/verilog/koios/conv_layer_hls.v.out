@@ -3,15 +3,18 @@
 
 === $paramod$06d1378780a49be520a2b3a2c4922119883641e2\dpram ===
 
-   Number of wires:                  9
-   Number of wire bits:             73
+   Number of wires:                 17
+   Number of wire bits:            175
    Number of public wires:           9
    Number of public wire bits:      73
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of memories:               1
+   Number of memory bits:          128
    Number of processes:              0
-   Number of cells:                  1
-     dual_port_ram                   1
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
 
 === $paramod$444f4f35aae1753c454375fdcc6a89a96e0bb6d9\td_fused_top_dataflow_in_loop_TOP_LOOP49028_accum1_out_0 ===
 
@@ -40,15 +43,18 @@
 
 === $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram ===
 
-   Number of wires:                  9
-   Number of wire bits:             77
+   Number of wires:                 17
+   Number of wire bits:            183
    Number of public wires:           9
    Number of public wire bits:      77
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of memories:               1
+   Number of memory bits:          512
    Number of processes:              0
-   Number of cells:                  1
-     dual_port_ram                   1
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
 
 === $paramod$c414455ae88fca9ac64260ff619bba7437d661cf\td_fused_top_hadd_16ns_16ns_16_2_full_dsp_1 ===
 
@@ -155,15 +161,18 @@
 
 === $paramod$d469e4afe47aade94905ad9cf27ab37f760587d2\dpram ===
 
-   Number of wires:                  9
-   Number of wire bits:             79
+   Number of wires:                 17
+   Number of wire bits:            187
    Number of public wires:           9
    Number of public wire bits:      79
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of memories:               1
+   Number of memory bits:         1024
    Number of processes:              0
-   Number of cells:                  1
-     dual_port_ram                   1
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
 
 === FPAddSub ===
 
@@ -949,26 +958,28 @@
        td_fused_top_tdf3_readInputs      1
        td_fused_top_tdf3_writeOutputs_unaligned      1
 
-   Number of wires:               8441
-   Number of wire bits:         100793
+   Number of wires:               8609
+   Number of wire bits:         103001
    Number of public wires:        5711
    Number of public wire bits:   92555
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of memories:              21
+   Number of memory bits:         9984
    Number of processes:              0
-   Number of cells:               4872
+   Number of cells:               5103
      $add                          177
      $and                          687
      $dff                           24
-     $dffe                         216
+     $dffe                         258
      $eq                           315
      $gt                            18
      $logic_and                    156
      $logic_not                    225
      $logic_or                      12
      $lt                             9
+     $memrd                         42
+     $memwr_v2                      42
      $mul                            3
-     $mux                         1266
+     $mux                         1392
      $ne                            21
      $not                          279
      $or                           324
@@ -983,5 +994,4 @@
      $shr                           12
      $sub                           63
      $xor                           75
-     dual_port_ram                  21
 

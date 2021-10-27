@@ -128,39 +128,48 @@
 
 === spram_b ===
 
-   Number of wires:                  5
-   Number of wire bits:             41
+   Number of wires:                  9
+   Number of wire bits:             96
    Number of public wires:           5
    Number of public wire bits:      41
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of memories:               1
+   Number of memory bits:         1024
    Number of processes:              0
-   Number of cells:                  1
-     single_port_ram                 1
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
 
 === spram_u ===
 
-   Number of wires:                  5
-   Number of wire bits:           2057
+   Number of wires:                  9
+   Number of wire bits:           5136
    Number of public wires:           5
    Number of public wire bits:    2057
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of memories:               1
+   Number of memory bits:        65536
    Number of processes:              0
-   Number of cells:                  1
-     single_port_ram                 1
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
 
 === spram_v ===
 
-   Number of wires:                  5
-   Number of wire bits:           3209
+   Number of wires:                  9
+   Number of wire bits:           8016
    Number of public wires:           5
    Number of public wire bits:    3209
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of memories:               1
+   Number of memory bits:       102400
    Number of processes:              0
-   Number of cells:                  1
-     single_port_ram                 1
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
 
 === tanh ===
 
@@ -235,18 +244,18 @@
      spram_u                         4
      spram_v                         5
 
-   Number of wires:              18591
-   Number of wire bits:         371554
+   Number of wires:              18643
+   Number of wire bits:         408125
    Number of public wires:       12261
    Number of public wire bits:  303929
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of memories:              13
+   Number of memory bits:       778240
    Number of processes:              0
-   Number of cells:              15892
+   Number of cells:              15957
      $add                         2645
      $and                          638
      $dff                         4646
-     $dffe                         141
+     $dffe                         154
      $dlatch                         5
      $eq                          1073
      $ge                            29
@@ -256,8 +265,10 @@
      $logic_not                     13
      $logic_or                       1
      $lt                            22
+     $memrd                         13
+     $memwr_v2                      13
      $mul                          659
-     $mux                         2115
+     $mux                         2154
      $ne                             2
      $not                         2090
      $pmux                          75
@@ -266,5 +277,4 @@
      $reduce_or                     75
      $sdff                        1321
      $sdffe                        134
-     single_port_ram                13
 

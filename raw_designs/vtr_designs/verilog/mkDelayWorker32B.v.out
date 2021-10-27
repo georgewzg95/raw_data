@@ -1,6 +1,96 @@
 
 5. Printing statistics.
 
+=== $paramod$17b29d3f804c36b130a09071f0e00c567b827562\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            615
+   Number of public wires:           9
+   Number of public wire bits:     249
+   Number of memories:               1
+   Number of memory bits:          180
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== $paramod$204b100ee0c0bb69566d1d462d247eed36eba337\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:           3145
+   Number of public wires:           9
+   Number of public wire bits:    1261
+   Number of memories:               1
+   Number of memory bits:          939
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== $paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            339
+   Number of public wires:           9
+   Number of public wire bits:     139
+   Number of memories:               1
+   Number of memory bits:          128
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:           1321
+   Number of public wires:           9
+   Number of public wire bits:     531
+   Number of memories:               1
+   Number of memory bits:          262
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:           1299
+   Number of public wires:           9
+   Number of public wire bits:     523
+   Number of memories:               1
+   Number of memory bits:          512
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== $paramod$d85aaca54bcf0da34d73bd45e5702b091208a1fc\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:           2603
+   Number of public wires:           9
+   Number of public wire bits:    1047
+   Number of memories:               1
+   Number of memory bits:         2560
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
 === ResetToBool ===
 
    Number of wires:                  2
@@ -117,10 +207,10 @@
      $ne                             3
      $not                            1
      $or                             3
+     $paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram      1
      $reduce_bool                    7
      $reduce_or                      1
      $sdffe                          9
-     dual_port_ram                   1
 
 === generic_fifo_sc_b ===
 
@@ -143,10 +233,10 @@
      $ne                             3
      $not                            1
      $or                             3
+     $paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram      1
      $reduce_bool                    7
      $reduce_or                      1
      $sdffe                          9
-     dual_port_ram                   1
 
 === generic_fifo_sc_c ===
 
@@ -169,10 +259,10 @@
      $ne                             3
      $not                            1
      $or                             3
+     $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram      1
      $reduce_bool                    7
      $reduce_or                      1
      $sdffe                          9
-     dual_port_ram                   1
 
 === generic_fifo_sc_d ===
 
@@ -195,10 +285,10 @@
      $ne                             3
      $not                            1
      $or                             3
+     $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram      1
      $reduce_bool                    7
      $reduce_or                      1
      $sdffe                          9
-     dual_port_ram                   1
 
 === generic_fifo_sc_f ===
 
@@ -221,10 +311,10 @@
      $ne                             3
      $not                            1
      $or                             3
+     $paramod$17b29d3f804c36b130a09071f0e00c567b827562\dual_port_ram      1
      $reduce_bool                    7
      $reduce_or                      1
      $sdffe                          9
-     dual_port_ram                   1
 
 === generic_fifo_sc_g ===
 
@@ -247,10 +337,10 @@
      $ne                             3
      $not                            1
      $or                             3
+     $paramod$204b100ee0c0bb69566d1d462d247eed36eba337\dual_port_ram      1
      $reduce_bool                    7
      $reduce_or                      1
      $sdffe                          9
-     dual_port_ram                   1
 
 === generic_fifo_sc_x ===
 
@@ -273,10 +363,10 @@
      $ne                             3
      $not                            1
      $or                             3
+     $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram      1
      $reduce_bool                    7
      $reduce_or                      1
      $sdffe                          9
-     dual_port_ram                   1
 
 === mkDelayWorker32B ===
 
@@ -301,6 +391,7 @@
      $mux                           76
      $ne                            25
      $not                            1
+     $paramod$d85aaca54bcf0da34d73bd45e5702b091208a1fc\dual_port_ram      2
      $pmux                          16
      $reduce_and                     9
      $reduce_bool                   15
@@ -317,39 +408,46 @@
      arSRLFIFO_b                     1
      arSRLFIFO_c                     1
      arSRLFIFO_d                     1
-     dual_port_ram                   2
 
 === design hierarchy ===
 
    mkDelayWorker32B                  1
+     $paramod$d85aaca54bcf0da34d73bd45e5702b091208a1fc\dual_port_ram      2
      ResetToBool                     4
      SizedFIFO_a                     1
        generic_fifo_sc_f             1
+         $paramod$17b29d3f804c36b130a09071f0e00c567b827562\dual_port_ram      1
      SizedFIFO_b                     1
        generic_fifo_sc_g             1
+         $paramod$204b100ee0c0bb69566d1d462d247eed36eba337\dual_port_ram      1
      SizedFIFO_x                     1
        generic_fifo_sc_x             1
+         $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram      1
      arSRLFIFO_a                     1
        generic_fifo_sc_a             1
+         $paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram      1
      arSRLFIFO_b                     1
        generic_fifo_sc_b             1
+         $paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram      1
      arSRLFIFO_c                     1
        generic_fifo_sc_c             1
+         $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram      1
      arSRLFIFO_d                     1
        generic_fifo_sc_d             1
+         $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram      1
 
-   Number of wires:               1947
-   Number of wire bits:          24960
-   Number of public wires:        1157
-   Number of public wire bits:   23930
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of wires:               2100
+   Number of wire bits:          38523
+   Number of public wires:        1238
+   Number of public wire bits:   29389
+   Number of memories:               9
+   Number of memory bits:         7781
    Number of processes:              0
-   Number of cells:               1296
+   Number of cells:               1395
      $add                           70
      $and                          183
      $dff                            3
-     $dffe                           7
+     $dffe                          25
      $eq                            89
      $ge                            16
      $gt                             4
@@ -358,7 +456,9 @@
      $logic_not                     87
      $logic_or                      98
      $lt                            14
-     $mux                          174
+     $memrd                         18
+     $memwr_v2                      18
+     $mux                          228
      $ne                            46
      $not                            8
      $or                            21
@@ -370,5 +470,4 @@
      $sdffe                        130
      $sub                           10
      $xor                            2
-     dual_port_ram                   9
 
