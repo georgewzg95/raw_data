@@ -2,7 +2,7 @@
 // Author: Aishwarya Rajen
 //////////////////////////////////////////////////////////////////////////////
 
-//`define SIMULATION_MEMORY
+`define SIMULATION_MEMORY
 //`define SIMULATION_addfp
 
 `define VECTOR_DEPTH 64 //Q,K,V vector size

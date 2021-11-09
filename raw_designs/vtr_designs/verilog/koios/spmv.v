@@ -3675,9 +3675,9 @@ endmodule
 
 
 module spram #(
-//`ifdef SIMULATION
-//	parameter INIT="init.txt",
-//`endif
+`ifdef SIMULATION
+	parameter INIT="init.txt",
+`endif
 	parameter AWIDTH=5,
 	parameter NUM_WORDS=32,
 	parameter DWIDTH=16)

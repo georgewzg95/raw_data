@@ -1,5 +1,5 @@
-read_verilog -sv /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small.v;
+read_verilog -sv /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/bnn.v;
 hierarchy -auto-top;
 proc; 
 opt;
-tee -o /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small.v.out stat;
+tee -o /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/bnn.v.out stat;

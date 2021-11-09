@@ -350,39 +350,48 @@
 
 === dpram ===
 
-   Number of wires:                  9
-   Number of wire bits:           4109
+   Number of wires:                 17
+   Number of wire bits:          10263
    Number of public wires:           9
    Number of public wire bits:    4109
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of memories:               1
+   Number of memory bits:        32768
    Number of processes:              0
-   Number of cells:                  1
-     dual_port_ram                   1
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
 
 === dpram_small ===
 
-   Number of wires:                  9
-   Number of wire bits:             85
+   Number of wires:                 17
+   Number of wire bits:            199
    Number of public wires:           9
    Number of public wire bits:      85
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of memories:               1
+   Number of memory bits:         8192
    Number of processes:              0
-   Number of cells:                  1
-     dual_port_ram                   1
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
 
 === dpram_t ===
 
-   Number of wires:                  9
-   Number of wire bits:           2063
+   Number of wires:                 17
+   Number of wire bits:           5147
    Number of public wires:           9
    Number of public wire bits:    2063
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of memories:               1
+   Number of memory bits:        32768
    Number of processes:              0
-   Number of cells:                  1
-     dual_port_ram                   1
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
 
 === exception ===
 
@@ -784,29 +793,35 @@
 
 === wordwise_bram ===
 
-   Number of wires:                 11
-   Number of wire bits:            275
-   Number of public wires:          11
-   Number of public wire bits:     275
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of wires:                 62
+   Number of wire bits:           2519
+   Number of public wires:          10
+   Number of public wire bits:     277
+   Number of memories:               1
+   Number of memory bits:         1024
    Number of processes:              0
-   Number of cells:                  3
-     $reduce_or                      2
-     dual_port_ram                   1
+   Number of cells:                 62
+     $dffe                           2
+     $logic_not                      2
+     $memrd                          2
+     $memwr_v2                       8
+     $mux                           48
 
 === wordwise_bram_2 ===
 
-   Number of wires:                 11
-   Number of wire bits:           2117
-   Number of public wires:          11
-   Number of public wire bits:    2117
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of wires:                398
+   Number of wire bits:         134347
+   Number of public wires:          10
+   Number of public wire bits:    2121
+   Number of memories:               1
+   Number of memory bits:         1024
    Number of processes:              0
-   Number of cells:                  3
-     $reduce_or                      2
-     dual_port_ram                   1
+   Number of cells:                454
+     $dffe                           2
+     $logic_not                      2
+     $memrd                          2
+     $memwr_v2                      64
+     $mux                          384
 
 === design hierarchy ===
 
@@ -870,29 +885,31 @@
      wordwise_bram                   1
      wordwise_bram_2                 1
 
-   Number of wires:               5352
-   Number of wire bits:          81951
-   Number of public wires:        2732
-   Number of public wire bits:   65778
-   Number of memories:               0
-   Number of memory bits:            0
+   Number of wires:               5822
+   Number of wire bits:         231931
+   Number of public wires:        2730
+   Number of public wire bits:   65784
+   Number of memories:               6
+   Number of memory bits:       108544
    Number of processes:              0
-   Number of cells:               4349
+   Number of cells:               4903
      $add                          486
      $and                           57
      $dff                          675
-     $dffe                          36
+     $dffe                          48
      $dlatch                        15
      $eq                          1424
      $ge                             1
      $gt                             9
      $le                             1
      $logic_and                     62
-     $logic_not                     25
+     $logic_not                     29
      $logic_or                       3
      $lt                            12
+     $memrd                         12
+     $memwr_v2                      80
      $mul                          104
-     $mux                          543
+     $mux                          999
      $ne                            10
      $neg                            2
      $not                          402
@@ -900,7 +917,7 @@
      $pmux                          47
      $reduce_and                    18
      $reduce_bool                   13
-     $reduce_or                     27
+     $reduce_or                     23
      $sdff                         223
      $sdffce                         1
      $sdffe                        109
@@ -908,5 +925,4 @@
      $shr                            1
      $sub                            5
      $xor                            4
-     dual_port_ram                   6
 
