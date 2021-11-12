@@ -3,20 +3,36 @@ import csv
 
 root_path = os.getcwd()
 start_path = root_path + "/raw_designs/vtr_designs"
-#cur_path = root_path + "/raw_designs/"
+yosys_path = "/home/zhigang/FeatEx/"
 
 my_dict = {}
 remove = {}
 
 def create_folder(filepath, filename):
-  dir_name = filename[:-2]
-  print(dir_name)
+  dir_name = filename[:-2] + "_submodules"
+  dir_path = filepath + os.sep + dir_name
+  try:
+    os.mkdir(dir_path)
+  except OSError as error:
+    print(error)
+  return dir_path
+
+def gen_ys(filepath):
+  fin = open("template_submod.ys", "rt")
+  fout = open("out.ys", "wt")
+  for line in fin:
+    line = line.replace('[DESIGN]', filepath)
+    fout.write(line)
+  fin.close()
+  fout.close()
 
 for subdir, dirs, files in os.walk(start_path):
   for filename in files:
     filepath = subdir + os.sep + filename
     if filename.endswith(".v"):
-      create_folder(filepath, filename)
+      submod_path = create_folder(filepath, filename)
+      gen_ys(filepath)
+      os.system(yosys_path + 'yosys -q -l ' + submod_path + os.sep + filename + '.hier out.ys') 
 
 
 # def retrieve_info(filepath):
