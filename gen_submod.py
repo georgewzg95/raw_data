@@ -8,9 +8,9 @@ yosys_path = "/home/zhigang/FeatEx/"
 my_dict = {}
 remove = {}
 
-def create_folder(filepath, filename):
+def create_folder(subdir, filename):
   dir_name = filename[:-2] + "_submodules"
-  dir_path = filepath + os.sep + dir_name
+  dir_path = subdir + os.sep + dir_name
   try:
     os.mkdir(dir_path)
   except OSError as error:
@@ -30,7 +30,7 @@ for subdir, dirs, files in os.walk(start_path):
   for filename in files:
     filepath = subdir + os.sep + filename
     if filename.endswith(".v"):
-      submod_path = create_folder(filepath, filename)
+      submod_path = create_folder(subdir, filename)
       gen_ys(filepath)
       os.system(yosys_path + 'yosys -q -l ' + submod_path + os.sep + filename + '.hier out.ys') 
 
