@@ -80,6 +80,7 @@ class gen_submod():
 
   def read_hier(self):
     print("reading hierarchy file " + self.hier_filepath)
+    self.dict = defaultdict(list)
     start_parse = False
     last_node = None
     fin = open(self.hier_filepath, "rt")
