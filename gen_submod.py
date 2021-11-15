@@ -31,9 +31,12 @@ class gen_submod():
           self.filename = filename
           self.filepath = subdir + os.sep + filename
           self.gen_ys()
+          self.print_help()
           self.create_hier()
-          self.read_hier()
-          # print("read_hier completes")
+          self.print_help()
+
+  def print_help(self):
+    print("help funtion")
 
   def parse_arges(self):
     parser = argparse.ArgumentParser()
