@@ -88,11 +88,10 @@ class gen_submod():
         continue
       if start_parse:
         print("searching submodules")
-        print(line.split("\\"))
-        if line.find("Top module:") > 0:
+        x = line.split("\\").strip()
+        if x[0].find("Top module:") > 0:
           print("top module found")
           root = tree_node()
-          x = split('\\')
           root.value = x[1]
           self.dict[0] = []
           self.dict[0].append(root)
