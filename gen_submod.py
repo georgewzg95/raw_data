@@ -96,7 +96,6 @@ class gen_submod():
           root.value = x[1].strip()
           self.dict[0] = []
           self.dict[0].append(root)
-          print(root)
           continue
         if line.find("Used Module:") < 0:
           break
