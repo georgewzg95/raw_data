@@ -88,10 +88,8 @@ class gen_submod():
         start_parse = True
         continue
       if start_parse:
-        print("searching submodules")
         print(line)
         if line.find("Top module:") >= 0:
-          print("top module found")
           root = tree_node()
           x = line.split("\\")
           root.value = x[1].strip()
@@ -109,16 +107,21 @@ class gen_submod():
             lev += 1
           else:
             break
-        print("the lev is " + str(lev))
         lev = (lev - 1)//4
-        print("the lev is " + str(lev))
         last_node = self.dict[lev - 1][-1]
-        print(last_node.value)
         self.dict[lev].append(cur_node)
         if last_node.children == None:
           last_node.children = []
         last_node.children.append(cur_node)
     fin.close()
+
+    for i in range(len(self.dict)):
+      for modules in self.dict[i]:
+        print("the level is", str(i), modules.value, sep = " ")
+        print("children is:")
+        for children in modules.children:
+          print(children.value, end=",")
+
 
 if __name__ == "__main__":
   gen_submod()
