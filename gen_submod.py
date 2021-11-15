@@ -101,7 +101,7 @@ class gen_submod():
           break
         
         cur_node = tree_node()
-        x = split('\\')
+        x = line.split('\\')
         cur_node.value = x[1].strip()
         lev = 0
         for i in range(12, line.size()):
