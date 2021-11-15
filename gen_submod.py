@@ -37,7 +37,7 @@ class gen_submod():
     parser = argparse.ArgumentParser()
     parser.add_argument(  "-d",
                           "--directory",
-                          default = "raw_designs/vtr_designs",
+                          default = "raw_designs/test_designs",
                           type = str,
                           help = "directory path to pwd to generate designs from")
     parser.add_argument(  "-y",
