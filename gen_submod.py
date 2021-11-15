@@ -84,17 +84,18 @@ class gen_submod():
     fin = open(self.hier_filepath, "rt")
     for line in fin:
       if line.find("Analyzing design hierarchy") > 0:
-        print("design hierarchy found")
         start_parse = True
+        continue
       if start_parse:
-        if line.find("Top module") > 0:
+        if line.find("Top module:") > 0:
+          print("top module found")
           root = tree_node()
           x = split('\\')
           root.value = x[1]
           self.dict[0] = []
           self.dict[0].append(root)
           continue
-        if line.find("Used Module") <= 0:
+        if line.find("Used Module:") <= 0:
           break
         
         cur_node = tree_node()
