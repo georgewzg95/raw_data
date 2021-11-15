@@ -31,6 +31,7 @@ class gen_submod():
           self.filename = filename
           self.filepath = subdir + os.sep + filename
           self.gen_ys()
+          print("come here")
           self.create_hier()
           print("come here")
           # self.read_hier()
