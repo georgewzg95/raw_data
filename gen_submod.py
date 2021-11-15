@@ -97,7 +97,7 @@ class gen_submod():
           self.dict[0] = []
           self.dict[0].append(root)
           continue
-        if line.find("Used Module:") < 0:
+        if line.find("Used module:") < 0:
           break
         
         cur_node = tree_node()
@@ -116,7 +116,6 @@ class gen_submod():
           last_node.children = []
         last_node.children.append(cur_node)
     fin.close()
-    print(self.dict)
 
 if __name__ == "__main__":
   gen_submod()
