@@ -87,6 +87,7 @@ class gen_submod():
         start_parse = True
         continue
       if start_parse:
+        print("searching submodules")
         if line.find("Top module:") > 0:
           print("top module found")
           root = tree_node()
