@@ -104,11 +104,12 @@ class gen_submod():
         x = line.split('\\')
         cur_node.value = x[1].strip()
         lev = 0
-        for i in range(12, line.size()):
+        for i in range(12, len(line)):
           if line[i] == ' ':
             lev += 1
           else:
             break
+        print("the lev is " + str(lev))
         lev = (lev - 1)//4
         last_node = dict[lev - 1][-1]
         self.dict[lev].append(cur_node)
