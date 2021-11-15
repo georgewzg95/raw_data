@@ -1,38 +1,134 @@
 import os
 import csv
+import argparse
 
-root_path = os.getcwd()
-start_path = root_path + "/raw_designs/vtr_designs"
-yosys_path = "/home/zhigang/FeatEx/"
+class tree_node():
+  def __init__(self):
+    self.value = None
+    self.children = None
+
+
+class gen_submod():
+  def __init__(self):
+    self.start_path = None
+    self.yosys_path = None
+    self.hier_filepath = None
+    self.subdir = None
+    self.filename = None
+    self.filepath = None
+    self.hier_filepath = None
+    self.hier_dir = None
+    self.parse_arges()
+    self.iteration_main()
+    self.dict = {}
+
+  def iteration_main(self):
+    for subdir, dirs, files in os.walk(self.start_path):
+      for filename in files:
+        if filename.endswith(".v"):
+          self.subdir = subdir
+          self.filename = filename
+          self.filepath = subdir + os.sep + filename
+          self.gen_ys()
+          self.create_hier()
+          self.read_hier()
+
+  def read_hier(self):
+    start_parse = False
+    last_node = None
+    fin = open(self.hier_filepath, "rt")
+    for line in fin:
+      if line.find("2.3. Analyzing design hierarchy..") > 0:
+        start_parse = True
+      if start_parse:
+        if line.find("Top module") > 0:
+          root = tree_node()
+          x = split('\\')
+          root.value = x[1]
+          self.dict[0] = []
+          self.dict[0].append(root)
+          continue
+        if line.find("Used Module") <= 0:
+          break
+        
+        cur_node = tree_node()
+        x = split('\\')
+        cur_node.value = x[1]
+        lev = 0
+        for i in range(12, line.size()):
+          if line[i] == ' ':
+            lev += 1
+          else:
+            break
+        lev = (lev - 1)//4
+        last_node = dict[lev - 1][-1]
+        self.dict[lev].append(cur_node)
+        if last_node.children == None:
+          last_node.children = []
+        last_node.children.append(cur_node)
+
+    print(self.dict)
+
+  
+  def parse_arges(self):
+    parser = argparse.ArgumentParser()
+    parser.add_argument(  "-d",
+                          "--directory",
+                          default = "raw_designs/vtr_designs",
+                          type = str,
+                          help = "directory path to pwd to generate designs from")
+    parser.add_argument(  "-y",
+                          "--yosys_path",
+                          default = "/home/zhigang/FeatEx/",
+                          type = str,
+                          help = "ABSOLUTE path for yosys")
+
+    args = parser.parse_args()
+    if args.directory.startswith("/"):
+      self.start_path = args.directory
+    else:
+      self.start_path = os.getcwd() + os.sep + args.directory
+
+    self.yosys_path = args.yosys_path
+
+  def iteration_main(self):
+    for subdir, dirs, files in os.walk(self.start_path):
+      for filename in files:
+        if filename.endswith(".v"):
+          self.subdir = subdir
+          self.filename = filename
+          self.filepath = subdir + os.sep + filename
+          self.gen_ys()
+          self.create_hier()
+
+  def gen_ys(self):
+    fin = open("template_submod.ys", "rt")
+    fout = open("out.ys", "wt")
+    for line in fin:
+      line = line.replace('[DESIGN]', self.filepath)
+      fout.write(line)
+    fin.close()
+    fout.close()
+
+  def create_hier(self):
+    dir_name = self.filename[:-2] + "_submodules"
+    dir_path = self.subdir + os.sep + dir_name
+    self.hier_dir = dir_path
+    self.hier_filepath = dir_path + os.sep + self.filename[:-2] + '.hier'
+    try:
+      os.mkdir(dir_path)
+    except OSError as error:
+      print(error)
+      return
+    os.system(yosys_path + 'yosys -q -l ' + hier_filepath + ' out.ys')
+
+if __name__ == "__main__":
+  gen_submod()
+
+
 
 my_dict = {}
 remove = {}
-
-def create_folder(subdir, filename):
-  dir_name = filename[:-2] + "_submodules"
-  dir_path = subdir + os.sep + dir_name
-  try:
-    os.mkdir(dir_path)
-  except OSError as error:
-    print(error)
-  return dir_path
-
-def gen_ys(filepath):
-  fin = open("template_submod.ys", "rt")
-  fout = open("out.ys", "wt")
-  for line in fin:
-    line = line.replace('[DESIGN]', filepath)
-    fout.write(line)
-  fin.close()
-  fout.close()
-
-for subdir, dirs, files in os.walk(start_path):
-  for filename in files:
-    filepath = subdir + os.sep + filename
-    if filename.endswith(".v"):
-      submod_path = create_folder(subdir, filename)
-      gen_ys(filepath)
-      os.system(yosys_path + 'yosys -q -l ' + submod_path + os.sep + filename + '.hier out.ys') 
 
 
 # def retrieve_info(filepath):
