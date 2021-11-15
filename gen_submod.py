@@ -21,7 +21,6 @@ class gen_submod():
     self.dict = {}
     self.parse_arges()
     self.iteration_main()
-    print("interation_main completes")
 
   def iteration_main(self):
     for subdir, dirs, files in os.walk(self.start_path):
@@ -31,12 +30,8 @@ class gen_submod():
           self.filename = filename
           self.filepath = subdir + os.sep + filename
           self.gen_ys()
-          self.print_help()
           self.create_hier()
-          self.print_help()
-
-  def print_help(self):
-    print("help funtion")
+          self.read_hier()
 
   def parse_arges(self):
     parser = argparse.ArgumentParser()
@@ -59,16 +54,6 @@ class gen_submod():
 
     self.yosys_path = args.yosys_path
 
-  def iteration_main(self):
-    for subdir, dirs, files in os.walk(self.start_path):
-      for filename in files:
-        if filename.endswith(".v"):
-          self.subdir = subdir
-          self.filename = filename
-          self.filepath = subdir + os.sep + filename
-          self.gen_ys()
-          self.create_hier()
-
   def gen_ys(self):
     fin = open("template_submod.ys", "rt")
     fout = open("out.ys", "wt")
@@ -83,10 +68,10 @@ class gen_submod():
     dir_path = self.subdir + os.sep + dir_name
     self.hier_dir = dir_path
     self.hier_filepath = dir_path + os.sep + self.filename[:-2] + '.hier'
-    # try:
-    #   os.mkdir(dir_path)
-    # except OSError as error:
-    #   print(error)
+    try:
+      os.mkdir(dir_path)
+    except OSError as error:
+      print(error)
 
     if os.path.exists(self.hier_filepath) == False:
       os.system(self.yosys_path + 'yosys -q -l ' + self.hier_filepath + ' out.ys')
