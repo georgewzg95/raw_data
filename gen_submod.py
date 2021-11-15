@@ -1,6 +1,7 @@
 import os
 import csv
 import argparse
+from collections import defaultdict
 
 class tree_node():
   def __init__(self):
@@ -18,7 +19,7 @@ class gen_submod():
     self.filepath = None
     self.hier_filepath = None
     self.hier_dir = None
-    self.dict = {}
+    self.dict = defaultdict(list)
     self.parse_arges()
     self.iteration_main()
 
@@ -94,7 +95,6 @@ class gen_submod():
           root = tree_node()
           x = line.split("\\")
           root.value = x[1].strip()
-          self.dict[0] = []
           self.dict[0].append(root)
           continue
         if line.find("Used module:") < 0:
@@ -113,9 +113,7 @@ class gen_submod():
         lev = (lev - 1)//4
         print("the lev is " + str(lev))
         last_node = self.dict[lev - 1][-1]
-        print(self.dict[lev])
-        if self.dict[lev] == None:
-          self.dict[lev] = []
+        print(last_node.value)
         self.dict[lev].append(cur_node)
         if last_node.children == None:
           last_node.children = []
