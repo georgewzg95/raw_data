@@ -33,8 +33,8 @@ class gen_submod():
           self.gen_ys()
           self.create_hier()
           print("come here")
-          self.read_hier()
-          print("read_hier completes")
+          # self.read_hier()
+          # print("read_hier completes")
 
   def parse_arges(self):
     parser = argparse.ArgumentParser()
@@ -81,10 +81,10 @@ class gen_submod():
     dir_path = self.subdir + os.sep + dir_name
     self.hier_dir = dir_path
     self.hier_filepath = dir_path + os.sep + self.filename[:-2] + '.hier'
-    try:
-      os.mkdir(dir_path)
-    except OSError as error:
-      print(error)
+    # try:
+    #   os.mkdir(dir_path)
+    # except OSError as error:
+    #   print(error)
 
     if os.path.exists(self.hier_filepath) == False:
       os.system(self.yosys_path + 'yosys -q -l ' + self.hier_filepath + ' out.ys')
