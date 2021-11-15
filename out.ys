@@ -1,5 +1,2 @@
-read_verilog -sv /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/bnn.v;
+read_verilog -sv /home/zhigang/DATA/raw_designs/test_designs/always02.v;
 hierarchy -auto-top;
-proc; 
-opt;
-tee -o /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/bnn.v.out stat;

@@ -31,45 +31,10 @@ class gen_submod():
           self.filepath = subdir + os.sep + filename
           self.gen_ys()
           self.create_hier()
+          print("come here")
           self.read_hier()
+          print("read_hier completes")
 
-  def read_hier(self):
-    start_parse = False
-    last_node = None
-    fin = open(self.hier_filepath, "rt")
-    for line in fin:
-      if line.find("2.3. Analyzing design hierarchy..") > 0:
-        start_parse = True
-      if start_parse:
-        if line.find("Top module") > 0:
-          root = tree_node()
-          x = split('\\')
-          root.value = x[1]
-          self.dict[0] = []
-          self.dict[0].append(root)
-          continue
-        if line.find("Used Module") <= 0:
-          break
-        
-        cur_node = tree_node()
-        x = split('\\')
-        cur_node.value = x[1]
-        lev = 0
-        for i in range(12, line.size()):
-          if line[i] == ' ':
-            lev += 1
-          else:
-            break
-        lev = (lev - 1)//4
-        last_node = dict[lev - 1][-1]
-        self.dict[lev].append(cur_node)
-        if last_node.children == None:
-          last_node.children = []
-        last_node.children.append(cur_node)
-
-    print(self.dict)
-
-  
   def parse_arges(self):
     parser = argparse.ArgumentParser()
     parser.add_argument(  "-d",
@@ -122,6 +87,44 @@ class gen_submod():
 
     if os.path.exists(self.hier_filepath) == False:
       os.system(self.yosys_path + 'yosys -q -l ' + self.hier_filepath + ' out.ys')
+    print(self.filename[:-2] + " hierarchy files creation finished")
+
+  def read_hier(self):
+    print("reading hierarchy file")
+    start_parse = False
+    last_node = None
+    fin = open(self.hier_filepath, "rt")
+    for line in fin:
+      if line.find("2.3. Analyzing design hierarchy..") > 0:
+        start_parse = True
+      if start_parse:
+        if line.find("Top module") > 0:
+          root = tree_node()
+          x = split('\\')
+          root.value = x[1]
+          self.dict[0] = []
+          self.dict[0].append(root)
+          continue
+        if line.find("Used Module") <= 0:
+          break
+        
+        cur_node = tree_node()
+        x = split('\\')
+        cur_node.value = x[1]
+        lev = 0
+        for i in range(12, line.size()):
+          if line[i] == ' ':
+            lev += 1
+          else:
+            break
+        lev = (lev - 1)//4
+        last_node = dict[lev - 1][-1]
+        self.dict[lev].append(cur_node)
+        if last_node.children == None:
+          last_node.children = []
+        last_node.children.append(cur_node)
+    fin.close()
+    print(self.dict)
 
 if __name__ == "__main__":
   gen_submod()
