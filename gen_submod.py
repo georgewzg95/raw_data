@@ -78,12 +78,12 @@ class gen_submod():
     print(self.filename[:-2] + " hierarchy files creation finished")
 
   def read_hier(self):
-    print("reading hierarchy file")
+    print("reading hierarchy file " + self.hier_filepath)
     start_parse = False
     last_node = None
     fin = open(self.hier_filepath, "rt")
     for line in fin:
-      if line.find("2.3. Analyzing design hierarchy..") > 0:
+      if line.find("2.3. Analyzing design hierarchy") > 0:
         print("design hierarchy found")
         start_parse = True
       if start_parse:
