@@ -18,9 +18,10 @@ class gen_submod():
     self.filepath = None
     self.hier_filepath = None
     self.hier_dir = None
+    self.dict = {}
     self.parse_arges()
     self.iteration_main()
-    self.dict = {}
+    print("interation_main completes")
 
   def iteration_main(self):
     for subdir, dirs, files in os.walk(self.start_path):
