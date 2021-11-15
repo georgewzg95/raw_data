@@ -119,8 +119,9 @@ class gen_submod():
       os.mkdir(dir_path)
     except OSError as error:
       print(error)
-      return
-    os.system(self.yosys_path + 'yosys -q -l ' + hier_filepath + ' out.ys')
+
+    if os.path.exists(self.hier_filepath) == False:
+      os.system(self.yosys_path + 'yosys -q -l ' + self.hier_filepath + ' out.ys')
 
 if __name__ == "__main__":
   gen_submod()
