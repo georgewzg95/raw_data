@@ -111,6 +111,7 @@ class gen_submod():
             break
         print("the lev is " + str(lev))
         lev = (lev - 1)//4
+        print("the lev is " + str(lev))
         last_node = dict[lev - 1][-1]
         self.dict[lev].append(cur_node)
         if last_node.children == None:
