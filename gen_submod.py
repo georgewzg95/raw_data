@@ -82,7 +82,7 @@ class gen_submod():
       #start to copy
       if start_parse == True:
         fout.write(line)
-        if line.split()[0] == "endmodule":
+        if line.find("endmodule") >=0:
           break
     fin.close()
     fout.close()
