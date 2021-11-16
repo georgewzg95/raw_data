@@ -2,7 +2,8 @@ import os
 import csv
 
 root_path = os.getcwd()
-start_path = root_path + "/raw_designs/"
+#start_path = root_path + "/raw_designs/vtr_designs/verilog/stereovision0_submodules/scl_v_fltr.v.out"
+start_path = root_path + "/raw_designs/vtr_designs/"
 cur_path = root_path + "/raw_designs/"
 
 field_name = ['Name',
@@ -28,15 +29,26 @@ def retrieve_info(filepath):
   hierarchy = False
   bb = False
   for line in fin:
-    if line.find("design hierarchy") > 0:
+    if line.find("design hierarchy") >= 0:
       hierarchy = True
-    if hierarchy and line.find("Number of cells") > 0:
+    if hierarchy and line.find("Number of cells") >= 0:
       bb = True
       continue
     if bb:
       if line.find('$') < 0 and line.strip():
         print(relative_path)
         print(line)
+
+  fin.seek(0, 0)
+  if not hierarchy:
+    for line in fin:
+      if line.find("Number of cells") >= 0:
+        bb = True
+        continue
+      if bb:
+        if line.find('$') < 0 and line.strip():
+          print(relative_path)
+          print(line)
 
   fin.seek(0, 0)
   if hierarchy:
@@ -61,9 +73,9 @@ def retrieve_info(filepath):
 for subdir, dirs, files in os.walk(start_path):
   for filename in files:
     filepath = subdir + os.sep + filename
-    
     if filepath.endswith(".out"):
         retrieve_info(filepath)
+#retrieve_info(start_path)
 
 with open('effective_data.csv', 'w') as csv_file:
   csv_writer = csv.writer(csv_file, delimiter=',')

@@ -1,0 +1,51 @@
+
+5. Printing statistics.
+
+=== corr ===
+
+   Number of wires:                 13
+   Number of wire bits:            146
+   Number of public wires:          10
+   Number of public wire bits:      98
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add                            1
+     $dff                            3
+     $dffe                           1
+     $mul                            2
+
+=== wrapper_corr_10 ===
+
+   Number of wires:                 52
+   Number of wire bits:            578
+   Number of public wires:          52
+   Number of public wire bits:     578
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 34
+     $dffe                          11
+     corr                           11
+     sh_reg                         12
+
+=== design hierarchy ===
+
+   wrapper_corr_10                   1
+     corr                           11
+
+   Number of wires:                195
+   Number of wire bits:           2184
+   Number of public wires:         162
+   Number of public wire bits:    1656
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                100
+     $add                           11
+     $dff                           33
+     $dffe                          22
+     $mul                           22
+     sh_reg                         12
+

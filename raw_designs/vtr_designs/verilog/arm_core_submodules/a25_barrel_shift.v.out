@@ -1,0 +1,70 @@
+
+5. Printing statistics.
+
+=== a25_barrel_shift ===
+
+   Number of wires:                 18
+   Number of wire bits:            181
+   Number of public wires:          16
+   Number of public wire bits:     179
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $and                            1
+     $dff                            3
+     $logic_not                      1
+     $mux                            2
+     $reduce_or                      1
+     a25_shifter_full                1
+     a25_shifter_quick               1
+
+=== a25_shifter_full ===
+
+   Number of wires:                210
+   Number of wire bits:           4632
+   Number of public wires:          11
+   Number of public wire bits:     209
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                204
+     $eq                            64
+     $logic_not                      3
+     $mux                          137
+
+=== a25_shifter_quick ===
+
+   Number of wires:                 34
+   Number of wire bits:            680
+   Number of public wires:          11
+   Number of public wire bits:     209
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 28
+     $eq                             6
+     $logic_not                      3
+     $mux                           19
+
+=== design hierarchy ===
+
+   a25_barrel_shift                  1
+     a25_shifter_full                1
+     a25_shifter_quick               1
+
+   Number of wires:                262
+   Number of wire bits:           5493
+   Number of public wires:          38
+   Number of public wire bits:     597
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                240
+     $and                            1
+     $dff                            3
+     $eq                            70
+     $logic_not                      7
+     $mux                          158
+     $reduce_or                      1
+

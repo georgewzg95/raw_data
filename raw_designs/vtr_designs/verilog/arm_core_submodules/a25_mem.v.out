@@ -1,0 +1,122 @@
+
+5. Printing statistics.
+
+=== a25_dcache ===
+
+   Number of wires:                260
+   Number of wire bits:           4014
+   Number of public wires:          76
+   Number of public wire bits:    2178
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                255
+     $add                            2
+     $dff                            1
+     $dffe                          10
+     $eq                            27
+     $logic_and                     58
+     $logic_not                      9
+     $logic_or                      32
+     $lt                             1
+     $mux                           74
+     $ne                             8
+     $not                            1
+     $or                             1
+     $pmux                           3
+     $reduce_and                     6
+     $reduce_bool                    5
+     $reduce_or                      3
+     $sdffe                          5
+     $xor                            1
+     single_port_ram_128_8           4
+     single_port_ram_21_8            4
+
+=== a25_mem ===
+
+   Number of wires:                166
+   Number of wire bits:           1036
+   Number of public wires:          55
+   Number of public wire bits:     802
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                142
+     $dff                            6
+     $dffe                           3
+     $eq                            33
+     $ge                             1
+     $logic_and                     28
+     $logic_not                     15
+     $logic_or                      11
+     $lt                             2
+     $mux                           42
+     a25_dcache                      1
+
+=== single_port_ram_128_8 ===
+
+   Number of wires:                  9
+   Number of wire bits:            658
+   Number of public wires:           5
+   Number of public wire bits:     266
+   Number of memories:               1
+   Number of memory bits:        32768
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
+
+=== single_port_ram_21_8 ===
+
+   Number of wires:                  9
+   Number of wire bits:            123
+   Number of public wires:           5
+   Number of public wire bits:      52
+   Number of memories:               1
+   Number of memory bits:         5376
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
+
+=== design hierarchy ===
+
+   a25_mem                           1
+     a25_dcache                      1
+       single_port_ram_128_8         4
+       single_port_ram_21_8          4
+
+   Number of wires:                498
+   Number of wire bits:           8174
+   Number of public wires:         171
+   Number of public wire bits:    4252
+   Number of memories:               8
+   Number of memory bits:       152576
+   Number of processes:              0
+   Number of cells:                436
+     $add                            2
+     $dff                            7
+     $dffe                          21
+     $eq                            60
+     $ge                             1
+     $logic_and                     86
+     $logic_not                     24
+     $logic_or                      43
+     $lt                             3
+     $memrd                          8
+     $memwr_v2                       8
+     $mux                          140
+     $ne                             8
+     $not                            1
+     $or                             1
+     $pmux                           3
+     $reduce_and                     6
+     $reduce_bool                    5
+     $reduce_or                      3
+     $sdffe                          5
+     $xor                            1
+

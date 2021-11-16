@@ -1,0 +1,90 @@
+
+5. Printing statistics.
+
+=== processing_element ===
+
+   Number of wires:                 20
+   Number of wire bits:            114
+   Number of public wires:          14
+   Number of public wire bits:     108
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $and                            2
+     $logic_and                      1
+     $logic_or                       2
+     $not                            3
+     $or                             1
+     $sdffe                          2
+     seq_mac                         1
+
+=== qadd ===
+
+   Number of wires:                  3
+   Number of wire bits:             96
+   Number of public wires:           3
+   Number of public wire bits:      96
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $add                            1
+
+=== seq_mac ===
+
+   Number of wires:                 23
+   Number of wire bits:            400
+   Number of public wires:          18
+   Number of public wire bits:     334
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $and                            1
+     $mux                            4
+     $reduce_or                      1
+     $sdff                           4
+     mac_int                         1
+     qadd                            1
+
+=== systolic_pe_matrix ===
+
+   Number of wires:                 89
+   Number of wire bits:           1092
+   Number of public wires:          79
+   Number of public wire bits:    1052
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 24
+     $or                            12
+     processing_element             12
+
+=== design hierarchy ===
+
+   systolic_pe_matrix                1
+     processing_element             12
+       seq_mac                       1
+         qadd                        1
+
+   Number of wires:                641
+   Number of wire bits:           8412
+   Number of public wires:         499
+   Number of public wire bits:    7508
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                288
+     $add                           12
+     $and                           36
+     $logic_and                     12
+     $logic_or                      24
+     $mux                           48
+     $not                           36
+     $or                            24
+     $reduce_or                     12
+     $sdff                          48
+     $sdffe                         24
+     mac_int                        12
+

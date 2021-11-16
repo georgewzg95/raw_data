@@ -1,0 +1,89 @@
+
+5. Printing statistics.
+
+=== a25_fetch ===
+
+   Number of wires:                119
+   Number of wire bits:            745
+   Number of public wires:          28
+   Number of public wire bits:     499
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                103
+     $dff                            1
+     $eq                            33
+     $ge                             1
+     $logic_and                     10
+     $logic_not                      7
+     $logic_or                       9
+     $lt                             2
+     $mux                           39
+     a25_icache                      1
+
+=== a25_icache ===
+
+   Number of wires:                134
+   Number of wire bits:           2151
+   Number of public wires:          52
+   Number of public wire bits:    1438
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                136
+     $add                            2
+     $dff                            2
+     $dffe                           7
+     $eq                            15
+     $logic_and                     28
+     $logic_not                      6
+     $logic_or                       7
+     $lt                             1
+     $mux                           32
+     $ne                             5
+     $not                            1
+     $pmux                           2
+     $reduce_and                     7
+     $reduce_bool                    3
+     $reduce_or                      2
+     $sdffce                         3
+     $sdffe                          4
+     $xor                            1
+     single_port_ram_128_8           4
+     single_port_ram_21_8            4
+
+=== design hierarchy ===
+
+   a25_fetch                         1
+     a25_icache                      1
+
+   Number of wires:                253
+   Number of wire bits:           2896
+   Number of public wires:          80
+   Number of public wire bits:    1937
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                238
+     $add                            2
+     $dff                            3
+     $dffe                           7
+     $eq                            48
+     $ge                             1
+     $logic_and                     38
+     $logic_not                     13
+     $logic_or                      16
+     $lt                             3
+     $mux                           71
+     $ne                             5
+     $not                            1
+     $pmux                           2
+     $reduce_and                     7
+     $reduce_bool                    3
+     $reduce_or                      2
+     $sdffce                         3
+     $sdffe                          4
+     $xor                            1
+     single_port_ram_128_8           4
+     single_port_ram_21_8            4
+

@@ -1,0 +1,88 @@
+
+5. Printing statistics.
+
+=== corr ===
+
+   Number of wires:                 13
+   Number of wire bits:            146
+   Number of public wires:          10
+   Number of public wire bits:      98
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add                            1
+     $dff                            3
+     $dffe                           1
+     $mul                            2
+
+=== wrapper_corr_10 ===
+
+   Number of wires:                 52
+   Number of wire bits:            578
+   Number of public wires:          52
+   Number of public wire bits:     578
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 34
+     $dffe                          11
+     corr                           11
+     sh_reg                         12
+
+=== wrapper_norm ===
+
+   Number of wires:                 21
+   Number of wire bits:            292
+   Number of public wires:          15
+   Number of public wire bits:     195
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     $add                            2
+     $dff                            7
+     $dffe                           2
+     $mux                            2
+     $sdff                           1
+     $sub                            2
+     my_wrapper_divider              2
+
+=== wrapper_norm_corr_10 ===
+
+   Number of wires:                 21
+   Number of wire bits:            274
+   Number of public wires:          21
+   Number of public wire bits:     274
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     wrapper_corr_10                 1
+     wrapper_norm                    2
+
+=== design hierarchy ===
+
+   wrapper_norm_corr_10              1
+     wrapper_corr_10                 1
+       corr                         11
+     wrapper_norm                    2
+
+   Number of wires:                258
+   Number of wire bits:           3042
+   Number of public wires:         213
+   Number of public wire bits:    2320
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                136
+     $add                           15
+     $dff                           47
+     $dffe                          26
+     $mul                           22
+     $mux                            4
+     $sdff                           2
+     $sub                            4
+     my_wrapper_divider              4
+     sh_reg                         12
+

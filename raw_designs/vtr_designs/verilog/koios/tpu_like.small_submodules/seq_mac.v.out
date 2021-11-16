@@ -1,0 +1,63 @@
+
+5. Printing statistics.
+
+=== qadd ===
+
+   Number of wires:                  3
+   Number of wire bits:             48
+   Number of public wires:           3
+   Number of public wire bits:      48
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $add                            1
+
+=== qmult ===
+
+   Number of wires:                  3
+   Number of wire bits:             32
+   Number of public wires:           3
+   Number of public wire bits:      32
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $mul                            1
+
+=== seq_mac ===
+
+   Number of wires:                 14
+   Number of wire bits:            123
+   Number of public wires:          11
+   Number of public wire bits:     106
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $dff                            4
+     $mux                            3
+     $reduce_or                      1
+     qadd                            1
+     qmult                           1
+
+=== design hierarchy ===
+
+   seq_mac                           1
+     qadd                            1
+     qmult                           1
+
+   Number of wires:                 20
+   Number of wire bits:            203
+   Number of public wires:          17
+   Number of public wire bits:     186
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $add                            1
+     $dff                            4
+     $mul                            1
+     $mux                            3
+     $reduce_or                      1
+

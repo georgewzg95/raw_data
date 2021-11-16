@@ -1,0 +1,181 @@
+
+5. Printing statistics.
+
+=== matmul_32x32_systolic ===
+
+   Number of wires:               1256
+   Number of wire bits:          12097
+   Number of public wires:        1249
+   Number of public wire bits:   12059
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 76
+     $add                            1
+     $eq                             1
+     $logic_not                      2
+     $logic_or                       1
+     $mux                           65
+     $not                            1
+     $sdff                           2
+     output_logic                    1
+     systolic_data_setup             1
+     systolic_pe_matrix              1
+
+=== output_logic ===
+
+   Number of wires:               1227
+   Number of wire bits:          49758
+   Number of public wires:        1071
+   Number of public wire bits:   16732
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                193
+     $add                            2
+     $dffe                           1
+     $eq                             1
+     $ge                             1
+     $mux                          143
+     $ne                             2
+     $not                            1
+     $or                             1
+     $reduce_and                     2
+     $reduce_bool                    3
+     $sdffe                         35
+     $sub                            1
+
+=== processing_element ===
+
+   Number of wires:                  8
+   Number of wire bits:             50
+   Number of public wires:           8
+   Number of public wire bits:      50
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $sdff                           2
+     seq_mac                         1
+
+=== qadd ===
+
+   Number of wires:                  3
+   Number of wire bits:             48
+   Number of public wires:           3
+   Number of public wire bits:      48
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $add                            1
+
+=== qmult ===
+
+   Number of wires:                  3
+   Number of wire bits:             32
+   Number of public wires:           3
+   Number of public wire bits:      32
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $mul                            1
+
+=== seq_mac ===
+
+   Number of wires:                 14
+   Number of wire bits:            123
+   Number of public wires:          11
+   Number of public wire bits:     106
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $dff                            4
+     $mux                            3
+     $reduce_or                      1
+     qadd                            1
+     qmult                           1
+
+=== systolic_data_setup ===
+
+   Number of wires:               1433
+   Number of wire bits:          10235
+   Number of public wires:        1081
+   Number of public wire bits:    9215
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1416
+     $add                            6
+     $and                          128
+     $dffe                           2
+     $eq                            64
+     $ge                             6
+     $logic_and                     66
+     $logic_not                      1
+     $logic_or                      66
+     $lt                             2
+     $mux                            6
+     $not                           67
+     $reduce_bool                    2
+     $reduce_or                      2
+     $sdff                         994
+     $sdffe                          2
+     $sub                            2
+
+=== systolic_pe_matrix ===
+
+   Number of wires:               3142
+   Number of wire bits:          25604
+   Number of public wires:        3142
+   Number of public wire bits:   25604
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1025
+     $or                             1
+     processing_element           1024
+
+=== design hierarchy ===
+
+   matmul_32x32_systolic             1
+     output_logic                    1
+     systolic_data_setup             1
+     systolic_pe_matrix              1
+       processing_element         1024
+         seq_mac                     1
+           qadd                      1
+           qmult                     1
+
+   Number of wires:              35730
+   Number of wire bits:         356766
+   Number of public wires:       32143
+   Number of public wire bits:  305274
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              13971
+     $add                         1033
+     $and                          128
+     $dff                         4096
+     $dffe                           3
+     $eq                            66
+     $ge                             7
+     $logic_and                     66
+     $logic_not                      3
+     $logic_or                      67
+     $lt                             2
+     $mul                         1024
+     $mux                         3286
+     $ne                             2
+     $not                           69
+     $or                             2
+     $reduce_and                     2
+     $reduce_bool                    5
+     $reduce_or                   1026
+     $sdff                        3044
+     $sdffe                         37
+     $sub                            3
+

@@ -1,0 +1,1041 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+
+
+-- Executing script file `out.ys' --
+
+1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v
+Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v' to AST representation.
+Generating RTLIL representation for module `\ram'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Finding top of design hierarchy..
+root of   0 design levels: ram                 
+Automatically selected ram as design top module.
+
+2.2. Analyzing design hierarchy..
+Top module:  \ram
+
+2.3. Analyzing design hierarchy..
+Top module:  \ram
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 32 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358 in module ram.
+Marked 32 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69 in module ram.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 258 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+     1/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$68_EN[7:0]$581
+     2/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$68_DATA[7:0]$580
+     3/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$68_ADDR[31:0]$579
+     4/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$67_EN[7:0]$577
+     5/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$67_DATA[7:0]$576
+     6/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$67_ADDR[31:0]$575
+     7/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$66_EN[7:0]$573
+     8/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$66_DATA[7:0]$572
+     9/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$66_ADDR[31:0]$571
+    10/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$65_EN[7:0]$569
+    11/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$65_DATA[7:0]$568
+    12/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$65_ADDR[31:0]$567
+    13/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$64_EN[7:0]$565
+    14/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$64_DATA[7:0]$564
+    15/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$64_ADDR[31:0]$563
+    16/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$63_EN[7:0]$561
+    17/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$63_DATA[7:0]$560
+    18/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$63_ADDR[31:0]$559
+    19/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$62_EN[7:0]$557
+    20/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$62_DATA[7:0]$556
+    21/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$62_ADDR[31:0]$555
+    22/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$61_EN[7:0]$553
+    23/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$61_DATA[7:0]$552
+    24/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$61_ADDR[31:0]$551
+    25/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$60_EN[7:0]$549
+    26/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$60_DATA[7:0]$548
+    27/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$60_ADDR[31:0]$547
+    28/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$59_EN[7:0]$545
+    29/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$59_DATA[7:0]$544
+    30/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$59_ADDR[31:0]$543
+    31/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$58_EN[7:0]$541
+    32/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$58_DATA[7:0]$540
+    33/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$58_ADDR[31:0]$539
+    34/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$57_EN[7:0]$537
+    35/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$57_DATA[7:0]$536
+    36/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$57_ADDR[31:0]$535
+    37/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$56_EN[7:0]$533
+    38/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$56_DATA[7:0]$532
+    39/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$56_ADDR[31:0]$531
+    40/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$55_EN[7:0]$529
+    41/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$55_DATA[7:0]$528
+    42/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$55_ADDR[31:0]$527
+    43/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$54_EN[7:0]$525
+    44/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$54_DATA[7:0]$524
+    45/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$54_ADDR[31:0]$523
+    46/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$53_EN[7:0]$521
+    47/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$53_DATA[7:0]$520
+    48/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$53_ADDR[31:0]$519
+    49/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$52_EN[7:0]$517
+    50/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$52_DATA[7:0]$516
+    51/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$52_ADDR[31:0]$515
+    52/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$51_EN[7:0]$513
+    53/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$51_DATA[7:0]$512
+    54/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$51_ADDR[31:0]$511
+    55/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$50_EN[7:0]$509
+    56/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$50_DATA[7:0]$508
+    57/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$50_ADDR[31:0]$507
+    58/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$49_EN[7:0]$505
+    59/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$49_DATA[7:0]$504
+    60/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$49_ADDR[31:0]$503
+    61/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$48_EN[7:0]$501
+    62/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$48_DATA[7:0]$500
+    63/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$48_ADDR[31:0]$499
+    64/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$47_EN[7:0]$497
+    65/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$47_DATA[7:0]$496
+    66/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$47_ADDR[31:0]$495
+    67/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$46_EN[7:0]$493
+    68/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$46_DATA[7:0]$492
+    69/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$46_ADDR[31:0]$491
+    70/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$45_EN[7:0]$489
+    71/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$45_DATA[7:0]$488
+    72/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$45_ADDR[31:0]$487
+    73/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$44_EN[7:0]$485
+    74/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$44_DATA[7:0]$484
+    75/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$44_ADDR[31:0]$483
+    76/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$43_EN[7:0]$481
+    77/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$43_DATA[7:0]$480
+    78/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$43_ADDR[31:0]$479
+    79/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$42_EN[7:0]$477
+    80/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$42_DATA[7:0]$476
+    81/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$42_ADDR[31:0]$475
+    82/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$41_EN[7:0]$473
+    83/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$41_DATA[7:0]$472
+    84/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$41_ADDR[31:0]$471
+    85/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$40_EN[7:0]$469
+    86/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$40_DATA[7:0]$468
+    87/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$40_ADDR[31:0]$467
+    88/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$39_EN[7:0]$465
+    89/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$39_DATA[7:0]$464
+    90/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$39_ADDR[31:0]$463
+    91/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$38_EN[7:0]$461
+    92/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$38_DATA[7:0]$460
+    93/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$38_ADDR[31:0]$459
+    94/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$37_EN[7:0]$457
+    95/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$37_DATA[7:0]$456
+    96/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$37_ADDR[31:0]$455
+Creating decoders for process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+     1/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$36_EN[7:0]$292
+     2/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$36_DATA[7:0]$291
+     3/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$36_ADDR[31:0]$290
+     4/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$35_EN[7:0]$288
+     5/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$35_DATA[7:0]$287
+     6/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$35_ADDR[31:0]$286
+     7/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$34_EN[7:0]$284
+     8/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$34_DATA[7:0]$283
+     9/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$34_ADDR[31:0]$282
+    10/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$33_EN[7:0]$280
+    11/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$33_DATA[7:0]$279
+    12/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$33_ADDR[31:0]$278
+    13/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$32_EN[7:0]$276
+    14/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$32_DATA[7:0]$275
+    15/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$32_ADDR[31:0]$274
+    16/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$31_EN[7:0]$272
+    17/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$31_DATA[7:0]$271
+    18/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$31_ADDR[31:0]$270
+    19/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$30_EN[7:0]$268
+    20/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$30_DATA[7:0]$267
+    21/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$30_ADDR[31:0]$266
+    22/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$29_EN[7:0]$264
+    23/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$29_DATA[7:0]$263
+    24/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$29_ADDR[31:0]$262
+    25/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$28_EN[7:0]$260
+    26/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$28_DATA[7:0]$259
+    27/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$28_ADDR[31:0]$258
+    28/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$27_EN[7:0]$256
+    29/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$27_DATA[7:0]$255
+    30/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$27_ADDR[31:0]$254
+    31/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$26_EN[7:0]$252
+    32/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$26_DATA[7:0]$251
+    33/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$26_ADDR[31:0]$250
+    34/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$25_EN[7:0]$248
+    35/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$25_DATA[7:0]$247
+    36/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$25_ADDR[31:0]$246
+    37/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$24_EN[7:0]$244
+    38/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$24_DATA[7:0]$243
+    39/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$24_ADDR[31:0]$242
+    40/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$23_EN[7:0]$240
+    41/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$23_DATA[7:0]$239
+    42/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$23_ADDR[31:0]$238
+    43/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$22_EN[7:0]$236
+    44/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$22_DATA[7:0]$235
+    45/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$22_ADDR[31:0]$234
+    46/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$21_EN[7:0]$232
+    47/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$21_DATA[7:0]$231
+    48/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$21_ADDR[31:0]$230
+    49/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$20_EN[7:0]$228
+    50/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$20_DATA[7:0]$227
+    51/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$20_ADDR[31:0]$226
+    52/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$19_EN[7:0]$224
+    53/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$19_DATA[7:0]$223
+    54/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$19_ADDR[31:0]$222
+    55/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$18_EN[7:0]$220
+    56/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$18_DATA[7:0]$219
+    57/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$18_ADDR[31:0]$218
+    58/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$17_EN[7:0]$216
+    59/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$17_DATA[7:0]$215
+    60/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$17_ADDR[31:0]$214
+    61/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$16_EN[7:0]$212
+    62/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$16_DATA[7:0]$211
+    63/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$16_ADDR[31:0]$210
+    64/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$15_EN[7:0]$208
+    65/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$15_DATA[7:0]$207
+    66/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$15_ADDR[31:0]$206
+    67/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$14_EN[7:0]$204
+    68/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$14_DATA[7:0]$203
+    69/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$14_ADDR[31:0]$202
+    70/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$13_EN[7:0]$200
+    71/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$13_DATA[7:0]$199
+    72/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$13_ADDR[31:0]$198
+    73/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$12_EN[7:0]$196
+    74/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$12_DATA[7:0]$195
+    75/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$12_ADDR[31:0]$194
+    76/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$11_EN[7:0]$192
+    77/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$11_DATA[7:0]$191
+    78/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$11_ADDR[31:0]$190
+    79/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$10_EN[7:0]$188
+    80/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$10_DATA[7:0]$187
+    81/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$10_ADDR[31:0]$186
+    82/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$9_EN[7:0]$184
+    83/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$9_DATA[7:0]$183
+    84/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$9_ADDR[31:0]$182
+    85/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$8_EN[7:0]$180
+    86/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$8_DATA[7:0]$179
+    87/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$8_ADDR[31:0]$178
+    88/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$7_EN[7:0]$176
+    89/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$7_DATA[7:0]$175
+    90/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$7_ADDR[31:0]$174
+    91/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$6_EN[7:0]$172
+    92/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$6_DATA[7:0]$171
+    93/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$6_ADDR[31:0]$170
+    94/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$5_EN[7:0]$168
+    95/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$5_DATA[7:0]$167
+    96/96: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$5_ADDR[31:0]$166
+
+3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\ram.\q1' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1223' with positive edge clock.
+Creating register for signal `\ram.\i' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1224' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$37_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1225' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$37_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1226' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$37_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1227' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$38_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1228' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$38_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1229' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$38_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1230' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$39_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1231' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$39_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1232' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$39_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1233' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$40_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1234' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$40_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1235' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$40_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1236' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$41_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1237' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$41_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1238' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$41_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1239' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$42_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1240' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$42_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1241' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$42_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1242' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$43_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1243' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$43_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1244' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$43_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1245' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$44_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1246' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$44_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1247' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$44_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1248' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$45_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1249' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$45_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1250' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$45_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1251' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$46_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1252' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$46_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1253' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$46_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1254' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$47_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1255' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$47_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1256' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$47_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1257' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$48_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1258' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$48_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1259' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$48_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1260' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$49_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1261' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$49_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1262' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$49_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1263' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$50_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1264' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$50_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1265' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$50_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1266' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$51_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1267' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$51_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1268' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$51_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1269' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$52_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1270' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$52_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1271' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$52_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1272' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$53_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1273' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$53_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1274' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$53_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1275' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$54_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1276' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$54_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1277' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$54_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1278' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$55_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1279' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$55_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1280' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$55_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1281' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$56_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1282' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$56_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1283' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$56_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1284' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$57_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1285' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$57_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1286' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$57_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1287' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$58_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1288' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$58_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1289' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$58_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1290' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$59_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1291' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$59_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1292' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$59_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1293' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$60_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1294' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$60_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1295' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$60_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1296' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$61_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1297' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$61_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1298' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$61_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1299' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$62_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1300' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$62_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1301' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$62_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1302' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$63_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1303' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$63_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1304' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$63_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1305' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$64_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1306' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$64_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1307' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$64_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1308' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$65_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1309' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$65_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1310' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$65_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1311' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$66_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1312' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$66_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1313' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$66_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1314' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$67_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1315' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$67_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1316' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$67_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1317' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$68_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1318' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$68_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1319' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:88$68_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+  created $dff cell `$procdff$1320' with positive edge clock.
+Creating register for signal `\ram.\q0' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1321' with positive edge clock.
+Creating register for signal `\ram.\i' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1322' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$5_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1323' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$5_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1324' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$5_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1325' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$6_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1326' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$6_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1327' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$6_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1328' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$7_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1329' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$7_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1330' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$7_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1331' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$8_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1332' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$8_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1333' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$8_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1334' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$9_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1335' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$9_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1336' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$9_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1337' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$10_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1338' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$10_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1339' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$10_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1340' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$11_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1341' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$11_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1342' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$11_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1343' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$12_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1344' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$12_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1345' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$12_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1346' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$13_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1347' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$13_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1348' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$13_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1349' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$14_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1350' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$14_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1351' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$14_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1352' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$15_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1353' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$15_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1354' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$15_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1355' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$16_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1356' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$16_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1357' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$16_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1358' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$17_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1359' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$17_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1360' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$17_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1361' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$18_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1362' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$18_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1363' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$18_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1364' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$19_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1365' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$19_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1366' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$19_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1367' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$20_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1368' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$20_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1369' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$20_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1370' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$21_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1371' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$21_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1372' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$21_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1373' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$22_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1374' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$22_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1375' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$22_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1376' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$23_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1377' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$23_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1378' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$23_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1379' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$24_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1380' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$24_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1381' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$24_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1382' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$25_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1383' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$25_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1384' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$25_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1385' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$26_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1386' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$26_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1387' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$26_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1388' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$27_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1389' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$27_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1390' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$27_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1391' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$28_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1392' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$28_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1393' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$28_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1394' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$29_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1395' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$29_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1396' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$29_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1397' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$30_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1398' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$30_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1399' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$30_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1400' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$31_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1401' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$31_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1402' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$31_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1403' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$32_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1404' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$32_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1405' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$32_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1406' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$33_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1407' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$33_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1408' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$33_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1409' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$34_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1410' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$34_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1411' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$34_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1412' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$35_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1413' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$35_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1414' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$35_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1415' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$36_ADDR' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1416' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$36_DATA' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1417' with positive edge clock.
+Creating register for signal `\ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:78$36_EN' using process `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+  created $dff cell `$procdff$1418' with positive edge clock.
+
+3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 32 empty switches in `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+Removing empty process `ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:85$358'.
+Found and cleaned up 32 empty switches in `\ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+Removing empty process `ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/ram.v:75$69'.
+Cleaned up 64 empty switches.
+
+3.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram.
+
+4. Executing OPT pass (performing simple optimizations).
+
+4.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram.
+<suppressed ~4 debug messages>
+
+4.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram'.
+<suppressed ~195 debug messages>
+Removed a total of 65 cells.
+
+4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ram..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~192 debug messages>
+
+4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ram.
+    Consolidated identical input bits for $mux cell $procmux$1215:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1215_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1215_Y [0]
+      New connections: $procmux$1215_Y [7:1] = { $procmux$1215_Y [0] $procmux$1215_Y [0] $procmux$1215_Y [0] $procmux$1215_Y [0] $procmux$1215_Y [0] $procmux$1215_Y [0] $procmux$1215_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1206:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1206_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1206_Y [0]
+      New connections: $procmux$1206_Y [7:1] = { $procmux$1206_Y [0] $procmux$1206_Y [0] $procmux$1206_Y [0] $procmux$1206_Y [0] $procmux$1206_Y [0] $procmux$1206_Y [0] $procmux$1206_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1197:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1197_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1197_Y [0]
+      New connections: $procmux$1197_Y [7:1] = { $procmux$1197_Y [0] $procmux$1197_Y [0] $procmux$1197_Y [0] $procmux$1197_Y [0] $procmux$1197_Y [0] $procmux$1197_Y [0] $procmux$1197_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1188:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1188_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1188_Y [0]
+      New connections: $procmux$1188_Y [7:1] = { $procmux$1188_Y [0] $procmux$1188_Y [0] $procmux$1188_Y [0] $procmux$1188_Y [0] $procmux$1188_Y [0] $procmux$1188_Y [0] $procmux$1188_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1179:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1179_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1179_Y [0]
+      New connections: $procmux$1179_Y [7:1] = { $procmux$1179_Y [0] $procmux$1179_Y [0] $procmux$1179_Y [0] $procmux$1179_Y [0] $procmux$1179_Y [0] $procmux$1179_Y [0] $procmux$1179_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1170:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1170_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1170_Y [0]
+      New connections: $procmux$1170_Y [7:1] = { $procmux$1170_Y [0] $procmux$1170_Y [0] $procmux$1170_Y [0] $procmux$1170_Y [0] $procmux$1170_Y [0] $procmux$1170_Y [0] $procmux$1170_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1161:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1161_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1161_Y [0]
+      New connections: $procmux$1161_Y [7:1] = { $procmux$1161_Y [0] $procmux$1161_Y [0] $procmux$1161_Y [0] $procmux$1161_Y [0] $procmux$1161_Y [0] $procmux$1161_Y [0] $procmux$1161_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1152:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1152_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1152_Y [0]
+      New connections: $procmux$1152_Y [7:1] = { $procmux$1152_Y [0] $procmux$1152_Y [0] $procmux$1152_Y [0] $procmux$1152_Y [0] $procmux$1152_Y [0] $procmux$1152_Y [0] $procmux$1152_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1143:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1143_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1143_Y [0]
+      New connections: $procmux$1143_Y [7:1] = { $procmux$1143_Y [0] $procmux$1143_Y [0] $procmux$1143_Y [0] $procmux$1143_Y [0] $procmux$1143_Y [0] $procmux$1143_Y [0] $procmux$1143_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1134:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1134_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1134_Y [0]
+      New connections: $procmux$1134_Y [7:1] = { $procmux$1134_Y [0] $procmux$1134_Y [0] $procmux$1134_Y [0] $procmux$1134_Y [0] $procmux$1134_Y [0] $procmux$1134_Y [0] $procmux$1134_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1125:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1125_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1125_Y [0]
+      New connections: $procmux$1125_Y [7:1] = { $procmux$1125_Y [0] $procmux$1125_Y [0] $procmux$1125_Y [0] $procmux$1125_Y [0] $procmux$1125_Y [0] $procmux$1125_Y [0] $procmux$1125_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1116:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1116_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1116_Y [0]
+      New connections: $procmux$1116_Y [7:1] = { $procmux$1116_Y [0] $procmux$1116_Y [0] $procmux$1116_Y [0] $procmux$1116_Y [0] $procmux$1116_Y [0] $procmux$1116_Y [0] $procmux$1116_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1107:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1107_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1107_Y [0]
+      New connections: $procmux$1107_Y [7:1] = { $procmux$1107_Y [0] $procmux$1107_Y [0] $procmux$1107_Y [0] $procmux$1107_Y [0] $procmux$1107_Y [0] $procmux$1107_Y [0] $procmux$1107_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1098:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1098_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1098_Y [0]
+      New connections: $procmux$1098_Y [7:1] = { $procmux$1098_Y [0] $procmux$1098_Y [0] $procmux$1098_Y [0] $procmux$1098_Y [0] $procmux$1098_Y [0] $procmux$1098_Y [0] $procmux$1098_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1089:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1089_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1089_Y [0]
+      New connections: $procmux$1089_Y [7:1] = { $procmux$1089_Y [0] $procmux$1089_Y [0] $procmux$1089_Y [0] $procmux$1089_Y [0] $procmux$1089_Y [0] $procmux$1089_Y [0] $procmux$1089_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1080:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1080_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1080_Y [0]
+      New connections: $procmux$1080_Y [7:1] = { $procmux$1080_Y [0] $procmux$1080_Y [0] $procmux$1080_Y [0] $procmux$1080_Y [0] $procmux$1080_Y [0] $procmux$1080_Y [0] $procmux$1080_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1071:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1071_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1071_Y [0]
+      New connections: $procmux$1071_Y [7:1] = { $procmux$1071_Y [0] $procmux$1071_Y [0] $procmux$1071_Y [0] $procmux$1071_Y [0] $procmux$1071_Y [0] $procmux$1071_Y [0] $procmux$1071_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1062:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1062_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1062_Y [0]
+      New connections: $procmux$1062_Y [7:1] = { $procmux$1062_Y [0] $procmux$1062_Y [0] $procmux$1062_Y [0] $procmux$1062_Y [0] $procmux$1062_Y [0] $procmux$1062_Y [0] $procmux$1062_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1053:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1053_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1053_Y [0]
+      New connections: $procmux$1053_Y [7:1] = { $procmux$1053_Y [0] $procmux$1053_Y [0] $procmux$1053_Y [0] $procmux$1053_Y [0] $procmux$1053_Y [0] $procmux$1053_Y [0] $procmux$1053_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1044:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1044_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1044_Y [0]
+      New connections: $procmux$1044_Y [7:1] = { $procmux$1044_Y [0] $procmux$1044_Y [0] $procmux$1044_Y [0] $procmux$1044_Y [0] $procmux$1044_Y [0] $procmux$1044_Y [0] $procmux$1044_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1035:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1035_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1035_Y [0]
+      New connections: $procmux$1035_Y [7:1] = { $procmux$1035_Y [0] $procmux$1035_Y [0] $procmux$1035_Y [0] $procmux$1035_Y [0] $procmux$1035_Y [0] $procmux$1035_Y [0] $procmux$1035_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1026:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1026_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1026_Y [0]
+      New connections: $procmux$1026_Y [7:1] = { $procmux$1026_Y [0] $procmux$1026_Y [0] $procmux$1026_Y [0] $procmux$1026_Y [0] $procmux$1026_Y [0] $procmux$1026_Y [0] $procmux$1026_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1017:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1017_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1017_Y [0]
+      New connections: $procmux$1017_Y [7:1] = { $procmux$1017_Y [0] $procmux$1017_Y [0] $procmux$1017_Y [0] $procmux$1017_Y [0] $procmux$1017_Y [0] $procmux$1017_Y [0] $procmux$1017_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$1008:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$1008_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$1008_Y [0]
+      New connections: $procmux$1008_Y [7:1] = { $procmux$1008_Y [0] $procmux$1008_Y [0] $procmux$1008_Y [0] $procmux$1008_Y [0] $procmux$1008_Y [0] $procmux$1008_Y [0] $procmux$1008_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$999:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$999_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$999_Y [0]
+      New connections: $procmux$999_Y [7:1] = { $procmux$999_Y [0] $procmux$999_Y [0] $procmux$999_Y [0] $procmux$999_Y [0] $procmux$999_Y [0] $procmux$999_Y [0] $procmux$999_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$990:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$990_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$990_Y [0]
+      New connections: $procmux$990_Y [7:1] = { $procmux$990_Y [0] $procmux$990_Y [0] $procmux$990_Y [0] $procmux$990_Y [0] $procmux$990_Y [0] $procmux$990_Y [0] $procmux$990_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$981:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$981_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$981_Y [0]
+      New connections: $procmux$981_Y [7:1] = { $procmux$981_Y [0] $procmux$981_Y [0] $procmux$981_Y [0] $procmux$981_Y [0] $procmux$981_Y [0] $procmux$981_Y [0] $procmux$981_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$972:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$972_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$972_Y [0]
+      New connections: $procmux$972_Y [7:1] = { $procmux$972_Y [0] $procmux$972_Y [0] $procmux$972_Y [0] $procmux$972_Y [0] $procmux$972_Y [0] $procmux$972_Y [0] $procmux$972_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$963:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$963_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$963_Y [0]
+      New connections: $procmux$963_Y [7:1] = { $procmux$963_Y [0] $procmux$963_Y [0] $procmux$963_Y [0] $procmux$963_Y [0] $procmux$963_Y [0] $procmux$963_Y [0] $procmux$963_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$954:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$954_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$954_Y [0]
+      New connections: $procmux$954_Y [7:1] = { $procmux$954_Y [0] $procmux$954_Y [0] $procmux$954_Y [0] $procmux$954_Y [0] $procmux$954_Y [0] $procmux$954_Y [0] $procmux$954_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$945:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$945_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$945_Y [0]
+      New connections: $procmux$945_Y [7:1] = { $procmux$945_Y [0] $procmux$945_Y [0] $procmux$945_Y [0] $procmux$945_Y [0] $procmux$945_Y [0] $procmux$945_Y [0] $procmux$945_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$936:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$936_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$936_Y [0]
+      New connections: $procmux$936_Y [7:1] = { $procmux$936_Y [0] $procmux$936_Y [0] $procmux$936_Y [0] $procmux$936_Y [0] $procmux$936_Y [0] $procmux$936_Y [0] $procmux$936_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$927:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$927_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$927_Y [0]
+      New connections: $procmux$927_Y [7:1] = { $procmux$927_Y [0] $procmux$927_Y [0] $procmux$927_Y [0] $procmux$927_Y [0] $procmux$927_Y [0] $procmux$927_Y [0] $procmux$927_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$918:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$918_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$918_Y [0]
+      New connections: $procmux$918_Y [7:1] = { $procmux$918_Y [0] $procmux$918_Y [0] $procmux$918_Y [0] $procmux$918_Y [0] $procmux$918_Y [0] $procmux$918_Y [0] $procmux$918_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$909:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$909_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$909_Y [0]
+      New connections: $procmux$909_Y [7:1] = { $procmux$909_Y [0] $procmux$909_Y [0] $procmux$909_Y [0] $procmux$909_Y [0] $procmux$909_Y [0] $procmux$909_Y [0] $procmux$909_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$900:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$900_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$900_Y [0]
+      New connections: $procmux$900_Y [7:1] = { $procmux$900_Y [0] $procmux$900_Y [0] $procmux$900_Y [0] $procmux$900_Y [0] $procmux$900_Y [0] $procmux$900_Y [0] $procmux$900_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$891:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$891_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$891_Y [0]
+      New connections: $procmux$891_Y [7:1] = { $procmux$891_Y [0] $procmux$891_Y [0] $procmux$891_Y [0] $procmux$891_Y [0] $procmux$891_Y [0] $procmux$891_Y [0] $procmux$891_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$882:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$882_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$882_Y [0]
+      New connections: $procmux$882_Y [7:1] = { $procmux$882_Y [0] $procmux$882_Y [0] $procmux$882_Y [0] $procmux$882_Y [0] $procmux$882_Y [0] $procmux$882_Y [0] $procmux$882_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$873:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$873_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$873_Y [0]
+      New connections: $procmux$873_Y [7:1] = { $procmux$873_Y [0] $procmux$873_Y [0] $procmux$873_Y [0] $procmux$873_Y [0] $procmux$873_Y [0] $procmux$873_Y [0] $procmux$873_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$864:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$864_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$864_Y [0]
+      New connections: $procmux$864_Y [7:1] = { $procmux$864_Y [0] $procmux$864_Y [0] $procmux$864_Y [0] $procmux$864_Y [0] $procmux$864_Y [0] $procmux$864_Y [0] $procmux$864_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$855:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$855_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$855_Y [0]
+      New connections: $procmux$855_Y [7:1] = { $procmux$855_Y [0] $procmux$855_Y [0] $procmux$855_Y [0] $procmux$855_Y [0] $procmux$855_Y [0] $procmux$855_Y [0] $procmux$855_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$846:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$846_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$846_Y [0]
+      New connections: $procmux$846_Y [7:1] = { $procmux$846_Y [0] $procmux$846_Y [0] $procmux$846_Y [0] $procmux$846_Y [0] $procmux$846_Y [0] $procmux$846_Y [0] $procmux$846_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$837:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$837_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$837_Y [0]
+      New connections: $procmux$837_Y [7:1] = { $procmux$837_Y [0] $procmux$837_Y [0] $procmux$837_Y [0] $procmux$837_Y [0] $procmux$837_Y [0] $procmux$837_Y [0] $procmux$837_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$828:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$828_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$828_Y [0]
+      New connections: $procmux$828_Y [7:1] = { $procmux$828_Y [0] $procmux$828_Y [0] $procmux$828_Y [0] $procmux$828_Y [0] $procmux$828_Y [0] $procmux$828_Y [0] $procmux$828_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$819:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$819_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$819_Y [0]
+      New connections: $procmux$819_Y [7:1] = { $procmux$819_Y [0] $procmux$819_Y [0] $procmux$819_Y [0] $procmux$819_Y [0] $procmux$819_Y [0] $procmux$819_Y [0] $procmux$819_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$810:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$810_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$810_Y [0]
+      New connections: $procmux$810_Y [7:1] = { $procmux$810_Y [0] $procmux$810_Y [0] $procmux$810_Y [0] $procmux$810_Y [0] $procmux$810_Y [0] $procmux$810_Y [0] $procmux$810_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$801:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$801_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$801_Y [0]
+      New connections: $procmux$801_Y [7:1] = { $procmux$801_Y [0] $procmux$801_Y [0] $procmux$801_Y [0] $procmux$801_Y [0] $procmux$801_Y [0] $procmux$801_Y [0] $procmux$801_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$792:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$792_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$792_Y [0]
+      New connections: $procmux$792_Y [7:1] = { $procmux$792_Y [0] $procmux$792_Y [0] $procmux$792_Y [0] $procmux$792_Y [0] $procmux$792_Y [0] $procmux$792_Y [0] $procmux$792_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$783:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$783_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$783_Y [0]
+      New connections: $procmux$783_Y [7:1] = { $procmux$783_Y [0] $procmux$783_Y [0] $procmux$783_Y [0] $procmux$783_Y [0] $procmux$783_Y [0] $procmux$783_Y [0] $procmux$783_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$774:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$774_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$774_Y [0]
+      New connections: $procmux$774_Y [7:1] = { $procmux$774_Y [0] $procmux$774_Y [0] $procmux$774_Y [0] $procmux$774_Y [0] $procmux$774_Y [0] $procmux$774_Y [0] $procmux$774_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$765:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$765_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$765_Y [0]
+      New connections: $procmux$765_Y [7:1] = { $procmux$765_Y [0] $procmux$765_Y [0] $procmux$765_Y [0] $procmux$765_Y [0] $procmux$765_Y [0] $procmux$765_Y [0] $procmux$765_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$756:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$756_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$756_Y [0]
+      New connections: $procmux$756_Y [7:1] = { $procmux$756_Y [0] $procmux$756_Y [0] $procmux$756_Y [0] $procmux$756_Y [0] $procmux$756_Y [0] $procmux$756_Y [0] $procmux$756_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$747:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$747_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$747_Y [0]
+      New connections: $procmux$747_Y [7:1] = { $procmux$747_Y [0] $procmux$747_Y [0] $procmux$747_Y [0] $procmux$747_Y [0] $procmux$747_Y [0] $procmux$747_Y [0] $procmux$747_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$738:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$738_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$738_Y [0]
+      New connections: $procmux$738_Y [7:1] = { $procmux$738_Y [0] $procmux$738_Y [0] $procmux$738_Y [0] $procmux$738_Y [0] $procmux$738_Y [0] $procmux$738_Y [0] $procmux$738_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$729:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$729_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$729_Y [0]
+      New connections: $procmux$729_Y [7:1] = { $procmux$729_Y [0] $procmux$729_Y [0] $procmux$729_Y [0] $procmux$729_Y [0] $procmux$729_Y [0] $procmux$729_Y [0] $procmux$729_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$720:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$720_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$720_Y [0]
+      New connections: $procmux$720_Y [7:1] = { $procmux$720_Y [0] $procmux$720_Y [0] $procmux$720_Y [0] $procmux$720_Y [0] $procmux$720_Y [0] $procmux$720_Y [0] $procmux$720_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$711:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$711_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$711_Y [0]
+      New connections: $procmux$711_Y [7:1] = { $procmux$711_Y [0] $procmux$711_Y [0] $procmux$711_Y [0] $procmux$711_Y [0] $procmux$711_Y [0] $procmux$711_Y [0] $procmux$711_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$702:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$702_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$702_Y [0]
+      New connections: $procmux$702_Y [7:1] = { $procmux$702_Y [0] $procmux$702_Y [0] $procmux$702_Y [0] $procmux$702_Y [0] $procmux$702_Y [0] $procmux$702_Y [0] $procmux$702_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$693:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$693_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$693_Y [0]
+      New connections: $procmux$693_Y [7:1] = { $procmux$693_Y [0] $procmux$693_Y [0] $procmux$693_Y [0] $procmux$693_Y [0] $procmux$693_Y [0] $procmux$693_Y [0] $procmux$693_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$684:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$684_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$684_Y [0]
+      New connections: $procmux$684_Y [7:1] = { $procmux$684_Y [0] $procmux$684_Y [0] $procmux$684_Y [0] $procmux$684_Y [0] $procmux$684_Y [0] $procmux$684_Y [0] $procmux$684_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$675:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$675_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$675_Y [0]
+      New connections: $procmux$675_Y [7:1] = { $procmux$675_Y [0] $procmux$675_Y [0] $procmux$675_Y [0] $procmux$675_Y [0] $procmux$675_Y [0] $procmux$675_Y [0] $procmux$675_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$666:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$666_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$666_Y [0]
+      New connections: $procmux$666_Y [7:1] = { $procmux$666_Y [0] $procmux$666_Y [0] $procmux$666_Y [0] $procmux$666_Y [0] $procmux$666_Y [0] $procmux$666_Y [0] $procmux$666_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$657:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$657_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$657_Y [0]
+      New connections: $procmux$657_Y [7:1] = { $procmux$657_Y [0] $procmux$657_Y [0] $procmux$657_Y [0] $procmux$657_Y [0] $procmux$657_Y [0] $procmux$657_Y [0] $procmux$657_Y [0] }
+    Consolidated identical input bits for $mux cell $procmux$648:
+      Old ports: A=8'00000000, B=8'11111111, Y=$procmux$648_Y
+      New ports: A=1'0, B=1'1, Y=$procmux$648_Y [0]
+      New connections: $procmux$648_Y [7:1] = { $procmux$648_Y [0] $procmux$648_Y [0] $procmux$648_Y [0] $procmux$648_Y [0] $procmux$648_Y [0] $procmux$648_Y [0] $procmux$648_Y [0] }
+  Optimizing cells in module \ram.
+Performed a total of 64 changes.
+
+4.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram'.
+Removed a total of 0 cells.
+
+4.6. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 0 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 1 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 2 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 3 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 4 on $procdff$1322 ($dff) from module ram.
+Setting constant 1-bit at position 5 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 6 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 7 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 8 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 9 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 10 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 11 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 12 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 13 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 14 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 15 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 16 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 17 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 18 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 19 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 20 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 21 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 22 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 23 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 24 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 25 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 26 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 27 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 28 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 29 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 30 on $procdff$1322 ($dff) from module ram.
+Setting constant 0-bit at position 31 on $procdff$1322 ($dff) from module ram.
+
+4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram..
+Removed 192 unused cells and 900 unused wires.
+<suppressed ~195 debug messages>
+
+4.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram.
+
+4.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \ram..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~192 debug messages>
+
+4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \ram.
+Performed a total of 0 changes.
+
+4.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\ram'.
+Removed a total of 0 cells.
+
+4.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \ram..
+
+4.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ram.
+
+4.16. Finished OPT passes. (There is nothing left to do.)
+
+5. Printing statistics.
+
+=== ram ===
+
+   Number of wires:                266
+   Number of wire bits:           6709
+   Number of public wires:          10
+   Number of public wire bits:    1141
+   Number of memories:               1
+   Number of memory bits:         8192
+   Number of processes:              0
+   Number of cells:                384
+     $add                           62
+     $dff                            2
+     $memrd                         64
+     $memwr_v2                      64
+     $mux                          192
+
+End of script. Logfile hash: e6f775659d, CPU: user 0.35s system 0.01s, MEM: 21.34 MB peak
+Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+Time spent: 21% 4x opt_expr (0 sec), 21% 2x read_verilog (0 sec), ...

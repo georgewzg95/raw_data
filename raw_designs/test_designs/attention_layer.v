@@ -31,8 +31,8 @@
 //////////////////////////////////////////////////////////////////////////////
 
 `ifdef BFLOAT16
-`define EXPONENT 8
-`define MANTISSA 7
+//`define EXPONENT 8
+//`define MANTISSA 7
 `else // for ieee half precision fp16
 `define EXPONENT 5
 `define MANTISSA 10
