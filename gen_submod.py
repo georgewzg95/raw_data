@@ -167,7 +167,7 @@ class gen_submod():
                           type = str,
                           help = "ABSOLUTE path for yosys")
     parser.add_argument('--second_phase', dest='second_phase', action='store_true')
-    parser.add_argument('-s', dst='second_phase', action='store_true')
+    parser.add_argument('-s', dest='second_phase', action='store_true')
     parser.set_default(second_phase=False)
 
     args = parser.parse_args()
