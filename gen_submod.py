@@ -69,13 +69,15 @@ class gen_submod():
     print("t_mod_path is " + t_mod_path)
     for line in fin:
       # find the target module
-      x = line.split()
-      if x[0] == "module":
-        k = x[1].split('(')
-        if k == t_mod.value:
-          start_parse = True
-          fout.write(line)
-          continue
+      if line.find("module") >= 0:
+        x = line.split()
+        if x[0] == "module":
+          k = x[1].split('(')
+          print("taget module found: " + k)
+          if k == t_mod.value:
+            start_parse = True
+            fout.write(line)
+            continue
 
       #start to copy
       if start_parse == True:
