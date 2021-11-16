@@ -48,10 +48,25 @@ class gen_submod():
           if len(second_dict) == 0:
             continue
 
+          target_module_path = subdir + os.sep + filename[:-4]
+          if self.skip_gen(target_module_path) == True:
+            continue
+          
           for miss_module in second_dict:
             miss_module_path = subdir + os.sep + miss_module + ".v"
-            target_module_path = subdir + os.sep + filename[:-4]
             self.append_second_phase(miss_module_path, target_module_path)
+
+  def skip_gen(self, target_module_path):
+    f = open(target_module_path, "a+")
+    for line in fout:
+      for line in fout:
+      if line.find('//[second_phase_finishes]') >= 0:
+        f.close()
+        return True
+
+    f.write('//[second_phase_finishes]')
+    f.close()
+    return False
 
   def append_second_phase(self, miss_module_path, target_module_path):
     try:
@@ -61,13 +76,6 @@ class gen_submod():
       return
 
     fout = open(target_module_path, "a+")
-    for line in fout:
-      if line.find('//[second_phase_finishes]') >= 0:
-        fin.close()
-        fout.close()
-        return
-    
-    fout.write('//[second_phase_finishes]')
     for line in fin:
       #skip the macros
       if line.find('`define') >= 0:
