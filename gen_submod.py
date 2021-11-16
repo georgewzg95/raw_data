@@ -17,6 +17,7 @@ class gen_submod():
     self.hier_filepath = None
     self.subdir = None
     self.filename = None
+    self.second_phase = None
 
     #filepath to the verilog file
     self.filepath = None
@@ -27,8 +28,55 @@ class gen_submod():
     #path to the directory containing hierarchy file
     self.hier_dir = None
     self.dict = defaultdict(list)
+    self.second_dict = []
     self.parse_arges()
-    self.iteration_main()
+
+    if self.second_phase == False:
+      self.iteration_main()
+    else:
+      self.iteration_second()
+
+  def iteration_second(self):
+    #check the hierarchy in .out files
+    for subdir, dirs, files in os.walk(self.start_path):
+      if subdir.endswith("submodules") == False:
+        continue
+      for filename in files:
+        if filename.endswith(".out"):
+          self.check_second_phase(subdir + os.sep + filename)
+
+  def check_second_phase(filename):
+    self.second_dict = []
+    fin = open(filename, "rt")
+    hier_exs = False
+    fin.seek(0, 0)
+    st = False
+    for line in fin:
+      if line.find("design hierarchy") >= 0:
+        hier_exs = True
+      if hier_exs and line.find("Number of cells") >= 0:
+        st = True
+        continue
+      if st == True:
+        if line.find("$") < 0 and line.rstrip():
+          token = line.split()
+          self.second_dict.append(token[0])
+
+    fin.seek(0, 0)
+    st = False
+    if hier_exs == False:
+      if line.find("Number of cells") >= 0:
+        st = True
+        continue
+      if st ==  True:
+        if line.find("$") < 0 and line.rstrip():
+          token = line.split()
+          self.second_dict.append(token[0])
+
+    print(filename)
+    print(self.second_dict)
+
+
 
   def iteration_main(self):
     for subdir, dirs, files in os.walk(self.start_path):
@@ -117,6 +165,11 @@ class gen_submod():
                           default = "/home/zhigang/FeatEx/",
                           type = str,
                           help = "ABSOLUTE path for yosys")
+    parser.add_argument(  "-s",
+                          "--second_phase",
+                          default = False
+                          type = bool,
+                          help = "to run the second phase generation")
 
     args = parser.parse_args()
     if args.directory.startswith("/"):
@@ -125,6 +178,7 @@ class gen_submod():
       self.start_path = os.getcwd() + os.sep + args.directory
 
     self.yosys_path = args.yosys_path
+    self.second_phase = args.second_phase
 
   def gen_ys(self):
     fin = open("template_submod.ys", "rt")
