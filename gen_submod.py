@@ -165,11 +165,9 @@ class gen_submod():
                           default = "/home/zhigang/FeatEx/",
                           type = str,
                           help = "ABSOLUTE path for yosys")
-    parser.add_argument(  "-s",
-                          "--second_phase",
-                          default = False
-                          type = bool,
-                          help = "to run the second phase generation")
+    parser.add_argument('--second_phase', dest='second_phase', action='store_true')
+    parser.add_argument('-s', dst='second_phase', action='store_true')
+    parser.set_default(second_phase=False)
 
     args = parser.parse_args()
     if args.directory.startswith("/"):
