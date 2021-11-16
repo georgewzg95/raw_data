@@ -39,7 +39,8 @@ class gen_submod():
           self.filename = filename
           self.filepath = subdir + os.sep + filename
           self.gen_ys()
-          self.create_hier()
+          if self.create_hier() == True:
+            continue
           self.read_hier()
           self.write_submod()
 
@@ -58,21 +59,19 @@ class gen_submod():
       os.system("cat " + module_path + " >> " + t_mod_path)
 
   def generate(self, t_mod):
-    print("generating........")
     fin = open(self.filepath, "rt")
     t_mod_path = self.hier_dir + os.sep + t_mod.value + ".v"
     if os.path.exists(t_mod_path) == True:
       os.system("rm " + t_mod_path)
     fout = open(t_mod_path, "wt")
     start_parse = False
-    
+
     for line in fin:
       # find the target module
       if line.find("module") >= 0:
         x = line.split()
         if x[0] == "module":
           k = x[1].split('(')
-          print("taget module found: " + k[0])
           if k[0] == t_mod.value:
             start_parse = True
             fout.write(line)
@@ -128,11 +127,13 @@ class gen_submod():
 
     if os.path.exists(self.hier_filepath) == False:
       os.system(self.yosys_path + 'yosys -q -l ' + self.hier_filepath + ' out.ys')
+    else:
+      print("hierarchy file already exists, skip the generation: " + self.hier_filepath)
+      return True
 
-    #print(self.filename[:-2] + " hierarchy files creation finished")
+    return False
 
   def read_hier(self):
-    #print("reading hierarchy file " + self.hier_filepath)
     #clean the hierarchy first
     self.dict = defaultdict(list)
 
