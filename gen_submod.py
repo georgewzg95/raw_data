@@ -64,14 +64,15 @@ class gen_submod():
 
     fin.seek(0, 0)
     st = False
-    if hier_exs == False:
-      if line.find("Number of cells") >= 0:
-        st = True
-        continue
-      if st ==  True:
-        if line.find("$") < 0 and line.rstrip():
-          token = line.split()
-          self.second_dict.append(token[0])
+    for line in fin:
+      if hier_exs == False:
+        if line.find("Number of cells") >= 0:
+          st = True
+          continue
+        if st ==  True:
+          if line.find("$") < 0 and line.rstrip():
+            token = line.split()
+            self.second_dict.append(token[0])
 
     print(filename)
     print(self.second_dict)
