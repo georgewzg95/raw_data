@@ -44,6 +44,7 @@ class gen_submod():
           self.write_submod()
 
   def write_submod(self):
+    print("writing submod.........")
     for i in range(len(self.dict) - 1, 0):
       for t_mod in len(self.dict[i]):
         self.generate(t_mod)
@@ -126,7 +127,7 @@ class gen_submod():
 
     if os.path.exists(self.hier_filepath) == False:
       os.system(self.yosys_path + 'yosys -q -l ' + self.hier_filepath + ' out.ys')
-      
+
     #print(self.filename[:-2] + " hierarchy files creation finished")
 
   def read_hier(self):
