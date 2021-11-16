@@ -45,7 +45,7 @@ class gen_submod():
         if filename.endswith(".out"):
           self.check_second_phase(subdir + os.sep + filename)
 
-  def check_second_phase(filename):
+  def check_second_phase(self, filename):
     self.second_dict = []
     fin = open(filename, "rt")
     hier_exs = False
