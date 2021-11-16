@@ -35,12 +35,14 @@ class gen_submod():
     for subdir, dirs, files in os.walk(self.start_path):
       for filename in files:
         if filename.endswith(".v"):
+          if subdir.endswith("submodules"):
+            print("submodules already exsits, skip the generation: " + subdir)
+            continue
           self.subdir = subdir
           self.filename = filename
           self.filepath = subdir + os.sep + filename
           self.gen_ys()
-          if self.create_hier() == True:
-            continue
+          self.create_hier()
           self.read_hier()
           self.write_submod()
 
@@ -127,11 +129,6 @@ class gen_submod():
 
     if os.path.exists(self.hier_filepath) == False:
       os.system(self.yosys_path + 'yosys -q -l ' + self.hier_filepath + ' out.ys')
-    else:
-      print("hierarchy file already exists, skip the generation: " + self.hier_filepath)
-      return True
-
-    return False
 
   def read_hier(self):
     #clean the hierarchy first
