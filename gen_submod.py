@@ -59,6 +59,7 @@ class gen_submod():
       os.system("cat " + module_path + " >> " + t_mod_path)
 
   def generate(self, t_mod):
+    print("generating........")
     fin = open(self.filepath, "rt")
     t_mod_path = self.hier_dir + os.sep + t_mod.value + ".v"
     if os.path.exists(t_mod_path) == True:
