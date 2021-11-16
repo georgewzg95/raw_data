@@ -53,7 +53,12 @@ class gen_submod():
             self.append_second_phase(miss_module_path, target_module_path)
 
   def append_second_phase(self, miss_module_path, target_module_path):
-    fin = open(miss_module_path, "rt")
+    try:
+      fin = open(miss_module_path, "rt")
+    except OSError as error:
+      print(error)
+      return
+    
     fout = open(target_module_path, "a+")
     for line in fout:
       if line.find('//[second_phase_finishes]') >= 0:
