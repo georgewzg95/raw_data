@@ -57,3 +57,58 @@ module mode2_sub(
 //  DW_fp_sub #(`MANTISSA, `EXPONENT, `IEEE_COMPLIANCE) sub2(.a(a_inp2), .b(b_inp), .z(outp2), .rnd(3'b000), .status());
 //  DW_fp_sub #(`MANTISSA, `EXPONENT, `IEEE_COMPLIANCE) sub3(.a(a_inp3), .b(b_inp), .z(outp3), .rnd(3'b000), .status());
 endmodule
+//[second_phase_finishes]
+module fixed_point_addsub(
+		clk,
+		rst,
+		a,
+		b,
+		operation,			// 0 add, 1 sub
+		result,
+		flags
+	);
+	
+	// Clock and reset
+	input clk ;										// Clock signal
+	input rst ;										// Reset (active high, resets pipeline registers)
+	
+	// Input ports
+  input [`DATAWIDTH-1:0] a ;								// Input A, a 32-bit floating point number
+  input [`DATAWIDTH-1:0] b ;								// Input B, a 32-bit floating point number
+	input operation ;								// Operation select signal
+	
+	// Output ports
+  output reg [`DATAWIDTH-1:0] result ;						// Result of the operation
+	output [4:0] flags ;							// Flags indicating exceptions according to IEEE754
+	
+  reg [`DATAWIDTH:0] result_t ;
+  wire [`DATAWIDTH-1:0] b_t ;
+	
+	assign b_t = ~b + 1;
+	
+	always@(*) begin
+      if (operation == 1'b0) begin
+			result_t = a + b;
+		end
+		else begin
+			result_t = a + b_t;
+		end
+	end
+
+	
+	always @ (*) begin	
+		if (result_t[16] == 1'b1 && operation == 1'b0) begin
+			result = 16'h7000;
+		end
+		else if (result_t[16] == 1'b1 && operation == 1'b1) begin
+			result = 16'h8000;
+		end
+		else begin
+			result = result_t[15:0];
+		end
+	end
+	// Pipeline Registers
+	//reg [79:0] pipe_1;							// Pipeline register PreAlign->Align1
+	
+	
+endmodule

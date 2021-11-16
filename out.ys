@@ -1,2 +1,5 @@
-read_verilog -sv /home/zhigang/DATA/raw_designs/test_designs/always02.v;
+read_verilog -sv /home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision0_submodules/find_max.v;
 hierarchy -auto-top;
+proc; 
+opt;
+tee -o /home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision0_submodules/find_max.v.out stat;
