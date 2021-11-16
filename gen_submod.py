@@ -73,8 +73,8 @@ class gen_submod():
         x = line.split()
         if x[0] == "module":
           k = x[1].split('(')
-          print("taget module found: " + k)
-          if k == t_mod.value:
+          print("taget module found: " + k[0])
+          if k[0] == t_mod.value:
             start_parse = True
             fout.write(line)
             continue
