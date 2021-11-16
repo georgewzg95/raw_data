@@ -41,7 +41,6 @@ class gen_submod():
     for subdir, dirs, files in os.walk(self.start_path):
       if subdir.endswith("submodules") == False:
         continue
-      print(subdir)
       for filename in files:
         if filename.endswith(".out"):
           second_dict = self.check_second_phase(subdir + os.sep + filename)
@@ -51,7 +50,7 @@ class gen_submod():
           target_module_path = subdir + os.sep + filename[:-4]
           if self.skip_gen(target_module_path) == True:
             continue
-          
+
           for miss_module in second_dict:
             miss_module_path = subdir + os.sep + miss_module + ".v"
             self.append_second_phase(miss_module_path, target_module_path)
