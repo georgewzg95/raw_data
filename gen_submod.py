@@ -64,6 +64,8 @@ class gen_submod():
       os.system("rm " + t_mod_path)
     fout = open(t_mod_path, "wt")
     start_parse = False
+    print("filepath is " + self.filepath)
+    print("t_mod_path is " + t_mod_path)
     for line in fin:
       # find the target module
       x = line.split()
@@ -120,14 +122,14 @@ class gen_submod():
     try:
       os.mkdir(dir_path)
     except OSError as error:
-      print(error)
+      #print(error)
 
     if os.path.exists(self.hier_filepath) == False:
       os.system(self.yosys_path + 'yosys -q -l ' + self.hier_filepath + ' out.ys')
     print(self.filename[:-2] + " hierarchy files creation finished")
 
   def read_hier(self):
-    print("reading hierarchy file " + self.hier_filepath)
+    #print("reading hierarchy file " + self.hier_filepath)
     #clean the hierarchy first
     self.dict = defaultdict(list)
 
