@@ -33,11 +33,11 @@ class gen_submod():
 
   def iteration_main(self):
     for subdir, dirs, files in os.walk(self.start_path):
+      if subdir.endswith("submodules"):
+        print("submodules already exsits, skip the generation: " + subdir)
+        continue
       for filename in files:
         if filename.endswith(".v"):
-          if subdir.endswith("submodules"):
-            print("submodules already exsits, skip the generation: " + subdir)
-            continue
           self.subdir = subdir
           self.filename = filename
           self.filepath = subdir + os.sep + filename
