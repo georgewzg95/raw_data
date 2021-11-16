@@ -65,8 +65,7 @@ class gen_submod():
       os.system("rm " + t_mod_path)
     fout = open(t_mod_path, "wt")
     start_parse = False
-    print("filepath is " + self.filepath)
-    print("t_mod_path is " + t_mod_path)
+    
     for line in fin:
       # find the target module
       if line.find("module") >= 0:
