@@ -1,6 +1,7 @@
 import os
 import csv
 import argparse
+import re
 from collections import defaultdict
 
 class tree_node():
@@ -16,9 +17,16 @@ class gen_submod():
     self.hier_filepath = None
     self.subdir = None
     self.filename = None
+
+    #filepath to the verilog file
     self.filepath = None
+
+    #filepath to the hierarchy file
     self.hier_filepath = None
+
+    #path to the directory containing hierarchy file
     self.hier_dir = None
+
     self.dict = defaultdict(list)
     self.parse_arges()
     self.iteration_main()
@@ -33,6 +41,46 @@ class gen_submod():
           self.gen_ys()
           self.create_hier()
           self.read_hier()
+          self.write_submod()
+
+  def write_submod(self):
+    for i in range(len(self.dict) - 1, -1, 0):
+      for t_mod in len(self.dict[i]):
+        self.generate(t_mod)
+        self.append_mod(t_mod)
+
+  def append_mod(self, t_mod):
+    if t_mod.children == None:
+      return
+    t_mod_path = self.hier_dir + os.sep + t_mod.value + ".v"
+    for module in t_mod.children:
+      module_path = self.hier_dir + os.sep + module.value + ".v"
+      os.system("cat " + module_path + " >> " + t_mod_path)
+
+  def generate(self, t_mod):
+    fin = open(self.filepath, "rt")
+    t_mod_path = self.hier_dir + os.sep + t_mod.value + ".v"
+    if os.path.exists(t_mod_path) == True:
+      os.system("rm " + t_mod_path)
+    fout = open(t_mod_path, "wt")
+    start_parse = False
+    for line in fin:
+      # find the target module
+      x = line.split()
+      if x[0] == "module":
+        k = x[1].split('(')
+        if k == t_mod.value:
+          start_parse = True
+          fout.write(line)
+          continue
+
+      #start to copy
+      if start_parse == True:
+        fout.write(line)
+        if line.split()[0] == "endmodule":
+          break
+    fin.close()
+    fout.close()
 
   def parse_arges(self):
     parser = argparse.ArgumentParser()
@@ -80,7 +128,9 @@ class gen_submod():
 
   def read_hier(self):
     print("reading hierarchy file " + self.hier_filepath)
+    #clean the hierarchy first
     self.dict = defaultdict(list)
+
     start_parse = False
     last_node = None
     fin = open(self.hier_filepath, "rt")
@@ -115,14 +165,14 @@ class gen_submod():
         last_node.children.append(cur_node)
     fin.close()
 
-    for i in range(len(self.dict)):
-      for modules in self.dict[i]:
-        print("the level is", str(i), modules.value, sep = " ")
-        print("children is:")
-        if modules.children != None:
-          for children in modules.children:
-            print(children.value, end=",")
-        print("")
+    # for i in range(len(self.dict)):
+    #   for modules in self.dict[i]:
+    #     print("the level is", str(i), modules.value, sep = " ")
+    #     print("children is:")
+    #     if modules.children != None:
+    #       for children in modules.children:
+    #         print(children.value, end=",")
+    #     print("")
 
 
 if __name__ == "__main__":
