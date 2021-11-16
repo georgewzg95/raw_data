@@ -126,7 +126,8 @@ class gen_submod():
 
     if os.path.exists(self.hier_filepath) == False:
       os.system(self.yosys_path + 'yosys -q -l ' + self.hier_filepath + ' out.ys')
-    print(self.filename[:-2] + " hierarchy files creation finished")
+      
+    #print(self.filename[:-2] + " hierarchy files creation finished")
 
   def read_hier(self):
     #print("reading hierarchy file " + self.hier_filepath)
