@@ -44,7 +44,7 @@ class gen_submod():
       for filename in files:
         if filename.endswith(".out"):
           second_dict = self.check_second_phase(subdir + os.sep + filename)
-          if len(self.second_dict) == 0:
+          if len(second_dict) == 0:
             continue
 
           for miss_module in second_dict:
