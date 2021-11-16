@@ -59,7 +59,7 @@ class gen_submod():
       if line.find("`define") >= 0:
         self.macro += line
 
-    print(macro)
+    print(self.macro)
 
 
   def write_submod(self):
