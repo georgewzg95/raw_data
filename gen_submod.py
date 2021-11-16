@@ -44,7 +44,7 @@ class gen_submod():
           self.write_submod()
 
   def write_submod(self):
-    for i in range(len(self.dict) - 1, -1, 0):
+    for i in range(len(self.dict) - 1, 0):
       for t_mod in len(self.dict[i]):
         self.generate(t_mod)
         self.append_mod(t_mod)
