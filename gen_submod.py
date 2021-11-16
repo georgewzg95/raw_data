@@ -57,8 +57,8 @@ class gen_submod():
     fin = open(self.filepath, "rt")
     for line in fin:
       if line.find("`define") >= 0:
-        self.macro.append(line)
-        
+        self.macro += line
+
     print(macro)
 
 
