@@ -28,7 +28,7 @@ class gen_submod():
     #path to the directory containing hierarchy file
     self.hier_dir = None
     self.dict = defaultdict(list)
-    self.second_dict = []
+    #self.second_dict = []
     self.parse_arges()
 
     if self.second_phase == False:
@@ -43,10 +43,36 @@ class gen_submod():
         continue
       for filename in files:
         if filename.endswith(".out"):
-          self.check_second_phase(subdir + os.sep + filename)
+          second_dict = self.check_second_phase(subdir + os.sep + filename)
+          if len(self.second_dict) == 0:
+            continue
+
+          for miss_module in second_dict:
+            miss_module_path = subdir + os.sep + miss_module + ".v"
+            target_module_path = subdir + os.sep + filename[:-4]
+            self.append_second_phase(miss_module_path, target_module_path)
+
+  def append_second_phase(self, miss_module_path, target_module_path):
+    fin = open(miss_module_path, "rt")
+    fout = open(target_module_path, "a+")
+    for line in fout:
+      if line.find('//[second_phase_finishes]') >= 0:
+        fin.close()
+        fout.close()
+        return
+    
+    fout.write('//[second_phase_finishes]')
+    for line in fin:
+      #skip the macros
+      if line.find('`define') >= 0:
+        continue
+      fout.write(line)
+    fin.close()
+    fout.close()
+
 
   def check_second_phase(self, filename):
-    self.second_dict = []
+    second_dict = []
     fin = open(filename, "rt")
     hier_exs = False
     fin.seek(0, 0)
@@ -60,7 +86,7 @@ class gen_submod():
       if st == True:
         if line.find("$") < 0 and line.rstrip():
           token = line.split()
-          self.second_dict.append(token[0])
+          second_dict.append(token[0])
 
     fin.seek(0, 0)
     st = False
@@ -72,10 +98,11 @@ class gen_submod():
         if st ==  True:
           if line.find("$") < 0 and line.rstrip():
             token = line.split()
-            self.second_dict.append(token[0])
+            second_dict.append(token[0])
 
-    print(filename)
-    print(self.second_dict)
+    return second_dict
+    # print(filename)
+    # print(second_dict)
 
 
 
