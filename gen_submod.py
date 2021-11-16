@@ -122,7 +122,7 @@ class gen_submod():
     try:
       os.mkdir(dir_path)
     except OSError as error:
-      #print(error)
+      print(error)
 
     if os.path.exists(self.hier_filepath) == False:
       os.system(self.yosys_path + 'yosys -q -l ' + self.hier_filepath + ' out.ys')
