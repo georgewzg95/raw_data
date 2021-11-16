@@ -1,0 +1,220 @@
+
+5. Printing statistics.
+
+=== FPAddSub ===
+
+   Number of wires:                 45
+   Number of wire bits:            590
+   Number of public wires:          45
+   Number of public wire bits:     590
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $sdff                           4
+     FPAddSub_AlignModule            1
+     FPAddSub_AlignShift1            1
+     FPAddSub_AlignShift2            1
+     FPAddSub_ExceptionModule        1
+     FPAddSub_ExecutionModule        1
+     FPAddSub_NormalizeModule        1
+     FPAddSub_NormalizeShift1        1
+     FPAddSub_NormalizeShift2        1
+     FPAddSub_PrealignModule         1
+     FPAddSub_RoundModule            1
+
+=== FPAddSub_AlignModule ===
+
+   Number of wires:                  8
+   Number of wire bits:             71
+   Number of public wires:           8
+   Number of public wire bits:      71
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $lt                             1
+     $mux                            4
+
+=== FPAddSub_AlignShift1 ===
+
+   Number of wires:                 11
+   Number of wire bits:            114
+   Number of public wires:           9
+   Number of public wire bits:     112
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $mux                            1
+     $not                            1
+     $pmux                           8
+     $reduce_or                      1
+
+=== FPAddSub_AlignShift2 ===
+
+   Number of wires:                 11
+   Number of wire bits:             63
+   Number of public wires:           5
+   Number of public wire bits:      57
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $eq                             3
+     $logic_not                      1
+     $pmux                          11
+     $reduce_or                      2
+
+=== FPAddSub_ExceptionModule ===
+
+   Number of wires:                 23
+   Number of wire bits:             61
+   Number of public wires:          13
+   Number of public wire bits:      51
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            4
+     $logic_not                      1
+     $not                            2
+     $or                             5
+     $reduce_and                     1
+     $reduce_or                      2
+
+=== FPAddSub_ExecutionModule ===
+
+   Number of wires:                 13
+   Number of wire bits:             84
+   Number of public wires:          10
+   Number of public wire bits:      49
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $add                            1
+     $mux                            2
+     $sub                            1
+     $xor                            2
+
+=== FPAddSub_NormalizeModule ===
+
+   Number of wires:                 16
+   Number of wire bits:            116
+   Number of public wires:           4
+   Number of public wire bits:      56
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $mux                           14
+
+=== FPAddSub_NormalizeShift1 ===
+
+   Number of wires:                 26
+   Number of wire bits:            175
+   Number of public wires:           7
+   Number of public wire bits:     140
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 41
+     $and                            3
+     $dlatch                         3
+     $eq                             6
+     $logic_not                      2
+     $mux                            2
+     $not                            3
+     $pmux                          18
+     $reduce_or                      4
+
+=== FPAddSub_NormalizeShift2 ===
+
+   Number of wires:                 14
+   Number of wire bits:             62
+   Number of public wires:          13
+   Number of public wire bits:      61
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $add                            1
+     $logic_not                      1
+     $mux                            1
+     $reduce_or                      2
+     $sub                            1
+
+=== FPAddSub_PrealignModule ===
+
+   Number of wires:                 30
+   Number of wire bits:            295
+   Number of public wires:          16
+   Number of public wire bits:      95
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $add                            4
+     $and                            4
+     $logic_not                      2
+     $not                            2
+     $or                             3
+     $reduce_and                     2
+     $reduce_or                      2
+
+=== FPAddSub_RoundModule ===
+
+   Number of wires:                 36
+   Number of wire bits:            130
+   Number of public wires:          20
+   Number of public wire bits:      78
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $add                            2
+     $and                            7
+     $mux                            4
+     $not                            2
+     $or                             5
+     $xor                            2
+
+=== design hierarchy ===
+
+   FPAddSub                          1
+     FPAddSub_AlignModule            1
+     FPAddSub_AlignShift1            1
+     FPAddSub_AlignShift2            1
+     FPAddSub_ExceptionModule        1
+     FPAddSub_ExecutionModule        1
+     FPAddSub_NormalizeModule        1
+     FPAddSub_NormalizeShift1        1
+     FPAddSub_NormalizeShift2        1
+     FPAddSub_PrealignModule         1
+     FPAddSub_RoundModule            1
+
+   Number of wires:                233
+   Number of wire bits:           1761
+   Number of public wires:         150
+   Number of public wire bits:    1360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                160
+     $add                            8
+     $and                           18
+     $dlatch                         3
+     $eq                             9
+     $logic_not                      7
+     $lt                             1
+     $mux                           28
+     $not                           10
+     $or                            13
+     $pmux                          37
+     $reduce_and                     3
+     $reduce_or                     13
+     $sdff                           4
+     $sub                            2
+     $xor                            4
+

@@ -57,7 +57,7 @@ class gen_submod():
 
   def skip_gen(self, target_module_path):
     f = open(target_module_path, "a+")
-    for line in fout:
+    for line in f:
       if line.find('//[second_phase_finishes]') >= 0:
         f.close()
         return True

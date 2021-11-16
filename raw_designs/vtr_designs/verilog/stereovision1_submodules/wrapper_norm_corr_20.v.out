@@ -1,0 +1,149 @@
+
+5. Printing statistics.
+
+=== corr ===
+
+   Number of wires:                 13
+   Number of wire bits:            146
+   Number of public wires:          10
+   Number of public wire bits:      98
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add                            1
+     $dff                            3
+     $dffe                           1
+     $mul                            2
+
+=== my_divider ===
+
+   Number of wires:                 53
+   Number of wire bits:            373
+   Number of public wires:          26
+   Number of public wire bits:     122
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 42
+     $add                            3
+     $eq                             2
+     $logic_not                      2
+     $mux                           17
+     $not                            2
+     $or                             2
+     $pmux                           3
+     $reduce_bool                    2
+     $reduce_or                      3
+     $sdff                           2
+     $sdffe                          4
+
+=== my_wrapper_divider ===
+
+   Number of wires:                 19
+   Number of wire bits:             67
+   Number of public wires:          12
+   Number of public wire bits:      59
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $eq                             3
+     $logic_not                      1
+     $mux                            1
+     $pmux                           3
+     $reduce_or                      2
+     $sdff                           1
+     my_divider                      1
+
+=== sh_reg ===
+
+   Number of wires:                  6
+   Number of wire bits:             34
+   Number of public wires:           6
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $dffe                           2
+
+=== wrapper_corr_20 ===
+
+   Number of wires:                 92
+   Number of wire bits:           1058
+   Number of public wires:          92
+   Number of public wire bits:    1058
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 64
+     $dffe                          21
+     corr                           21
+     sh_reg                         22
+
+=== wrapper_norm ===
+
+   Number of wires:                 21
+   Number of wire bits:            292
+   Number of public wires:          15
+   Number of public wire bits:     195
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     $add                            2
+     $dff                            7
+     $dffe                           2
+     $mux                            2
+     $sdff                           1
+     $sub                            2
+     my_wrapper_divider              2
+
+=== wrapper_norm_corr_20 ===
+
+   Number of wires:                 31
+   Number of wire bits:            434
+   Number of public wires:          31
+   Number of public wire bits:     434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     wrapper_corr_20                 1
+     wrapper_norm                    2
+
+=== design hierarchy ===
+
+   wrapper_norm_corr_20              1
+     wrapper_corr_20                 1
+       corr                         21
+       sh_reg                       22
+     wrapper_norm                    2
+       my_wrapper_divider            2
+         my_divider                  1
+
+   Number of wires:                858
+   Number of wire bits:           7650
+   Number of public wires:         647
+   Number of public wire bits:    5412
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                456
+     $add                           37
+     $dff                           77
+     $dffe                          90
+     $eq                            20
+     $logic_not                     12
+     $mul                           42
+     $mux                           76
+     $not                            8
+     $or                             8
+     $pmux                          24
+     $reduce_bool                    8
+     $reduce_or                     20
+     $sdff                          14
+     $sdffe                         16
+     $sub                            4
+

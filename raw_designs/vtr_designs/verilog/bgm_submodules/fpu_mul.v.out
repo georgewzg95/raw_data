@@ -1,0 +1,215 @@
+
+5. Printing statistics.
+
+=== b_left_shifter ===
+
+   Number of wires:                150
+   Number of wire bits:            296
+   Number of public wires:           3
+   Number of public wire bits:     102
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                148
+     $and                           48
+     $dlatch                         1
+     $eq                            48
+     $logic_not                      1
+     $not                           49
+     $pmux                           1
+
+=== b_left_shifter_new ===
+
+   Number of wires:                174
+   Number of wire bits:            344
+   Number of public wires:           3
+   Number of public wire bits:     118
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                172
+     $and                           56
+     $dlatch                         1
+     $eq                            56
+     $logic_not                      1
+     $not                           57
+     $pmux                           1
+
+=== b_right_shifter ===
+
+   Number of wires:                150
+   Number of wire bits:            296
+   Number of public wires:           3
+   Number of public wire bits:     102
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                148
+     $and                           48
+     $dlatch                         1
+     $eq                            48
+     $logic_not                      1
+     $not                           49
+     $pmux                           1
+
+=== except ===
+
+   Number of wires:                 61
+   Number of wire bits:            179
+   Number of public wires:          31
+   Number of public wire bits:     149
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 52
+     $and                           13
+     $dff                           22
+     $logic_not                      6
+     $or                             3
+     $reduce_and                     2
+     $reduce_or                      6
+
+=== fpu_mul ===
+
+   Number of wires:                151
+   Number of wire bits:            696
+   Number of public wires:          91
+   Number of public wire bits:     606
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                105
+     $and                           21
+     $dff                           28
+     $eq                             1
+     $logic_not                     15
+     $mux                            3
+     $or                            29
+     $reduce_and                     1
+     $reduce_bool                    1
+     $reduce_or                      2
+     except                          1
+     mul_r2                          1
+     post_norm                       1
+     pre_norm_fmul                   1
+
+=== mul_r2 ===
+
+   Number of wires:                  6
+   Number of wire bits:            193
+   Number of public wires:           5
+   Number of public wire bits:     145
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $dff                            2
+     $mul                            1
+
+=== post_norm ===
+
+   Number of wires:                458
+   Number of wire bits:           1475
+   Number of public wires:         133
+   Number of public wire bits:     995
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                435
+     $add                            8
+     $and                          169
+     $eq                            10
+     $gt                             7
+     $logic_not                     37
+     $lt                             9
+     $mux                           70
+     $ne                             4
+     $or                            83
+     $pmux                           2
+     $reduce_and                     5
+     $reduce_or                     12
+     $sub                           15
+     b_left_shifter                  1
+     b_left_shifter_new              1
+     b_right_shifter                 1
+     pri_encoder                     1
+
+=== pre_norm_fmul ===
+
+   Number of wires:                 82
+   Number of wire bits:            349
+   Number of public wires:          34
+   Number of public wire bits:     227
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 75
+     $add                            4
+     $and                           15
+     $dff                            6
+     $eq                             5
+     $gt                             1
+     $logic_not                      9
+     $lt                             1
+     $mux                           13
+     $or                             8
+     $pmux                           1
+     $reduce_or                      8
+     $sub                            4
+
+=== pri_encoder ===
+
+   Number of wires:               1371
+   Number of wire bits:           1663
+   Number of public wires:           3
+   Number of public wire bits:      60
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1369
+     $and                         1224
+     $dlatch                         1
+     $eq                            47
+     $logic_not                      1
+     $mux                           47
+     $not                           49
+
+=== design hierarchy ===
+
+   fpu_mul                           1
+     except                          1
+     mul_r2                          1
+     post_norm                       1
+       b_left_shifter                1
+       b_left_shifter_new            1
+       b_right_shifter               1
+       pri_encoder                   1
+     pre_norm_fmul                   1
+
+   Number of wires:               2603
+   Number of wire bits:           5491
+   Number of public wires:         306
+   Number of public wire bits:    2504
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2499
+     $add                           12
+     $and                         1594
+     $dff                           58
+     $dlatch                         4
+     $eq                           215
+     $gt                             8
+     $logic_not                     71
+     $lt                            10
+     $mul                            1
+     $mux                          133
+     $ne                             4
+     $not                          204
+     $or                           123
+     $pmux                           6
+     $reduce_and                     8
+     $reduce_bool                    1
+     $reduce_or                     28
+     $sub                           19
+

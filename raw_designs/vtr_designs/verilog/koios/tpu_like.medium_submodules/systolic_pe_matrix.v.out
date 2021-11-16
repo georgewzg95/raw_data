@@ -1,0 +1,93 @@
+
+5. Printing statistics.
+
+=== processing_element ===
+
+   Number of wires:                  8
+   Number of wire bits:             50
+   Number of public wires:           8
+   Number of public wire bits:      50
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $sdff                           2
+     seq_mac                         1
+
+=== qadd ===
+
+   Number of wires:                  3
+   Number of wire bits:             48
+   Number of public wires:           3
+   Number of public wire bits:      48
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $add                            1
+
+=== qmult ===
+
+   Number of wires:                  3
+   Number of wire bits:             32
+   Number of public wires:           3
+   Number of public wire bits:      32
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $mul                            1
+
+=== seq_mac ===
+
+   Number of wires:                 14
+   Number of wire bits:            123
+   Number of public wires:          11
+   Number of public wire bits:     106
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $dff                            4
+     $mux                            3
+     $reduce_or                      1
+     qadd                            1
+     qmult                           1
+
+=== systolic_pe_matrix ===
+
+   Number of wires:               3142
+   Number of wire bits:          25604
+   Number of public wires:        3142
+   Number of public wire bits:   25604
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1025
+     $or                             1
+     processing_element           1024
+
+=== design hierarchy ===
+
+   systolic_pe_matrix                1
+     processing_element           1024
+       seq_mac                       1
+         qadd                        1
+         qmult                       1
+
+   Number of wires:              31814
+   Number of wire bits:         284676
+   Number of public wires:       28742
+   Number of public wire bits:  267268
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              12289
+     $add                         1024
+     $dff                         4096
+     $mul                         1024
+     $mux                         3072
+     $or                             1
+     $reduce_or                   1024
+     $sdff                        2048
+

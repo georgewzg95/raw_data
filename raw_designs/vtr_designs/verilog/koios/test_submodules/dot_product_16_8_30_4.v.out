@@ -1,0 +1,49 @@
+
+5. Printing statistics.
+
+=== dot_product_16_8_30_4 ===
+
+   Number of wires:                 29
+   Number of wire bits:            444
+   Number of public wires:          29
+   Number of public wire bits:     444
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 16
+     $dff                            1
+     $sdff                          13
+     dsp_block_16_8                  2
+
+=== dsp_block_16_8 ===
+
+   Number of wires:                 19
+   Number of wire bits:            518
+   Number of public wires:          15
+   Number of public wire bits:     262
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $add                            2
+     $mul                            2
+     $sdff                           5
+
+=== design hierarchy ===
+
+   dot_product_16_8_30_4             1
+     dsp_block_16_8                  2
+
+   Number of wires:                 67
+   Number of wire bits:           1480
+   Number of public wires:          59
+   Number of public wire bits:     968
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $add                            4
+     $dff                            1
+     $mul                            4
+     $sdff                          23
+

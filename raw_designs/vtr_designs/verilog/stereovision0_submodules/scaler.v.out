@@ -1,0 +1,102 @@
+
+5. Printing statistics.
+
+=== my_fifo_496 ===
+
+   Number of wires:                  6
+   Number of wire bits:             34
+   Number of public wires:           6
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $dffe                           3
+
+=== scaler ===
+
+   Number of wires:                 26
+   Number of wire bits:             99
+   Number of public wires:          16
+   Number of public wire bits:      89
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     $and                            2
+     $dff                            1
+     $dffe                           3
+     $mux                            2
+     $not                            4
+     $reduce_and                     2
+     $sdff                           2
+     scl_h_fltr                      1
+     scl_v_fltr                      1
+
+=== scl_h_fltr ===
+
+   Number of wires:                 52
+   Number of wire bits:            480
+   Number of public wires:          42
+   Number of public wire bits:     364
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 45
+     $add                           10
+     $dff                           12
+     $dffe                          13
+     sh_reg_1                       10
+
+=== scl_v_fltr ===
+
+   Number of wires:                 43
+   Number of wire bits:            408
+   Number of public wires:          33
+   Number of public wire bits:     292
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 39
+     $add                           10
+     $dff                           12
+     $dffe                          10
+     my_fifo_496                     7
+
+=== sh_reg_1 ===
+
+   Number of wires:                  4
+   Number of wire bits:             18
+   Number of public wires:           4
+   Number of public wire bits:      18
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $dffe                           1
+
+=== design hierarchy ===
+
+   scaler                            1
+     scl_h_fltr                      1
+       sh_reg_1                     10
+     scl_v_fltr                      1
+       my_fifo_496                   7
+
+   Number of wires:                203
+   Number of wire bits:           1405
+   Number of public wires:         173
+   Number of public wire bits:    1163
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                114
+     $add                           20
+     $and                            2
+     $dff                           25
+     $dffe                          57
+     $mux                            2
+     $not                            4
+     $reduce_and                     2
+     $sdff                           2
+
