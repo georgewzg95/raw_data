@@ -26,7 +26,7 @@ class gen_submod():
 
     #path to the directory containing hierarchy file
     self.hier_dir = None
-
+    self.macro = ""
     self.dict = defaultdict(list)
     self.parse_arges()
     self.iteration_main()
@@ -45,6 +45,22 @@ class gen_submod():
           self.create_hier()
           self.read_hier()
           self.write_submod()
+          self.add_macro()
+
+  def line_prepender(filename, line):
+    with open(filename, 'r+') as f:
+      content = f.read()
+      f.seek(0, 0)
+      f.write(line.rstrip('\r\n') + '\n' + content)
+
+  def add_macro(self):
+    fin = open(self.filepath, "rt")
+    for line in fin:
+      if line.find("`define") >= 0:
+        self.macro.append(line)
+        
+    print(macro)
+
 
   def write_submod(self):
     for i in range(len(self.dict) - 1, 0, -1):
