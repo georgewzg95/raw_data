@@ -248,7 +248,7 @@ class gen_submod():
     last_node = None
     fin = open(self.hier_filepath, "rt")
     for line in fin:
-      if line.find("2.3. Analyzing design hierarchy") >= 0:
+      if line.find("2.2. Analyzing design hierarchy") >= 0:
         start_parse = True
         continue
       if start_parse:
