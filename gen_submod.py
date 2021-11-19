@@ -97,7 +97,7 @@ class gen_submod():
       #skip the macros
       if line.find('`define') >= 0:
         continue
-      if target_module_path = "/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/mode1_max_tree.v":
+      if target_module_path == "/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/mode1_max_tree.v":
         print(line)
       fout.write(line)
     fin.close()
