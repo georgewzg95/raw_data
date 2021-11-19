@@ -1,0 +1,56 @@
+
+5. Printing statistics.
+
+=== signedmul ===
+
+   Number of wires:                 21
+   Number of wire bits:            278
+   Number of public wires:          14
+   Number of public wire bits:     181
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $add                            3
+     $dff                            7
+     $eq                             1
+     $mul                            1
+     $mux                            3
+     $not                            3
+     $sdff                           2
+
+=== vecmat_mul_x ===
+
+   Number of wires:                  7
+   Number of wire bits:           8002
+   Number of public wires:           7
+   Number of public wire bits:    8002
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                102
+     $dffe                           2
+     signedmul                     100
+
+=== design hierarchy ===
+
+   vecmat_mul_x                      1
+     signedmul                     100
+
+   Number of wires:               2107
+   Number of wire bits:          35802
+   Number of public wires:        1407
+   Number of public wire bits:   26102
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2002
+     $add                          300
+     $dff                          700
+     $dffe                           2
+     $eq                           100
+     $mul                          100
+     $mux                          300
+     $not                          300
+     $sdff                         200
+

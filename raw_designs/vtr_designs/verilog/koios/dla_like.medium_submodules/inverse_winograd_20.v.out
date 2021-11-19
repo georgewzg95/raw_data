@@ -1,0 +1,68 @@
+
+5. Printing statistics.
+
+=== inverse_winograd_20 ===
+
+   Number of wires:                276
+   Number of wire bits:           7140
+   Number of public wires:         123
+   Number of public wire bits:    3148
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                260
+     $add                            1
+     $dff                           41
+     $dffe                          44
+     $eq                             3
+     $logic_not                      1
+     $lt                             1
+     $mux                          142
+     $ne                             2
+     $neg                            7
+     $not                            3
+     $reduce_and                     3
+     $reduce_bool                    2
+     $sdffe                          2
+     inverse_winograd_adder_30_3      8
+
+=== inverse_winograd_adder_30_3 ===
+
+   Number of wires:                 19
+   Number of wire bits:            574
+   Number of public wires:          14
+   Number of public wire bits:     409
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $add                            5
+     $dff                            6
+
+=== design hierarchy ===
+
+   inverse_winograd_20               1
+     inverse_winograd_adder_30_3      8
+
+   Number of wires:                428
+   Number of wire bits:          11732
+   Number of public wires:         235
+   Number of public wire bits:    6420
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                340
+     $add                           41
+     $dff                           89
+     $dffe                          44
+     $eq                             3
+     $logic_not                      1
+     $lt                             1
+     $mux                          142
+     $ne                             2
+     $neg                            7
+     $not                            3
+     $reduce_and                     3
+     $reduce_bool                    2
+     $sdffe                          2
+

@@ -59,7 +59,7 @@ module wrapper_norm (clk, nd, din_1, din_2, dout_1, dout_2);
          add_out <= ({addin_1[15], addin_1}) + ({addin_2[15], addin_2}) ; 
    end 
 endmodule
-//[second_phase_finishes]
+
 module my_wrapper_divider(rst, clk, data_in_a, data_in_b, data_out);
 	parameter INPUT_WIDTH_A = 5'b10000;
 	parameter INPUT_WIDTH_B = 5'b10001;
@@ -349,3 +349,6 @@ module my_divider(clk, rst, start, LA, EB, data_in_a, data_in_b, Remainder, data
 	assign data_out = DataA; 
 
 endmodule
+
+
+

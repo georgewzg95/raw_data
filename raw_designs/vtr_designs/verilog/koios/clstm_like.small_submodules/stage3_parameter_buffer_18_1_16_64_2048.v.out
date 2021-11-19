@@ -1,0 +1,121 @@
+
+5. Printing statistics.
+
+=== $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram ===
+
+   Number of wires:                  9
+   Number of wire bits:            836
+   Number of public wires:           5
+   Number of public wire bits:     338
+   Number of memories:               1
+   Number of memory bits:         1944
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
+
+=== counter_31_1 ===
+
+   Number of wires:                  7
+   Number of wire bits:             64
+   Number of public wires:           4
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $add                            1
+     $le                             1
+     $mux                            1
+     $sdffe                          1
+
+=== counter_63_1 ===
+
+   Number of wires:                  7
+   Number of wire bits:             64
+   Number of public wires:           4
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $add                            1
+     $le                             1
+     $mux                            1
+     $sdffe                          1
+
+=== stage3_parameter_buffer_18_1_16_64_2048 ===
+
+   Number of wires:                 27
+   Number of wire bits:            403
+   Number of public wires:          25
+   Number of public wire bits:     370
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add                            1
+     $and                            1
+     $eq                             1
+     counter_31_1                    1
+     counter_63_1                    1
+     weight_buffer_18_9_1_64_2048_Wym_imag_half_0      1
+     weight_buffer_18_9_1_64_2048_Wym_real_half_0      1
+
+=== weight_buffer_18_9_1_64_2048_Wym_imag_half_0 ===
+
+   Number of wires:                 15
+   Number of wire bits:            359
+   Number of public wires:          15
+   Number of public wire bits:     359
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $dff                            1
+     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      1
+
+=== weight_buffer_18_9_1_64_2048_Wym_real_half_0 ===
+
+   Number of wires:                 15
+   Number of wire bits:            359
+   Number of public wires:          15
+   Number of public wire bits:     359
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $dff                            1
+     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      1
+
+=== design hierarchy ===
+
+   stage3_parameter_buffer_18_1_16_64_2048      1
+     counter_31_1                    1
+     counter_63_1                    1
+     weight_buffer_18_9_1_64_2048_Wym_imag_half_0      1
+       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      1
+     weight_buffer_18_9_1_64_2048_Wym_real_half_0      1
+       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      1
+
+   Number of wires:                 89
+   Number of wire bits:           2921
+   Number of public wires:          73
+   Number of public wire bits:    1798
+   Number of memories:               2
+   Number of memory bits:         3888
+   Number of processes:              0
+   Number of cells:                 25
+     $add                            3
+     $and                            1
+     $dff                            2
+     $dffe                           2
+     $eq                             1
+     $le                             2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            8
+     $sdffe                          2
+

@@ -126,7 +126,7 @@ end
   //DW_fp_add #(`MANTISSA, `EXPONENT, `IEEE_COMPLIANCE) add0_stage0(.a(outp),       .b(add0_out_stage1_reg),      .z(add0_out_stage0), .rnd(3'b000),    .status());
 
 endmodule
-//[second_phase_finishes]
+
 module fixed_point_addsub(
 		clk,
 		rst,
@@ -181,3 +181,6 @@ module fixed_point_addsub(
 	
 	
 endmodule
+
+
+

@@ -1,0 +1,52 @@
+
+5. Printing statistics.
+
+=== single_port_ram ===
+
+   Number of wires:                  9
+   Number of wire bits:           1454
+   Number of public wires:           5
+   Number of public wire bits:     584
+   Number of memories:               1
+   Number of memory bits:         1728
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
+
+=== weight_buffer_18_16_2_64_Woc_0 ===
+
+   Number of wires:                 42
+   Number of wire bits:           1190
+   Number of public wires:          41
+   Number of public wire bits:    1184
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $add                            1
+     $dff                            2
+     single_port_ram                 2
+
+=== design hierarchy ===
+
+   weight_buffer_18_16_2_64_Woc_0      1
+     single_port_ram                 2
+
+   Number of wires:                 60
+   Number of wire bits:           4098
+   Number of public wires:          51
+   Number of public wire bits:    2352
+   Number of memories:               2
+   Number of memory bits:         3456
+   Number of processes:              0
+   Number of cells:                 15
+     $add                            1
+     $dff                            2
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+

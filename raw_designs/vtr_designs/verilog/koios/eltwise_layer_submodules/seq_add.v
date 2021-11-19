@@ -68,7 +68,7 @@ end
 assign out = sum_out_temp_reg;
 
 endmodule
-//[second_phase_finishes]
+
 module FPAddSub(
 		//bf16,
 		clk,
@@ -885,3 +885,6 @@ module FPAddSub_PrealignModule(
 	assign Bout = B[`DWIDTH-2:0] ;
 	
 endmodule
+
+
+

@@ -1,0 +1,88 @@
+
+5. Printing statistics.
+
+=== $paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            331
+   Number of public wires:           9
+   Number of public wire bits:     135
+   Number of memories:               1
+   Number of memory bits:           64
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== SizedFIFO_b ===
+
+   Number of wires:                 17
+   Number of wire bits:             80
+   Number of public wires:          17
+   Number of public wire bits:      80
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     generic_fifo_sc_b               1
+
+=== generic_fifo_sc_b ===
+
+   Number of wires:                 93
+   Number of wire bits:            233
+   Number of public wires:          27
+   Number of public wire bits:     159
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 84
+     $add                            5
+     $and                           25
+     $eq                             4
+     $ge                             2
+     $le                             2
+     $logic_not                      5
+     $lt                             2
+     $mux                           14
+     $ne                             3
+     $not                            1
+     $or                             3
+     $paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram      1
+     $reduce_bool                    7
+     $reduce_or                      1
+     $sdffe                          9
+
+=== design hierarchy ===
+
+   SizedFIFO_b                       1
+     generic_fifo_sc_b               1
+       $paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram      1
+
+   Number of wires:                127
+   Number of wire bits:            644
+   Number of public wires:          53
+   Number of public wire bits:     374
+   Number of memories:               1
+   Number of memory bits:           64
+   Number of processes:              0
+   Number of cells:                 95
+     $add                            5
+     $and                           25
+     $dffe                           2
+     $eq                             4
+     $ge                             2
+     $le                             2
+     $logic_not                      5
+     $lt                             2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                           20
+     $ne                             3
+     $not                            1
+     $or                             3
+     $reduce_bool                    7
+     $reduce_or                      1
+     $sdffe                          9
+

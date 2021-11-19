@@ -1,0 +1,111 @@
+
+5. Printing statistics.
+
+=== addfxp_18_1 ===
+
+   Number of wires:                  6
+   Number of wire bits:             91
+   Number of public wires:           5
+   Number of public wire bits:      73
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $add                            1
+     $dff                            1
+
+=== codeBlock98050_18 ===
+
+   Number of wires:                296
+   Number of wire bits:           5355
+   Number of public wires:         288
+   Number of public wire bits:    5099
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                182
+     $add                            4
+     $dffe                          80
+     $not                            4
+     $sdff                           1
+     addfxp_18_1                    40
+     multfix_alt_dsp_18             12
+     shiftRegFIFO_5_1                1
+     subfxp_18_1                    40
+
+=== dsp_signed_mult_18x18_unit_18_36_0 ===
+
+   Number of wires:                 18
+   Number of wire bits:            296
+   Number of public wires:          16
+   Number of public wire bits:     224
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $dff                            2
+     $mul                            2
+     $sdffe                          3
+
+=== multfix_alt_dsp_18 ===
+
+   Number of wires:                 12
+   Number of wire bits:            218
+   Number of public wires:          12
+   Number of public wire bits:     218
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     dsp_signed_mult_18x18_unit_18_36_0      1
+
+=== shiftRegFIFO_5_1 ===
+
+   Number of wires:                  9
+   Number of wire bits:              9
+   Number of public wires:           9
+   Number of public wire bits:       9
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $sdff                           5
+
+=== subfxp_18_1 ===
+
+   Number of wires:                  6
+   Number of wire bits:             91
+   Number of public wires:           5
+   Number of public wire bits:      73
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $add                            1
+     $dff                            1
+
+=== design hierarchy ===
+
+   codeBlock98050_18                 1
+     addfxp_18_1                    40
+     multfix_alt_dsp_18             12
+       dsp_signed_mult_18x18_unit_18_36_0      1
+     shiftRegFIFO_5_1                1
+     subfxp_18_1                    40
+
+   Number of wires:               1145
+   Number of wire bits:          18812
+   Number of public wires:        1033
+   Number of public wire bits:   16252
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                338
+     $add                           84
+     $dff                          104
+     $dffe                          80
+     $mul                           24
+     $not                            4
+     $sdff                           6
+     $sdffe                         36
+

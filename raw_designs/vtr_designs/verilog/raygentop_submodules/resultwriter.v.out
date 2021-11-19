@@ -1,0 +1,138 @@
+
+5. Printing statistics.
+
+=== bilinearintrp ===
+
+   Number of wires:                 72
+   Number of wire bits:            669
+   Number of public wires:          49
+   Number of public wire bits:     422
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 46
+     $add                            6
+     $dff                           21
+     $eq                             5
+     $logic_not                      1
+     $mul                            9
+     $pmux                           2
+     $sub                            2
+
+=== col16to21 ===
+
+   Number of wires:                 10
+   Number of wire bits:            107
+   Number of public wires:           6
+   Number of public wire bits:     103
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             3
+     $logic_not                      1
+     $pmux                           1
+
+=== fifo3 ===
+
+   Number of wires:                 48
+   Number of wire bits:            453
+   Number of public wires:          10
+   Number of public wire bits:      96
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 42
+     $add                            1
+     $and                            1
+     $eq                             3
+     $logic_not                      1
+     $mux                           14
+     $ne                             4
+     $not                            1
+     $pmux                           3
+     $reduce_and                     4
+     $reduce_bool                    2
+     $reduce_or                      3
+     $sdffe                          4
+     $sub                            1
+
+=== linearmap ===
+
+   Number of wires:                 28
+   Number of wire bits:            259
+   Number of public wires:          10
+   Number of public wire bits:      71
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 21
+     $add                            9
+     $dff                            1
+     $dffe                           2
+     $eq                             7
+     $logic_not                      1
+     $pmux                           1
+
+=== resultwriter ===
+
+   Number of wires:                271
+   Number of wire bits:           1209
+   Number of public wires:          83
+   Number of public wire bits:     794
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                237
+     $and                          106
+     $dffe                           1
+     $dlatch                        23
+     $eq                            14
+     $logic_not                      1
+     $mux                           27
+     $not                           23
+     $or                             5
+     $pmux                          12
+     $reduce_or                     11
+     $sdff                           9
+     bilinearintrp                   1
+     col16to21                       1
+     fifo3                           2
+     linearmap                       1
+
+=== design hierarchy ===
+
+   resultwriter                      1
+     bilinearintrp                   1
+     col16to21                       1
+     fifo3                           2
+     linearmap                       1
+
+   Number of wires:                477
+   Number of wire bits:           3150
+   Number of public wires:         168
+   Number of public wire bits:    1582
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                388
+     $add                           17
+     $and                          108
+     $dff                           22
+     $dffe                           3
+     $dlatch                        23
+     $eq                            35
+     $logic_not                      6
+     $mul                            9
+     $mux                           55
+     $ne                             8
+     $not                           25
+     $or                             5
+     $pmux                          22
+     $reduce_and                     8
+     $reduce_bool                    4
+     $reduce_or                     17
+     $sdff                           9
+     $sdffe                          8
+     $sub                            4
+

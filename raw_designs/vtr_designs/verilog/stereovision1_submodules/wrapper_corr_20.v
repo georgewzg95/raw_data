@@ -214,7 +214,7 @@ module wrapper_corr_20 (clk, wen, d_l_1, d_l_2, d_r_1, d_r_2, corr_out_0, corr_o
          end 
    end 
 endmodule
-//[second_phase_finishes]
+
 module corr (clk, new_data, in_l_re, in_l_im, in_r_re, in_r_im, corr_out);
 
     parameter sh_reg_w  = 4'b1000;
@@ -278,3 +278,9 @@ module sh_reg (clk, wen, din_1, din_2, dout_1, dout_2);
 		end
    end 
 endmodule
+
+
+
+
+
+

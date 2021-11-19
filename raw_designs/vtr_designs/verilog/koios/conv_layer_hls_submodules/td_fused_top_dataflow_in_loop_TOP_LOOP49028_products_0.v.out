@@ -1,0 +1,87 @@
+
+5. Printing statistics.
+
+=== $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram ===
+
+   Number of wires:                 17
+   Number of wire bits:            183
+   Number of public wires:           9
+   Number of public wire bits:      77
+   Number of memories:               1
+   Number of memory bits:          512
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== td_fused_top_dataflow_in_loop_TOP_LOOP49028_products_0 ===
+
+   Number of wires:                101
+   Number of wire bits:            381
+   Number of public wires:          51
+   Number of public wire bits:     297
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 82
+     $add                            3
+     $and                            4
+     $eq                             1
+     $logic_and                     11
+     $logic_not                      8
+     $logic_or                       1
+     $mux                           34
+     $not                            1
+     $reduce_bool                    4
+     $reduce_or                      1
+     $sdff                           2
+     $sdffe                          9
+     $sub                            1
+     td_fused_top_dataflow_in_loop_TOP_LOOP49028_products_0_memcore      2
+
+=== td_fused_top_dataflow_in_loop_TOP_LOOP49028_products_0_memcore ===
+
+   Number of wires:                 13
+   Number of wire bits:             81
+   Number of public wires:          13
+   Number of public wire bits:      81
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $and                            1
+     $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram      1
+
+=== design hierarchy ===
+
+   td_fused_top_dataflow_in_loop_TOP_LOOP49028_products_0      1
+     td_fused_top_dataflow_in_loop_TOP_LOOP49028_products_0_memcore      2
+       $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram      1
+
+   Number of wires:                161
+   Number of wire bits:            909
+   Number of public wires:          95
+   Number of public wire bits:     613
+   Number of memories:               2
+   Number of memory bits:         1024
+   Number of processes:              0
+   Number of cells:                106
+     $add                            3
+     $and                            6
+     $dffe                           4
+     $eq                             1
+     $logic_and                     11
+     $logic_not                      8
+     $logic_or                       1
+     $memrd                          4
+     $memwr_v2                       4
+     $mux                           46
+     $not                            1
+     $reduce_bool                    4
+     $reduce_or                      1
+     $sdff                           2
+     $sdffe                          9
+     $sub                            1
+

@@ -1,0 +1,68 @@
+
+5. Printing statistics.
+
+=== $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            659
+   Number of public wires:           9
+   Number of public wire bits:     267
+   Number of memories:               1
+   Number of memory bits:          256
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== rfifo ===
+
+   Number of wires:                121
+   Number of wire bits:           2460
+   Number of public wires:          13
+   Number of public wire bits:    2326
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                146
+     $add                            4
+     $dffe                          35
+     $eq                            31
+     $logic_and                      3
+     $logic_not                      4
+     $mux                            2
+     $not                           31
+     $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram      1
+     $reduce_and                    31
+     $reduce_bool                    2
+     $sdff                           1
+     $sub                            1
+
+=== design hierarchy ===
+
+   rfifo                             1
+     $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram      1
+
+   Number of wires:                138
+   Number of wire bits:           3119
+   Number of public wires:          22
+   Number of public wire bits:    2593
+   Number of memories:               1
+   Number of memory bits:          256
+   Number of processes:              0
+   Number of cells:                157
+     $add                            4
+     $dffe                          37
+     $eq                            31
+     $logic_and                      3
+     $logic_not                      4
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            8
+     $not                           31
+     $reduce_and                    31
+     $reduce_bool                    2
+     $sdff                           1
+     $sub                            1
+

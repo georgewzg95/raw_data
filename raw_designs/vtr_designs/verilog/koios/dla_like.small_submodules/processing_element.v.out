@@ -1,0 +1,222 @@
+
+5. Printing statistics.
+
+=== $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            127
+   Number of public wires:           9
+   Number of public wire bits:      57
+   Number of memories:               1
+   Number of memory bits:           88
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== accumulator_24_30_3 ===
+
+   Number of wires:                 13
+   Number of wire bits:            268
+   Number of public wires:          10
+   Number of public wire bits:     207
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add                            1
+     $mux                            1
+     $reduce_or                      1
+     $sdff                           4
+     $sdffe                          1
+
+=== dot_product_16_8_30_2 ===
+
+   Number of wires:                 14
+   Number of wire bits:            211
+   Number of public wires:          14
+   Number of public wire bits:     211
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $dff                            1
+     $sdff                           4
+     dsp_block_16_8_false            1
+
+=== dsp_block_16_8_false ===
+
+   Number of wires:                 19
+   Number of wire bits:            518
+   Number of public wires:          15
+   Number of public wire bits:     262
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $add                            2
+     $mul                            2
+     $sdff                           5
+
+=== processing_element ===
+
+   Number of wires:                167
+   Number of wire bits:           1521
+   Number of public wires:         108
+   Number of public wire bits:    1271
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                119
+     $add                            6
+     $dff                            5
+     $dffe                          12
+     $eq                             1
+     $le                             1
+     $logic_and                      2
+     $logic_not                      1
+     $logic_or                       1
+     $mux                           35
+     $ne                             3
+     $not                            5
+     $reduce_and                     4
+     $reduce_bool                    1
+     $sdffce                        12
+     $sdffe                         12
+     accumulator_24_30_3             6
+     dot_product_16_8_30_2           6
+     weight_cache_2048_8_0_weight_init_00      1
+     weight_cache_2048_8_0_weight_init_01      1
+     weight_cache_2048_8_0_weight_init_02      1
+     weight_cache_2048_8_0_weight_init_03      1
+     weight_cache_2048_8_0_weight_init_04      1
+     weight_cache_2048_8_0_weight_init_05      1
+
+=== weight_cache_2048_8_0_weight_init_00 ===
+
+   Number of wires:                 15
+   Number of wire bits:            111
+   Number of public wires:          15
+   Number of public wire bits:     111
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $dff                            4
+     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+
+=== weight_cache_2048_8_0_weight_init_01 ===
+
+   Number of wires:                 15
+   Number of wire bits:            111
+   Number of public wires:          15
+   Number of public wire bits:     111
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $dff                            4
+     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+
+=== weight_cache_2048_8_0_weight_init_02 ===
+
+   Number of wires:                 15
+   Number of wire bits:            111
+   Number of public wires:          15
+   Number of public wire bits:     111
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $dff                            4
+     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+
+=== weight_cache_2048_8_0_weight_init_03 ===
+
+   Number of wires:                 15
+   Number of wire bits:            111
+   Number of public wires:          15
+   Number of public wire bits:     111
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $dff                            4
+     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+
+=== weight_cache_2048_8_0_weight_init_04 ===
+
+   Number of wires:                 15
+   Number of wire bits:            111
+   Number of public wires:          15
+   Number of public wire bits:     111
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $dff                            4
+     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+
+=== weight_cache_2048_8_0_weight_init_05 ===
+
+   Number of wires:                 15
+   Number of wire bits:            111
+   Number of public wires:          15
+   Number of public wire bits:     111
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $dff                            4
+     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+
+=== design hierarchy ===
+
+   processing_element                1
+     accumulator_24_30_3             6
+     dot_product_16_8_30_2           6
+       dsp_block_16_8_false          1
+     weight_cache_2048_8_0_weight_init_00      1
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     weight_cache_2048_8_0_weight_init_01      1
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     weight_cache_2048_8_0_weight_init_02      1
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     weight_cache_2048_8_0_weight_init_03      1
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     weight_cache_2048_8_0_weight_init_04      1
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     weight_cache_2048_8_0_weight_init_05      1
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+
+   Number of wires:                635
+   Number of wire bits:           8931
+   Number of public wires:         486
+   Number of public wire bits:    6359
+   Number of memories:               6
+   Number of memory bits:          528
+   Number of processes:              0
+   Number of cells:                329
+     $add                           24
+     $dff                           35
+     $dffe                          24
+     $eq                             1
+     $le                             1
+     $logic_and                      2
+     $logic_not                      1
+     $logic_or                       1
+     $memrd                         12
+     $memwr_v2                      12
+     $mul                           12
+     $mux                           77
+     $ne                             3
+     $not                            5
+     $reduce_and                     4
+     $reduce_bool                    1
+     $reduce_or                      6
+     $sdff                          78
+     $sdffce                        12
+     $sdffe                         18
+

@@ -189,4 +189,3 @@ assign o_result = i_multiplicand * i_multiplier;
 //DW02_mult #(`DWIDTH,`DWIDTH) u_mult(.A(i_multiplicand), .B(i_multiplier), .TC(1'b1), .PRODUCT(o_result));
 
 endmodule
-//[second_phase_finishes]

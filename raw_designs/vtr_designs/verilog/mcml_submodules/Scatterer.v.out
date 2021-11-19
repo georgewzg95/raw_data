@@ -1,0 +1,109 @@
+
+5. Printing statistics.
+
+=== InternalsBlock ===
+
+   Number of wires:                 51
+   Number of wire bits:           1667
+   Number of public wires:          51
+   Number of public wire bits:    1667
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 24
+     $sdffe                         24
+
+=== Scatterer ===
+
+   Number of wires:               1214
+   Number of wire bits:          34748
+   Number of public wires:        1010
+   Number of public wire bits:   34387
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                271
+     $and                           64
+     $eq                            15
+     $ge                             1
+     $logic_not                      2
+     $logic_or                       8
+     $mux                            9
+     $neg                            1
+     $not                           36
+     $or                            86
+     $pmux                           2
+     $reduce_or                      2
+     $sdffe                          3
+     InternalsBlock                 36
+     add_32b                         3
+     sub_32b                         2
+     sub_64b                         1
+
+=== add_32b ===
+
+   Number of wires:                  5
+   Number of wire bits:            130
+   Number of public wires:           5
+   Number of public wire bits:     130
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $add                            1
+
+=== sub_32b ===
+
+   Number of wires:                  5
+   Number of wire bits:            130
+   Number of public wires:           5
+   Number of public wire bits:     130
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $sub                            1
+
+=== sub_64b ===
+
+   Number of wires:                  3
+   Number of wire bits:            192
+   Number of public wires:           3
+   Number of public wire bits:     192
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $sub                            1
+
+=== design hierarchy ===
+
+   Scatterer                         1
+     InternalsBlock                 36
+     add_32b                         3
+     sub_32b                         2
+     sub_64b                         1
+
+   Number of wires:               3078
+   Number of wire bits:          95602
+   Number of public wires:        2874
+   Number of public wire bits:   95241
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1099
+     $add                            3
+     $and                           64
+     $eq                            15
+     $ge                             1
+     $logic_not                      2
+     $logic_or                       8
+     $mux                            9
+     $neg                            1
+     $not                           36
+     $or                            86
+     $pmux                           2
+     $reduce_or                      2
+     $sdffe                        867
+     $sub                            3
+

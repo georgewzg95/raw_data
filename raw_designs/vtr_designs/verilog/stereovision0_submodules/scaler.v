@@ -266,7 +266,7 @@ module scl_v_fltr (clk, nd, d_in, d_out_1, d_out_2, d_out_4);
          add_4_tmp <= add_4_tmp_7 + add_4_tmp_8 ; 
    end 
 endmodule
-//[second_phase_finishes]
+
 module my_fifo_496 (clk, din, dout, rdy);
 
     input clk; 
@@ -291,3 +291,6 @@ module my_fifo_496 (clk, din, dout, rdy);
 		end
 	end
 endmodule
+
+
+

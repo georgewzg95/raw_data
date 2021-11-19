@@ -1,0 +1,66 @@
+
+5. Printing statistics.
+
+=== Div_64b ===
+
+   Number of wires:                 10
+   Number of wire bits:            386
+   Number of public wires:           7
+   Number of public wire bits:     289
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $mux                            2
+     $neg                            2
+     $xor                            1
+     Div_64b_unsigned                1
+
+=== Div_64b_unsigned ===
+
+   Number of wires:                277
+   Number of wire bits:          15501
+   Number of public wires:         149
+   Number of public wire bits:   11373
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                315
+     $dff                           59
+     $ge                            64
+     $mux                          128
+     $sub                           64
+
+=== signed_div_30 ===
+
+   Number of wires:                  5
+   Number of wire bits:            193
+   Number of public wires:           5
+   Number of public wire bits:     193
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     Div_64b                         1
+
+=== design hierarchy ===
+
+   signed_div_30                     1
+     Div_64b                         1
+       Div_64b_unsigned              1
+
+   Number of wires:                292
+   Number of wire bits:          16080
+   Number of public wires:         161
+   Number of public wire bits:   11855
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                320
+     $dff                           59
+     $ge                            64
+     $mux                          130
+     $neg                            2
+     $sub                           64
+     $xor                            1
+

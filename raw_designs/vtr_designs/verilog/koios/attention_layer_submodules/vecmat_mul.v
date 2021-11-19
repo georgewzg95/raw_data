@@ -96,7 +96,7 @@ module vecmat_mul #( parameter arraysize=1024,parameter vectdepth=64)
 
 
 endmodule                    
-//[second_phase_finishes]
+
 module signedmul(
   input clk,
   input [15:0] a,
@@ -132,3 +132,6 @@ end
 
 
 endmodule
+
+
+

@@ -1,0 +1,370 @@
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_submodules/matmul_4x4_systolic.v
+['mac_int']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_submodules/mac_int.v
+[Errno 2] No such file or directory: '/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_submodules/mac_int.v'
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_submodules/systolic_pe_matrix.v
+['mac_int']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_submodules/mac_int.v
+[Errno 2] No such file or directory: '/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_submodules/mac_int.v'
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_submodules/seq_mac.v
+['mac_int']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_submodules/mac_int.v
+[Errno 2] No such file or directory: '/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_submodules/mac_int.v'
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_submodules/processing_element.v
+['mac_int']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_submodules/mac_int.v
+[Errno 2] No such file or directory: '/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_submodules/mac_int.v'
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/mode1_max_tree.v
+['fNToRecFN']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/fNToRecFN.v
+
+
+module countLeadingZerosfp16 #(parameter inWidth = 10, parameter countWidth = 4) (
+
+    input [(inWidth - 1):0] in, output reg [(countWidth - 1):0] count
+
+    );
+
+
+
+  wire [(inWidth - 1):0] reverseIn;
+
+  reverseFp16 reverse_in(in, reverseIn);
+
+  wire [inWidth:0] oneLeastReverseIn =
+
+      {1'b1, reverseIn} & ({1'b0, ~reverseIn} + 1);
+
+		
+
+  always@(*)
+
+    begin
+
+      if (oneLeastReverseIn[10] == 1)
+
+        begin
+
+          count = 4'd10;
+
+        end
+
+      else if (oneLeastReverseIn[9] == 1)
+
+        begin
+
+          count = 4'd9;
+
+        end
+
+      else if (oneLeastReverseIn[8] == 1)
+
+        begin
+
+          count= 4'd8;
+
+        end
+
+      else if (oneLeastReverseIn[7] == 1)
+
+        begin
+
+          count = 4'd7;
+
+        end
+
+      else if (oneLeastReverseIn[6] == 1)
+
+        begin
+
+          count = 4'd6;
+
+        end
+
+      else if (oneLeastReverseIn[5] == 1)
+
+        begin
+
+          count = 4'd5;
+
+        end
+
+      else if (oneLeastReverseIn[4] == 1)
+
+        begin
+
+          count = 4'd4;
+
+        end
+
+      else if (oneLeastReverseIn[3] == 1)
+
+        begin
+
+          count = 4'd3;
+
+        end
+
+      else if (oneLeastReverseIn[2] == 1)
+
+        begin
+
+          count = 4'd2;
+
+        end
+
+      else if (oneLeastReverseIn[1] == 1)
+
+        begin
+
+          count = 4'd1;
+
+        end
+
+      else
+
+        begin
+
+          count = 4'd0;
+
+        end
+
+      end
+
+
+
+endmodule
+
+module reverseFp16 (input [9:0] in, output [9:0] out);
+
+
+
+   assign out[0] = in[9];
+
+   assign out[1] = in[8];
+
+   assign out[2] = in[7];
+
+   assign out[3] = in[6];
+
+   assign out[4] = in[5];
+
+   assign out[5] = in[4];
+
+   assign out[6] = in[3];
+
+   assign out[7] = in[2];
+
+   assign out[8] = in[1];
+
+   assign out[9] = in[0];
+
+   // genvar ix;
+
+   // generate
+
+   //     for (ix = 0; ix < width; ix = ix + 1) begin :Bit
+
+   //         assign out[ix] = in[width - 1 - ix];
+
+   //     end
+
+   // endgenerate
+
+
+
+endmodule
+
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/comparator.v
+['fNToRecFN']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/fNToRecFN.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/lstm_gate_18_10_48_1.v
+['abs_unit_18', 'dsp_signed_mac_18_13_23_32', 'dsp_signed_mult_18x18_unit_18_18_1', 'fp_rounding_unit_1_32_11', 'fp_rounding_unit_1_37_10', 'shift_register_unit_1_3']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/abs_unit_18.v
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/dsp_signed_mac_18_13_23_32.v
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/dsp_signed_mult_18x18_unit_18_18_1.v
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/fp_rounding_unit_1_32_11.v
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/fp_rounding_unit_1_37_10.v
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_unit_1_3.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/stage2_Ct_buffer_18_3_16_64.v
+['dual_port_ram']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/dual_port_ram.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf10_accum_1.v
+['td_fused_top_ap_hadd_6_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_ap_hadd_6_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf8_accum_2.v
+['td_fused_top_ap_hadd_6_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_ap_hadd_6_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_poolOutputs.v
+['FPAddSub']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/FPAddSub.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf11_accum_2.v
+['td_fused_top_ap_hadd_6_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_ap_hadd_6_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf12_accum_3.v
+['td_fused_top_ap_hadd_6_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_ap_hadd_6_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf10_accum_2.v
+['td_fused_top_ap_hadd_6_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_ap_hadd_6_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf7_accum_3_3.v
+['td_fused_top_ap_hadd_6_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_ap_hadd_6_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf1_accum_4_1.v
+['td_fused_top_ap_hadd_6_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_ap_hadd_6_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_accum_3.v
+['td_fused_top_ap_hadd_6_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_ap_hadd_6_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf2_accum_1.v
+['td_fused_top_ap_hadd_6_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_ap_hadd_6_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf2_poolOutputs.v
+['FPAddSub']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/FPAddSub.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf1_poolOutputs.v
+['FPAddSub']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/FPAddSub.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/lstm_gate_18_10_16_1.v
+['abs_unit_18', 'dsp_signed_mac_18_13_23_32', 'fp_rounding_unit_1_32_11', 'shift_register_unit_1_3']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/abs_unit_18.v
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/dsp_signed_mac_18_13_23_32.v
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/fp_rounding_unit_1_32_11.v
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/shift_register_unit_1_3.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf10_accum_1.v
+['td_fused_top_ap_hadd_3_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_ap_hadd_3_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf8_accum_2.v
+['td_fused_top_ap_hadd_3_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_ap_hadd_3_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf5_poolOutputs.v
+['FPAddSub']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/FPAddSub.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf11_accum_2.v
+['td_fused_top_ap_hadd_3_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_ap_hadd_3_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf10_accum_2.v
+['td_fused_top_ap_hadd_3_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_ap_hadd_3_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf2_accum_1.v
+['td_fused_top_ap_hadd_3_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_ap_hadd_3_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf3_accum_1.v
+['td_fused_top_ap_hadd_3_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_ap_hadd_3_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf12_accum_2.v
+['td_fused_top_ap_hadd_3_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_ap_hadd_3_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf12_accum_1.v
+['td_fused_top_ap_hadd_3_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_ap_hadd_3_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf11_accum_1.v
+['td_fused_top_ap_hadd_3_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_ap_hadd_3_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf1_accum_3.v
+['td_fused_top_ap_hadd_3_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_ap_hadd_3_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_accum_1.v
+['td_fused_top_ap_hadd_3_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_ap_hadd_3_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf1_accum_2.v
+['td_fused_top_ap_hadd_3_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_ap_hadd_3_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf4_accum_1.v
+['td_fused_top_ap_hadd_3_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_ap_hadd_3_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf9_accum_2.v
+['td_fused_top_ap_hadd_3_full_dsp_16']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_ap_hadd_3_full_dsp_16.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf2_poolOutputs.v
+['FPAddSub']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/FPAddSub.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf1_poolOutputs.v
+['FPAddSub']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/FPAddSub.v
+/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.medium_submodules/lstm_gate_18_10_32_1.v
+['abs_unit_18', 'dsp_signed_mac_18_13_23_32', 'dsp_signed_mult_18x18_unit_18_18_1', 'fp_rounding_unit_1_32_11', 'fp_rounding_unit_1_37_10', 'shift_register_unit_1_3']
+
+
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.medium_submodules/abs_unit_18.v
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.medium_submodules/dsp_signed_mac_18_13_23_32.v
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.medium_submodules/dsp_signed_mult_18x18_unit_18_18_1.v
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.medium_submodules/fp_rounding_unit_1_32_11.v
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.medium_submodules/fp_rounding_unit_1_37_10.v
+miss module: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.medium_submodules/shift_register_unit_1_3.v

@@ -1,0 +1,86 @@
+
+5. Printing statistics.
+
+=== td_fused_top_dataflow_in_loop_TOP_LOOP37548_ifmap_vec ===
+
+   Number of wires:                 99
+   Number of wire bits:            397
+   Number of public wires:          54
+   Number of public wire bits:     333
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 77
+     $add                            3
+     $and                            4
+     $eq                             1
+     $logic_and                     10
+     $logic_not                      6
+     $logic_or                       1
+     $mux                           35
+     $not                            1
+     $reduce_bool                    3
+     $reduce_or                      1
+     $sdff                           2
+     $sdffe                          7
+     $sub                            1
+     td_fused_top_dataflow_in_loop_TOP_LOOP37548_ifmap_vec_memcore      2
+
+=== td_fused_top_dataflow_in_loop_TOP_LOOP37548_ifmap_vec_memcore ===
+
+   Number of wires:                 11
+   Number of wire bits:             72
+   Number of public wires:          11
+   Number of public wire bits:      72
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     td_fused_top_dataflow_in_loop_TOP_LOOP37548_ifmap_vec_memcore_ram      1
+
+=== td_fused_top_dataflow_in_loop_TOP_LOOP37548_ifmap_vec_memcore_ram ===
+
+   Number of wires:                 23
+   Number of wire bits:            251
+   Number of public wires:          10
+   Number of public wire bits:      71
+   Number of memories:               1
+   Number of memory bits:         4608
+   Number of processes:              0
+   Number of cells:                 16
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       2
+     $mux                           12
+
+=== design hierarchy ===
+
+   td_fused_top_dataflow_in_loop_TOP_LOOP37548_ifmap_vec      1
+     td_fused_top_dataflow_in_loop_TOP_LOOP37548_ifmap_vec_memcore      2
+       td_fused_top_dataflow_in_loop_TOP_LOOP37548_ifmap_vec_memcore_ram      1
+
+   Number of wires:                167
+   Number of wire bits:           1043
+   Number of public wires:          96
+   Number of public wire bits:     619
+   Number of memories:               2
+   Number of memory bits:         9216
+   Number of processes:              0
+   Number of cells:                107
+     $add                            3
+     $and                            4
+     $dffe                           2
+     $eq                             1
+     $logic_and                     10
+     $logic_not                      6
+     $logic_or                       1
+     $memrd                          2
+     $memwr_v2                       4
+     $mux                           59
+     $not                            1
+     $reduce_bool                    3
+     $reduce_or                      1
+     $sdff                           2
+     $sdffe                          7
+     $sub                            1
+

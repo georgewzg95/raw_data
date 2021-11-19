@@ -164,7 +164,7 @@ module fifo496 (clk, wen, din, dout);
 		end
 	end
 endmodule
-//[second_phase_finishes]
+
 module fltr_compute_f1 (clk, din, dout);
 
     input clk; 
@@ -385,3 +385,24 @@ module fltr_compute_h4 (clk, din, dout);
          dout <= d_out_tmp[18:3] ; 
    end 
 endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

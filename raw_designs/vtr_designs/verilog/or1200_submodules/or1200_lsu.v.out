@@ -1,0 +1,80 @@
+
+5. Printing statistics.
+
+=== or1200_lsu ===
+
+   Number of wires:                 70
+   Number of wire bits:            299
+   Number of public wires:          23
+   Number of public wire bits:     252
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 58
+     $add                            1
+     $and                            6
+     $eq                            30
+     $mux                            2
+     $or                             7
+     $pmux                           1
+     $reduce_or                      9
+     or1200_mem2reg                  1
+     or1200_reg2mem                  1
+
+=== or1200_mem2reg ===
+
+   Number of wires:                 57
+   Number of wire bits:            178
+   Number of public wires:          13
+   Number of public wire bits:     127
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 52
+     $and                            5
+     $dlatch                         1
+     $eq                            24
+     $logic_not                      4
+     $not                            6
+     $pmux                           8
+     $reduce_or                      4
+
+=== or1200_reg2mem ===
+
+   Number of wires:                 12
+   Number of wire bits:            106
+   Number of public wires:           8
+   Number of public wire bits:     102
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq                             4
+     $mux                            2
+     $pmux                           1
+
+=== design hierarchy ===
+
+   or1200_lsu                        1
+     or1200_mem2reg                  1
+     or1200_reg2mem                  1
+
+   Number of wires:                139
+   Number of wire bits:            583
+   Number of public wires:          44
+   Number of public wire bits:     481
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                115
+     $add                            1
+     $and                           11
+     $dlatch                         1
+     $eq                            58
+     $logic_not                      4
+     $mux                            4
+     $not                            6
+     $or                             7
+     $pmux                          10
+     $reduce_or                     13
+

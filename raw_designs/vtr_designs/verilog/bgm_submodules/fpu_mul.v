@@ -544,7 +544,7 @@ always @(posedge clk)
 	sign_exe <= signa & signb;
 
 endmodule
-//[second_phase_finishes]
+
 module except(	clk, opa, opb, inf, ind, qnan, snan, opa_nan, opb_nan,
 		opa_00, opb_00, opa_inf, opb_inf, opa_dn, opb_dn);
 input		clk;
@@ -1474,3 +1474,9 @@ begin
 end
 
 endmodule
+
+
+
+
+
+

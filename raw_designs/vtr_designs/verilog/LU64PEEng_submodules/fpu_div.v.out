@@ -1,0 +1,56 @@
+
+5. Printing statistics.
+
+=== div_24b ===
+
+   Number of wires:                 75
+   Number of wire bits:           2076
+   Number of public wires:          28
+   Number of public wire bits:    1247
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 94
+     $le                            24
+     $mux                           47
+     $sub                           23
+
+=== fpu_div ===
+
+   Number of wires:                 62
+   Number of wire bits:           1094
+   Number of public wires:          12
+   Number of public wire bits:     195
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 83
+     $add                            1
+     $dff                            6
+     $ge                             1
+     $mux                           47
+     $sub                           26
+     $xor                            1
+     div_24b                         1
+
+=== design hierarchy ===
+
+   fpu_div                           1
+     div_24b                         1
+
+   Number of wires:                137
+   Number of wire bits:           3170
+   Number of public wires:          40
+   Number of public wire bits:    1442
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                176
+     $add                            1
+     $dff                            6
+     $ge                             1
+     $le                            24
+     $mux                           94
+     $sub                           49
+     $xor                            1
+

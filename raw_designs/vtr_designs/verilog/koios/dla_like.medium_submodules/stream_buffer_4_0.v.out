@@ -1,0 +1,81 @@
+
+5. Printing statistics.
+
+=== buffer_16_12100_buffer_init_04 ===
+
+   Number of wires:                 12
+   Number of wire bits:            156
+   Number of public wires:          12
+   Number of public wire bits:     156
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $dff                            3
+     dual_port_ram                   1
+
+=== dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            219
+   Number of public wires:           9
+   Number of public wire bits:      95
+   Number of memories:               1
+   Number of memory bits:          224
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== stream_buffer_4_0 ===
+
+   Number of wires:                 62
+   Number of wire bits:            500
+   Number of public wires:          33
+   Number of public wire bits:     261
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 45
+     $add                           12
+     $dff                            1
+     $eq                             2
+     $logic_and                      2
+     $logic_not                      2
+     $mux                           10
+     $reduce_bool                    2
+     $reduce_or                      2
+     $sdff                           6
+     $sdffe                          4
+     buffer_16_12100_buffer_init_04      2
+
+=== design hierarchy ===
+
+   stream_buffer_4_0                 1
+     buffer_16_12100_buffer_init_04      2
+       dual_port_ram                 1
+
+   Number of wires:                120
+   Number of wire bits:           1250
+   Number of public wires:          75
+   Number of public wire bits:     763
+   Number of memories:               2
+   Number of memory bits:          448
+   Number of processes:              0
+   Number of cells:                 73
+     $add                           12
+     $dff                            7
+     $dffe                           4
+     $eq                             2
+     $logic_and                      2
+     $logic_not                      2
+     $memrd                          4
+     $memwr_v2                       4
+     $mux                           22
+     $reduce_bool                    2
+     $reduce_or                      2
+     $sdff                           6
+     $sdffe                          4
+

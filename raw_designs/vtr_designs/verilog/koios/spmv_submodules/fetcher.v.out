@@ -1,0 +1,140 @@
+
+5. Printing statistics.
+
+=== $paramod$0ee0f8a3f6e8feca374f9ca746b4c19a3b748c8a\spram ===
+
+   Number of wires:                  9
+   Number of wire bits:             70
+   Number of public wires:           5
+   Number of public wire bits:      32
+   Number of memories:               1
+   Number of memory bits:        70912
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
+
+=== $paramod$4586d4375756b22e45a146b84f0ebaf0220cb438\spram ===
+
+   Number of wires:                  9
+   Number of wire bits:             70
+   Number of public wires:           5
+   Number of public wire bits:      32
+   Number of memories:               1
+   Number of memory bits:        70912
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
+
+=== $paramod$77ff764a4267a648a0627d0b67f82ec67f8fdc0c\dpram ===
+
+   Number of wires:                 17
+   Number of wire bits:             95
+   Number of public wires:           9
+   Number of public wire bits:      41
+   Number of memories:               1
+   Number of memory bits:           64
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== $paramod$8f649395dea8fbb2ab37b257a4c27adb75bba46a\generic_fifo_sc_a ===
+
+   Number of wires:                 30
+   Number of wire bits:             74
+   Number of public wires:          16
+   Number of public wire bits:      52
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $add                            2
+     $adffe                          3
+     $and                            3
+     $eq                             2
+     $logic_not                      1
+     $mux                            7
+     $paramod$77ff764a4267a648a0627d0b67f82ec67f8fdc0c\dpram      1
+     $reduce_bool                    3
+
+=== $paramod$923ac07d8b3c251a850b4e4c66840dc210399d4b\spram ===
+
+   Number of wires:                  9
+   Number of wire bits:             70
+   Number of public wires:           5
+   Number of public wire bits:      32
+   Number of memories:               1
+   Number of memory bits:        70912
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
+
+=== fetcher ===
+
+   Number of wires:                 57
+   Number of wire bits:           1869
+   Number of public wires:          31
+   Number of public wire bits:    1347
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                139
+     $add                            7
+     $adffe                         10
+     $ge                             1
+     $mux                            6
+     $ne                             3
+     $not                            4
+     $paramod$0ee0f8a3f6e8feca374f9ca746b4c19a3b748c8a\spram      1
+     $paramod$4586d4375756b22e45a146b84f0ebaf0220cb438\spram      1
+     $paramod$8f649395dea8fbb2ab37b257a4c27adb75bba46a\generic_fifo_sc_a     96
+     $paramod$923ac07d8b3c251a850b4e4c66840dc210399d4b\spram      1
+     $reduce_and                     3
+     $shl                            3
+     $shr                            3
+
+=== design hierarchy ===
+
+   fetcher                           1
+     $paramod$0ee0f8a3f6e8feca374f9ca746b4c19a3b748c8a\spram      1
+     $paramod$4586d4375756b22e45a146b84f0ebaf0220cb438\spram      1
+     $paramod$8f649395dea8fbb2ab37b257a4c27adb75bba46a\generic_fifo_sc_a     96
+       $paramod$77ff764a4267a648a0627d0b67f82ec67f8fdc0c\dpram      1
+     $paramod$923ac07d8b3c251a850b4e4c66840dc210399d4b\spram      1
+
+   Number of wires:               4596
+   Number of wire bits:          18303
+   Number of public wires:        2446
+   Number of public wire bits:   10371
+   Number of memories:              99
+   Number of memory bits:       218880
+   Number of processes:              0
+   Number of cells:               3226
+     $add                          199
+     $adffe                        298
+     $and                          288
+     $dffe                         195
+     $eq                           192
+     $ge                             1
+     $logic_not                     96
+     $memrd                        195
+     $memwr_v2                     195
+     $mux                         1263
+     $ne                             3
+     $not                            4
+     $reduce_and                     3
+     $reduce_bool                  288
+     $shl                            3
+     $shr                            3
+

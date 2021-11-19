@@ -125,7 +125,7 @@ module vecmat_add #(parameter arraysize=1024,parameter vectdepth=64)
 			qadd2 Add_u61(.a(tmp57),.b(tmp59),.c(tmp61));
 			
 endmodule
-//[second_phase_finishes]
+
 module qadd2(
  input [15:0] a,
  input [15:0] b,
@@ -136,3 +136,6 @@ assign c = a + b;
 
 
 endmodule
+
+
+

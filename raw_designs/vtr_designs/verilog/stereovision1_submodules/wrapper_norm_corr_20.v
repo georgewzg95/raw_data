@@ -275,7 +275,7 @@ module wrapper_corr_20 (clk, wen, d_l_1, d_l_2, d_r_1, d_r_2, corr_out_0, corr_o
          end 
    end 
 endmodule
-//[second_phase_finishes]
+
 module corr (clk, new_data, in_l_re, in_l_im, in_r_re, in_r_im, corr_out);
 
     parameter sh_reg_w  = 4'b1000;
@@ -400,7 +400,7 @@ module wrapper_norm (clk, nd, din_1, din_2, dout_1, dout_2);
          add_out <= ({addin_1[15], addin_1}) + ({addin_2[15], addin_2}) ; 
    end 
 endmodule
-//[second_phase_finishes]
+
 module my_wrapper_divider(rst, clk, data_in_a, data_in_b, data_out);
 	parameter INPUT_WIDTH_A = 5'b10000;
 	parameter INPUT_WIDTH_B = 5'b10001;
@@ -690,3 +690,21 @@ module my_divider(clk, rst, start, LA, EB, data_in_a, data_in_b, Remainder, data
 	assign data_out = DataA; 
 
 endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

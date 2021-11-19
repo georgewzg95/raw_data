@@ -1071,4 +1071,3 @@ assign b2_data_delayed_2 = eltwise_mode ? b2_data : b2_data_delayed_2_temp;
 assign b3_data_delayed_3 = eltwise_mode ? b3_data : b3_data_delayed_3_temp;
 
 endmodule
-//[second_phase_finishes]

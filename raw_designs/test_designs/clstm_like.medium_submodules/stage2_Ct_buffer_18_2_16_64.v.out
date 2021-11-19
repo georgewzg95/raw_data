@@ -1,0 +1,86 @@
+
+5. Printing statistics.
+
+=== counter_63_1 ===
+
+   Number of wires:                  7
+   Number of wire bits:             64
+   Number of public wires:           4
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $add                            1
+     $le                             1
+     $mux                            1
+     $sdffe                          1
+
+=== dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:           2907
+   Number of public wires:           9
+   Number of public wire bits:    1167
+   Number of memories:               1
+   Number of memory bits:         1728
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== ram_288_0_64 ===
+
+   Number of wires:                  8
+   Number of wire bits:           1166
+   Number of public wires:           8
+   Number of public wire bits:    1166
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     dual_port_ram                   1
+
+=== stage2_Ct_buffer_18_2_16_64 ===
+
+   Number of wires:                 62
+   Number of wire bits:           1793
+   Number of public wires:          59
+   Number of public wire bits:    1759
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add                            1
+     $lt                             2
+     $sdff                           2
+     counter_63_1                    1
+     ram_288_0_64                    2
+
+=== design hierarchy ===
+
+   stage2_Ct_buffer_18_2_16_64       1
+     counter_63_1                    1
+     ram_288_0_64                    2
+       dual_port_ram                 1
+
+   Number of wires:                119
+   Number of wire bits:          10003
+   Number of public wires:          97
+   Number of public wire bits:    6442
+   Number of memories:               2
+   Number of memory bits:         3456
+   Number of processes:              0
+   Number of cells:                 33
+     $add                            2
+     $dffe                           4
+     $le                             1
+     $lt                             2
+     $memrd                          4
+     $memwr_v2                       4
+     $mux                           13
+     $sdff                           2
+     $sdffe                          1
+

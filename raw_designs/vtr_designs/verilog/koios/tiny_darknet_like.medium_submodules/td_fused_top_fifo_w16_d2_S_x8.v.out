@@ -1,0 +1,73 @@
+
+5. Printing statistics.
+
+=== td_fused_top_fifo_w16_d2_S_x8 ===
+
+   Number of wires:                 45
+   Number of wire bits:            172
+   Number of public wires:          17
+   Number of public wire bits:      78
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 34
+     $add                            1
+     $and                            6
+     $eq                             2
+     $logic_and                      2
+     $logic_not                      3
+     $mux                            6
+     $ne                             1
+     $not                            2
+     $or                             2
+     $reduce_and                     2
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdffe                          3
+     $sub                            1
+     td_fused_top_fifo_w16_d2_S_x8_shiftReg      1
+
+=== td_fused_top_fifo_w16_d2_S_x8_shiftReg ===
+
+   Number of wires:                  8
+   Number of wire bits:             68
+   Number of public wires:           7
+   Number of public wire bits:      67
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $dffe                           2
+     $not                            1
+     $pmux                           1
+
+=== design hierarchy ===
+
+   td_fused_top_fifo_w16_d2_S_x8      1
+     td_fused_top_fifo_w16_d2_S_x8_shiftReg      1
+
+   Number of wires:                 53
+   Number of wire bits:            240
+   Number of public wires:          24
+   Number of public wire bits:     145
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 37
+     $add                            1
+     $and                            6
+     $dffe                           2
+     $eq                             2
+     $logic_and                      2
+     $logic_not                      3
+     $mux                            6
+     $ne                             1
+     $not                            3
+     $or                             2
+     $pmux                           1
+     $reduce_and                     2
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdffe                          3
+     $sub                            1
+

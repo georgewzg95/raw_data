@@ -1,0 +1,100 @@
+
+5. Printing statistics.
+
+=== $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            363
+   Number of public wires:           9
+   Number of public wire bits:     151
+   Number of memories:               1
+   Number of memory bits:          320
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            6
+
+=== dummy_counter ===
+
+   Number of wires:                 23
+   Number of wire bits:            172
+   Number of public wires:           8
+   Number of public wire bits:      68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 16
+     $add                            1
+     $dffe                           1
+     $eq                             7
+     $logic_not                      1
+     $mux                            1
+     $ne                             1
+     $not                            1
+     $pmux                           1
+     $reduce_and                     1
+     $reduce_or                      1
+
+=== ifetch ===
+
+   Number of wires:                 42
+   Number of wire bits:            451
+   Number of public wires:          36
+   Number of public wire bits:     445
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            4
+     $mux                            1
+     $not                            5
+     $or                             2
+     $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\dual_port_ram      1
+     dummy_counter                   1
+     register_1bit                   1
+
+=== register_1bit ===
+
+   Number of wires:                  5
+   Number of wire bits:              5
+   Number of public wires:           5
+   Number of public wire bits:       5
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $sdffe                          1
+
+=== design hierarchy ===
+
+   ifetch                            1
+     $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\dual_port_ram      1
+     dummy_counter                   1
+     register_1bit                   1
+
+   Number of wires:                 87
+   Number of wire bits:            991
+   Number of public wires:          58
+   Number of public wire bits:     669
+   Number of memories:               1
+   Number of memory bits:          320
+   Number of processes:              0
+   Number of cells:                 41
+     $add                            1
+     $and                            4
+     $dffe                           3
+     $eq                             7
+     $logic_not                      1
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                            8
+     $ne                             1
+     $not                            6
+     $or                             2
+     $pmux                           1
+     $reduce_and                     1
+     $reduce_or                      1
+     $sdffe                          1
+

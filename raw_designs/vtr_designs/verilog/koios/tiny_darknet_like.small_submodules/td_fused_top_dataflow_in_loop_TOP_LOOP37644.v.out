@@ -1,0 +1,1113 @@
+
+5. Printing statistics.
+
+=== $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hadd_16ns_16ns_16_5_full_dsp_1 ===
+
+   Number of wires:                 19
+   Number of wire bits:            169
+   Number of public wires:          19
+   Number of public wire bits:     169
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $dff                            2
+     $dffe                           2
+     $mux                            1
+     td_fused_top_ap_hadd_3_full_dsp_16      1
+
+=== $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hsub_16ns_16ns_16_5_full_dsp_1 ===
+
+   Number of wires:                 19
+   Number of wire bits:            169
+   Number of public wires:          19
+   Number of public wire bits:     169
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $dff                            2
+     $dffe                           2
+     $mux                            1
+     td_fused_top_ap_hadd_3_full_dsp_16      1
+
+=== $paramod$444f4f35aae1753c454375fdcc6a89a96e0bb6d9\td_fused_top_dataflow_in_loop_TOP_LOOP37644_accum1_out_0 ===
+
+   Number of wires:                 99
+   Number of wire bits:            349
+   Number of public wires:          54
+   Number of public wire bits:     285
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 77
+     $add                            3
+     $and                            4
+     $eq                             1
+     $logic_and                     10
+     $logic_not                      6
+     $logic_or                       1
+     $mux                           35
+     $not                            1
+     $reduce_bool                    3
+     $reduce_or                      1
+     $sdff                           2
+     $sdffe                          7
+     $sub                            1
+     td_fused_top_dataflow_in_loop_TOP_LOOP37644_accum1_out_0_memcore      2
+
+=== $paramod$446b85b08a7a06b40d768e83a34c90ce7206f74e\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1 ===
+
+   Number of wires:                 19
+   Number of wire bits:            169
+   Number of public wires:          19
+   Number of public wire bits:     169
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $dff                            2
+     $dffe                           2
+     $mux                            1
+     td_fused_top_ap_hmul_2_max_dsp_16      1
+
+=== $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP37644_ifmap_vec_0_0 ===
+
+   Number of wires:                 99
+   Number of wire bits:            381
+   Number of public wires:          54
+   Number of public wire bits:     317
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 77
+     $add                            3
+     $and                            4
+     $eq                             1
+     $logic_and                     10
+     $logic_not                      6
+     $logic_or                       1
+     $mux                           35
+     $not                            1
+     $reduce_bool                    3
+     $reduce_or                      1
+     $sdff                           2
+     $sdffe                          7
+     $sub                            1
+     td_fused_top_dataflow_in_loop_TOP_LOOP37644_ifmap_vec_0_0_memcore      2
+
+=== $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP37644_products_0 ===
+
+   Number of wires:                101
+   Number of wire bits:            397
+   Number of public wires:          51
+   Number of public wire bits:     313
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 82
+     $add                            3
+     $and                            4
+     $eq                             1
+     $logic_and                     11
+     $logic_not                      8
+     $logic_or                       1
+     $mux                           34
+     $not                            1
+     $reduce_bool                    4
+     $reduce_or                      1
+     $sdff                           2
+     $sdffe                          9
+     $sub                            1
+     td_fused_top_dataflow_in_loop_TOP_LOOP37644_products_0_memcore      2
+
+=== $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP37644_weight_vecs_0_0_0 ===
+
+   Number of wires:                 55
+   Number of wire bits:            146
+   Number of public wires:          28
+   Number of public wire bits:     115
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 36
+     $add                            3
+     $and                            4
+     $eq                             1
+     $logic_and                      7
+     $logic_not                      4
+     $logic_or                       1
+     $mux                            6
+     $reduce_bool                    2
+     $reduce_or                      1
+     $sdffe                          5
+     $sub                            1
+     td_fused_top_dataflow_in_loop_TOP_LOOP37644_weight_vecs_0_0_0_memcore      1
+
+=== FPAddSub ===
+
+   Number of wires:                 45
+   Number of wire bits:            591
+   Number of public wires:          45
+   Number of public wire bits:     591
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $mux                            9
+     FPAddSub_AlignModule            1
+     FPAddSub_AlignShift1            1
+     FPAddSub_AlignShift2            1
+     FPAddSub_ExceptionModule        1
+     FPAddSub_ExecutionModule        1
+     FPAddSub_NormalizeModule        1
+     FPAddSub_NormalizeShift1        1
+     FPAddSub_NormalizeShift2        1
+     FPAddSub_PrealignModule         1
+     FPAddSub_RoundModule            1
+
+=== FPAddSub_AlignModule ===
+
+   Number of wires:                  8
+   Number of wire bits:             71
+   Number of public wires:           8
+   Number of public wire bits:      71
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $lt                             1
+     $mux                            4
+
+=== FPAddSub_AlignShift1 ===
+
+   Number of wires:                 12
+   Number of wire bits:             74
+   Number of public wires:           6
+   Number of public wire bits:      68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     $eq                             3
+     $logic_not                      1
+     $mux                            1
+     $pmux                          11
+     $reduce_or                      2
+
+=== FPAddSub_AlignShift2 ===
+
+   Number of wires:                 11
+   Number of wire bits:             63
+   Number of public wires:           5
+   Number of public wire bits:      57
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $eq                             3
+     $logic_not                      1
+     $pmux                          11
+     $reduce_or                      2
+
+=== FPAddSub_ExceptionModule ===
+
+   Number of wires:                 23
+   Number of wire bits:             61
+   Number of public wires:          13
+   Number of public wire bits:      51
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            4
+     $logic_not                      1
+     $not                            2
+     $or                             5
+     $reduce_and                     1
+     $reduce_or                      2
+
+=== FPAddSub_ExecutionModule ===
+
+   Number of wires:                 12
+   Number of wire bits:             79
+   Number of public wires:           9
+   Number of public wire bits:      44
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $add                            1
+     $mux                            2
+     $sub                            1
+     $xor                            2
+
+=== FPAddSub_NormalizeModule ===
+
+   Number of wires:                 16
+   Number of wire bits:            116
+   Number of public wires:           4
+   Number of public wire bits:      56
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $mux                           14
+
+=== FPAddSub_NormalizeShift1 ===
+
+   Number of wires:                 19
+   Number of wire bits:            152
+   Number of public wires:           7
+   Number of public wire bits:     140
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $eq                             6
+     $logic_not                      2
+     $pmux                           8
+     $reduce_or                      4
+
+=== FPAddSub_NormalizeShift2 ===
+
+   Number of wires:                 14
+   Number of wire bits:             62
+   Number of public wires:          13
+   Number of public wire bits:      61
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $add                            1
+     $logic_not                      1
+     $mux                            1
+     $reduce_or                      2
+     $sub                            1
+
+=== FPAddSub_PrealignModule ===
+
+   Number of wires:                 30
+   Number of wire bits:            295
+   Number of public wires:          16
+   Number of public wire bits:      95
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $add                            4
+     $and                            4
+     $logic_not                      2
+     $not                            2
+     $or                             3
+     $reduce_and                     2
+     $reduce_or                      2
+
+=== FPAddSub_RoundModule ===
+
+   Number of wires:                 35
+   Number of wire bits:            124
+   Number of public wires:          19
+   Number of public wire bits:      72
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $add                            2
+     $and                            7
+     $mux                            4
+     $not                            2
+     $or                             5
+     $xor                            2
+
+=== FPMult_16 ===
+
+   Number of wires:                 27
+   Number of wire bits:            348
+   Number of public wires:          27
+   Number of public wire bits:     348
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $mux                            5
+     FPMult_ExecuteModule            1
+     FPMult_NormalizeModule          1
+     FPMult_PrepModule               1
+     FPMult_RoundModule              1
+
+=== FPMult_ExecuteModule ===
+
+   Number of wires:                 15
+   Number of wire bits:            103
+   Number of public wires:          12
+   Number of public wire bits:      95
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add                            2
+     $and                            1
+     $mux                            1
+     $or                             1
+     $reduce_or                      1
+     $xor                            1
+
+=== FPMult_NormalizeModule ===
+
+   Number of wires:                  8
+   Number of wire bits:            114
+   Number of public wires:           6
+   Number of public wire bits:      50
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $sub                            2
+
+=== FPMult_PrepModule ===
+
+   Number of wires:                 23
+   Number of wire bits:             86
+   Number of public wires:          14
+   Number of public wire bits:      77
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and                            4
+     $logic_not                      2
+     $mul                            1
+     $or                             3
+     $reduce_and                     2
+     $reduce_or                      3
+
+=== FPMult_RoundModule ===
+
+   Number of wires:                 12
+   Number of wire bits:             90
+   Number of public wires:          12
+   Number of public wire bits:      90
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux                            3
+
+=== td_fused_top_Block_entry_proc_proc413 ===
+
+   Number of wires:                 16
+   Number of wire bits:             61
+   Number of public wires:          14
+   Number of public wire bits:      59
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $mux                            4
+     $not                            1
+     $or                             1
+     $reduce_or                      1
+     $sdff                           2
+
+=== td_fused_top_ap_hadd_3_full_dsp_16 ===
+
+   Number of wires:                 12
+   Number of wire bits:            117
+   Number of public wires:          12
+   Number of public wire bits:     117
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $dffe                           3
+     FPAddSub                        1
+
+=== td_fused_top_ap_hmul_2_max_dsp_16 ===
+
+   Number of wires:                 12
+   Number of wire bits:            117
+   Number of public wires:          12
+   Number of public wire bits:     117
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $dffe                           3
+     FPMult_16                       1
+
+=== td_fused_top_dataflow_in_loop_TOP_LOOP37644 ===
+
+   Number of wires:                278
+   Number of wire bits:           1717
+   Number of public wires:         253
+   Number of public wire bits:    1692
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 57
+     $and                           20
+     $not                            9
+     $or                             2
+     $paramod$444f4f35aae1753c454375fdcc6a89a96e0bb6d9\td_fused_top_dataflow_in_loop_TOP_LOOP37644_accum1_out_0      1
+     $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP37644_ifmap_vec_0_0      1
+     $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP37644_products_0      1
+     $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP37644_weight_vecs_0_0_0      1
+     $reduce_or                      1
+     $sdff                           2
+     td_fused_top_Block_entry_proc_proc413      1
+     td_fused_top_fifo_w10_d7_S      1
+     td_fused_top_fifo_w16_d2_S_x3      5
+     td_fused_top_fifo_w5_d2_S_x      1
+     td_fused_top_fifo_w5_d7_S_x      2
+     td_fused_top_start_for_tdf6_readFilters46_U0      1
+     td_fused_top_tdf6_accum_1       1
+     td_fused_top_tdf6_accum_2       1
+     td_fused_top_tdf6_adjust        1
+     td_fused_top_tdf6_dot_product      1
+     td_fused_top_tdf6_get_next_ijk      1
+     td_fused_top_tdf6_readFilters46      1
+     td_fused_top_tdf6_readInputs      1
+     td_fused_top_tdf6_writeOutputs_unaligned      1
+
+=== td_fused_top_dataflow_in_loop_TOP_LOOP37644_accum1_out_0_memcore ===
+
+   Number of wires:                 11
+   Number of wire bits:             60
+   Number of public wires:          11
+   Number of public wire bits:      60
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     td_fused_top_dataflow_in_loop_TOP_LOOP37644_accum1_out_0_memcore_ram      1
+
+=== td_fused_top_dataflow_in_loop_TOP_LOOP37644_accum1_out_0_memcore_ram ===
+
+   Number of wires:                 23
+   Number of wire bits:            215
+   Number of public wires:          10
+   Number of public wire bits:      59
+   Number of memories:               1
+   Number of memory bits:          128
+   Number of processes:              0
+   Number of cells:                 16
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       2
+     $mux                           12
+
+=== td_fused_top_dataflow_in_loop_TOP_LOOP37644_ifmap_vec_0_0_memcore ===
+
+   Number of wires:                 11
+   Number of wire bits:             68
+   Number of public wires:          11
+   Number of public wire bits:      68
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     td_fused_top_dataflow_in_loop_TOP_LOOP37644_ifmap_vec_0_0_memcore_ram      1
+
+=== td_fused_top_dataflow_in_loop_TOP_LOOP37644_ifmap_vec_0_0_memcore_ram ===
+
+   Number of wires:                 23
+   Number of wire bits:            239
+   Number of public wires:          10
+   Number of public wire bits:      67
+   Number of memories:               1
+   Number of memory bits:         2048
+   Number of processes:              0
+   Number of cells:                 16
+     $dffe                           1
+     $memrd                          1
+     $memwr_v2                       2
+     $mux                           12
+
+=== td_fused_top_dataflow_in_loop_TOP_LOOP37644_products_0_memcore ===
+
+   Number of wires:                 10
+   Number of wire bits:             67
+   Number of public wires:          10
+   Number of public wire bits:      67
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     td_fused_top_dataflow_in_loop_TOP_LOOP37644_products_0_memcore_ram      1
+
+=== td_fused_top_dataflow_in_loop_TOP_LOOP37644_products_0_memcore_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            176
+   Number of public wires:           9
+   Number of public wire bits:      66
+   Number of memories:               1
+   Number of memory bits:         2048
+   Number of processes:              0
+   Number of cells:                 11
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       1
+     $mux                            6
+
+=== td_fused_top_dataflow_in_loop_TOP_LOOP37644_weight_vecs_0_0_0_memcore ===
+
+   Number of wires:                 12
+   Number of wire bits:             86
+   Number of public wires:          12
+   Number of public wire bits:      86
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     td_fused_top_dataflow_in_loop_TOP_LOOP37644_weight_vecs_0_0_0_memcore_ram      1
+
+=== td_fused_top_dataflow_in_loop_TOP_LOOP37644_weight_vecs_0_0_0_memcore_ram ===
+
+   Number of wires:                 25
+   Number of wire bits:            277
+   Number of public wires:          11
+   Number of public wire bits:      85
+   Number of memories:               1
+   Number of memory bits:         4096
+   Number of processes:              0
+   Number of cells:                 18
+     $dffe                           2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                           12
+
+=== td_fused_top_fifo_w10_d7_S ===
+
+   Number of wires:                 46
+   Number of wire bits:            161
+   Number of public wires:          17
+   Number of public wire bits:      58
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 35
+     $add                            1
+     $and                            6
+     $eq                             3
+     $logic_and                      2
+     $logic_not                      3
+     $mux                            6
+     $ne                             1
+     $not                            2
+     $or                             2
+     $reduce_and                     2
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdffe                          3
+     $sub                            1
+     td_fused_top_fifo_w10_d7_S_shiftReg      1
+
+=== td_fused_top_fifo_w10_d7_S_shiftReg ===
+
+   Number of wires:                 18
+   Number of wire bits:            101
+   Number of public wires:          12
+   Number of public wire bits:      95
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $dffe                           7
+     $eq                             5
+     $logic_not                      1
+     $pmux                           1
+
+=== td_fused_top_fifo_w16_d2_S_x3 ===
+
+   Number of wires:                 45
+   Number of wire bits:            172
+   Number of public wires:          17
+   Number of public wire bits:      78
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 34
+     $add                            1
+     $and                            6
+     $eq                             2
+     $logic_and                      2
+     $logic_not                      3
+     $mux                            6
+     $ne                             1
+     $not                            2
+     $or                             2
+     $reduce_and                     2
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdffe                          3
+     $sub                            1
+     td_fused_top_fifo_w16_d2_S_x3_shiftReg      1
+
+=== td_fused_top_fifo_w16_d2_S_x3_shiftReg ===
+
+   Number of wires:                  8
+   Number of wire bits:             68
+   Number of public wires:           7
+   Number of public wire bits:      67
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $dffe                           2
+     $not                            1
+     $pmux                           1
+
+=== td_fused_top_fifo_w5_d2_S_x ===
+
+   Number of wires:                 45
+   Number of wire bits:            128
+   Number of public wires:          17
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 34
+     $add                            1
+     $and                            6
+     $eq                             2
+     $logic_and                      2
+     $logic_not                      3
+     $mux                            6
+     $ne                             1
+     $not                            2
+     $or                             2
+     $reduce_and                     2
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdffe                          3
+     $sub                            1
+     td_fused_top_fifo_w5_d2_S_x_shiftReg      1
+
+=== td_fused_top_fifo_w5_d2_S_x_shiftReg ===
+
+   Number of wires:                  8
+   Number of wire bits:             24
+   Number of public wires:           7
+   Number of public wire bits:      23
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $dffe                           2
+     $not                            1
+     $pmux                           1
+
+=== td_fused_top_fifo_w5_d7_S_x ===
+
+   Number of wires:                 46
+   Number of wire bits:            141
+   Number of public wires:          17
+   Number of public wire bits:      38
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 35
+     $add                            1
+     $and                            6
+     $eq                             3
+     $logic_and                      2
+     $logic_not                      3
+     $mux                            6
+     $ne                             1
+     $not                            2
+     $or                             2
+     $reduce_and                     2
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdffe                          3
+     $sub                            1
+     td_fused_top_fifo_w5_d7_S_x_shiftReg      1
+
+=== td_fused_top_fifo_w5_d7_S_x_shiftReg ===
+
+   Number of wires:                 18
+   Number of wire bits:             56
+   Number of public wires:          12
+   Number of public wire bits:      50
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $dffe                           7
+     $eq                             5
+     $logic_not                      1
+     $pmux                           1
+
+=== td_fused_top_start_for_tdf6_readFilters46_U0 ===
+
+   Number of wires:                 45
+   Number of wire bits:            112
+   Number of public wires:          17
+   Number of public wire bits:      18
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 34
+     $add                            1
+     $and                            6
+     $eq                             2
+     $logic_and                      2
+     $logic_not                      3
+     $mux                            6
+     $ne                             1
+     $not                            2
+     $or                             2
+     $reduce_and                     2
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdffe                          3
+     $sub                            1
+     td_fused_top_start_for_tdf6_readFilters46_U0_shiftReg      1
+
+=== td_fused_top_start_for_tdf6_readFilters46_U0_shiftReg ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $dffe                           2
+     $not                            1
+     $pmux                           1
+
+=== td_fused_top_tdf6_accum_1 ===
+
+   Number of wires:                224
+   Number of wire bits:           1831
+   Number of public wires:         126
+   Number of public wire bits:    1403
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                162
+     $add                            2
+     $and                           34
+     $dffe                          22
+     $eq                            13
+     $logic_not                      1
+     $mux                           53
+     $not                           11
+     $or                            13
+     $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hadd_16ns_16ns_16_5_full_dsp_1      2
+     $pmux                           1
+     $reduce_bool                    2
+     $reduce_or                      2
+     $sdff                           2
+     $sdffe                          4
+
+=== td_fused_top_tdf6_accum_2 ===
+
+   Number of wires:                 44
+   Number of wire bits:            217
+   Number of public wires:          28
+   Number of public wire bits:     189
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $add                            1
+     $and                            3
+     $dffe                           1
+     $eq                             8
+     $mux                            8
+     $not                            2
+     $or                             1
+     $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hadd_16ns_16ns_16_5_full_dsp_1      1
+     $pmux                           1
+     $reduce_or                      1
+     $sdff                           3
+     $sdffe                          2
+
+=== td_fused_top_tdf6_adjust ===
+
+   Number of wires:                 70
+   Number of wire bits:            446
+   Number of public wires:          42
+   Number of public wire bits:     402
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 45
+     $and                            2
+     $dffe                           4
+     $eq                            17
+     $mux                            7
+     $not                            3
+     $or                             5
+     $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hadd_16ns_16ns_16_5_full_dsp_1      1
+     $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hsub_16ns_16ns_16_5_full_dsp_1      1
+     $paramod$446b85b08a7a06b40d768e83a34c90ce7206f74e\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1      1
+     $pmux                           1
+     $reduce_or                      1
+     $sdff                           2
+
+=== td_fused_top_tdf6_dot_product ===
+
+   Number of wires:                 99
+   Number of wire bits:            701
+   Number of public wires:          62
+   Number of public wire bits:     644
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 74
+     $add                            1
+     $and                           13
+     $dff                            8
+     $dffe                           8
+     $eq                             4
+     $mux                           14
+     $not                           10
+     $or                             2
+     $paramod$446b85b08a7a06b40d768e83a34c90ce7206f74e\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1      1
+     $pmux                           1
+     $reduce_bool                    1
+     $reduce_or                      2
+     $sdff                           8
+     $sdffe                          1
+
+=== td_fused_top_tdf6_get_next_ijk ===
+
+   Number of wires:                 74
+   Number of wire bits:            266
+   Number of public wires:          42
+   Number of public wire bits:     204
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 52
+     $add                            3
+     $and                            8
+     $dffe                           2
+     $eq                             3
+     $mux                           16
+     $not                            9
+     $or                             6
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdff                           1
+     $sdffce                         1
+     $sdffe                          1
+
+=== td_fused_top_tdf6_readFilters46 ===
+
+   Number of wires:                 92
+   Number of wire bits:            379
+   Number of public wires:          52
+   Number of public wire bits:     319
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 68
+     $add                            2
+     $and                           12
+     $dff                            2
+     $dffe                           6
+     $eq                             4
+     $mux                           16
+     $not                           10
+     $or                             6
+     $pmux                           1
+     $reduce_bool                    1
+     $reduce_or                      2
+     $sdff                           5
+     $sdffe                          1
+
+=== td_fused_top_tdf6_readInputs ===
+
+   Number of wires:                171
+   Number of wire bits:           1113
+   Number of public wires:         105
+   Number of public wire bits:     979
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                112
+     $add                            2
+     $and                           20
+     $dffe                          10
+     $eq                             6
+     $gt                             2
+     $mux                           31
+     $not                           11
+     $or                            16
+     $pmux                           1
+     $reduce_bool                    2
+     $reduce_or                      3
+     $sdff                           2
+     $sdffce                         2
+     $sdffe                          3
+     $sub                            1
+
+=== td_fused_top_tdf6_writeOutputs_unaligned ===
+
+   Number of wires:                 85
+   Number of wire bits:            604
+   Number of public wires:          57
+   Number of public wire bits:     574
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 58
+     $add                            4
+     $and                            9
+     $dff                            4
+     $dffe                           2
+     $eq                             8
+     $logic_not                      1
+     $mux                           13
+     $not                            5
+     $or                             4
+     $pmux                           1
+     $reduce_or                      1
+     $sdff                           2
+     $sdffce                         2
+     $sdffe                          1
+     $sub                            1
+
+=== design hierarchy ===
+
+   td_fused_top_dataflow_in_loop_TOP_LOOP37644      1
+     $paramod$444f4f35aae1753c454375fdcc6a89a96e0bb6d9\td_fused_top_dataflow_in_loop_TOP_LOOP37644_accum1_out_0      1
+       td_fused_top_dataflow_in_loop_TOP_LOOP37644_accum1_out_0_memcore      2
+         td_fused_top_dataflow_in_loop_TOP_LOOP37644_accum1_out_0_memcore_ram      1
+     $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP37644_ifmap_vec_0_0      1
+       td_fused_top_dataflow_in_loop_TOP_LOOP37644_ifmap_vec_0_0_memcore      2
+         td_fused_top_dataflow_in_loop_TOP_LOOP37644_ifmap_vec_0_0_memcore_ram      1
+     $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP37644_products_0      1
+       td_fused_top_dataflow_in_loop_TOP_LOOP37644_products_0_memcore      2
+         td_fused_top_dataflow_in_loop_TOP_LOOP37644_products_0_memcore_ram      1
+     $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP37644_weight_vecs_0_0_0      1
+       td_fused_top_dataflow_in_loop_TOP_LOOP37644_weight_vecs_0_0_0_memcore      1
+         td_fused_top_dataflow_in_loop_TOP_LOOP37644_weight_vecs_0_0_0_memcore_ram      1
+     td_fused_top_Block_entry_proc_proc413      1
+     td_fused_top_fifo_w10_d7_S      1
+       td_fused_top_fifo_w10_d7_S_shiftReg      1
+     td_fused_top_fifo_w16_d2_S_x3      5
+       td_fused_top_fifo_w16_d2_S_x3_shiftReg      1
+     td_fused_top_fifo_w5_d2_S_x      1
+       td_fused_top_fifo_w5_d2_S_x_shiftReg      1
+     td_fused_top_fifo_w5_d7_S_x      2
+       td_fused_top_fifo_w5_d7_S_x_shiftReg      1
+     td_fused_top_start_for_tdf6_readFilters46_U0      1
+       td_fused_top_start_for_tdf6_readFilters46_U0_shiftReg      1
+     td_fused_top_tdf6_accum_1       1
+       $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hadd_16ns_16ns_16_5_full_dsp_1      2
+         td_fused_top_ap_hadd_3_full_dsp_16      1
+           FPAddSub                  1
+             FPAddSub_AlignModule      1
+             FPAddSub_AlignShift1      1
+             FPAddSub_AlignShift2      1
+             FPAddSub_ExceptionModule      1
+             FPAddSub_ExecutionModule      1
+             FPAddSub_NormalizeModule      1
+             FPAddSub_NormalizeShift1      1
+             FPAddSub_NormalizeShift2      1
+             FPAddSub_PrealignModule      1
+             FPAddSub_RoundModule      1
+     td_fused_top_tdf6_accum_2       1
+       $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hadd_16ns_16ns_16_5_full_dsp_1      1
+         td_fused_top_ap_hadd_3_full_dsp_16      1
+           FPAddSub                  1
+             FPAddSub_AlignModule      1
+             FPAddSub_AlignShift1      1
+             FPAddSub_AlignShift2      1
+             FPAddSub_ExceptionModule      1
+             FPAddSub_ExecutionModule      1
+             FPAddSub_NormalizeModule      1
+             FPAddSub_NormalizeShift1      1
+             FPAddSub_NormalizeShift2      1
+             FPAddSub_PrealignModule      1
+             FPAddSub_RoundModule      1
+     td_fused_top_tdf6_adjust        1
+       $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hadd_16ns_16ns_16_5_full_dsp_1      1
+         td_fused_top_ap_hadd_3_full_dsp_16      1
+           FPAddSub                  1
+             FPAddSub_AlignModule      1
+             FPAddSub_AlignShift1      1
+             FPAddSub_AlignShift2      1
+             FPAddSub_ExceptionModule      1
+             FPAddSub_ExecutionModule      1
+             FPAddSub_NormalizeModule      1
+             FPAddSub_NormalizeShift1      1
+             FPAddSub_NormalizeShift2      1
+             FPAddSub_PrealignModule      1
+             FPAddSub_RoundModule      1
+       $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hsub_16ns_16ns_16_5_full_dsp_1      1
+         td_fused_top_ap_hadd_3_full_dsp_16      1
+           FPAddSub                  1
+             FPAddSub_AlignModule      1
+             FPAddSub_AlignShift1      1
+             FPAddSub_AlignShift2      1
+             FPAddSub_ExceptionModule      1
+             FPAddSub_ExecutionModule      1
+             FPAddSub_NormalizeModule      1
+             FPAddSub_NormalizeShift1      1
+             FPAddSub_NormalizeShift2      1
+             FPAddSub_PrealignModule      1
+             FPAddSub_RoundModule      1
+       $paramod$446b85b08a7a06b40d768e83a34c90ce7206f74e\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1      1
+         td_fused_top_ap_hmul_2_max_dsp_16      1
+           FPMult_16                 1
+             FPMult_ExecuteModule      1
+             FPMult_NormalizeModule      1
+             FPMult_PrepModule       1
+             FPMult_RoundModule      1
+     td_fused_top_tdf6_dot_product      1
+       $paramod$446b85b08a7a06b40d768e83a34c90ce7206f74e\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1      1
+         td_fused_top_ap_hmul_2_max_dsp_16      1
+           FPMult_16                 1
+             FPMult_ExecuteModule      1
+             FPMult_NormalizeModule      1
+             FPMult_PrepModule       1
+             FPMult_RoundModule      1
+     td_fused_top_tdf6_get_next_ijk      1
+     td_fused_top_tdf6_readFilters46      1
+     td_fused_top_tdf6_readInputs      1
+     td_fused_top_tdf6_writeOutputs_unaligned      1
+
+   Number of wires:               3809
+   Number of wire bits:          24673
+   Number of public wires:        2452
+   Number of public wire bits:   19428
+   Number of memories:               7
+   Number of memory bits:        12544
+   Number of processes:              0
+   Number of cells:               2286
+     $add                           81
+     $and                          282
+     $dff                           28
+     $dffe                         135
+     $eq                           165
+     $gt                             2
+     $logic_and                     58
+     $logic_not                    103
+     $logic_or                       4
+     $lt                             5
+     $memrd                         10
+     $memwr_v2                      12
+     $mul                            2
+     $mux                          604
+     $ne                            10
+     $not                          131
+     $or                           149
+     $pmux                         167
+     $reduce_and                    39
+     $reduce_bool                   29
+     $reduce_or                    107
+     $sdff                          35
+     $sdffce                         5
+     $sdffe                         71
+     $sub                           30
+     $xor                           22
+

@@ -57,7 +57,7 @@ module mode2_sub(
 //  DW_fp_sub #(`MANTISSA, `EXPONENT, `IEEE_COMPLIANCE) sub2(.a(a_inp2), .b(b_inp), .z(outp2), .rnd(3'b000), .status());
 //  DW_fp_sub #(`MANTISSA, `EXPONENT, `IEEE_COMPLIANCE) sub3(.a(a_inp3), .b(b_inp), .z(outp3), .rnd(3'b000), .status());
 endmodule
-//[second_phase_finishes]
+
 module fixed_point_addsub(
 		clk,
 		rst,
@@ -112,3 +112,6 @@ module fixed_point_addsub(
 	
 	
 endmodule
+
+
+

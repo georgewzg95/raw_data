@@ -1,0 +1,86 @@
+
+5. Printing statistics.
+
+=== td_fused_top_td_fused_tdf3_fmaps ===
+
+   Number of wires:                 90
+   Number of wire bits:            903
+   Number of public wires:          47
+   Number of public wire bits:     793
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 71
+     $add                            3
+     $and                            4
+     $eq                             1
+     $logic_and                     10
+     $logic_not                      6
+     $logic_or                       1
+     $mux                           29
+     $not                            1
+     $reduce_bool                    3
+     $reduce_or                      1
+     $sdff                           2
+     $sdffe                          7
+     $sub                            1
+     td_fused_top_td_fused_tdf3_fmaps_memcore      2
+
+=== td_fused_top_td_fused_tdf3_fmaps_memcore ===
+
+   Number of wires:                  9
+   Number of wire bits:            163
+   Number of public wires:           9
+   Number of public wire bits:     163
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     td_fused_top_td_fused_tdf3_fmaps_memcore_ram      1
+
+=== td_fused_top_td_fused_tdf3_fmaps_memcore_ram ===
+
+   Number of wires:                 25
+   Number of wire bits:            830
+   Number of public wires:          18
+   Number of public wire bits:     480
+   Number of memories:               1
+   Number of memory bits:       1605632
+   Number of processes:              0
+   Number of cells:                 14
+     $dffe                           6
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            6
+
+=== design hierarchy ===
+
+   td_fused_top_td_fused_tdf3_fmaps      1
+     td_fused_top_td_fused_tdf3_fmaps_memcore      2
+       td_fused_top_td_fused_tdf3_fmaps_memcore_ram      1
+
+   Number of wires:                158
+   Number of wire bits:           2889
+   Number of public wires:         101
+   Number of public wire bits:    2079
+   Number of memories:               2
+   Number of memory bits:       3211264
+   Number of processes:              0
+   Number of cells:                 97
+     $add                            3
+     $and                            4
+     $dffe                          12
+     $eq                             1
+     $logic_and                     10
+     $logic_not                      6
+     $logic_or                       1
+     $memrd                          2
+     $memwr_v2                       2
+     $mux                           41
+     $not                            1
+     $reduce_bool                    3
+     $reduce_or                      1
+     $sdff                           2
+     $sdffe                          7
+     $sub                            1
+

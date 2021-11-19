@@ -55,7 +55,7 @@ module mode3_exp(
   expunit exp2(.a(inp2), .z(outp2), .status(), .stage_run(stage_run), .stage_run2(stage_run2), .clk(clk), .reset(reset));
   expunit exp3(.a(inp3), .z(outp3), .status(), .stage_run(stage_run), .stage_run2(stage_run2), .clk(clk), .reset(reset));
 endmodule
-//[second_phase_finishes]
+
 module expunit (a, z, status, stage_run, stage_run2, clk, reset);
 
 	input [15:0] a;
@@ -255,3 +255,6 @@ module ExpLUT(addr, exp);
         endcase
     end
 endmodule
+
+
+
