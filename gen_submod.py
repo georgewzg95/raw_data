@@ -50,7 +50,7 @@ class gen_submod():
           
           target_module_path = subdir + os.sep + filename[:-4]
           print(target_module_path)
-          print(second_dict + '\n')
+          print(second_dict + "\n")
           for miss_module in second_dict:
             miss_module_path = subdir + os.sep + miss_module + ".v"
             print("miss module: " + miss_module_path)
