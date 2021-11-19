@@ -76,7 +76,7 @@ class gen_submod():
 
         if delete == True:
           if line.find("endmodule") >= 0:
-            delete = Falsepytho
+            delete = False
           continue
 
         fw.write(line)
