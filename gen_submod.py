@@ -57,7 +57,7 @@ class gen_submod():
               continue
             self.append_second_phase(miss_module_path, target_module_path)
 
-  def miss_module_exsit(miss_module, target_module_path):
+  def miss_module_exsit(self, miss_module, target_module_path):
     f = open(target_module_path, "rt")
     for line in f:
       if line.find("module") >= 0:
