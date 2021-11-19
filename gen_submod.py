@@ -53,7 +53,19 @@ class gen_submod():
 
           for miss_module in second_dict:
             miss_module_path = subdir + os.sep + miss_module + ".v"
+            if self.miss_module_exsit(miss_module, target_module_path) == True:
+              continue
             self.append_second_phase(miss_module_path, target_module_path)
+
+  def miss_module_exsit(miss_module, target_module_path):
+    f = open(target_module_path, "rt")
+    for line in f:
+      if line.find("module") >= 0:
+        x = line.split()
+        if x[0] == "module" and x[1].split('(')[0] == miss_module:
+            return True
+    return False
+
 
   def skip_gen(self, target_module_path):
     f = open(target_module_path, "a+")
