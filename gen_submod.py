@@ -53,19 +53,46 @@ class gen_submod():
 
           for miss_module in second_dict:
             miss_module_path = subdir + os.sep + miss_module + ".v"
-            if self.miss_module_exsit(miss_module, target_module_path) == True:
-              continue
             self.append_second_phase(miss_module_path, target_module_path)
 
-  def miss_module_exsit(self, miss_module, target_module_path):
-    f = open(target_module_path, "rt")
+          self.remove_redundant(target_module_path)
+
+  def remove_redundant(self, target_module_path):
+    module_list = []
+    with open(target_module_path, "r") as fr:
+      lines = fr.readlines()
+
+    delete = False
+    with open(target_module_path, "w") as fw:
+      for line in lines:
+        if line.find("module") >= 0:
+          x = line.split()
+          if x[0] == "module":
+            cur_module = x[1].split('(')[0]
+            if cur_module in module_list:
+              delete = True
+              continue
+            else:
+              module_list.append(cur_module)
+              fw.write(line)
+              continue
+
+        if delete == True:
+          if line.find("endmodule") >= 0:
+            delete = False
+          continue
+
+        fw.write(line)
+
+
+    f =open(target_module_path, "rt")
+    delete = False
     for line in f:
       if line.find("module") >= 0:
         x = line.split()
-        if x[0] == "module" and x[1].split('(')[0] == miss_module:
-            return True
-    return False
-
+        if x[0] == "module":
+        cur_module = x[1].split('(')[0]
+        if cur_module in module_list 
 
   def skip_gen(self, target_module_path):
     f = open(target_module_path, "a+")
