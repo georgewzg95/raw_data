@@ -84,16 +84,6 @@ class gen_submod():
 
         fw.write(line)
 
-
-    f =open(target_module_path, "rt")
-    delete = False
-    for line in f:
-      if line.find("module") >= 0:
-        x = line.split()
-        if x[0] == "module":
-        cur_module = x[1].split('(')[0]
-        if cur_module in module_list 
-
   def skip_gen(self, target_module_path):
     f = open(target_module_path, "a+")
     for line in f:
