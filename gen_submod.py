@@ -50,8 +50,7 @@ class gen_submod():
           
           target_module_path = subdir + os.sep + filename[:-4]
           print(target_module_path)
-          print(second_dict)
-          print()
+          print(second_dict + '\n')
           for miss_module in second_dict:
             miss_module_path = subdir + os.sep + miss_module + ".v"
             print("miss module: " + miss_module_path)
@@ -98,6 +97,8 @@ class gen_submod():
       #skip the macros
       if line.find('`define') >= 0:
         continue
+      if target_module_path = "/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/mode1_max_tree.v":
+        print(line)
       fout.write(line)
     fin.close()
     fout.close()
