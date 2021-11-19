@@ -70,7 +70,8 @@ class gen_submod():
         if line.find("module") >= 0:
           x = line.split()
           if x[0] == "module":
-            cur_module = x[1].split('(')[0]
+            k = x[1].split('(')
+            cur_module = k[0].split('#')[0]
             if cur_module in module_list:
               delete = True
               continue
@@ -202,6 +203,7 @@ class gen_submod():
         x = line.split()
         if x[0] == "module":
           k = x[1].split('(')
+          k = k[0].split('#')
           if k[0] == t_mod.value:
             start_parse = True
             fout.write(line)
