@@ -44,6 +44,9 @@ class gen_submod():
       for filename in files:
         if filename.endswith(".out"):
           second_dict = self.check_second_phase(subdir + os.sep + filename)
+          print(filename)
+          print(second_dict)
+          print()
           if len(second_dict) == 0:
             continue
 
