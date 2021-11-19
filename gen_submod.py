@@ -48,9 +48,6 @@ class gen_submod():
             continue
 
           target_module_path = subdir + os.sep + filename[:-4]
-          if self.skip_gen(target_module_path) == True:
-            continue
-
           for miss_module in second_dict:
             miss_module_path = subdir + os.sep + miss_module + ".v"
             self.append_second_phase(miss_module_path, target_module_path)
@@ -79,21 +76,10 @@ class gen_submod():
 
         if delete == True:
           if line.find("endmodule") >= 0:
-            delete = False
+            delete = Falsepytho
           continue
 
         fw.write(line)
-
-  def skip_gen(self, target_module_path):
-    f = open(target_module_path, "a+")
-    for line in f:
-      if line.find('//[second_phase_finishes]') >= 0:
-        f.close()
-        return True
-
-    f.write('//[second_phase_finishes]')
-    f.close()
-    return False
 
   def append_second_phase(self, miss_module_path, target_module_path):
     try:
