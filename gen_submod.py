@@ -55,7 +55,7 @@ class gen_submod():
             miss_module_path = subdir + os.sep + miss_module + ".v"
             self.append_second_phase(miss_module_path, target_module_path)
 
-          self.remove_redundant(target_module_path)
+          #self.remove_redundant(target_module_path)
 
   def remove_redundant(self, target_module_path):
     module_list = []
