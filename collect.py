@@ -4,6 +4,7 @@ import csv
 root_path = os.getcwd()
 #start_path = root_path + "/raw_designs/vtr_designs/verilog/stereovision0_submodules/scl_v_fltr.v.out"
 #start_path = root_path + "/raw_designs/test_designs/"
+#start_path = root_path + "/raw_designs/vtr_designs/verilog/koios"
 start_path = root_path + "/raw_designs/vtr_designs/"
 cur_path = root_path + "/raw_designs/"
 
