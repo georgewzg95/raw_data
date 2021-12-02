@@ -40,6 +40,7 @@ def retrieve_info(filepath):
       if line.find('$') < 0 and line.strip():
         print(relative_path)
         print(line)
+        remove[relative_path] = []
 
   fin.seek(0, 0)
   if not hierarchy:
@@ -51,6 +52,7 @@ def retrieve_info(filepath):
         if line.find('$') < 0 and line.strip():
           print(relative_path)
           print(line)
+          remove[relative_path] = []
 
   fin.seek(0, 0)
   if hierarchy:
@@ -83,6 +85,9 @@ with open('effective_data.csv', 'w') as csv_file:
   csv_writer = csv.writer(csv_file, delimiter=',')
   num = 0
   for key in sorted(my_dict):
+    if key in remove:
+      continue
+
     row = my_dict[key]
     if row == []:
       remove[key] = []
