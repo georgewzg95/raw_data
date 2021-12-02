@@ -3,7 +3,22 @@
   
 2. generating training data from all designs in the datasets: feature extraction with yosys and golden value from vivado
   - yosys scripts (DONE)
-  - tcl scripts for vivado (ONGOING:)
+    - list features extracted from yosys
+    - save the each version of extracted features
+   
+  - tcl scripts for vivado (ONGOING)
+    - metric list extracted from vivado (power, utilization)
+    - save the each version of extracted metrics
+    - subprocess to load/balance the vivado process
+    
+  - problem:
+  1. how to launch the process automatically and capture the error message:
+     - subprocess python
+     - manually launch the batch
+     - slurm ( not applicable to LRC )
+  
+  2. attention_layer failed to implement on xc7z020clg484-3 (overutilization of I/O ports: 1074 v.s. 330) and xc7v585tffg1761-3 (overutilization of I/O ports: 1074 v.s. 850)
+     - keep going to see the fraction of designs encountering the same problems
   
 3. creating models with the exsiting data
   - LASSO
