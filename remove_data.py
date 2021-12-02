@@ -1,5 +1,5 @@
-fin = open("effective_data", "rt")
-fout = open("out_data", "wt")
+fin = open("effective_data.csv", "rt")
+fout = open("out_data.csv", "wt")
 my_list = []
 
 for line in fin:

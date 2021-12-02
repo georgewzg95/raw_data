@@ -6,7 +6,7 @@ root_path = os.getcwd()
 #start_path = root_path + "/raw_designs/test_designs/"
 #start_path = root_path + "/raw_designs/vtr_designs/verilog/koios"
 start_path = root_path + "/raw_designs/vtr_designs/"
-cur_path = root_path + "/raw_designs/"
+cur_path = root_path
 
 field_name = ['Name',
               'Number of wires',
@@ -73,9 +73,6 @@ def retrieve_info(filepath):
               my_dict[relative_path].append(token)
 
 for subdir, dirs, files in os.walk(start_path):
-  #print(subdir)
-  #print(dirs)
-  #print(files)
   for filename in files:
     filepath = subdir + os.sep + filename
     if filepath.endswith(".out"):
