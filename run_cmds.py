@@ -53,6 +53,7 @@ def remove_design(design):
 
 if __name__ == "__main__":
   file_list = open('out_data.csv', 'rt')
+  list_designs = []
   for line in file_list:
     verilog_filepath = line.split(',')[1][:-4]
     design = Design(root_dir + os.sep + verilog_filepath)
