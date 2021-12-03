@@ -56,7 +56,7 @@ def remove_design(design):
     f.write(design.r_dir + ',' + design.filepath)
 
 def find_topmodule(design):
-  with open(design.filepath + '.out', 'r') as f:
+  with open(design.filepath.rstrip() + '.out', 'r') as f:
     lines = f.readlines()
 
   hierarchy = False
