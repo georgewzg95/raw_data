@@ -2,16 +2,18 @@ import subprocess
 import time
 import os
 
+report_dir = '/home/zhigang/reports/'
+
 class Design:
-  def __init__(self, cmd, report_dir, filepath):
-    self.cmd = cmd
+  def __init__(self, report_dir, filepath):
+    self.cmd = 'vivado -mode batch -source tcl_scripts.tcl'
     self.name = filepath.split('/')[-1][:-6]
     self.report_dir = report_dir
     self.filepath = filepath
     self.create_directory()
 
   def create_directory(self):
-    directory = self.report_dir + os.sep + filepath[:-6]
+    directory = self.report_dir + os.sep + filepath[-2]
     if os.path.exists(directory) == True:
       print('error: ' + self.name)
       print('error: ' + self.filepath)
@@ -22,9 +24,15 @@ list_designs = []
 if __name__ == "__main__":
   file_list = open('out_data.csv', 'rt')
   for line in file_list:
-    filepath = line.split(',')[1]
-    design = Design('', '/home/zhigang/reports/', filepath)
+    verilog_filepath = line.split(',')[1][-4]
+    design = Design(report_dir, verilog_filepath)
     list_designs.append(design)
+  
+  pas = []
+  num_jobs = 8
+  
+
+
 
 
 
