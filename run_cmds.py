@@ -66,11 +66,14 @@ def parse_args():
                       dest = 'run_cmds',
                       action = 'store_true')
   parser.set_defaults(run_cmds = False)
+
+  args = parser.parse_args()
   return args
 
 if __name__ == "__main__":
 
   args = parse_args()
+
   if args.create_directory == True:
     file_list = open('out_data.csv', 'rt')
     list_designs = []
