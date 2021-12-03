@@ -86,14 +86,31 @@ def parse_args():
                       dest = 'create_directory',
                       action = 'store_true')
   parser.set_defaults(create_directory=False)
+
   parser.add_argument('-rc',
                       '--run_cmds',
                       dest = 'run_cmds',
                       action = 'store_true')
   parser.set_defaults(run_cmds = False)
 
+  parser.add_argument('-ce',
+                      '--count_error',
+                      dest = 'count_error',
+                      action = 'store_true')
+  parser.set_defaults(count_error = False)
+
   args = parser.parse_args()
   return args
+
+def check_error(design):
+  err_file = design.r_dir + os.sep + 'err'
+  if os.stat(err_file).st_size == 0:
+    return True
+  return False
+
+def log_err_design(design):
+  with open(report_dir + os.sep + 'err_designs', 'w') as f:
+    f.write(design.r_dir)
 
 if __name__ == "__main__":
 
@@ -150,6 +167,28 @@ if __name__ == "__main__":
         launched = True
         task = Task(design, subproc, log, err)
         running_jobs.append(task)
+
+    if args.count_error == True:
+      with open(report_dir + os.sep + 'complete_jobs.txt') as f:
+        lines = f.readlines()
+
+      total = 0
+      complete_designs = []
+      for line in lines:
+        total = total + 1
+        design = Design(line.split(',')[0], line.split(',')[1])
+        complete_designs.append(design)
+
+      err_count = 0
+      for design in complete_designs:
+        if check_error(design) > 0:
+          err_count += 1
+          log_err_design(design)
+
+      print('the number of complete designs is: ' + str(total))
+      print('the number of error designs is: ' + str(err))
+      print('the fraction of error designs is: ' + str(err/total))
+
 
 #cmd = 'vivado -mode batch -source tcl_scripts.tcl'
 #log = open('log', 'wt')
