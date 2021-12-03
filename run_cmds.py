@@ -2,7 +2,7 @@ import subprocess
 import time
 import os
 
-class design:
+class Design:
   def __init__(self, cmd, report_dir, filepath):
     self.cmd = cmd
     self.name = filepath.split('/')[-1][:-6]
@@ -11,17 +11,21 @@ class design:
     self.create_directory()
 
   def create_directory(self):
-    directory = self.report_dir + os.sep + self.name
-    if os.exists(directory) == True:
-      print(self.name)
-      print(self.filepath)
+    directory = self.report_dir + os.sep + filepath[:-6]
+    if os.path.exists(directory) == True:
+      print('error: ' + self.name)
+      print('error: ' + self.filepath)
       return
-    os.mkdir(directory)
- 
+    os.makedirs(directory, exist_ok = True)
+
+list_designs = [] 
 if __name__ == "__main__":
   file_list = open('out_data.csv', 'rt')
   for line in file_list:
     filepath = line.split(',')[1]
+    design = Design('', '/home/zhigang/reports/', filepath)
+    list_designs.append(design)
+
 
 
 #cmd = 'vivado -mode batch -source tcl_scripts.tcl'
