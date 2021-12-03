@@ -55,7 +55,7 @@ if __name__ == "__main__":
   file_list = open('out_data.csv', 'rt')
   for line in file_list:
     verilog_filepath = line.split(',')[1][:-4]
-    design = Design(report_dir, root_dir + os.sep + verilog_filepath)
+    design = Design(root_dir + os.sep + verilog_filepath)
     list_designs.append(design)
   
   remain_jobs = open(report_dir + os.sep + 'remain_jobs.txt', 'w')
