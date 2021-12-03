@@ -168,26 +168,26 @@ if __name__ == "__main__":
         task = Task(design, subproc, log, err)
         running_jobs.append(task)
 
-    if args.count_error == True:
-      with open(report_dir + os.sep + 'complete_jobs.txt') as f:
-        lines = f.readlines()
+  if args.count_error == True:
+    with open(report_dir + os.sep + 'complete_jobs.txt') as f:
+      lines = f.readlines()
 
-      total = 0
-      complete_designs = []
-      for line in lines:
-        total = total + 1
-        design = Design(line.split(',')[0], line.split(',')[1])
-        complete_designs.append(design)
+    total = 0
+    complete_designs = []
+    for line in lines:
+      total = total + 1
+      design = Design(line.split(',')[0], line.split(',')[1])
+      complete_designs.append(design)
 
-      err_count = 0
-      for design in complete_designs:
-        if check_error(design) > 0:
-          err_count += 1
-          log_err_design(design)
+    err_count = 0
+    for design in complete_designs:
+      if check_error(design) > 0:
+        err_count += 1
+        log_err_design(design)
 
-      print('the number of complete designs is: ' + str(total))
-      print('the number of error designs is: ' + str(err))
-      print('the fraction of error designs is: ' + str(err/total))
+    print('the number of complete designs is: ' + str(total))
+    print('the number of error designs is: ' + str(err))
+    print('the fraction of error designs is: ' + str(err/total))
 
 
 #cmd = 'vivado -mode batch -source tcl_scripts.tcl'
