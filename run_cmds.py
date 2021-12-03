@@ -35,7 +35,7 @@ def replace_tcl(design):
   with open(report_dir + os.sep + 'tcl_temp.tcl', 'r') as f:
     lines = f.readlines()
 
-  with open(report_dir + os.sep + 'run_tcl.tcl', 'w') as f:
+  with open(design.r_dir + os.sep + 'run_tcl.tcl', 'w') as f:
     for line in lines:
         line = line.replace('[OUTPUTDIR]', design.r_dir)
         line = line.replace('[V_FILE]', design.filepath)
@@ -118,6 +118,7 @@ if __name__ == "__main__":
     for line in remain_jobs_f:
       design = Design(line.split(',')[0], line.split(',')[1])
       remain_designs.append(design)
+      replace_tcl(design)
     remain_jobs_f.close() 
 
     num_jobs = 5
@@ -144,7 +145,6 @@ if __name__ == "__main__":
         remain_designs.remove(design)
         log = open(design.r_dir + os.sep + 'log', 'w')
         err = open(design.r_dir + os.sep + 'err', 'w')
-        replace_tcl(design)
         subproc = subprocess.Popen([cmd], stdout=log, stderr=err, shell=True)
         launched = True
         task = Task(design, subproc, log, err)
