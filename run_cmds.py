@@ -78,7 +78,7 @@ if __name__ == "__main__":
   launched = False
 
   while True:
-    if len(running_jobs) == 0 and launched = True:
+    if len(running_jobs) == 0 and launched == True:
       break
 
     for task in running_jobs:
