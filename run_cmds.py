@@ -54,6 +54,29 @@ def remove_design(design):
   with open(report_dir + os.sep + 'complete_jobs.txt', 'a+') as f:
     f.write(design.r_dir + ',' + design.filepath)
 
+def find_topmodule(design):
+  with open(design.filepath + '.out', 'r') as f:
+    lines = f.readlines()
+
+  hierarchy = False
+  for line in lines:
+    if line.find('design_hierarchy') >= 0:
+      hierarchy = True
+      break
+
+  if hierarchy = True:
+    st = False
+    for line in lines:
+      if line.find('design_hierarchy') >= 0:
+        st = True
+        continue
+      if st == True and line.rstrip():
+        return line.split()[0]
+  else:
+    for line in lines:
+      if line.find('===') >= 0:
+        return line.split()[1]
+
 def parse_args():
   parser = argparse.ArgumentParser()
   parser.add_argument('-cd',
@@ -85,6 +108,7 @@ if __name__ == "__main__":
     remain_jobs = open(report_dir + os.sep + 'remain_jobs.txt', 'w')
     for design in list_designs:
       remain_jobs.write(design.r_dir + ',' + design.filepath + '\n')
+      print(find_topmodule(design))
 
     remain_jobs.close()
 
