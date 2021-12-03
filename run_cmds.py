@@ -7,13 +7,13 @@ report_dir = '/home/zhigang/reports/'
 class Design:
   def __init__(self, report_dir, filepath):
     self.cmd = 'vivado -mode batch -source tcl_scripts.tcl'
-    self.name = filepath.split('/')[-1][:-6]
+    self.name = filepath.split('/')[-1][:-2]
     self.report_dir = report_dir
     self.filepath = filepath
     self.create_directory()
 
   def create_directory(self):
-    directory = self.report_dir + os.sep + self.filepath[-2]
+    directory = self.report_dir + os.sep + self.filepath[:-2]
     if os.path.exists(directory) == True:
       print('error: ' + self.name)
       print('error: ' + self.filepath)
@@ -24,7 +24,7 @@ list_designs = []
 if __name__ == "__main__":
   file_list = open('out_data.csv', 'rt')
   for line in file_list:
-    verilog_filepath = line.split(',')[1][-4]
+    verilog_filepath = line.split(',')[1][:-4]
     design = Design(report_dir, verilog_filepath)
     list_designs.append(design)
 
