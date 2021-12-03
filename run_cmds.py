@@ -12,6 +12,7 @@ class Design:
     self.name = filepath.split('/')[-1][:-2]
     self.filepath = filepath
     self.r_dir = r_dir
+    self.topmodule = topmodule
     self.create_directory()
 
   def create_directory(self):
@@ -39,6 +40,7 @@ def replace_tcl(design):
     for line in lines:
         line = line.replace('[OUTPUTDIR]', design.r_dir)
         line = line.replace('[V_FILE]', design.filepath)
+        line = line.replace('[TOP]', find_topmodule(design))
         f.write(line)
 
 def remove_design(design):
@@ -108,7 +110,7 @@ if __name__ == "__main__":
     remain_jobs = open(report_dir + os.sep + 'remain_jobs.txt', 'w')
     for design in list_designs:
       remain_jobs.write(design.r_dir + ',' + design.filepath + '\n')
-      print(design.filepath + '  ' + find_topmodule(design))
+      #print(design.filepath + '  ' + find_topmodule(design))
 
     remain_jobs.close()
 
@@ -129,9 +131,8 @@ if __name__ == "__main__":
 
       for task in running_jobs:
         if task.subproc.poll() is not None:
-
           design = task.design
-          #print('error poll: ' + design.r_dir)
+
           #remove design from the remain_jobs.txt and add it to complete_jobs.txt
           remove_design(design)
 
