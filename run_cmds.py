@@ -22,9 +22,9 @@ class Design:
     os.makedirs(directory, exist_ok = True)
 
 class Task:
-  def __init__(self, design, poll, log, err):
+  def __init__(self, design, subproc, log, err):
     self.design = design
-    self.poll = poll
+    self.subproc = subproc
     self.log = log
     self.err = err
 
@@ -81,7 +81,7 @@ if __name__ == "__main__":
       break
 
     for task in running_jobs:
-      if task.poll is not None:
+      if task.subproc.poll() is not None:
         design = task.design
 
         #remove design from the remain_jobs.txt and add it to complete_jobs.txt
@@ -91,14 +91,14 @@ if __name__ == "__main__":
         task.log.close()
         task.err.close()
 
-    while len(running_jobs) < num and len(remain_designs) > 0:
+    while len(running_jobs) < num_jobs and len(remain_designs) > 0:
       design = remain_designs[0]
       remain_designs.remove(design)
       log = open(design.r_dir + os.sep + 'log', 'w')
       err = open(design.r_dir + os.sep + 'err', 'w')
       replace_tcl(design)
       subproc = subprocessPopen(['ls'], stdout=log, stderr=err, shell=True)
-      task = Task(design, subproc.poll, log, err)
+      task = Task(design, subproc, log, err)
 
 #cmd = 'vivado -mode batch -source tcl_scripts.tcl'
 #log = open('log', 'wt')
