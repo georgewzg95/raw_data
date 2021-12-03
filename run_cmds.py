@@ -3,7 +3,7 @@ import time
 import os
 
 report_dir = '/misc/scratch/zwei1/reports/'
-root_dir = '/misc/scratch/zwei1'
+root_dir = '/misc/scratch/zwei1/raw_data'
 
 class Design:
   def __init__(self, filepath):
