@@ -30,7 +30,7 @@ if __name__ == "__main__":
   
   remain_jobs = open(report_dir + os.sep + 'remain_jobs.txt', 'wt')
   for design in list_designs:
-    remain_jobs.write(design.report_dir + ',' + design.filepath)
+    remain_jobs.write(design.report_dir + ',' + design.filepath + '\n')
 
   remain_jobs.close()
   pas = []
