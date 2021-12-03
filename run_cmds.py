@@ -12,7 +12,6 @@ class Design:
     self.name = filepath.split('/')[-1][:-2]
     self.filepath = filepath
     self.r_dir = r_dir
-    self.topmodule = topmodule
     self.create_directory()
 
   def create_directory(self):
