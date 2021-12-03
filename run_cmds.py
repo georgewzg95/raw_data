@@ -111,7 +111,7 @@ def check_error(design):
 
 def log_err_design(design):
   with open(report_dir + os.sep + 'err_designs', 'a+') as f:
-    f.write(design.r_dir)
+    f.write(design.r_dir + '\n')
 
 if __name__ == "__main__":
 
