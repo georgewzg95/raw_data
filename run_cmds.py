@@ -60,14 +60,14 @@ def find_topmodule(design):
 
   hierarchy = False
   for line in lines:
-    if line.find('design_hierarchy') >= 0:
+    if line.find('design hierarchy') >= 0:
       hierarchy = True
       break
 
   if hierarchy == True:
     st = False
     for line in lines:
-      if line.find('design_hierarchy') >= 0:
+      if line.find('design hierarchy') >= 0:
         st = True
         continue
       if st == True and line.rstrip():
