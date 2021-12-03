@@ -6,15 +6,15 @@ report_dir = '/misc/scratch/zwei1/reports/'
 root_dir = '/misc/scratch/zwei1/raw_data'
 
 class Design:
-  def __init__(self, subdir, filepath):
+  def __init__(self, r_dir, filepath):
     self.cmd = 'vivado -mode batch -source tcl_scripts.tcl'
     self.name = filepath.split('/')[-1][:-2]
     self.filepath = filepath
-    self.dir = subdir
+    self.r_dir = r_dir
     self.create_directory()
 
   def create_directory(self):
-    directory = self.subdir
+    directory = self.r_dir
     if os.path.exists(directory) == True:
       #print('error: ' + self.name)
       #print('error: ' + self.filepath)
@@ -56,7 +56,7 @@ if __name__ == "__main__":
   list_designs = []
   for line in file_list:
     verilog_filepath = line.split(',')[1][:-4]
-    design = Design(report_dir + verilog_filepath[:-2] ,root_dir + os.sep + verilog_filepath)
+    design = Design(report_dir + verilog_filepath[:-2], root_dir + os.sep + verilog_filepath)
     list_designs.append(design)
   
   remain_jobs = open(report_dir + os.sep + 'remain_jobs.txt', 'w')
