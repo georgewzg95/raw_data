@@ -56,7 +56,7 @@ def remove_design(design):
 
 def parse_args():
   parser = argparse.ArgumentParser()
-  parser.add_argument('-ct',
+  parser.add_argument('-cd',
                       '--create_directory',
                       dest = 'create_directory',
                       action = 'store_true')
