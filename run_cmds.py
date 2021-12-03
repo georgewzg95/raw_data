@@ -11,10 +11,10 @@ class Design:
     self.name = filepath.split('/')[-1][:-2]
     self.filepath = filepath
     self.dir = subdir
-    #self.create_directory()
+    self.create_directory()
 
   def create_directory(self):
-    directory = report_dir + os.sep + self.filepath[:-2]
+    directory = self.subdir
     if os.path.exists(directory) == True:
       #print('error: ' + self.name)
       #print('error: ' + self.filepath)
