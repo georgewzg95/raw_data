@@ -105,11 +105,12 @@ def parse_args():
 def check_error(design):
   err_file = design.r_dir + os.sep + 'err'
   if os.stat(err_file).st_size == 0:
+    return False
+  else:
     return True
-  return False
 
 def log_err_design(design):
-  with open(report_dir + os.sep + 'err_designs', 'w') as f:
+  with open(report_dir + os.sep + 'err_designs', 'a+') as f:
     f.write(design.r_dir)
 
 if __name__ == "__main__":
