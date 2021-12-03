@@ -50,7 +50,7 @@ def remove_design(design):
         continue
       f.write(line)
 
-  with open(report_dir + os.sep + 'complete_jobs.txt', 'w') as f:
+  with open(report_dir + os.sep + 'complete_jobs.txt', 'a+') as f:
     f.write(design.r_dir + ',' + design.filepath + '\n')
 
 if __name__ == "__main__":
