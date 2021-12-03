@@ -110,6 +110,7 @@ if __name__ == "__main__":
     for design in list_designs:
       remain_jobs.write(design.r_dir + ',' + design.filepath + '\n')
       #print(design.filepath + '  ' + find_topmodule(design))
+      replace_tcl(design)
 
     remain_jobs.close()
 
@@ -118,7 +119,6 @@ if __name__ == "__main__":
     for line in remain_jobs_f:
       design = Design(line.split(',')[0], line.split(',')[1])
       remain_designs.append(design)
-      replace_tcl(design)
     remain_jobs_f.close() 
 
     num_jobs = 5
