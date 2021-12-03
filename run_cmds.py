@@ -84,7 +84,7 @@ if __name__ == "__main__":
       if task.subproc.poll() is not None:
 
         design = task.design
-        print('error poll: ' + design.r_dir)
+        #print('error poll: ' + design.r_dir)
         #remove design from the remain_jobs.txt and add it to complete_jobs.txt
         remove_design(design)
 
@@ -100,6 +100,7 @@ if __name__ == "__main__":
       replace_tcl(design)
       subproc = subprocess.Popen(['ls'], stdout=log, stderr=err, shell=True)
       task = Task(design, subproc, log, err)
+      running_jobs.append(task)
 
 #cmd = 'vivado -mode batch -source tcl_scripts.tcl'
 #log = open('log', 'wt')
