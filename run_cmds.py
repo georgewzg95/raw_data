@@ -27,7 +27,12 @@ if __name__ == "__main__":
     verilog_filepath = line.split(',')[1][:-4]
     design = Design(report_dir, verilog_filepath)
     list_designs.append(design)
+  
+  remain_jobs = open(report_dir + os.sep + 'remain_jobs.txt', 'wt')
+  for design in list_designs:
+    remain_jobs.write(design.report_dir + ',' + design.filepath)
 
+  remain_jobs.close()
   pas = []
   num_jobs = 8
   
