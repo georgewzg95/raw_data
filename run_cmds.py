@@ -37,8 +37,6 @@ def replace_tcl(design):
   with open(report_dir + os.sep + 'run_tcl.tcl', 'w') as f:
     for line in lines:
         line = line.replace('[OUTPUTDIR]', design.dir)
-        line = line.relace
-      if line.find('['):
 
 def remove_design(design):
   with open(report_dir + os.sep + 'remain_jobs.txt', 'r') as f:
