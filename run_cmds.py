@@ -186,8 +186,8 @@ if __name__ == "__main__":
         log_err_design(design)
 
     print('the number of complete designs is: ' + str(total))
-    print('the number of error designs is: ' + str(err))
-    print('the fraction of error designs is: ' + str(err/total))
+    print('the number of error designs is: ' + str(err_count))
+    print('the fraction of error designs is: ' + str(err_count/total))
 
 
 #cmd = 'vivado -mode batch -source tcl_scripts.tcl'
