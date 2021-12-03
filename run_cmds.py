@@ -61,7 +61,7 @@ if __name__ == "__main__":
   
   remain_jobs = open(report_dir + os.sep + 'remain_jobs.txt', 'w')
   for design in list_designs:
-    remain_jobs.write(design.filepath + '\n')
+    remain_jobs.write(design.r_dir + ',' + design.filepath + '\n')
 
   remain_jobs.close()
 
