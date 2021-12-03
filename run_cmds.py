@@ -82,8 +82,9 @@ if __name__ == "__main__":
 
     for task in running_jobs:
       if task.subproc.poll() is not None:
-        design = task.design
 
+        design = task.design
+        print('error poll: ' + design.r_dir)
         #remove design from the remain_jobs.txt and add it to complete_jobs.txt
         remove_design(design)
 
