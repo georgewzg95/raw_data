@@ -97,7 +97,7 @@ if __name__ == "__main__":
       log = open(design.r_dir + os.sep + 'log', 'w')
       err = open(design.r_dir + os.sep + 'err', 'w')
       replace_tcl(design)
-      subproc = subprocessPopen(['ls'], stdout=log, stderr=err, shell=True)
+      subproc = subprocess.Popen(['ls'], stdout=log, stderr=err, shell=True)
       task = Task(design, subproc, log, err)
 
 #cmd = 'vivado -mode batch -source tcl_scripts.tcl'
