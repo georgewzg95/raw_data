@@ -13,7 +13,7 @@ class Design:
     self.create_directory()
 
   def create_directory(self):
-    directory = self.report_dir + os.sep + filepath[-2]
+    directory = self.report_dir + os.sep + self.filepath[-2]
     if os.path.exists(directory) == True:
       print('error: ' + self.name)
       print('error: ' + self.filepath)
@@ -27,7 +27,7 @@ if __name__ == "__main__":
     verilog_filepath = line.split(',')[1][-4]
     design = Design(report_dir, verilog_filepath)
     list_designs.append(design)
-  
+
   pas = []
   num_jobs = 8
   
