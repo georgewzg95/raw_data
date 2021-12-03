@@ -12,6 +12,7 @@ class Design:
     self.name = filepath.split('/')[-1][:-2]
     self.filepath = filepath
     self.r_dir = r_dir
+    self.cmd = 'vivado -mode batch -source ' + r_dir + os.sep + 'run_tcl.tcl'
     self.create_directory()
 
   def create_directory(self):
@@ -145,7 +146,7 @@ if __name__ == "__main__":
         remain_designs.remove(design)
         log = open(design.r_dir + os.sep + 'log', 'w')
         err = open(design.r_dir + os.sep + 'err', 'w')
-        subproc = subprocess.Popen([cmd], stdout=log, stderr=err, shell=True)
+        subproc = subprocess.Popen([design.cmd], stdout=log, stderr=err, shell=True)
         launched = True
         task = Task(design, subproc, log, err)
         running_jobs.append(task)
