@@ -2,7 +2,7 @@ import subprocess
 import time
 import os
 
-report_dir = '/home/zhigang/reports/'
+report_dir = '/misc/scratch/zwei1/reports/'
 
 class Design:
   def __init__(self, report_dir, filepath):
