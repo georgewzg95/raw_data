@@ -56,5 +56,5 @@ if __name__ == "__main__":
   for subdir, dirs, files in os.walk(start_path):
     for filename in files:
       if filename.endswith(".v"):
-        remove_redundant(filename)
-        move_defines(filename)
+        remove_redundant(subdir + os.sep + filename)
+        move_defines(subdir + os.sep + filename)
