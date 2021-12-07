@@ -233,7 +233,7 @@ module common_network
         .data_lo(node_u11_lo)
     );
 
-endmodule-
+endmodule
 
 module node
 #(
