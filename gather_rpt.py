@@ -25,13 +25,17 @@ def parse_args():
 
 def retrieve_info(lines, section, target):
   st = False
+  skip = False
   for line in lines:
-    if line.find(section) >= 0:
+    if line.find(section) >= 0 and skip == False:
+      skip = True
+      continue
+    if line.find(section) >= 0 and skip == True:
       st = True
       continue
     if st == True and line.find(target) >= 0:
       print(line.split('|'))
-      return line.split('|')[-1].rstrip()
+      return line.split('|')[-2].rstrip()
 
 def retrieve_utilization(file):
   with open(file, 'r') as f:
