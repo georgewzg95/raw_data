@@ -39,11 +39,13 @@ Generating RTLIL representation for module `\func8'.
 Generating RTLIL representation for module `\f3_mult'.
 Generating RTLIL representation for module `\f3m_mux6'.
 Generating RTLIL representation for module `\f33m_mux3'.
+Generating RTLIL representation for module `\func6'.
 Successfully finished Verilog frontend.
 
 2. Executing HIERARCHY pass (managing design hierarchy).
 
 2.1. Finding top of design hierarchy..
+root of   0 design levels: func6               
 root of   0 design levels: f33m_mux3           
 root of   0 design levels: f3m_mux6            
 root of   0 design levels: f3_mult             
@@ -61,6 +63,7 @@ Automatically selected f33m_mult3 as design top module.
 
 2.2. Analyzing design hierarchy..
 Top module:  \f33m_mult3
+Used module:     \func6
 Used module:     \f33m_mult
 Used module:         \f3m_add4
 Used module:             \f3m_add
@@ -76,6 +79,7 @@ Used module:     \f33m_mux3
 
 2.3. Analyzing design hierarchy..
 Top module:  \f33m_mult3
+Used module:     \func6
 Used module:     \f33m_mult
 Used module:         \f3m_add4
 Used module:             \f3m_add
@@ -700,9 +704,11 @@ Mapping positional arguments of cell f33m_mult.ins8 (f3m_add).
 Mapping positional arguments of cell f33m_mult.ins7 (f3m_add).
 Mapping positional arguments of cell f33m_mult.ins6 (f3m_add).
 Mapping positional arguments of cell f33m_mult.ins5 (f3m_add).
+Mapping positional arguments of cell f33m_mult.ins4 (func6).
 Mapping positional arguments of cell f33m_mult.ins3 (f3m_mult).
 Mapping positional arguments of cell f33m_mult.ins2 (f3m_mux6).
 Mapping positional arguments of cell f33m_mult.ins1 (f3m_mux6).
+Mapping positional arguments of cell f33m_mult3.ins12 (func6).
 Mapping positional arguments of cell f33m_mult3.ins11 (f33m_mult).
 Mapping positional arguments of cell f33m_mult3.ins10 (f33m_mux3).
 Mapping positional arguments of cell f33m_mult3.ins9 (f33m_mux3).
@@ -713,6 +719,7 @@ Mapping positional arguments of cell f33m_mult3.ins9 (f33m_mux3).
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:893$5122 in module func6.
 Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:238$54 in module f3m_mult.
 Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:232$53 in module f3m_mult.
 Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:143$11 in module f33m_mult.
@@ -724,7 +731,7 @@ Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_d
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
-Removed 6 redundant assignments.
+Removed 8 redundant assignments.
 Promoted 4 assignments to connections.
 
 3.4. Executing PROC_INIT pass (extract init attributes).
@@ -732,6 +739,9 @@ Promoted 4 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\func6.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:893$5122'.
+     1/2: $0\reg2[0:0]
+     2/2: $0\reg1[0:0]
 Creating decoders for process `\f3m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:238$54'.
      1/4: $0\i[33:0]
      2/4: $0\z[193:0]
@@ -771,62 +781,68 @@ Creating decoders for process `\f33m_mult3.$proc$/home/zhigang/raw_data/raw_desi
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\f3m_mult.\x' using process `\f3m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:238$54'.
-  created $dff cell `$procdff$5196' with positive edge clock.
-Creating register for signal `\f3m_mult.\y' using process `\f3m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:238$54'.
-  created $dff cell `$procdff$5197' with positive edge clock.
-Creating register for signal `\f3m_mult.\z' using process `\f3m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:238$54'.
-  created $dff cell `$procdff$5198' with positive edge clock.
-Creating register for signal `\f3m_mult.\i' using process `\f3m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:238$54'.
-  created $dff cell `$procdff$5199' with positive edge clock.
-Creating register for signal `\f3m_mult.\done' using process `\f3m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:232$53'.
-  created $dff cell `$procdff$5200' with positive edge clock.
-Creating register for signal `\f3m_mult.\C' using process `\f3m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:228$52'.
-  created $dff cell `$procdff$5201' with positive edge clock.
-Creating register for signal `\f33m_mult.\delay1' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:150$12'.
-  created $dff cell `$procdff$5202' with positive edge clock.
-Creating register for signal `\f33m_mult.\delay2' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:150$12'.
-  created $dff cell `$procdff$5203' with positive edge clock.
-Creating register for signal `\f33m_mult.\mult_reset' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:143$11'.
-  created $dff cell `$procdff$5204' with positive edge clock.
-Creating register for signal `\f33m_mult.\done' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:134$10'.
+Creating register for signal `\func6.\reg1' using process `\func6.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:893$5122'.
   created $dff cell `$procdff$5205' with positive edge clock.
-Creating register for signal `\f33m_mult.\c' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:134$10'.
+Creating register for signal `\func6.\reg2' using process `\func6.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:893$5122'.
   created $dff cell `$procdff$5206' with positive edge clock.
-Creating register for signal `\f33m_mult.\x0' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:124$9'.
+Creating register for signal `\f3m_mult.\x' using process `\f3m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:238$54'.
   created $dff cell `$procdff$5207' with positive edge clock.
-Creating register for signal `\f33m_mult.\x1' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:124$9'.
+Creating register for signal `\f3m_mult.\y' using process `\f3m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:238$54'.
   created $dff cell `$procdff$5208' with positive edge clock.
-Creating register for signal `\f33m_mult.\x2' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:124$9'.
+Creating register for signal `\f3m_mult.\z' using process `\f3m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:238$54'.
   created $dff cell `$procdff$5209' with positive edge clock.
-Creating register for signal `\f33m_mult.\x3' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:124$9'.
+Creating register for signal `\f3m_mult.\i' using process `\f3m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:238$54'.
   created $dff cell `$procdff$5210' with positive edge clock.
-Creating register for signal `\f33m_mult.\x4' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:124$9'.
+Creating register for signal `\f3m_mult.\done' using process `\f3m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:232$53'.
   created $dff cell `$procdff$5211' with positive edge clock.
-Creating register for signal `\f33m_mult.\x5' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:124$9'.
+Creating register for signal `\f3m_mult.\C' using process `\f3m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:228$52'.
   created $dff cell `$procdff$5212' with positive edge clock.
-Creating register for signal `\f33m_mult.\K' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:118$7'.
+Creating register for signal `\f33m_mult.\delay1' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:150$12'.
   created $dff cell `$procdff$5213' with positive edge clock.
-Creating register for signal `\f33m_mult3.\delay1' using process `\f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:58$6'.
+Creating register for signal `\f33m_mult.\delay2' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:150$12'.
   created $dff cell `$procdff$5214' with positive edge clock.
-Creating register for signal `\f33m_mult3.\delay2' using process `\f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:58$6'.
+Creating register for signal `\f33m_mult.\mult_reset' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:143$11'.
   created $dff cell `$procdff$5215' with positive edge clock.
-Creating register for signal `\f33m_mult3.\done' using process `\f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:54$5'.
+Creating register for signal `\f33m_mult.\done' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:134$10'.
   created $dff cell `$procdff$5216' with positive edge clock.
-Creating register for signal `\f33m_mult3.\mult_reset' using process `\f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:47$4'.
+Creating register for signal `\f33m_mult.\c' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:134$10'.
   created $dff cell `$procdff$5217' with positive edge clock.
-Creating register for signal `\f33m_mult3.\K' using process `\f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:43$2'.
+Creating register for signal `\f33m_mult.\x0' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:124$9'.
   created $dff cell `$procdff$5218' with positive edge clock.
-Creating register for signal `\f33m_mult3.\c0' using process `\f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:36$1'.
+Creating register for signal `\f33m_mult.\x1' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:124$9'.
   created $dff cell `$procdff$5219' with positive edge clock.
-Creating register for signal `\f33m_mult3.\c1' using process `\f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:36$1'.
+Creating register for signal `\f33m_mult.\x2' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:124$9'.
   created $dff cell `$procdff$5220' with positive edge clock.
-Creating register for signal `\f33m_mult3.\c2' using process `\f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:36$1'.
+Creating register for signal `\f33m_mult.\x3' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:124$9'.
   created $dff cell `$procdff$5221' with positive edge clock.
+Creating register for signal `\f33m_mult.\x4' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:124$9'.
+  created $dff cell `$procdff$5222' with positive edge clock.
+Creating register for signal `\f33m_mult.\x5' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:124$9'.
+  created $dff cell `$procdff$5223' with positive edge clock.
+Creating register for signal `\f33m_mult.\K' using process `\f33m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:118$7'.
+  created $dff cell `$procdff$5224' with positive edge clock.
+Creating register for signal `\f33m_mult3.\delay1' using process `\f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:58$6'.
+  created $dff cell `$procdff$5225' with positive edge clock.
+Creating register for signal `\f33m_mult3.\delay2' using process `\f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:58$6'.
+  created $dff cell `$procdff$5226' with positive edge clock.
+Creating register for signal `\f33m_mult3.\done' using process `\f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:54$5'.
+  created $dff cell `$procdff$5227' with positive edge clock.
+Creating register for signal `\f33m_mult3.\mult_reset' using process `\f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:47$4'.
+  created $dff cell `$procdff$5228' with positive edge clock.
+Creating register for signal `\f33m_mult3.\K' using process `\f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:43$2'.
+  created $dff cell `$procdff$5229' with positive edge clock.
+Creating register for signal `\f33m_mult3.\c0' using process `\f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:36$1'.
+  created $dff cell `$procdff$5230' with positive edge clock.
+Creating register for signal `\f33m_mult3.\c1' using process `\f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:36$1'.
+  created $dff cell `$procdff$5231' with positive edge clock.
+Creating register for signal `\f33m_mult3.\c2' using process `\f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:36$1'.
+  created $dff cell `$procdff$5232' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\func6.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:893$5122'.
+Removing empty process `func6.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:893$5122'.
 Found and cleaned up 1 empty switch in `\f3m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:238$54'.
 Removing empty process `f3m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:238$54'.
 Found and cleaned up 2 empty switches in `\f3m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:232$53'.
@@ -851,9 +867,10 @@ Found and cleaned up 2 empty switches in `\f33m_mult3.$proc$/home/zhigang/raw_da
 Removing empty process `f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:43$2'.
 Found and cleaned up 3 empty switches in `\f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:36$1'.
 Removing empty process `f33m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:36$1'.
-Cleaned up 25 empty switches.
+Cleaned up 26 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module func6.
 Optimizing module f33m_mux3.
 Optimizing module f3m_mux6.
 Optimizing module f3_mult.
@@ -872,6 +889,7 @@ Optimizing module f33m_mult3.
 4. Executing OPT pass (performing simple optimizations).
 
 4.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module func6.
 Optimizing module f33m_mux3.
 Optimizing module f3m_mux6.
 Optimizing module f3_mult.
@@ -887,6 +905,7 @@ Optimizing module f33m_mult.
 Optimizing module f33m_mult3.
 
 4.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\func6'.
 Finding identical cells in module `\f33m_mux3'.
 Finding identical cells in module `\f3m_mux6'.
 Finding identical cells in module `\f3_mult'.
@@ -905,6 +924,10 @@ Finding identical cells in module `\f33m_mult3'.
 Removed a total of 22 cells.
 
 4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \func6..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
 Running muxtree optimizer on module \f33m_mux3..
   Creating internal representation of mux trees.
   No muxes found in this module.
@@ -948,9 +971,10 @@ Running muxtree optimizer on module \f33m_mult3..
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
 Removed 0 multiplexer ports.
-<suppressed ~22 debug messages>
+<suppressed ~25 debug messages>
 
 4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \func6.
   Optimizing cells in module \f33m_mux3.
   Optimizing cells in module \f3m_mux6.
   Optimizing cells in module \f3_mult.
@@ -967,6 +991,7 @@ Removed 0 multiplexer ports.
 Performed a total of 0 changes.
 
 4.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\func6'.
 Finding identical cells in module `\f33m_mux3'.
 Finding identical cells in module `\f3m_mux6'.
 Finding identical cells in module `\f3_mult'.
@@ -983,33 +1008,36 @@ Finding identical cells in module `\f33m_mult3'.
 Removed a total of 0 cells.
 
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding SRST signal on $procdff$5200 ($dff) from module f3m_mult (D = $procmux$5134_Y, Q = \done, rval = 1'0).
-Adding EN signal on $auto$ff.cc:262:slice$5222 ($sdff) from module f3m_mult (D = 1'1, Q = \done).
-Adding EN signal on $procdff$5201 ($dff) from module f3m_mult (D = \z, Q = \C).
-Adding SRST signal on $procdff$5198 ($dff) from module f3m_mult (D = \z2, Q = \z, rval = 194'00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
-Adding SRST signal on $procdff$5199 ($dff) from module f3m_mult (D = $shr$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:246$55_Y, Q = \i, rval = 34'1000000000000000000000000000000000).
-Adding SRST signal on $procdff$5204 ($dff) from module f33m_mult (D = $procmux$5142_Y, Q = \mult_reset, rval = 1'1).
-Adding SRST signal on $procdff$5205 ($dff) from module f33m_mult (D = $procmux$5152_Y, Q = \done, rval = 1'0).
-Adding EN signal on $auto$ff.cc:262:slice$5228 ($sdff) from module f33m_mult (D = 1'1, Q = \done).
-Adding EN signal on $procdff$5206 ($dff) from module f33m_mult (D = { \c2 \c1 \c0 }, Q = \c).
-Adding EN signal on $procdff$5207 ($dff) from module f33m_mult (D = \o, Q = \x0).
-Adding EN signal on $procdff$5208 ($dff) from module f33m_mult (D = \o, Q = \x1).
-Adding EN signal on $procdff$5209 ($dff) from module f33m_mult (D = \o, Q = \x2).
-Adding EN signal on $procdff$5210 ($dff) from module f33m_mult (D = \o, Q = \x3).
-Adding EN signal on $procdff$5211 ($dff) from module f33m_mult (D = \o, Q = \x4).
-Adding EN signal on $procdff$5212 ($dff) from module f33m_mult (D = \o, Q = \x5).
-Adding SRST signal on $procdff$5213 ($dff) from module f33m_mult (D = $procmux$5169_Y, Q = \K, rval = 7'1000000).
-Adding EN signal on $auto$ff.cc:262:slice$5241 ($sdff) from module f33m_mult (D = { 1'0 \K [6:1] }, Q = \K).
-Adding SRST signal on $procdff$5216 ($dff) from module f33m_mult3 (D = $procmux$5174_Y, Q = \done, rval = 1'0).
-Adding EN signal on $auto$ff.cc:262:slice$5243 ($sdff) from module f33m_mult3 (D = 1'1, Q = \done).
-Adding SRST signal on $procdff$5217 ($dff) from module f33m_mult3 (D = $procmux$5180_Y, Q = \mult_reset, rval = 1'1).
-Adding SRST signal on $procdff$5218 ($dff) from module f33m_mult3 (D = $procmux$5185_Y, Q = \K, rval = 4'1000).
-Adding EN signal on $auto$ff.cc:262:slice$5246 ($sdff) from module f33m_mult3 (D = { 1'0 \K [3:1] }, Q = \K).
-Adding EN signal on $procdff$5219 ($dff) from module f33m_mult3 (D = \o, Q = \c0).
-Adding EN signal on $procdff$5220 ($dff) from module f33m_mult3 (D = \o, Q = \c1).
-Adding EN signal on $procdff$5221 ($dff) from module f33m_mult3 (D = \o, Q = \c2).
+Adding SRST signal on $procdff$5205 ($dff) from module func6 (D = \in, Q = \reg1, rval = 1'0).
+Adding SRST signal on $procdff$5206 ($dff) from module func6 (D = \reg1, Q = \reg2, rval = 1'0).
+Adding SRST signal on $procdff$5211 ($dff) from module f3m_mult (D = $procmux$5143_Y, Q = \done, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$5235 ($sdff) from module f3m_mult (D = 1'1, Q = \done).
+Adding EN signal on $procdff$5212 ($dff) from module f3m_mult (D = \z, Q = \C).
+Adding SRST signal on $procdff$5209 ($dff) from module f3m_mult (D = \z2, Q = \z, rval = 194'00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$5210 ($dff) from module f3m_mult (D = $shr$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_mult3.v:246$55_Y, Q = \i, rval = 34'1000000000000000000000000000000000).
+Adding SRST signal on $procdff$5215 ($dff) from module f33m_mult (D = $procmux$5151_Y, Q = \mult_reset, rval = 1'1).
+Adding SRST signal on $procdff$5216 ($dff) from module f33m_mult (D = $procmux$5161_Y, Q = \done, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$5241 ($sdff) from module f33m_mult (D = 1'1, Q = \done).
+Adding EN signal on $procdff$5217 ($dff) from module f33m_mult (D = { \c2 \c1 \c0 }, Q = \c).
+Adding EN signal on $procdff$5218 ($dff) from module f33m_mult (D = \o, Q = \x0).
+Adding EN signal on $procdff$5219 ($dff) from module f33m_mult (D = \o, Q = \x1).
+Adding EN signal on $procdff$5220 ($dff) from module f33m_mult (D = \o, Q = \x2).
+Adding EN signal on $procdff$5221 ($dff) from module f33m_mult (D = \o, Q = \x3).
+Adding EN signal on $procdff$5222 ($dff) from module f33m_mult (D = \o, Q = \x4).
+Adding EN signal on $procdff$5223 ($dff) from module f33m_mult (D = \o, Q = \x5).
+Adding SRST signal on $procdff$5224 ($dff) from module f33m_mult (D = $procmux$5178_Y, Q = \K, rval = 7'1000000).
+Adding EN signal on $auto$ff.cc:262:slice$5254 ($sdff) from module f33m_mult (D = { 1'0 \K [6:1] }, Q = \K).
+Adding SRST signal on $procdff$5227 ($dff) from module f33m_mult3 (D = $procmux$5183_Y, Q = \done, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$5256 ($sdff) from module f33m_mult3 (D = 1'1, Q = \done).
+Adding SRST signal on $procdff$5228 ($dff) from module f33m_mult3 (D = $procmux$5189_Y, Q = \mult_reset, rval = 1'1).
+Adding SRST signal on $procdff$5229 ($dff) from module f33m_mult3 (D = $procmux$5194_Y, Q = \K, rval = 4'1000).
+Adding EN signal on $auto$ff.cc:262:slice$5259 ($sdff) from module f33m_mult3 (D = { 1'0 \K [3:1] }, Q = \K).
+Adding EN signal on $procdff$5230 ($dff) from module f33m_mult3 (D = \o, Q = \c0).
+Adding EN signal on $procdff$5231 ($dff) from module f33m_mult3 (D = \o, Q = \c1).
+Adding EN signal on $procdff$5232 ($dff) from module f33m_mult3 (D = \o, Q = \c2).
 
 4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \func6..
 Finding unused cells or wires in module \f33m_mux3..
 Finding unused cells or wires in module \f3m_mux6..
 Finding unused cells or wires in module \f3_mult..
@@ -1023,8 +1051,8 @@ Finding unused cells or wires in module \f3m_add..
 Finding unused cells or wires in module \f3m_add4..
 Finding unused cells or wires in module \f33m_mult..
 Finding unused cells or wires in module \f33m_mult3..
-Removed 26 unused cells and 887 unused wires.
-<suppressed ~34 debug messages>
+Removed 28 unused cells and 893 unused wires.
+<suppressed ~37 debug messages>
 
 4.8. Executing OPT_EXPR pass (perform const folding).
 Optimizing module f33m_mult.
@@ -1038,6 +1066,7 @@ Optimizing module f3m_add4.
 Optimizing module f3m_mult.
 Optimizing module f3m_mux6.
 Optimizing module f3m_neg.
+Optimizing module func6.
 Optimizing module func7.
 Optimizing module func8.
 
@@ -1080,6 +1109,10 @@ Running muxtree optimizer on module \f3m_mux6..
 Running muxtree optimizer on module \f3m_neg..
   Creating internal representation of mux trees.
   No muxes found in this module.
+Running muxtree optimizer on module \func6..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
 Running muxtree optimizer on module \func7..
   Creating internal representation of mux trees.
   No muxes found in this module.
@@ -1087,7 +1120,7 @@ Running muxtree optimizer on module \func8..
   Creating internal representation of mux trees.
   No muxes found in this module.
 Removed 0 multiplexer ports.
-<suppressed ~4 debug messages>
+<suppressed ~5 debug messages>
 
 4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \f33m_mult.
@@ -1101,6 +1134,7 @@ Removed 0 multiplexer ports.
   Optimizing cells in module \f3m_mult.
   Optimizing cells in module \f3m_mux6.
   Optimizing cells in module \f3m_neg.
+  Optimizing cells in module \func6.
   Optimizing cells in module \func7.
   Optimizing cells in module \func8.
 Performed a total of 0 changes.
@@ -1117,12 +1151,13 @@ Finding identical cells in module `\f3m_add4'.
 Finding identical cells in module `\f3m_mult'.
 Finding identical cells in module `\f3m_mux6'.
 Finding identical cells in module `\f3m_neg'.
+Finding identical cells in module `\func6'.
 Finding identical cells in module `\func7'.
 Finding identical cells in module `\func8'.
 Removed a total of 0 cells.
 
 4.13. Executing OPT_DFF pass (perform DFF optimizations).
-Adding SRST signal on $procdff$5197 ($dff) from module f3m_mult (D = \B [193:188], Q = \y [193:188], rval = 6'000000).
+Adding SRST signal on $procdff$5208 ($dff) from module f3m_mult (D = \B [193:188], Q = \y [193:188], rval = 6'000000).
 
 4.14. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \f33m_mult..
@@ -1136,6 +1171,7 @@ Finding unused cells or wires in module \f3m_add4..
 Finding unused cells or wires in module \f3m_mult..
 Finding unused cells or wires in module \f3m_mux6..
 Finding unused cells or wires in module \f3m_neg..
+Finding unused cells or wires in module \func6..
 Finding unused cells or wires in module \func7..
 Finding unused cells or wires in module \func8..
 
@@ -1151,6 +1187,7 @@ Optimizing module f3m_add4.
 Optimizing module f3m_mult.
 Optimizing module f3m_mux6.
 Optimizing module f3m_neg.
+Optimizing module func6.
 Optimizing module func7.
 Optimizing module func8.
 
@@ -1193,6 +1230,10 @@ Running muxtree optimizer on module \f3m_mux6..
 Running muxtree optimizer on module \f3m_neg..
   Creating internal representation of mux trees.
   No muxes found in this module.
+Running muxtree optimizer on module \func6..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
 Running muxtree optimizer on module \func7..
   Creating internal representation of mux trees.
   No muxes found in this module.
@@ -1200,7 +1241,7 @@ Running muxtree optimizer on module \func8..
   Creating internal representation of mux trees.
   No muxes found in this module.
 Removed 0 multiplexer ports.
-<suppressed ~4 debug messages>
+<suppressed ~5 debug messages>
 
 4.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \f33m_mult.
@@ -1214,6 +1255,7 @@ Removed 0 multiplexer ports.
   Optimizing cells in module \f3m_mult.
   Optimizing cells in module \f3m_mux6.
   Optimizing cells in module \f3m_neg.
+  Optimizing cells in module \func6.
   Optimizing cells in module \func7.
   Optimizing cells in module \func8.
 Performed a total of 0 changes.
@@ -1230,6 +1272,7 @@ Finding identical cells in module `\f3m_add4'.
 Finding identical cells in module `\f3m_mult'.
 Finding identical cells in module `\f3m_mux6'.
 Finding identical cells in module `\f3m_neg'.
+Finding identical cells in module `\func6'.
 Finding identical cells in module `\func7'.
 Finding identical cells in module `\func8'.
 Removed a total of 0 cells.
@@ -1248,6 +1291,7 @@ Finding unused cells or wires in module \f3m_add4..
 Finding unused cells or wires in module \f3m_mult..
 Finding unused cells or wires in module \f3m_mux6..
 Finding unused cells or wires in module \f3m_neg..
+Finding unused cells or wires in module \func6..
 Finding unused cells or wires in module \func7..
 Finding unused cells or wires in module \func8..
 
@@ -1263,6 +1307,7 @@ Optimizing module f3m_add4.
 Optimizing module f3m_mult.
 Optimizing module f3m_mux6.
 Optimizing module f3m_neg.
+Optimizing module func6.
 Optimizing module func7.
 Optimizing module func8.
 
@@ -1436,6 +1481,20 @@ Optimizing module func8.
    Number of processes:              0
    Number of cells:                  0
 
+=== func6 ===
+
+   Number of wires:                  8
+   Number of wire bits:             39
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $eq                             1
+     $mux                            1
+     $sdff                           2
+
 === func7 ===
 
    Number of wires:                  5
@@ -1483,27 +1542,29 @@ Optimizing module func8.
            f3_mult                 291
        f3m_mux6                      2
        f3m_neg                       3
+       func6                         1
      f33m_mux3                       2
+     func6                           1
 
-   Number of wires:              71798
-   Number of wire bits:         120202
-   Number of public wires:       20260
-   Number of public wire bits:   68278
+   Number of wires:              71814
+   Number of wire bits:         120280
+   Number of public wires:       20272
+   Number of public wire bits:   68290
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:              57593
+   Number of cells:              57599
      $and                        35974
      $dff                            6
      $dffe                          11
-     $mux                            4
+     $eq                             2
+     $mux                            6
      $not                         8949
      $or                         12636
      $reduce_and                     1
-     $sdff                           5
+     $sdff                           9
      $sdffe                          5
-     func6                           2
 
-End of script. Logfile hash: 0731792112, CPU: user 2.12s system 0.01s, MEM: 53.59 MB peak
+End of script. Logfile hash: 2c4a69f9e9, CPU: user 2.19s system 0.02s, MEM: 53.65 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 28% 5x opt_expr (0 sec), 21% 3x opt_clean (0 sec), ...
+Time spent: 27% 5x opt_expr (0 sec), 20% 3x opt_clean (0 sec), ...

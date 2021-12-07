@@ -1,6 +1,18 @@
 
 5. Printing statistics.
 
+=== f32m_add ===
+
+   Number of wires:                  3
+   Number of wire bits:           1164
+   Number of public wires:           3
+   Number of public wire bits:    1164
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     f3m_add                         2
+
 === f32m_add3 ===
 
    Number of wires:                  5
@@ -12,4 +24,49 @@
    Number of processes:              0
    Number of cells:                  2
      f32m_add                        2
+
+=== f3_add ===
+
+   Number of wires:                 29
+   Number of wire bits:             32
+   Number of public wires:           9
+   Number of public wire bits:      12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and                           14
+     $not                            4
+     $or                             4
+
+=== f3m_add ===
+
+   Number of wires:                  3
+   Number of wire bits:            582
+   Number of public wires:           3
+   Number of public wire bits:     582
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 97
+     f3_add                         97
+
+=== design hierarchy ===
+
+   f32m_add3                         1
+     f32m_add                        2
+       f3m_add                       2
+         f3_add                     97
+
+   Number of wires:              11275
+   Number of wire bits:          19012
+   Number of public wires:        3515
+   Number of public wire bits:   11252
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               8536
+     $and                         5432
+     $not                         1552
+     $or                          1552
 

@@ -1,6 +1,20 @@
 
 5. Printing statistics.
 
+=== f3_add ===
+
+   Number of wires:                 29
+   Number of wire bits:             32
+   Number of public wires:           9
+   Number of public wire bits:      12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and                           14
+     $not                            4
+     $or                             4
+
 === f3_mult ===
 
    Number of wires:                 21
@@ -31,18 +45,18 @@
 === design hierarchy ===
 
    func8                             1
+     f3_add                        197
      f3_mult                       291
 
-   Number of wires:               6602
-   Number of wire bits:           8354
-   Number of public wires:        2528
-   Number of public wire bits:    4280
+   Number of wires:              12315
+   Number of wire bits:          14658
+   Number of public wires:        4301
+   Number of public wire bits:    6644
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               4853
-     $and                         2910
-     $not                         1164
-     $or                           582
-     f3_add                        197
+   Number of cells:               8990
+     $and                         5668
+     $not                         1952
+     $or                          1370
 

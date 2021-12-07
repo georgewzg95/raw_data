@@ -1,6 +1,32 @@
 
 5. Printing statistics.
 
+=== full_adder ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           8
+   Number of public wire bits:       8
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $or                             1
+     half_adder                      2
+
+=== half_adder ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $and                            1
+     $xor                            1
+
 === ripple_adder_4bit ===
 
    Number of wires:                  8
@@ -29,14 +55,18 @@
 
    ripple_adder_8bit                 1
      ripple_adder_4bit               2
+       full_adder                    4
+         half_adder                  2
 
-   Number of wires:                 22
-   Number of wire bits:             61
-   Number of public wires:          22
-   Number of public wire bits:      61
+   Number of wires:                150
+   Number of wire bits:            189
+   Number of public wires:         150
+   Number of public wire bits:     189
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  8
-     full_adder                      8
+   Number of cells:                 40
+     $and                           16
+     $or                             8
+     $xor                           16
 
