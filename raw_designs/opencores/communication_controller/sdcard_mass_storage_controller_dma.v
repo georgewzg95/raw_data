@@ -1081,11 +1081,7 @@ reg  REQ_OUT;
 
 //-------------Internal Constant-------------
 
-`ifdef SIM
- `define INIT_DELAY 2
-`else
   `define INIT_DELAY 64
- `endif
   
 `define NCR 2 
 parameter SEND_SIZE = 48;
@@ -2065,16 +2061,9 @@ module sd_data_master (
     
   );
 `define RESEND_MAX_CNT 3
-`ifdef RAM_MEM_WIDTH_32
-      `define READ_CYCLE 2
-       reg [1:0]bd_cnt  ;
-       `define BD_EMPTY (`BD_SIZE  /2) 
-`else `ifdef  RAM_MEM_WIDTH_16
       `define READ_CYCLE 4
        reg [2:0] bd_cnt;
        `define BD_EMPTY (`BD_SIZE  /4) 
-   `endif
-`endif 
 
 reg send_done;
 reg rec_done;

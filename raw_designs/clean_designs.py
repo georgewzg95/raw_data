@@ -50,6 +50,8 @@ def move_defines(filename):
       for line in lines:
         if line.find("`define") >= 0:
           continue
+        if line.find("`include") >= 0:
+          continue
         fout.write(line)
 
 

@@ -52,15 +52,8 @@
 `include "SPORT_defines.v"
 
 //pulling in data bus width from SPORT_defines file
-`ifdef SPORT_WIDTH64
-  `define SPORT_FIFODATAWIDTH 64
-`elsif SPORT_WIDTH32
+
   `define SPORT_FIFODATAWIDTH 32
-`elsif SPORT_WIDTH16
-  `define SPORT_FIFODATAWIDTH 16
-`else
-  `define SPORT_FIFODATAWIDTH 8
-`endif
 
 //define depth of FIFO; pulling in depth from SPORT_defines
 //`define SPORT_FIFODEPTH 16
@@ -290,19 +283,9 @@ endmodule
 //`define WB_WIDTH08
 
 
-`ifdef WB_WIDTH64
-  `define WB_WIDTH 64
-  `define SPORT_WIDTH64
-`elsif WB_WIDTH32
+
   `define WB_WIDTH 32
   `define SPORT_WIDTH32
-`elsif WB_WIDTH16
-  `define WB_WIDTH 16
-  `define SPORT_WIDTH16
-`else
-  `define WB_WIDTH 8
-  `define SPORT_WIDTH8
-`endif
 
 //define the width of WB address
 `define WB_ADDR_WIDTH 6
