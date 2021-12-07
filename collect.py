@@ -19,6 +19,27 @@ field_name = ['Name',
               'Number of processes',
               'Number of cells']
 
+cell_name = [ '$not',  '$pos', '$neg', 
+              '$reduce_and', '$reduce_or', '$reduce_xor', '$reduce_xor', '$reduce_xnor', '$reduce_bool',
+              '$logic_not', '$slice', '$lut', '$sop',
+
+              '$and', '$or', '$xor', '$xnor',
+              '$shl', '$shr', '$sshl', '$sshr', '$shift', '$shiftx',
+              '$lt', '$le', '$eq', '$ne', '$eqx', '$nex', '$ge', '$gt',
+              '$add', '$sub', '$mul', '$div', '$mod', '$divfloor', '$modfloor', '$pow',
+              '$logic_and', '$logic_or', '$concat', '$macc',
+
+              '$mux', '$pmux',
+
+              '$lcu', '$alu','$fa',
+
+              '$sr', '$ff', '$dff', '$dffe', '$dffsr', '$dffsre',
+              '$adff', '$adffe', '$aldff', '$aldffe', '$sdff', '$sdffe',
+              '$sdffce', '$dlatch', '$adlatch', '$dlatchsr',
+
+              '$memrd', '$memrd_v2', '$memwr', '$memwr_v2', '$meminit',
+              '$meminit_v2', '$mem', '$mem_v2', '$fsm']
+
 my_dict = {}
 remove = {}
 
@@ -58,22 +79,51 @@ def retrieve_info(filepath):
   fin.seek(0, 0)
   if hierarchy:
     start_parse = False
+    start_cell = False
     for line in fin:
       if line.find("design hierarchy") > 0:
         start_parse = True
+
+      if start_cell == True and line.rstrip():
+        for cell in cell_name:
+          if line.split()[0] == cell:
+            my_dict[relative_path].append(line.split()[1])
+          else:
+            my_dict[relative_path].append('0')
+
       if start_parse:
+        if line.find('Number of cells') >= 0:
+          start_cell = True
         for f_name in field_name:
           if line.find(f_name) > 0:
             for token in line.split(): 
               if token.isdigit():
                 my_dict[relative_path].append(token)
+      
+
   else:
+    start_cell = False
     for line in fin:
+      if start_cell == True and line.rstrip()
+        for cell in cell_name:
+          if line.split()[0] == cell:
+            my_dict[relative_path].append(line.split()[1])
+          else:
+            my_dict[relative_path].append('0')
+
+      if line.find('Number of cells') >= 0:
+        start_cell = True
       for f_name in field_name:
         if line.find(f_name) > 0:
           for token in line.split():
             if token.isdigit():
               my_dict[relative_path].append(token)
+
+with open('features.csv', 'wt') as f:
+  for ele in field_name:
+    f.write(','+ele)
+  for ele in cell_name:
+    f.write(','+ele)
 
 for subdir, dirs, files in os.walk(start_path):
   for filename in files:
