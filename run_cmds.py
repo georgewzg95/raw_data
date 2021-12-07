@@ -5,7 +5,6 @@ import argparse
 
 report_dir = '/misc/scratch/zwei1/reports/'
 root_dir = '/misc/scratch/zwei1/raw_data'
-cmd = 'vivado -mode batch -source /misc/scratch/zwei1/reports/run_tcl.tcl'
 
 class Design:
   def __init__(self, r_dir, filepath):
@@ -99,6 +98,12 @@ def parse_args():
                       action = 'store_true')
   parser.set_defaults(count_error = False)
 
+  parser.add_argument('-f',
+                      '--file',
+                      default = '/misc/scratch/zwei1/reports/complete_jobs.txt',
+                      type = str,
+                      help = 'complete_jobs path')
+
   args = parser.parse_args()
   return args
 
@@ -170,7 +175,7 @@ if __name__ == "__main__":
         running_jobs.append(task)
 
   if args.count_error == True:
-    with open(report_dir + os.sep + 'complete_jobs.txt') as f:
+    with open(args.file) as f:
       lines = f.readlines()
 
     total = 0
