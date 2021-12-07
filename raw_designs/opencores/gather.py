@@ -11,11 +11,10 @@ def retrieve_name(subdir):
   tokens = subdir.split("/")
   for index, token in enumerate(tokens):
     if token == "Communication_controller":
-      return tokens(index + 1)
+      return tokens[index+1]
 
 
 if __name__ == "__main__":
-  print("start_path")
   for subdir, dirs, files in os.walk(start_path):
     for filename in files:
       if filename.endswith(".v"):
