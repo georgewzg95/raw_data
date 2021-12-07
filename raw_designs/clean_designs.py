@@ -14,6 +14,7 @@ def remove_redundant(target_module_path):
 
     delete = False
     with open(target_module_path, "w") as fw:
+      print(target_module_path)
       for line in lines:
         if line.find("module") >= 0:
           x = line.split()
