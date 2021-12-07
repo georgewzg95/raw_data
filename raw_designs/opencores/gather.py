@@ -16,6 +16,7 @@ def retrieve_name(subdir):
 
 if __name__ == "main":
   for subdir, dirs, files in os.walk(self.start_path):
+    print(subdir)
     for filename in files:
       if filename.endswith(".v"):
         print(subdir)
