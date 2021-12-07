@@ -4,7 +4,22 @@ import argparse
 import re
 from collections import defaultdict
 
+start_path = "./Communication_controller"
+output_path = "./communication_controller"
+
+def retrieve_name(subdir):
+  tokens = subdir.split("/")
+  for index, token in enumerate(tokens):
+    if token == "Communication_controller":
+      return tokens(index + 1)
+
+
 if __name__ == "main":
+  for subdir, dirs, files in os.walk(self.start_path):
+    for filename in files:
+      if filename.endswith(".v"):
+        verilog_name = retrieve_name(subdir)
+        print(verilog_name)
 
 class gen_submod():
   def __init__(self):
@@ -307,6 +322,3 @@ class gen_submod():
     #         print(children.value, end=",")
     #     print("")
 
-
-if __name__ == "__main__":
-  gen_submod()
