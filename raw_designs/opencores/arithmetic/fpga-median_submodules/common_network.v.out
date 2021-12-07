@@ -1,6 +1,20 @@
 
 5. Printing statistics.
 
+=== $paramod$bc2b59cc7c1bbcd9d1df4577f25bb1fb79978649\node ===
+
+   Number of wires:                  6
+   Number of wire bits:             34
+   Number of public wires:           5
+   Number of public wire bits:      33
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $lt                             1
+     $mux                            1
+     $pmux                           2
+
 === common_network ===
 
    Number of wires:                 48
@@ -11,5 +25,22 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 12
-     node                           12
+     $paramod$bc2b59cc7c1bbcd9d1df4577f25bb1fb79978649\node     12
+
+=== design hierarchy ===
+
+   common_network                    1
+     $paramod$bc2b59cc7c1bbcd9d1df4577f25bb1fb79978649\node     12
+
+   Number of wires:                120
+   Number of wire bits:            792
+   Number of public wires:         108
+   Number of public wire bits:     780
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 48
+     $lt                            12
+     $mux                           12
+     $pmux                          24
 
