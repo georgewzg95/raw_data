@@ -1,0 +1,1011 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+
+
+-- Executing script file `out.ys' --
+
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v' to AST representation.
+Generating RTLIL representation for module `\duursma_lee_algo'.
+Generating RTLIL representation for module `\f3_sub1'.
+Generating RTLIL representation for module `\f36m_mult'.
+Generating RTLIL representation for module `\f32m_add4'.
+Generating RTLIL representation for module `\f32m_add'.
+Generating RTLIL representation for module `\f32m_add3'.
+Generating RTLIL representation for module `\f32m_neg'.
+Generating RTLIL representation for module `\f32m_mult'.
+Generating RTLIL representation for module `\f32m_mux6'.
+Generating RTLIL representation for module `\f36m_cubic'.
+Generating RTLIL representation for module `\f32m_sub'.
+Generating RTLIL representation for module `\f32m_cubic'.
+Generating RTLIL representation for module `\f3m_cubic'.
+Generating RTLIL representation for module `\f3m_nine'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Finding top of design hierarchy..
+root of   1 design levels: f3m_nine            
+root of   0 design levels: f3m_cubic           
+root of   1 design levels: f32m_cubic          
+root of   0 design levels: f32m_sub            
+root of   2 design levels: f36m_cubic          
+root of   0 design levels: f32m_mux6           
+root of   0 design levels: f32m_mult           
+root of   0 design levels: f32m_neg            
+root of   1 design levels: f32m_add3           
+root of   0 design levels: f32m_add            
+root of   1 design levels: f32m_add4           
+root of   2 design levels: f36m_mult           
+root of   0 design levels: f3_sub1             
+root of   3 design levels: duursma_lee_algo    
+Automatically selected duursma_lee_algo as design top module.
+
+2.2. Analyzing design hierarchy..
+Top module:  \duursma_lee_algo
+Used module:     \f3_sub1
+Used module:     \f36m_mult
+Used module:         \f32m_add4
+Used module:             \f32m_add
+Used module:         \f32m_add3
+Used module:         \f32m_neg
+Used module:         \f32m_mult
+Used module:         \f32m_mux6
+Used module:     \f36m_cubic
+Used module:         \f32m_sub
+Used module:         \f32m_cubic
+Used module:             \f3m_cubic
+Used module:     \f3m_nine
+
+2.3. Analyzing design hierarchy..
+Top module:  \duursma_lee_algo
+Used module:     \f3_sub1
+Used module:     \f36m_mult
+Used module:         \f32m_add4
+Used module:             \f32m_add
+Used module:         \f32m_add3
+Used module:         \f32m_neg
+Used module:         \f32m_mult
+Used module:         \f32m_mux6
+Used module:     \f36m_cubic
+Used module:         \f32m_sub
+Used module:         \f32m_cubic
+Used module:             \f3m_cubic
+Used module:     \f3m_nine
+Removed 0 unused modules.
+Mapping positional arguments of cell f3m_nine.ins2 (f3m_cubic).
+Mapping positional arguments of cell f3m_nine.ins1 (f3m_cubic).
+Mapping positional arguments of cell f32m_cubic.ins2 (f3m_cubic).
+Mapping positional arguments of cell f32m_cubic.ins1 (f3m_cubic).
+Mapping positional arguments of cell f36m_cubic.ins6 (f32m_sub).
+Mapping positional arguments of cell f36m_cubic.ins5 (f32m_add).
+Mapping positional arguments of cell f36m_cubic.ins4 (f32m_add).
+Mapping positional arguments of cell f36m_cubic.ins3 (f32m_cubic).
+Mapping positional arguments of cell f36m_cubic.ins2 (f32m_cubic).
+Mapping positional arguments of cell f36m_cubic.ins1 (f32m_cubic).
+Mapping positional arguments of cell f32m_add3.ins2 (f32m_add).
+Mapping positional arguments of cell f32m_add3.ins1 (f32m_add).
+Mapping positional arguments of cell f32m_add4.ins3 (f32m_add).
+Mapping positional arguments of cell f32m_add4.ins2 (f32m_add).
+Mapping positional arguments of cell f32m_add4.ins1 (f32m_add).
+Mapping positional arguments of cell f36m_mult.ins19 (f32m_add4).
+Mapping positional arguments of cell f36m_mult.ins18 (f32m_add3).
+Mapping positional arguments of cell f36m_mult.ins17 (f32m_add3).
+Mapping positional arguments of cell f36m_mult.ins16 (f32m_add3).
+Mapping positional arguments of cell f36m_mult.ins15 (f32m_neg).
+Mapping positional arguments of cell f36m_mult.ins14 (f32m_neg).
+Mapping positional arguments of cell f36m_mult.ins13 (f32m_neg).
+Mapping positional arguments of cell f36m_mult.ins12 (f32m_add).
+Mapping positional arguments of cell f36m_mult.ins11 (f32m_add).
+Mapping positional arguments of cell f36m_mult.ins10 (f32m_add).
+Mapping positional arguments of cell f36m_mult.ins9 (f32m_add).
+Mapping positional arguments of cell f36m_mult.ins8 (f32m_add).
+Mapping positional arguments of cell f36m_mult.ins7 (f32m_add).
+Mapping positional arguments of cell f36m_mult.ins6 (f32m_add).
+Mapping positional arguments of cell f36m_mult.ins5 (f32m_add).
+Mapping positional arguments of cell f36m_mult.ins3 (f32m_mult).
+Mapping positional arguments of cell f36m_mult.ins2 (f32m_mux6).
+Mapping positional arguments of cell f36m_mult.ins1 (f32m_mux6).
+Mapping positional arguments of cell duursma_lee_algo.ins14 (f3_sub1).
+Mapping positional arguments of cell duursma_lee_algo.ins11 (f36m_mult).
+Mapping positional arguments of cell duursma_lee_algo.ins10 (f36m_cubic).
+Mapping positional arguments of cell duursma_lee_algo.ins4 (f3m_nine).
+Mapping positional arguments of cell duursma_lee_algo.ins3 (f3m_nine).
+Mapping positional arguments of cell duursma_lee_algo.ins2 (f3m_cubic).
+Mapping positional arguments of cell duursma_lee_algo.ins1 (f3m_cubic).
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:258$21 in module f32m_mult.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:184$18 in module f36m_mult.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:175$17 in module f36m_mult.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:159$14 in module f36m_mult.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:87$7 in module duursma_lee_algo.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:81$6 in module duursma_lee_algo.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:75$5 in module duursma_lee_algo.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:61$4 in module duursma_lee_algo.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:55$1 in module duursma_lee_algo.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 4 redundant assignments.
+Promoted 8 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\f3m_nine.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:590$24'.
+Creating decoders for process `\f32m_cubic.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:320$23'.
+Creating decoders for process `\f36m_cubic.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:299$22'.
+Creating decoders for process `\f32m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:258$21'.
+     1/2: $0\c[387:0]
+     2/2: $0\done[0:0]
+Creating decoders for process `\f32m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:255$20'.
+Creating decoders for process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:191$19'.
+Creating decoders for process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:184$18'.
+     1/1: $0\mult_reset[0:0]
+Creating decoders for process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:175$17'.
+     1/2: $0\c[1163:0]
+     2/2: $0\done[0:0]
+Creating decoders for process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:165$16'.
+     1/6: $0\x5[387:0]
+     2/6: $0\x4[387:0]
+     3/6: $0\x3[387:0]
+     4/6: $0\x2[387:0]
+     5/6: $0\x1[387:0]
+     6/6: $0\x0[387:0]
+Creating decoders for process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:159$14'.
+     1/1: $0\K[6:0]
+Creating decoders for process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:154$13'.
+Creating decoders for process `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:87$7'.
+     1/1: $0\f3m_reset[0:0]
+Creating decoders for process `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:81$6'.
+     1/2: $0\delay2[0:0]
+     2/2: $0\delay1[0:0]
+Creating decoders for process `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:75$5'.
+     1/2: $0\out[1163:0]
+     2/2: $0\done[0:0]
+Creating decoders for process `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:61$4'.
+     1/5: $0\d[1:0]
+     2/5: $0\y[193:0]
+     3/5: $0\b[193:0]
+     4/5: $0\a[193:0]
+     5/5: $0\t[1163:0]
+Creating decoders for process `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:55$1'.
+     1/1: $0\i[97:0]
+
+3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\f3m_nine.\out' using process `\f3m_nine.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:590$24'.
+  created $dff cell `$procdff$120' with positive edge clock.
+Creating register for signal `\f32m_cubic.\c' using process `\f32m_cubic.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:320$23'.
+  created $dff cell `$procdff$121' with positive edge clock.
+Creating register for signal `\f36m_cubic.\c' using process `\f36m_cubic.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:299$22'.
+  created $dff cell `$procdff$122' with positive edge clock.
+Creating register for signal `\f32m_mult.\done' using process `\f32m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:258$21'.
+  created $dff cell `$procdff$123' with positive edge clock.
+Creating register for signal `\f32m_mult.\c' using process `\f32m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:258$21'.
+  created $dff cell `$procdff$124' with positive edge clock.
+Creating register for signal `\f32m_mult.\mult_reset' using process `\f32m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:255$20'.
+  created $dff cell `$procdff$125' with positive edge clock.
+Creating register for signal `\f36m_mult.\delay1' using process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:191$19'.
+  created $dff cell `$procdff$126' with positive edge clock.
+Creating register for signal `\f36m_mult.\delay2' using process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:191$19'.
+  created $dff cell `$procdff$127' with positive edge clock.
+Creating register for signal `\f36m_mult.\mult_reset' using process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:184$18'.
+  created $dff cell `$procdff$128' with positive edge clock.
+Creating register for signal `\f36m_mult.\done' using process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:175$17'.
+  created $dff cell `$procdff$129' with positive edge clock.
+Creating register for signal `\f36m_mult.\c' using process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:175$17'.
+  created $dff cell `$procdff$130' with positive edge clock.
+Creating register for signal `\f36m_mult.\x0' using process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:165$16'.
+  created $dff cell `$procdff$131' with positive edge clock.
+Creating register for signal `\f36m_mult.\x1' using process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:165$16'.
+  created $dff cell `$procdff$132' with positive edge clock.
+Creating register for signal `\f36m_mult.\x2' using process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:165$16'.
+  created $dff cell `$procdff$133' with positive edge clock.
+Creating register for signal `\f36m_mult.\x3' using process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:165$16'.
+  created $dff cell `$procdff$134' with positive edge clock.
+Creating register for signal `\f36m_mult.\x4' using process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:165$16'.
+  created $dff cell `$procdff$135' with positive edge clock.
+Creating register for signal `\f36m_mult.\x5' using process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:165$16'.
+  created $dff cell `$procdff$136' with positive edge clock.
+Creating register for signal `\f36m_mult.\K' using process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:159$14'.
+  created $dff cell `$procdff$137' with positive edge clock.
+Creating register for signal `\f36m_mult.\in0d' using process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:154$13'.
+  created $dff cell `$procdff$138' with positive edge clock.
+Creating register for signal `\f36m_mult.\in1d' using process `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:154$13'.
+  created $dff cell `$procdff$139' with positive edge clock.
+Creating register for signal `\duursma_lee_algo.\f3m_reset' using process `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:87$7'.
+  created $dff cell `$procdff$140' with positive edge clock.
+Creating register for signal `\duursma_lee_algo.\delay1' using process `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:81$6'.
+  created $dff cell `$procdff$141' with positive edge clock.
+Creating register for signal `\duursma_lee_algo.\delay2' using process `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:81$6'.
+  created $dff cell `$procdff$142' with positive edge clock.
+Creating register for signal `\duursma_lee_algo.\done' using process `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:75$5'.
+  created $dff cell `$procdff$143' with positive edge clock.
+Creating register for signal `\duursma_lee_algo.\out' using process `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:75$5'.
+  created $dff cell `$procdff$144' with positive edge clock.
+Creating register for signal `\duursma_lee_algo.\t' using process `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:61$4'.
+  created $dff cell `$procdff$145' with positive edge clock.
+Creating register for signal `\duursma_lee_algo.\a' using process `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:61$4'.
+  created $dff cell `$procdff$146' with positive edge clock.
+Creating register for signal `\duursma_lee_algo.\b' using process `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:61$4'.
+  created $dff cell `$procdff$147' with positive edge clock.
+Creating register for signal `\duursma_lee_algo.\y' using process `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:61$4'.
+  created $dff cell `$procdff$148' with positive edge clock.
+Creating register for signal `\duursma_lee_algo.\d' using process `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:61$4'.
+  created $dff cell `$procdff$149' with positive edge clock.
+Creating register for signal `\duursma_lee_algo.\i' using process `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:55$1'.
+  created $dff cell `$procdff$150' with positive edge clock.
+
+3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `f3m_nine.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:590$24'.
+Removing empty process `f32m_cubic.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:320$23'.
+Removing empty process `f36m_cubic.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:299$22'.
+Found and cleaned up 2 empty switches in `\f32m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:258$21'.
+Removing empty process `f32m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:258$21'.
+Removing empty process `f32m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:255$20'.
+Removing empty process `f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:191$19'.
+Found and cleaned up 2 empty switches in `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:184$18'.
+Removing empty process `f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:184$18'.
+Found and cleaned up 2 empty switches in `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:175$17'.
+Removing empty process `f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:175$17'.
+Found and cleaned up 6 empty switches in `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:165$16'.
+Removing empty process `f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:165$16'.
+Found and cleaned up 2 empty switches in `\f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:159$14'.
+Removing empty process `f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:159$14'.
+Removing empty process `f36m_mult.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:154$13'.
+Found and cleaned up 2 empty switches in `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:87$7'.
+Removing empty process `duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:87$7'.
+Found and cleaned up 1 empty switch in `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:81$6'.
+Removing empty process `duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:81$6'.
+Found and cleaned up 2 empty switches in `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:75$5'.
+Removing empty process `duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:75$5'.
+Found and cleaned up 2 empty switches in `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:61$4'.
+Removing empty process `duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:61$4'.
+Found and cleaned up 2 empty switches in `\duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:55$1'.
+Removing empty process `duursma_lee_algo.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/duursma_lee_algo.v:55$1'.
+Cleaned up 23 empty switches.
+
+3.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module f3m_nine.
+Optimizing module f3m_cubic.
+Optimizing module f32m_cubic.
+Optimizing module f32m_sub.
+Optimizing module f36m_cubic.
+Optimizing module f32m_mux6.
+Optimizing module f32m_mult.
+Optimizing module f32m_neg.
+Optimizing module f32m_add3.
+Optimizing module f32m_add.
+Optimizing module f32m_add4.
+Optimizing module f36m_mult.
+Optimizing module f3_sub1.
+Optimizing module duursma_lee_algo.
+<suppressed ~1 debug messages>
+
+4. Executing OPT pass (performing simple optimizations).
+
+4.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module f3m_nine.
+Optimizing module f3m_cubic.
+Optimizing module f32m_cubic.
+Optimizing module f32m_sub.
+Optimizing module f36m_cubic.
+Optimizing module f32m_mux6.
+Optimizing module f32m_mult.
+Optimizing module f32m_neg.
+Optimizing module f32m_add3.
+Optimizing module f32m_add.
+Optimizing module f32m_add4.
+Optimizing module f36m_mult.
+Optimizing module f3_sub1.
+Optimizing module duursma_lee_algo.
+
+4.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\f3m_nine'.
+Finding identical cells in module `\f3m_cubic'.
+Finding identical cells in module `\f32m_cubic'.
+Finding identical cells in module `\f32m_sub'.
+Finding identical cells in module `\f36m_cubic'.
+Finding identical cells in module `\f32m_mux6'.
+Finding identical cells in module `\f32m_mult'.
+Finding identical cells in module `\f32m_neg'.
+Finding identical cells in module `\f32m_add3'.
+Finding identical cells in module `\f32m_add'.
+Finding identical cells in module `\f32m_add4'.
+Finding identical cells in module `\f36m_mult'.
+Finding identical cells in module `\f3_sub1'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\duursma_lee_algo'.
+Removed a total of 1 cells.
+
+4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \f3m_nine..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f3m_cubic..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_cubic..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_sub..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f36m_cubic..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_mux6..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_mult..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \f32m_neg..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_add3..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_add..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_add4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f36m_mult..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \f3_sub1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \duursma_lee_algo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~23 debug messages>
+
+4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \f3m_nine.
+  Optimizing cells in module \f3m_cubic.
+  Optimizing cells in module \f32m_cubic.
+  Optimizing cells in module \f32m_sub.
+  Optimizing cells in module \f36m_cubic.
+  Optimizing cells in module \f32m_mux6.
+  Optimizing cells in module \f32m_mult.
+  Optimizing cells in module \f32m_neg.
+  Optimizing cells in module \f32m_add3.
+  Optimizing cells in module \f32m_add.
+  Optimizing cells in module \f32m_add4.
+  Optimizing cells in module \f36m_mult.
+  Optimizing cells in module \f3_sub1.
+  Optimizing cells in module \duursma_lee_algo.
+Performed a total of 0 changes.
+
+4.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\f3m_nine'.
+Finding identical cells in module `\f3m_cubic'.
+Finding identical cells in module `\f32m_cubic'.
+Finding identical cells in module `\f32m_sub'.
+Finding identical cells in module `\f36m_cubic'.
+Finding identical cells in module `\f32m_mux6'.
+Finding identical cells in module `\f32m_mult'.
+Finding identical cells in module `\f32m_neg'.
+Finding identical cells in module `\f32m_add3'.
+Finding identical cells in module `\f32m_add'.
+Finding identical cells in module `\f32m_add4'.
+Finding identical cells in module `\f36m_mult'.
+Finding identical cells in module `\f3_sub1'.
+Finding identical cells in module `\duursma_lee_algo'.
+Removed a total of 0 cells.
+
+4.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$123 ($dff) from module f32m_mult (D = $procmux$30_Y, Q = \done, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$151 ($sdff) from module f32m_mult (D = 1'1, Q = \done).
+Adding EN signal on $procdff$124 ($dff) from module f32m_mult (D = { \c1 \c0 }, Q = \c).
+Adding SRST signal on $procdff$128 ($dff) from module f36m_mult (D = $procmux$36_Y, Q = \mult_reset, rval = 1'1).
+Adding SRST signal on $procdff$129 ($dff) from module f36m_mult (D = $procmux$46_Y, Q = \done, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$159 ($sdff) from module f36m_mult (D = 1'1, Q = \done).
+Adding EN signal on $procdff$130 ($dff) from module f36m_mult (D = { \c2 \c1 \c0 }, Q = \c).
+Adding EN signal on $procdff$131 ($dff) from module f36m_mult (D = \o, Q = \x0).
+Adding EN signal on $procdff$132 ($dff) from module f36m_mult (D = \o, Q = \x1).
+Adding EN signal on $procdff$133 ($dff) from module f36m_mult (D = \o, Q = \x2).
+Adding EN signal on $procdff$134 ($dff) from module f36m_mult (D = \o, Q = \x3).
+Adding EN signal on $procdff$135 ($dff) from module f36m_mult (D = \o, Q = \x4).
+Adding EN signal on $procdff$136 ($dff) from module f36m_mult (D = \o, Q = \x5).
+Adding SRST signal on $procdff$137 ($dff) from module f36m_mult (D = $procmux$63_Y, Q = \K, rval = 7'1000000).
+Adding EN signal on $auto$ff.cc:262:slice$172 ($sdff) from module f36m_mult (D = { 1'0 \K [6:1] }, Q = \K).
+Adding SRST signal on $procdff$150 ($dff) from module duursma_lee_algo (D = $procmux$115_Y, Q = \i, rval = 98'10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$174 ($sdff) from module duursma_lee_algo (D = { 1'0 \i [97:1] }, Q = \i).
+Adding SRST signal on $procdff$140 ($dff) from module duursma_lee_algo (D = $procmux$69_Y, Q = \f3m_reset, rval = 1'1).
+Adding SRST signal on $procdff$141 ($dff) from module duursma_lee_algo (D = \f3m_reset, Q = \delay1, rval = 1'1).
+Adding SRST signal on $procdff$142 ($dff) from module duursma_lee_algo (D = \delay1, Q = \delay2, rval = 1'1).
+Adding SRST signal on $procdff$143 ($dff) from module duursma_lee_algo (D = $procmux$85_Y, Q = \done, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$179 ($sdff) from module duursma_lee_algo (D = 1'1, Q = \done).
+Adding EN signal on $procdff$144 ($dff) from module duursma_lee_algo (D = \v8, Q = \out).
+Adding SRST signal on $procdff$145 ($dff) from module duursma_lee_algo (D = $procmux$110_Y, Q = \t, rval = 1164'000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001).
+Adding EN signal on $auto$ff.cc:262:slice$186 ($sdff) from module duursma_lee_algo (D = \v8, Q = \t).
+Adding EN signal on $procdff$146 ($dff) from module duursma_lee_algo (D = $procmux$108_Y, Q = \a).
+Adding EN signal on $procdff$147 ($dff) from module duursma_lee_algo (D = $procmux$103_Y, Q = \b).
+Adding EN signal on $procdff$148 ($dff) from module duursma_lee_algo (D = $procmux$98_Y, Q = \y).
+Adding SRST signal on $procdff$149 ($dff) from module duursma_lee_algo (D = $procmux$90_Y, Q = \d, rval = 2'01).
+Adding EN signal on $auto$ff.cc:262:slice$197 ($sdff) from module duursma_lee_algo (D = \v9, Q = \d).
+
+4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \f3m_nine..
+Finding unused cells or wires in module \f3m_cubic..
+Finding unused cells or wires in module \f32m_cubic..
+Finding unused cells or wires in module \f32m_sub..
+Finding unused cells or wires in module \f36m_cubic..
+Finding unused cells or wires in module \f32m_mux6..
+Finding unused cells or wires in module \f32m_mult..
+Finding unused cells or wires in module \f32m_neg..
+Finding unused cells or wires in module \f32m_add3..
+Finding unused cells or wires in module \f32m_add..
+Finding unused cells or wires in module \f32m_add4..
+Finding unused cells or wires in module \f36m_mult..
+Finding unused cells or wires in module \f3_sub1..
+Finding unused cells or wires in module \duursma_lee_algo..
+Removed 30 unused cells and 103 unused wires.
+<suppressed ~37 debug messages>
+
+4.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module duursma_lee_algo.
+<suppressed ~3 debug messages>
+Optimizing module f32m_add.
+Optimizing module f32m_add3.
+Optimizing module f32m_add4.
+Optimizing module f32m_cubic.
+Optimizing module f32m_mult.
+Optimizing module f32m_mux6.
+Optimizing module f32m_neg.
+Optimizing module f32m_sub.
+Optimizing module f36m_cubic.
+Optimizing module f36m_mult.
+Optimizing module f3_sub1.
+Optimizing module f3m_cubic.
+Optimizing module f3m_nine.
+
+4.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \duursma_lee_algo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \f32m_add..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_add3..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_add4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_cubic..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_mult..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_mux6..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_neg..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_sub..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f36m_cubic..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f36m_mult..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \f3_sub1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f3m_cubic..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f3m_nine..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \duursma_lee_algo.
+  Optimizing cells in module \f32m_add.
+  Optimizing cells in module \f32m_add3.
+  Optimizing cells in module \f32m_add4.
+  Optimizing cells in module \f32m_cubic.
+  Optimizing cells in module \f32m_mult.
+  Optimizing cells in module \f32m_mux6.
+  Optimizing cells in module \f32m_neg.
+  Optimizing cells in module \f32m_sub.
+  Optimizing cells in module \f36m_cubic.
+  Optimizing cells in module \f36m_mult.
+  Optimizing cells in module \f3_sub1.
+  Optimizing cells in module \f3m_cubic.
+  Optimizing cells in module \f3m_nine.
+Performed a total of 0 changes.
+
+4.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\duursma_lee_algo'.
+<suppressed ~6 debug messages>
+Finding identical cells in module `\f32m_add'.
+Finding identical cells in module `\f32m_add3'.
+Finding identical cells in module `\f32m_add4'.
+Finding identical cells in module `\f32m_cubic'.
+Finding identical cells in module `\f32m_mult'.
+Finding identical cells in module `\f32m_mux6'.
+Finding identical cells in module `\f32m_neg'.
+Finding identical cells in module `\f32m_sub'.
+Finding identical cells in module `\f36m_cubic'.
+Finding identical cells in module `\f36m_mult'.
+Finding identical cells in module `\f3_sub1'.
+Finding identical cells in module `\f3m_cubic'.
+Finding identical cells in module `\f3m_nine'.
+Removed a total of 2 cells.
+
+4.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \duursma_lee_algo..
+Finding unused cells or wires in module \f32m_add..
+Finding unused cells or wires in module \f32m_add3..
+Finding unused cells or wires in module \f32m_add4..
+Finding unused cells or wires in module \f32m_cubic..
+Finding unused cells or wires in module \f32m_mult..
+Finding unused cells or wires in module \f32m_mux6..
+Finding unused cells or wires in module \f32m_neg..
+Finding unused cells or wires in module \f32m_sub..
+Finding unused cells or wires in module \f36m_cubic..
+Finding unused cells or wires in module \f36m_mult..
+Finding unused cells or wires in module \f3_sub1..
+Finding unused cells or wires in module \f3m_cubic..
+Finding unused cells or wires in module \f3m_nine..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+4.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module duursma_lee_algo.
+Optimizing module f32m_add.
+Optimizing module f32m_add3.
+Optimizing module f32m_add4.
+Optimizing module f32m_cubic.
+Optimizing module f32m_mult.
+Optimizing module f32m_mux6.
+Optimizing module f32m_neg.
+Optimizing module f32m_sub.
+Optimizing module f36m_cubic.
+Optimizing module f36m_mult.
+Optimizing module f3_sub1.
+Optimizing module f3m_cubic.
+Optimizing module f3m_nine.
+
+4.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \duursma_lee_algo..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \f32m_add..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_add3..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_add4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_cubic..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_mult..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_mux6..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_neg..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_sub..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f36m_cubic..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f36m_mult..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \f3_sub1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f3m_cubic..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f3m_nine..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~5 debug messages>
+
+4.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \duursma_lee_algo.
+  Optimizing cells in module \f32m_add.
+  Optimizing cells in module \f32m_add3.
+  Optimizing cells in module \f32m_add4.
+  Optimizing cells in module \f32m_cubic.
+  Optimizing cells in module \f32m_mult.
+  Optimizing cells in module \f32m_mux6.
+  Optimizing cells in module \f32m_neg.
+  Optimizing cells in module \f32m_sub.
+  Optimizing cells in module \f36m_cubic.
+  Optimizing cells in module \f36m_mult.
+  Optimizing cells in module \f3_sub1.
+  Optimizing cells in module \f3m_cubic.
+  Optimizing cells in module \f3m_nine.
+Performed a total of 0 changes.
+
+4.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\duursma_lee_algo'.
+Finding identical cells in module `\f32m_add'.
+Finding identical cells in module `\f32m_add3'.
+Finding identical cells in module `\f32m_add4'.
+Finding identical cells in module `\f32m_cubic'.
+Finding identical cells in module `\f32m_mult'.
+Finding identical cells in module `\f32m_mux6'.
+Finding identical cells in module `\f32m_neg'.
+Finding identical cells in module `\f32m_sub'.
+Finding identical cells in module `\f36m_cubic'.
+Finding identical cells in module `\f36m_mult'.
+Finding identical cells in module `\f3_sub1'.
+Finding identical cells in module `\f3m_cubic'.
+Finding identical cells in module `\f3m_nine'.
+Removed a total of 0 cells.
+
+4.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \duursma_lee_algo..
+Finding unused cells or wires in module \f32m_add..
+Finding unused cells or wires in module \f32m_add3..
+Finding unused cells or wires in module \f32m_add4..
+Finding unused cells or wires in module \f32m_cubic..
+Finding unused cells or wires in module \f32m_mult..
+Finding unused cells or wires in module \f32m_mux6..
+Finding unused cells or wires in module \f32m_neg..
+Finding unused cells or wires in module \f32m_sub..
+Finding unused cells or wires in module \f36m_cubic..
+Finding unused cells or wires in module \f36m_mult..
+Finding unused cells or wires in module \f3_sub1..
+Finding unused cells or wires in module \f3m_cubic..
+Finding unused cells or wires in module \f3m_nine..
+
+4.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module duursma_lee_algo.
+Optimizing module f32m_add.
+Optimizing module f32m_add3.
+Optimizing module f32m_add4.
+Optimizing module f32m_cubic.
+Optimizing module f32m_mult.
+Optimizing module f32m_mux6.
+Optimizing module f32m_neg.
+Optimizing module f32m_sub.
+Optimizing module f36m_cubic.
+Optimizing module f36m_mult.
+Optimizing module f3_sub1.
+Optimizing module f3m_cubic.
+Optimizing module f3m_nine.
+
+4.23. Finished OPT passes. (There is nothing left to do.)
+
+5. Printing statistics.
+
+=== duursma_lee_algo ===
+
+   Number of wires:                 47
+   Number of wire bits:          10207
+   Number of public wires:          36
+   Number of public wire bits:    9038
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 36
+     $dffe                           4
+     $mux                            7
+     $not                            1
+     $or                             1
+     $reduce_and                     1
+     $reduce_bool                    1
+     $sdff                           3
+     $sdffe                          4
+     f36m_cubic                      1
+     f36m_mult                       1
+     f3_sub1                         1
+     f3m_add3                        1
+     f3m_cubic                       2
+     f3m_mult                        2
+     f3m_neg                         2
+     f3m_nine                        2
+     func6                           2
+
+=== f32m_add ===
+
+   Number of wires:                  3
+   Number of wire bits:           1164
+   Number of public wires:           3
+   Number of public wire bits:    1164
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     f3m_add                         2
+
+=== f32m_add3 ===
+
+   Number of wires:                  5
+   Number of wire bits:           1940
+   Number of public wires:           5
+   Number of public wire bits:    1940
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     f32m_add                        2
+
+=== f32m_add4 ===
+
+   Number of wires:                  7
+   Number of wire bits:           2716
+   Number of public wires:           7
+   Number of public wire bits:    2716
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     f32m_add                        3
+
+=== f32m_cubic ===
+
+   Number of wires:                  8
+   Number of wire bits:           1747
+   Number of public wires:           8
+   Number of public wire bits:    1747
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $dff                            1
+     f3m_cubic                       2
+     f3m_neg                         1
+
+=== f32m_mult ===
+
+   Number of wires:                 23
+   Number of wire bits:           3500
+   Number of public wires:          21
+   Number of public wire bits:    3498
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $dff                            1
+     $dffe                           1
+     $not                            1
+     $reduce_and                     1
+     $sdffe                          1
+     f3m_add                         3
+     f3m_mult3                       1
+     f3m_sub                         2
+     func6                           1
+
+=== f32m_mux6 ===
+
+   Number of wires:                 13
+   Number of wire bits:           2722
+   Number of public wires:          13
+   Number of public wire bits:    2722
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     f3m_mux6                        2
+
+=== f32m_neg ===
+
+   Number of wires:                  2
+   Number of wire bits:            776
+   Number of public wires:           2
+   Number of public wire bits:     776
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     f3m_neg                         2
+
+=== f32m_sub ===
+
+   Number of wires:                  3
+   Number of wire bits:           1164
+   Number of public wires:           3
+   Number of public wire bits:    1164
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     f3m_sub                         2
+
+=== f36m_cubic ===
+
+   Number of wires:                 13
+   Number of wire bits:           6209
+   Number of public wires:          13
+   Number of public wire bits:    6209
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $dff                            1
+     f32m_add                        2
+     f32m_cubic                      3
+     f32m_sub                        1
+
+=== f36m_mult ===
+
+   Number of wires:                 57
+   Number of wire bits:          16710
+   Number of public wires:          53
+   Number of public wire bits:   16706
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 37
+     $dff                            4
+     $dffe                           7
+     $mux                            1
+     $not                            1
+     $or                             1
+     $reduce_and                     1
+     $sdff                           1
+     $sdffe                          2
+     f32m_add                        8
+     f32m_add3                       3
+     f32m_add4                       1
+     f32m_mult                       1
+     f32m_mux6                       2
+     f32m_neg                        3
+     func6                           1
+
+=== f3_sub1 ===
+
+   Number of wires:                  4
+   Number of wire bits:              6
+   Number of public wires:           2
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $and                            2
+     $not                            2
+
+=== f3m_cubic ===
+
+   Number of wires:                 90
+   Number of wire bits:            564
+   Number of public wires:          90
+   Number of public wire bits:     564
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 88
+     f3_add                         88
+
+=== f3m_nine ===
+
+   Number of wires:                  5
+   Number of wire bits:            777
+   Number of public wires:           5
+   Number of public wire bits:     777
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $dff                            1
+     f3m_cubic                       2
+
+=== design hierarchy ===
+
+   duursma_lee_algo                  1
+     f36m_cubic                      1
+       f32m_add                      2
+       f32m_cubic                    3
+         f3m_cubic                   2
+       f32m_sub                      1
+     f36m_mult                       1
+       f32m_add                      8
+       f32m_add3                     3
+         f32m_add                    2
+       f32m_add4                     1
+         f32m_add                    3
+       f32m_mult                     1
+       f32m_mux6                     2
+       f32m_neg                      3
+     f3_sub1                         1
+     f3m_cubic                       2
+     f3m_nine                        2
+       f3m_cubic                     2
+
+   Number of wires:               1372
+   Number of wire bits:          89783
+   Number of public wires:        1353
+   Number of public wire bits:   88606
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1179
+     $and                            2
+     $dff                           11
+     $dffe                          12
+     $mux                            8
+     $not                            5
+     $or                             2
+     $reduce_and                     3
+     $reduce_bool                    1
+     $sdff                           4
+     $sdffe                          7
+     f3_add                       1056
+     f3m_add                        41
+     f3m_add3                        1
+     f3m_mult                        2
+     f3m_mult3                       1
+     f3m_mux6                        4
+     f3m_neg                        11
+     f3m_sub                         4
+     func6                           4
+
+End of script. Logfile hash: 137df3e00e, CPU: user 1.04s system 0.01s, MEM: 29.85 MB peak
+Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+Time spent: 38% 3x opt_clean (0 sec), 26% 3x opt_dff (0 sec), ...

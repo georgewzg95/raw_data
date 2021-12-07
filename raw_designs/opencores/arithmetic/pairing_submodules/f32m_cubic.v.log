@@ -1,0 +1,208 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+
+
+-- Executing script file `out.ys' --
+
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f32m_cubic.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f32m_cubic.v' to AST representation.
+Generating RTLIL representation for module `\f32m_cubic'.
+Generating RTLIL representation for module `\f3m_cubic'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Finding top of design hierarchy..
+root of   0 design levels: f3m_cubic           
+root of   1 design levels: f32m_cubic          
+Automatically selected f32m_cubic as design top module.
+
+2.2. Analyzing design hierarchy..
+Top module:  \f32m_cubic
+Used module:     \f3m_cubic
+
+2.3. Analyzing design hierarchy..
+Top module:  \f32m_cubic
+Used module:     \f3m_cubic
+Removed 0 unused modules.
+Mapping positional arguments of cell f32m_cubic.ins2 (f3m_cubic).
+Mapping positional arguments of cell f32m_cubic.ins1 (f3m_cubic).
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 1 assignment to connection.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\f32m_cubic.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f32m_cubic.v:22$1'.
+
+3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\f32m_cubic.\c' using process `\f32m_cubic.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f32m_cubic.v:22$1'.
+  created $dff cell `$procdff$2' with positive edge clock.
+
+3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `f32m_cubic.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f32m_cubic.v:22$1'.
+Cleaned up 0 empty switches.
+
+3.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module f3m_cubic.
+Optimizing module f32m_cubic.
+
+4. Executing OPT pass (performing simple optimizations).
+
+4.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module f3m_cubic.
+Optimizing module f32m_cubic.
+
+4.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\f3m_cubic'.
+Finding identical cells in module `\f32m_cubic'.
+Removed a total of 0 cells.
+
+4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \f3m_cubic..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f32m_cubic..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \f3m_cubic.
+  Optimizing cells in module \f32m_cubic.
+Performed a total of 0 changes.
+
+4.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\f3m_cubic'.
+Finding identical cells in module `\f32m_cubic'.
+Removed a total of 0 cells.
+
+4.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \f3m_cubic..
+Finding unused cells or wires in module \f32m_cubic..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+4.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module f32m_cubic.
+Optimizing module f3m_cubic.
+
+4.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \f32m_cubic..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f3m_cubic..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \f32m_cubic.
+  Optimizing cells in module \f3m_cubic.
+Performed a total of 0 changes.
+
+4.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\f32m_cubic'.
+Finding identical cells in module `\f3m_cubic'.
+Removed a total of 0 cells.
+
+4.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \f32m_cubic..
+Finding unused cells or wires in module \f3m_cubic..
+
+4.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module f32m_cubic.
+Optimizing module f3m_cubic.
+
+4.16. Finished OPT passes. (There is nothing left to do.)
+
+5. Printing statistics.
+
+=== f32m_cubic ===
+
+   Number of wires:                  8
+   Number of wire bits:           1747
+   Number of public wires:           8
+   Number of public wire bits:    1747
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $dff                            1
+     f3m_cubic                       2
+     f3m_neg                         1
+
+=== f3m_cubic ===
+
+   Number of wires:                 90
+   Number of wire bits:            564
+   Number of public wires:          90
+   Number of public wire bits:     564
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 88
+     f3_add                         88
+
+=== design hierarchy ===
+
+   f32m_cubic                        1
+     f3m_cubic                       2
+
+   Number of wires:                188
+   Number of wire bits:           2875
+   Number of public wires:         188
+   Number of public wire bits:    2875
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                178
+     $dff                            1
+     f3_add                        176
+     f3m_neg                         1
+
+End of script. Logfile hash: 780b3488e1, CPU: user 0.04s system 0.01s, MEM: 12.93 MB peak
+Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+Time spent: 33% 2x read_verilog (0 sec), 24% 2x opt_clean (0 sec), ...

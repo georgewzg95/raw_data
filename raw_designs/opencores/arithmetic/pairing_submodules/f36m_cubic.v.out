@@ -1,0 +1,77 @@
+
+5. Printing statistics.
+
+=== f32m_cubic ===
+
+   Number of wires:                  8
+   Number of wire bits:           1747
+   Number of public wires:           8
+   Number of public wire bits:    1747
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $dff                            1
+     f3m_cubic                       2
+     f3m_neg                         1
+
+=== f32m_sub ===
+
+   Number of wires:                  3
+   Number of wire bits:           1164
+   Number of public wires:           3
+   Number of public wire bits:    1164
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     f3m_sub                         2
+
+=== f36m_cubic ===
+
+   Number of wires:                 13
+   Number of wire bits:           6209
+   Number of public wires:          13
+   Number of public wire bits:    6209
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $dff                            1
+     f32m_add                        2
+     f32m_cubic                      3
+     f32m_sub                        1
+
+=== f3m_cubic ===
+
+   Number of wires:                 90
+   Number of wire bits:            564
+   Number of public wires:          90
+   Number of public wire bits:     564
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 88
+     f3_add                         88
+
+=== design hierarchy ===
+
+   f36m_cubic                        1
+     f32m_cubic                      3
+       f3m_cubic                     2
+     f32m_sub                        1
+
+   Number of wires:                580
+   Number of wire bits:          15998
+   Number of public wires:         580
+   Number of public wire bits:   15998
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                539
+     $dff                            4
+     f32m_add                        2
+     f3_add                        528
+     f3m_neg                         3
+     f3m_sub                         2
+

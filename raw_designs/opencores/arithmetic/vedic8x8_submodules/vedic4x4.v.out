@@ -1,0 +1,48 @@
+
+5. Printing statistics.
+
+=== vedic2x2 ===
+
+   Number of wires:                  8
+   Number of wire bits:             13
+   Number of public wires:           8
+   Number of public wire bits:      13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $and                            4
+     half_adder                      2
+
+=== vedic4x4 ===
+
+   Number of wires:                 13
+   Number of wire bits:             51
+   Number of public wires:          13
+   Number of public wire bits:      51
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     ripple_adder_4bit               1
+     ripple_adder_6bit               2
+     vedic2x2                        4
+
+=== design hierarchy ===
+
+   vedic4x4                          1
+     vedic2x2                        4
+
+   Number of wires:                 45
+   Number of wire bits:            103
+   Number of public wires:          45
+   Number of public wire bits:     103
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 27
+     $and                           16
+     half_adder                      8
+     ripple_adder_4bit               1
+     ripple_adder_6bit               2
+

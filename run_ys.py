@@ -2,7 +2,7 @@ import os
 
 root_path = os.getcwd()
 #start_path = root_path + "/raw_designs/test_designs"
-start_path = root_path + "/raw_designs/vtr_designs"
+start_path = root_path + "/raw_designs/opencores/arithmetic"
 yosys_path = "/home/zhigang/FeatEx/"
 
 def replace_template(filepath):

@@ -1,0 +1,168 @@
+
+5. Printing statistics.
+
+=== PE ===
+
+   Number of wires:                 53
+   Number of wire bits:          39179
+   Number of public wires:          47
+   Number of public wire bits:   35614
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $mux                           10
+     $not                            1
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdff                           1
+     $sdffe                          3
+     PPG                             3
+     f3m_add                         3
+     mod_p                           6
+     v0                              1
+     v1                              1
+     v2                              1
+
+=== PPG ===
+
+   Number of wires:                  3
+   Number of wire bits:           2374
+   Number of public wires:           3
+   Number of public wire bits:    2374
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                593
+     f3_mult                       593
+
+=== f3_add ===
+
+   Number of wires:                 29
+   Number of wire bits:             32
+   Number of public wires:           9
+   Number of public wire bits:      12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and                           14
+     $not                            4
+     $or                             4
+
+=== f3_mult ===
+
+   Number of wires:                 21
+   Number of wire bits:             24
+   Number of public wires:           7
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 16
+     $and                           10
+     $not                            4
+     $or                             2
+
+=== f3_sub ===
+
+   Number of wires:                  3
+   Number of wire bits:              6
+   Number of public wires:           3
+   Number of public wire bits:       6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     f3_add                          1
+
+=== f3m_add ===
+
+   Number of wires:                  3
+   Number of wire bits:           3558
+   Number of public wires:           3
+   Number of public wire bits:    3558
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                593
+     f3_add                        593
+
+=== mod_p ===
+
+   Number of wires:                  5
+   Number of wire bits:           3564
+   Number of public wires:           5
+   Number of public wire bits:    3564
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     f3_mult                         2
+     f3_sub                          2
+
+=== v0 ===
+
+   Number of wires:                  2
+   Number of wire bits:           2372
+   Number of public wires:           2
+   Number of public wire bits:    2372
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== v1 ===
+
+   Number of wires:                  2
+   Number of wire bits:           2372
+   Number of public wires:           2
+   Number of public wire bits:    2372
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== v2 ===
+
+   Number of wires:                  2
+   Number of wire bits:           2372
+   Number of public wires:           2
+   Number of public wire bits:    2372
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== design hierarchy ===
+
+   PE                                1
+     PPG                             3
+       f3_mult                     593
+     f3m_add                         3
+       f3_add                      593
+     mod_p                           6
+       f3_mult                       2
+       f3_sub                        2
+         f3_add                      1
+     v0                              1
+     v1                              1
+     v2                              1
+
+   Number of wires:              89693
+   Number of wire bits:         185843
+   Number of public wires:       28793
+   Number of public wire bits:  121384
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              68075
+     $and                        42984
+     $mux                           10
+     $not                        14329
+     $or                         10746
+     $reduce_bool                    1
+     $reduce_or                      1
+     $sdff                           1
+     $sdffe                          3
+

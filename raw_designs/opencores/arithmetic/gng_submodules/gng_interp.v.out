@@ -1,0 +1,112 @@
+
+5. Printing statistics.
+
+=== gng_coef ===
+
+   Number of wires:                254
+   Number of wire bits:            363
+   Number of public wires:           6
+   Number of public wire bits:     115
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                252
+     $dff                            3
+     $eq                           247
+     $logic_not                      1
+     $pmux                           1
+
+=== gng_interp ===
+
+   Number of wires:                 56
+   Number of wire bits:            640
+   Number of public wires:          33
+   Number of public wire bits:     513
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 48
+     $add                            3
+     $and                            1
+     $dff                           13
+     $eq                            15
+     $mux                            1
+     $not                            1
+     $pmux                           1
+     $reduce_and                     1
+     $sdff                           8
+     gng_coef                        1
+     gng_lzd                         1
+     gng_smul_16_18                  1
+     gng_smul_16_18_sadd_37          1
+
+=== gng_lzd ===
+
+   Number of wires:                 71
+   Number of wire bits:            313
+   Number of public wires:          71
+   Number of public wire bits:     313
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                147
+     $mux                           30
+     $not                           61
+     $or                            56
+
+=== gng_smul_16_18 ===
+
+   Number of wires:                  8
+   Number of wire bits:            171
+   Number of public wires:           7
+   Number of public wire bits:     137
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $dff                            3
+     $mul                            1
+
+=== gng_smul_16_18_sadd_37 ===
+
+   Number of wires:                 12
+   Number of wire bits:            325
+   Number of public wires:          11
+   Number of public wire bits:     291
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add                            1
+     $dff                            5
+     $mul                            1
+
+=== design hierarchy ===
+
+   gng_interp                        1
+     gng_coef                        1
+     gng_lzd                         1
+     gng_smul_16_18                  1
+     gng_smul_16_18_sadd_37          1
+
+   Number of wires:                401
+   Number of wire bits:           1812
+   Number of public wires:         128
+   Number of public wire bits:    1369
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                454
+     $add                            4
+     $and                            1
+     $dff                           24
+     $eq                           262
+     $logic_not                      1
+     $mul                            2
+     $mux                           31
+     $not                           62
+     $or                            56
+     $pmux                           2
+     $reduce_and                     1
+     $sdff                           8
+

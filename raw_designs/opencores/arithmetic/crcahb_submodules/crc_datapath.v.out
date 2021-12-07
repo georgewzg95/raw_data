@@ -1,0 +1,92 @@
+
+5. Printing statistics.
+
+=== $paramod$c34afa4e962990744f0b55670bc44b23c3a5a6d7\crc_comb ===
+
+   Number of wires:                 12
+   Number of wire bits:            316
+   Number of public wires:           9
+   Number of public wire bits:     253
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $and                            3
+     $not                            1
+     $xor                            2
+
+=== $paramod$f4b98323ff6e0cd0e06fc10c3ad329b38eee598e\crc_parallel ===
+
+   Number of wires:                207
+   Number of wire bits:           6600
+   Number of public wires:         112
+   Number of public wire bits:    3560
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                198
+     $and                           95
+     $paramod$c34afa4e962990744f0b55670bc44b23c3a5a6d7\crc_comb      8
+     $reduce_or                     95
+
+=== $paramod\bit_reversal\DATA_SIZE=s32'00000000000000000000000000100000 ===
+
+   Number of wires:                 11
+   Number of wire bits:            198
+   Number of public wires:           7
+   Number of public wire bits:     194
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             3
+     $logic_not                      1
+     $pmux                           1
+
+=== crc_datapath ===
+
+   Number of wires:                 68
+   Number of wire bits:            629
+   Number of public wires:          48
+   Number of public wire bits:     545
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 40
+     $eq                             6
+     $logic_not                      2
+     $mux                            8
+     $not                            1
+     $paramod$f4b98323ff6e0cd0e06fc10c3ad329b38eee598e\crc_parallel      1
+     $paramod\bit_reversal\DATA_SIZE=s32'00000000000000000000000000100000      1
+     $pmux                           5
+     $reduce_bool                    2
+     $reduce_or                      5
+     $sdffe                          9
+
+=== design hierarchy ===
+
+   crc_datapath                      1
+     $paramod$f4b98323ff6e0cd0e06fc10c3ad329b38eee598e\crc_parallel      1
+       $paramod$c34afa4e962990744f0b55670bc44b23c3a5a6d7\crc_comb      8
+     $paramod\bit_reversal\DATA_SIZE=s32'00000000000000000000000000100000      1
+
+   Number of wires:                382
+   Number of wire bits:           9955
+   Number of public wires:         239
+   Number of public wire bits:    6323
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                281
+     $and                          119
+     $eq                             9
+     $logic_not                      3
+     $mux                            8
+     $not                            9
+     $pmux                           6
+     $reduce_bool                    2
+     $reduce_or                    100
+     $sdffe                          9
+     $xor                           16
+

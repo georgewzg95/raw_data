@@ -1,0 +1,902 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+
+
+-- Executing script file `out.ys' --
+
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v' to AST representation.
+Generating RTLIL representation for module `\f33m_inv'.
+Generating RTLIL representation for module `\f3m_inv'.
+Generating RTLIL representation for module `\func5'.
+Generating RTLIL representation for module `\func4'.
+Generating RTLIL representation for module `\func3'.
+Generating RTLIL representation for module `\f3_sub'.
+Generating RTLIL representation for module `\func2'.
+Generating RTLIL representation for module `\func1'.
+Generating RTLIL representation for module `\f3m_sub'.
+Generating RTLIL representation for module `\f3m_mult3'.
+Generating RTLIL representation for module `\f3m_mux3'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Finding top of design hierarchy..
+root of   0 design levels: f3m_mux3            
+root of   1 design levels: f3m_mult3           
+root of   1 design levels: f3m_sub             
+root of   1 design levels: func1               
+root of   0 design levels: func2               
+root of   0 design levels: f3_sub              
+root of   1 design levels: func3               
+root of   0 design levels: func4               
+root of   0 design levels: func5               
+root of   2 design levels: f3m_inv             
+root of   3 design levels: f33m_inv            
+Automatically selected f33m_inv as design top module.
+
+2.2. Analyzing design hierarchy..
+Top module:  \f33m_inv
+Used module:     \f3m_inv
+Used module:         \func5
+Used module:         \func4
+Used module:         \func3
+Used module:             \f3_sub
+Used module:         \func2
+Used module:         \func1
+Used module:     \f3m_sub
+Used module:     \f3m_mult3
+Used module:         \f3m_mux3
+
+2.3. Analyzing design hierarchy..
+Top module:  \f33m_inv
+Used module:     \f3m_inv
+Used module:         \func5
+Used module:         \func4
+Used module:         \func3
+Used module:             \f3_sub
+Used module:         \func2
+Used module:         \func1
+Used module:     \f3m_sub
+Used module:     \f3m_mult3
+Used module:         \f3m_mux3
+Removed 0 unused modules.
+Mapping positional arguments of cell f3m_mult3.ins10 (f3m_mux3).
+Mapping positional arguments of cell f3m_mult3.ins9 (f3m_mux3).
+Mapping positional arguments of cell f3m_sub.aa[96].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[95].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[94].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[93].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[92].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[91].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[90].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[89].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[88].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[87].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[86].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[85].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[84].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[83].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[82].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[81].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[80].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[79].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[78].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[77].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[76].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[75].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[74].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[73].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[72].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[71].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[70].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[69].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[68].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[67].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[66].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[65].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[64].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[63].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[62].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[61].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[60].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[59].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[58].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[57].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[56].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[55].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[54].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[53].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[52].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[51].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[50].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[49].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[48].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[47].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[46].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[45].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[44].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[43].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[42].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[41].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[40].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[39].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[38].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[37].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[36].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[35].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[34].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[33].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[32].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[31].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[30].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[29].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[28].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[27].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[26].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[25].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[24].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[23].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[22].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[21].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[20].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[19].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[18].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[17].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[16].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[15].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[14].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[13].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[12].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[11].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[10].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[9].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[8].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[7].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[6].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[5].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[4].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[3].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[2].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[1].aa (f3_sub).
+Mapping positional arguments of cell f3m_sub.aa[0].aa (f3_sub).
+Mapping positional arguments of cell func1.label[194].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[192].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[190].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[188].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[186].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[184].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[182].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[180].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[178].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[176].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[174].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[172].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[170].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[168].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[166].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[164].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[162].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[160].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[158].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[156].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[154].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[152].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[150].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[148].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[146].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[144].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[142].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[140].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[138].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[136].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[134].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[132].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[130].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[128].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[126].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[124].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[122].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[120].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[118].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[116].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[114].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[112].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[110].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[108].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[106].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[104].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[102].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[100].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[98].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[96].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[94].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[92].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[90].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[88].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[86].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[84].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[82].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[80].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[78].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[76].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[74].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[72].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[70].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[68].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[66].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[64].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[62].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[60].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[58].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[56].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[54].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[52].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[50].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[48].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[46].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[44].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[42].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[40].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[38].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[36].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[34].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[32].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[30].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[28].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[26].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[24].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[22].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[20].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[18].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[16].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[14].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[12].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[10].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[8].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[6].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[4].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[2].s1 (f3_sub).
+Mapping positional arguments of cell func1.label[0].s1 (f3_sub).
+Mapping positional arguments of cell func1.f (func4).
+Mapping positional arguments of cell func3.s12 (f3_sub).
+Mapping positional arguments of cell func3.s0 (f3_sub).
+Mapping positional arguments of cell f3m_inv.ins8 (func5).
+Mapping positional arguments of cell f3m_inv.ins7 (func4).
+Mapping positional arguments of cell f3m_inv.ins6 (func3).
+Mapping positional arguments of cell f3m_inv.ins5 (func3).
+Mapping positional arguments of cell f3m_inv.ins4 (func2).
+Mapping positional arguments of cell f3m_inv.ins3 (func2).
+Mapping positional arguments of cell f3m_inv.ins2 (func1).
+Mapping positional arguments of cell f3m_inv.ins1 (func1).
+Mapping positional arguments of cell f33m_inv.ins16 (f3m_inv).
+Mapping positional arguments of cell f33m_inv.ins15 (f3m_sub).
+Mapping positional arguments of cell f33m_inv.ins7 (f3m_sub).
+Mapping positional arguments of cell f33m_inv.ins6 (f3m_sub).
+Mapping positional arguments of cell f33m_inv.ins5 (f3m_sub).
+Mapping positional arguments of cell f33m_inv.ins4 (f3m_mult3).
+Mapping positional arguments of cell f33m_inv.ins3 (f3m_mult3).
+Mapping positional arguments of cell f33m_inv.ins2 (f3m_mult3).
+Mapping positional arguments of cell f33m_inv.ins1 (f3m_mult3).
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:265$22 in module f3m_mult3.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:258$21 in module f3m_mult3.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:254$19 in module f3m_mult3.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:137$15 in module f3m_inv.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:131$13 in module f3m_inv.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:123$12 in module f3m_inv.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:79$11 in module f33m_inv.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:74$1 in module f33m_inv.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 4 redundant assignments.
+Promoted 2 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:269$23'.
+Creating decoders for process `\f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:265$22'.
+     1/1: $0\done[0:0]
+Creating decoders for process `\f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:258$21'.
+     1/1: $0\mult_reset[0:0]
+Creating decoders for process `\f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:254$19'.
+     1/1: $0\K[3:0]
+Creating decoders for process `\f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:247$18'.
+     1/3: $0\c2[193:0]
+     2/3: $0\c1[193:0]
+     3/3: $0\c0[193:0]
+Creating decoders for process `\f3m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:137$15'.
+     1/5: $0\d[195:0]
+     2/5: $0\U[195:0]
+     3/5: $0\V[195:0]
+     4/5: $0\S[195:0]
+     5/5: $0\R[195:0]
+Creating decoders for process `\f3m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:131$13'.
+     1/1: $0\i[194:0]
+Creating decoders for process `\f3m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:123$12'.
+     1/2: $0\done[0:0]
+     2/2: $0\C[193:0]
+Creating decoders for process `\f33m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:79$11'.
+     1/2: $0\done[0:0]
+     2/2: $0\c[581:0]
+Creating decoders for process `\f33m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:74$1'.
+     1/1: $0\K[4:0]
+
+3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\f3m_mult3.\delay1' using process `\f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:269$23'.
+  created $dff cell `$procdff$1089' with positive edge clock.
+Creating register for signal `\f3m_mult3.\delay2' using process `\f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:269$23'.
+  created $dff cell `$procdff$1090' with positive edge clock.
+Creating register for signal `\f3m_mult3.\done' using process `\f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:265$22'.
+  created $dff cell `$procdff$1091' with positive edge clock.
+Creating register for signal `\f3m_mult3.\mult_reset' using process `\f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:258$21'.
+  created $dff cell `$procdff$1092' with positive edge clock.
+Creating register for signal `\f3m_mult3.\K' using process `\f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:254$19'.
+  created $dff cell `$procdff$1093' with positive edge clock.
+Creating register for signal `\f3m_mult3.\c0' using process `\f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:247$18'.
+  created $dff cell `$procdff$1094' with positive edge clock.
+Creating register for signal `\f3m_mult3.\c1' using process `\f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:247$18'.
+  created $dff cell `$procdff$1095' with positive edge clock.
+Creating register for signal `\f3m_mult3.\c2' using process `\f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:247$18'.
+  created $dff cell `$procdff$1096' with positive edge clock.
+Creating register for signal `\f3m_inv.\R' using process `\f3m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:137$15'.
+  created $dff cell `$procdff$1097' with positive edge clock.
+Creating register for signal `\f3m_inv.\S' using process `\f3m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:137$15'.
+  created $dff cell `$procdff$1098' with positive edge clock.
+Creating register for signal `\f3m_inv.\U' using process `\f3m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:137$15'.
+  created $dff cell `$procdff$1099' with positive edge clock.
+Creating register for signal `\f3m_inv.\V' using process `\f3m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:137$15'.
+  created $dff cell `$procdff$1100' with positive edge clock.
+Creating register for signal `\f3m_inv.\d' using process `\f3m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:137$15'.
+  created $dff cell `$procdff$1101' with positive edge clock.
+Creating register for signal `\f3m_inv.\i' using process `\f3m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:131$13'.
+  created $dff cell `$procdff$1102' with positive edge clock.
+Creating register for signal `\f3m_inv.\C' using process `\f3m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:123$12'.
+  created $dff cell `$procdff$1103' with positive edge clock.
+Creating register for signal `\f3m_inv.\done' using process `\f3m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:123$12'.
+  created $dff cell `$procdff$1104' with positive edge clock.
+Creating register for signal `\f33m_inv.\c' using process `\f33m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:79$11'.
+  created $dff cell `$procdff$1105' with positive edge clock.
+Creating register for signal `\f33m_inv.\done' using process `\f33m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:79$11'.
+  created $dff cell `$procdff$1106' with positive edge clock.
+Creating register for signal `\f33m_inv.\K' using process `\f33m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:74$1'.
+  created $dff cell `$procdff$1107' with positive edge clock.
+
+3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:269$23'.
+Found and cleaned up 2 empty switches in `\f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:265$22'.
+Removing empty process `f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:265$22'.
+Found and cleaned up 2 empty switches in `\f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:258$21'.
+Removing empty process `f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:258$21'.
+Found and cleaned up 2 empty switches in `\f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:254$19'.
+Removing empty process `f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:254$19'.
+Found and cleaned up 3 empty switches in `\f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:247$18'.
+Removing empty process `f3m_mult3.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:247$18'.
+Found and cleaned up 3 empty switches in `\f3m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:137$15'.
+Removing empty process `f3m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:137$15'.
+Found and cleaned up 1 empty switch in `\f3m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:131$13'.
+Removing empty process `f3m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:131$13'.
+Found and cleaned up 2 empty switches in `\f3m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:123$12'.
+Removing empty process `f3m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:123$12'.
+Found and cleaned up 2 empty switches in `\f33m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:79$11'.
+Removing empty process `f33m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:79$11'.
+Found and cleaned up 2 empty switches in `\f33m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:74$1'.
+Removing empty process `f33m_inv.$proc$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:74$1'.
+Cleaned up 19 empty switches.
+
+3.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module f3m_mux3.
+Optimizing module f3m_mult3.
+Optimizing module f3m_sub.
+Optimizing module func1.
+Optimizing module func2.
+Optimizing module f3_sub.
+Optimizing module func3.
+Optimizing module func4.
+Optimizing module func5.
+Optimizing module f3m_inv.
+<suppressed ~8 debug messages>
+Optimizing module f33m_inv.
+<suppressed ~1 debug messages>
+
+4. Executing OPT pass (performing simple optimizations).
+
+4.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module f3m_mux3.
+Optimizing module f3m_mult3.
+Optimizing module f3m_sub.
+Optimizing module func1.
+Optimizing module func2.
+Optimizing module f3_sub.
+Optimizing module func3.
+Optimizing module func4.
+Optimizing module func5.
+Optimizing module f3m_inv.
+Optimizing module f33m_inv.
+
+4.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\f3m_mux3'.
+Finding identical cells in module `\f3m_mult3'.
+Finding identical cells in module `\f3m_sub'.
+Finding identical cells in module `\func1'.
+Finding identical cells in module `\func2'.
+Finding identical cells in module `\f3_sub'.
+Finding identical cells in module `\func3'.
+Finding identical cells in module `\func4'.
+Finding identical cells in module `\func5'.
+Finding identical cells in module `\f3m_inv'.
+Finding identical cells in module `\f33m_inv'.
+Removed a total of 0 cells.
+
+4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \f3m_mux3..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f3m_mult3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \f3m_sub..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \func1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \func2..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f3_sub..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \func3..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \func4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \func5..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f3m_inv..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port A of cell $procmux$1017: { \d [194:0] 1'1 } -> { \d [194:1] 2'01 }
+  Analyzing evaluation results.
+Running muxtree optimizer on module \f33m_inv..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~17 debug messages>
+
+4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \f3m_mux3.
+  Optimizing cells in module \f3m_mult3.
+  Optimizing cells in module \f3m_sub.
+  Optimizing cells in module \func1.
+  Optimizing cells in module \func2.
+  Optimizing cells in module \f3_sub.
+  Optimizing cells in module \func3.
+  Optimizing cells in module \func4.
+  Optimizing cells in module \func5.
+  Optimizing cells in module \f3m_inv.
+  Optimizing cells in module \f33m_inv.
+Performed a total of 0 changes.
+
+4.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\f3m_mux3'.
+Finding identical cells in module `\f3m_mult3'.
+Finding identical cells in module `\f3m_sub'.
+Finding identical cells in module `\func1'.
+Finding identical cells in module `\func2'.
+Finding identical cells in module `\f3_sub'.
+Finding identical cells in module `\func3'.
+Finding identical cells in module `\func4'.
+Finding identical cells in module `\func5'.
+Finding identical cells in module `\f3m_inv'.
+Finding identical cells in module `\f33m_inv'.
+Removed a total of 0 cells.
+
+4.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$1091 ($dff) from module f3m_mult3 (D = $procmux$994_Y, Q = \done, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$1108 ($sdff) from module f3m_mult3 (D = 1'1, Q = \done).
+Adding SRST signal on $procdff$1092 ($dff) from module f3m_mult3 (D = $procmux$1000_Y, Q = \mult_reset, rval = 1'1).
+Adding SRST signal on $procdff$1093 ($dff) from module f3m_mult3 (D = $procmux$1005_Y, Q = \K, rval = 4'1000).
+Adding EN signal on $auto$ff.cc:262:slice$1111 ($sdff) from module f3m_mult3 (D = { 1'0 \K [3:1] }, Q = \K).
+Adding EN signal on $procdff$1094 ($dff) from module f3m_mult3 (D = \o, Q = \c0).
+Adding EN signal on $procdff$1095 ($dff) from module f3m_mult3 (D = \o, Q = \c1).
+Adding EN signal on $procdff$1096 ($dff) from module f3m_mult3 (D = \o, Q = \c2).
+Adding SRST signal on $procdff$1104 ($dff) from module f3m_inv (D = $procmux$1064_Y, Q = \done, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$1116 ($sdff) from module f3m_inv (D = 1'1, Q = \done).
+Adding SRST signal on $procdff$1097 ($dff) from module f3m_inv (D = $procmux$1056_Y [195:194], Q = \R [195:194], rval = 2'00).
+Adding EN signal on $procdff$1097 ($dff) from module f3m_inv (D = $procmux$1059_Y [193:0], Q = \R [193:0]).
+Adding EN signal on $auto$ff.cc:262:slice$1118 ($sdff) from module f3m_inv (D = $procmux$1056_Y [195:194], Q = \R [195:194]).
+Adding SRST signal on $procdff$1098 ($dff) from module f3m_inv (D = $procmux$1047_Y, Q = \S, rval = 196'0100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000010).
+Adding EN signal on $auto$ff.cc:262:slice$1126 ($sdff) from module f3m_inv (D = $procmux$1044_Y, Q = \S).
+Adding SRST signal on $procdff$1099 ($dff) from module f3m_inv (D = $procmux$1029_Y, Q = \U, rval = 196'0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001).
+Adding SRST signal on $procdff$1100 ($dff) from module f3m_inv (D = $procmux$1038_Y, Q = \V, rval = 196'0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$1129 ($sdff) from module f3m_inv (D = $procmux$1035_Y, Q = \V).
+Adding SRST signal on $procdff$1101 ($dff) from module f3m_inv (D = $procmux$1020_Y, Q = \d, rval = 196'0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
+Adding SRST signal on $procdff$1102 ($dff) from module f3m_inv (D = $shr$/home/zhigang/raw_data/raw_designs/opencores/arithmetic/pairing_submodules/f33m_inv.v:135$14_Y, Q = \i, rval = 195'100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
+Adding EN signal on $procdff$1103 ($dff) from module f3m_inv (D = \U2 [193:0], Q = \C).
+Adding SRST signal on $procdff$1107 ($dff) from module f33m_inv (D = $procmux$1084_Y, Q = \K, rval = 5'10000).
+Adding EN signal on $auto$ff.cc:262:slice$1138 ($sdff) from module f33m_inv (D = { 1'0 \K [4:1] }, Q = \K).
+Adding EN signal on $procdff$1105 ($dff) from module f33m_inv (D = { \c2 \c1 \c0 }, Q = \c).
+Adding SRST signal on $procdff$1106 ($dff) from module f33m_inv (D = $procmux$1074_Y, Q = \done, rval = 1'0).
+Adding EN signal on $auto$ff.cc:262:slice$1145 ($sdff) from module f33m_inv (D = 1'1, Q = \done).
+
+4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \f3m_mux3..
+Finding unused cells or wires in module \f3m_mult3..
+Finding unused cells or wires in module \f3m_sub..
+Finding unused cells or wires in module \func1..
+Finding unused cells or wires in module \func2..
+Finding unused cells or wires in module \f3_sub..
+Finding unused cells or wires in module \func3..
+Finding unused cells or wires in module \func4..
+Finding unused cells or wires in module \func5..
+Finding unused cells or wires in module \f3m_inv..
+Finding unused cells or wires in module \f33m_inv..
+Removed 26 unused cells and 276 unused wires.
+<suppressed ~30 debug messages>
+
+4.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module f33m_inv.
+Optimizing module f3_sub.
+Optimizing module f3m_inv.
+Optimizing module f3m_mult3.
+Optimizing module f3m_mux3.
+Optimizing module f3m_sub.
+Optimizing module func1.
+Optimizing module func2.
+Optimizing module func3.
+Optimizing module func4.
+Optimizing module func5.
+
+4.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \f33m_inv..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f3_sub..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f3m_inv..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \f3m_mult3..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \f3m_mux3..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \f3m_sub..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \func1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \func2..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \func3..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \func4..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \func5..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~7 debug messages>
+
+4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \f33m_inv.
+  Optimizing cells in module \f3_sub.
+  Optimizing cells in module \f3m_inv.
+  Optimizing cells in module \f3m_mult3.
+  Optimizing cells in module \f3m_mux3.
+  Optimizing cells in module \f3m_sub.
+  Optimizing cells in module \func1.
+  Optimizing cells in module \func2.
+  Optimizing cells in module \func3.
+  Optimizing cells in module \func4.
+  Optimizing cells in module \func5.
+Performed a total of 0 changes.
+
+4.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\f33m_inv'.
+Finding identical cells in module `\f3_sub'.
+Finding identical cells in module `\f3m_inv'.
+Finding identical cells in module `\f3m_mult3'.
+Finding identical cells in module `\f3m_mux3'.
+Finding identical cells in module `\f3m_sub'.
+Finding identical cells in module `\func1'.
+Finding identical cells in module `\func2'.
+Finding identical cells in module `\func3'.
+Finding identical cells in module `\func4'.
+Finding identical cells in module `\func5'.
+Removed a total of 0 cells.
+
+4.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \f33m_inv..
+Finding unused cells or wires in module \f3_sub..
+Finding unused cells or wires in module \f3m_inv..
+Finding unused cells or wires in module \f3m_mult3..
+Finding unused cells or wires in module \f3m_mux3..
+Finding unused cells or wires in module \f3m_sub..
+Finding unused cells or wires in module \func1..
+Finding unused cells or wires in module \func2..
+Finding unused cells or wires in module \func3..
+Finding unused cells or wires in module \func4..
+Finding unused cells or wires in module \func5..
+
+4.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module f33m_inv.
+Optimizing module f3_sub.
+Optimizing module f3m_inv.
+Optimizing module f3m_mult3.
+Optimizing module f3m_mux3.
+Optimizing module f3m_sub.
+Optimizing module func1.
+Optimizing module func2.
+Optimizing module func3.
+Optimizing module func4.
+Optimizing module func5.
+
+4.16. Finished OPT passes. (There is nothing left to do.)
+
+5. Printing statistics.
+
+=== f33m_inv ===
+
+   Number of wires:                 52
+   Number of wire bits:           6429
+   Number of public wires:          42
+   Number of public wire bits:    6419
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $and                            4
+     $dffe                           1
+     $not                            1
+     $or                             4
+     $reduce_and                     1
+     $sdffe                          2
+     f3m_add3                        4
+     f3m_inv                         1
+     f3m_mult3                       4
+     f3m_neg                         3
+     f3m_sub                         4
+     func6                           3
+
+=== f3_sub ===
+
+   Number of wires:                  3
+   Number of wire bits:              6
+   Number of public wires:           3
+   Number of public wire bits:       6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     f3_add                          1
+
+=== f3m_inv ===
+
+   Number of wires:                 37
+   Number of wire bits:           5298
+   Number of public wires:          23
+   Number of public wire bits:    3529
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $dffe                           2
+     $logic_not                      1
+     $mux                            9
+     $ne                             2
+     $not                            1
+     $reduce_and                     1
+     $sdff                           3
+     $sdffe                          4
+     f3_mult                         1
+     func1                           2
+     func2                           2
+     func3                           2
+     func4                           1
+     func5                           1
+
+=== f3m_mult3 ===
+
+   Number of wires:                 27
+   Number of wire bits:           2346
+   Number of public wires:          25
+   Number of public wire bits:    2344
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $dff                            2
+     $dffe                           3
+     $mux                            1
+     $or                             1
+     $sdff                           1
+     $sdffe                          2
+     f3m_mult                        1
+     f3m_mux3                        2
+     func6                           1
+
+=== f3m_mux3 ===
+
+   Number of wires:                783
+   Number of wire bits:           1555
+   Number of public wires:           7
+   Number of public wire bits:     779
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                970
+     $and                          582
+     $or                           388
+
+=== f3m_sub ===
+
+   Number of wires:                  3
+   Number of wire bits:            582
+   Number of public wires:           3
+   Number of public wire bits:     582
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 97
+     f3_sub                         97
+
+=== func1 ===
+
+   Number of wires:                  5
+   Number of wire bits:            786
+   Number of public wires:           5
+   Number of public wire bits:     786
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 99
+     f3_sub                         98
+     func4                           1
+
+=== func2 ===
+
+   Number of wires:                  2
+   Number of wire bits:            392
+   Number of public wires:           2
+   Number of public wire bits:     392
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== func3 ===
+
+   Number of wires:                  5
+   Number of wire bits:            592
+   Number of public wires:           5
+   Number of public wire bits:     592
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     f3_mult                         2
+     f3_sub                          2
+
+=== func4 ===
+
+   Number of wires:                  3
+   Number of wire bits:            394
+   Number of public wires:           3
+   Number of public wire bits:     394
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 98
+     f3_mult                        98
+
+=== func5 ===
+
+   Number of wires:                  2
+   Number of wire bits:            392
+   Number of public wires:           2
+   Number of public wire bits:     392
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     f3_add                          1
+
+=== design hierarchy ===
+
+   f33m_inv                          1
+     f3m_inv                         1
+       func1                         2
+         f3_sub                     98
+         func4                       1
+       func2                         2
+       func3                         2
+         f3_sub                      2
+       func4                         1
+       func5                         1
+     f3m_mult3                       4
+       f3m_mux3                      2
+     f3m_sub                         4
+       f3_sub                       97
+
+   Number of wires:               8272
+   Number of wire bits:          44521
+   Number of public wires:        2032
+   Number of public wire bits:   36526
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               8742
+     $and                         4660
+     $dff                            8
+     $dffe                          15
+     $logic_not                      1
+     $mux                           13
+     $ne                             2
+     $not                            2
+     $or                          3112
+     $reduce_and                     2
+     $sdff                           7
+     $sdffe                         14
+     f3_add                        589
+     f3_mult                       299
+     f3m_add3                        4
+     f3m_mult                        4
+     f3m_neg                         3
+     func6                           7
+
+End of script. Logfile hash: 4f6ca8b6c2, CPU: user 0.60s system 0.01s, MEM: 23.90 MB peak
+Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+Time spent: 21% 4x opt_expr (0 sec), 21% 2x opt_clean (0 sec), ...

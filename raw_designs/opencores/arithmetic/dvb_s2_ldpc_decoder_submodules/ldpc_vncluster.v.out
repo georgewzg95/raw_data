@@ -1,0 +1,66 @@
+
+5. Printing statistics.
+
+=== $paramod$8c1ce3194e684cb4d6f1da1d7eb7f84d0a1c0224\ldpc_vn ===
+
+   Number of wires:                107
+   Number of wire bits:            625
+   Number of public wires:          79
+   Number of public wire bits:     462
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 57
+     $add                            1
+     $adff                          27
+     $and                            5
+     $eq                             2
+     $logic_or                       1
+     $lt                             1
+     $mux                           11
+     $ne                             1
+     $not                            3
+     $or                             2
+     $reduce_bool                    1
+     $sub                            2
+
+=== ldpc_vncluster ===
+
+   Number of wires:                 40
+   Number of wire bits:            392
+   Number of public wires:          40
+   Number of public wire bits:     392
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $paramod$8c1ce3194e684cb4d6f1da1d7eb7f84d0a1c0224\ldpc_vn      3
+     ldpc_ram_behav                  2
+
+=== design hierarchy ===
+
+   ldpc_vncluster                    1
+     $paramod$8c1ce3194e684cb4d6f1da1d7eb7f84d0a1c0224\ldpc_vn      3
+
+   Number of wires:                361
+   Number of wire bits:           2267
+   Number of public wires:         277
+   Number of public wire bits:    1778
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                173
+     $add                            3
+     $adff                          81
+     $and                           15
+     $eq                             6
+     $logic_or                       3
+     $lt                             3
+     $mux                           33
+     $ne                             3
+     $not                            9
+     $or                             6
+     $reduce_bool                    3
+     $sub                            6
+     ldpc_ram_behav                  2
+

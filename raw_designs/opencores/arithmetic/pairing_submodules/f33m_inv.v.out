@@ -1,0 +1,212 @@
+
+5. Printing statistics.
+
+=== f33m_inv ===
+
+   Number of wires:                 52
+   Number of wire bits:           6429
+   Number of public wires:          42
+   Number of public wire bits:    6419
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $and                            4
+     $dffe                           1
+     $not                            1
+     $or                             4
+     $reduce_and                     1
+     $sdffe                          2
+     f3m_add3                        4
+     f3m_inv                         1
+     f3m_mult3                       4
+     f3m_neg                         3
+     f3m_sub                         4
+     func6                           3
+
+=== f3_sub ===
+
+   Number of wires:                  3
+   Number of wire bits:              6
+   Number of public wires:           3
+   Number of public wire bits:       6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     f3_add                          1
+
+=== f3m_inv ===
+
+   Number of wires:                 37
+   Number of wire bits:           5298
+   Number of public wires:          23
+   Number of public wire bits:    3529
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $dffe                           2
+     $logic_not                      1
+     $mux                            9
+     $ne                             2
+     $not                            1
+     $reduce_and                     1
+     $sdff                           3
+     $sdffe                          4
+     f3_mult                         1
+     func1                           2
+     func2                           2
+     func3                           2
+     func4                           1
+     func5                           1
+
+=== f3m_mult3 ===
+
+   Number of wires:                 27
+   Number of wire bits:           2346
+   Number of public wires:          25
+   Number of public wire bits:    2344
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $dff                            2
+     $dffe                           3
+     $mux                            1
+     $or                             1
+     $sdff                           1
+     $sdffe                          2
+     f3m_mult                        1
+     f3m_mux3                        2
+     func6                           1
+
+=== f3m_mux3 ===
+
+   Number of wires:                783
+   Number of wire bits:           1555
+   Number of public wires:           7
+   Number of public wire bits:     779
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                970
+     $and                          582
+     $or                           388
+
+=== f3m_sub ===
+
+   Number of wires:                  3
+   Number of wire bits:            582
+   Number of public wires:           3
+   Number of public wire bits:     582
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 97
+     f3_sub                         97
+
+=== func1 ===
+
+   Number of wires:                  5
+   Number of wire bits:            786
+   Number of public wires:           5
+   Number of public wire bits:     786
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 99
+     f3_sub                         98
+     func4                           1
+
+=== func2 ===
+
+   Number of wires:                  2
+   Number of wire bits:            392
+   Number of public wires:           2
+   Number of public wire bits:     392
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== func3 ===
+
+   Number of wires:                  5
+   Number of wire bits:            592
+   Number of public wires:           5
+   Number of public wire bits:     592
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     f3_mult                         2
+     f3_sub                          2
+
+=== func4 ===
+
+   Number of wires:                  3
+   Number of wire bits:            394
+   Number of public wires:           3
+   Number of public wire bits:     394
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 98
+     f3_mult                        98
+
+=== func5 ===
+
+   Number of wires:                  2
+   Number of wire bits:            392
+   Number of public wires:           2
+   Number of public wire bits:     392
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     f3_add                          1
+
+=== design hierarchy ===
+
+   f33m_inv                          1
+     f3m_inv                         1
+       func1                         2
+         f3_sub                     98
+         func4                       1
+       func2                         2
+       func3                         2
+         f3_sub                      2
+       func4                         1
+       func5                         1
+     f3m_mult3                       4
+       f3m_mux3                      2
+     f3m_sub                         4
+       f3_sub                       97
+
+   Number of wires:               8272
+   Number of wire bits:          44521
+   Number of public wires:        2032
+   Number of public wire bits:   36526
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               8742
+     $and                         4660
+     $dff                            8
+     $dffe                          15
+     $logic_not                      1
+     $mux                           13
+     $ne                             2
+     $not                            2
+     $or                          3112
+     $reduce_and                     2
+     $sdff                           7
+     $sdffe                         14
+     f3_add                        589
+     f3_mult                       299
+     f3m_add3                        4
+     f3m_mult                        4
+     f3m_neg                         3
+     func6                           7
+
