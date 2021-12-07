@@ -8,13 +8,13 @@ root_dir = '/misc/scratch/zwei1/raw_data'
 
 def parse_args():
   parser = argparse.ArgumentParser()
-  parser.add_arument('-i',
+  parser.add_argument('-i',
                      '--input',
                      required = True,
                      type = str,
                      help = 'files to collect data from, should be effective_design')
 
-  parser.add_arument('-o',
+  parser.add_argument('-o',
                      '--output',
                      required = True,
                      type = str,
