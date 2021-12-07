@@ -104,7 +104,7 @@ def retrieve_info(filepath):
   else:
     start_cell = False
     for line in fin:
-      if start_cell == True and line.rstrip()
+      if start_cell == True and line.rstrip():
         for cell in cell_name:
           if line.split()[0] == cell:
             my_dict[relative_path].append(line.split()[1])
