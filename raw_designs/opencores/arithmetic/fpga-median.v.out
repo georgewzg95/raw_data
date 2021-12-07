@@ -1,0 +1,157 @@
+
+5. Printing statistics.
+
+=== $paramod$5b542fdea5d134b4ea705d59aa81d844c92c4faf\node ===
+
+   Number of wires:                  6
+   Number of wire bits:             34
+   Number of public wires:           5
+   Number of public wire bits:      33
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $lt                             1
+     $mux                            1
+     $pmux                           1
+
+=== $paramod$91fc2bc07e2078c8848860ecb3e420f5de0bd0ea\node ===
+
+   Number of wires:                  6
+   Number of wire bits:             34
+   Number of public wires:           5
+   Number of public wire bits:      33
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $lt                             1
+     $mux                            1
+     $pmux                           1
+
+=== $paramod$bc2b59cc7c1bbcd9d1df4577f25bb1fb79978649\node ===
+
+   Number of wires:                  6
+   Number of wire bits:             34
+   Number of public wires:           5
+   Number of public wire bits:      33
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $lt                             1
+     $mux                            1
+     $pmux                           2
+
+=== $paramod$f2d8b8413b5687cff800703281b1519b2eca2ce3\state_machine ===
+
+   Number of wires:                 37
+   Number of wire bits:            229
+   Number of public wires:          10
+   Number of public wire bits:      65
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 33
+     $add                            6
+     $adff                           5
+     $adffe                          1
+     $eq                             2
+     $logic_not                      1
+     $mux                            4
+     $ne                             1
+     $not                            1
+     $pmux                           4
+     $reduce_and                     1
+     $reduce_bool                    1
+     $reduce_or                      3
+     $sub                            3
+
+=== $paramod\common_network\DATA_WIDTH=s32'00000000000000000000000000001000 ===
+
+   Number of wires:                 48
+   Number of wire bits:            384
+   Number of public wires:          48
+   Number of public wire bits:     384
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $paramod$bc2b59cc7c1bbcd9d1df4577f25bb1fb79978649\node     12
+
+=== $paramod\dff_3_pipe\DATA_WIDTH=s32'00000000000000000000000000001000 ===
+
+   Number of wires:                  8
+   Number of wire bits:             50
+   Number of public wires:           8
+   Number of public wire bits:      50
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $adff                           3
+
+=== $paramod\pixel_network\DATA_WIDTH=s32'00000000000000000000000000001000 ===
+
+   Number of wires:                 21
+   Number of wire bits:            168
+   Number of public wires:          21
+   Number of public wire bits:     168
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $paramod$5b542fdea5d134b4ea705d59aa81d844c92c4faf\node      4
+     $paramod$91fc2bc07e2078c8848860ecb3e420f5de0bd0ea\node      4
+     $paramod$bc2b59cc7c1bbcd9d1df4577f25bb1fb79978649\node      2
+
+=== median ===
+
+   Number of wires:                 46
+   Number of wire bits:            434
+   Number of public wires:          46
+   Number of public wire bits:     434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $paramod$f2d8b8413b5687cff800703281b1519b2eca2ce3\state_machine      1
+     $paramod\common_network\DATA_WIDTH=s32'00000000000000000000000000001000      1
+     $paramod\dff_3_pipe\DATA_WIDTH=s32'00000000000000000000000000001000      3
+     $paramod\pixel_network\DATA_WIDTH=s32'00000000000000000000000000001000      4
+
+=== design hierarchy ===
+
+   median                            1
+     $paramod$f2d8b8413b5687cff800703281b1519b2eca2ce3\state_machine      1
+     $paramod\common_network\DATA_WIDTH=s32'00000000000000000000000000001000      1
+       $paramod$bc2b59cc7c1bbcd9d1df4577f25bb1fb79978649\node     12
+     $paramod\dff_3_pipe\DATA_WIDTH=s32'00000000000000000000000000001000      3
+     $paramod\pixel_network\DATA_WIDTH=s32'00000000000000000000000000001000      4
+       $paramod$5b542fdea5d134b4ea705d59aa81d844c92c4faf\node      4
+       $paramod$91fc2bc07e2078c8848860ecb3e420f5de0bd0ea\node      4
+       $paramod$bc2b59cc7c1bbcd9d1df4577f25bb1fb79978649\node      2
+
+   Number of wires:                551
+   Number of wire bits:           3637
+   Number of public wires:         472
+   Number of public wire bits:    3421
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                218
+     $add                            6
+     $adff                          14
+     $adffe                          1
+     $eq                             2
+     $logic_not                      1
+     $lt                            52
+     $mux                           56
+     $ne                             1
+     $not                            1
+     $pmux                          76
+     $reduce_and                     1
+     $reduce_bool                    1
+     $reduce_or                      3
+     $sub                            3
+

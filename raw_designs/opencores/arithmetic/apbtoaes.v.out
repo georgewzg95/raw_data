@@ -1,0 +1,247 @@
+
+5. Printing statistics.
+
+=== aes_core ===
+
+   Number of wires:                 45
+   Number of wire bits:            210
+   Number of public wires:          44
+   Number of public wire bits:     206
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $and                            2
+     $shl                            1
+     control_unit                    1
+     datapath                        1
+
+=== aes_ip ===
+
+   Number of wires:                 31
+   Number of wire bits:            203
+   Number of public wires:          31
+   Number of public wire bits:     203
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     aes_core                        1
+     host_interface                  1
+
+=== control_unit ===
+
+   Number of wires:                122
+   Number of wire bits:            250
+   Number of public wires:          34
+   Number of public wire bits:      60
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                113
+     $add                            1
+     $adff                           1
+     $adffe                          1
+     $eq                            22
+     $logic_and                      5
+     $logic_not                      4
+     $logic_or                       8
+     $mux                           49
+     $or                             1
+     $pmux                           8
+     $reduce_bool                    1
+     $reduce_or                     12
+
+=== data_swap ===
+
+   Number of wires:                 11
+   Number of wire bits:            198
+   Number of public wires:           7
+   Number of public wire bits:     194
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $eq                             3
+     $logic_not                      1
+     $pmux                           1
+
+=== datapath ===
+
+   Number of wires:                201
+   Number of wire bits:           3797
+   Number of public wires:         112
+   Number of public wire bits:    2424
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                160
+     $add                            1
+     $adff                          12
+     $adffe                         27
+     $and                            3
+     $dff                            1
+     $eq                            11
+     $logic_and                      6
+     $logic_not                      6
+     $logic_or                      16
+     $mux                           51
+     $ne                             1
+     $or                            11
+     $pmux                           4
+     $reduce_and                     1
+     $xor                            3
+     data_swap                       2
+     key_expander                    1
+     mix_columns                     1
+     sBox                            1
+     shift_rows                      1
+
+=== host_interface ===
+
+   Number of wires:                157
+   Number of wire bits:            518
+   Number of public wires:          61
+   Number of public wire bits:     293
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                137
+     $add                            1
+     $adff                           2
+     $adffe                          7
+     $and                           22
+     $eq                            19
+     $logic_and                     20
+     $logic_not                      4
+     $logic_or                       3
+     $mux                           33
+     $ne                             4
+     $not                            6
+     $or                             1
+     $pmux                           3
+     $reduce_and                     1
+     $reduce_bool                    6
+     $reduce_or                      3
+     $shr                            1
+     $xor                            1
+
+=== key_expander ===
+
+   Number of wires:                 36
+   Number of wire bits:            770
+   Number of public wires:          21
+   Number of public wire bits:     606
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 27
+     $eq                             3
+     $logic_not                      1
+     $mux                           10
+     $shl                            1
+     $shr                            1
+     $sub                            1
+     $xor                           10
+
+=== mix_columns ===
+
+   Number of wires:                 45
+   Number of wire bits:            432
+   Number of public wires:          25
+   Number of public wire bits:     272
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 36
+     $and                            9
+     $xor                           27
+
+=== sBox ===
+
+   Number of wires:                  5
+   Number of wire bits:             98
+   Number of public wires:           5
+   Number of public wire bits:      98
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     sBox_8                          4
+
+=== sBox_8 ===
+
+   Number of wires:                244
+   Number of wire bits:            490
+   Number of public wires:         130
+   Number of public wire bits:     340
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                163
+     $and                           26
+     $dff                            2
+     $mux                            1
+     $not                           37
+     $or                             6
+     $reduce_xor                    10
+     $xnor                          13
+     $xor                           68
+
+=== shift_rows ===
+
+   Number of wires:                 51
+   Number of wire bits:            768
+   Number of public wires:          51
+   Number of public wire bits:     768
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== design hierarchy ===
+
+   aes_ip                            1
+     aes_core                        1
+       control_unit                  1
+       datapath                      1
+         data_swap                   2
+         key_expander                1
+         mix_columns                 1
+         sBox                        1
+           sBox_8                    4
+         shift_rows                  1
+     host_interface                  1
+
+   Number of wires:               1691
+   Number of wire bits:           9402
+   Number of public wires:         918
+   Number of public wire bits:    6678
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1132
+     $add                            3
+     $adff                          15
+     $adffe                         35
+     $and                          140
+     $dff                            9
+     $eq                            61
+     $logic_and                     31
+     $logic_not                     17
+     $logic_or                      27
+     $mux                          147
+     $ne                             5
+     $not                          154
+     $or                            37
+     $pmux                          17
+     $reduce_and                     2
+     $reduce_bool                    7
+     $reduce_or                     15
+     $reduce_xor                    40
+     $shl                            2
+     $shr                            2
+     $sub                            1
+     $xnor                          52
+     $xor                          313
+

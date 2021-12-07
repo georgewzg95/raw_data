@@ -1,0 +1,220 @@
+
+5. Printing statistics.
+
+=== fpu ===
+
+   Number of wires:                 91
+   Number of wire bits:           1187
+   Number of public wires:          63
+   Number of public wire bits:     927
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 69
+     $add                            1
+     $and                           10
+     $dff                            4
+     $eq                             3
+     $le                             1
+     $logic_not                      4
+     $mux                            4
+     $or                             3
+     $pmux                           4
+     $reduce_or                      2
+     $sdff                          14
+     $sdffe                         12
+     $xor                            1
+     fpu_add                         1
+     fpu_div                         1
+     fpu_exceptions                  1
+     fpu_mul                         1
+     fpu_round                       1
+     fpu_sub                         1
+
+=== fpu_add ===
+
+   Number of wires:                 59
+   Number of wire bits:           1330
+   Number of public wires:          34
+   Number of public wire bits:     819
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 51
+     $add                            3
+     $and                            2
+     $gt                             3
+     $logic_and                      1
+     $logic_not                      5
+     $mux                            8
+     $or                             1
+     $reduce_or                      2
+     $sdffe                         23
+     $shr                            1
+     $sub                            2
+
+=== fpu_div ===
+
+   Number of wires:                239
+   Number of wire bits:           3751
+   Number of public wires:          82
+   Number of public wire bits:    2168
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                219
+     $add                            3
+     $and                            3
+     $eq                           103
+     $gt                             4
+     $logic_not                      7
+     $mux                           23
+     $ne                             1
+     $not                            2
+     $or                             1
+     $pmux                           2
+     $reduce_bool                    1
+     $reduce_or                      7
+     $sdff                          11
+     $sdffe                         36
+     $shl                            5
+     $shr                            1
+     $sub                            8
+     $xor                            1
+
+=== fpu_exceptions ===
+
+   Number of wires:                199
+   Number of wire bits:           1349
+   Number of public wires:          75
+   Number of public wire bits:     850
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                186
+     $and                           53
+     $eq                             8
+     $gt                             1
+     $logic_not                     19
+     $mux                            6
+     $or                            31
+     $reduce_or                      6
+     $sdffe                         62
+
+=== fpu_mul ===
+
+   Number of wires:                267
+   Number of wire bits:           3587
+   Number of public wires:          58
+   Number of public wire bits:    1940
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                260
+     $add                           12
+     $and                           53
+     $dlatch                         1
+     $eq                            52
+     $gt                             2
+     $logic_not                      6
+     $mul                           10
+     $mux                            6
+     $not                           54
+     $or                             1
+     $pmux                           1
+     $reduce_or                      5
+     $sdffe                         50
+     $shl                            2
+     $shr                            1
+     $sub                            3
+     $xor                            1
+
+=== fpu_round ===
+
+   Number of wires:                 34
+   Number of wire bits:            644
+   Number of public wires:          22
+   Number of public wire bits:     394
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 25
+     $add                            2
+     $and                            6
+     $eq                             2
+     $logic_not                      2
+     $mux                            4
+     $or                             2
+     $reduce_or                      1
+     $sdff                           6
+
+=== fpu_sub ===
+
+   Number of wires:                135
+   Number of wire bits:           1596
+   Number of public wires:          41
+   Number of public wire bits:     888
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                128
+     $and                            3
+     $eq                            56
+     $ge                             1
+     $gt                             4
+     $logic_and                      1
+     $logic_not                      9
+     $mux                           10
+     $not                            1
+     $or                             2
+     $pmux                           1
+     $reduce_or                      2
+     $sdffe                         30
+     $shl                            2
+     $shr                            1
+     $sub                            4
+     $xor                            1
+
+=== design hierarchy ===
+
+   fpu                               1
+     fpu_add                         1
+     fpu_div                         1
+     fpu_exceptions                  1
+     fpu_mul                         1
+     fpu_round                       1
+     fpu_sub                         1
+
+   Number of wires:               1024
+   Number of wire bits:          13444
+   Number of public wires:         375
+   Number of public wire bits:    7986
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                932
+     $add                           21
+     $and                          130
+     $dff                            4
+     $dlatch                         1
+     $eq                           224
+     $ge                             1
+     $gt                            14
+     $le                             1
+     $logic_and                      2
+     $logic_not                     52
+     $mul                           10
+     $mux                           61
+     $ne                             1
+     $not                           57
+     $or                            41
+     $pmux                           8
+     $reduce_bool                    1
+     $reduce_or                     25
+     $sdff                          31
+     $sdffe                        213
+     $shl                            9
+     $shr                            4
+     $sub                           17
+     $xor                            4
+

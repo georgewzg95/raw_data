@@ -1,0 +1,185 @@
+
+5. Printing statistics.
+
+=== ACS ===
+
+   Number of wires:                 20
+   Number of wire bits:             64
+   Number of public wires:          11
+   Number of public wire bits:      48
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $add                            2
+     $eq                             3
+     $gt                             1
+     $logic_not                      1
+     $mux                            3
+     $pmux                           2
+     $reduce_or                      2
+
+=== decoder ===
+
+   Number of wires:                128
+   Number of wire bits:            623
+   Number of public wires:          93
+   Number of public wire bits:     388
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 73
+     $add                            1
+     $adff                          10
+     $adffe                          1
+     $and                            8
+     $dff                            6
+     $logic_and                      7
+     $mux                           18
+     $sdff                           1
+     $sub                            1
+     ACS                             8
+     bmc000                          1
+     bmc001                          1
+     bmc010                          1
+     bmc011                          1
+     bmc100                          1
+     bmc101                          1
+     bmc110                          1
+     bmc111                          1
+     mem                             2
+     mem_disp                        1
+     tbu                             1
+
+=== encoder ===
+
+   Number of wires:                 30
+   Number of wire bits:             56
+   Number of public wires:           9
+   Number of public wire bits:      15
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 25
+     $adff                           1
+     $eq                             7
+     $logic_not                      1
+     $mux                           12
+     $pmux                           2
+     $reduce_or                      2
+
+=== mem ===
+
+   Number of wires:                  9
+   Number of wire bits:             62
+   Number of public wires:           5
+   Number of public wire bits:      28
+   Number of memories:               1
+   Number of memory bits:         8192
+   Number of processes:              0
+   Number of cells:                  6
+     $dff                            1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
+
+=== mem_disp ===
+
+   Number of wires:                  9
+   Number of wire bits:             27
+   Number of public wires:           5
+   Number of public wire bits:      14
+   Number of memories:               1
+   Number of memory bits:         1024
+   Number of processes:              0
+   Number of cells:                  6
+     $dff                            1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux                            3
+
+=== tbu ===
+
+   Number of wires:                 85
+   Number of wire bits:            155
+   Number of public wires:          13
+   Number of public wire bits:      31
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 79
+     $adff                           1
+     $and                           16
+     $dff                            3
+     $dlatch                         1
+     $eq                             7
+     $logic_and                      1
+     $logic_not                      1
+     $mux                           12
+     $not                           17
+     $pmux                          18
+     $reduce_or                      2
+
+=== viterbi_tx_rx ===
+
+   Number of wires:                 14
+   Number of wire bits:             23
+   Number of public wires:          10
+   Number of public wire bits:      15
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $add                            1
+     $adff                           3
+     $eq                             1
+     $mux                            1
+     $not                            1
+     decoder                         1
+     encoder                         1
+
+=== design hierarchy ===
+
+   viterbi_tx_rx                     1
+     decoder                         1
+       ACS                           8
+       mem                           2
+       mem_disp                      1
+       tbu                           1
+     encoder                         1
+
+   Number of wires:                444
+   Number of wire bits:           1520
+   Number of public wires:         228
+   Number of public wire bits:     903
+   Number of memories:               3
+   Number of memory bits:        17408
+   Number of processes:              0
+   Number of cells:                302
+     $add                           18
+     $adff                          15
+     $adffe                          1
+     $and                           24
+     $dff                           12
+     $dlatch                         1
+     $eq                            39
+     $gt                             8
+     $logic_and                      8
+     $logic_not                     10
+     $memrd                          3
+     $memwr_v2                       3
+     $mux                           76
+     $not                           18
+     $pmux                          36
+     $reduce_or                     20
+     $sdff                           1
+     $sub                            1
+     bmc000                          1
+     bmc001                          1
+     bmc010                          1
+     bmc011                          1
+     bmc100                          1
+     bmc101                          1
+     bmc110                          1
+     bmc111                          1
+

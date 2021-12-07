@@ -378,7 +378,6 @@ always @ (posedge clk) begin
    if (r_ena) r_data <= mem[r_addr];
 end
 
-initial $readmemh(MEMFILE, mem);
 
 
 endmodule

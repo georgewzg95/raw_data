@@ -1,0 +1,221 @@
+
+5. Printing statistics.
+
+=== $paramod\fht_1d_x8\N=s32'00000000000000000000000000001000 ===
+
+   Number of wires:                 93
+   Number of wire bits:            730
+   Number of public wires:          70
+   Number of public wire bits:     536
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 66
+     $add                            1
+     $adff                           4
+     $adffe                         25
+     $and                            8
+     $eq                             1
+     $logic_and                      1
+     $mux                            1
+     $or                            14
+     $paramod\fht_bfly\N=s32'00000000000000000000000000001001      3
+     $paramod\fht_bfly\N=s32'00000000000000000000000000001010      4
+     $paramod\fht_bfly_noFF\N=s32'00000000000000000000000000001000      4
+
+=== $paramod\fht_1d_x8\N=s32'00000000000000000000000000001011 ===
+
+   Number of wires:                 93
+   Number of wire bits:            931
+   Number of public wires:          70
+   Number of public wire bits:     695
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 66
+     $add                            1
+     $adff                           4
+     $adffe                         25
+     $and                            8
+     $eq                             1
+     $logic_and                      1
+     $mux                            1
+     $or                            14
+     $paramod\fht_bfly\N=s32'00000000000000000000000000001100      3
+     $paramod\fht_bfly\N=s32'00000000000000000000000000001101      4
+     $paramod\fht_bfly_noFF\N=s32'00000000000000000000000000001011      4
+
+=== $paramod\fht_bfly\N=s32'00000000000000000000000000001001 ===
+
+   Number of wires:                234
+   Number of wire bits:            521
+   Number of public wires:         150
+   Number of public wire bits:     414
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                107
+     $and                           41
+     $eq                             2
+     $mux                            2
+     $not                            2
+     $or                            16
+     $sdffe                          2
+     $xor                           42
+
+=== $paramod\fht_bfly\N=s32'00000000000000000000000000001010 ===
+
+   Number of wires:                258
+   Number of wire bits:            569
+   Number of public wires:         164
+   Number of public wire bits:     449
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                119
+     $and                           46
+     $eq                             2
+     $mux                            2
+     $not                            2
+     $or                            18
+     $sdffe                          2
+     $xor                           47
+
+=== $paramod\fht_bfly\N=s32'00000000000000000000000000001100 ===
+
+   Number of wires:                306
+   Number of wire bits:            665
+   Number of public wires:         192
+   Number of public wire bits:     519
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                143
+     $and                           56
+     $eq                             2
+     $mux                            2
+     $not                            2
+     $or                            22
+     $sdffe                          2
+     $xor                           57
+
+=== $paramod\fht_bfly\N=s32'00000000000000000000000000001101 ===
+
+   Number of wires:                330
+   Number of wire bits:            713
+   Number of public wires:         206
+   Number of public wire bits:     554
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                155
+     $and                           61
+     $eq                             2
+     $mux                            2
+     $not                            2
+     $or                            24
+     $sdffe                          2
+     $xor                           62
+
+=== $paramod\fht_bfly_noFF\N=s32'00000000000000000000000000001000 ===
+
+   Number of wires:                205
+   Number of wire bits:            454
+   Number of public wires:         131
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 93
+     $and                           36
+     $eq                             2
+     $mux                            2
+     $not                            2
+     $or                            14
+     $xor                           37
+
+=== $paramod\fht_bfly_noFF\N=s32'00000000000000000000000000001011 ===
+
+   Number of wires:                277
+   Number of wire bits:            592
+   Number of public wires:         173
+   Number of public wire bits:     459
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                129
+     $and                           51
+     $eq                             2
+     $mux                            2
+     $not                            2
+     $or                            20
+     $xor                           52
+
+=== $paramod\mtx_trps_8x8_dpsram\N=s32'00000000000000000000000000001011 ===
+
+   Number of wires:                 26
+   Number of wire bits:            147
+   Number of public wires:          18
+   Number of public wire bits:      77
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 17
+     $add                            2
+     $adff                           2
+     $adffe                          3
+     $and                            2
+     $eq                             1
+     $mux                            3
+     $not                            2
+     $or                             1
+     $reduce_bool                    1
+
+=== fht_8x8_core ===
+
+   Number of wires:                 10
+   Number of wire bits:             50
+   Number of public wires:          10
+   Number of public wire bits:      50
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $paramod\fht_1d_x8\N=s32'00000000000000000000000000001000      1
+     $paramod\fht_1d_x8\N=s32'00000000000000000000000000001011      1
+     $paramod\mtx_trps_8x8_dpsram\N=s32'00000000000000000000000000001011      1
+
+=== design hierarchy ===
+
+   fht_8x8_core                      1
+     $paramod\fht_1d_x8\N=s32'00000000000000000000000000001000      1
+       $paramod\fht_bfly\N=s32'00000000000000000000000000001001      3
+       $paramod\fht_bfly\N=s32'00000000000000000000000000001010      4
+       $paramod\fht_bfly_noFF\N=s32'00000000000000000000000000001000      4
+     $paramod\fht_1d_x8\N=s32'00000000000000000000000000001011      1
+       $paramod\fht_bfly\N=s32'00000000000000000000000000001100      3
+       $paramod\fht_bfly\N=s32'00000000000000000000000000001101      4
+       $paramod\fht_bfly_noFF\N=s32'00000000000000000000000000001011      4
+     $paramod\mtx_trps_8x8_dpsram\N=s32'00000000000000000000000000001011      1
+
+   Number of wires:               6122
+   Number of wire bits:          14728
+   Number of public wires:        3890
+   Number of public wire bits:   11445
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2861
+     $add                            4
+     $adff                          10
+     $adffe                         53
+     $and                         1085
+     $eq                            47
+     $logic_and                      2
+     $mux                           49
+     $not                           46
+     $or                           447
+     $reduce_bool                    1
+     $sdffe                         28
+     $xor                         1089
+

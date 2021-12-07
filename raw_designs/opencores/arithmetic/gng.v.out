@@ -1,0 +1,143 @@
+
+5. Printing statistics.
+
+=== $paramod$f39658601130dabd5995c2537a5ec6c66075ff2e\gng_ctg ===
+
+   Number of wires:                 13
+   Number of wire bits:            580
+   Number of public wires:          11
+   Number of public wire bits:     452
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $sdff                           2
+     $sdffe                          3
+     $xor                            5
+
+=== gng ===
+
+   Number of wires:                  7
+   Number of wire bits:             85
+   Number of public wires:           7
+   Number of public wire bits:      85
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $paramod$f39658601130dabd5995c2537a5ec6c66075ff2e\gng_ctg      1
+     gng_interp                      1
+
+=== gng_coef ===
+
+   Number of wires:                254
+   Number of wire bits:            363
+   Number of public wires:           6
+   Number of public wire bits:     115
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                252
+     $dff                            3
+     $eq                           247
+     $logic_not                      1
+     $pmux                           1
+
+=== gng_interp ===
+
+   Number of wires:                 56
+   Number of wire bits:            640
+   Number of public wires:          33
+   Number of public wire bits:     513
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 48
+     $add                            3
+     $and                            1
+     $dff                           13
+     $eq                            15
+     $mux                            1
+     $not                            1
+     $pmux                           1
+     $reduce_and                     1
+     $sdff                           8
+     gng_coef                        1
+     gng_lzd                         1
+     gng_smul_16_18                  1
+     gng_smul_16_18_sadd_37          1
+
+=== gng_lzd ===
+
+   Number of wires:                 71
+   Number of wire bits:            313
+   Number of public wires:          71
+   Number of public wire bits:     313
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                147
+     $mux                           30
+     $not                           61
+     $or                            56
+
+=== gng_smul_16_18 ===
+
+   Number of wires:                  8
+   Number of wire bits:            171
+   Number of public wires:           7
+   Number of public wire bits:     137
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $dff                            3
+     $mul                            1
+
+=== gng_smul_16_18_sadd_37 ===
+
+   Number of wires:                 12
+   Number of wire bits:            325
+   Number of public wires:          11
+   Number of public wire bits:     291
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add                            1
+     $dff                            5
+     $mul                            1
+
+=== design hierarchy ===
+
+   gng                               1
+     $paramod$f39658601130dabd5995c2537a5ec6c66075ff2e\gng_ctg      1
+     gng_interp                      1
+       gng_coef                      1
+       gng_lzd                       1
+       gng_smul_16_18                1
+       gng_smul_16_18_sadd_37        1
+
+   Number of wires:                421
+   Number of wire bits:           2477
+   Number of public wires:         146
+   Number of public wire bits:    1906
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                464
+     $add                            4
+     $and                            1
+     $dff                           24
+     $eq                           262
+     $logic_not                      1
+     $mul                            2
+     $mux                           31
+     $not                           62
+     $or                            56
+     $pmux                           2
+     $reduce_and                     1
+     $sdff                          10
+     $sdffe                          3
+     $xor                            5
+

@@ -1,0 +1,135 @@
+
+5. Printing statistics.
+
+=== $paramod\randomwalkfilter\FilterResetValue=s32'00000000000000000000000000100000 ===
+
+   Number of wires:                 14
+   Number of wire bits:             97
+   Number of public wires:           6
+   Number of public wire bits:      13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $add                            1
+     $dff                            2
+     $eq                             2
+     $logic_or                       1
+     $mux                            2
+     $reduce_bool                    1
+     $sdffe                          1
+     $sub                            1
+
+=== dpll ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     freqdivider                     1
+     phasecomparator                 1
+     variableresetrandomwalkfilter      1
+
+=== freqdivider ===
+
+   Number of wires:                 13
+   Number of wire bits:             93
+   Number of public wires:           5
+   Number of public wire bits:      11
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $add                            2
+     $dffe                           1
+     $ge                             1
+     $logic_not                      1
+     $mux                            2
+     $ne                             1
+     $not                            1
+     $sdffe                          1
+
+=== phasecomparator ===
+
+   Number of wires:                 10
+   Number of wire bits:             11
+   Number of public wires:           7
+   Number of public wire bits:       8
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $dff                            3
+     $eq                             1
+     $logic_and                      2
+     $not                            1
+
+=== variableresetrandomwalkfilter ===
+
+   Number of wires:                 44
+   Number of wire bits:            218
+   Number of public wires:          10
+   Number of public wire bits:      27
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 40
+     $add                            2
+     $dff                            2
+     $dffe                           1
+     $eq                             8
+     $ge                             1
+     $gt                             2
+     $le                             1
+     $logic_and                      1
+     $logic_or                       3
+     $lt                             2
+     $mux                            7
+     $ne                             2
+     $paramod\randomwalkfilter\FilterResetValue=s32'00000000000000000000000000100000      1
+     $pmux                           1
+     $reduce_and                     1
+     $reduce_bool                    2
+     $sdffe                          1
+     $sub                            2
+
+=== design hierarchy ===
+
+   dpll                              1
+     freqdivider                     1
+     phasecomparator                 1
+     variableresetrandomwalkfilter      1
+       $paramod\randomwalkfilter\FilterResetValue=s32'00000000000000000000000000100000      1
+
+   Number of wires:                 88
+   Number of wire bits:            426
+   Number of public wires:          35
+   Number of public wire bits:      66
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 67
+     $add                            5
+     $dff                            7
+     $dffe                           2
+     $eq                            11
+     $ge                             2
+     $gt                             2
+     $le                             1
+     $logic_and                      3
+     $logic_not                      1
+     $logic_or                       4
+     $lt                             2
+     $mux                           11
+     $ne                             3
+     $not                            2
+     $pmux                           1
+     $reduce_and                     1
+     $reduce_bool                    3
+     $sdffe                          3
+     $sub                            3
+

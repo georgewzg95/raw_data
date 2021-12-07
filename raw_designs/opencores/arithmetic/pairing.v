@@ -17,8 +17,39 @@
     You should have received a copy of the GNU Lesser General Public License
     along with Tate Bilinear Pairing Core.  If not, see http://www.gnu.org/licenses/lgpl.txt
 */
+// drop def & const here :D
 
-`include "inc.v"
+`define M     97          // M is the degree of the irreducible polynomial
+`define WIDTH (2*`M-1)    // width for a GF(3^M) element
+`define W2    (4*`M-1)    // width for a GF(3^{2*M}) element
+`define W3    (6*`M-1)    // width for a GF(3^{3*M}) element
+`define W6    (12*`M-1)   // width for a GF(3^{6*M}) element
+`define PX    196'h4000000000000000000000000000000000000000001000002 // PX is the irreducible polynomial
+
+/*
+    Copyright 2011, City University of Hong Kong
+    Author is Homer (Dongsheng) Hsing.
+
+    This file is part of Tate Bilinear Pairing Core.
+
+    Tate Bilinear Pairing Core is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Tate Bilinear Pairing Core is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Lesser General Public License for more details.
+
+    You should have received a copy of the GNU Lesser General Public License
+    along with Tate Bilinear Pairing Core.  If not, see http://www.gnu.org/licenses/lgpl.txt
+*/
+
+`define ZERO {(2*`M){1'b0}}
+`define TWO {(2*`M-2){1'b0}},2'b10
+
+`define MOST 2*`M+1:2*`M
 
 // out = (v0 & l0) | (v1 & l1) | (v2 & l2) | ... | (v5 & l5)
 module f32m_mux6(v0, v1, v2, v3, v4, v5, l0, l1, l2, l3, l4, l5, out);
@@ -160,7 +191,6 @@ endmodule
     along with Tate Bilinear Pairing Core.  If not, see http://www.gnu.org/licenses/lgpl.txt
 */
 
-`include "inc.v"
 
 // out = (v1 & l1) | (v2 & l2)
 module f33m_mux2(v1, l1, v2, l2, out);
@@ -514,7 +544,6 @@ endmodule
     along with Tate Bilinear Pairing Core.  If not, see http://www.gnu.org/licenses/lgpl.txt
 */
 
-`include "inc.v"
 
 // c == a*b in GF(3^{6M})
 module f36m_mult(clk, reset, a, b, c, done);
@@ -718,8 +747,6 @@ endmodule
     along with Tate Bilinear Pairing Core.  If not, see http://www.gnu.org/licenses/lgpl.txt
 */
 
-`include "inc.v"
-`define MOST 2*`M+1:2*`M
 
 // out = (v1 & l1) | (v2 & l2) | (v3 & l3)
 module f3m_mux3(v1, l1, v2, l2, v3, l3, out);
@@ -2016,7 +2043,6 @@ endmodule
 */
 
 // fun.v: Have you got fun reading the code ?
-`include "inc.v"
 
 // turn "00000001111111111111111" into "00000001000000000000000"
 module func6(clk, reset, in, out);
@@ -2057,38 +2083,6 @@ endmodule
 
 `default_nettype none
 
-// drop def & const here :D
-
-`define M     97          // M is the degree of the irreducible polynomial
-`define WIDTH (2*`M-1)    // width for a GF(3^M) element
-`define W2    (4*`M-1)    // width for a GF(3^{2*M}) element
-`define W3    (6*`M-1)    // width for a GF(3^{3*M}) element
-`define W6    (12*`M-1)   // width for a GF(3^{6*M}) element
-`define PX    196'h4000000000000000000000000000000000000000001000002 // PX is the irreducible polynomial
-
-/*
-    Copyright 2011, City University of Hong Kong
-    Author is Homer (Dongsheng) Hsing.
-
-    This file is part of Tate Bilinear Pairing Core.
-
-    Tate Bilinear Pairing Core is free software: you can redistribute it and/or modify
-    it under the terms of the GNU Lesser General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    Tate Bilinear Pairing Core is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU Lesser General Public License for more details.
-
-    You should have received a copy of the GNU Lesser General Public License
-    along with Tate Bilinear Pairing Core.  If not, see http://www.gnu.org/licenses/lgpl.txt
-*/
-
-`include "inc.v"
-`define ZERO {(2*`M){1'b0}}
-`define TWO {(2*`M-2){1'b0}},2'b10
 
 // The Modified Duursma-Lee Algorithm
 // out == e_({xp,yp}, {xr,yr})

@@ -18,11 +18,20 @@
     along with Elliptic Curve Group Core.  If not, see http://www.gnu.org/licenses/lgpl.txt
 */
 
-`include "inc.v"
 
 /* point scalar multiplication on the elliptic curve $y^2=x^3-x+1$ over a Galois field GF(3^M)
  * whose irreducible polynomial is $x^97 + x^12 + 2$. */
 /* $P3(x3,y3) == c \cdot P1(x1,y1)$ */
+`define M     97          // M is the degree of the irreducible polynomial
+`define WIDTH (2*`M-1)    // width for a GF(3^M) element
+`define W2    (4*`M-1)    // width for a GF(3^{2*M}) element
+`define W3    (6*`M-1)    // width for a GF(3^{3*M}) element
+`define W6    (12*`M-1)   // width for a GF(3^{6*M}) element
+`define PX    196'h4000000000000000000000000000000000000000001000002 // PX is the irreducible polynomial
+`define SCALAR_WIDTH (151-1) // the width for the scalar value
+
+
+`define MOST 2*`M+1:2*`M
 module point_scalar_mult(clk, reset, x1, y1, zero1, c, done, x3, y3, zero3);
     input clk, reset;
     input [`WIDTH:0] x1, y1;
@@ -287,8 +296,6 @@ endmodule
     along with Tate Bilinear Pairing Core.  If not, see http://www.gnu.org/licenses/lgpl.txt
 */
 
-`include "inc.v"
-`define MOST 2*`M+1:2*`M
 
 // out = (v1 & l1) | (v2 & l2) | (v3 & l3)
 module f3m_mux3(v1, l1, v2, l2, v3, l3, out);
@@ -1585,7 +1592,6 @@ endmodule
 */
 
 // fun.v: Have you got fun reading the code ?
-`include "inc.v"
 
 // turn "00000001111111111111111" into "00000001000000000000000"
 module func6(clk, reset, in, out);
@@ -1625,11 +1631,3 @@ endmodule
 */
 
 // drop def & const here :D
-
-`define M     97          // M is the degree of the irreducible polynomial
-`define WIDTH (2*`M-1)    // width for a GF(3^M) element
-`define W2    (4*`M-1)    // width for a GF(3^{2*M}) element
-`define W3    (6*`M-1)    // width for a GF(3^{3*M}) element
-`define W6    (12*`M-1)   // width for a GF(3^{6*M}) element
-`define PX    196'h4000000000000000000000000000000000000000001000002 // PX is the irreducible polynomial
-`define SCALAR_WIDTH (151-1) // the width for the scalar value
