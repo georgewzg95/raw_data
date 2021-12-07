@@ -20,6 +20,7 @@ if __name__ == "__main__":
       if filename.endswith(".v"):
         verilog_name = retrieve_name(subdir)
         print(verilog_name)
+        break
 
 # class gen_submod():
 #   def __init__(self):
