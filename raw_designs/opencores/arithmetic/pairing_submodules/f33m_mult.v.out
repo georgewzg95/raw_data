@@ -134,6 +134,20 @@
    Number of processes:              0
    Number of cells:                  0
 
+=== func6 ===
+
+   Number of wires:                  8
+   Number of wire bits:             39
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $eq                             1
+     $mux                            1
+     $sdff                           2
+
 === func7 ===
 
    Number of wires:                  5
@@ -180,23 +194,24 @@
          f3_mult                   291
      f3m_mux6                        2
      f3m_neg                         3
+     func6                           1
 
-   Number of wires:              67101
-   Number of wire bits:         103882
-   Number of public wires:       20221
-   Number of public wire bits:   56616
+   Number of wires:              67109
+   Number of wire bits:         103921
+   Number of public wires:       20227
+   Number of public wire bits:   56622
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:              51762
+   Number of cells:              51765
      $and                        32482
      $dff                            4
      $dffe                           8
-     $mux                            3
+     $eq                             1
+     $mux                            4
      $not                         8949
      $or                         10307
      $reduce_and                     1
-     $sdff                           4
+     $sdff                           6
      $sdffe                          3
-     func6                           1
 

@@ -25,18 +25,48 @@
    Number of cells:                  3
      f32m_add                        3
 
+=== f3_add ===
+
+   Number of wires:                 29
+   Number of wire bits:             32
+   Number of public wires:           9
+   Number of public wire bits:      12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and                           14
+     $not                            4
+     $or                             4
+
+=== f3m_add ===
+
+   Number of wires:                  3
+   Number of wire bits:            582
+   Number of public wires:           3
+   Number of public wire bits:     582
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 97
+     f3_add                         97
+
 === design hierarchy ===
 
    f32m_add4                         1
      f32m_add                        3
+       f3m_add                       2
+         f3_add                     97
 
-   Number of wires:                 16
-   Number of wire bits:           6208
-   Number of public wires:          16
-   Number of public wire bits:    6208
+   Number of wires:              16912
+   Number of wire bits:          28324
+   Number of public wires:        5272
+   Number of public wire bits:   16684
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  6
-     f3m_add                         6
+   Number of cells:              12804
+     $and                         8148
+     $not                         2328
+     $or                          2328
 

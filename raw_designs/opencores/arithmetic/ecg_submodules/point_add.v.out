@@ -233,6 +233,20 @@
    Number of cells:                  1
      f3_add                          1
 
+=== func6 ===
+
+   Number of wires:                  8
+   Number of wire bits:             39
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $eq                             1
+     $mux                            1
+     $sdff                           2
+
 === func7 ===
 
    Number of wires:                  5
@@ -327,6 +341,7 @@
            f3_add                  197
            f3_mult                 291
        f3m_neg                       1
+       func6                         1
      func11                          1
        f3m_add                       2
          f3_add                     97
@@ -359,28 +374,28 @@
        f3m_sub                       4
          f3_sub                     97
            f3_add                    1
+       func6                         2
      func9                           1
 
-   Number of wires:             101142
-   Number of wire bits:         163767
-   Number of public wires:       34811
-   Number of public wire bits:   91965
+   Number of wires:             101166
+   Number of wire bits:         163884
+   Number of public wires:       34829
+   Number of public wire bits:   91983
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:              74212
+   Number of cells:              74221
      $and                        46923
      $dff                            6
      $dffe                           7
-     $eq                             3
+     $eq                             6
      $logic_and                      3
      $logic_not                      2
-     $mux                           30
+     $mux                           33
      $ne                             4
      $not                        14867
      $or                         12318
      $reduce_and                     2
-     $sdff                          25
+     $sdff                          31
      $sdffe                         19
-     func6                           3
 

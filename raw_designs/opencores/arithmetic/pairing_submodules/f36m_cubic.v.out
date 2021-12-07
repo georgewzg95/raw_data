@@ -1,6 +1,18 @@
 
 5. Printing statistics.
 
+=== f32m_add ===
+
+   Number of wires:                  3
+   Number of wire bits:           1164
+   Number of public wires:           3
+   Number of public wire bits:    1164
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     f3m_add                         2
+
 === f32m_cubic ===
 
    Number of wires:                  8
@@ -42,6 +54,44 @@
      f32m_cubic                      3
      f32m_sub                        1
 
+=== f3_add ===
+
+   Number of wires:                 29
+   Number of wire bits:             32
+   Number of public wires:           9
+   Number of public wire bits:      12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and                           14
+     $not                            4
+     $or                             4
+
+=== f3_sub ===
+
+   Number of wires:                  3
+   Number of wire bits:              6
+   Number of public wires:           3
+   Number of public wire bits:       6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     f3_add                          1
+
+=== f3m_add ===
+
+   Number of wires:                  3
+   Number of wire bits:            582
+   Number of public wires:           3
+   Number of public wire bits:     582
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 97
+     f3_add                         97
+
 === f3m_cubic ===
 
    Number of wires:                 90
@@ -54,24 +104,54 @@
    Number of cells:                 88
      f3_add                         88
 
-=== design hierarchy ===
+=== f3m_neg ===
 
-   f36m_cubic                        1
-     f32m_cubic                      3
-       f3m_cubic                     2
-     f32m_sub                        1
-
-   Number of wires:                580
-   Number of wire bits:          15998
-   Number of public wires:         580
-   Number of public wire bits:   15998
+   Number of wires:                  2
+   Number of wire bits:            388
+   Number of public wires:           2
+   Number of public wire bits:     388
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                539
-     $dff                            4
+   Number of cells:                  0
+
+=== f3m_sub ===
+
+   Number of wires:                  3
+   Number of wire bits:            582
+   Number of public wires:           3
+   Number of public wire bits:     582
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 97
+     f3_sub                         97
+
+=== design hierarchy ===
+
+   f36m_cubic                        1
      f32m_add                        2
-     f3_add                        528
-     f3m_neg                         3
-     f3m_sub                         2
+       f3m_add                       2
+         f3_add                     97
+     f32m_cubic                      3
+       f3m_cubic                     2
+         f3_add                     88
+       f3m_neg                       1
+     f32m_sub                        1
+       f3m_sub                       2
+         f3_sub                     97
+           f3_add                    1
+
+   Number of wires:              33382
+   Number of wire bits:          59666
+   Number of public wires:       11182
+   Number of public wire bits:   37466
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              24424
+     $and                        15540
+     $dff                            4
+     $not                         4440
+     $or                          4440
 
