@@ -1,0 +1,102 @@
+imm is either 16 bit sign extended or full 32 bit with prefix instr(except andi1)
+there are 32 registers
+alu instructions have 6-bit opcode(lowest 6 bits), shared with conditional jumps and load/store and call
+2 opcodes reserved for future 64bitload&store (59 & 63)
+not shared with in/out
+no condition flags exist in this architecture so far, instead, use compare-and-jump
+opcode 32 is used for i/o and system instructions, using the other bits
+i/o instructions have additional opcode at bits 26:21, but this can be used for system
+instructions also.
+
+opcode 30 prefix imm
+
+opcode 0
+lih reg1,imm,reg2
+lch reg1,imm,reg2 //equivalent
+  store imm into upper half of reg2, reg1's lower half into lower half of reg2
+opcode 1
+li imm,reg
+lc imm,reg
+  store imm into reg
+opcode 2
+and reg1,reg2,reg2
+  reg2=reg1&reg2
+opcode 3
+andi reg1,imm,reg2
+  reg2=reg1&imm
+opcode 4
+or reg1,reg2,reg3
+  reg3=reg1|reg2
+opcode 5
+ori reg1,imm,reg
+reg2=reg1|imm
+opcode 6
+xor reg1,reg2,reg3
+  reg3=reg1^reg2
+opcode 7
+xori reg1,imm,reg2
+  reg2=imm^reg1
+opcode 8 
+add reg1,reg2,reg3
+  reg3=reg1+reg2
+opcode 9
+addi reg1,imm,reg2
+  reg2=reg1+imm
+opcode 10
+sub reg1,reg2,reg3
+  reg3=reg1-reg2
+opcode 11
+subi reg1,imm,reg2
+  reg2=reg1-imm
+opcode 12
+nop
+  no operation
+opcode 13
+andi1 reg1,imm,reg2
+  reg2=reg1 & imm(one extended)
+
+shl reg1,reg2,reg3
+shli reg1,imm,reg2
+shr reg1,reg2,
+reg3
+shri reg1,imm,reg2
+sar reg1,reg2,reg3
+sari reg1,imm,reg2
+
+
+inb r1,r2
+inw r1,r2
+inl r1,r2
+
+outb r1,r2
+outw r1,r2
+outl r1,r2
+
+conditional jumps
+cjule r1,r2, label
+cjc r1,r2, label
+cjugt r1,r2, label
+cjnc r1,r2, label
+cjeq r1,r2, label
+cjne r1,r2, label
+cjult r1,r2, label
+cjuge r1,r2, label
+cjn r1,r2, label
+cjnn r1,r2, label
+cjslt r1,r2, label
+cjsge r1,r2, label
+cjsle r1,r2, label
+cjsgt r1,r2, label
+cjo r1,r2, label
+cjno r1,r2, label
+call r1,imm,r2
+  call (r1+imm) return addr=r2
+ret r1
+
+ldl r1,imm/label,r2
+ldw r1,imm/label,r2
+ldb r1,imm/label,r2
+
+stl r1,imm/label,r2
+stw r1,imm/label,r2
+stb r1,imm/label,r2
