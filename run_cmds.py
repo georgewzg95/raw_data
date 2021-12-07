@@ -118,6 +118,10 @@ def log_err_design(design):
   with open(report_dir + os.sep + 'err_designs', 'a+') as f:
     f.write(design.r_dir + '\n')
 
+def log_effective_design(design):
+  with open(report_dir + os.sep + 'effective_design', 'a+') as f:
+    f.write(design.r_dir + '\n')
+
 if __name__ == "__main__":
 
   args = parse_args()
@@ -190,6 +194,8 @@ if __name__ == "__main__":
       if check_error(design) > 0:
         err_count += 1
         log_err_design(design)
+      else:
+        log_effective_design(design)
 
     print('the number of complete designs is: ' + str(total))
     print('the number of error designs is: ' + str(err_count))
