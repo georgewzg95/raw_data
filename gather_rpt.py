@@ -30,7 +30,7 @@ def retrieve_info(lines, section, target):
       st = True
       continue
     if st == True and line.find(target) >= 0:
-      print(line)
+      print(line.split('|'))
       return line.split('|')[-1].rstrip()
 
 def retrieve_utilization(file):
