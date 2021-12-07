@@ -14,7 +14,7 @@ def retrieve_name(subdir):
       return tokens(index + 1)
 
 
-if __name__ == "main":
+if __name__ == "__main__":
   print("start_path")
   for subdir, dirs, files in os.walk(start_path):
     for filename in files:
