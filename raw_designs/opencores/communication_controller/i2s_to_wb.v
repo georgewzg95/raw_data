@@ -5,8 +5,7 @@
 `include "timescale.v"
 
 
-module 
-  i2s_to_wb_dma_fsm
+module i2s_to_wb_dma_fsm
   (
     input           dma_enable,
     input           dma_ack_i,
@@ -86,8 +85,7 @@ endmodule
 `include "timescale.v"
 
 
-module 
-  i2s_to_wb_fifo_fsm
+module i2s_to_wb_fifo_fsm
   (
     input   i2s_ws_edge,
     input   i2s_ws_i, 
@@ -170,8 +168,7 @@ endmodule
 `include "timescale.v"
 
 
-module
-  i2s_to_wb_top
+module i2s_to_wb_top
   (
     input   [31:0]  wbs_data_i,
     output  [31:0]  wbs_data_o,
@@ -336,8 +333,7 @@ endmodule
 `include "timescale.v"
 
 
-module
-  i2s_to_wb_tx_dma
+module i2s_to_wb_tx_dma
   #(
     parameter DMA_BUFFER_MAX_WIDTH = 12
   )
@@ -465,8 +461,7 @@ endmodule
 `include "timescale.v"
 
 
-module
-  i2s_to_wb_tx_if
+module i2s_to_wb_tx_if
   #(
     parameter DMA_BUFFER_MAX_WIDTH = 12
   )
@@ -633,8 +628,7 @@ endmodule
 `include "timescale.v"
 
 
-module
-  i2s_to_wb_tx
+module i2s_to_wb_tx
   (
     input   [31:0]  fifo_right_data,
     input   [31:0]  fifo_left_data,
