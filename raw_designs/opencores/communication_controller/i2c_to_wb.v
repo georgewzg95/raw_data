@@ -29,8 +29,7 @@
 `include "timescale.v"
 
 
-module
-  glitch_filter
+module glitch_filter
   #(
     parameter SIZE = 3
   ) 
@@ -108,8 +107,7 @@ endmodule
 `include "timescale.v"
 
 
-module
-  i2c_to_wb_config
+module i2c_to_wb_config
   (
     input   [7:0]       i2c_byte_in,
     input               tip_addr_ack,
@@ -170,8 +168,7 @@ endmodule
 `include "timescale.v"
 
 
-module
-  i2c_to_wb_fsm
+module i2c_to_wb_fsm
   (
     input         i2c_data,
     input         i2c_data_rise,
@@ -370,8 +367,7 @@ endmodule
 `include "timescale.v"
 
 
-module
-  i2c_to_wb_if
+module i2c_to_wb_if
   #(
     parameter DW = 32,
     parameter AW = 8
@@ -548,8 +544,7 @@ endmodule
 `include "timescale.v"
 
 
-module
-  i2c_to_wb_top
+module i2c_to_wb_top
   #(
     parameter DW = 32,
     parameter AW = 8
