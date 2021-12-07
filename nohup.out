@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "run_cmds.py", line 120, in <module>
+    design = Design(line.split(',')[0], line.split(',')[1])
+  File "run_cmds.py", line 15, in __init__
+    self.topmodule = topmodule
+NameError: name 'topmodule' is not defined
+Traceback (most recent call last):
+  File "run_cmds.py", line 147, in <module>
+    replace_tcl(design)
+  File "run_cmds.py", line 42, in replace_tcl
+    line = line.replace('[TOP]', find_topmodule(design))
+  File "run_cmds.py", line 59, in find_topmodule
+    with open(design.filepath + '.out', 'r') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/misc/scratch/zwei1/raw_data/raw_designs/vtr_designs/verilog/LU32PEEng.v\n.out'
