@@ -92,7 +92,7 @@ def retrieve_info(filepath):
             my_dict[relative_path].append('0')
 
       if start_parse:
-        if line.find('Number of cells') >= 0:
+        if line.find('Number of cells:') >= 0:
           start_cell = True
         for f_name in field_name:
           if line.find(f_name) > 0:
@@ -111,7 +111,7 @@ def retrieve_info(filepath):
           else:
             my_dict[relative_path].append('0')
 
-      if line.find('Number of cells') >= 0:
+      if line.find('Number of cells:') >= 0:
         start_cell = True
       for f_name in field_name:
         if line.find(f_name) > 0:
