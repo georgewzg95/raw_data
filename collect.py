@@ -77,6 +77,7 @@ def retrieve_info(filepath):
           remove[relative_path] = []
 
   fin.seek(0, 0)
+  cell_dict = {}
   if hierarchy:
     start_parse = False
     start_cell = False
@@ -85,11 +86,8 @@ def retrieve_info(filepath):
         start_parse = True
 
       if start_cell == True and line.rstrip():
-        for cell in cell_name:
-          if line.split()[0] == cell:
-            my_dict[relative_path].append(line.split()[1])
-          else:
-            my_dict[relative_path].append('0')
+        if line.split()[0] not in cell_dict:
+          cell_dict[line.split()[0]] = line.split()[1]
 
       if start_parse:
         if line.find('Number of cells:') >= 0:
@@ -105,11 +103,8 @@ def retrieve_info(filepath):
     start_cell = False
     for line in fin:
       if start_cell == True and line.rstrip():
-        for cell in cell_name:
-          if line.split()[0] == cell:
-            my_dict[relative_path].append(line.split()[1])
-          else:
-            my_dict[relative_path].append('0')
+        if line.split()[0] not in cell_dict:
+          cell_dict[line.split()[0]] = line.split()[1]
 
       if line.find('Number of cells:') >= 0:
         start_cell = True
@@ -118,6 +113,12 @@ def retrieve_info(filepath):
           for token in line.split():
             if token.isdigit():
               my_dict[relative_path].append(token)
+
+  for cell in cell_name:
+    if cell not in cell_dict:
+      my_dict[relative_path].append('0')
+    else:
+      my_dict[relative_path].append(cell_dict[cell])
 
 with open('features.csv', 'wt') as f:
   for ele in field_name:
