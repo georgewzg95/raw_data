@@ -15,7 +15,7 @@ def retrieve_name(subdir):
 
 
 if __name__ == "main":
-  for subdir, dirs, files in os.walk(self.start_path):
+  for subdir, dirs, files in os.walk(start_path):
     for filename in files:
       if filename.endswith(".v"):
         verilog_name = retrieve_name(subdir)
