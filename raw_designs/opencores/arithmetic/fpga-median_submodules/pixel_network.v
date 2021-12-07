@@ -157,7 +157,7 @@ module pixel_network
         .data_lo(median)
     );
 
-endmodule/* --------------------------------------------------------------------------------
+endmodule
 module node
 #(
     parameter DATA_WIDTH = 8,
@@ -210,7 +210,6 @@ module node
     end
 
 endmodule/* --------------------------------------------------------------------------------
-
 
 
 

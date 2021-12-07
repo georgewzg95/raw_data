@@ -19,6 +19,118 @@
      $pmux                           2
      $reduce_or                      2
 
+=== bmc000 ===
+
+   Number of wires:                  7
+   Number of wire bits:             10
+   Number of public wires:           7
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $and                            2
+     $not                            2
+     $xor                            2
+
+=== bmc001 ===
+
+   Number of wires:                  7
+   Number of wire bits:             10
+   Number of public wires:           7
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $and                            2
+     $not                            2
+     $xor                            2
+
+=== bmc010 ===
+
+   Number of wires:                  7
+   Number of wire bits:             10
+   Number of public wires:           7
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $and                            2
+     $not                            2
+     $xor                            2
+
+=== bmc011 ===
+
+   Number of wires:                  7
+   Number of wire bits:             10
+   Number of public wires:           7
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $and                            2
+     $not                            2
+     $xor                            2
+
+=== bmc100 ===
+
+   Number of wires:                  7
+   Number of wire bits:             10
+   Number of public wires:           7
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $and                            2
+     $not                            2
+     $xor                            2
+
+=== bmc101 ===
+
+   Number of wires:                  7
+   Number of wire bits:             10
+   Number of public wires:           7
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $and                            2
+     $not                            2
+     $xor                            2
+
+=== bmc110 ===
+
+   Number of wires:                  7
+   Number of wire bits:             10
+   Number of public wires:           7
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $and                            2
+     $not                            2
+     $xor                            2
+
+=== bmc111 ===
+
+   Number of wires:                  7
+   Number of wire bits:             10
+   Number of public wires:           7
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $and                            2
+     $not                            2
+     $xor                            2
+
 === decoder ===
 
    Number of wires:                128
@@ -143,23 +255,31 @@
    viterbi_tx_rx                     1
      decoder                         1
        ACS                           8
+       bmc000                        1
+       bmc001                        1
+       bmc010                        1
+       bmc011                        1
+       bmc100                        1
+       bmc101                        1
+       bmc110                        1
+       bmc111                        1
        mem                           2
        mem_disp                      1
        tbu                           1
      encoder                         1
 
-   Number of wires:                444
-   Number of wire bits:           1520
-   Number of public wires:         228
-   Number of public wire bits:     903
+   Number of wires:                500
+   Number of wire bits:           1600
+   Number of public wires:         284
+   Number of public wire bits:     983
    Number of memories:               3
    Number of memory bits:        17408
    Number of processes:              0
-   Number of cells:                302
+   Number of cells:                342
      $add                           18
      $adff                          15
      $adffe                          1
-     $and                           24
+     $and                           40
      $dff                           12
      $dlatch                         1
      $eq                            39
@@ -169,17 +289,10 @@
      $memrd                          3
      $memwr_v2                       3
      $mux                           76
-     $not                           18
+     $not                           34
      $pmux                          36
      $reduce_or                     20
      $sdff                           1
      $sub                            1
-     bmc000                          1
-     bmc001                          1
-     bmc010                          1
-     bmc011                          1
-     bmc100                          1
-     bmc101                          1
-     bmc110                          1
-     bmc111                          1
+     $xor                           16
 
