@@ -19,6 +19,7 @@ if __name__ == "__main__":
     for filename in files:
       if filename.endswith(".v"):
         verilog_name = retrieve_name(subdir)
+        print(subdir + os.sep + dirs + os.sep + filename)
         print(verilog_name)
         break
 
