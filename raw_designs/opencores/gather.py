@@ -4,8 +4,8 @@ import argparse
 import re
 from collections import defaultdict
 
-start_path = "./Communication_controller"
-output_path = "./communication_controller"
+start_path = "/home/zhigang/raw_data/raw_designs/opencores/Communication_controller"
+output_path = "/home/zhigang/raw_data/raw_designs/opencores/communication_controller"
 
 def retrieve_name(subdir):
   tokens = subdir.split("/")
@@ -16,10 +16,8 @@ def retrieve_name(subdir):
 
 if __name__ == "main":
   for subdir, dirs, files in os.walk(self.start_path):
-    print(subdir)
     for filename in files:
       if filename.endswith(".v"):
-        print(subdir)
         verilog_name = retrieve_name(subdir)
         print(verilog_name)
 
