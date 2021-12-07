@@ -51,12 +51,11 @@ class gen_submod():
           target_module_path = subdir + os.sep + filename[:-4]
           print(target_module_path)
           print(second_dict)
-          print('\n')
           for miss_module in second_dict:
             miss_module_path = subdir + os.sep + miss_module + ".v"
             print("miss module: " + miss_module_path)
             self.append_second_phase(miss_module_path, target_module_path)
-
+          print("\n")
           self.remove_redundant(target_module_path)
 
   def remove_redundant(self, target_module_path):
