@@ -176,7 +176,7 @@ if __name__ == "__main__":
 
   # if args.plot_his == True:
 
-  if args.plot_predict = True:
+  if args.plot_predict == True:
     a_len = len(y_test)
     temp_x = np.arange(a_len)
     plt.plot(a_len, y_test, 'x', label = 'true')
