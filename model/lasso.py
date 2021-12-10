@@ -61,7 +61,7 @@ def parse_args():
                       help = 'the .rpt input file')
   parser.add_argument('-s',
                       '--save',
-                      required = True
+                      required = True,
                       type = str,
                       help = 'declare the filename to save the model')
   args = parser.parse_args()
@@ -114,6 +114,6 @@ if __name__ == "__main__":
 
   with open(args.save, 'wb') as f:
     pickle.dump(search, f)
-  
+
 
 
