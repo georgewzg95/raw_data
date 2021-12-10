@@ -143,6 +143,9 @@ if __name__ == "__main__":
       X_test = np.load(f)
       y_test = np.load(f)
       alpha = np.load(f)
+    with open('train.npy', 'rb') as f:
+      X_train = np.load(f)
+      y_train = np.load(f)
 
   if args.save is not None:
     with open(args.save, 'wb') as f:
