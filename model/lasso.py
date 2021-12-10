@@ -141,7 +141,7 @@ if __name__ == "__main__":
   print(mean_test_score)
 
   plt.plot(alpha, mean_train_score, label='mean_train_score')
-  #plt.plot(alpha, mean_test_score, label='mean_test_score')
+  plt.plot(alpha, mean_test_score, label='mean_test_score')
   plt.legend()
   if args.save_figure is not None:
     plt.savefig(args.save_figure)
