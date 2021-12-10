@@ -179,9 +179,9 @@ if __name__ == "__main__":
   if args.plot_predict == True:
     a_len = len(y_test)
     temp_x = np.arange(a_len)
-    plt.plot(a_len, y_test, 'x', label = 'true')
+    plt.plot(temp_x, y_test, 'x', label = 'true')
     y_predict = mode.predict(X_test)
-    plt.plot(a_len, y_predict, 'x', label = 'preddict')
+    plt.plot(temp_x, y_predict, 'x', label = 'predict')
     pl.legend()
     plt.show()
 
