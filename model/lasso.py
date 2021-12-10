@@ -174,7 +174,15 @@ if __name__ == "__main__":
       plt.savefig(args.save_figure)
     plt.show()
 
-  # if args.plot_his == True:
+  if args.plot_his == True:
+    q25, q75 = np.percentile(y_train, [25, 75])
+    bin_width = 2 * (q75 - q25) * len(y_train) ** (-1/3)
+    bins = round((y_train.max() - y_train.min()) / bin_width)
+    plt.hist(y_train, bins = bins)
+    plt.ylabel('power')
+    plt.xlabel('data')
+    plt.savefig('train_power.png')
+    plt.show()
 
   if args.plot_predict == True:
     a_len = len(y_test)
@@ -183,6 +191,7 @@ if __name__ == "__main__":
     y_predict = model.predict(X_test)
     plt.plot(temp_x, y_predict, 'x', label = 'predict')
     plt.legend()
+    plt.savefig('predict.png')
     plt.show()
 
 
