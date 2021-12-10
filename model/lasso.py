@@ -182,7 +182,7 @@ if __name__ == "__main__":
     plt.plot(temp_x, y_test, 'x', label = 'true')
     y_predict = model.predict(X_test)
     plt.plot(temp_x, y_predict, 'x', label = 'predict')
-    pl.legend()
+    plt.legend()
     plt.show()
 
 
