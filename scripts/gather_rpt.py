@@ -9,7 +9,7 @@ def parse_args():
                      '--input',
                      required = True,
                      type = str,
-                     help = 'files to collect data from, should be clean designs')
+                     help = 'files to collect data from, should be effective designs generated from run_cmds.py')
 
   parser.add_argument('-o',
                      '--output',
@@ -107,6 +107,6 @@ if __name__ == "__main__":
   output_feature_file = open(args.output + '.feat', 'w')
   feature_dict = retrieve_feature(args.feature_file)
   for directory in feature_dir_list:
-    output_feature_file.write(directory + ',' + my_dict[directory])
+    output_feature_file.write(directory + ',' + feature_dict[directory])
   output_feature_file.close()
 
