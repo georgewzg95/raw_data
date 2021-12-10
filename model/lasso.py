@@ -69,7 +69,7 @@ def retrieve_feature(file):
   	temp = line.split(',')[1:]
   	temp = [float(i) for i in temp]
   	data_list.append(temp)
-  return np_array(data_list)
+  return np.array(data_list)
 
 def retrieve_report(file):
   data_list = []
