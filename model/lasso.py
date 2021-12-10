@@ -99,6 +99,7 @@ def retrieve_report(file):
 
 if __name__ == "__main__":
   args = parse_args()
+  alpha = np.arange(0.001, 0.1, 0.001)
   if args.load is None:
     feature_file = args.input_feature
     report_file = args.input_rpt
@@ -112,7 +113,7 @@ if __name__ == "__main__":
                         ('model',Lasso(tol = 0.001))
                         ])
     model = GridSearchCV(pipeline,
-                          {'model__alpha':np.arange(0.01,0.5,0.01)},
+                          {'model__alpha':alpha},
                           cv = 5, scoring="neg_mean_squared_error",verbose=3, return_train_score=True)
     model.fit(X_train, y_train)
     print(model.score(X_test, y_test))
@@ -133,7 +134,7 @@ if __name__ == "__main__":
 
   cv_results = model.cv_results_
   mean_train_score = cv_results['mean_train_score']
-  alpha = np.arange(0.01, 0.5, 0.01)
+  
   mean_test_score = cv_results['mean_test_score']
   print(mean_train_score)
   print(alpha)
