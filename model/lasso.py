@@ -75,7 +75,7 @@ def parse_args():
                       default = None,
                       type = str,
                       help = 'save the figure as')
-  parser.add_argument('--plot_lc'
+  parser.add_argument('--plot_lc',
                       default = False,
                       action = 'store_true',
                       help = 'plot the learning curve')
