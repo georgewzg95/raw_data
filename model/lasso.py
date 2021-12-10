@@ -180,7 +180,7 @@ if __name__ == "__main__":
     a_len = len(y_test)
     temp_x = np.arange(a_len)
     plt.plot(temp_x, y_test, 'x', label = 'true')
-    y_predict = mode.predict(X_test)
+    y_predict = model.predict(X_test)
     plt.plot(temp_x, y_predict, 'x', label = 'predict')
     pl.legend()
     plt.show()
