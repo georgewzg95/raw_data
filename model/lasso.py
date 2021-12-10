@@ -136,11 +136,14 @@ if __name__ == "__main__":
     with open(args.save, 'wb') as f:
       pickle.dump(model, f)
 
-  print('negative mean square error: ' + model.score(X_test, y_test))
-  print('params are: ' + model.best_params_)
+  print('negative mean square error: ')
+  print(model.score(X_test, y_test))
+  print('params are: ')
+  print(model.best_params_)
   coefficients = model.best_estimator_.named_steps['model'].coef_
   importance = np.abs(coefficients)
-  print('importance of coefficients: ' + importance)
+  print('importance of coefficients: ')
+  print(importance)
   zero_importance = [num for num in importance if num == 0]
   #print(len(zero_importance))
 
