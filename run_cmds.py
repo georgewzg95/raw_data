@@ -116,11 +116,11 @@ def check_error(design):
 
 def log_err_design(design):
   with open(report_dir + os.sep + 'err_designs', 'a+') as f:
-    f.write(design.r_dir + '\n')
+    f.write(design.r_dir + ',' + design.filepath + '\n')
 
 def log_effective_design(design):
   with open(report_dir + os.sep + 'effective_design', 'a+') as f:
-    f.write(design.r_dir + '\n')
+    f.write(design.r_dir + ',' + design.filepath + '\n')
 
 if __name__ == "__main__":
 
@@ -200,19 +200,4 @@ if __name__ == "__main__":
     print('the number of complete designs is: ' + str(total))
     print('the number of error designs is: ' + str(err_count))
     print('the fraction of error designs is: ' + str(err_count/total))
-
-
-#cmd = 'vivado -mode batch -source tcl_scripts.tcl'
-#log = open('log', 'wt')
-#err = open('err', 'wt')
-#subproc = subprocess.Popen([cmd], stdout=log, stderr=err, shell=True)
-#while True:
-#  p = subproc.poll()
-#  time.sleep(0.5)
-#  if p is not None:
-#    break
-#    log.close()
-#    err.close()
-#    print('task finised')
-
 

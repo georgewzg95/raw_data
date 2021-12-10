@@ -55,6 +55,14 @@ def retrieve_utilization(file):
 
   return data_list
 
+def retrieve_power(file):
+  with open(file, 'r') as f:
+    lines = f.readlines()
+
+  for line in lines:
+    if line.find("Total On-Chip Power (W)") >= 0:
+      return line.split('|')[-2].rstrip()
+
 if __name__ == "__main__":
 
   dir_list = []
@@ -62,12 +70,14 @@ if __name__ == "__main__":
   with open(args.input, 'r') as f:
     lines = f.readlines()
   for line in lines:
-    dir_list.append(line.rstrip())
+    dir_list.append(line.split(',')[0].rstrip())
 
   output_file = open(args.output, 'w')
   for directory in dir_list:
-    rpt_filename = directory + os.sep + 'post_route_power.rpt'
-    data_list = retrieve_utilization(rpt_filename)
+    rpt_util_filename = directory + os.sep + 'post_route_util.rpt'
+    rpt_power_filename = directory + os.sep + 'post_route_power.rpt'
+    data_list = retrieve_utilization(rpt_util_filename)
+    data_list.append(retrieve_power(rpt_power_filename))
     output_file.write(directory.rstrip())
     for data in data_list:
       output_file.write(',' + data)
