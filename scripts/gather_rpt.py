@@ -21,7 +21,7 @@ def parse_args():
                      '--feature_file',
                      required = True,
                      type = str,
-                     help = 'the input file containing feature information (generated from collect.py)')
+                     help = 'the input file clean.feat containing feature information (generated from collect.py)')
 
   args = parser.parse_args()
   return args
@@ -66,6 +66,19 @@ def retrieve_power(file):
     if line.find("Total On-Chip Power (W)") >= 0:
       return line.split('|')[-2].rstrip().split('(')[0].rstrip()
 
+def retrieve_feature(file):
+  my_dict = {}
+  with open(file, 'r') as f:
+    feature_lines = f.readlines()
+
+  for line in feature_lines:
+    design_name = line.split(',')[1][:-4]
+    data = line.split(',')[2:]
+    data_str = ','.join(data)
+    my_dict[design_name] = data_str
+
+  return my_dict
+
 if __name__ == "__main__":
 
   rpt_dir_list = []
@@ -91,7 +104,9 @@ if __name__ == "__main__":
     output_file.write('\n')
   output_file.close()
 
-  output_feature_file = open(args.output + '.fet', 'w')
-  with open(args.feature_file, 'r') as f:
-    lines = f.readlines()
+  output_feature_file = open(args.output + '.feat', 'w')
+  feature_dict = retrieve_feature(args.feature_file)
+  for directory in feature_dir_list:
+    output_feature_file.write(directory + ',' + my_dict[directory])
+  output_feature_file.close()
 
