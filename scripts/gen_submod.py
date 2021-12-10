@@ -220,9 +220,9 @@ class gen_submod():
     parser = argparse.ArgumentParser()
     parser.add_argument(  "-d",
                           "--directory",
-                          default = "raw_designs/test_designs",
+                          required = True,
                           type = str,
-                          help = "directory path to pwd to generate designs from")
+                          help = "generate submodules for all the designs under the declared diectory")
     parser.add_argument(  "-y",
                           "--yosys_path",
                           default = "/home/zhigang/FeatEx/",
@@ -233,11 +233,7 @@ class gen_submod():
     parser.set_defaults(second_phase=False)
 
     args = parser.parse_args()
-    if args.directory.startswith("/"):
-      self.start_path = args.directory
-    else:
-      self.start_path = os.getcwd() + os.sep + args.directory
-
+    self.start_path = os.path.abspath(args.directory)
     self.yosys_path = args.yosys_path
     self.second_phase = args.second_phase
 
@@ -300,16 +296,6 @@ class gen_submod():
           last_node.children = []
         last_node.children.append(cur_node)
     fin.close()
-
-    # for i in range(len(self.dict)):
-    #   for modules in self.dict[i]:
-    #     print("the level is", str(i), modules.value, sep = " ")
-    #     print("children is:")
-    #     if modules.children != None:
-    #       for children in modules.children:
-    #         print(children.value, end=",")
-    #     print("")
-
 
 if __name__ == "__main__":
   gen_submod()
