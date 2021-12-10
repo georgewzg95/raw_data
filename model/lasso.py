@@ -102,7 +102,7 @@ if __name__ == "__main__":
                       ])
   model = GridSearchCV(pipeline,
                         {'model__alpha':np.arange(0.1,1,0.1)},
-                        cv = 5, scoring="neg_mean_squared_error",verbose=3)
+                        cv = 5, scoring="neg_mean_squared_error",verbose=3, return_train_score=True)
   model.fit(X_train, y_train)
   print(model.best_params_)
   coefficients = model.best_estimator_.named_steps['model'].coef_
