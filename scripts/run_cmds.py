@@ -80,6 +80,16 @@ def find_topmodule(design):
 
 def parse_args():
   parser = argparse.ArgumentParser()
+  parser.add_argument('-i',
+                     '--input',
+                     required = True,
+                     type = str,
+                     help = 'the clean.feat file generated from collect.py as the guide to generate directories and jobs')
+  parser.add_argument('-d',
+                      '--directory',
+                      required = True,
+                      type = str,
+                      help = 'the directory to generate reports, example: [reports] [reports_2]')
   parser.add_argument('-cd',
                       '--create_directory',
                       dest = 'create_directory',
@@ -127,11 +137,11 @@ if __name__ == "__main__":
   args = parse_args()
 
   if args.create_directory == True:
-    file_list = open('out_data.csv', 'rt')
+    file_list = open(args.input, 'rt')
     list_designs = []
     for line in file_list:
       verilog_filepath = line.split(',')[1][:-4]
-      design = Design(report_dir + verilog_filepath[:-2], root_dir + os.sep + verilog_filepath)
+      design = Design(verilog_filepath.replace('raw_data', args.directory)[:-2], verilog_filepath)
       list_designs.append(design)
     
     remain_jobs = open(report_dir + os.sep + 'remain_jobs.txt', 'w')
