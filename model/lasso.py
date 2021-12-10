@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
   cv_results = model.cv_results_
   mean_train_score = cv_results['mean_train_score']
-  model_alpha = np.arange(0.1, 1, 0,1)
+  model_alpha = np.arange(0.1, 1.0, 0,1)
   mean_test_score = cv_results['mean_test_score']
   print(mean_train_score)
   print(model_alpha)
