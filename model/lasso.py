@@ -43,7 +43,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.linear_model import Lasso
-from sklearn.metrics import mean_squared_error
+import matplotlib.pyplot as plt
 import os
 import argparse
 import pickle
@@ -100,22 +100,21 @@ if __name__ == "__main__":
                       ('scaler',StandardScaler()),
                       ('model',Lasso(tol = 0.001))
                       ])
-  #params = {'n_iter': [30, 50, 100], 'model_alpha': np.arange(0.01, 100 , 0.01)}
-  search = GridSearchCV(pipeline,
-                        {'model__alpha':np.arange(0.001,1,0.001)},
+  model = GridSearchCV(pipeline,
+                        {'model__alpha':np.arange(0.1,1,0.1)},
                         cv = 5, scoring="neg_mean_squared_error",verbose=3)
-  #search = GridSearchCV(pipeline, params, cv = 10)
-  search.fit(X_train, y_train)
-  print(search.best_params_)
-  coefficients = search.best_estimator_.named_steps['model'].coef_
+  model.fit(X_train, y_train)
+  print(model.best_params_)
+  coefficients = model.best_estimator_.named_steps['model'].coef_
   importance = np.abs(coefficients)
   print(importance)
   zero_importance = [num for num in importance if num == 0]
   print(len(zero_importance))
-  print(search.score(X_test, y_test))
-
+  print(model.score(X_test, y_test))
+  print(model.grid_scores_)
+  train_scores = 
   with open(args.save, 'wb') as f:
-    pickle.dump(search, f)
+    pickle.dump(model, f)
 
 
 
