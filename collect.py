@@ -152,7 +152,7 @@ if __name__ == "__main__":
     for ele in cell_name:
       f.write(','+ele)
 
-
+  args = parse_args()
 
   for subdir, dirs, files in os.walk(args.directory):
     for filename in files:
