@@ -93,10 +93,10 @@ if __name__ == "__main__":
                       ('scaler',StandardScaler()),
                       ('model',Lasso())
                       ])
-  params = {'n_iter': [30, 50, 100], 'model_alpha': np.arange(0.01, 100 , 0.01)}
-  # search = GridSearchCV(pipeline,
-  #                       {'model__alpha':np.arange(0.1,100,0.1)},
-  #                       cv = 10, scoring="neg_mean_squared_error",verbose=3)
+  #params = {'n_iter': [30, 50, 100], 'model_alpha': np.arange(0.01, 100 , 0.01)}
+  search = GridSearchCV(pipeline,
+                        {'model__alpha':np.arange(0.01,100,0.01)},
+                        cv = 10, scoring="neg_mean_squared_error",verbose=3)
   search = GridSearchCV(pipeline, params, cv = 10)
   search.fit(X_train, y_train)
   print(search.best_params_)
