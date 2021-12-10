@@ -9,8 +9,8 @@ root_dir = '/misc/scratch/zwei1/raw_data'
 class Design:
   def __init__(self, r_dir, filepath):
     self.name = filepath.split('/')[-1][:-2]
-    self.filepath = filepath
-    self.r_dir = r_dir
+    self.filepath = filepath.rstrip()
+    self.r_dir = r_dir.rstrip()
     self.cmd = 'vivado -mode batch -source ' + r_dir + os.sep + 'run_tcl.tcl'
     self.create_directory()
 
