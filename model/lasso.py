@@ -112,7 +112,7 @@ if __name__ == "__main__":
                         ('model',Lasso(tol = 0.001))
                         ])
     model = GridSearchCV(pipeline,
-                          {'model__alpha':np.arange(0.1,1,0.1)},
+                          {'model__alpha':np.arange(0.01,0.5,0.01)},
                           cv = 5, scoring="neg_mean_squared_error",verbose=3, return_train_score=True)
     model.fit(X_train, y_train)
     print(model.score(X_test, y_test))
