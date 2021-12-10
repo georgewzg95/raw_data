@@ -9,7 +9,7 @@ def parse_args():
                      '--input',
                      required = True,
                      type = str,
-                     help = 'files to collect data from, should be effective_design')
+                     help = 'files to collect data from, should be clean designs')
 
   parser.add_argument('-o',
                      '--output',
