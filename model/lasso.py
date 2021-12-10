@@ -111,7 +111,7 @@ if __name__ == "__main__":
   zero_importance = [num for num in importance if num == 0]
   print(len(zero_importance))
   print(model.score(X_test, y_test))
-  print(model.grid_scores_)
+  print(model.cv_results_ )
   with open(args.save, 'wb') as f:
     pickle.dump(model, f)
 
