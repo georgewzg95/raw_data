@@ -98,11 +98,11 @@ if __name__ == "__main__":
   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)
   pipeline = Pipeline([
                       ('scaler',StandardScaler()),
-                      ('model',Lasso(tol = 0.001))
+                      ('model',Lasso(tol = 0.01))
                       ])
   #params = {'n_iter': [30, 50, 100], 'model_alpha': np.arange(0.01, 100 , 0.01)}
   search = GridSearchCV(pipeline,
-                        {'model__alpha':np.arange(0.01,5,0.01)},
+                        {'model__alpha':np.arange(0.01,1,0.01)},
                         cv = 10, scoring="neg_mean_squared_error",verbose=3)
   #search = GridSearchCV(pipeline, params, cv = 10)
   search.fit(X_train, y_train)
@@ -112,7 +112,7 @@ if __name__ == "__main__":
   print(importance)
   zero_importance = [num for num in importance if num == 0]
   print(len(zero_importance))
-  print(mean_squared_error(y_test, model.predict(X_test)))
+  print(search.score(X_test, y_test))
 
   with open(args.save, 'wb') as f:
     pickle.dump(search, f)
