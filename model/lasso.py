@@ -110,6 +110,7 @@ if __name__ == "__main__":
                           {'model__alpha':np.arange(0.1,1,0.1)},
                           cv = 5, scoring="neg_mean_squared_error",verbose=3, return_train_score=True)
     model.fit(X_train, y_train)
+    print(model.score(X_test, y_test))
   else:
     with open(args.load, 'rb') as f:
       model = pickle.load(f)
@@ -120,7 +121,6 @@ if __name__ == "__main__":
   print(importance)
   zero_importance = [num for num in importance if num == 0]
   print(len(zero_importance))
-  print(model.score(X_test, y_test))
 
   cv_results = model.cv_results_
   mean_train_score = cv_results['mean_train_score']
