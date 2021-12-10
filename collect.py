@@ -154,7 +154,7 @@ if __name__ == "__main__":
 
   args = parse_args()
 
-  for subdir, dirs, files in os.walk(args.directory):
+  for subdir, dirs, files in os.walk(os.path.abspath(args.directory)):
     for filename in files:
       filepath = subdir + os.sep + filename
       if filepath.endswith(".out"):
