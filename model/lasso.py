@@ -189,13 +189,21 @@ if __name__ == "__main__":
     plt.show()
 
   if args.plot_predict == True:
-    a_len = len(y_test)
+    # a_len = len(y_test)
+    # temp_x = np.arange(a_len)
+    # plt.plot(temp_x, y_test, 'x', label = 'true')
+    # y_predict = model.predict(X_test)
+    # plt.plot(temp_x, y_predict, 'x', label = 'predict')
+    # plt.legend()
+    # plt.savefig('predict.png')
+    # plt.show()
+    a_len = len(y_train)
     temp_x = np.arange(a_len)
-    plt.plot(temp_x, y_test, 'x', label = 'true')
-    y_predict = model.predict(X_test)
+    plt.plot(temp_x, y_train, 'x', label = 'true')
+    y_predict = model.predict(X_train)
     plt.plot(temp_x, y_predict, 'x', label = 'predict')
     plt.legend()
-    plt.savefig('predict.png')
+    plt.savefig('predict_on_train_datasets.png')
     plt.show()
 
 
