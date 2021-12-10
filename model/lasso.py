@@ -99,8 +99,8 @@ def retrieve_report(file):
 
 if __name__ == "__main__":
   args = parse_args()
-  alpha = np.arange(0.001, 0.1, 0.001)
   if args.load is None:
+    alpha = np.arange(0.001, 0.1, 0.001)
     feature_file = args.input_feature
     report_file = args.input_rpt
     X = retrieve_feature(feature_file)
