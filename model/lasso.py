@@ -70,6 +70,11 @@ def parse_args():
                       default = None,
                       type = str,
                       help = 'load the model')
+  parser.add_argument('-s_fig',
+                      '--save_figure',
+                      default = None,
+                      type = str,
+                      help = 'save the figure as')
   args = parser.parse_args()
   return args
 
@@ -129,6 +134,12 @@ if __name__ == "__main__":
   print(mean_train_score)
   print(alpha)
   print(mean_test_score)
+
+  plt.plot(alpha, mean_train_score)
+  plt.plot(alpha, mean_test_score)
+  if args.save_figure is not None:
+    plt.savefig(args.save_figure)
+  plt.show()
 
   if args.save is not None:
     with open(args.save, 'wb') as f:
