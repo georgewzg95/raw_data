@@ -174,7 +174,7 @@ if __name__ == "__main__":
       plt.savefig(args.save_figure)
     plt.show()
 
-  if args.plot_his == True:
+  # if args.plot_his == True:
 
   if args.plot_predict = True:
     a_len = len(y_test)
