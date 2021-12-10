@@ -45,6 +45,7 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.linear_model import Lasso
 import os
 import argparse
+import pickle
 
 def parse_args():
   parser = argparse.ArgumentParser()
@@ -58,6 +59,11 @@ def parse_args():
                       required = True,
                       type = str,
                       help = 'the .rpt input file')
+  parser.add_argument('-s',
+                      '--save',
+                      required = True
+                      type = str,
+                      help = 'declare the filename to save the model')
   args = parser.parse_args()
   return args
 
@@ -95,7 +101,7 @@ if __name__ == "__main__":
                       ])
   #params = {'n_iter': [30, 50, 100], 'model_alpha': np.arange(0.01, 100 , 0.01)}
   search = GridSearchCV(pipeline,
-                        {'model__alpha':np.arange(0.01,100,0.01)},
+                        {'model__alpha':np.arange(0.01,10,0.01)},
                         cv = 10, scoring="neg_mean_squared_error",verbose=3)
   #search = GridSearchCV(pipeline, params, cv = 10)
   search.fit(X_train, y_train)
@@ -105,3 +111,9 @@ if __name__ == "__main__":
   print(importance)
   zero_importance = [num for num in importance if num == 0]
   print(len(zero_importance))
+
+  with open(args.save, 'wb') as f:
+    pickle.dump(search, f)
+  
+
+
