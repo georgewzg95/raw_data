@@ -52,12 +52,12 @@ def parse_args():
   parser = argparse.ArgumentParser()
   parser.add_argument('-i_f',
                      '--input_feature',
-                     required = True,
+                     default = None,
                      type = str,
                      help = 'the .feat input file')
   parser.add_argument('-i_r',
                       '--input_rpt',
-                      required = True,
+                      default = None,
                       type = str,
                       help = 'the .rpt input file')
   parser.add_argument('-s',
