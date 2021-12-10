@@ -107,6 +107,7 @@ if __name__ == "__main__":
   output_feature_file = open(args.output + '.feat', 'w')
   feature_dict = retrieve_feature(args.feature_file)
   for directory in feature_dir_list:
+    directory = directory.strip()
     output_feature_file.write(directory + ',' + feature_dict[directory.strip()])
   output_feature_file.close()
 
