@@ -86,5 +86,17 @@ if __name__ == "__main__":
   report_file = args.input_rpt
   X = retrieve_feature(feature_file)
   y = retrieve_report(report_file)
-  print(X.shape)
-  print(y.shape)
+  # print(X.shape)
+  # print(y.shape)
+  X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)
+  pipeline = Pipeline([
+                      ('scaler',StandardScaler()),
+                      ('model',Lasso())
+                      ])
+  search = GridSearchCV(pipeline,
+                        {'model__alpha':np.arange(0.1,10,0.1)},
+                        cv = 5, scoring="neg_mean_squared_error",verbose=3)
+  search.fit(X_train, y_train)
+  print(search.best_params_)
+  coefficients = search.best_estimator_.named_steps['model'].coef_
+  importance = np.abs(coefficients)
