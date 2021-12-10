@@ -75,6 +75,18 @@ def parse_args():
                       default = None,
                       type = str,
                       help = 'save the figure as')
+  parser.add_argument('--plot_lc'
+                      default = False,
+                      action = 'store_true',
+                      help = 'plot the learning curve')
+  parser.add_argument('--plot_his',
+                      default = False,
+                      action = 'store_true',
+                      help = 'plot the histogram of the metrics')
+  parser.add_argument('--plot_predict',
+                      default = False,
+                      action = 'store_true',
+                      help = 'plot the predicted data on test set')
   args = parser.parse_args()
   return args
 
@@ -154,13 +166,24 @@ if __name__ == "__main__":
   #print(mean_train_score)
   #print(alpha)
   #print(mean_test_score)
+  if args.plot_lc == True:
+    plt.plot(alpha, mean_train_score, label='mean_train_score')
+    plt.plot(alpha, mean_test_score, label='mean_test_score')
+    plt.legend()
+    if args.save_figure is not None:
+      plt.savefig(args.save_figure)
+    plt.show()
 
-  plt.plot(alpha, mean_train_score, label='mean_train_score')
-  plt.plot(alpha, mean_test_score, label='mean_test_score')
-  plt.legend()
-  if args.save_figure is not None:
-    plt.savefig(args.save_figure)
-  plt.show()
+  if args.plot_his == True:
+
+  if args.plot_predict = True:
+    a_len = len(y_test)
+    temp_x = np.arange(a_len)
+    plt.plot(a_len, y_test, 'x', label = 'true')
+    y_predict = mode.predict(X_test)
+    plt.plot(a_len, y_predict, 'x', label = 'preddict')
+    pl.legend()
+    plt.show()
 
 
 
