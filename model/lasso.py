@@ -102,7 +102,7 @@ if __name__ == "__main__":
                       ])
   #params = {'n_iter': [30, 50, 100], 'model_alpha': np.arange(0.01, 100 , 0.01)}
   search = GridSearchCV(pipeline,
-                        {'model__alpha':np.arange(0.01,1,0.01)},
+                        {'model__alpha':np.arange(0.001,1,0.001)},
                         cv = 5, scoring="neg_mean_squared_error",verbose=3)
   #search = GridSearchCV(pipeline, params, cv = 10)
   search.fit(X_train, y_train)
