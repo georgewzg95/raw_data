@@ -181,6 +181,7 @@ if __name__ == "__main__":
     q25, q75 = np.percentile(y_train, [25, 75])
     bin_width = 2 * (q75 - q25) * len(y_train) ** (-1/3)
     bins = round((y_train.max() - y_train.min()) / bin_width)
+    print(bins)
     plt.hist(y_train, bins = bins)
     plt.ylabel('power')
     plt.xlabel('data')
