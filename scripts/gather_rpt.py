@@ -72,7 +72,7 @@ def retrieve_feature(file):
     feature_lines = f.readlines()
 
   for line in feature_lines:
-    design_name = line.split(',')[1][:-4]
+    design_name = line.split(',')[1][:-4].strip()
     data = line.split(',')[2:]
     data_str = ','.join(data)
     my_dict[design_name] = data_str
@@ -107,6 +107,6 @@ if __name__ == "__main__":
   output_feature_file = open(args.output + '.feat', 'w')
   feature_dict = retrieve_feature(args.feature_file)
   for directory in feature_dir_list:
-    output_feature_file.write(directory + ',' + feature_dict[directory])
+    output_feature_file.write(directory + ',' + feature_dict[directory.strip()])
   output_feature_file.close()
 
