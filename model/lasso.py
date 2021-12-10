@@ -111,7 +111,15 @@ if __name__ == "__main__":
   zero_importance = [num for num in importance if num == 0]
   print(len(zero_importance))
   print(model.score(X_test, y_test))
-  print(model.cv_results_ )
+
+  cv_results = model.cv_results_
+  mean_train_score = cv_results['mean_train_score']
+  model_alpha = np.arange(0.1, 1, 0,1)
+  mean_test_score = cv_results['mean_test_score']
+  print(mean_train_score)
+  print(model_alpha)
+  print(mean_test_score)
+
   with open(args.save, 'wb') as f:
     pickle.dump(model, f)
 
