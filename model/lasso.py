@@ -43,6 +43,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.linear_model import Lasso
+from sklearn.metrics import mean_squared_error
 import os
 import argparse
 import pickle
@@ -97,7 +98,7 @@ if __name__ == "__main__":
   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)
   pipeline = Pipeline([
                       ('scaler',StandardScaler()),
-                      ('model',Lasso())
+                      ('model',Lasso(tol = 0.001))
                       ])
   #params = {'n_iter': [30, 50, 100], 'model_alpha': np.arange(0.01, 100 , 0.01)}
   search = GridSearchCV(pipeline,
@@ -111,7 +112,8 @@ if __name__ == "__main__":
   print(importance)
   zero_importance = [num for num in importance if num == 0]
   print(len(zero_importance))
-
+  print(mean_squared_error(y_test, model.predict(X_test)))
+  
   with open(args.save, 'wb') as f:
     pickle.dump(search, f)
 
