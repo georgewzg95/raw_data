@@ -61,7 +61,7 @@ def retrieve_power(file):
 
   for line in lines:
     if line.find("Total On-Chip Power (W)") >= 0:
-      return line.split('|')[-2].rstrip()
+      return line.split('|')[-2].rstrip().split('(')[0].rstrip()
 
 if __name__ == "__main__":
 
@@ -80,6 +80,8 @@ if __name__ == "__main__":
     data_list.append(retrieve_power(rpt_power_filename))
     output_file.write(directory.rstrip())
     for data in data_list:
-      output_file.write(',' + data)
+      if data.find('<0.01') >= 0:
+        data = '0'
+      output_file.write(',' + data.rstrip())
     output_file.write('\n')
   output_file.close()
