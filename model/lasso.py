@@ -100,3 +100,4 @@ if __name__ == "__main__":
   print(search.best_params_)
   coefficients = search.best_estimator_.named_steps['model'].coef_
   importance = np.abs(coefficients)
+  print(importance)
