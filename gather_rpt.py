@@ -83,6 +83,6 @@ if __name__ == "__main__":
     for data in data_list:
       if data.find('<0.01') >= 0:
         data = '0'
-      output_file.write(',' + data.rstrip())
+      output_file.write(',' + data.strip())
     output_file.write('\n')
   output_file.close()
