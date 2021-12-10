@@ -112,7 +112,6 @@ if __name__ == "__main__":
   print(len(zero_importance))
   print(model.score(X_test, y_test))
   print(model.grid_scores_)
-  train_scores = 
   with open(args.save, 'wb') as f:
     pickle.dump(model, f)
 
