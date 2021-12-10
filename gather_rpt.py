@@ -3,9 +3,6 @@ import time
 import os
 import argparse
 
-report_dir = '/misc/scratch/zwei1/reports/'
-root_dir = '/misc/scratch/zwei1/raw_data'
-
 def parse_args():
   parser = argparse.ArgumentParser()
   parser.add_argument('-i',
@@ -18,7 +15,13 @@ def parse_args():
                      '--output',
                      required = True,
                      type = str,
-                     help = 'the collected output filename')
+                     help = 'the output filename containing report results (power and utilization)')
+
+  parser.add_argument('-f',
+                     '--feature_file',
+                     required = True,
+                     type = str,
+                     help = 'the input file containing feature information (generated from collect.py)')
 
   args = parser.parse_args()
   return args
@@ -72,8 +75,9 @@ if __name__ == "__main__":
     lines = f.readlines()
   for line in lines:
     rpt_dir_list.append(line.split(',')[0].strip())
+    feature_dir_list.append(line.split(',')[1])
 
-  output_file = open(args.output, 'w')
+  output_file = open(args.output + '.rpt', 'w')
   for directory in rpt_dir_list:
     rpt_util_filename = directory + os.sep + 'post_route_util.rpt'
     rpt_power_filename = directory + os.sep + 'post_route_power.rpt'
@@ -86,3 +90,8 @@ if __name__ == "__main__":
       output_file.write(',' + data.strip())
     output_file.write('\n')
   output_file.close()
+
+  output_feature_file = open(args.output + '.fet', 'w')
+  with open(args.feature_file, 'r') as f:
+    lines = f.readlines()
+

@@ -1,13 +1,13 @@
 import os
 import csv
 
-root_path = os.getcwd()
-#start_path = root_path + "/raw_designs/vtr_designs/verilog/stereovision0_submodules/scl_v_fltr.v.out"
-#start_path = root_path + "/raw_designs/test_designs/"
-#start_path = root_path + "/raw_designs/vtr_designs/verilog/koios"
-start_path = root_path + "/raw_designs/vtr_designs/"
-#start_path = root_path + "/raw_designs/opencores/arithmetic"
-cur_path = root_path
+# root_path = os.getcwd()
+# #start_path = root_path + "/raw_designs/vtr_designs/verilog/stereovision0_submodules/scl_v_fltr.v.out"
+# #start_path = root_path + "/raw_designs/test_designs/"
+# #start_path = root_path + "/raw_designs/vtr_designs/verilog/koios"
+# start_path = root_path + "/raw_designs/vtr_designs/"
+# #start_path = root_path + "/raw_designs/opencores/arithmetic"
+# cur_path = root_path
 
 field_name = ['Name',
               'Number of wires',
@@ -44,8 +44,8 @@ my_dict = {}
 remove = {}
 
 def retrieve_info(filepath):
-  relative_path = os.path.relpath(filepath, cur_path)
-  
+  #relative_path = os.path.relpath(filepath, cur_path)
+  relative_path = filepath
   fin = open(filepath, "rt")
   if relative_path not in my_dict:
     my_dict[relative_path] = []
@@ -120,47 +120,97 @@ def retrieve_info(filepath):
     else:
       my_dict[relative_path].append(cell_dict[cell])
 
-with open('features.csv', 'wt') as f:
-  for ele in field_name:
-    f.write(','+ele)
-  for ele in cell_name:
-    f.write(','+ele)
 
-for subdir, dirs, files in os.walk(start_path):
-  for filename in files:
-    filepath = subdir + os.sep + filename
-    if filepath.endswith(".out"):
-        retrieve_info(filepath)
-#retrieve_info(start_path)
+def parse_args():
+  parser = argparse.ArgumentParser()
+  parser.add_argument('-d',
+                     '--directory',
+                     required = True,
+                     type = str,
+                     help = 'the directory to collect all .out file from')
 
-with open('effective_data.csv', 'w') as csv_file:
-  csv_writer = csv.writer(csv_file, delimiter=',')
-  num = 0
-  for key in sorted(my_dict):
-    if key in remove:
-      continue
+  parser.add_argument('-o',
+                     '--output',
+                     required = True,
+                     type = str,
+                     help = 'the output file consisting all features')
 
-    row = my_dict[key]
-    if row == []:
-      remove[key] = []
-      continue
-    dump_data = True
-    for e in row:
-      if e != '0':
-        dump_data = False
+  parser.add_argument('-c',
+                     '--clean_file',
+                     required = True,
+                     type = str,
+                     help = 'the output file consisting features after removing redundent designs')
 
-    if dump_data:
-      remove[key] = row
-    else:
+  args = parser.parse_args()
+  return args
+
+if __name__ == "__main__":
+
+  with open('features.csv', 'wt') as f:
+    for ele in field_name:
+      f.write(','+ele)
+    for ele in cell_name:
+      f.write(','+ele)
+
+
+
+  for subdir, dirs, files in os.walk(args.directory):
+    for filename in files:
+      filepath = subdir + os.sep + filename
+      if filepath.endswith(".out"):
+          retrieve_info(filepath)
+
+  with open(args.output, 'w') as csv_file:
+    csv_writer = csv.writer(csv_file, delimiter=',')
+    num = 0
+    for key in sorted(my_dict):
+      if key in remove:
+        continue
+
+      row = my_dict[key]
+      if row == []:
+        remove[key] = []
+        continue
+      dump_data = True
+      for e in row:
+        if e != '0':
+          dump_data = False
+
+      if dump_data:
+        remove[key] = row
+      else:
+        row.insert(0, key)
+        row.insert(0, num)
+        csv_writer.writerow(row)
+        num = num + 1
+    print("effecitive data points: {num}".format(num = num))
+
+  with open("removed_data.csv", 'w') as csv_file:
+    csv_writer = csv.writer(csv_file, delimiter = ',')
+    for key in sorted(remove):
+      row = remove[key]
       row.insert(0, key)
-      row.insert(0, num)
       csv_writer.writerow(row)
-      num = num + 1
-  print("effecitive data points: {num}".format(num = num))
 
-with open('remove_data.csv', 'w') as csv_file:
-  csv_writer = csv.writer(csv_file, delimiter = ',')
-  for key in sorted(remove):
-    row = remove[key]
-    row.insert(0, key)
-    csv_writer.writerow(row)
+  fin = open(args.output, "rt")
+  fout = open(args.clean_file, "wt")
+  removed_file = open("removed_data.csv", "a+")
+  my_list = []
+  for line in fin:
+    data = line.split(',')
+    # if len(my_list) == 0:
+    #   fout.write(line)
+    #   my_list.append(data[2:])
+    #   continue
+
+    if data[2:] in my_list:
+      removed_file.write(line)
+      continue
+    else:
+      my_list.append(data[2:])
+      fout.write(line)
+      continue
+
+  fin.close()
+  fout.close()
+  removed_file.close()
