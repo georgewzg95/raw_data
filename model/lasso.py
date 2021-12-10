@@ -108,37 +108,49 @@ if __name__ == "__main__":
     # print(X.shape)
     # print(y.shape)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)
+    with open('train.npy', 'wb') as f:
+      np.save(f, X_train)
+      np.save(f, y_train)
+    with open('test.npy', 'wb') as f:
+      np.save(f, X_test)
+      np.save(f, y_test)
+      np.save(f, alpha)
+
     pipeline = Pipeline([
                         ('scaler',StandardScaler()),
-                        ('model',Lasso(tol = 0.001, max_iter = 1000000))
+                        ('model',Lasso(tol = 0.001, max_iter = 1000))
                         ])
     model = GridSearchCV(pipeline,
                           {'model__alpha':alpha},
                           cv = 5, scoring="neg_mean_squared_error",verbose=3, return_train_score=True)
     model.fit(X_train, y_train)
-    print(model.score(X_test, y_test))
   else:
     with open(args.load, 'rb') as f:
       model = pickle.load(f)
+    with open('test.npy', 'rb') as f:
+      X_test = np.load(f)
+      y_test = np.load(f)
+      alpha = np.load(f)
 
   if args.save is not None:
     with open(args.save, 'wb') as f:
       pickle.dump(model, f)
 
-  print(model.best_params_)
+  print('negative mean square error: ' + model.score(X_test, y_test))
+  print('params are: ' + model.best_params_)
   coefficients = model.best_estimator_.named_steps['model'].coef_
   importance = np.abs(coefficients)
-  print(importance)
+  print('importance of coefficients: ' + importance)
   zero_importance = [num for num in importance if num == 0]
-  print(len(zero_importance))
+  #print(len(zero_importance))
 
   cv_results = model.cv_results_
   mean_train_score = cv_results['mean_train_score']
   
   mean_test_score = cv_results['mean_test_score']
-  print(mean_train_score)
-  print(alpha)
-  print(mean_test_score)
+  #print(mean_train_score)
+  #print(alpha)
+  #print(mean_test_score)
 
   plt.plot(alpha, mean_train_score, label='mean_train_score')
   plt.plot(alpha, mean_test_score, label='mean_test_score')
