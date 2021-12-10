@@ -120,6 +120,10 @@ if __name__ == "__main__":
     with open(args.load, 'rb') as f:
       model = pickle.load(f)
 
+  if args.save is not None:
+    with open(args.save, 'wb') as f:
+      pickle.dump(model, f)
+
   print(model.best_params_)
   coefficients = model.best_estimator_.named_steps['model'].coef_
   importance = np.abs(coefficients)
@@ -142,9 +146,6 @@ if __name__ == "__main__":
     plt.savefig(args.save_figure)
   plt.show()
 
-  if args.save is not None:
-    with open(args.save, 'wb') as f:
-      pickle.dump(model, f)
 
 
 
