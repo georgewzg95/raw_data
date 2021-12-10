@@ -62,9 +62,14 @@ def parse_args():
                       help = 'the .rpt input file')
   parser.add_argument('-s',
                       '--save',
-                      required = True,
+                      default = None,
                       type = str,
                       help = 'declare the filename to save the model')
+  parser.add_argument('-l',
+                      '--load',
+                      default = None,
+                      type = str,
+                      help = 'load the model')
   args = parser.parse_args()
   return args
 
@@ -89,21 +94,26 @@ def retrieve_report(file):
 
 if __name__ == "__main__":
   args = parse_args()
-  feature_file = args.input_feature
-  report_file = args.input_rpt
-  X = retrieve_feature(feature_file)
-  y = retrieve_report(report_file)
-  # print(X.shape)
-  # print(y.shape)
-  X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)
-  pipeline = Pipeline([
-                      ('scaler',StandardScaler()),
-                      ('model',Lasso(tol = 0.001))
-                      ])
-  model = GridSearchCV(pipeline,
-                        {'model__alpha':np.arange(0.1,1,0.1)},
-                        cv = 5, scoring="neg_mean_squared_error",verbose=3, return_train_score=True)
-  model.fit(X_train, y_train)
+  if args.load is None:
+    feature_file = args.input_feature
+    report_file = args.input_rpt
+    X = retrieve_feature(feature_file)
+    y = retrieve_report(report_file)
+    # print(X.shape)
+    # print(y.shape)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)
+    pipeline = Pipeline([
+                        ('scaler',StandardScaler()),
+                        ('model',Lasso(tol = 0.001))
+                        ])
+    model = GridSearchCV(pipeline,
+                          {'model__alpha':np.arange(0.1,1,0.1)},
+                          cv = 5, scoring="neg_mean_squared_error",verbose=3, return_train_score=True)
+    model.fit(X_train, y_train)
+  else:
+    with open(args.load, 'rb') as f:
+      model = pickle.load(f)
+
   print(model.best_params_)
   coefficients = model.best_estimator_.named_steps['model'].coef_
   importance = np.abs(coefficients)
@@ -120,8 +130,9 @@ if __name__ == "__main__":
   print(alpha)
   print(mean_test_score)
 
-  with open(args.save, 'wb') as f:
-    pickle.dump(model, f)
+  if args.save is not None:
+    with open(args.save, 'wb') as f:
+      pickle.dump(model, f)
 
 
 
