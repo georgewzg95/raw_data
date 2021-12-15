@@ -53,7 +53,7 @@ def remove_design(design):
       f.write(line)
 
   with open(report_dir + os.sep + 'complete_jobs.txt', 'a+') as f:
-    f.write(design.r_dir + ',' + design.filepath)
+    f.write(design.r_dir + ',' + design.filepath + '\n');
 
 def find_topmodule(design):
   with open(design.filepath.rstrip() + '.out', 'r') as f:
