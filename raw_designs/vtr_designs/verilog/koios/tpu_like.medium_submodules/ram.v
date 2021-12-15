@@ -69,27 +69,19 @@ input clk;
 
 `ifdef SIMULATION
 
-reg [`DWIDTH-1:0] ram[((1<<`AWIDTH)-1):0];
+reg [`DESIGN_SIZE*`DWIDTH-1:0] ram[((1<<`AWIDTH)-1):0];
 reg [31:0] i;
 
 always @(posedge clk)  
 begin 
-    for (i = 0; i < `DESIGN_SIZE; i=i+1) begin
-        if (we0[i]) ram[addr0+i] <= d0[i*`DWIDTH +: `DWIDTH]; 
-    end    
-    for (i = 0; i < `DESIGN_SIZE; i=i+1) begin
-        q0[i*`DWIDTH +: `DWIDTH] <= ram[addr0+i];
-    end    
+    if (we0) ram[addr0] <= d0;
+    q0 <= ram[addr0];
 end
 
 always @(posedge clk)  
 begin 
-    for (i = 0; i < `DESIGN_SIZE; i=i+1) begin
-        if (we1[i]) ram[addr0+i] <= d1[i*`DWIDTH +: `DWIDTH]; 
-    end    
-    for (i = 0; i < `DESIGN_SIZE; i=i+1) begin
-        q1[i*`DWIDTH +: `DWIDTH] <= ram[addr1+i];
-    end    
+    if (we1) ram[addr0] <= d1; 
+    q1 <= ram[addr1];
 end
 
 `else
