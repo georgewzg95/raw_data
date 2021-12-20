@@ -74,19 +74,23 @@ def parse_args():
                       '--save_figure',
                       default = None,
                       type = str,
-                      help = 'save the figure as')
-  parser.add_argument('--plot_lc',
+                      help = 'the direcory to save the figure as')
+  parser.add_argument('--plot',
                       default = False,
                       action = 'store_true',
                       help = 'plot the learning curve')
-  parser.add_argument('--plot_his',
-                      default = False,
-                      action = 'store_true',
-                      help = 'plot the histogram of the metrics')
-  parser.add_argument('--plot_predict',
-                      default = False,
-                      action = 'store_true',
-                      help = 'plot the predicted data on test set')
+  # parser.add_argument('--plot_lc',
+  #                     default = False,
+  #                     action = 'store_true',
+  #                     help = 'plot the learning curve')
+  # parser.add_argument('--plot_his',
+  #                     default = False,
+  #                     action = 'store_true',
+  #                     help = 'plot the histogram of the metrics')
+  # parser.add_argument('--plot_predict',
+  #                     default = False,
+  #                     action = 'store_true',
+  #                     help = 'plot the predicted data on test set')
   args = parser.parse_args()
   return args
 
@@ -166,45 +170,67 @@ if __name__ == "__main__":
   mean_train_score = cv_results['mean_train_score']
   
   mean_test_score = cv_results['mean_test_score']
-  #print(mean_train_score)
-  #print(alpha)
-  #print(mean_test_score)
-  if args.plot_lc == True:
+
+  if args.plot == True:
+
+    fig_dir = ""
+    if args.save_figure is not None:
+      fig_dir = args.save_figure
+
+    plt.figure(0)
     plt.plot(alpha, mean_train_score, label='mean_train_score')
     plt.plot(alpha, mean_test_score, label='mean_test_score')
     plt.legend()
-    if args.save_figure is not None:
-      plt.savefig(args.save_figure)
-    plt.show()
+    plt.savefig(fig_dir + os.sep + "lc.png")
 
-  if args.plot_his == True:
+    plt.figure(1)
     q25, q75 = np.percentile(y_train, [25, 75])
     bin_width = 2 * (q75 - q25) * len(y_train) ** (-1/3)
     bins = round((y_train.max() - y_train.min()) / bin_width)
-    print(bins)
     plt.hist(y_train, bins = 30, density = True)
     plt.ylabel('power')
     plt.xlabel('data')
-    plt.savefig('train_power_density.png')
-    plt.show()
+    plt.savefig(fig_dir + os.sep + 'train_power_density.png')
 
-  if args.plot_predict == True:
-    # a_len = len(y_test)
-    # temp_x = np.arange(a_len)
-    # plt.plot(temp_x, y_test, 'x', label = 'true')
-    # y_predict = model.predict(X_test)
-    # plt.plot(temp_x, y_predict, 'x', label = 'predict')
-    # plt.legend()
-    # plt.savefig('predict.png')
-    # plt.show()
+    plt.figure(2)
+    a_len = len(y_test)
+    temp_x = np.arange(a_len)
+    plt.plot(temp_x, y_test, 'x', label = 'true')
+    y_predict = model.predict(X_test)
+    plt.plot(temp_x, y_predict, 'x', label = 'predict')
+    plt.legend()
+    plt.savefig(fig_dir + os.sep + 'scatter_predict_on_predict_datasets.png')
+
+    plt.figure(3)
     a_len = len(y_train)
     temp_x = np.arange(a_len)
     plt.plot(temp_x, y_train, 'x', label = 'true')
     y_predict = model.predict(X_train)
     plt.plot(temp_x, y_predict, 'x', label = 'predict')
     plt.legend()
-    plt.savefig('predict_on_train_datasets.png')
-    plt.show()
+    plt.savefig(fig_dir + os.sep + 'scatter_predict_on_train_datasets.png')
+
+    plt.figure(4)
+    x = np.linspace(0, 2000, 10000)
+    y = x
+    plt.pllot(x, y, '-r', label='y=x')
+    true_y = y_train
+    predict_y = model.predict(X_train)
+    plt.plot(true_y, predict_y, 'x', label='train data')
+    true_y = y_test
+    predict_y = model.predict(X_test)
+    plt.plot(true_y, predict_y, 'x', label='test data')
+    plt.xlable('true value')
+    plt.ylabel('predicted value')
+    plt.legend()
+    plt.savefig(fig_dir + os.sep + 'true_predict.png')
+
+
+
+
+
+
+
 
 
 
