@@ -226,7 +226,9 @@ if __name__ == "__main__":
     plt.savefig(fig_dir + os.sep + 'true_predict.png')
 
 
-
+plt.figure(5)
+n_test, = y_test.shape
+print(n_test)
 
 
 
