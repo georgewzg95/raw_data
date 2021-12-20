@@ -78,7 +78,7 @@ def parse_args():
   parser.add_argument('--plot',
                       default = False,
                       action = 'store_true',
-                      help = 'plot the learning curve')
+                      help = 'to plot the figure')
   # parser.add_argument('--plot_lc',
   #                     default = False,
   #                     action = 'store_true',
@@ -213,7 +213,7 @@ if __name__ == "__main__":
     plt.figure(4)
     x = np.linspace(0, 2000, 10000)
     y = x
-    plt.pllot(x, y, '-r', label='y=x')
+    plt.plot(x, y, '-r', label='y=x')
     true_y = y_train
     predict_y = model.predict(X_train)
     plt.plot(true_y, predict_y, 'x', label='train data')
