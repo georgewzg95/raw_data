@@ -220,7 +220,7 @@ if __name__ == "__main__":
     true_y = y_test
     predict_y = model.predict(X_test)
     plt.plot(true_y, predict_y, 'x', label='test data')
-    plt.xlable('true value')
+    plt.xlabel('true value')
     plt.ylabel('predicted value')
     plt.legend()
     plt.savefig(fig_dir + os.sep + 'true_predict.png')
