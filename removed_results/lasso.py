@@ -189,14 +189,14 @@ if __name__ == "__main__":
     plt.show()
 
   if args.plot_predict == True:
-    #a_len = len(y_test)
-    #temp_x = np.arange(a_len)
-    #plt.plot(temp_x, y_test, 'x', label = 'true')
-    #y_predict = model.predict(X_test)
-    #plt.plot(temp_x, y_predict, 'x', label = 'predict')
-    #plt.legend()
-    #plt.savefig('predict.png')
-    #plt.show()
+    a_len = len(y_test)
+    temp_x = np.arange(a_len)
+    plt.plot(temp_x, y_test, 'x', label = 'true')
+    y_predict = model.predict(X_test)
+    plt.plot(temp_x, y_predict, 'x', label = 'predict')
+    plt.legend()
+    plt.savefig('predict.png')
+    plt.show()
     #a_len = len(y_train)
     #temp_x = np.arange(a_len)
     #plt.plot(temp_x, y_train, 'x', label = 'true')
@@ -206,17 +206,6 @@ if __name__ == "__main__":
     #plt.savefig('predict_on_train_datasets.png')
     #plt.show()
 
-    x = np.linspace(0, 2000, 10000)
-    y = 2*x
-    plt.plot(x, y, '-r', label='y=x')
-    
-    ####plot for the training datasets####
-    true_y = y_train
-    predict_y = model.predict(X_train)
-    plt.plot(true_y, predict_y, 'x', label = 'train data')
-    true_y = y_test
-    predict_y = model.predict(X_test)
-    plt.plot(true_y, predict_y, 'x', label = 'test data')
-    plt.legend()
-    plt.savefig('prediction_train_test.png')
-    plt.show()
+
+
+
