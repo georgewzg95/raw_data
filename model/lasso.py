@@ -265,8 +265,16 @@ if __name__ == "__main__":
 
     plt.figure(5)
     n_test, = y_test.shape
+    n_train, = y_train.shape
     print(n_test)
+    err_test = np.zeros(n_test)
+    err_train = np.zeros(n_train)
 
+    true_y = y_test
+    predict_y = model.predict(X_test)
+    for i in range(n_test):
+      err_test[i] = abs(true_y[i] - predict_y[i])/abs(true_y[i])
+    print(err_test)
 
 
 
