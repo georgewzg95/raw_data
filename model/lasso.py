@@ -146,6 +146,8 @@ if __name__ == "__main__":
     y_train = np.delete(y_train, train_removed)
     X_test = np.delete(X_test, test_removed)
     y_test = np.delete(y_test, test_removed)
+    print("X_train shape: ", X_train.shape, " y_train shape: ", y_train.shape)
+    print("X_test shape: ", X_test.shape, " y_test shape: ", y_test.shape)
 
     with open('train.npy', 'wb') as f:
       np.save(f, X_train)
@@ -215,7 +217,7 @@ if __name__ == "__main__":
         unselected_feat.append(f_list[index])
     print("the unselected features are: ", unselected_feat)
 
-  fig_dir = ""
+  fig_dir = "."
   if args.save_figure is not None:
     fig_dir = args.save_figure
 
