@@ -60,6 +60,11 @@ def parse_args():
                       default = None,
                       type = str,
                       help = 'the .rpt input file')
+  parser.add_argument('-f_l',
+                      '--feature_list',
+                      default = None,
+                      type = str,
+                      help = 'the .rpt input file')
   parser.add_argument('-s',
                       '--save',
                       default = None,
@@ -113,6 +118,17 @@ def retrieve_report(file):
     data_list.append(float(line.split(',')[-1]))
   return np.array(data_list)
 
+def retrive_list(file):
+  f_list = []
+  with open(file, "r") as f:
+    lines = f.readlines()
+
+  for line in lines:
+    temp = line.split(',')
+    f_list = f_list + temp
+
+  return f_list[1:]
+
 if __name__ == "__main__":
   args = parse_args()
   if args.load is None:
@@ -155,12 +171,6 @@ if __name__ == "__main__":
     with open(args.save, 'wb') as f:
       pickle.dump(model, f)
 
-  #print out the feature informatino
-  if args.input_feature is not None:
-    feature_file = args.input_feature
-    features = retrieve_feature(feature_file)
-    print("the number of features is: ", features.shape)
-
   print('negative mean square error: ')
   print(model.score(X_test, y_test))
   print('params are: ')
@@ -177,11 +187,21 @@ if __name__ == "__main__":
   print("the number of coefficients is: ", len(importance))
 
 
-
   cv_results = model.cv_results_
   mean_train_score = cv_results['mean_train_score']
-  
   mean_test_score = cv_results['mean_test_score']
+
+  #print out the feature informatino
+  if args.input_feature is not None:
+    feature_file = args.input_feature
+    features = retrieve_feature(feature_file)
+    print("the number of features is: ", features.shape)
+
+  if args.feature_list is not None:
+    file = args.feature_list
+    f_list = retrieve_list(file)
+    print("the features are: ", f_list)
+    print("the length of features is: ", len(f_list))
 
   if args.plot == True:
 
