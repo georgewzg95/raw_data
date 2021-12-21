@@ -155,6 +155,12 @@ if __name__ == "__main__":
     with open(args.save, 'wb') as f:
       pickle.dump(model, f)
 
+  #print out the feature informatino
+  if args.input_feature is not None:
+    feature_file = args.input_feature
+    features = retrieve_feature(feature_file)
+    print("the number of features is: ", features.shape)
+
   print('negative mean square error: ')
   print(model.score(X_test, y_test))
   print('params are: ')
