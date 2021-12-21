@@ -145,9 +145,9 @@ if __name__ == "__main__":
 
     train_removed = np.argwhere(y_train > 100)
     test_removed = np.argwhere(y_test > 100)
-    X_train = np.delete(X_train, train_removed)
+    X_train = np.delete(X_train, train_removed, axis=0)
     y_train = np.delete(y_train, train_removed)
-    X_test = np.delete(X_test, test_removed)
+    X_test = np.delete(X_test, test_removed, axis=0)
     y_test = np.delete(y_test, test_removed)
     print("X_train shape: ", X_train.shape, " y_train shape: ", y_train.shape)
     print("X_test shape: ", X_test.shape, " y_test shape: ", y_test.shape)
