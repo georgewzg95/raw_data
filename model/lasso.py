@@ -140,6 +140,13 @@ if __name__ == "__main__":
     # print(X.shape)
     # print(y.shape)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3333, random_state=42)
+    train_removed = np.argwhere(y_train > 100)
+    test_removed = np.argwhere(y_test > 100)
+    X_train = np.delete(X_train, train_removed)
+    y_train = np.delete(y_train, train_removed)
+    X_test = np.delete(X_test, test_removed)
+    y_test = np.delete(y_test, test_removed)
+
     with open('train.npy', 'wb') as f:
       np.save(f, X_train)
       np.save(f, y_train)
@@ -262,41 +269,40 @@ if __name__ == "__main__":
     plt.savefig(fig_dir + os.sep + 'true_predict.png')
 
     #plt.figure(5)
-n_test, = y_test.shape
-n_train, = y_train.shape
-print(n_test)
-err_test = np.zeros(n_test)
-err_train = np.zeros(n_train)
-true_y = y_test
-predict_y = model.predict(X_test)
-for i in range(n_test):
-  err_test[i] = abs(true_y[i] - predict_y[i])/abs(true_y[i])
-err_test_mean = np.mean(err_test)
-print('validation set error mean: ', err_test_mean)
+    n_test, = y_test.shape
+    n_train, = y_train.shape
+    print(n_test)
+    err_test = np.zeros(n_test)
+    err_train = np.zeros(n_train)
+    true_y = y_test
+    predict_y = model.predict(X_test)
+    for i in range(n_test):
+      err_test[i] = abs(true_y[i] - predict_y[i])/abs(true_y[i])
+    err_test_mean = np.mean(err_test)
+    print('validation set error mean: ', err_test_mean)
 
-true_y = y_train
-predict_y = model.predict(X_train)
-for i in range(n_train):
-  err_train[i] = abs(true_y[i] - predict_y[i])/abs(true_y[i])
-err_train_mean = np.mean(err_train)
-print('train set error mean: ', err_train_mean)
-
-plt.figure(5)
-plt.plot(err_test, 'bo', markersize=0.5, label='error test')
-plt.plot(err_train, 'r^', markersize=0.5, label='error train')
-plt.legend()
-plt.xlabel('sample index')
-plt.ylabel('relative error')
-plt.title('relative error in value')
-plt.grid(True)
-plt.savefig(fig_dir + os.sep + 'relative_error.png')
-# error histogram
-plt.figure(6)
-plt.hist(err_test, bins=50, facecolor='b', alpha=0.75, label='err test')
-plt.hist(err_train, bins=50, facecolor='g', alpha=0.75, label='err train')
-plt.legend()
-plt.xlabel('sample error value')
-plt.ylabel('frequency')
-plt.title('Histogram of error')
-plt.grid(True)
-plt.savefig(fig_dir + os.sep + 'his_error.png')
+    true_y = y_train
+    predict_y = model.predict(X_train)
+    for i in range(n_train):
+      err_train[i] = abs(true_y[i] - predict_y[i])/abs(true_y[i])
+    err_train_mean = np.mean(err_train)
+    print('train set error mean: ', err_train_mean)
+    plt.figure(5)
+    plt.plot(err_test, 'bo', markersize=0.5, label='error test')
+    plt.plot(err_train, 'r^', markersize=0.5, label='error train')
+    plt.legend()
+    plt.xlabel('sample index')
+    plt.ylabel('relative error')
+    plt.title('relative error in value')
+    plt.grid(True)
+    plt.savefig(fig_dir + os.sep + 'relative_error.png')
+    # error histogram
+    plt.figure(6)
+    plt.hist(err_test, bins=50, facecolor='b', alpha=0.75, label='err test')
+    plt.hist(err_train, bins=50, facecolor='g', alpha=0.75, label='err train')
+    plt.legend()
+    plt.xlabel('sample error value')
+    plt.ylabel('frequency')
+    plt.title('Histogram of error')
+    plt.grid(True)
+    plt.savefig(fig_dir + os.sep + 'his_error.png')
