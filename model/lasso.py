@@ -118,7 +118,7 @@ def retrieve_report(file):
     data_list.append(float(line.split(',')[-1]))
   return np.array(data_list)
 
-def retrive_list(file):
+def retrieve_list(file):
   f_list = []
   with open(file, "r") as f:
     lines = f.readlines()
