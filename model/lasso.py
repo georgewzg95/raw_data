@@ -164,11 +164,11 @@ if __name__ == "__main__":
   print('importance of coefficients: ')
   print(importance)
   zero_importance = [num for num in importance if num == 0]
-  
+
   print('coefficients:')
   print(coefficients)
-  print("the number of zero coefficients is: " + len(zero_importance))
-  print("the number of coefficients is: " + len(importance))
+  print("the number of zero coefficients is: ", len(zero_importance))
+  print("the number of coefficients is: ", len(importance))
 
 
 
