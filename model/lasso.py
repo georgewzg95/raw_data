@@ -282,14 +282,14 @@ if __name__ == "__main__":
     true_y = y_test
     predict_y = model.predict(X_test)
     for i in range(n_test):
-      err_test[i] = 100*abs(true_y[i] - predict_y[i])/abs(true_y[i])
+      err_test[i] = abs(true_y[i] - predict_y[i])/abs(true_y[i])
     err_test_mean = np.mean(err_test)
     print('validation set error mean: ', err_test_mean)
 
     true_y = y_train
     predict_y = model.predict(X_train)
     for i in range(n_train):
-      err_train[i] = 100*abs(true_y[i] - predict_y[i])/abs(true_y[i])
+      err_train[i] = abs(true_y[i] - predict_y[i])/abs(true_y[i])
     err_train_mean = np.mean(err_train)
     print('train set error mean: ', err_train_mean)
     plt.figure(5)
