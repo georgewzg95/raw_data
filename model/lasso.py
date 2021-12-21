@@ -208,13 +208,11 @@ if __name__ == "__main__":
         unselected_feat.append(f_list[index])
     print("the unselected features are: ", unselected_feat)
 
+  fig_dir = ""
+  if args.save_figure is not None:
+    fig_dir = args.save_figure
 
   if args.plot == True:
-
-    fig_dir = ""
-    if args.save_figure is not None:
-      fig_dir = args.save_figure
-
     plt.figure(0)
     plt.plot(alpha, mean_train_score, label='mean_train_score')
     plt.plot(alpha, mean_test_score, label='mean_test_score')
