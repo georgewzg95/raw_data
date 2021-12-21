@@ -164,7 +164,13 @@ if __name__ == "__main__":
   print('importance of coefficients: ')
   print(importance)
   zero_importance = [num for num in importance if num == 0]
-  #print(len(zero_importance))
+  
+  print('coefficients:')
+  print(coefficients)
+  print("the number of zero coefficients is: " + len(zero_importance))
+  print("the number of coefficients is: " + len(importance))
+
+
 
   cv_results = model.cv_results_
   mean_train_score = cv_results['mean_train_score']
