@@ -203,7 +203,7 @@ if __name__ == "__main__":
     print("the features are: ", f_list)
     print("the number of features is: ", len(f_list))
     unselected_feat = []
-    for num, index in enumerate(importance):
+    for index, num in enumerate(importance):
       if num == 0:
         unselected_feat.append(f_list[index])
     print("the unselected features are: ", unselected_feat)
