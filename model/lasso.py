@@ -140,6 +140,9 @@ if __name__ == "__main__":
     # print(X.shape)
     # print(y.shape)
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3333, random_state=42)
+    print("X_train shape: ", X_train.shape, " y_train shape: ", y_train.shape)
+    print("X_test shape: ", X_test.shape, " y_test shape: ", y_test.shape)
+
     train_removed = np.argwhere(y_train > 100)
     test_removed = np.argwhere(y_test > 100)
     X_train = np.delete(X_train, train_removed)
