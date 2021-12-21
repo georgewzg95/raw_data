@@ -263,12 +263,12 @@ if __name__ == "__main__":
     plt.legend()
     plt.savefig(fig_dir + os.sep + 'true_predict.png')
 
-    plt.figure(5)
-    n_test, = y_test.shape
-    n_train, = y_train.shape
-    print(n_test)
-    err_test = np.zeros(n_test)
-    err_train = np.zeros(n_train)
+    #plt.figure(5)
+n_test, = y_test.shape
+n_train, = y_train.shape
+print(n_test)
+err_test = np.zeros(n_test)
+err_train = np.zeros(n_train)
 
 true_y = y_test
 predict_y = model.predict(X_test)
