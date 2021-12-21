@@ -127,7 +127,7 @@ def retrieve_list(file):
     temp = line.split(',')
     f_list = f_list + temp
 
-  return f_list[1:]
+  return f_list[2:]
 
 if __name__ == "__main__":
   args = parse_args()
@@ -201,7 +201,13 @@ if __name__ == "__main__":
     file = args.feature_list
     f_list = retrieve_list(file)
     print("the features are: ", f_list)
-    print("the length of features is: ", len(f_list))
+    print("the number of features is: ", len(f_list))
+    unselected_feat = []
+    for num, index in enumerate(importance):
+      if num == 0:
+        unselected_feat.append(f_list[index])
+    print("the unselected features are: ", unselected_feat)
+
 
   if args.plot == True:
 
