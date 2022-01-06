@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_mul_10s_9ns_16_1_1.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_mul_10s_9ns_16_1_1.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_mul_10s_9ns_16_1_1.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_mul_10s_9ns_16_1_1.v' to AST representation.
 Generating RTLIL representation for module `\td_fused_top_mul_10s_9ns_16_1_1'.
 Generating RTLIL representation for module `\td_fused_top_mul_10s_9ns_16_1_1_Multiplier_0'.
 Successfully finished Verilog frontend.
@@ -167,7 +167,6 @@ Optimizing module td_fused_top_mul_10s_9ns_16_1_1_Multiplier_0.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     td_fused_top_mul_10s_9ns_16_1_1_Multiplier_0      1
 
 === td_fused_top_mul_10s_9ns_16_1_1_Multiplier_0 ===
 
@@ -179,24 +178,23 @@ Optimizing module td_fused_top_mul_10s_9ns_16_1_1_Multiplier_0.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $mul                            1
+     $mul                           16
 
 === design hierarchy ===
 
    td_fused_top_mul_10s_9ns_16_1_1      1
-     td_fused_top_mul_10s_9ns_16_1_1_Multiplier_0      1
+     td_fused_top_mul_10s_9ns_16_1_1_Multiplier_0      0
 
-   Number of wires:                  7
-   Number of wire bits:             53
-   Number of public wires:           6
-   Number of public wire bits:      38
+   Number of wires:                  4
+   Number of wire bits:             18
+   Number of public wires:           3
+   Number of public wire bits:       3
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $mul                            1
 
 Warnings: 3 unique messages, 3 total
-End of script. Logfile hash: 23703129cc, CPU: user 0.02s system 0.00s, MEM: 11.16 MB peak
+End of script. Logfile hash: e66805c3d4, CPU: user 0.01s system 0.01s, MEM: 11.34 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 66% 2x opt_clean (0 sec), 33% 4x opt_expr (0 sec), ...
+Time spent: 49% 4x opt_expr (0 sec), 24% 3x opt_merge (0 sec), ...

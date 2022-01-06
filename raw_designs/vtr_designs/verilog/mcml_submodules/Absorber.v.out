@@ -11,19 +11,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                103
-     $add                            3
+     $add                          144
      $dff                            1
-     $eq                             9
-     $ge                             2
+     $eq                           143
+     $ge                            64
      $logic_and                      2
-     $mul                            3
-     $mux                           18
-     $pmux                           1
-     $sdffe                          7
-     $sub                            1
-     PhotonBlock1                   18
-     PhotonBlock2                   37
-     Sqrt_64b                        1
+     $mul                          192
+     $mux                          625
+     $pmux                          32
+     $sdffe                        352
+     $sub                           32
 
 === PhotonBlock1 ===
 
@@ -35,7 +32,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $sdffe                          3
+     $sdffe                         96
 
 === PhotonBlock2 ===
 
@@ -47,7 +44,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $sdffe                          3
+     $sdffe                         34
 
 === Sqrt_64b ===
 
@@ -59,45 +56,40 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                443
-     $add                           62
+     $add                         3968
      $and                           61
-     $dff                           28
-     $ge                            32
-     $logic_not                     32
-     $mux                           95
+     $dff                         1339
+     $ge                          2048
+     $logic_not                   2048
+     $mux                         5056
      $not                           31
      $or                            32
      $sdff                           9
-     $sub                           61
+     $sub                         3904
 
 === design hierarchy ===
 
    Absorber                          1
-     PhotonBlock1                   18
-     PhotonBlock2                   37
-     Sqrt_64b                        1
+     PhotonBlock1                    0
+     PhotonBlock2                    0
+     Sqrt_64b                        0
 
-   Number of wires:               1145
-   Number of wire bits:          28474
-   Number of public wires:         839
-   Number of public wire bits:   18975
+   Number of wires:                240
+   Number of wire bits:           5091
+   Number of public wires:         213
+   Number of public wire bits:    4581
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                655
-     $add                           65
-     $and                           61
-     $dff                           29
-     $eq                             9
-     $ge                            34
+   Number of cells:                103
+     $add                          144
+     $dff                            1
+     $eq                           143
+     $ge                            64
      $logic_and                      2
-     $logic_not                     32
-     $mul                            3
-     $mux                          113
-     $not                           31
-     $or                            32
-     $pmux                           1
-     $sdff                           9
-     $sdffe                        172
-     $sub                           62
+     $mul                          192
+     $mux                          625
+     $pmux                          32
+     $sdffe                        352
+     $sub                           32
 

@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_shifter_quick.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_shifter_quick.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_shifter_quick.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_shifter_quick.v' to AST representation.
 Generating RTLIL representation for module `\a25_shifter_quick'.
 Successfully finished Verilog frontend.
 
@@ -149,10 +149,10 @@ Optimizing module a25_shifter_quick.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 28
-     $eq                             6
-     $logic_not                      3
-     $mux                           19
+     $eq                            24
+     $logic_not                     12
+     $mux                          627
 
-End of script. Logfile hash: c932463b80, CPU: user 0.03s system 0.00s, MEM: 11.93 MB peak
+End of script. Logfile hash: 46ff6de3f7, CPU: user 0.05s system 0.00s, MEM: 12.19 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 24% 4x opt_expr (0 sec), 24% 2x opt_clean (0 sec), ...
+Time spent: 33% 4x opt_expr (0 sec), 16% 2x read_verilog (0 sec), ...

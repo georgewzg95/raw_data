@@ -12,7 +12,6 @@
    Number of processes:              0
    Number of cells:                  3
      $or                             1
-     half_adder                      2
 
 === half_adder ===
 
@@ -37,23 +36,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     full_adder                      4
 
 === design hierarchy ===
 
    ripple_adder_4bit                 1
-     full_adder                      4
-       half_adder                    2
+     full_adder                      0
+       half_adder                    0
 
-   Number of wires:                 72
-   Number of wire bits:             81
-   Number of public wires:          72
-   Number of public wire bits:      81
+   Number of wires:                  8
+   Number of wire bits:             17
+   Number of public wires:           8
+   Number of public wire bits:      17
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 20
-     $and                            8
-     $or                             4
-     $xor                            8
+   Number of cells:                  4
 

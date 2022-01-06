@@ -608,7 +608,6 @@ Optimizing module func5.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     f3_add                          1
 
 === f3m_inv ===
 
@@ -620,20 +619,14 @@ Optimizing module func5.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 32
-     $dffe                           2
-     $logic_not                      1
-     $mux                            9
-     $ne                             2
+     $dffe                         388
+     $logic_not                      2
+     $mux                         1764
+     $ne                             5
      $not                            1
-     $reduce_and                     1
-     $sdff                           3
-     $sdffe                          4
-     f3_mult                         1
-     func1                           2
-     func2                           2
-     func3                           2
-     func4                           1
-     func5                           1
+     $reduce_and                     2
+     $sdff                         587
+     $sdffe                        395
 
 === func1 ===
 
@@ -645,8 +638,6 @@ Optimizing module func5.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 99
-     f3_sub                         98
-     func4                           1
 
 === func2 ===
 
@@ -669,8 +660,6 @@ Optimizing module func5.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     f3_mult                         2
-     f3_sub                          2
 
 === func4 ===
 
@@ -682,7 +671,6 @@ Optimizing module func5.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 98
-     f3_mult                        98
 
 === func5 ===
 
@@ -694,46 +682,43 @@ Optimizing module func5.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     f3_add                          1
 
 === design hierarchy ===
 
    f3m_inv                           1
-     f3_mult                         1
-     func1                           2
-       f3_sub                       98
-         f3_add                      1
-       func4                         1
-         f3_mult                    98
-     func2                           2
-     func3                           2
-       f3_mult                       2
-       f3_sub                        2
-         f3_add                      1
-     func4                           1
-       f3_mult                      98
-     func5                           1
-       f3_add                        1
+     f3_mult                         0
+     func1                           0
+       f3_sub                        0
+         f3_add                      0
+       func4                         0
+         f3_mult                     0
+     func2                           0
+     func3                           0
+       f3_mult                       0
+       f3_sub                        0
+         f3_add                      0
+     func4                           0
+       f3_mult                       0
+     func5                           0
+       f3_add                        0
 
-   Number of wires:              12780
-   Number of wire bits:          25220
-   Number of public wires:        4560
-   Number of public wire bits:   15245
+   Number of wires:                 37
+   Number of wire bits:           5298
+   Number of public wires:          23
+   Number of public wire bits:    3529
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               9229
-     $and                         5804
-     $dffe                           2
-     $logic_not                      1
-     $mux                            9
-     $ne                             2
-     $not                         2001
-     $or                          1402
-     $reduce_and                     1
-     $sdff                           3
-     $sdffe                          4
+   Number of cells:                 32
+     $dffe                         388
+     $logic_not                      2
+     $mux                         1764
+     $ne                             5
+     $not                            1
+     $reduce_and                     2
+     $sdff                         587
+     $sdffe                        395
 
-End of script. Logfile hash: ec7e0ae955, CPU: user 0.28s system 0.00s, MEM: 17.07 MB peak
+End of script. Logfile hash: 07ccd463b7, CPU: user 0.24s system 0.00s, MEM: 17.27 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 22% 2x opt_dff (0 sec), 18% 2x read_verilog (0 sec), ...
+Time spent: 30% 2x opt_dff (0 sec), 18% 4x opt_expr (0 sec), ...

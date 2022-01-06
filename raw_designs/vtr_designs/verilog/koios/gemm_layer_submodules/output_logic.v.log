@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v' to AST representation.
 Generating RTLIL representation for module `\output_logic'.
 Successfully finished Verilog frontend.
 
@@ -48,7 +48,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 4 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2 in module output_logic.
+Marked 4 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2 in module output_logic.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -60,7 +60,7 @@ Promoted 0 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating decoders for process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
      1/24: $0\c_data_out_19[319:0]
      2/24: $0\c_data_out_18[319:0]
      3/24: $0\c_data_out_17[319:0]
@@ -89,60 +89,60 @@ Creating decoders for process `\output_logic.$proc$/home/zhigang/DATA/raw_design
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\output_logic.\c_data_out' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$344' with positive edge clock.
-Creating register for signal `\output_logic.\c_addr' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_addr' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$345' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_available' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_available' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$346' with positive edge clock.
-Creating register for signal `\output_logic.\start_capturing_c_data' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\start_capturing_c_data' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$347' with positive edge clock.
-Creating register for signal `\output_logic.\counter' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\counter' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$348' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_1' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_1' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$349' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_2' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_2' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$350' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_3' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_3' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$351' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_4' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_4' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$352' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_5' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_5' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$353' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_6' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_6' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$354' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_7' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_7' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$355' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_8' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_8' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$356' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_9' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_9' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$357' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_10' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_10' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$358' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_11' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_11' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$359' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_12' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_12' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$360' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_13' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_13' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$361' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_14' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_14' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$362' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_15' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_15' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$363' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_16' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_16' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$364' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_17' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_17' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$365' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_18' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_18' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$366' with positive edge clock.
-Creating register for signal `\output_logic.\c_data_out_19' using process `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Creating register for signal `\output_logic.\c_data_out_19' using process `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
   created $dff cell `$procdff$367' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 5 empty switches in `\output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
-Removing empty process `output_logic.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Found and cleaned up 5 empty switches in `\output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
+Removing empty process `output_logic.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/output_logic.v:889$2'.
 Cleaned up 5 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -301,19 +301,19 @@ Optimizing module output_logic.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                133
-     $add                            2
-     $dffe                           1
-     $eq                             1
-     $ge                             1
-     $mux                           95
-     $ne                             2
+     $add                           40
+     $dffe                           8
+     $eq                             8
+     $ge                            32
+     $mux                        25774
+     $ne                             5
      $not                            1
      $or                             1
-     $reduce_and                     2
-     $reduce_bool                    3
-     $sdffe                         23
-     $sub                            1
+     $reduce_and                     5
+     $reduce_bool                   11
+     $sdffe                       6434
+     $sub                            8
 
-End of script. Logfile hash: 58ff13f350, CPU: user 2.74s system 0.02s, MEM: 47.82 MB peak
+End of script. Logfile hash: 412604c2cf, CPU: user 2.89s system 0.02s, MEM: 47.95 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 48% 3x opt_dff (1 sec), 19% 3x opt_clean (0 sec), ...
+Time spent: 47% 3x opt_dff (1 sec), 19% 3x opt_clean (0 sec), ...

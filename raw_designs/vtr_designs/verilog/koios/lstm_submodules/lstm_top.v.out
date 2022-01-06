@@ -11,8 +11,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 80
-     $dffe                          17
-     qadd2                          63
+     $dffe                         272
 
 === $paramod$22dc68451fcf4317fe294a8b8f6b7ec558c9fd5a\vecmat_mul_h ===
 
@@ -24,8 +23,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 66
-     $dffe                           2
-     signedmul                      64
+     $dffe                        2048
 
 === $paramod$e3a666739cb884d69c4ef7b922d700778df0ab7e\vecmat_add_x ===
 
@@ -37,8 +35,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                113
-     $dffe                          14
-     qadd2                          99
+     $dffe                         224
 
 === $paramod$e3a666739cb884d69c4ef7b922d700778df0ab7e\vecmat_mul_x ===
 
@@ -50,8 +47,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                102
-     $dffe                           2
-     signedmul                     100
+     $dffe                        3200
 
 === lstm_top ===
 
@@ -63,15 +59,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 66
-     $dff                           33
-     $paramod$22dc68451fcf4317fe294a8b8f6b7ec558c9fd5a\vecmat_add_h      4
-     $paramod$22dc68451fcf4317fe294a8b8f6b7ec558c9fd5a\vecmat_mul_h      4
-     $paramod$e3a666739cb884d69c4ef7b922d700778df0ab7e\vecmat_add_x      4
-     $paramod$e3a666739cb884d69c4ef7b922d700778df0ab7e\vecmat_mul_x      4
-     qadd2                           9
-     sigmoid                         3
-     signedmul                       3
-     tanh                            2
+     $dff                        10896
 
 === qadd2 ===
 
@@ -83,7 +71,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $add                            1
+     $add                           16
 
 === sigmoid ===
 
@@ -96,17 +84,17 @@
    Number of processes:              0
    Number of cells:                227
      $and                          116
-     $dlatch                         1
-     $eq                            58
-     $ge                             1
-     $gt                             4
-     $le                             4
+     $dlatch                         6
+     $eq                           328
+     $ge                            12
+     $gt                            48
+     $le                            48
      $logic_and                      4
-     $logic_not                      2
-     $mux                           28
+     $logic_not                     10
+     $mux                          168
      $not                            5
-     $pmux                           2
-     $reduce_or                      2
+     $pmux                          22
+     $reduce_or                     11
 
 === signedmul ===
 
@@ -118,12 +106,12 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $add                            3
-     $dff                            7
+     $add                           48
+     $dff                           66
      $eq                             1
-     $mul                            1
-     $mux                            3
-     $not                            3
+     $mul                           32
+     $mux                           48
+     $not                           48
      $sdff                           2
 
 === tanh ===
@@ -136,59 +124,42 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                253
-     $add                            2
+     $add                           32
      $and                          145
-     $dlatch                         1
-     $eq                            25
-     $ge                            13
+     $dlatch                         5
+     $eq                           123
+     $ge                           208
      $logic_and                     11
-     $logic_not                      2
-     $lt                            11
-     $mux                           23
-     $not                           16
-     $pmux                           2
-     $reduce_or                      2
+     $logic_not                      9
+     $lt                           176
+     $mux                          137
+     $not                           45
+     $pmux                          21
+     $reduce_or                      5
 
 === design hierarchy ===
 
    lstm_top                          1
-     $paramod$22dc68451fcf4317fe294a8b8f6b7ec558c9fd5a\vecmat_add_h      4
-       qadd2                        63
-     $paramod$22dc68451fcf4317fe294a8b8f6b7ec558c9fd5a\vecmat_mul_h      4
-       signedmul                    64
-     $paramod$e3a666739cb884d69c4ef7b922d700778df0ab7e\vecmat_add_x      4
-       qadd2                        99
-     $paramod$e3a666739cb884d69c4ef7b922d700778df0ab7e\vecmat_mul_x      4
-       signedmul                   100
-     qadd2                           9
-     sigmoid                         3
-     signedmul                       3
-     tanh                            2
+     $paramod$22dc68451fcf4317fe294a8b8f6b7ec558c9fd5a\vecmat_add_h      0
+       qadd2                         0
+     $paramod$22dc68451fcf4317fe294a8b8f6b7ec558c9fd5a\vecmat_mul_h      0
+       signedmul                     0
+     $paramod$e3a666739cb884d69c4ef7b922d700778df0ab7e\vecmat_add_x      0
+       qadd2                         0
+     $paramod$e3a666739cb884d69c4ef7b922d700778df0ab7e\vecmat_mul_x      0
+       signedmul                     0
+     qadd2                           0
+     sigmoid                         0
+     signedmul                       0
+     tanh                            0
 
-   Number of wires:              17941
-   Number of wire bits:         327310
-   Number of public wires:       12155
-   Number of public wire bits:  261485
+   Number of wires:                 84
+   Number of wire bits:          35010
+   Number of public wires:          84
+   Number of public wire bits:   35010
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:              15197
-     $add                         2638
-     $and                          638
-     $dff                         4646
-     $dffe                         140
-     $dlatch                         5
-     $eq                           883
-     $ge                            29
-     $gt                            12
-     $le                            12
-     $logic_and                     34
-     $logic_not                     10
-     $lt                            22
-     $mul                          659
-     $mux                         2107
-     $not                         2024
-     $pmux                          10
-     $reduce_or                     10
-     $sdff                        1318
+   Number of cells:                 66
+     $dff                        10896
 

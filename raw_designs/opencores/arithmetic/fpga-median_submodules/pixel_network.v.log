@@ -355,9 +355,9 @@ Optimizing module pixel_network.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $lt                             1
+     $lt                             8
      $mux                            1
-     $pmux                           1
+     $pmux                           8
 
 === $paramod$91fc2bc07e2078c8848860ecb3e420f5de0bd0ea\node ===
 
@@ -369,9 +369,9 @@ Optimizing module pixel_network.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $lt                             1
+     $lt                             8
      $mux                            1
-     $pmux                           1
+     $pmux                           8
 
 === $paramod$bc2b59cc7c1bbcd9d1df4577f25bb1fb79978649\node ===
 
@@ -383,9 +383,9 @@ Optimizing module pixel_network.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $lt                             1
+     $lt                             8
      $mux                            1
-     $pmux                           2
+     $pmux                          16
 
 === pixel_network ===
 
@@ -397,29 +397,23 @@ Optimizing module pixel_network.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $paramod$5b542fdea5d134b4ea705d59aa81d844c92c4faf\node      4
-     $paramod$91fc2bc07e2078c8848860ecb3e420f5de0bd0ea\node      4
-     $paramod$bc2b59cc7c1bbcd9d1df4577f25bb1fb79978649\node      2
 
 === design hierarchy ===
 
    pixel_network                     1
-     $paramod$5b542fdea5d134b4ea705d59aa81d844c92c4faf\node      4
-     $paramod$91fc2bc07e2078c8848860ecb3e420f5de0bd0ea\node      4
-     $paramod$bc2b59cc7c1bbcd9d1df4577f25bb1fb79978649\node      2
+     $paramod$5b542fdea5d134b4ea705d59aa81d844c92c4faf\node      0
+     $paramod$91fc2bc07e2078c8848860ecb3e420f5de0bd0ea\node      0
+     $paramod$bc2b59cc7c1bbcd9d1df4577f25bb1fb79978649\node      0
 
-   Number of wires:                 81
-   Number of wire bits:            508
-   Number of public wires:          71
-   Number of public wire bits:     498
+   Number of wires:                 21
+   Number of wire bits:            168
+   Number of public wires:          21
+   Number of public wire bits:     168
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 32
-     $lt                            10
-     $mux                           10
-     $pmux                          12
+   Number of cells:                 10
 
-End of script. Logfile hash: 87b900f1e6, CPU: user 0.03s system 0.00s, MEM: 11.39 MB peak
+End of script. Logfile hash: 2c0f9559e7, CPU: user 0.04s system 0.00s, MEM: 11.55 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 22% 3x opt_merge (0 sec), 22% 2x opt_clean (0 sec), ...
+Time spent: 19% 4x opt_expr (0 sec), 19% 3x opt_merge (0 sec), ...

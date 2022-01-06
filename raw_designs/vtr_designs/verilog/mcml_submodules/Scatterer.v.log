@@ -24,13 +24,13 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v' to AST representation.
 Generating RTLIL representation for module `\Scatterer'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4423.1-4440.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4423.1-4440.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4476.1-4483.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4476.1-4483.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\sub_32b'.
@@ -70,11 +70,11 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219 in module InternalsBlock.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4476$190 in module Scatterer.
-Removed 2 dead cases from process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4423$189 in module Scatterer.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4423$189 in module Scatterer.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4210$68 in module Scatterer.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219 in module InternalsBlock.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4476$190 in module Scatterer.
+Removed 2 dead cases from process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4423$189 in module Scatterer.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4423$189 in module Scatterer.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4210$68 in module Scatterer.
 Removed a total of 2 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -86,7 +86,7 @@ Promoted 3 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating decoders for process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
      1/24: $0\o_uyQuotient[31:0]
      2/24: $0\o_uxQuotient[31:0]
      3/24: $0\o_uyCost[31:0]
@@ -111,88 +111,88 @@ Creating decoders for process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_desi
     22/24: $0\o_sinp[31:0]
     23/24: $0\o_cost[31:0]
     24/24: $0\o_sint[31:0]
-Creating decoders for process `\Scatterer.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4476$190'.
+Creating decoders for process `\Scatterer.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4476$190'.
      1/1: $1\normalIncident[0:0]
-Creating decoders for process `\Scatterer.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4423$189'.
+Creating decoders for process `\Scatterer.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4423$189'.
      1/2: $1\new_uyQuotient[31:0]
      2/2: $1\new_uxQuotient[31:0]
-Creating decoders for process `\Scatterer.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4210$68'.
+Creating decoders for process `\Scatterer.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4210$68'.
      1/3: $0\uz_scatterer[31:0]
      2/3: $0\uy_scatterer[31:0]
      3/3: $0\ux_scatterer[31:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\Scatterer.\normalIncident' from process `\Scatterer.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4476$190'.
-No latch inferred for signal `\Scatterer.\new_uxQuotient' from process `\Scatterer.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4423$189'.
-No latch inferred for signal `\Scatterer.\new_uyQuotient' from process `\Scatterer.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4423$189'.
+No latch inferred for signal `\Scatterer.\normalIncident' from process `\Scatterer.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4476$190'.
+No latch inferred for signal `\Scatterer.\new_uxQuotient' from process `\Scatterer.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4423$189'.
+No latch inferred for signal `\Scatterer.\new_uyQuotient' from process `\Scatterer.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4423$189'.
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\InternalsBlock.\o_sint' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_sint' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$369' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_cost' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_cost' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$370' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_sinp' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_sinp' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$371' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_cosp' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_cosp' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$372' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_sintCosp' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_sintCosp' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$373' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_sintSinp' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_sintSinp' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$374' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_uz2' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_uz2' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$375' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_uxUz' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_uxUz' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$376' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_uyUz' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_uyUz' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$377' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_uySintSinp' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_uySintSinp' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$378' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_oneMinusUz2' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_oneMinusUz2' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$379' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_uyUzSintCosp' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_uyUzSintCosp' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$380' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_uxUzSintCosp' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_uxUzSintCosp' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$381' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_uxSintSinp' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_uxSintSinp' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$382' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_sqrtOneMinusUz2' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_sqrtOneMinusUz2' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$383' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_sintCospSqrtOneMinusUz2' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_sintCospSqrtOneMinusUz2' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$384' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_uxCost' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_uxCost' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$385' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_uzCost' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_uzCost' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$386' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_sqrtOneMinusUz2_inv' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_sqrtOneMinusUz2_inv' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$387' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_uxNumerator' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_uxNumerator' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$388' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_uyNumerator' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_uyNumerator' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$389' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_uyCost' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_uyCost' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$390' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_uxQuotient' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_uxQuotient' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$391' with positive edge clock.
-Creating register for signal `\InternalsBlock.\o_uyQuotient' using process `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Creating register for signal `\InternalsBlock.\o_uyQuotient' using process `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
   created $dff cell `$procdff$392' with positive edge clock.
-Creating register for signal `\Scatterer.\ux_scatterer' using process `\Scatterer.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4210$68'.
+Creating register for signal `\Scatterer.\ux_scatterer' using process `\Scatterer.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4210$68'.
   created $dff cell `$procdff$393' with positive edge clock.
-Creating register for signal `\Scatterer.\uy_scatterer' using process `\Scatterer.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4210$68'.
+Creating register for signal `\Scatterer.\uy_scatterer' using process `\Scatterer.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4210$68'.
   created $dff cell `$procdff$394' with positive edge clock.
-Creating register for signal `\Scatterer.\uz_scatterer' using process `\Scatterer.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4210$68'.
+Creating register for signal `\Scatterer.\uz_scatterer' using process `\Scatterer.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4210$68'.
   created $dff cell `$procdff$395' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 2 empty switches in `\InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
-Removing empty process `InternalsBlock.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
-Found and cleaned up 1 empty switch in `\Scatterer.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4476$190'.
-Removing empty process `Scatterer.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4476$190'.
-Found and cleaned up 2 empty switches in `\Scatterer.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4423$189'.
-Removing empty process `Scatterer.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4423$189'.
-Found and cleaned up 2 empty switches in `\Scatterer.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4210$68'.
-Removing empty process `Scatterer.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4210$68'.
+Found and cleaned up 2 empty switches in `\InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Removing empty process `InternalsBlock.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4727$219'.
+Found and cleaned up 1 empty switch in `\Scatterer.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4476$190'.
+Removing empty process `Scatterer.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4476$190'.
+Found and cleaned up 2 empty switches in `\Scatterer.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4423$189'.
+Removing empty process `Scatterer.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4423$189'.
+Found and cleaned up 2 empty switches in `\Scatterer.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4210$68'.
+Removing empty process `Scatterer.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Scatterer.v:4210$68'.
 Cleaned up 7 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -400,7 +400,7 @@ Optimizing module sub_64b.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 24
-     $sdffe                         24
+     $sdffe                        832
 
 === Scatterer ===
 
@@ -413,21 +413,17 @@ Optimizing module sub_64b.
    Number of processes:              0
    Number of cells:                271
      $and                           64
-     $eq                            15
-     $ge                             1
-     $logic_not                      2
+     $eq                           300
+     $ge                            32
+     $logic_not                      4
      $logic_or                       8
-     $mux                            9
-     $neg                            1
+     $mux                          257
+     $neg                           32
      $not                           36
-     $or                            86
-     $pmux                           2
-     $reduce_or                      2
-     $sdffe                          3
-     InternalsBlock                 36
-     add_32b                         3
-     sub_32b                         2
-     sub_64b                         1
+     $or                           275
+     $pmux                          64
+     $reduce_or                      4
+     $sdffe                         96
 
 === add_32b ===
 
@@ -439,7 +435,7 @@ Optimizing module sub_64b.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $add                            1
+     $add                           33
 
 === sub_32b ===
 
@@ -451,7 +447,7 @@ Optimizing module sub_64b.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sub                            1
+     $sub                           33
 
 === sub_64b ===
 
@@ -463,39 +459,37 @@ Optimizing module sub_64b.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sub                            1
+     $sub                           64
 
 === design hierarchy ===
 
    Scatterer                         1
-     InternalsBlock                 36
-     add_32b                         3
-     sub_32b                         2
-     sub_64b                         1
+     InternalsBlock                  0
+     add_32b                         0
+     sub_32b                         0
+     sub_64b                         0
 
-   Number of wires:               3078
-   Number of wire bits:          95602
-   Number of public wires:        2874
-   Number of public wire bits:   95241
+   Number of wires:               1214
+   Number of wire bits:          34748
+   Number of public wires:        1010
+   Number of public wire bits:   34387
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               1099
-     $add                            3
+   Number of cells:                271
      $and                           64
-     $eq                            15
-     $ge                             1
-     $logic_not                      2
+     $eq                           300
+     $ge                            32
+     $logic_not                      4
      $logic_or                       8
-     $mux                            9
-     $neg                            1
+     $mux                          257
+     $neg                           32
      $not                           36
-     $or                            86
-     $pmux                           2
-     $reduce_or                      2
-     $sdffe                        867
-     $sub                            3
+     $or                           275
+     $pmux                          64
+     $reduce_or                      4
+     $sdffe                         96
 
-End of script. Logfile hash: f158f105c2, CPU: user 0.64s system 0.02s, MEM: 40.05 MB peak
+End of script. Logfile hash: 69565a067c, CPU: user 0.82s system 0.02s, MEM: 40.18 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 42% 2x opt_clean (0 sec), 22% 2x read_verilog (0 sec), ...
+Time spent: 35% 2x opt_clean (0 sec), 21% 2x read_verilog (0 sec), ...

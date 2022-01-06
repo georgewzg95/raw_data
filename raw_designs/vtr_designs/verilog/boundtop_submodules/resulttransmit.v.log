@@ -24,10 +24,10 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v' to AST representation.
 Generating RTLIL representation for module `\resulttransmit'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:104.5-185.8 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:104.5-185.8 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Successfully finished Verilog frontend.
@@ -51,8 +51,8 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:104$7 in module resulttransmit.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1 in module resulttransmit.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:104$7 in module resulttransmit.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1 in module resulttransmit.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -64,14 +64,14 @@ Promoted 4 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:104$7'.
+Creating decoders for process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:104$7'.
      1/6: $3\next_state[3:0]
      2/6: $2\next_state[3:0]
      3/6: $1\next_state[3:0]
      4/6: $1\temp_rgResultSource[1:0]
      5/6: $1\temp_rgResultReady[0:0]
      6/6: $1\temp_rgResultData[31:0]
-Creating decoders for process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
+Creating decoders for process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
      1/14: $0\rgResultReady[0:0]
      2/14: $0\rgResultSource[1:0]
      3/14: $0\rgResultData[31:0]
@@ -88,48 +88,48 @@ Creating decoders for process `\resulttransmit.$proc$/home/zhigang/DATA/raw_desi
     14/14: $0\hit01al[0:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-Latch inferred for signal `\resulttransmit.\next_state' from process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:104$7': $auto$proc_dlatch.cc:427:proc_dlatch$210
-Latch inferred for signal `\resulttransmit.\temp_rgResultData' from process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:104$7': $auto$proc_dlatch.cc:427:proc_dlatch$263
-Latch inferred for signal `\resulttransmit.\temp_rgResultReady' from process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:104$7': $auto$proc_dlatch.cc:427:proc_dlatch$272
-Latch inferred for signal `\resulttransmit.\temp_rgResultSource' from process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:104$7': $auto$proc_dlatch.cc:427:proc_dlatch$325
+Latch inferred for signal `\resulttransmit.\next_state' from process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:104$7': $auto$proc_dlatch.cc:427:proc_dlatch$210
+Latch inferred for signal `\resulttransmit.\temp_rgResultData' from process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:104$7': $auto$proc_dlatch.cc:427:proc_dlatch$263
+Latch inferred for signal `\resulttransmit.\temp_rgResultReady' from process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:104$7': $auto$proc_dlatch.cc:427:proc_dlatch$272
+Latch inferred for signal `\resulttransmit.\temp_rgResultSource' from process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:104$7': $auto$proc_dlatch.cc:427:proc_dlatch$325
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\resulttransmit.\rgResultData' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
+Creating register for signal `\resulttransmit.\rgResultData' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
   created $dff cell `$procdff$326' with positive edge clock.
-Creating register for signal `\resulttransmit.\rgResultReady' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
+Creating register for signal `\resulttransmit.\rgResultReady' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
   created $dff cell `$procdff$327' with positive edge clock.
-Creating register for signal `\resulttransmit.\rgResultSource' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
+Creating register for signal `\resulttransmit.\rgResultSource' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
   created $dff cell `$procdff$328' with positive edge clock.
-Creating register for signal `\resulttransmit.\state' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
+Creating register for signal `\resulttransmit.\state' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
   created $dff cell `$procdff$329' with positive edge clock.
-Creating register for signal `\resulttransmit.\hit01al' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
+Creating register for signal `\resulttransmit.\hit01al' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
   created $dff cell `$procdff$330' with positive edge clock.
-Creating register for signal `\resulttransmit.\hit01bl' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
+Creating register for signal `\resulttransmit.\hit01bl' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
   created $dff cell `$procdff$331' with positive edge clock.
-Creating register for signal `\resulttransmit.\hit01cl' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
+Creating register for signal `\resulttransmit.\hit01cl' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
   created $dff cell `$procdff$332' with positive edge clock.
-Creating register for signal `\resulttransmit.\hit10al' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
+Creating register for signal `\resulttransmit.\hit10al' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
   created $dff cell `$procdff$333' with positive edge clock.
-Creating register for signal `\resulttransmit.\hit10bl' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
+Creating register for signal `\resulttransmit.\hit10bl' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
   created $dff cell `$procdff$334' with positive edge clock.
-Creating register for signal `\resulttransmit.\hit10cl' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
+Creating register for signal `\resulttransmit.\hit10cl' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
   created $dff cell `$procdff$335' with positive edge clock.
-Creating register for signal `\resulttransmit.\pending01' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
+Creating register for signal `\resulttransmit.\pending01' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
   created $dff cell `$procdff$336' with positive edge clock.
-Creating register for signal `\resulttransmit.\pending10' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
+Creating register for signal `\resulttransmit.\pending10' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
   created $dff cell `$procdff$337' with positive edge clock.
-Creating register for signal `\resulttransmit.\valid01d' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
+Creating register for signal `\resulttransmit.\valid01d' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
   created $dff cell `$procdff$338' with positive edge clock.
-Creating register for signal `\resulttransmit.\valid10d' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
+Creating register for signal `\resulttransmit.\valid10d' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
   created $dff cell `$procdff$339' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 3 empty switches in `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:104$7'.
-Removing empty process `resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:104$7'.
-Found and cleaned up 5 empty switches in `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
-Removing empty process `resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
+Found and cleaned up 3 empty switches in `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:104$7'.
+Removing empty process `resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:104$7'.
+Found and cleaned up 5 empty switches in `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
+Removing empty process `resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resulttransmit.v:60$1'.
 Cleaned up 8 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -264,18 +264,18 @@ Optimizing module resulttransmit.
    Number of cells:                 68
      $and                            8
      $dffe                           8
-     $dlatch                         4
-     $eq                             8
-     $logic_not                      1
-     $logic_or                      11
-     $mux                            3
+     $dlatch                        39
+     $eq                            32
+     $logic_not                      4
+     $logic_or                     176
+     $mux                           10
      $not                           10
-     $pmux                           3
-     $reduce_and                     2
-     $reduce_or                      4
-     $sdff                           4
+     $pmux                          37
+     $reduce_and                     4
+     $reduce_or                     14
+     $sdff                          39
      $sdffe                          2
 
-End of script. Logfile hash: 5e8d5c43c2, CPU: user 0.06s system 0.00s, MEM: 11.97 MB peak
+End of script. Logfile hash: 345f99026e, CPU: user 0.07s system 0.00s, MEM: 12.15 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 26% 4x opt_merge (0 sec), 19% 5x opt_expr (0 sec), ...
+Time spent: 23% 5x opt_expr (0 sec), 17% 3x opt_clean (0 sec), ...

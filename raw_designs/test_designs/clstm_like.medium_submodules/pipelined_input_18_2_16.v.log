@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v' to AST representation.
 Generating RTLIL representation for module `\pipelined_input_18_2_16'.
 Successfully finished Verilog frontend.
 
@@ -48,7 +48,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1 in module pipelined_input_18_2_16.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1 in module pipelined_input_18_2_16.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -60,7 +60,7 @@ Promoted 0 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating decoders for process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
      1/51: $0\pipeline_valid_2[0:0]
      2/51: $0\pipeline_valid_1[0:0]
      3/51: $0\pipeline_valid_0[0:0]
@@ -116,114 +116,114 @@ Creating decoders for process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_0' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_0' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$410' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_1' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_1' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$411' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_2' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_2' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$412' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_3' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_3' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$413' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_4' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_4' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$414' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_5' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_5' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$415' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_6' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_6' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$416' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_7' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_7' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$417' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_8' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_8' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$418' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_9' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_9' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$419' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_10' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_10' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$420' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_11' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_11' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$421' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_12' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_12' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$422' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_13' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_13' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$423' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_14' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_14' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$424' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_15' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_0_15' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$425' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_0' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_0' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$426' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_1' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_1' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$427' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_2' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_2' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$428' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_3' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_3' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$429' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_4' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_4' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$430' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_5' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_5' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$431' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_6' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_6' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$432' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_7' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_7' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$433' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_8' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_8' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$434' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_9' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_9' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$435' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_10' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_10' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$436' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_11' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_11' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$437' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_12' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_12' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$438' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_13' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_13' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$439' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_14' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_14' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$440' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_15' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_1_15' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$441' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_0' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_0' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$442' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_1' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_1' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$443' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_2' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_2' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$444' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_3' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_3' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$445' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_4' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_4' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$446' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_5' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_5' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$447' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_6' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_6' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$448' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_7' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_7' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$449' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_8' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_8' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$450' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_9' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_9' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$451' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_10' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_10' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$452' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_11' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_11' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$453' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_12' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_12' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$454' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_13' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_13' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$455' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_14' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_14' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$456' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_15' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_2_15' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$457' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_valid_0' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_valid_0' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$458' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_valid_1' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_valid_1' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$459' with positive edge clock.
-Creating register for signal `\pipelined_input_18_2_16.\pipeline_valid_2' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Creating register for signal `\pipelined_input_18_2_16.\pipeline_valid_2' using process `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
   created $dff cell `$procdff$460' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 3 empty switches in `\pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
-Removing empty process `pipelined_input_18_2_16.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Found and cleaned up 3 empty switches in `\pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
+Removing empty process `pipelined_input_18_2_16.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/pipelined_input_18_2_16.v:111$1'.
 Cleaned up 3 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -406,9 +406,9 @@ Optimizing module pipelined_input_18_2_16.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                102
-     $mux                           51
-     $sdffe                         51
+     $mux                          867
+     $sdffe                        867
 
-End of script. Logfile hash: 4ba663cada, CPU: user 0.13s system 0.00s, MEM: 15.11 MB peak
+End of script. Logfile hash: cc51a84544, CPU: user 0.15s system 0.01s, MEM: 15.32 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 19% 2x opt_clean (0 sec), 16% 4x opt_expr (0 sec), ...
+Time spent: 18% 2x opt_dff (0 sec), 15% 4x opt_expr (0 sec), ...

@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/FPAddSub_RoundModule.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/FPAddSub_RoundModule.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/FPAddSub_RoundModule.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/FPAddSub_RoundModule.v' to AST representation.
 Generating RTLIL representation for module `\FPAddSub_RoundModule'.
 Successfully finished Verilog frontend.
 
@@ -147,13 +147,13 @@ Optimizing module FPAddSub_RoundModule.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 22
-     $add                            2
+     $add                           38
      $and                            7
-     $mux                            4
+     $mux                           18
      $not                            2
      $or                             5
      $xor                            2
 
-End of script. Logfile hash: 234d3cc521, CPU: user 0.02s system 0.00s, MEM: 11.02 MB peak
+End of script. Logfile hash: fc984e1c71, CPU: user 0.02s system 0.00s, MEM: 11.15 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 49% 2x opt_clean (0 sec), 24% 4x opt_expr (0 sec), ...
+Time spent: 39% 4x opt_expr (0 sec), 19% 3x opt_merge (0 sec), ...

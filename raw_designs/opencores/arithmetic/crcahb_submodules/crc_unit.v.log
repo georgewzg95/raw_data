@@ -650,9 +650,9 @@ Optimizing module crc_unit.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $and                            3
-     $not                            1
-     $xor                            2
+     $and                           94
+     $not                           31
+     $xor                           32
 
 === $paramod$f4b98323ff6e0cd0e06fc10c3ad329b38eee598e\crc_parallel ===
 
@@ -664,9 +664,8 @@ Optimizing module crc_unit.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                198
-     $and                           95
-     $paramod$c34afa4e962990744f0b55670bc44b23c3a5a6d7\crc_comb      8
-     $reduce_or                     95
+     $and                         3040
+     $reduce_or                   3040
 
 === $paramod\bit_reversal\DATA_SIZE=s32'00000000000000000000000000100000 ===
 
@@ -678,9 +677,9 @@ Optimizing module crc_unit.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $eq                             3
-     $logic_not                      1
-     $pmux                           1
+     $eq                             6
+     $logic_not                      2
+     $pmux                          32
 
 === crc_control_unit ===
 
@@ -692,16 +691,16 @@ Optimizing module crc_unit.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                102
-     $eq                            13
+     $eq                            34
      $logic_and                     24
-     $logic_not                      9
+     $logic_not                     15
      $logic_or                      13
-     $mux                           21
-     $ne                             8
-     $pmux                           4
-     $reduce_and                     3
-     $reduce_bool                    4
-     $sdffe                          3
+     $mux                           56
+     $ne                            21
+     $pmux                          10
+     $reduce_and                     8
+     $reduce_bool                   16
+     $sdffe                          8
 
 === crc_datapath ===
 
@@ -713,16 +712,14 @@ Optimizing module crc_unit.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 40
-     $eq                             6
-     $logic_not                      2
-     $mux                            8
+     $eq                            12
+     $logic_not                      4
+     $mux                          142
      $not                            1
-     $paramod$f4b98323ff6e0cd0e06fc10c3ad329b38eee598e\crc_parallel      1
-     $paramod\bit_reversal\DATA_SIZE=s32'00000000000000000000000000100000      1
-     $pmux                           5
-     $reduce_bool                    2
-     $reduce_or                      5
-     $sdffe                          9
+     $pmux                          12
+     $reduce_bool                    4
+     $reduce_or                     14
+     $sdffe                        173
 
 === crc_unit ===
 
@@ -736,41 +733,27 @@ Optimizing module crc_unit.
    Number of cells:                  4
      $logic_and                      1
      $logic_not                      1
-     crc_control_unit                1
-     crc_datapath                    1
 
 === design hierarchy ===
 
    crc_unit                          1
-     crc_control_unit                1
-     crc_datapath                    1
-       $paramod$f4b98323ff6e0cd0e06fc10c3ad329b38eee598e\crc_parallel      1
-         $paramod$c34afa4e962990744f0b55670bc44b23c3a5a6d7\crc_comb      8
-       $paramod\bit_reversal\DATA_SIZE=s32'00000000000000000000000000100000      1
+     crc_control_unit                0
+     crc_datapath                    0
+       $paramod$f4b98323ff6e0cd0e06fc10c3ad329b38eee598e\crc_parallel      0
+         $paramod$c34afa4e962990744f0b55670bc44b23c3a5a6d7\crc_comb      0
+       $paramod\bit_reversal\DATA_SIZE=s32'00000000000000000000000000100000      0
 
-   Number of wires:                519
-   Number of wire bits:          10275
-   Number of public wires:         290
-   Number of public wire bits:    6522
+   Number of wires:                 29
+   Number of wire bits:            165
+   Number of public wires:          28
+   Number of public wire bits:     164
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                385
-     $and                          119
-     $eq                            22
-     $logic_and                     25
-     $logic_not                     13
-     $logic_or                      13
-     $mux                           29
-     $ne                             8
-     $not                            9
-     $pmux                          10
-     $reduce_and                     3
-     $reduce_bool                    6
-     $reduce_or                    100
-     $sdffe                         12
-     $xor                           16
+   Number of cells:                  4
+     $logic_and                      1
+     $logic_not                      1
 
-End of script. Logfile hash: 9534ba0d6b, CPU: user 0.41s system 0.00s, MEM: 17.78 MB peak
+End of script. Logfile hash: 7b851693ea, CPU: user 0.42s system 0.00s, MEM: 17.93 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 24% 2x read_verilog (0 sec), 19% 4x opt_expr (0 sec), ...
+Time spent: 23% 2x read_verilog (0 sec), 21% 4x opt_expr (0 sec), ...

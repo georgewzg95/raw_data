@@ -12,7 +12,6 @@
    Number of processes:              0
    Number of cells:                  3
      $or                             1
-     half_adder                      2
 
 === half_adder ===
 
@@ -37,7 +36,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     ripple_adder_6bit               2
 
 === ripple_adder_4bit ===
 
@@ -49,7 +47,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     full_adder                      4
 
 === ripple_adder_6bit ===
 
@@ -61,7 +58,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     full_adder                      6
 
 === ripple_adder_8bit ===
 
@@ -73,7 +69,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     ripple_adder_4bit               2
 
 === vedic2x2 ===
 
@@ -86,7 +81,6 @@
    Number of processes:              0
    Number of cells:                  6
      $and                            4
-     half_adder                      2
 
 === vedic4x4 ===
 
@@ -98,9 +92,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     ripple_adder_4bit               1
-     ripple_adder_6bit               2
-     vedic2x2                        4
 
 === vedic8x8 ===
 
@@ -112,40 +103,34 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     ripple_adder_12bit              2
-     ripple_adder_8bit               1
-     vedic4x4                        4
 
 === design hierarchy ===
 
    vedic8x8                          1
-     ripple_adder_12bit              2
-       ripple_adder_6bit             2
-         full_adder                  6
-           half_adder                2
-     ripple_adder_8bit               1
-       ripple_adder_4bit             2
-         full_adder                  4
-           half_adder                2
-     vedic4x4                        4
-       ripple_adder_4bit             1
-         full_adder                  4
-           half_adder                2
-       ripple_adder_6bit             2
-         full_adder                  6
-           half_adder                2
-       vedic2x2                      4
-         half_adder                  2
+     ripple_adder_12bit              0
+       ripple_adder_6bit             0
+         full_adder                  0
+           half_adder                0
+     ripple_adder_8bit               0
+       ripple_adder_4bit             0
+         full_adder                  0
+           half_adder                0
+     vedic4x4                        0
+       ripple_adder_4bit             0
+         full_adder                  0
+           half_adder                0
+       ripple_adder_6bit             0
+         full_adder                  0
+           half_adder                0
+       vedic2x2                      0
+         half_adder                  0
 
-   Number of wires:               2043
-   Number of wire bits:           2682
-   Number of public wires:        2043
-   Number of public wire bits:    2682
+   Number of wires:                 13
+   Number of wire bits:             99
+   Number of public wires:          13
+   Number of public wire bits:      99
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                608
-     $and                          288
-     $or                            96
-     $xor                          224
+   Number of cells:                  7
 

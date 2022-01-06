@@ -11,10 +11,8 @@
    Number of memory bits:           88
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                          16
+     $mux                           40
 
 === accumulator_24_30_4 ===
 
@@ -26,11 +24,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            1
-     $mux                            1
-     $reduce_or                      1
-     $sdff                           5
-     $sdffe                          1
+     $add                           30
+     $mux                           30
+     $reduce_or                      2
+     $sdff                         150
+     $sdffe                         30
 
 === dot_product_16_8_30_4 ===
 
@@ -43,9 +41,7 @@
    Number of processes:              0
    Number of cells:                 16
      $dff                            1
-     $sdff                          13
-     dsp_block_16_8_false            1
-     dsp_block_16_8_true             1
+     $sdff                         145
 
 === dsp_block_16_8_false ===
 
@@ -57,9 +53,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            2
-     $mul                            2
-     $sdff                           5
+     $add                          128
+     $mul                          128
+     $sdff                          72
 
 === dsp_block_16_8_true ===
 
@@ -71,9 +67,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            2
-     $mul                            2
-     $sdff                           5
+     $add                          128
+     $mul                          128
+     $sdff                          72
 
 === processing_element ===
 
@@ -85,35 +81,21 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                137
-     $add                            6
+     $add                           74
      $dff                            5
-     $dffe                          24
-     $eq                             1
-     $le                             1
+     $dffe                         384
+     $eq                             2
+     $le                            32
      $logic_and                      2
-     $logic_not                      1
+     $logic_not                      2
      $logic_or                       1
-     $mux                           35
-     $ne                             3
+     $mux                          168
+     $ne                            12
      $not                            5
-     $reduce_and                     4
-     $reduce_bool                    1
-     $sdffce                        12
+     $reduce_and                    13
+     $reduce_bool                    2
+     $sdffce                        49
      $sdffe                         12
-     accumulator_24_30_4             6
-     dot_product_16_8_30_4           6
-     weight_cache_2048_8_0_weight_init_00      1
-     weight_cache_2048_8_0_weight_init_01      1
-     weight_cache_2048_8_0_weight_init_02      1
-     weight_cache_2048_8_0_weight_init_03      1
-     weight_cache_2048_8_0_weight_init_04      1
-     weight_cache_2048_8_0_weight_init_05      1
-     weight_cache_2048_8_0_weight_init_20      1
-     weight_cache_2048_8_0_weight_init_21      1
-     weight_cache_2048_8_0_weight_init_22      1
-     weight_cache_2048_8_0_weight_init_23      1
-     weight_cache_2048_8_0_weight_init_24      1
-     weight_cache_2048_8_0_weight_init_25      1
 
 === weight_cache_2048_8_0_weight_init_00 ===
 
@@ -125,8 +107,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_01 ===
 
@@ -138,8 +119,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_02 ===
 
@@ -151,8 +131,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_03 ===
 
@@ -164,8 +143,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_04 ===
 
@@ -177,8 +155,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_05 ===
 
@@ -190,8 +167,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_20 ===
 
@@ -203,8 +179,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_21 ===
 
@@ -216,8 +191,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_22 ===
 
@@ -229,8 +203,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_23 ===
 
@@ -242,8 +215,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_24 ===
 
@@ -255,8 +227,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_25 ===
 
@@ -268,67 +239,61 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === design hierarchy ===
 
    processing_element                1
-     accumulator_24_30_4             6
-     dot_product_16_8_30_4           6
-       dsp_block_16_8_false          1
-       dsp_block_16_8_true           1
-     weight_cache_2048_8_0_weight_init_00      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_01      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_02      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_03      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_04      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_05      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_20      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_21      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_22      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_23      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_24      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_25      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     accumulator_24_30_4             0
+     dot_product_16_8_30_4           0
+       dsp_block_16_8_false          0
+       dsp_block_16_8_true           0
+     weight_cache_2048_8_0_weight_init_00      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_01      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_02      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_03      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_04      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_05      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_20      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_21      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_22      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_23      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_24      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_25      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
 
-   Number of wires:               1097
-   Number of wire bits:          15909
-   Number of public wires:         876
-   Number of public wire bits:   11381
-   Number of memories:              12
-   Number of memory bits:         1056
+   Number of wires:                227
+   Number of wire bits:           2385
+   Number of public wires:         168
+   Number of public wire bits:    2135
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                551
-     $add                           36
-     $dff                           59
-     $dffe                          48
-     $eq                             1
-     $le                             1
+   Number of cells:                137
+     $add                           74
+     $dff                            5
+     $dffe                         384
+     $eq                             2
+     $le                            32
      $logic_and                      2
-     $logic_not                      1
+     $logic_not                      2
      $logic_or                       1
-     $memrd                         24
-     $memwr_v2                      24
-     $mul                           24
-     $mux                          113
-     $ne                             3
+     $mux                          168
+     $ne                            12
      $not                            5
-     $reduce_and                     4
-     $reduce_bool                    1
-     $reduce_or                      6
-     $sdff                         168
-     $sdffce                        12
-     $sdffe                         18
+     $reduce_and                    13
+     $reduce_bool                    2
+     $sdffce                        49
+     $sdffe                         12
 

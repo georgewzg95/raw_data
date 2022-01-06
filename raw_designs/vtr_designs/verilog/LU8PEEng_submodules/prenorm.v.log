@@ -24,13 +24,13 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v' to AST representation.
 Generating RTLIL representation for module `\prenorm'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:270.2-368.5 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:270.2-368.5 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:373.2-471.5 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:373.2-471.5 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Successfully finished Verilog frontend.
@@ -54,8 +54,8 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:373$76 in module prenorm.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:270$51 in module prenorm.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:373$76 in module prenorm.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:270$51 in module prenorm.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -67,24 +67,24 @@ Promoted 2 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\prenorm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:373$76'.
+Creating decoders for process `\prenorm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:373$76'.
      1/1: $1\shiftedb[23:0]
-Creating decoders for process `\prenorm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:270$51'.
+Creating decoders for process `\prenorm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:270$51'.
      1/1: $1\shifteda[23:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\prenorm.\shiftedb' from process `\prenorm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:373$76'.
-No latch inferred for signal `\prenorm.\shifteda' from process `\prenorm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:270$51'.
+No latch inferred for signal `\prenorm.\shiftedb' from process `\prenorm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:373$76'.
+No latch inferred for signal `\prenorm.\shifteda' from process `\prenorm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:270$51'.
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\prenorm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:373$76'.
-Removing empty process `prenorm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:373$76'.
-Found and cleaned up 1 empty switch in `\prenorm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:270$51'.
-Removing empty process `prenorm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:270$51'.
+Found and cleaned up 1 empty switch in `\prenorm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:373$76'.
+Removing empty process `prenorm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:373$76'.
+Found and cleaned up 1 empty switch in `\prenorm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:270$51'.
+Removing empty process `prenorm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/prenorm.v:270$51'.
 Cleaned up 2 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -166,11 +166,11 @@ Optimizing module prenorm.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 98
-     $eq                            46
-     $mux                           48
-     $pmux                           2
-     $sub                            2
+     $eq                           230
+     $mux                         1520
+     $pmux                          48
+     $sub                           64
 
-End of script. Logfile hash: 4d8560a439, CPU: user 0.08s system 0.00s, MEM: 13.44 MB peak
+End of script. Logfile hash: 84b0d19587, CPU: user 0.08s system 0.00s, MEM: 13.56 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 26% 4x opt_expr (0 sec), 21% 2x opt_clean (0 sec), ...
+Time spent: 29% 4x opt_expr (0 sec), 19% 2x opt_clean (0 sec), ...

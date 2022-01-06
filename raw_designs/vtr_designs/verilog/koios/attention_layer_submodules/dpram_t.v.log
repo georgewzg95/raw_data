@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v' to AST representation.
 Generating RTLIL representation for module `\dpram_t'.
 Successfully finished Verilog frontend.
 
@@ -48,8 +48,8 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:48$11 in module dpram_t.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:39$3 in module dpram_t.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:48$11 in module dpram_t.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:39$3 in module dpram_t.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -61,44 +61,44 @@ Promoted 6 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\dpram_t.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:48$11'.
-     1/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:50$2_EN[511:0]$17
-     2/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:50$2_DATA[511:0]$16
-     3/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:50$2_ADDR[5:0]$15
+Creating decoders for process `\dpram_t.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:48$11'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:50$2_EN[511:0]$17
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:50$2_DATA[511:0]$16
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:50$2_ADDR[5:0]$15
      4/4: $0\out_b[511:0]
-Creating decoders for process `\dpram_t.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:39$3'.
-     1/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:41$1_EN[511:0]$9
-     2/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:41$1_DATA[511:0]$8
-     3/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:41$1_ADDR[5:0]$7
+Creating decoders for process `\dpram_t.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:39$3'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:41$1_EN[511:0]$9
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:41$1_DATA[511:0]$8
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:41$1_ADDR[5:0]$7
      4/4: $0\out_a[511:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\dpram_t.\out_b' using process `\dpram_t.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:48$11'.
+Creating register for signal `\dpram_t.\out_b' using process `\dpram_t.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:48$11'.
   created $dff cell `$procdff$43' with positive edge clock.
-Creating register for signal `\dpram_t.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:50$2_ADDR' using process `\dpram_t.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:48$11'.
+Creating register for signal `\dpram_t.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:50$2_ADDR' using process `\dpram_t.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:48$11'.
   created $dff cell `$procdff$44' with positive edge clock.
-Creating register for signal `\dpram_t.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:50$2_DATA' using process `\dpram_t.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:48$11'.
+Creating register for signal `\dpram_t.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:50$2_DATA' using process `\dpram_t.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:48$11'.
   created $dff cell `$procdff$45' with positive edge clock.
-Creating register for signal `\dpram_t.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:50$2_EN' using process `\dpram_t.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:48$11'.
+Creating register for signal `\dpram_t.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:50$2_EN' using process `\dpram_t.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:48$11'.
   created $dff cell `$procdff$46' with positive edge clock.
-Creating register for signal `\dpram_t.\out_a' using process `\dpram_t.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:39$3'.
+Creating register for signal `\dpram_t.\out_a' using process `\dpram_t.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:39$3'.
   created $dff cell `$procdff$47' with positive edge clock.
-Creating register for signal `\dpram_t.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:41$1_ADDR' using process `\dpram_t.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:39$3'.
+Creating register for signal `\dpram_t.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:41$1_ADDR' using process `\dpram_t.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:39$3'.
   created $dff cell `$procdff$48' with positive edge clock.
-Creating register for signal `\dpram_t.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:41$1_DATA' using process `\dpram_t.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:39$3'.
+Creating register for signal `\dpram_t.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:41$1_DATA' using process `\dpram_t.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:39$3'.
   created $dff cell `$procdff$49' with positive edge clock.
-Creating register for signal `\dpram_t.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:41$1_EN' using process `\dpram_t.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:39$3'.
+Creating register for signal `\dpram_t.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:41$1_EN' using process `\dpram_t.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:39$3'.
   created $dff cell `$procdff$50' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\dpram_t.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:48$11'.
-Removing empty process `dpram_t.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:48$11'.
-Found and cleaned up 1 empty switch in `\dpram_t.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:39$3'.
-Removing empty process `dpram_t.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:39$3'.
+Found and cleaned up 1 empty switch in `\dpram_t.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:48$11'.
+Removing empty process `dpram_t.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:48$11'.
+Found and cleaned up 1 empty switch in `\dpram_t.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:39$3'.
+Removing empty process `dpram_t.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:39$3'.
 Cleaned up 2 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -139,8 +139,8 @@ Finding identical cells in module `\dpram_t'.
 Removed a total of 0 cells.
 
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $procdff$43 ($dff) from module dpram_t (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:53$18_DATA, Q = \out_b).
-Adding EN signal on $procdff$47 ($dff) from module dpram_t (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:44$10_DATA, Q = \out_a).
+Adding EN signal on $procdff$43 ($dff) from module dpram_t (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:53$18_DATA, Q = \out_b).
+Adding EN signal on $procdff$47 ($dff) from module dpram_t (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/dpram_t.v:44$10_DATA, Q = \out_a).
 
 4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \dpram_t..
@@ -190,11 +190,9 @@ Optimizing module dpram_t.
    Number of memory bits:        32768
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                        1024
+     $mux                         1038
 
-End of script. Logfile hash: 2a863e41d8, CPU: user 0.13s system 0.00s, MEM: 16.07 MB peak
+End of script. Logfile hash: 2637eac0e3, CPU: user 0.17s system 0.00s, MEM: 16.38 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 24% 2x opt_clean (0 sec), 18% 2x opt_dff (0 sec), ...
+Time spent: 19% 2x opt_clean (0 sec), 19% 1x proc_mux (0 sec), ...

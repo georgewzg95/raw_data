@@ -180,25 +180,21 @@ Optimizing module f3_sub.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     f3_add                          1
 
 === design hierarchy ===
 
    f3_sub                            1
-     f3_add                          1
+     f3_add                          0
 
-   Number of wires:                 32
-   Number of wire bits:             38
-   Number of public wires:          12
-   Number of public wire bits:      18
+   Number of wires:                  3
+   Number of wire bits:              6
+   Number of public wires:           3
+   Number of public wire bits:       6
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 22
-     $and                           14
-     $not                            4
-     $or                             4
+   Number of cells:                  1
 
-End of script. Logfile hash: f578b8daa1, CPU: user 0.02s system 0.00s, MEM: 10.79 MB peak
+End of script. Logfile hash: a2df56e5ea, CPU: user 0.04s system 0.00s, MEM: 10.95 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 24% 4x opt_expr (0 sec), 24% 3x opt_merge (0 sec), ...
+Time spent: 44% 4x opt_expr (0 sec), 22% 3x opt_merge (0 sec), ...

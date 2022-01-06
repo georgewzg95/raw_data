@@ -24,11 +24,11 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_cfgr.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_cfgr.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_cfgr.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_cfgr.v' to AST representation.
 Warning: Encountered `parallel_case' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using the Verilog `parallel_case' attribute or the SystemVerilog `unique' or `priority' keywords is recommended!
 Generating RTLIL representation for module `\or1200_cfgr'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_cfgr.v:577.1-664.10 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_cfgr.v:577.1-664.10 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Successfully finished Verilog frontend.
@@ -52,7 +52,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_cfgr.v:577$1 in module or1200_cfgr.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_cfgr.v:577$1 in module or1200_cfgr.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -64,7 +64,7 @@ Promoted 1 assignment to connection.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\or1200_cfgr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_cfgr.v:577$1'.
+Creating decoders for process `\or1200_cfgr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_cfgr.v:577$1'.
      1/19: $2\spr_dat_o[31:0] [31:24]
      2/19: $2\spr_dat_o[31:0] [12]
      3/19: $2\spr_dat_o[31:0] [11]
@@ -86,15 +86,15 @@ Creating decoders for process `\or1200_cfgr.$proc$/home/zhigang/DATA/raw_designs
     19/19: $1\spr_dat_o[31:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-Latch inferred for signal `\or1200_cfgr.\spr_dat_o' from process `\or1200_cfgr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_cfgr.v:577$1': $auto$proc_dlatch.cc:427:proc_dlatch$215
+Latch inferred for signal `\or1200_cfgr.\spr_dat_o' from process `\or1200_cfgr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_cfgr.v:577$1': $auto$proc_dlatch.cc:427:proc_dlatch$215
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 2 empty switches in `\or1200_cfgr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_cfgr.v:577$1'.
-Removing empty process `or1200_cfgr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_cfgr.v:577$1'.
+Found and cleaned up 2 empty switches in `\or1200_cfgr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_cfgr.v:577$1'.
+Removing empty process `or1200_cfgr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_cfgr.v:577$1'.
 Cleaned up 2 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -227,13 +227,13 @@ Optimizing module or1200_cfgr.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 27
-     $dlatch                         1
-     $eq                             6
-     $logic_not                      1
-     $mux                           10
-     $reduce_or                      9
+     $dlatch                        20
+     $eq                            24
+     $logic_not                      4
+     $mux                           17
+     $reduce_or                     51
 
 Warnings: 1 unique messages, 1 total
-End of script. Logfile hash: b1d6b9b0f3, CPU: user 0.06s system 0.00s, MEM: 11.00 MB peak
+End of script. Logfile hash: d03116c2c9, CPU: user 0.04s system 0.00s, MEM: 11.97 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 26% 5x opt_expr (0 sec), 19% 2x read_verilog (0 sec), ...
+Time spent: 33% 5x opt_expr (0 sec), 22% 2x read_verilog (0 sec), ...

@@ -455,7 +455,6 @@ Optimizing module func4.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     f3_add                          1
 
 === func1 ===
 
@@ -467,8 +466,6 @@ Optimizing module func4.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 99
-     f3_sub                         98
-     func4                           1
 
 === func4 ===
 
@@ -480,28 +477,24 @@ Optimizing module func4.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 98
-     f3_mult                        98
 
 === design hierarchy ===
 
    func1                             1
-     f3_sub                         98
-       f3_add                        1
-     func4                           1
-       f3_mult                      98
+     f3_sub                          0
+       f3_add                        0
+     func4                           0
+       f3_mult                       0
 
-   Number of wires:               5202
-   Number of wire bits:           7256
-   Number of public wires:        1870
-   Number of public wire bits:    3924
+   Number of wires:                  5
+   Number of wire bits:            786
+   Number of public wires:           5
+   Number of public wire bits:     786
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               3724
-     $and                         2352
-     $not                          784
-     $or                           588
+   Number of cells:                 99
 
-End of script. Logfile hash: d42094650d, CPU: user 0.12s system 0.00s, MEM: 12.96 MB peak
+End of script. Logfile hash: dd84ef512a, CPU: user 0.12s system 0.00s, MEM: 13.12 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 40% 2x read_verilog (0 sec), 14% 3x opt_merge (0 sec), ...
+Time spent: 37% 2x read_verilog (0 sec), 17% 4x opt_expr (0 sec), ...

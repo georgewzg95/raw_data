@@ -24,11 +24,11 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v' to AST representation.
 Warning: Encountered `parallel_case' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using the Verilog `parallel_case' attribute or the SystemVerilog `unique' or `priority' keywords is recommended!
 Generating RTLIL representation for module `\or1200_genpc'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:650.1-741.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:650.1-741.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Successfully finished Verilog frontend.
@@ -52,9 +52,9 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:746$26 in module or1200_genpc.
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:650$11 in module or1200_genpc.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:639$10 in module or1200_genpc.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:746$26 in module or1200_genpc.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:650$11 in module or1200_genpc.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:639$10 in module or1200_genpc.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -66,37 +66,37 @@ Promoted 2 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:746$26'.
+Creating decoders for process `\or1200_genpc.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:746$26'.
      1/1: $0\pcreg[29:0]
-Creating decoders for process `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:650$11'.
+Creating decoders for process `\or1200_genpc.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:650$11'.
      1/6: $3\taken[0:0]
      2/6: $3\pc[31:0]
      3/6: $2\taken[0:0]
      4/6: $2\pc[31:0]
      5/6: $1\taken[0:0]
      6/6: $1\pc[31:0]
-Creating decoders for process `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:639$10'.
+Creating decoders for process `\or1200_genpc.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:639$10'.
      1/1: $0\genpc_refetch_r[0:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\or1200_genpc.\taken' from process `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:650$11'.
-No latch inferred for signal `\or1200_genpc.\pc' from process `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:650$11'.
+No latch inferred for signal `\or1200_genpc.\taken' from process `\or1200_genpc.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:650$11'.
+No latch inferred for signal `\or1200_genpc.\pc' from process `\or1200_genpc.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:650$11'.
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\or1200_genpc.\pcreg' using process `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:746$26'.
+Creating register for signal `\or1200_genpc.\pcreg' using process `\or1200_genpc.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:746$26'.
   created $dff cell `$procdff$150' with positive edge clock.
-Creating register for signal `\or1200_genpc.\genpc_refetch_r' using process `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:639$10'.
+Creating register for signal `\or1200_genpc.\genpc_refetch_r' using process `\or1200_genpc.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:639$10'.
   created $dff cell `$procdff$151' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 3 empty switches in `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:746$26'.
-Removing empty process `or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:746$26'.
-Found and cleaned up 3 empty switches in `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:650$11'.
-Removing empty process `or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:650$11'.
-Found and cleaned up 2 empty switches in `\or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:639$10'.
-Removing empty process `or1200_genpc.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:639$10'.
+Found and cleaned up 3 empty switches in `\or1200_genpc.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:746$26'.
+Removing empty process `or1200_genpc.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:746$26'.
+Found and cleaned up 3 empty switches in `\or1200_genpc.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:650$11'.
+Removing empty process `or1200_genpc.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:650$11'.
+Found and cleaned up 2 empty switches in `\or1200_genpc.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:639$10'.
+Removing empty process `or1200_genpc.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_genpc.v:639$10'.
 Cleaned up 8 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -217,19 +217,19 @@ Optimizing module or1200_genpc.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 47
-     $add                            2
+     $add                           60
      $and                            5
-     $dffe                           1
-     $eq                            14
-     $logic_not                      7
-     $mux                            9
+     $dffe                          30
+     $eq                            70
+     $logic_not                     11
+     $mux                          208
      $or                             3
-     $pmux                           2
-     $reduce_bool                    1
-     $reduce_or                      2
-     $sub                            1
+     $pmux                          33
+     $reduce_bool                    3
+     $reduce_or                     20
+     $sub                           36
 
 Warnings: 1 unique messages, 1 total
-End of script. Logfile hash: 20d1cb7124, CPU: user 0.10s system 0.00s, MEM: 11.85 MB peak
+End of script. Logfile hash: a4cda963da, CPU: user 0.11s system 0.00s, MEM: 11.89 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 31% 5x opt_expr (0 sec), 15% 2x read_verilog (0 sec), ...
+Time spent: 30% 5x opt_expr (0 sec), 15% 3x opt_clean (0 sec), ...

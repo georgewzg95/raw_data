@@ -11,7 +11,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $dffe                           3
+     $dffe                          24
 
 === fltr_compute_f1 ===
 
@@ -23,9 +23,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 22
-     $add                            6
-     $dff                            9
-     $mul                            7
+     $add                          120
+     $dff                          155
+     $mul                          119
 
 === fltr_compute_f2 ===
 
@@ -37,9 +37,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $add                            6
-     $dff                            9
-     $mul                            5
+     $add                          120
+     $dff                          135
+     $mul                           83
 
 === fltr_compute_f3 ===
 
@@ -51,9 +51,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 19
-     $add                            5
-     $dff                            8
-     $mul                            6
+     $add                          100
+     $dff                          130
+     $mul                           94
 
 === fltr_compute_h1 ===
 
@@ -65,9 +65,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 19
-     $add                            5
-     $dff                            8
-     $mul                            6
+     $add                          100
+     $dff                          138
+     $mul                          102
 
 === fltr_compute_h2 ===
 
@@ -79,9 +79,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $add                            6
-     $dff                            9
-     $mul                            5
+     $add                          120
+     $dff                          135
+     $mul                           83
 
 === fltr_compute_h3 ===
 
@@ -93,9 +93,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 19
-     $add                            5
-     $dff                            8
-     $mul                            6
+     $add                          100
+     $dff                          132
+     $mul                           96
 
 === fltr_compute_h4 ===
 
@@ -107,9 +107,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 22
-     $add                            6
-     $dff                            9
-     $mul                            7
+     $add                          120
+     $dff                          143
+     $mul                          107
 
 === v_fltr_316x7 ===
 
@@ -121,37 +121,25 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     fifo316                         7
-     fltr_compute_f1                 1
-     fltr_compute_f2                 1
-     fltr_compute_f3                 1
-     fltr_compute_h1                 1
-     fltr_compute_h2                 1
-     fltr_compute_h3                 1
-     fltr_compute_h4                 1
 
 === design hierarchy ===
 
    v_fltr_316x7                      1
-     fifo316                         7
-     fltr_compute_f1                 1
-     fltr_compute_f2                 1
-     fltr_compute_f3                 1
-     fltr_compute_h1                 1
-     fltr_compute_h2                 1
-     fltr_compute_h3                 1
-     fltr_compute_h4                 1
+     fifo316                         0
+     fltr_compute_f1                 0
+     fltr_compute_f2                 0
+     fltr_compute_f3                 0
+     fltr_compute_h1                 0
+     fltr_compute_h2                 0
+     fltr_compute_h3                 0
+     fltr_compute_h4                 0
 
-   Number of wires:                218
-   Number of wire bits:           3402
-   Number of public wires:         137
-   Number of public wire bits:    1908
+   Number of wires:                 18
+   Number of wire bits:            186
+   Number of public wires:          18
+   Number of public wire bits:     186
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                162
-     $add                           39
-     $dff                           60
-     $dffe                          21
-     $mul                           42
+   Number of cells:                 14
 

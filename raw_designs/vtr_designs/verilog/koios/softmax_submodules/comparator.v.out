@@ -11,11 +11,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     $add                            1
-     $and                            1
-     $mux                           10
-     $not                            1
-     reverseFp16                     1
+     $add                           32
+     $and                           32
+     $mux                           40
+     $not                           10
 
 === $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\fNToRecFN ===
 
@@ -27,15 +26,14 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 15
-     $add                            1
-     $eq                             1
+     $add                           32
+     $eq                             2
      $logic_and                      1
-     $logic_not                      3
-     $mux                            5
-     $or                             1
-     $paramod$2a1f131e11d1b2199ecce1cc3c4396a32c4d7a6f\countLeadingZerosfp16      1
-     $shl                            1
-     $xor                            1
+     $logic_not                     16
+     $mux                           80
+     $or                            32
+     $shl                           10
+     $xor                           32
 
 === $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\isSigNaNRecFN ===
 
@@ -47,7 +45,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $eq                             1
+     $eq                             3
      $logic_and                      1
      $logic_not                      1
 
@@ -61,9 +59,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $eq                             1
+     $eq                             2
      $logic_and                      2
-     $logic_not                      3
+     $logic_not                     34
 
 === comparator ===
 
@@ -77,8 +75,6 @@
    Number of cells:                  6
      $not                            1
      $or                             2
-     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\fNToRecFN      2
-     compareRecFN_Fp16               1
 
 === compareRecFN_Fp16 ===
 
@@ -90,13 +86,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 43
-     $eq                             3
+     $eq                            20
      $logic_and                     17
      $logic_not                     10
      $logic_or                       7
-     $lt                             2
-     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\isSigNaNRecFN      2
-     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\recFNToRawFN      2
+     $lt                            19
 
 === reverseFp16 ===
 
@@ -112,31 +106,21 @@
 === design hierarchy ===
 
    comparator                        1
-     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\fNToRecFN      2
-       $paramod$2a1f131e11d1b2199ecce1cc3c4396a32c4d7a6f\countLeadingZerosfp16      1
-         reverseFp16                 1
-     compareRecFN_Fp16               1
-       $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\isSigNaNRecFN      2
-       $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\recFNToRawFN      2
+     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\fNToRecFN      0
+       $paramod$2a1f131e11d1b2199ecce1cc3c4396a32c4d7a6f\countLeadingZerosfp16      0
+         reverseFp16                 0
+     compareRecFN_Fp16               0
+       $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\isSigNaNRecFN      0
+       $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\recFNToRawFN      0
 
-   Number of wires:                181
-   Number of wire bits:           1201
-   Number of public wires:         111
-   Number of public wire bits:     603
+   Number of wires:                 16
+   Number of wire bits:             82
+   Number of public wires:          16
+   Number of public wire bits:      82
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                114
-     $add                            4
-     $and                            2
-     $eq                             9
-     $logic_and                     25
-     $logic_not                     24
-     $logic_or                       7
-     $lt                             2
-     $mux                           30
-     $not                            3
-     $or                             4
-     $shl                            2
-     $xor                            2
+   Number of cells:                  6
+     $not                            1
+     $or                             2
 

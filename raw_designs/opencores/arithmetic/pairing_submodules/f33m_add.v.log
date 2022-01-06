@@ -286,7 +286,6 @@ Optimizing module f3m_add.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     f3m_add                         3
 
 === f3_add ===
 
@@ -312,26 +311,22 @@ Optimizing module f3m_add.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 97
-     f3_add                         97
 
 === design hierarchy ===
 
    f33m_add                          1
-     f3m_add                         3
-       f3_add                       97
+     f3m_add                         0
+       f3_add                        0
 
-   Number of wires:               8460
-   Number of wire bits:          14550
-   Number of public wires:        2640
-   Number of public wire bits:    8730
+   Number of wires:                 12
+   Number of wire bits:           3492
+   Number of public wires:          12
+   Number of public wire bits:    3492
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               6402
-     $and                         4074
-     $not                         1164
-     $or                          1164
+   Number of cells:                  3
 
-End of script. Logfile hash: ac6804499a, CPU: user 0.05s system 0.01s, MEM: 13.06 MB peak
+End of script. Logfile hash: c82d2b779f, CPU: user 0.06s system 0.01s, MEM: 13.16 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 24% 2x read_verilog (0 sec), 24% 2x opt_clean (0 sec), ...
+Time spent: 23% 2x read_verilog (0 sec), 23% 2x opt_clean (0 sec), ...

@@ -182,25 +182,21 @@ Optimizing module func7.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     f3_add                          3
 
 === design hierarchy ===
 
    func7                             1
-     f3_add                          3
+     f3_add                          0
 
-   Number of wires:                 92
-   Number of wire bits:            490
-   Number of public wires:          32
-   Number of public wire bits:     430
+   Number of wires:                  5
+   Number of wire bits:            394
+   Number of public wires:           5
+   Number of public wire bits:     394
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 66
-     $and                           42
-     $not                           12
-     $or                            12
+   Number of cells:                  3
 
-End of script. Logfile hash: 8c1d47c2c4, CPU: user 0.04s system 0.00s, MEM: 10.76 MB peak
+End of script. Logfile hash: 00103528af, CPU: user 0.02s system 0.00s, MEM: 10.93 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 39% 4x opt_expr (0 sec), 29% 3x opt_merge (0 sec), ...
+Time spent: 33% 4x opt_expr (0 sec), 33% 3x opt_merge (0 sec), ...

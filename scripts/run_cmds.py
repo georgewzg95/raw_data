@@ -2,6 +2,7 @@ import subprocess
 import time
 import os
 import argparse
+import re
 
 report_dir = '/misc/scratch/zwei1/reports/'
 root_dir = '/misc/scratch/zwei1/raw_data'
@@ -32,6 +33,34 @@ class Task:
 remain_designs = []
 
 def replace_tcl(design):
+  top_module = find_topmodule(design)
+  with open(design.filepath)
+    lines = f.readlines()
+  create_clock = ''
+  #find out the top module clock port
+  start_parse = False
+  for line in lines:
+    if line.find("module") >= 0:
+      x = line.split()
+      if x[0] == "module":
+	k = x[1].split('(')
+	k = k[0].split('#')
+	if k[0] == top_module:
+	  start_parse = True
+    
+    if start_parse == True:
+      z = re.split('[\s(,;)]', line)
+      for ele in z:
+	if 'clk' in ele or 'clock' in ele:
+	create_clock = ele
+	break
+
+      if create_clock != '':
+	break
+
+    if ';' in line:
+	break
+
   with open(report_dir + os.sep + 'tcl_temp.tcl', 'r') as f:
     lines = f.readlines()
 
@@ -39,7 +68,8 @@ def replace_tcl(design):
     for line in lines:
         line = line.replace('[OUTPUTDIR]', design.r_dir)
         line = line.replace('[V_FILE]', design.filepath)
-        line = line.replace('[TOP]', find_topmodule(design))
+        line = line.replace('[TOP]', top_module)
+        line = line.replace('[CLOCK]', create_clock)
         f.write(line)
 
 def remove_design(design):

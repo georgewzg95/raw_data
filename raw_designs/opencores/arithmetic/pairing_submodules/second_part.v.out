@@ -11,7 +11,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     f3m_add                         3
 
 === f33m_inv ===
 
@@ -24,17 +23,11 @@
    Number of processes:              0
    Number of cells:                 32
      $and                            4
-     $dffe                           1
+     $dffe                         582
      $not                            1
      $or                             4
-     $reduce_and                     1
-     $sdffe                          2
-     f3m_add3                        4
-     f3m_inv                         1
-     f3m_mult3                       4
-     f3m_neg                         3
-     f3m_sub                         4
-     func6                           3
+     $reduce_and                     2
+     $sdffe                          6
 
 === f33m_mult ===
 
@@ -47,20 +40,13 @@
    Number of processes:              0
    Number of cells:                 35
      $dff                            2
-     $dffe                           7
+     $dffe                        1746
      $mux                            1
      $not                            1
      $or                             1
-     $reduce_and                     1
+     $reduce_and                     2
      $sdff                           1
-     $sdffe                          2
-     f3m_add                         8
-     f3m_add3                        3
-     f3m_add4                        1
-     f3m_mult                        1
-     f3m_mux6                        2
-     f3m_neg                         3
-     func6                           1
+     $sdffe                          8
 
 === f33m_mult2 ===
 
@@ -73,14 +59,11 @@
    Number of processes:              0
    Number of cells:                 13
      $dff                            2
-     $dffe                           2
+     $dffe                        1164
      $mux                            1
      $or                             1
      $sdff                           1
-     $sdffe                          2
-     f33m_mult                       1
-     f33m_mux2                       2
-     func6                           1
+     $sdffe                          4
 
 === f33m_mult3 ===
 
@@ -93,14 +76,11 @@
    Number of processes:              0
    Number of cells:                 14
      $dff                            2
-     $dffe                           3
+     $dffe                        1746
      $mux                            1
      $or                             1
      $sdff                           1
-     $sdffe                          2
-     f33m_mult                       1
-     f33m_mux3                       2
-     func6                           1
+     $sdffe                          5
 
 === f33m_mux2 ===
 
@@ -138,7 +118,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     f3m_neg                         3
 
 === f3_add ===
 
@@ -191,7 +170,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     f3_add                          1
 
 === f3m_add ===
 
@@ -203,7 +181,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 97
-     f3_add                         97
 
 === f3m_add3 ===
 
@@ -215,7 +192,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     f3m_add                         2
 
 === f3m_add4 ===
 
@@ -227,7 +203,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     f3m_add                         3
 
 === f3m_inv ===
 
@@ -239,20 +214,14 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 32
-     $dffe                           2
-     $logic_not                      1
-     $mux                            9
-     $ne                             2
+     $dffe                         388
+     $logic_not                      2
+     $mux                         1764
+     $ne                             5
      $not                            1
-     $reduce_and                     1
-     $sdff                           3
-     $sdffe                          4
-     f3_mult                         1
-     func1                           2
-     func2                           2
-     func3                           2
-     func4                           1
-     func5                           1
+     $reduce_and                     2
+     $sdff                         587
+     $sdffe                        395
 
 === f3m_mult ===
 
@@ -264,14 +233,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 12
-     $dff                            2
-     $dffe                           1
-     $mux                            2
-     $sdff                           3
+     $dff                          382
+     $dffe                         194
+     $mux                          388
+     $sdff                         234
      $sdffe                          1
-     f3m_add                         1
-     func7                           1
-     func8                           1
 
 === f3m_mult3 ===
 
@@ -284,14 +250,11 @@
    Number of processes:              0
    Number of cells:                 14
      $dff                            2
-     $dffe                           3
+     $dffe                         582
      $mux                            1
      $or                             1
      $sdff                           1
-     $sdffe                          2
-     f3m_mult                        1
-     f3m_mux3                        2
-     func6                           1
+     $sdffe                          5
 
 === f3m_mux3 ===
 
@@ -340,7 +303,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 97
-     f3_sub                         97
 
 === func1 ===
 
@@ -352,8 +314,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 99
-     f3_sub                         98
-     func4                           1
 
 === func2 ===
 
@@ -376,8 +336,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     f3_mult                         2
-     f3_sub                          2
 
 === func4 ===
 
@@ -389,7 +347,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 98
-     f3_mult                        98
 
 === func5 ===
 
@@ -401,7 +358,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     f3_add                          1
 
 === func6 ===
 
@@ -413,8 +369,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $eq                             1
-     $mux                            1
+     $eq                             2
+     $mux                           32
      $sdff                           2
 
 === func7 ===
@@ -427,7 +383,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     f3_add                          3
 
 === func8 ===
 
@@ -439,8 +394,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                488
-     f3_add                        197
-     f3_mult                       291
 
 === second_part ===
 
@@ -453,130 +406,117 @@
    Number of processes:              0
    Number of cells:                 21
      $and                            3
-     $dffe                           1
+     $dffe                        1164
      $not                            1
      $or                             3
-     $reduce_and                     1
-     $sdffe                          2
-     f33m_add                        2
-     f33m_inv                        1
-     f33m_mult2                      1
-     f33m_mult3                      1
-     f33m_neg                        1
-     f3_add1                         2
-     func6                           2
+     $reduce_and                     2
+     $sdffe                          5
 
 === design hierarchy ===
 
    second_part                       1
-     f33m_add                        2
-       f3m_add                       3
-         f3_add                     97
-     f33m_inv                        1
-       f3m_add3                      4
-         f3m_add                     2
-           f3_add                   97
-       f3m_inv                       1
-         f3_mult                     1
-         func1                       2
-           f3_sub                   98
-             f3_add                  1
-           func4                     1
-             f3_mult                98
-         func2                       2
-         func3                       2
-           f3_mult                   2
-           f3_sub                    2
-             f3_add                  1
-         func4                       1
-           f3_mult                  98
-         func5                       1
-           f3_add                    1
-       f3m_mult3                     4
-         f3m_mult                    1
-           f3m_add                   1
-             f3_add                 97
-           func7                     1
-             f3_add                  3
-           func8                     1
-             f3_add                197
-             f3_mult               291
-         f3m_mux3                    2
-         func6                       1
-       f3m_neg                       3
-       f3m_sub                       4
-         f3_sub                     97
-           f3_add                    1
-       func6                         3
-     f33m_mult2                      1
-       f33m_mult                     1
-         f3m_add                     8
-           f3_add                   97
-         f3m_add3                    3
-           f3m_add                   2
-             f3_add                 97
-         f3m_add4                    1
-           f3m_add                   3
-             f3_add                 97
-         f3m_mult                    1
-           f3m_add                   1
-             f3_add                 97
-           func7                     1
-             f3_add                  3
-           func8                     1
-             f3_add                197
-             f3_mult               291
-         f3m_mux6                    2
-         f3m_neg                     3
-         func6                       1
-       f33m_mux2                     2
-       func6                         1
-     f33m_mult3                      1
-       f33m_mult                     1
-         f3m_add                     8
-           f3_add                   97
-         f3m_add3                    3
-           f3m_add                   2
-             f3_add                 97
-         f3m_add4                    1
-           f3m_add                   3
-             f3_add                 97
-         f3m_mult                    1
-           f3m_add                   1
-             f3_add                 97
-           func7                     1
-             f3_add                  3
-           func8                     1
-             f3_add                197
-             f3_mult               291
-         f3m_mux6                    2
-         f3m_neg                     3
-         func6                       1
-       f33m_mux3                     2
-       func6                         1
-     f33m_neg                        1
-       f3m_neg                       3
-     f3_add1                         2
-     func6                           2
+     f33m_add                        0
+       f3m_add                       0
+         f3_add                      0
+     f33m_inv                        0
+       f3m_add3                      0
+         f3m_add                     0
+           f3_add                    0
+       f3m_inv                       0
+         f3_mult                     0
+         func1                       0
+           f3_sub                    0
+             f3_add                  0
+           func4                     0
+             f3_mult                 0
+         func2                       0
+         func3                       0
+           f3_mult                   0
+           f3_sub                    0
+             f3_add                  0
+         func4                       0
+           f3_mult                   0
+         func5                       0
+           f3_add                    0
+       f3m_mult3                     0
+         f3m_mult                    0
+           f3m_add                   0
+             f3_add                  0
+           func7                     0
+             f3_add                  0
+           func8                     0
+             f3_add                  0
+             f3_mult                 0
+         f3m_mux3                    0
+         func6                       0
+       f3m_neg                       0
+       f3m_sub                       0
+         f3_sub                      0
+           f3_add                    0
+       func6                         0
+     f33m_mult2                      0
+       f33m_mult                     0
+         f3m_add                     0
+           f3_add                    0
+         f3m_add3                    0
+           f3m_add                   0
+             f3_add                  0
+         f3m_add4                    0
+           f3m_add                   0
+             f3_add                  0
+         f3m_mult                    0
+           f3m_add                   0
+             f3_add                  0
+           func7                     0
+             f3_add                  0
+           func8                     0
+             f3_add                  0
+             f3_mult                 0
+         f3m_mux6                    0
+         f3m_neg                     0
+         func6                       0
+       f33m_mux2                     0
+       func6                         0
+     f33m_mult3                      0
+       f33m_mult                     0
+         f3m_add                     0
+           f3_add                    0
+         f3m_add3                    0
+           f3m_add                   0
+             f3_add                  0
+         f3m_add4                    0
+           f3m_add                   0
+             f3_add                  0
+         f3m_mult                    0
+           f3m_add                   0
+             f3_add                  0
+           func7                     0
+             f3_add                  0
+           func8                     0
+             f3_add                  0
+             f3_mult                 0
+         f3m_mux6                    0
+         f3m_neg                     0
+         func6                       0
+       f33m_mux3                     0
+       func6                         0
+     f33m_neg                        0
+       f3m_neg                       0
+     f3_add1                         0
+     func6                           0
 
-   Number of wires:             273499
-   Number of wire bits:         470397
-   Number of public wires:       83283
-   Number of public wire bits:  275707
+   Number of wires:                 47
+   Number of wire bits:          12247
+   Number of public wires:          39
+   Number of public wire bits:   12239
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:             213174
-     $and                       133971
-     $dff                           28
-     $dffe                          41
-     $eq                            13
-     $logic_not                      1
-     $mux                           42
-     $ne                             2
-     $not                        36297
-     $or                         42689
-     $reduce_and                     5
-     $sdff                          55
-     $sdffe                         30
+   Number of cells:                 21
+     $and                            3
+     $dffe                        1164
+     $not                            1
+     $or                             3
+     $reduce_and                     2
+     $sdffe                          5
 

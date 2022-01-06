@@ -24,22 +24,22 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v' to AST representation.
 Generating RTLIL representation for module `\int_to_float_fp16'.
 Generating RTLIL representation for module `\final_out'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:58.3-67.6 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:58.3-67.6 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\exception'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:88.1-101.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:88.1-101.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\am_shift'.
 Generating RTLIL representation for module `\sub2'.
 Generating RTLIL representation for module `\sub'.
 Generating RTLIL representation for module `\lzc'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:144.1-152.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:144.1-152.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\align'.
@@ -92,9 +92,9 @@ Mapping positional arguments of cell int_to_float_fp16.dut_align (align).
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:144$22 in module lzc.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:88$5 in module exception.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:58$1 in module final_out.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:144$22 in module lzc.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:88$5 in module exception.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:58$1 in module final_out.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -106,34 +106,34 @@ Promoted 4 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\lzc.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:144$22'.
+Creating decoders for process `\lzc.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:144$22'.
      1/1: $1\tmp_cnt_final[4:0]
-Creating decoders for process `\exception.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:88$5'.
+Creating decoders for process `\exception.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:88$5'.
      1/3: $2\z_e_final[4:0]
      2/3: $1\z_e_final[4:0]
      3/3: $1\z_m_final[10:0]
-Creating decoders for process `\final_out.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:58$1'.
+Creating decoders for process `\final_out.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:58$1'.
      1/3: $1\output_z[15:0] [15]
      2/3: $1\output_z[15:0] [14:10]
      3/3: $1\output_z[15:0] [9:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\lzc.\tmp_cnt_final' from process `\lzc.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:144$22'.
-No latch inferred for signal `\exception.\z_m_final' from process `\exception.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:88$5'.
-No latch inferred for signal `\exception.\z_e_final' from process `\exception.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:88$5'.
-No latch inferred for signal `\final_out.\output_z' from process `\final_out.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:58$1'.
+No latch inferred for signal `\lzc.\tmp_cnt_final' from process `\lzc.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:144$22'.
+No latch inferred for signal `\exception.\z_m_final' from process `\exception.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:88$5'.
+No latch inferred for signal `\exception.\z_e_final' from process `\exception.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:88$5'.
+No latch inferred for signal `\final_out.\output_z' from process `\final_out.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:58$1'.
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\lzc.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:144$22'.
-Removing empty process `lzc.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:144$22'.
-Found and cleaned up 2 empty switches in `\exception.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:88$5'.
-Removing empty process `exception.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:88$5'.
-Found and cleaned up 1 empty switch in `\final_out.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:58$1'.
-Removing empty process `final_out.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:58$1'.
+Found and cleaned up 1 empty switch in `\lzc.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:144$22'.
+Removing empty process `lzc.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:144$22'.
+Found and cleaned up 2 empty switches in `\exception.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:88$5'.
+Removing empty process `exception.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:88$5'.
+Found and cleaned up 1 empty switch in `\final_out.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:58$1'.
+Removing empty process `final_out.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:58$1'.
 Cleaned up 4 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -176,7 +176,7 @@ Removed a total of 0 cells.
 Running muxtree optimizer on module \align..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:160$25: \a -> { 1'0 \a [14:0] }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/int_to_float_fp16.v:160$25: \a -> { 1'0 \a [14:0] }
   Analyzing evaluation results.
 Running muxtree optimizer on module \lzc..
   Creating internal representation of mux trees.
@@ -344,8 +344,8 @@ Optimizing module sub2.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $mux                            1
-     $neg                            1
+     $mux                           16
+     $neg                           16
 
 === am_shift ===
 
@@ -357,7 +357,7 @@ Optimizing module sub2.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $shl                            1
+     $shl                           16
 
 === exception ===
 
@@ -369,12 +369,12 @@ Optimizing module sub2.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $add                            2
-     $eq                             1
+     $add                           64
+     $eq                            11
      $logic_and                      1
      $logic_or                       2
-     $mux                            3
-     $reduce_bool                    1
+     $mux                           21
+     $reduce_bool                    3
 
 === final_out ===
 
@@ -386,9 +386,9 @@ Optimizing module sub2.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $logic_not                      1
-     $mux                            3
+     $add                            8
+     $logic_not                     16
+     $mux                           16
 
 === int_to_float_fp16 ===
 
@@ -400,13 +400,6 @@ Optimizing module sub2.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     align                           1
-     am_shift                        1
-     exception                       1
-     final_out                       1
-     lzc                             1
-     sub                             1
-     sub2                            1
 
 === lzc ===
 
@@ -418,8 +411,8 @@ Optimizing module sub2.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $logic_not                      4
-     $mux                            4
+     $logic_not                     30
+     $mux                           18
      $not                            2
 
 === sub ===
@@ -443,39 +436,28 @@ Optimizing module sub2.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sub                            1
+     $sub                           32
 
 === design hierarchy ===
 
    int_to_float_fp16                 1
-     align                           1
-     am_shift                        1
-     exception                       1
-     final_out                       1
-     lzc                             1
-     sub                             1
-     sub2                            1
+     align                           0
+     am_shift                        0
+     exception                       0
+     final_out                       0
+     lzc                             0
+     sub                             0
+     sub2                            0
 
-   Number of wires:                 53
-   Number of wire bits:            473
-   Number of public wires:          39
-   Number of public wire bits:     340
+   Number of wires:                 10
+   Number of wire bits:             96
+   Number of public wires:          10
+   Number of public wire bits:      96
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 29
-     $add                            3
-     $eq                             1
-     $logic_and                      1
-     $logic_not                      5
-     $logic_or                       2
-     $mux                           11
-     $neg                            1
-     $not                            2
-     $reduce_bool                    1
-     $shl                            1
-     $sub                            1
+   Number of cells:                  7
 
-End of script. Logfile hash: e44b21f1a1, CPU: user 0.06s system 0.00s, MEM: 11.06 MB peak
+End of script. Logfile hash: 33e5e1c1f0, CPU: user 0.06s system 0.00s, MEM: 11.84 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 28% 4x opt_expr (0 sec), 21% 3x opt_merge (0 sec), ...
+Time spent: 33% 4x opt_expr (0 sec), 26% 3x opt_merge (0 sec), ...

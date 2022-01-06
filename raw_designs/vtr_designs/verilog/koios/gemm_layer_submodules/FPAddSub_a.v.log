@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v' to AST representation.
 Generating RTLIL representation for module `\FPAddSub_a'.
 Successfully finished Verilog frontend.
 
@@ -48,10 +48,10 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Removed 1 dead cases from process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:160$40 in module FPAddSub_a.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:160$40 in module FPAddSub_a.
-Removed 1 dead cases from process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:132$39 in module FPAddSub_a.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:132$39 in module FPAddSub_a.
+Removed 1 dead cases from process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:160$40 in module FPAddSub_a.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:160$40 in module FPAddSub_a.
+Removed 1 dead cases from process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:132$39 in module FPAddSub_a.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:132$39 in module FPAddSub_a.
 Removed a total of 2 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -63,7 +63,7 @@ Promoted 3 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\FPAddSub_a.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:160$40'.
+Creating decoders for process `\FPAddSub_a.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:160$40'.
      1/25: $0\Lvl3[23:0] [23]
      2/25: $0\Lvl3[23:0] [21]
      3/25: $0\Lvl3[23:0] [22]
@@ -89,7 +89,7 @@ Creating decoders for process `\FPAddSub_a.$proc$/home/zhigang/DATA/raw_designs/
     23/25: $0\Lvl3[23:0] [1]
     24/25: $0\Lvl3[23:0] [0]
     25/25: $1\j[31:0]
-Creating decoders for process `\FPAddSub_a.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:132$39'.
+Creating decoders for process `\FPAddSub_a.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:132$39'.
      1/21: $0\Lvl2[23:0] [23:19]
      2/21: $0\Lvl2[23:0] [16]
      3/21: $0\Lvl2[23:0] [15]
@@ -111,25 +111,25 @@ Creating decoders for process `\FPAddSub_a.$proc$/home/zhigang/DATA/raw_designs/
     19/21: $0\Lvl2[23:0] [1]
     20/21: $0\Lvl2[23:0] [0]
     21/21: $1\i[31:0]
-Creating decoders for process `\FPAddSub_a.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:125$37'.
+Creating decoders for process `\FPAddSub_a.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:125$37'.
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\FPAddSub_a.\Lvl3' from process `\FPAddSub_a.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:160$40'.
-Latch inferred for signal `\FPAddSub_a.\j' from process `\FPAddSub_a.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:160$40': $auto$proc_dlatch.cc:427:proc_dlatch$279
-No latch inferred for signal `\FPAddSub_a.\Lvl2' from process `\FPAddSub_a.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:132$39'.
-Latch inferred for signal `\FPAddSub_a.\i' from process `\FPAddSub_a.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:132$39': $auto$proc_dlatch.cc:427:proc_dlatch$288
-No latch inferred for signal `\FPAddSub_a.\Lvl1' from process `\FPAddSub_a.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:125$37'.
+No latch inferred for signal `\FPAddSub_a.\Lvl3' from process `\FPAddSub_a.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:160$40'.
+Latch inferred for signal `\FPAddSub_a.\j' from process `\FPAddSub_a.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:160$40': $auto$proc_dlatch.cc:427:proc_dlatch$279
+No latch inferred for signal `\FPAddSub_a.\Lvl2' from process `\FPAddSub_a.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:132$39'.
+Latch inferred for signal `\FPAddSub_a.\i' from process `\FPAddSub_a.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:132$39': $auto$proc_dlatch.cc:427:proc_dlatch$288
+No latch inferred for signal `\FPAddSub_a.\Lvl1' from process `\FPAddSub_a.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:125$37'.
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\FPAddSub_a.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:160$40'.
-Removing empty process `FPAddSub_a.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:160$40'.
-Found and cleaned up 1 empty switch in `\FPAddSub_a.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:132$39'.
-Removing empty process `FPAddSub_a.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:132$39'.
-Removing empty process `FPAddSub_a.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:125$37'.
+Found and cleaned up 1 empty switch in `\FPAddSub_a.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:160$40'.
+Removing empty process `FPAddSub_a.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:160$40'.
+Found and cleaned up 1 empty switch in `\FPAddSub_a.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:132$39'.
+Removing empty process `FPAddSub_a.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:132$39'.
+Removing empty process `FPAddSub_a.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/FPAddSub_a.v:125$37'.
 Cleaned up 2 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -223,18 +223,18 @@ Optimizing module FPAddSub_a.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 81
-     $add                            4
+     $add                          128
      $and                            4
-     $eq                             6
-     $logic_not                      4
-     $lt                             1
-     $mux                            5
-     $not                            2
+     $eq                            12
+     $logic_not                      6
+     $lt                            31
+     $mux                           83
+     $not                           64
      $or                             3
-     $pmux                          44
-     $reduce_and                     2
-     $reduce_or                      6
+     $pmux                          48
+     $reduce_and                    16
+     $reduce_or                     56
 
-End of script. Logfile hash: c1c96a0015, CPU: user 0.13s system 0.00s, MEM: 12.56 MB peak
+End of script. Logfile hash: 59855f03df, CPU: user 0.14s system 0.00s, MEM: 12.74 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 25% 4x opt_expr (0 sec), 25% 2x read_verilog (0 sec), ...
+Time spent: 27% 4x opt_expr (0 sec), 27% 2x read_verilog (0 sec), ...

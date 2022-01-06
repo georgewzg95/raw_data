@@ -1123,7 +1123,6 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 97
-     f3_add                         97
 
 === f3m_mult ===
 
@@ -1135,14 +1134,11 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 12
-     $dff                            2
-     $dffe                           1
-     $mux                            2
-     $sdff                           3
+     $dff                          382
+     $dffe                         194
+     $mux                          388
+     $sdff                         234
      $sdffe                          1
-     f3m_add                         1
-     func7                           1
-     func8                           1
 
 === f3m_mult3 ===
 
@@ -1155,14 +1151,11 @@ Optimizing module func8.
    Number of processes:              0
    Number of cells:                 14
      $dff                            2
-     $dffe                           3
+     $dffe                         582
      $mux                            1
      $or                             1
      $sdff                           1
-     $sdffe                          2
-     f3m_mult                        1
-     f3m_mux3                        2
-     func6                           1
+     $sdffe                          5
 
 === f3m_mux3 ===
 
@@ -1187,8 +1180,8 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $eq                             1
-     $mux                            1
+     $eq                             2
+     $mux                           32
      $sdff                           2
 
 === func7 ===
@@ -1201,7 +1194,6 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     f3_add                          3
 
 === func8 ===
 
@@ -1213,41 +1205,36 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                488
-     f3_add                        197
-     f3_mult                       291
 
 === design hierarchy ===
 
    f3m_mult3                         1
-     f3m_mult                        1
-       f3m_add                       1
-         f3_add                     97
-       func7                         1
-         f3_add                      3
-       func8                         1
-         f3_add                    197
-         f3_mult                   291
-     f3m_mux3                        2
-     func6                           1
+     f3m_mult                        0
+       f3m_add                       0
+         f3_add                      0
+       func7                         0
+         f3_add                      0
+       func8                         0
+         f3_add                      0
+         f3_mult                     0
+     f3m_mux3                        0
+     func6                           0
 
-   Number of wires:              16841
-   Number of wire bits:          26695
-   Number of public wires:        5269
-   Number of public wire bits:   14706
+   Number of wires:                 27
+   Number of wire bits:           2346
+   Number of public wires:          25
+   Number of public wire bits:    2344
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:              13153
-     $and                         8232
-     $dff                            4
-     $dffe                           4
-     $eq                             1
-     $mux                            4
-     $not                         2352
-     $or                          2547
-     $sdff                           6
-     $sdffe                          3
+   Number of cells:                 14
+     $dff                            2
+     $dffe                         582
+     $mux                            1
+     $or                             1
+     $sdff                           1
+     $sdffe                          5
 
-End of script. Logfile hash: 4da7fc4276, CPU: user 0.60s system 0.00s, MEM: 27.45 MB peak
+End of script. Logfile hash: bf3af784e8, CPU: user 0.56s system 0.01s, MEM: 27.37 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 28% 2x read_verilog (0 sec), 23% 5x opt_expr (0 sec), ...
+Time spent: 24% 5x opt_expr (0 sec), 21% 2x read_verilog (0 sec), ...

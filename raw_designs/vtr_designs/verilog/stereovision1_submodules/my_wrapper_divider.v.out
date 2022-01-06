@@ -11,17 +11,17 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 42
-     $add                            3
-     $eq                             2
-     $logic_not                      2
-     $mux                           17
-     $not                            2
-     $or                             2
-     $pmux                           3
-     $reduce_bool                    2
-     $reduce_or                      3
-     $sdff                           2
-     $sdffe                          4
+     $add                           96
+     $eq                             4
+     $logic_not                      6
+     $mux                           95
+     $not                           33
+     $or                            24
+     $pmux                           4
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                           3
+     $sdffe                         45
 
 === my_wrapper_divider ===
 
@@ -33,36 +33,30 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 12
-     $eq                             3
-     $logic_not                      1
-     $mux                            1
-     $pmux                           3
-     $reduce_or                      2
-     $sdff                           1
-     my_divider                      1
+     $eq                             6
+     $logic_not                      2
+     $mux                            2
+     $pmux                           4
+     $reduce_or                      6
+     $sdff                           2
 
 === design hierarchy ===
 
    my_wrapper_divider                1
-     my_divider                      1
+     my_divider                      0
 
-   Number of wires:                 72
-   Number of wire bits:            440
-   Number of public wires:          38
-   Number of public wire bits:     181
+   Number of wires:                 19
+   Number of wire bits:             67
+   Number of public wires:          12
+   Number of public wire bits:      59
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 53
-     $add                            3
-     $eq                             5
-     $logic_not                      3
-     $mux                           18
-     $not                            2
-     $or                             2
-     $pmux                           6
-     $reduce_bool                    2
-     $reduce_or                      5
-     $sdff                           3
-     $sdffe                          4
+   Number of cells:                 12
+     $eq                             6
+     $logic_not                      2
+     $mux                            2
+     $pmux                           4
+     $reduce_or                      6
+     $sdff                           2
 

@@ -24,41 +24,41 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v' to AST representation.
 Warning: Encountered `full_case' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using the Verilog `full_case' attribute or the SystemVerilog `unique' or `unique0' keywords is recommended!
 Warning: Encountered `parallel_case' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using the Verilog `parallel_case' attribute or the SystemVerilog `unique' or `priority' keywords is recommended!
 Generating RTLIL representation for module `\fpu_mul'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:215.1-216.22 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:215.1-216.22 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\mul_r2'.
 Generating RTLIL representation for module `\pre_norm_fmul'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:532.1-538.11 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:532.1-538.11 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\except'.
 Generating RTLIL representation for module `\post_norm'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1006.2-1012.10 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1006.2-1012.10 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1014.2-1020.10 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1014.2-1020.10 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\b_left_shifter_new'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1164.1-1225.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1164.1-1225.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\b_left_shifter'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1239.1-1293.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1239.1-1293.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\b_right_shifter'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1307.1-1361.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1307.1-1361.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\pri_encoder'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1374.1-1474.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1374.1-1474.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Successfully finished Verilog frontend.
@@ -106,13 +106,13 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 49 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1374$1058 in module pri_encoder.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1307$1009 in module b_right_shifter.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1239$960 in module b_left_shifter.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1164$903 in module b_left_shifter_new.
-Removed 1 dead cases from process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1014$654 in module post_norm.
-Removed 1 dead cases from process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1006$653 in module post_norm.
-Removed 1 dead cases from process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:532$267 in module pre_norm_fmul.
+Marked 49 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1374$1058 in module pri_encoder.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1307$1009 in module b_right_shifter.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1239$960 in module b_left_shifter.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1164$903 in module b_left_shifter_new.
+Removed 1 dead cases from process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1014$654 in module post_norm.
+Removed 1 dead cases from process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1006$653 in module post_norm.
+Removed 1 dead cases from process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:532$267 in module pre_norm_fmul.
 Removed a total of 3 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -124,7 +124,7 @@ Promoted 80 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\pri_encoder.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1374$1058'.
+Creating decoders for process `\pri_encoder.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1374$1058'.
      1/49: $49\fi_ldz_r0[5:0]
      2/49: $48\fi_ldz_r0[5:0]
      3/49: $47\fi_ldz_r0[5:0]
@@ -174,322 +174,322 @@ Creating decoders for process `\pri_encoder.$proc$/home/zhigang/DATA/raw_designs
     47/49: $3\fi_ldz_r0[5:0]
     48/49: $2\fi_ldz_r0[5:0]
     49/49: $1\fi_ldz_r0[5:0]
-Creating decoders for process `\b_right_shifter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1307$1009'.
+Creating decoders for process `\b_right_shifter.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1307$1009'.
      1/1: $1\shift_out[47:0]
-Creating decoders for process `\b_left_shifter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1239$960'.
+Creating decoders for process `\b_left_shifter.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1239$960'.
      1/1: $1\shift_out[47:0]
-Creating decoders for process `\b_left_shifter_new.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1164$903'.
+Creating decoders for process `\b_left_shifter_new.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1164$903'.
      1/1: $1\shift_out[55:0]
-Creating decoders for process `\post_norm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1014$654'.
+Creating decoders for process `\post_norm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1014$654'.
      1/1: $1\fract_out_rnd[22:0]
-Creating decoders for process `\post_norm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1006$653'.
+Creating decoders for process `\post_norm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1006$653'.
      1/1: $1\exp_out_rnd[7:0]
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:658$336'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:655$335'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:652$333'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:649$331'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:646$328'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:643$325'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:640$322'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:637$319'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:634$317'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:631$315'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:628$311'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:625$307'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:622$303'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:619$299'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:616$295'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:613$291'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:610$287'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:607$286'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:604$282'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:601$281'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:598$278'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:595$275'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:592$273'.
-Creating decoders for process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:589$271'.
-Creating decoders for process `\pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:543$269'.
-Creating decoders for process `\pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:540$268'.
-Creating decoders for process `\pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:532$267'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:658$336'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:655$335'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:652$333'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:649$331'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:646$328'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:643$325'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:640$322'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:637$319'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:634$317'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:631$315'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:628$311'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:625$307'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:622$303'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:619$299'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:616$295'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:613$291'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:610$287'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:607$286'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:604$282'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:601$281'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:598$278'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:595$275'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:592$273'.
+Creating decoders for process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:589$271'.
+Creating decoders for process `\pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:543$269'.
+Creating decoders for process `\pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:540$268'.
+Creating decoders for process `\pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:532$267'.
      1/1: $1\sign_d[0:0]
-Creating decoders for process `\pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:522$262'.
-Creating decoders for process `\pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:519$261'.
-Creating decoders for process `\pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:511$236'.
-Creating decoders for process `\pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:502$214'.
-Creating decoders for process `\mul_r2.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:426$187'.
-Creating decoders for process `\mul_r2.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:423$185'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:397$178'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:394$174'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:391$173'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:376$143'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:367$123'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:363$122'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:360$121'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:323$103'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:320$102'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:314$94'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:303$66'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:294$46'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:277$24'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:226$19'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:221$18'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:218$17'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:215$16'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:211$15'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:208$14'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:181$13'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:178$12'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:175$11'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:172$10'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:114$9'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:111$8'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:108$7'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:105$6'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:102$5'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:99$4'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:96$3'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:93$2'.
-Creating decoders for process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:89$1'.
+Creating decoders for process `\pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:522$262'.
+Creating decoders for process `\pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:519$261'.
+Creating decoders for process `\pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:511$236'.
+Creating decoders for process `\pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:502$214'.
+Creating decoders for process `\mul_r2.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:426$187'.
+Creating decoders for process `\mul_r2.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:423$185'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:397$178'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:394$174'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:391$173'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:376$143'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:367$123'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:363$122'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:360$121'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:323$103'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:320$102'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:314$94'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:303$66'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:294$46'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:277$24'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:226$19'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:221$18'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:218$17'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:215$16'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:211$15'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:208$14'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:181$13'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:178$12'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:175$11'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:172$10'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:114$9'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:111$8'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:108$7'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:105$6'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:102$5'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:99$4'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:96$3'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:93$2'.
+Creating decoders for process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:89$1'.
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-Latch inferred for signal `\pri_encoder.\fi_ldz_r0' from process `\pri_encoder.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1374$1058': $auto$proc_dlatch.cc:427:proc_dlatch$14761
-Latch inferred for signal `\b_right_shifter.\shift_out' from process `\b_right_shifter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1307$1009': $auto$proc_dlatch.cc:427:proc_dlatch$15060
-Latch inferred for signal `\b_left_shifter.\shift_out' from process `\b_left_shifter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1239$960': $auto$proc_dlatch.cc:427:proc_dlatch$15359
-Latch inferred for signal `\b_left_shifter_new.\shift_out' from process `\b_left_shifter_new.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1164$903': $auto$proc_dlatch.cc:427:proc_dlatch$15706
-No latch inferred for signal `\post_norm.\fract_out_rnd' from process `\post_norm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1014$654'.
-No latch inferred for signal `\post_norm.\exp_out_rnd' from process `\post_norm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1006$653'.
-No latch inferred for signal `\pre_norm_fmul.\sign_d' from process `\pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:532$267'.
-No latch inferred for signal `\fpu_mul.\fract_denorm' from process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:215$16'.
+Latch inferred for signal `\pri_encoder.\fi_ldz_r0' from process `\pri_encoder.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1374$1058': $auto$proc_dlatch.cc:427:proc_dlatch$14761
+Latch inferred for signal `\b_right_shifter.\shift_out' from process `\b_right_shifter.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1307$1009': $auto$proc_dlatch.cc:427:proc_dlatch$15060
+Latch inferred for signal `\b_left_shifter.\shift_out' from process `\b_left_shifter.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1239$960': $auto$proc_dlatch.cc:427:proc_dlatch$15359
+Latch inferred for signal `\b_left_shifter_new.\shift_out' from process `\b_left_shifter_new.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1164$903': $auto$proc_dlatch.cc:427:proc_dlatch$15706
+No latch inferred for signal `\post_norm.\fract_out_rnd' from process `\post_norm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1014$654'.
+No latch inferred for signal `\post_norm.\exp_out_rnd' from process `\post_norm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1006$653'.
+No latch inferred for signal `\pre_norm_fmul.\sign_d' from process `\pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:532$267'.
+No latch inferred for signal `\fpu_mul.\fract_denorm' from process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:215$16'.
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\except.\opb_dn' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:658$336'.
+Creating register for signal `\except.\opb_dn' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:658$336'.
   created $dff cell `$procdff$15707' with positive edge clock.
-Creating register for signal `\except.\opa_dn' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:655$335'.
+Creating register for signal `\except.\opa_dn' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:655$335'.
   created $dff cell `$procdff$15708' with positive edge clock.
-Creating register for signal `\except.\opb_00' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:652$333'.
+Creating register for signal `\except.\opb_00' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:652$333'.
   created $dff cell `$procdff$15709' with positive edge clock.
-Creating register for signal `\except.\opa_00' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:649$331'.
+Creating register for signal `\except.\opa_00' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:649$331'.
   created $dff cell `$procdff$15710' with positive edge clock.
-Creating register for signal `\except.\fractb_00' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:646$328'.
+Creating register for signal `\except.\fractb_00' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:646$328'.
   created $dff cell `$procdff$15711' with positive edge clock.
-Creating register for signal `\except.\fracta_00' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:643$325'.
+Creating register for signal `\except.\fracta_00' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:643$325'.
   created $dff cell `$procdff$15712' with positive edge clock.
-Creating register for signal `\except.\expb_00' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:640$322'.
+Creating register for signal `\except.\expb_00' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:640$322'.
   created $dff cell `$procdff$15713' with positive edge clock.
-Creating register for signal `\except.\expa_00' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:637$319'.
+Creating register for signal `\except.\expa_00' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:637$319'.
   created $dff cell `$procdff$15714' with positive edge clock.
-Creating register for signal `\except.\opb_inf' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:634$317'.
+Creating register for signal `\except.\opb_inf' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:634$317'.
   created $dff cell `$procdff$15715' with positive edge clock.
-Creating register for signal `\except.\opa_inf' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:631$315'.
+Creating register for signal `\except.\opa_inf' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:631$315'.
   created $dff cell `$procdff$15716' with positive edge clock.
-Creating register for signal `\except.\opb_nan' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:628$311'.
+Creating register for signal `\except.\opb_nan' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:628$311'.
   created $dff cell `$procdff$15717' with positive edge clock.
-Creating register for signal `\except.\opa_nan' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:625$307'.
+Creating register for signal `\except.\opa_nan' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:625$307'.
   created $dff cell `$procdff$15718' with positive edge clock.
-Creating register for signal `\except.\snan' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:622$303'.
+Creating register for signal `\except.\snan' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:622$303'.
   created $dff cell `$procdff$15719' with positive edge clock.
-Creating register for signal `\except.\qnan' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:619$299'.
+Creating register for signal `\except.\qnan' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:619$299'.
   created $dff cell `$procdff$15720' with positive edge clock.
-Creating register for signal `\except.\inf' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:616$295'.
+Creating register for signal `\except.\inf' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:616$295'.
   created $dff cell `$procdff$15721' with positive edge clock.
-Creating register for signal `\except.\ind' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:613$291'.
+Creating register for signal `\except.\ind' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:613$291'.
   created $dff cell `$procdff$15722' with positive edge clock.
-Creating register for signal `\except.\snan_r_b' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:610$287'.
+Creating register for signal `\except.\snan_r_b' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:610$287'.
   created $dff cell `$procdff$15723' with positive edge clock.
-Creating register for signal `\except.\qnan_r_b' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:607$286'.
+Creating register for signal `\except.\qnan_r_b' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:607$286'.
   created $dff cell `$procdff$15724' with positive edge clock.
-Creating register for signal `\except.\snan_r_a' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:604$282'.
+Creating register for signal `\except.\snan_r_a' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:604$282'.
   created $dff cell `$procdff$15725' with positive edge clock.
-Creating register for signal `\except.\qnan_r_a' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:601$281'.
+Creating register for signal `\except.\qnan_r_a' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:601$281'.
   created $dff cell `$procdff$15726' with positive edge clock.
-Creating register for signal `\except.\infb_f_r' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:598$278'.
+Creating register for signal `\except.\infb_f_r' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:598$278'.
   created $dff cell `$procdff$15727' with positive edge clock.
-Creating register for signal `\except.\infa_f_r' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:595$275'.
+Creating register for signal `\except.\infa_f_r' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:595$275'.
   created $dff cell `$procdff$15728' with positive edge clock.
-Creating register for signal `\except.\expb_ff' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:592$273'.
+Creating register for signal `\except.\expb_ff' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:592$273'.
   created $dff cell `$procdff$15729' with positive edge clock.
-Creating register for signal `\except.\expa_ff' using process `\except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:589$271'.
+Creating register for signal `\except.\expa_ff' using process `\except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:589$271'.
   created $dff cell `$procdff$15730' with positive edge clock.
-Creating register for signal `\pre_norm_fmul.\sign_exe' using process `\pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:543$269'.
+Creating register for signal `\pre_norm_fmul.\sign_exe' using process `\pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:543$269'.
   created $dff cell `$procdff$15731' with positive edge clock.
-Creating register for signal `\pre_norm_fmul.\sign' using process `\pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:540$268'.
+Creating register for signal `\pre_norm_fmul.\sign' using process `\pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:540$268'.
   created $dff cell `$procdff$15732' with positive edge clock.
-Creating register for signal `\pre_norm_fmul.\inf' using process `\pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:522$262'.
+Creating register for signal `\pre_norm_fmul.\inf' using process `\pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:522$262'.
   created $dff cell `$procdff$15733' with positive edge clock.
-Creating register for signal `\pre_norm_fmul.\underflow' using process `\pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:519$261'.
+Creating register for signal `\pre_norm_fmul.\underflow' using process `\pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:519$261'.
   created $dff cell `$procdff$15734' with positive edge clock.
-Creating register for signal `\pre_norm_fmul.\exp_ovf' using process `\pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:511$236'.
+Creating register for signal `\pre_norm_fmul.\exp_ovf' using process `\pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:511$236'.
   created $dff cell `$procdff$15735' with positive edge clock.
-Creating register for signal `\pre_norm_fmul.\exp_out' using process `\pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:502$214'.
+Creating register for signal `\pre_norm_fmul.\exp_out' using process `\pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:502$214'.
   created $dff cell `$procdff$15736' with positive edge clock.
-Creating register for signal `\mul_r2.\prod' using process `\mul_r2.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:426$187'.
+Creating register for signal `\mul_r2.\prod' using process `\mul_r2.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:426$187'.
   created $dff cell `$procdff$15737' with positive edge clock.
-Creating register for signal `\mul_r2.\prod1' using process `\mul_r2.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:423$185'.
+Creating register for signal `\mul_r2.\prod1' using process `\mul_r2.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:423$185'.
   created $dff cell `$procdff$15738' with positive edge clock.
-Creating register for signal `\fpu_mul.\out' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
+Creating register for signal `\fpu_mul.\out' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
   created $dff cell `$procdff$15739' with positive edge clock.
-Creating register for signal `\fpu_mul.\zero' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
+Creating register for signal `\fpu_mul.\zero' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
   created $dff cell `$procdff$15740' with positive edge clock.
-Creating register for signal `\fpu_mul.\div_by_zero' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
+Creating register for signal `\fpu_mul.\div_by_zero' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
   created $dff cell `$procdff$15741' with positive edge clock.
-Creating register for signal `\fpu_mul.\overflow' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
+Creating register for signal `\fpu_mul.\overflow' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
   created $dff cell `$procdff$15742' with positive edge clock.
-Creating register for signal `\fpu_mul.\underflow' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
+Creating register for signal `\fpu_mul.\underflow' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
   created $dff cell `$procdff$15743' with positive edge clock.
-Creating register for signal `\fpu_mul.\inf' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
+Creating register for signal `\fpu_mul.\inf' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
   created $dff cell `$procdff$15744' with positive edge clock.
-Creating register for signal `\fpu_mul.\snan' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
+Creating register for signal `\fpu_mul.\snan' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
   created $dff cell `$procdff$15745' with positive edge clock.
-Creating register for signal `\fpu_mul.\qnan' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
+Creating register for signal `\fpu_mul.\qnan' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
   created $dff cell `$procdff$15746' with positive edge clock.
-Creating register for signal `\fpu_mul.\ine' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
+Creating register for signal `\fpu_mul.\ine' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
   created $dff cell `$procdff$15747' with positive edge clock.
-Creating register for signal `\fpu_mul.\div_by_zero_o1' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:397$178'.
+Creating register for signal `\fpu_mul.\div_by_zero_o1' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:397$178'.
   created $dff cell `$procdff$15748' with positive edge clock.
-Creating register for signal `\fpu_mul.\opa_nan_r' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:394$174'.
+Creating register for signal `\fpu_mul.\opa_nan_r' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:394$174'.
   created $dff cell `$procdff$15749' with positive edge clock.
-Creating register for signal `\fpu_mul.\zero_o1' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:391$173'.
+Creating register for signal `\fpu_mul.\zero_o1' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:391$173'.
   created $dff cell `$procdff$15750' with positive edge clock.
-Creating register for signal `\fpu_mul.\inf_o1' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:376$143'.
+Creating register for signal `\fpu_mul.\inf_o1' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:376$143'.
   created $dff cell `$procdff$15751' with positive edge clock.
-Creating register for signal `\fpu_mul.\qnan_o1' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:367$123'.
+Creating register for signal `\fpu_mul.\qnan_o1' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:367$123'.
   created $dff cell `$procdff$15752' with positive edge clock.
-Creating register for signal `\fpu_mul.\snan_o1' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:363$122'.
+Creating register for signal `\fpu_mul.\snan_o1' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:363$122'.
   created $dff cell `$procdff$15753' with positive edge clock.
-Creating register for signal `\fpu_mul.\underflow_o1' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:360$121'.
+Creating register for signal `\fpu_mul.\underflow_o1' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:360$121'.
   created $dff cell `$procdff$15754' with positive edge clock.
-Creating register for signal `\fpu_mul.\underflow_fmul_r' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:323$103'.
+Creating register for signal `\fpu_mul.\underflow_fmul_r' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:323$103'.
   created $dff cell `$procdff$15755' with positive edge clock.
-Creating register for signal `\fpu_mul.\overflow_o1' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:320$102'.
+Creating register for signal `\fpu_mul.\overflow_o1' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:320$102'.
   created $dff cell `$procdff$15756' with positive edge clock.
-Creating register for signal `\fpu_mul.\ine_o1' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:314$94'.
+Creating register for signal `\fpu_mul.\ine_o1' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:314$94'.
   created $dff cell `$procdff$15757' with positive edge clock.
-Creating register for signal `\fpu_mul.\out_o1 [31]' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:303$66'.
+Creating register for signal `\fpu_mul.\out_o1 [31]' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:303$66'.
   created $dff cell `$procdff$15758' with positive edge clock.
-Creating register for signal `\fpu_mul.\out_o1 [30:0]' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:294$46'.
+Creating register for signal `\fpu_mul.\out_o1 [30:0]' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:294$46'.
   created $dff cell `$procdff$15759' with positive edge clock.
-Creating register for signal `\fpu_mul.\inf_mul2' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:277$24'.
+Creating register for signal `\fpu_mul.\inf_mul2' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:277$24'.
   created $dff cell `$procdff$15760' with positive edge clock.
-Creating register for signal `\fpu_mul.\sign' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:226$19'.
+Creating register for signal `\fpu_mul.\sign' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:226$19'.
   created $dff cell `$procdff$15761' with positive edge clock.
-Creating register for signal `\fpu_mul.\opas_r2' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:221$18'.
+Creating register for signal `\fpu_mul.\opas_r2' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:221$18'.
   created $dff cell `$procdff$15762' with positive edge clock.
-Creating register for signal `\fpu_mul.\opas_r1' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:218$17'.
+Creating register for signal `\fpu_mul.\opas_r1' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:218$17'.
   created $dff cell `$procdff$15763' with positive edge clock.
-Creating register for signal `\fpu_mul.\opa_r1' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:211$15'.
+Creating register for signal `\fpu_mul.\opa_r1' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:211$15'.
   created $dff cell `$procdff$15764' with positive edge clock.
-Creating register for signal `\fpu_mul.\exp_r' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:208$14'.
+Creating register for signal `\fpu_mul.\exp_r' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:208$14'.
   created $dff cell `$procdff$15765' with positive edge clock.
-Creating register for signal `\fpu_mul.\exp_ovf_r' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:181$13'.
+Creating register for signal `\fpu_mul.\exp_ovf_r' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:181$13'.
   created $dff cell `$procdff$15766' with positive edge clock.
-Creating register for signal `\fpu_mul.\inf_mul_r' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:178$12'.
+Creating register for signal `\fpu_mul.\inf_mul_r' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:178$12'.
   created $dff cell `$procdff$15767' with positive edge clock.
-Creating register for signal `\fpu_mul.\sign_exe_r' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:175$11'.
+Creating register for signal `\fpu_mul.\sign_exe_r' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:175$11'.
   created $dff cell `$procdff$15768' with positive edge clock.
-Creating register for signal `\fpu_mul.\sign_mul_r' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:172$10'.
+Creating register for signal `\fpu_mul.\sign_mul_r' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:172$10'.
   created $dff cell `$procdff$15769' with positive edge clock.
-Creating register for signal `\fpu_mul.\fpu_op_r3' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:114$9'.
+Creating register for signal `\fpu_mul.\fpu_op_r3' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:114$9'.
   created $dff cell `$procdff$15770' with positive edge clock.
-Creating register for signal `\fpu_mul.\fpu_op_r2' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:111$8'.
+Creating register for signal `\fpu_mul.\fpu_op_r2' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:111$8'.
   created $dff cell `$procdff$15771' with positive edge clock.
-Creating register for signal `\fpu_mul.\fpu_op_r1' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:108$7'.
+Creating register for signal `\fpu_mul.\fpu_op_r1' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:108$7'.
   created $dff cell `$procdff$15772' with positive edge clock.
-Creating register for signal `\fpu_mul.\rmode_r3' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:105$6'.
+Creating register for signal `\fpu_mul.\rmode_r3' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:105$6'.
   created $dff cell `$procdff$15773' with positive edge clock.
-Creating register for signal `\fpu_mul.\rmode_r2' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:102$5'.
+Creating register for signal `\fpu_mul.\rmode_r2' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:102$5'.
   created $dff cell `$procdff$15774' with positive edge clock.
-Creating register for signal `\fpu_mul.\rmode_r1' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:99$4'.
+Creating register for signal `\fpu_mul.\rmode_r1' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:99$4'.
   created $dff cell `$procdff$15775' with positive edge clock.
-Creating register for signal `\fpu_mul.\opb_r' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:96$3'.
+Creating register for signal `\fpu_mul.\opb_r' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:96$3'.
   created $dff cell `$procdff$15776' with positive edge clock.
-Creating register for signal `\fpu_mul.\opa_r' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:93$2'.
+Creating register for signal `\fpu_mul.\opa_r' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:93$2'.
   created $dff cell `$procdff$15777' with positive edge clock.
-Creating register for signal `\fpu_mul.\fpu_op' using process `\fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:89$1'.
+Creating register for signal `\fpu_mul.\fpu_op' using process `\fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:89$1'.
   created $dff cell `$procdff$15778' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 49 empty switches in `\pri_encoder.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1374$1058'.
-Removing empty process `pri_encoder.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1374$1058'.
-Found and cleaned up 1 empty switch in `\b_right_shifter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1307$1009'.
-Removing empty process `b_right_shifter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1307$1009'.
-Found and cleaned up 1 empty switch in `\b_left_shifter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1239$960'.
-Removing empty process `b_left_shifter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1239$960'.
-Found and cleaned up 1 empty switch in `\b_left_shifter_new.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1164$903'.
-Removing empty process `b_left_shifter_new.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1164$903'.
-Found and cleaned up 1 empty switch in `\post_norm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1014$654'.
-Removing empty process `post_norm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1014$654'.
-Found and cleaned up 1 empty switch in `\post_norm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1006$653'.
-Removing empty process `post_norm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1006$653'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:658$336'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:655$335'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:652$333'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:649$331'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:646$328'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:643$325'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:640$322'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:637$319'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:634$317'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:631$315'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:628$311'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:625$307'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:622$303'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:619$299'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:616$295'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:613$291'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:610$287'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:607$286'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:604$282'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:601$281'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:598$278'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:595$275'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:592$273'.
-Removing empty process `except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:589$271'.
-Removing empty process `pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:543$269'.
-Removing empty process `pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:540$268'.
-Found and cleaned up 1 empty switch in `\pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:532$267'.
-Removing empty process `pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:532$267'.
-Removing empty process `pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:522$262'.
-Removing empty process `pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:519$261'.
-Removing empty process `pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:511$236'.
-Removing empty process `pre_norm_fmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:502$214'.
-Removing empty process `mul_r2.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:426$187'.
-Removing empty process `mul_r2.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:423$185'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:397$178'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:394$174'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:391$173'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:376$143'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:367$123'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:363$122'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:360$121'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:323$103'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:320$102'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:314$94'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:303$66'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:294$46'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:277$24'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:226$19'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:221$18'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:218$17'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:215$16'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:211$15'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:208$14'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:181$13'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:178$12'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:175$11'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:172$10'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:114$9'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:111$8'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:108$7'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:105$6'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:102$5'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:99$4'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:96$3'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:93$2'.
-Removing empty process `fpu_mul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:89$1'.
+Found and cleaned up 49 empty switches in `\pri_encoder.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1374$1058'.
+Removing empty process `pri_encoder.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1374$1058'.
+Found and cleaned up 1 empty switch in `\b_right_shifter.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1307$1009'.
+Removing empty process `b_right_shifter.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1307$1009'.
+Found and cleaned up 1 empty switch in `\b_left_shifter.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1239$960'.
+Removing empty process `b_left_shifter.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1239$960'.
+Found and cleaned up 1 empty switch in `\b_left_shifter_new.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1164$903'.
+Removing empty process `b_left_shifter_new.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1164$903'.
+Found and cleaned up 1 empty switch in `\post_norm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1014$654'.
+Removing empty process `post_norm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1014$654'.
+Found and cleaned up 1 empty switch in `\post_norm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1006$653'.
+Removing empty process `post_norm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:1006$653'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:658$336'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:655$335'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:652$333'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:649$331'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:646$328'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:643$325'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:640$322'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:637$319'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:634$317'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:631$315'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:628$311'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:625$307'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:622$303'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:619$299'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:616$295'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:613$291'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:610$287'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:607$286'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:604$282'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:601$281'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:598$278'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:595$275'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:592$273'.
+Removing empty process `except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:589$271'.
+Removing empty process `pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:543$269'.
+Removing empty process `pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:540$268'.
+Found and cleaned up 1 empty switch in `\pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:532$267'.
+Removing empty process `pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:532$267'.
+Removing empty process `pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:522$262'.
+Removing empty process `pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:519$261'.
+Removing empty process `pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:511$236'.
+Removing empty process `pre_norm_fmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:502$214'.
+Removing empty process `mul_r2.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:426$187'.
+Removing empty process `mul_r2.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:423$185'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:402$184'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:397$178'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:394$174'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:391$173'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:376$143'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:367$123'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:363$122'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:360$121'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:323$103'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:320$102'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:314$94'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:303$66'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:294$46'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:277$24'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:226$19'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:221$18'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:218$17'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:215$16'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:211$15'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:208$14'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:181$13'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:178$12'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:175$11'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:172$10'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:114$9'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:111$8'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:108$7'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:105$6'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:102$5'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:99$4'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:96$3'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:93$2'.
+Removing empty process `fpu_mul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:89$1'.
 Cleaned up 55 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -560,8 +560,8 @@ Running muxtree optimizer on module \b_left_shifter_new..
 Running muxtree optimizer on module \post_norm..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:916$504: \opas -> 1'1
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:915$500: \opas -> 1'0
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:916$504: \opas -> 1'1
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:915$500: \opas -> 1'0
   Analyzing evaluation results.
 Running muxtree optimizer on module \except..
   Creating internal representation of mux trees.
@@ -577,8 +577,8 @@ Running muxtree optimizer on module \fpu_mul..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
   Analyzing evaluation results.
-    dead port 1/2 on $mux $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:301$65.
-    dead port 2/2 on $mux $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:301$65.
+    dead port 1/2 on $mux $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:301$65.
+    dead port 2/2 on $mux $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:301$65.
 Removed 2 multiplexer ports.
 <suppressed ~37 debug messages>
 
@@ -596,9 +596,9 @@ Removed 2 multiplexer ports.
   Optimizing cells in module \post_norm.
     New ctrl vector for $pmux cell $procmux$4944: { $procmux$4948_CMP $procmux$4947_CMP $auto$opt_reduce.cc:134:opt_mux$15780 }
     New ctrl vector for $pmux cell $procmux$4949: { $procmux$4948_CMP $procmux$4947_CMP $auto$opt_reduce.cc:134:opt_mux$15782 }
-    New ctrl vector for $mux cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:916$504: { }
-    New ctrl vector for $mux cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:915$500: { }
-    New ctrl vector for $mux cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:915$501: { }
+    New ctrl vector for $mux cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:916$504: { }
+    New ctrl vector for $mux cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:915$500: { }
+    New ctrl vector for $mux cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/fpu_mul.v:915$501: { }
   Optimizing cells in module \post_norm.
   Optimizing cells in module \except.
   Optimizing cells in module \pre_norm_fmul.
@@ -1222,11 +1222,11 @@ Optimizing module pri_encoder.
    Number of processes:              0
    Number of cells:                148
      $and                           48
-     $dlatch                         1
-     $eq                            48
-     $logic_not                      1
+     $dlatch                        48
+     $eq                           288
+     $logic_not                      6
      $not                           49
-     $pmux                           1
+     $pmux                          48
 
 === b_left_shifter_new ===
 
@@ -1239,11 +1239,11 @@ Optimizing module pri_encoder.
    Number of processes:              0
    Number of cells:                172
      $and                           56
-     $dlatch                         1
-     $eq                            56
-     $logic_not                      1
+     $dlatch                        56
+     $eq                           336
+     $logic_not                      6
      $not                           57
-     $pmux                           1
+     $pmux                          56
 
 === b_right_shifter ===
 
@@ -1256,11 +1256,11 @@ Optimizing module pri_encoder.
    Number of processes:              0
    Number of cells:                148
      $and                           48
-     $dlatch                         1
-     $eq                            48
-     $logic_not                      1
+     $dlatch                        48
+     $eq                           288
+     $logic_not                      6
      $not                           49
-     $pmux                           1
+     $pmux                          48
 
 === except ===
 
@@ -1276,8 +1276,8 @@ Optimizing module pri_encoder.
      $dff                           22
      $logic_not                      6
      $or                             3
-     $reduce_and                     2
-     $reduce_or                      6
+     $reduce_and                    16
+     $reduce_or                    106
 
 === fpu_mul ===
 
@@ -1290,18 +1290,14 @@ Optimizing module pri_encoder.
    Number of processes:              0
    Number of cells:                105
      $and                           21
-     $dff                           28
-     $eq                             1
-     $logic_not                     15
-     $mux                            3
+     $dff                          161
+     $eq                             8
+     $logic_not                     44
+     $mux                           63
      $or                            29
-     $reduce_and                     1
-     $reduce_bool                    1
-     $reduce_or                      2
-     except                          1
-     mul_r2                          1
-     post_norm                       1
-     pre_norm_fmul                   1
+     $reduce_and                     8
+     $reduce_bool                   48
+     $reduce_or                     54
 
 === mul_r2 ===
 
@@ -1313,8 +1309,8 @@ Optimizing module pri_encoder.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $dff                            2
-     $mul                            1
+     $dff                           96
+     $mul                           48
 
 === post_norm ===
 
@@ -1326,23 +1322,19 @@ Optimizing module pri_encoder.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                435
-     $add                            8
+     $add                           81
      $and                          169
-     $eq                            10
-     $gt                             7
-     $logic_not                     37
-     $lt                             9
-     $mux                           70
-     $ne                             4
+     $eq                            34
+     $gt                            55
+     $logic_not                     38
+     $lt                            66
+     $mux                          628
+     $ne                            32
      $or                            83
-     $pmux                           2
-     $reduce_and                     5
-     $reduce_or                     12
-     $sub                           15
-     b_left_shifter                  1
-     b_left_shifter_new              1
-     b_right_shifter                 1
-     pri_encoder                     1
+     $pmux                          31
+     $reduce_and                    54
+     $reduce_or                    197
+     $sub                          118
 
 === pre_norm_fmul ===
 
@@ -1354,18 +1346,18 @@ Optimizing module pri_encoder.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 75
-     $add                            4
+     $add                           34
      $and                           15
-     $dff                            6
-     $eq                             5
-     $gt                             1
-     $logic_not                      9
-     $lt                             1
-     $mux                           13
+     $dff                           16
+     $eq                            17
+     $gt                             9
+     $logic_not                     10
+     $lt                             8
+     $mux                           85
      $or                             8
      $pmux                           1
-     $reduce_or                      8
-     $sub                            4
+     $reduce_or                    128
+     $sub                           34
 
 === pri_encoder ===
 
@@ -1378,52 +1370,43 @@ Optimizing module pri_encoder.
    Number of processes:              0
    Number of cells:               1369
      $and                         1224
-     $dlatch                         1
-     $eq                            47
-     $logic_not                      1
-     $mux                           47
+     $dlatch                         6
+     $eq                          1175
+     $logic_not                     48
+     $mux                          282
      $not                           49
 
 === design hierarchy ===
 
    fpu_mul                           1
-     except                          1
-     mul_r2                          1
-     post_norm                       1
-       b_left_shifter                1
-       b_left_shifter_new            1
-       b_right_shifter               1
-       pri_encoder                   1
-     pre_norm_fmul                   1
+     except                          0
+     mul_r2                          0
+     post_norm                       0
+       b_left_shifter                0
+       b_left_shifter_new            0
+       b_right_shifter               0
+       pri_encoder                   0
+     pre_norm_fmul                   0
 
-   Number of wires:               2603
-   Number of wire bits:           5491
-   Number of public wires:         306
-   Number of public wire bits:    2504
+   Number of wires:                151
+   Number of wire bits:            696
+   Number of public wires:          91
+   Number of public wire bits:     606
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               2499
-     $add                           12
-     $and                         1594
-     $dff                           58
-     $dlatch                         4
-     $eq                           215
-     $gt                             8
-     $logic_not                     71
-     $lt                            10
-     $mul                            1
-     $mux                          133
-     $ne                             4
-     $not                          204
-     $or                           123
-     $pmux                           6
+   Number of cells:                105
+     $and                           21
+     $dff                          161
+     $eq                             8
+     $logic_not                     44
+     $mux                           63
+     $or                            29
      $reduce_and                     8
-     $reduce_bool                    1
-     $reduce_or                     28
-     $sub                           19
+     $reduce_bool                   48
+     $reduce_or                     54
 
 Warnings: 2 unique messages, 2 total
-End of script. Logfile hash: b1ccc21aa4, CPU: user 2.26s system 0.02s, MEM: 43.31 MB peak
+End of script. Logfile hash: 72acc93f94, CPU: user 2.42s system 0.02s, MEM: 44.14 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 34% 9x opt_expr (0 sec), 13% 7x opt_clean (0 sec), ...
+Time spent: 34% 9x opt_expr (0 sec), 14% 7x opt_clean (0 sec), ...

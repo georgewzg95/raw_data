@@ -816,19 +816,19 @@ Optimizing module cavlc_top.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 55
-     $adffe                          3
-     $eq                             9
-     $gt                             2
+     $adffe                         13
+     $eq                            69
+     $gt                            64
      $logic_and                      2
-     $logic_not                      2
+     $logic_not                      8
      $logic_or                       1
-     $lt                             1
-     $mux                           15
-     $ne                             7
-     $pmux                           3
-     $reduce_and                     3
-     $reduce_bool                    3
-     $sub                            4
+     $lt                             5
+     $mux                           76
+     $ne                            15
+     $pmux                          13
+     $reduce_and                    13
+     $reduce_bool                   16
+     $sub                          100
 
 === cavlc_len_gen ===
 
@@ -840,8 +840,8 @@ Optimizing module cavlc_top.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $pmux                           1
-     $reduce_or                      2
+     $pmux                           5
+     $reduce_or                      5
 
 === cavlc_read_levels ===
 
@@ -853,25 +853,25 @@ Optimizing module cavlc_top.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                268
-     $add                            6
-     $adffe                         20
-     $and                            1
-     $eq                            19
-     $gt                             4
-     $le                             1
+     $add                          163
+     $adffe                        169
+     $and                           32
+     $eq                           102
+     $gt                            82
+     $le                            32
      $logic_and                     16
-     $logic_not                      3
+     $logic_not                     39
      $logic_or                       2
-     $lt                             2
-     $mux                           88
-     $ne                            61
-     $neg                            2
-     $pmux                          15
-     $reduce_and                    17
-     $reduce_bool                    2
-     $shl                            2
-     $shr                            1
-     $sub                            6
+     $lt                            64
+     $mux                          754
+     $ne                           196
+     $neg                           41
+     $pmux                         135
+     $reduce_and                    79
+     $reduce_bool                    7
+     $shl                           41
+     $shr                            6
+     $sub                          134
 
 === cavlc_read_run_befores ===
 
@@ -883,20 +883,20 @@ Optimizing module cavlc_top.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                261
-     $add                            1
-     $adffe                         17
-     $eq                            40
-     $ge                            15
-     $gt                             2
+     $add                           32
+     $adffe                        148
+     $eq                           546
+     $ge                           480
+     $gt                            64
      $logic_and                      4
-     $logic_not                      3
-     $mux                          119
-     $ne                            32
-     $pmux                           4
-     $reduce_and                    16
-     $reduce_bool                    4
-     $reduce_or                      1
-     $sub                            3
+     $logic_not                     11
+     $mux                         1016
+     $ne                           111
+     $pmux                          21
+     $reduce_and                    48
+     $reduce_bool                   11
+     $reduce_or                     14
+     $sub                           68
 
 === cavlc_read_total_coeffs ===
 
@@ -908,18 +908,18 @@ Optimizing module cavlc_top.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                549
-     $add                            1
-     $adffe                          7
-     $eq                           134
+     $add                            5
+     $adffe                         61
+     $eq                           395
      $logic_and                      2
-     $logic_not                     13
+     $logic_not                     34
      $logic_or                       1
-     $mux                          339
+     $mux                         1257
      $not                            4
      $or                             1
-     $pmux                          14
-     $reduce_and                     5
-     $reduce_or                     28
+     $pmux                          49
+     $reduce_and                    19
+     $reduce_or                     68
 
 === cavlc_read_total_zeros ===
 
@@ -931,11 +931,11 @@ Optimizing module cavlc_top.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                217
-     $eq                            29
+     $eq                            86
      $logic_and                      8
-     $logic_not                      5
-     $mux                          164
-     $pmux                          11
+     $logic_not                     10
+     $mux                          614
+     $pmux                          43
 
 === cavlc_top ===
 
@@ -947,56 +947,27 @@ Optimizing module cavlc_top.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     cavlc_fsm                       1
-     cavlc_len_gen                   1
-     cavlc_read_levels               1
-     cavlc_read_run_befores          1
-     cavlc_read_total_coeffs         1
-     cavlc_read_total_zeros          1
 
 === design hierarchy ===
 
    cavlc_top                         1
-     cavlc_fsm                       1
-     cavlc_len_gen                   1
-     cavlc_read_levels               1
-     cavlc_read_run_befores          1
-     cavlc_read_total_coeffs         1
-     cavlc_read_total_zeros          1
+     cavlc_fsm                       0
+     cavlc_len_gen                   0
+     cavlc_read_levels               0
+     cavlc_read_run_befores          0
+     cavlc_read_total_coeffs         0
+     cavlc_read_total_zeros          0
 
-   Number of wires:               1473
-   Number of wire bits:           6218
-   Number of public wires:         207
-   Number of public wire bits:    1260
+   Number of wires:                 54
+   Number of wire bits:            378
+   Number of public wires:          54
+   Number of public wire bits:     378
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               1353
-     $add                            8
-     $adffe                         47
-     $and                            1
-     $eq                           231
-     $ge                            15
-     $gt                             8
-     $le                             1
-     $logic_and                     32
-     $logic_not                     26
-     $logic_or                       4
-     $lt                             3
-     $mux                          725
-     $ne                           100
-     $neg                            2
-     $not                            4
-     $or                             1
-     $pmux                          48
-     $reduce_and                    41
-     $reduce_bool                    9
-     $reduce_or                     31
-     $shl                            2
-     $shr                            1
-     $sub                           13
+   Number of cells:                  6
 
 Warnings: 1 unique messages, 1 total
-End of script. Logfile hash: 76e2569689, CPU: user 0.79s system 0.02s, MEM: 24.39 MB peak
+End of script. Logfile hash: 2f24fe73b7, CPU: user 0.80s system 0.02s, MEM: 24.57 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 32% 5x opt_expr (0 sec), 13% 4x opt_merge (0 sec), ...
+Time spent: 32% 5x opt_expr (0 sec), 13% 3x opt_clean (0 sec), ...

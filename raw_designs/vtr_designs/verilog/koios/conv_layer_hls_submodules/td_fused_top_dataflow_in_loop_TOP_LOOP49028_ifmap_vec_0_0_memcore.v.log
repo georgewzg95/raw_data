@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v' to AST representation.
 Generating RTLIL representation for module `\td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore'.
 Generating RTLIL representation for module `\dpram'.
 Successfully finished Verilog frontend.
@@ -66,8 +66,8 @@ Removed 1 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:152$31 in module $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:134$23 in module $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:152$31 in module $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:134$23 in module $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -79,44 +79,44 @@ Promoted 6 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:152$31'.
-     1/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:156$22_EN[15:0]$37
-     2/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:156$22_DATA[15:0]$36
-     3/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:156$22_ADDR[4:0]$35
+Creating decoders for process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:152$31'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:156$22_EN[15:0]$37
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:156$22_DATA[15:0]$36
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:156$22_ADDR[4:0]$35
      4/4: $0\out_b[15:0]
-Creating decoders for process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:134$23'.
-     1/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:138$21_EN[15:0]$29
-     2/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:138$21_DATA[15:0]$28
-     3/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:138$21_ADDR[4:0]$27
+Creating decoders for process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:134$23'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:138$21_EN[15:0]$29
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:138$21_DATA[15:0]$28
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:138$21_ADDR[4:0]$27
      4/4: $0\out_a[15:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.\out_b' using process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:152$31'.
+Creating register for signal `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.\out_b' using process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:152$31'.
   created $dff cell `$procdff$63' with positive edge clock.
-Creating register for signal `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:156$22_ADDR' using process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:152$31'.
+Creating register for signal `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:156$22_ADDR' using process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:152$31'.
   created $dff cell `$procdff$64' with positive edge clock.
-Creating register for signal `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:156$22_DATA' using process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:152$31'.
+Creating register for signal `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:156$22_DATA' using process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:152$31'.
   created $dff cell `$procdff$65' with positive edge clock.
-Creating register for signal `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:156$22_EN' using process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:152$31'.
+Creating register for signal `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:156$22_EN' using process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:152$31'.
   created $dff cell `$procdff$66' with positive edge clock.
-Creating register for signal `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.\out_a' using process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:134$23'.
+Creating register for signal `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.\out_a' using process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:134$23'.
   created $dff cell `$procdff$67' with positive edge clock.
-Creating register for signal `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:138$21_ADDR' using process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:134$23'.
+Creating register for signal `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:138$21_ADDR' using process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:134$23'.
   created $dff cell `$procdff$68' with positive edge clock.
-Creating register for signal `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:138$21_DATA' using process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:134$23'.
+Creating register for signal `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:138$21_DATA' using process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:134$23'.
   created $dff cell `$procdff$69' with positive edge clock.
-Creating register for signal `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:138$21_EN' using process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:134$23'.
+Creating register for signal `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:138$21_EN' using process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:134$23'.
   created $dff cell `$procdff$70' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:152$31'.
-Removing empty process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:152$31'.
-Found and cleaned up 1 empty switch in `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:134$23'.
-Removing empty process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:134$23'.
+Found and cleaned up 1 empty switch in `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:152$31'.
+Removing empty process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:152$31'.
+Found and cleaned up 1 empty switch in `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:134$23'.
+Removing empty process `$paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:134$23'.
 Cleaned up 2 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -165,8 +165,8 @@ Finding identical cells in module `\td_fused_top_dataflow_in_loop_TOP_LOOP49028_
 Removed a total of 0 cells.
 
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $procdff$63 ($dff) from module $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:162$38_DATA, Q = \out_b).
-Adding EN signal on $procdff$67 ($dff) from module $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:144$30_DATA, Q = \out_a).
+Adding EN signal on $procdff$63 ($dff) from module $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:162$38_DATA, Q = \out_b).
+Adding EN signal on $procdff$67 ($dff) from module $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/conv_layer_hls_submodules/td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore.v:144$30_DATA, Q = \out_a).
 
 4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram..
@@ -225,10 +225,8 @@ Optimizing module td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memc
    Number of memory bits:          512
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                          32
+     $mux                           44
 
 === td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore ===
 
@@ -241,27 +239,22 @@ Optimizing module td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memc
    Number of processes:              0
    Number of cells:                  3
      $and                            2
-     $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram      1
 
 === design hierarchy ===
 
    td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore      1
-     $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram      1
+     $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram      0
 
-   Number of wires:                 31
-   Number of wire bits:            265
-   Number of public wires:          23
-   Number of public wire bits:     159
-   Number of memories:               1
-   Number of memory bits:          512
+   Number of wires:                 14
+   Number of wire bits:             82
+   Number of public wires:          14
+   Number of public wire bits:      82
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 14
+   Number of cells:                  3
      $and                            2
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
 
-End of script. Logfile hash: a2508634e9, CPU: user 0.05s system 0.00s, MEM: 11.33 MB peak
+End of script. Logfile hash: 798c31e706, CPU: user 0.05s system 0.01s, MEM: 11.45 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 15% 4x opt_expr (0 sec), 15% 3x opt_merge (0 sec), ...
+Time spent: 23% 4x opt_expr (0 sec), 23% 3x opt_merge (0 sec), ...

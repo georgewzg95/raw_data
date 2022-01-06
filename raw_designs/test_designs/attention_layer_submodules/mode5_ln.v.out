@@ -11,9 +11,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                257
-     $eq                           255
-     $logic_not                      1
-     $pmux                           1
+     $eq                          2040
+     $logic_not                      8
+     $pmux                          16
 
 === FPAddSub ===
 
@@ -25,17 +25,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     $sdff                           4
-     FPAddSub_AlignModule            1
-     FPAddSub_AlignShift1            1
-     FPAddSub_AlignShift2            1
-     FPAddSub_ExceptionModule        1
-     FPAddSub_ExecutionModule        1
-     FPAddSub_NormalizeModule        1
-     FPAddSub_NormalizeShift1        1
-     FPAddSub_NormalizeShift2        1
-     FPAddSub_PrealignModule         1
-     FPAddSub_RoundModule            1
+     $sdff                         157
 
 === FPAddSub_AlignModule ===
 
@@ -47,8 +37,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $lt                             1
-     $mux                            4
+     $lt                            15
+     $mux                           30
 
 === FPAddSub_AlignShift1 ===
 
@@ -60,10 +50,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 11
-     $mux                            1
+     $mux                           11
      $not                            1
-     $pmux                           8
-     $reduce_or                      1
+     $pmux                          11
+     $reduce_or                      2
 
 === FPAddSub_AlignShift2 ===
 
@@ -75,10 +65,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 17
-     $eq                             3
-     $logic_not                      1
+     $eq                             6
+     $logic_not                      2
      $pmux                          11
-     $reduce_or                      2
+     $reduce_or                      5
 
 === FPAddSub_ExceptionModule ===
 
@@ -94,8 +84,8 @@
      $logic_not                      1
      $not                            2
      $or                             5
-     $reduce_and                     1
-     $reduce_or                      2
+     $reduce_and                     5
+     $reduce_or                      8
 
 === FPAddSub_ExecutionModule ===
 
@@ -107,9 +97,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $add                            1
-     $mux                            2
-     $sub                            1
+     $add                           17
+     $mux                           18
+     $sub                           17
      $xor                            2
 
 === FPAddSub_NormalizeModule ===
@@ -122,7 +112,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     $mux                           14
+     $mux                           82
 
 === FPAddSub_NormalizeShift1 ===
 
@@ -135,13 +125,13 @@
    Number of processes:              0
    Number of cells:                 41
      $and                            3
-     $dlatch                         3
-     $eq                             6
-     $logic_not                      2
-     $mux                            2
+     $dlatch                        13
+     $eq                            12
+     $logic_not                      4
+     $mux                            8
      $not                            3
-     $pmux                          18
-     $reduce_or                      4
+     $pmux                          21
+     $reduce_or                     10
 
 === FPAddSub_NormalizeShift2 ===
 
@@ -153,11 +143,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $add                            1
+     $add                            6
      $logic_not                      1
-     $mux                            1
-     $reduce_or                      2
-     $sub                            1
+     $mux                            6
+     $reduce_or                     21
+     $sub                            6
 
 === FPAddSub_PrealignModule ===
 
@@ -169,13 +159,13 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 19
-     $add                            4
+     $add                          128
      $and                            4
      $logic_not                      2
-     $not                            2
+     $not                           64
      $or                             3
-     $reduce_and                     2
-     $reduce_or                      2
+     $reduce_and                    10
+     $reduce_or                     20
 
 === FPAddSub_RoundModule ===
 
@@ -187,9 +177,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 22
-     $add                            2
+     $add                           38
      $and                            7
-     $mux                            4
+     $mux                           18
      $not                            2
      $or                             5
      $xor                            2
@@ -204,9 +194,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 33
-     $eq                            31
-     $logic_not                      1
-     $pmux                           1
+     $eq                           155
+     $logic_not                      5
+     $pmux                          16
 
 === align ===
 
@@ -218,8 +208,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $mux                            1
-     $neg                            1
+     $mux                           16
+     $neg                           16
 
 === align_t ===
 
@@ -231,7 +221,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sub                            1
+     $sub                           32
 
 === am_shift ===
 
@@ -243,7 +233,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $shl                            1
+     $shl                           16
 
 === am_shift_t ===
 
@@ -255,11 +245,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $ge                             1
-     $le                             1
+     $ge                            32
+     $le                            32
      $logic_and                      1
-     $mux                            1
-     $shr                            1
+     $mux                           28
+     $shr                           28
 
 === exception ===
 
@@ -271,12 +261,12 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $add                            2
-     $eq                             1
+     $add                           64
+     $eq                            11
      $logic_and                      1
      $logic_or                       2
-     $mux                            3
-     $reduce_bool                    1
+     $mux                           21
+     $reduce_bool                    3
 
 === final_out ===
 
@@ -288,9 +278,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $logic_not                      1
-     $mux                            3
+     $add                            8
+     $logic_not                     16
+     $mux                           16
 
 === final_out_t ===
 
@@ -302,10 +292,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $eq                             1
-     $gt                             1
+     $eq                             5
+     $gt                             5
      $logic_and                      2
-     $mux                            2
+     $mux                           56
      $not                            1
 
 === float_to_int_fp16 ===
@@ -318,11 +308,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     align_t                         1
-     am_shift_t                      1
-     final_out_t                     1
-     sub_t                           1
-     two_comp_t                      1
 
 === int_to_float_fp16 ===
 
@@ -334,13 +319,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     align                           1
-     am_shift                        1
-     exception                       1
-     final_out                       1
-     lzc                             1
-     sub                             1
-     sub2                            1
 
 === logunit ===
 
@@ -352,12 +330,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $dffe                           4
-     FP8LUT2                         1
-     FPAddSub                        1
-     FPLUT1                          1
-     float_to_int_fp16               1
-     int_to_float_fp16               1
+     $dffe                          64
 
 === lzc ===
 
@@ -369,8 +342,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $logic_not                      4
-     $mux                            4
+     $logic_not                     30
+     $mux                           18
      $not                            2
 
 === mode5_ln ===
@@ -383,7 +356,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     logunit                         1
 
 === sub ===
 
@@ -406,7 +378,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sub                            1
+     $sub                           32
 
 === sub_t ===
 
@@ -418,7 +390,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sub                            1
+     $sub                           32
 
 === two_comp_t ===
 
@@ -430,72 +402,47 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $mux                            1
-     $neg                            1
+     $mux                           28
+     $neg                           28
 
 === design hierarchy ===
 
    mode5_ln                          1
-     logunit                         1
-       FP8LUT2                       1
-       FPAddSub                      1
-         FPAddSub_AlignModule        1
-         FPAddSub_AlignShift1        1
-         FPAddSub_AlignShift2        1
-         FPAddSub_ExceptionModule      1
-         FPAddSub_ExecutionModule      1
-         FPAddSub_NormalizeModule      1
-         FPAddSub_NormalizeShift1      1
-         FPAddSub_NormalizeShift2      1
-         FPAddSub_PrealignModule      1
-         FPAddSub_RoundModule        1
-       FPLUT1                        1
-       float_to_int_fp16             1
-         align_t                     1
-         am_shift_t                  1
-         final_out_t                 1
-         sub_t                       1
-         two_comp_t                  1
-       int_to_float_fp16             1
-         align                       1
-         am_shift                    1
-         exception                   1
-         final_out                   1
-         lzc                         1
-         sub                         1
-         sub2                        1
+     logunit                         0
+       FP8LUT2                       0
+       FPAddSub                      0
+         FPAddSub_AlignModule        0
+         FPAddSub_AlignShift1        0
+         FPAddSub_AlignShift2        0
+         FPAddSub_ExceptionModule      0
+         FPAddSub_ExecutionModule      0
+         FPAddSub_NormalizeModule      0
+         FPAddSub_NormalizeShift1      0
+         FPAddSub_NormalizeShift2      0
+         FPAddSub_PrealignModule      0
+         FPAddSub_RoundModule        0
+       FPLUT1                        0
+       float_to_int_fp16             0
+         align_t                     0
+         am_shift_t                  0
+         final_out_t                 0
+         sub_t                       0
+         two_comp_t                  0
+       int_to_float_fp16             0
+         align                       0
+         am_shift                    0
+         exception                   0
+         final_out                   0
+         lzc                         0
+         sub                         0
+         sub2                        0
 
-   Number of wires:                640
-   Number of wire bits:           3308
-   Number of public wires:         242
-   Number of public wire bits:    2330
+   Number of wires:                  7
+   Number of wire bits:             37
+   Number of public wires:           7
+   Number of public wire bits:      37
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                499
-     $add                           11
-     $and                           18
-     $dffe                           4
-     $dlatch                         3
-     $eq                           297
-     $ge                             1
-     $gt                             1
-     $le                             1
-     $logic_and                      4
-     $logic_not                     14
-     $logic_or                       2
-     $lt                             1
-     $mux                           43
-     $neg                            2
-     $not                           13
-     $or                            13
-     $pmux                          39
-     $reduce_and                     3
-     $reduce_bool                    1
-     $reduce_or                     13
-     $sdff                           4
-     $shl                            1
-     $shr                            1
-     $sub                            5
-     $xor                            4
+   Number of cells:                  1
 

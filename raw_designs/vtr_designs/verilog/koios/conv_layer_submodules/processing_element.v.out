@@ -16,8 +16,7 @@
      $logic_or                       2
      $not                            3
      $or                             1
-     $sdffe                          2
-     seq_mac                         1
+     $sdffe                         32
 
 === qadd ===
 
@@ -29,7 +28,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $add                            1
+     $add                           32
 
 === seq_mac ===
 
@@ -42,35 +41,28 @@
    Number of processes:              0
    Number of cells:                 12
      $and                            1
-     $mux                            4
-     $reduce_or                      1
-     $sdff                           4
-     mac_int                         1
-     qadd                            1
+     $mux                           80
+     $reduce_or                     16
+     $sdff                          80
 
 === design hierarchy ===
 
    processing_element                1
-     seq_mac                         1
-       qadd                          1
+     seq_mac                         0
+       qadd                          0
 
-   Number of wires:                 46
-   Number of wire bits:            610
-   Number of public wires:          35
-   Number of public wire bits:     538
+   Number of wires:                 20
+   Number of wire bits:            114
+   Number of public wires:          14
+   Number of public wire bits:     108
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 23
-     $add                            1
-     $and                            3
+   Number of cells:                 12
+     $and                            2
      $logic_and                      1
      $logic_or                       2
-     $mux                            4
      $not                            3
      $or                             1
-     $reduce_or                      1
-     $sdff                           4
-     $sdffe                          2
-     mac_int                         1
+     $sdffe                         32
 

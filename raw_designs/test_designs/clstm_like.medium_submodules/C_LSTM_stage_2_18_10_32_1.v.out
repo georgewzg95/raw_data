@@ -12,15 +12,7 @@
    Number of processes:              0
    Number of cells:                495
      $and                            1
-     $sdffe                        450
-     elementwise_add_core_18_18_32      1
-     elementwise_mult_core_18_18_10_32_1      3
-     lstm_gate_18_10_32_1            3
-     output_activation_18_10_32_1      1
-     shift_register_group_18_32_14      1
-     shift_register_group_18_32_18      2
-     shift_register_group_18_32_6      1
-     tanh_core_18_18_10_32_1        32
+     $sdffe                       8066
 
 === abs_unit_18 ===
 
@@ -32,9 +24,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $mux                            1
-     $neg                            1
-     $sdffe                          2
+     $mux                           18
+     $neg                           18
+     $sdffe                         19
 
 === dsp_signed_mac_18_13_23_32 ===
 
@@ -46,9 +38,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            1
-     $mul                            1
-     $sdff                           4
+     $add                           32
+     $mul                           32
+     $sdff                          86
      $sdffe                          3
 
 === dsp_signed_mult_18x18_unit_18_18_1 ===
@@ -61,8 +53,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 11
-     $mul                            2
-     $sdffe                          9
+     $mul                           74
+     $sdffe                        149
 
 === elementwise_add_core_18_18_32 ===
 
@@ -74,9 +66,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                131
-     $add                           32
+     $add                          576
      $and                            1
-     $sdffe                         98
+     $sdffe                       1730
 
 === elementwise_mult_core_18_18_10_32_1 ===
 
@@ -89,9 +81,7 @@
    Number of processes:              0
    Number of cells:                114
      $and                            1
-     $sdffe                         65
-     dsp_signed_mult_18x18_unit_18_18_1     16
-     fp_rounding_unit_1_37_10       32
+     $sdffe                       1153
 
 === fp_rounding_unit_1_32_11 ===
 
@@ -103,9 +93,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     $add                            1
-     $mux                            1
-     $sdffe                          6
+     $add                           32
+     $mux                           32
+     $sdffe                         88
 
 === fp_rounding_unit_1_37_10 ===
 
@@ -117,9 +107,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     $add                            1
-     $mux                            1
-     $sdffe                          6
+     $add                           37
+     $mux                           37
+     $sdffe                        104
 
 === lstm_gate_18_10_32_1 ===
 
@@ -132,10 +122,6 @@
    Number of processes:              0
    Number of cells:                 37
      $and                            1
-     elementwise_add_core_18_18_32      2
-     elementwise_mult_core_18_18_10_32_1      1
-     shift_register_group_18_32_10      1
-     sigmoid_core_18_18_10_32_1     32
 
 === output_activation_18_10_32_1 ===
 
@@ -148,8 +134,6 @@
    Number of processes:              0
    Number of cells:                 34
      $and                            1
-     elementwise_add_core_18_18_32      1
-     sigmoid_core_18_18_10_32_1     32
 
 === shift_register_group_18_32_10 ===
 
@@ -161,7 +145,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 32
-     shift_register_unit_18_18      32
 
 === shift_register_group_18_32_14 ===
 
@@ -173,7 +156,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 32
-     shift_register_unit_18_14      32
 
 === shift_register_group_18_32_18 ===
 
@@ -185,7 +167,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 32
-     shift_register_unit_18_18      32
 
 === shift_register_group_18_32_6 ===
 
@@ -197,7 +178,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 32
-     shift_register_unit_18_6       32
 
 === shift_register_unit_18_14 ===
 
@@ -209,7 +189,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     $sdffe                         14
+     $sdffe                        252
 
 === shift_register_unit_18_18 ===
 
@@ -221,7 +201,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 18
-     $sdffe                         18
+     $sdffe                        324
 
 === shift_register_unit_18_6 ===
 
@@ -233,7 +213,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $sdffe                          6
+     $sdffe                        108
 
 === shift_register_unit_1_3 ===
 
@@ -259,18 +239,14 @@
    Number of cells:                114
      $and                            1
      $dffe                           1
-     $eq                            31
-     $ge                             1
-     $logic_not                      1
-     $mux                           68
+     $eq                           155
+     $ge                            32
+     $logic_not                      5
+     $mux                          901
      $not                            1
-     $reduce_and                     1
-     $sdffe                          4
-     $sub                            1
-     abs_unit_18                     1
-     dsp_signed_mac_18_13_23_32      1
-     fp_rounding_unit_1_32_11        1
-     shift_register_unit_1_3         1
+     $reduce_and                     2
+     $sdffe                         38
+     $sub                           32
 
 === tanh_core_18_18_10_32_1 ===
 
@@ -284,77 +260,61 @@
    Number of cells:                114
      $and                            1
      $dffe                           1
-     $eq                            31
-     $ge                             1
-     $logic_not                      1
-     $mux                           68
+     $eq                           155
+     $ge                            32
+     $logic_not                      5
+     $mux                          901
      $not                            1
-     $reduce_and                     1
-     $sdffe                          4
-     $sub                            1
-     abs_unit_18                     1
-     dsp_signed_mac_18_13_23_32      1
-     fp_rounding_unit_1_32_11        1
-     shift_register_unit_1_3         1
+     $reduce_and                     2
+     $sdffe                         38
+     $sub                           32
 
 === design hierarchy ===
 
    C_LSTM_stage_2_18_10_32_1         1
-     elementwise_add_core_18_18_32      1
-     elementwise_mult_core_18_18_10_32_1      3
-       dsp_signed_mult_18x18_unit_18_18_1     16
-       fp_rounding_unit_1_37_10     32
-     lstm_gate_18_10_32_1            3
-       elementwise_add_core_18_18_32      2
-       elementwise_mult_core_18_18_10_32_1      1
-         dsp_signed_mult_18x18_unit_18_18_1     16
-         fp_rounding_unit_1_37_10     32
-       shift_register_group_18_32_10      1
-         shift_register_unit_18_18     32
-       sigmoid_core_18_18_10_32_1     32
-         abs_unit_18                 1
-         dsp_signed_mac_18_13_23_32      1
-         fp_rounding_unit_1_32_11      1
-         shift_register_unit_1_3      1
-     output_activation_18_10_32_1      1
-       elementwise_add_core_18_18_32      1
-       sigmoid_core_18_18_10_32_1     32
-         abs_unit_18                 1
-         dsp_signed_mac_18_13_23_32      1
-         fp_rounding_unit_1_32_11      1
-         shift_register_unit_1_3      1
-     shift_register_group_18_32_14      1
-       shift_register_unit_18_14     32
-     shift_register_group_18_32_18      2
-       shift_register_unit_18_18     32
-     shift_register_group_18_32_6      1
-       shift_register_unit_18_6     32
-     tanh_core_18_18_10_32_1        32
-       abs_unit_18                   1
-       dsp_signed_mac_18_13_23_32      1
-       fp_rounding_unit_1_32_11      1
-       shift_register_unit_1_3       1
+     elementwise_add_core_18_18_32      0
+     elementwise_mult_core_18_18_10_32_1      0
+       dsp_signed_mult_18x18_unit_18_18_1      0
+       fp_rounding_unit_1_37_10      0
+     lstm_gate_18_10_32_1            0
+       elementwise_add_core_18_18_32      0
+       elementwise_mult_core_18_18_10_32_1      0
+         dsp_signed_mult_18x18_unit_18_18_1      0
+         fp_rounding_unit_1_37_10      0
+       shift_register_group_18_32_10      0
+         shift_register_unit_18_18      0
+       sigmoid_core_18_18_10_32_1      0
+         abs_unit_18                 0
+         dsp_signed_mac_18_13_23_32      0
+         fp_rounding_unit_1_32_11      0
+         shift_register_unit_1_3      0
+     output_activation_18_10_32_1      0
+       elementwise_add_core_18_18_32      0
+       sigmoid_core_18_18_10_32_1      0
+         abs_unit_18                 0
+         dsp_signed_mac_18_13_23_32      0
+         fp_rounding_unit_1_32_11      0
+         shift_register_unit_1_3      0
+     shift_register_group_18_32_14      0
+       shift_register_unit_18_14      0
+     shift_register_group_18_32_18      0
+       shift_register_unit_18_18      0
+     shift_register_group_18_32_6      0
+       shift_register_unit_18_6      0
+     tanh_core_18_18_10_32_1         0
+       abs_unit_18                   0
+       dsp_signed_mac_18_13_23_32      0
+       fp_rounding_unit_1_32_11      0
+       shift_register_unit_1_3       0
 
-   Number of wires:              55636
-   Number of wire bits:         691124
-   Number of public wires:       38516
-   Number of public wire bits:  514228
+   Number of wires:               1393
+   Number of wire bits:          24241
+   Number of public wires:        1393
+   Number of public wire bits:   24241
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:              29451
-     $add                          768
-     $and                          179
-     $dffe                         160
-     $eq                          4960
-     $ge                           160
-     $logic_not                    160
-     $mul                          352
-     $mux                        11392
-     $neg                          160
-     $not                          160
-     $reduce_and                   160
-     $sdff                         640
-     $sdffe                      10040
-     $sub                          160
+   Number of cells:                495
+     $and                            1
+     $sdffe                       8066
 

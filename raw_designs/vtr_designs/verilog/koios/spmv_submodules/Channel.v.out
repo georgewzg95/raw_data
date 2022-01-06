@@ -11,10 +11,8 @@
    Number of memory bits:          128
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                          32
+     $mux                           40
 
 === $paramod$67063290d49aa5357df1233608c088390b70212f\generic_fifo_sc_a ===
 
@@ -26,14 +24,13 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 22
-     $add                            2
-     $adffe                          3
+     $add                            6
+     $adffe                          7
      $and                            3
-     $eq                             2
+     $eq                             6
      $logic_not                      1
-     $mux                            7
-     $paramod$5cd9b7e6fbb280c6ce9be4ee5d1fdcbc34edf95e\dpram      1
-     $reduce_bool                    3
+     $mux                           15
+     $reduce_bool                    7
 
 === Channel ===
 
@@ -47,37 +44,29 @@
    Number of cells:                 14
      $and                            5
      $dff                            2
-     $dffe                           1
-     $mul                            1
+     $dffe                          16
+     $mul                           16
      $mux                            1
      $not                            3
-     $paramod$67063290d49aa5357df1233608c088390b70212f\generic_fifo_sc_a      1
 
 === design hierarchy ===
 
    Channel                           1
-     $paramod$67063290d49aa5357df1233608c088390b70212f\generic_fifo_sc_a      1
-       $paramod$5cd9b7e6fbb280c6ce9be4ee5d1fdcbc34edf95e\dpram      1
+     $paramod$67063290d49aa5357df1233608c088390b70212f\generic_fifo_sc_a      0
+       $paramod$5cd9b7e6fbb280c6ce9be4ee5d1fdcbc34edf95e\dpram      0
 
-   Number of wires:                 74
-   Number of wire bits:            367
-   Number of public wires:          44
-   Number of public wire bits:     220
-   Number of memories:               1
-   Number of memory bits:          128
+   Number of wires:                 27
+   Number of wire bits:             86
+   Number of public wires:          19
+   Number of public wire bits:      63
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 46
-     $add                            2
-     $adffe                          3
-     $and                            8
+   Number of cells:                 14
+     $and                            5
      $dff                            2
-     $dffe                           3
-     $eq                             2
-     $logic_not                      1
-     $memrd                          2
-     $memwr_v2                       2
-     $mul                            1
-     $mux                           14
+     $dffe                          16
+     $mul                           16
+     $mux                            1
      $not                            3
-     $reduce_bool                    3
 

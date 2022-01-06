@@ -11,8 +11,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $sdff                           2
-     seq_mac                         1
+     $sdff                          16
 
 === qadd ===
 
@@ -24,7 +23,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $add                            1
+     $add                           16
 
 === qmult ===
 
@@ -36,7 +35,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $mul                            1
+     $mul                           16
 
 === seq_mac ===
 
@@ -48,11 +47,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $dff                            4
-     $mux                            3
-     $reduce_or                      1
-     qadd                            1
-     qmult                           1
+     $dff                           48
+     $mux                           24
+     $reduce_or                      8
 
 === systolic_pe_matrix ===
 
@@ -65,29 +62,22 @@
    Number of processes:              0
    Number of cells:                257
      $or                             1
-     processing_element            256
 
 === design hierarchy ===
 
    systolic_pe_matrix                1
-     processing_element            256
-       seq_mac                       1
-         qadd                        1
-         qmult                       1
+     processing_element              0
+       seq_mac                       0
+         qadd                        0
+         qmult                       0
 
-   Number of wires:               7974
-   Number of wire bits:          71428
-   Number of public wires:        7206
-   Number of public wire bits:   67076
+   Number of wires:                806
+   Number of wire bits:           6660
+   Number of public wires:         806
+   Number of public wire bits:    6660
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               3073
-     $add                          256
-     $dff                         1024
-     $mul                          256
-     $mux                          768
+   Number of cells:                257
      $or                             1
-     $reduce_or                    256
-     $sdff                         512
 

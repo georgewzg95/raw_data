@@ -2,4 +2,4 @@ read_verilog -sv [DESIGN];
 hierarchy -auto-top;
 proc; 
 opt;
-tee -o [OUTPUT] stat;
+tee -o [OUTPUT] stat -width;

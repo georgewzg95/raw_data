@@ -1772,10 +1772,10 @@ Optimizing module ldpc_shuffle.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $adff                           1
-     $eq                             6
-     $logic_not                      1
-     $pmux                           1
+     $adff                           4
+     $eq                            18
+     $logic_not                      3
+     $pmux                           4
 
 === $paramod$87d4125944801a5a400fc0901ba7696c7223274a\ldpc_muxreg ===
 
@@ -1787,10 +1787,10 @@ Optimizing module ldpc_shuffle.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $adff                           1
-     $eq                             7
-     $logic_not                      1
-     $pmux                           1
+     $adff                           4
+     $eq                            21
+     $logic_not                      3
+     $pmux                           4
 
 === $paramod$95e13c05332be961fd4e848486723ca3fcbd33c3\ldpc_muxreg ===
 
@@ -1802,10 +1802,10 @@ Optimizing module ldpc_shuffle.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $adff                           1
-     $eq                             3
-     $logic_not                      1
-     $pmux                           1
+     $adff                           4
+     $eq                             6
+     $logic_not                      2
+     $pmux                           4
 
 === ldpc_shuffle ===
 
@@ -1817,32 +1817,25 @@ Optimizing module ldpc_shuffle.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                360
-     $mux                           90
-     $paramod$3346f0f4f96d6c5e670cb7027f7d140fa2a86575\ldpc_muxreg     90
-     $paramod$87d4125944801a5a400fc0901ba7696c7223274a\ldpc_muxreg     90
-     $paramod$95e13c05332be961fd4e848486723ca3fcbd33c3\ldpc_muxreg     90
+     $mux                          360
 
 === design hierarchy ===
 
    ldpc_shuffle                      1
-     $paramod$3346f0f4f96d6c5e670cb7027f7d140fa2a86575\ldpc_muxreg     90
-     $paramod$87d4125944801a5a400fc0901ba7696c7223274a\ldpc_muxreg     90
-     $paramod$95e13c05332be961fd4e848486723ca3fcbd33c3\ldpc_muxreg     90
+     $paramod$3346f0f4f96d6c5e670cb7027f7d140fa2a86575\ldpc_muxreg      0
+     $paramod$87d4125944801a5a400fc0901ba7696c7223274a\ldpc_muxreg      0
+     $paramod$95e13c05332be961fd4e848486723ca3fcbd33c3\ldpc_muxreg      0
 
-   Number of wires:               5949
-   Number of wire bits:          32861
-   Number of public wires:        3969
-   Number of public wire bits:   30071
+   Number of wires:                639
+   Number of wire bits:          11171
+   Number of public wires:         639
+   Number of public wire bits:   11171
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               2340
-     $adff                         270
-     $eq                          1440
-     $logic_not                    270
-     $mux                           90
-     $pmux                         270
+   Number of cells:                360
+     $mux                          360
 
-End of script. Logfile hash: 2b3afe78f0, CPU: user 0.38s system 0.01s, MEM: 21.86 MB peak
+End of script. Logfile hash: 9ff16b0539, CPU: user 0.44s system 0.00s, MEM: 22.12 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 51% 2x read_verilog (0 sec), 18% 2x opt_clean (0 sec), ...
+Time spent: 55% 2x read_verilog (0 sec), 14% 2x opt_clean (0 sec), ...

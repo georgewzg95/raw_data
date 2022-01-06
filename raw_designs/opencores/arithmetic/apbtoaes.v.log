@@ -1444,10 +1444,8 @@ Optimizing module shift_rows.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $and                            2
-     $shl                            1
-     control_unit                    1
-     datapath                        1
+     $and                            6
+     $shl                            4
 
 === aes_ip ===
 
@@ -1459,8 +1457,6 @@ Optimizing module shift_rows.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     aes_core                        1
-     host_interface                  1
 
 === control_unit ===
 
@@ -1472,18 +1468,18 @@ Optimizing module shift_rows.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                113
-     $add                            1
-     $adff                           1
-     $adffe                          1
-     $eq                            22
+     $add                            4
+     $adff                           4
+     $adffe                          4
+     $eq                            78
      $logic_and                      5
-     $logic_not                      4
+     $logic_not                     11
      $logic_or                       8
-     $mux                           49
+     $mux                          147
      $or                             1
-     $pmux                           8
-     $reduce_bool                    1
-     $reduce_or                     12
+     $pmux                          24
+     $reduce_bool                    2
+     $reduce_or                     40
 
 === data_swap ===
 
@@ -1495,9 +1491,9 @@ Optimizing module shift_rows.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $eq                             3
-     $logic_not                      1
-     $pmux                           1
+     $eq                             6
+     $logic_not                      2
+     $pmux                          32
 
 === datapath ===
 
@@ -1509,26 +1505,21 @@ Optimizing module shift_rows.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                160
-     $add                            1
-     $adff                          12
-     $adffe                         27
-     $and                            3
-     $dff                            1
-     $eq                            11
+     $add                           32
+     $adff                          21
+     $adffe                        780
+     $and                            9
+     $dff                           32
+     $eq                            26
      $logic_and                      6
-     $logic_not                      6
+     $logic_not                     11
      $logic_or                      16
-     $mux                           51
-     $ne                             1
-     $or                            11
-     $pmux                           4
-     $reduce_and                     1
-     $xor                            3
-     data_swap                       2
-     key_expander                    1
-     mix_columns                     1
-     sBox                            1
-     shift_rows                      1
+     $mux                         1490
+     $ne                             2
+     $or                            20
+     $pmux                         224
+     $reduce_and                     2
+     $xor                           96
 
 === host_interface ===
 
@@ -1540,23 +1531,23 @@ Optimizing module shift_rows.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                137
-     $add                            1
+     $add                            2
      $adff                           2
-     $adffe                          7
-     $and                           22
-     $eq                            19
+     $adffe                         19
+     $and                           32
+     $eq                            64
      $logic_and                     20
-     $logic_not                      4
+     $logic_not                      9
      $logic_or                       3
-     $mux                           33
-     $ne                             4
-     $not                            6
+     $mux                          172
+     $ne                            15
+     $not                            7
      $or                             1
-     $pmux                           3
-     $reduce_and                     1
-     $reduce_bool                    6
-     $reduce_or                      3
-     $shr                            1
+     $pmux                          36
+     $reduce_and                     2
+     $reduce_bool                   13
+     $reduce_or                     10
+     $shr                            4
      $xor                            1
 
 === key_expander ===
@@ -1569,13 +1560,13 @@ Optimizing module shift_rows.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 27
-     $eq                             3
-     $logic_not                      1
-     $mux                           10
-     $shl                            1
-     $shr                            1
-     $sub                            1
-     $xor                           10
+     $eq                            12
+     $logic_not                      4
+     $mux                          104
+     $shl                            8
+     $shr                           32
+     $sub                           32
+     $xor                          200
 
 === mix_columns ===
 
@@ -1587,8 +1578,8 @@ Optimizing module shift_rows.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 36
-     $and                            9
-     $xor                           27
+     $and                           72
+     $xor                          240
 
 === sBox ===
 
@@ -1600,7 +1591,6 @@ Optimizing module shift_rows.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     sBox_8                          4
 
 === sBox_8 ===
 
@@ -1612,14 +1602,14 @@ Optimizing module shift_rows.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                163
-     $and                           26
-     $dff                            2
-     $mux                            1
-     $not                           37
+     $and                           34
+     $dff                           12
+     $mux                            8
+     $not                           66
      $or                             6
-     $reduce_xor                    10
+     $reduce_xor                    24
      $xnor                          13
-     $xor                           68
+     $xor                           81
 
 === shift_rows ===
 
@@ -1635,50 +1625,27 @@ Optimizing module shift_rows.
 === design hierarchy ===
 
    aes_ip                            1
-     aes_core                        1
-       control_unit                  1
-       datapath                      1
-         data_swap                   2
-         key_expander                1
-         mix_columns                 1
-         sBox                        1
-           sBox_8                    4
-         shift_rows                  1
-     host_interface                  1
+     aes_core                        0
+       control_unit                  0
+       datapath                      0
+         data_swap                   0
+         key_expander                0
+         mix_columns                 0
+         sBox                        0
+           sBox_8                    0
+         shift_rows                  0
+     host_interface                  0
 
-   Number of wires:               1691
-   Number of wire bits:           9402
-   Number of public wires:         918
-   Number of public wire bits:    6678
+   Number of wires:                 31
+   Number of wire bits:            203
+   Number of public wires:          31
+   Number of public wire bits:     203
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               1132
-     $add                            3
-     $adff                          15
-     $adffe                         35
-     $and                          140
-     $dff                            9
-     $eq                            61
-     $logic_and                     31
-     $logic_not                     17
-     $logic_or                      27
-     $mux                          147
-     $ne                             5
-     $not                          154
-     $or                            37
-     $pmux                          17
-     $reduce_and                     2
-     $reduce_bool                    7
-     $reduce_or                     15
-     $reduce_xor                    40
-     $shl                            2
-     $shr                            2
-     $sub                            1
-     $xnor                          52
-     $xor                          313
+   Number of cells:                  2
 
 Warnings: 9 unique messages, 9 total
-End of script. Logfile hash: a6fa61b144, CPU: user 0.64s system 0.00s, MEM: 24.78 MB peak
+End of script. Logfile hash: 5c81455fc5, CPU: user 0.63s system 0.02s, MEM: 24.95 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 24% 5x opt_expr (0 sec), 24% 2x read_verilog (0 sec), ...
+Time spent: 25% 2x read_verilog (0 sec), 23% 5x opt_expr (0 sec), ...

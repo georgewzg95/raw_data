@@ -11,10 +11,8 @@
    Number of memory bits:          168
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                          21
+     $mux                           30
 
 === rgconfigmemory ===
 
@@ -27,15 +25,14 @@
    Number of processes:              0
    Number of cells:                588
      $and                          443
-     $dlatch                        12
-     $eq                            13
+     $dlatch                       228
+     $eq                            52
      $logic_and                     12
      $mux                            2
      $not                           13
      $pmux                           1
-     $reduce_or                     78
-     $sdff                          13
-     spram21x4                       1
+     $reduce_or                    156
+     $sdff                         229
 
 === spram21x4 ===
 
@@ -47,34 +44,29 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dff                            1
-     $paramod$69ef3ba125364ac04d6727c81f3bd598500042c7\single_port_ram      1
+     $dff                            8
 
 === design hierarchy ===
 
    rgconfigmemory                    1
-     spram21x4                       1
-       $paramod$69ef3ba125364ac04d6727c81f3bd598500042c7\single_port_ram      1
+     spram21x4                       0
+       $paramod$69ef3ba125364ac04d6727c81f3bd598500042c7\single_port_ram      0
 
-   Number of wires:                608
-   Number of wire bits:           1271
-   Number of public wires:          45
-   Number of public wire bits:     641
-   Number of memories:               1
-   Number of memory bits:          168
+   Number of wires:                594
+   Number of wire bits:           1096
+   Number of public wires:          35
+   Number of public wire bits:     537
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                594
+   Number of cells:                588
      $and                          443
-     $dff                            1
-     $dffe                           1
-     $dlatch                        12
-     $eq                            13
+     $dlatch                       228
+     $eq                            52
      $logic_and                     12
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            5
+     $mux                            2
      $not                           13
      $pmux                           1
-     $reduce_or                     78
-     $sdff                          13
+     $reduce_or                    156
+     $sdff                         229
 

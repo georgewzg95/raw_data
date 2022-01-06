@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v' to AST representation.
 Generating RTLIL representation for module `\systolic_pe_matrix'.
 Generating RTLIL representation for module `\processing_element'.
 Generating RTLIL representation for module `\seq_mac'.
@@ -64,7 +64,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3372$2 in module processing_element.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3372$2 in module processing_element.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -76,37 +76,37 @@ Promoted 4 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\seq_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3417$5'.
-Creating decoders for process `\seq_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3409$4'.
-Creating decoders for process `\seq_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3401$3'.
-Creating decoders for process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3372$2'.
+Creating decoders for process `\seq_mac.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3417$5'.
+Creating decoders for process `\seq_mac.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3409$4'.
+Creating decoders for process `\seq_mac.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3401$3'.
+Creating decoders for process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3372$2'.
      1/2: $0\out_b[7:0]
      2/2: $0\out_a[7:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\seq_mac.\out_temp' using process `\seq_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3417$5'.
+Creating register for signal `\seq_mac.\out_temp' using process `\seq_mac.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3417$5'.
   created $dff cell `$procdff$20' with positive edge clock.
-Creating register for signal `\seq_mac.\mul_out_temp_reg' using process `\seq_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3409$4'.
+Creating register for signal `\seq_mac.\mul_out_temp_reg' using process `\seq_mac.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3409$4'.
   created $dff cell `$procdff$21' with positive edge clock.
-Creating register for signal `\seq_mac.\a_flopped' using process `\seq_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3401$3'.
+Creating register for signal `\seq_mac.\a_flopped' using process `\seq_mac.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3401$3'.
   created $dff cell `$procdff$22' with positive edge clock.
-Creating register for signal `\seq_mac.\b_flopped' using process `\seq_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3401$3'.
+Creating register for signal `\seq_mac.\b_flopped' using process `\seq_mac.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3401$3'.
   created $dff cell `$procdff$23' with positive edge clock.
-Creating register for signal `\processing_element.\out_a' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3372$2'.
+Creating register for signal `\processing_element.\out_a' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3372$2'.
   created $dff cell `$procdff$24' with positive edge clock.
-Creating register for signal `\processing_element.\out_b' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3372$2'.
+Creating register for signal `\processing_element.\out_b' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3372$2'.
   created $dff cell `$procdff$25' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `seq_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3417$5'.
-Removing empty process `seq_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3409$4'.
-Removing empty process `seq_mac.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3401$3'.
-Found and cleaned up 1 empty switch in `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3372$2'.
-Removing empty process `processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3372$2'.
+Removing empty process `seq_mac.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3417$5'.
+Removing empty process `seq_mac.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3409$4'.
+Removing empty process `seq_mac.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3401$3'.
+Found and cleaned up 1 empty switch in `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3372$2'.
+Removing empty process `processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3372$2'.
 Cleaned up 1 empty switch.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -145,10 +145,10 @@ Running muxtree optimizer on module \qadd..
 Running muxtree optimizer on module \seq_mac..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3431$10: { \out_temp [15] 7'0000000 } -> 8'10000000
-      Replacing known input bits on port B of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3431$10: { \out_temp [15] \out_temp [6:0] } -> { 1'1 \out_temp [6:0] }
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3425$8: { \out_temp [15] \out_temp [6:0] } -> { 1'0 \out_temp [6:0] }
-      Replacing known input bits on port B of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3425$8: { \out_temp [15] 7'1111111 } -> 8'01111111
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3431$10: { \out_temp [15] 7'0000000 } -> 8'10000000
+      Replacing known input bits on port B of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3431$10: { \out_temp [15] \out_temp [6:0] } -> { 1'1 \out_temp [6:0] }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3425$8: { \out_temp [15] \out_temp [6:0] } -> { 1'0 \out_temp [6:0] }
+      Replacing known input bits on port B of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.medium_submodules/systolic_pe_matrix.v:3425$8: { \out_temp [15] 7'1111111 } -> 8'01111111
   Analyzing evaluation results.
 Running muxtree optimizer on module \processing_element..
   Creating internal representation of mux trees.
@@ -264,8 +264,7 @@ Optimizing module systolic_pe_matrix.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $sdff                           2
-     seq_mac                         1
+     $sdff                          16
 
 === qadd ===
 
@@ -277,7 +276,7 @@ Optimizing module systolic_pe_matrix.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $add                            1
+     $add                           16
 
 === qmult ===
 
@@ -289,7 +288,7 @@ Optimizing module systolic_pe_matrix.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $mul                            1
+     $mul                           16
 
 === seq_mac ===
 
@@ -301,11 +300,9 @@ Optimizing module systolic_pe_matrix.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $dff                            4
-     $mux                            3
-     $reduce_or                      1
-     qadd                            1
-     qmult                           1
+     $dff                           48
+     $mux                           24
+     $reduce_or                      8
 
 === systolic_pe_matrix ===
 
@@ -318,32 +315,25 @@ Optimizing module systolic_pe_matrix.
    Number of processes:              0
    Number of cells:               1025
      $or                             1
-     processing_element           1024
 
 === design hierarchy ===
 
    systolic_pe_matrix                1
-     processing_element           1024
-       seq_mac                       1
-         qadd                        1
-         qmult                       1
+     processing_element              0
+       seq_mac                       0
+         qadd                        0
+         qmult                       0
 
-   Number of wires:              31814
-   Number of wire bits:         284676
-   Number of public wires:       28742
-   Number of public wire bits:  267268
+   Number of wires:               3142
+   Number of wire bits:          25604
+   Number of public wires:        3142
+   Number of public wire bits:   25604
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:              12289
-     $add                         1024
-     $dff                         4096
-     $mul                         1024
-     $mux                         3072
+   Number of cells:               1025
      $or                             1
-     $reduce_or                   1024
-     $sdff                        2048
 
-End of script. Logfile hash: ba52aec42f, CPU: user 0.63s system 0.03s, MEM: 52.28 MB peak
+End of script. Logfile hash: 4a187eb337, CPU: user 0.66s system 0.01s, MEM: 52.42 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 46% 2x read_verilog (0 sec), 26% 2x opt_clean (0 sec), ...
+Time spent: 45% 2x read_verilog (0 sec), 27% 2x opt_clean (0 sec), ...

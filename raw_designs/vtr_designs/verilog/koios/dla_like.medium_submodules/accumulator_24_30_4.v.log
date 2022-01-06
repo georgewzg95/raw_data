@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v' to AST representation.
 Generating RTLIL representation for module `\accumulator_24_30_4'.
 Successfully finished Verilog frontend.
 
@@ -48,7 +48,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1 in module accumulator_24_30_4.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1 in module accumulator_24_30_4.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -60,7 +60,7 @@ Promoted 0 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\accumulator_24_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1'.
+Creating decoders for process `\accumulator_24_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1'.
      1/6: $0\in_reg[29:0]
      2/6: $0\cir_shift_reg_3[29:0]
      3/6: $0\cir_shift_reg_2[29:0]
@@ -71,24 +71,24 @@ Creating decoders for process `\accumulator_24_30_4.$proc$/home/zhigang/DATA/raw
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\accumulator_24_30_4.\cir_shift_reg_0' using process `\accumulator_24_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1'.
+Creating register for signal `\accumulator_24_30_4.\cir_shift_reg_0' using process `\accumulator_24_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1'.
   created $dff cell `$procdff$34' with positive edge clock.
-Creating register for signal `\accumulator_24_30_4.\cir_shift_reg_1' using process `\accumulator_24_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1'.
+Creating register for signal `\accumulator_24_30_4.\cir_shift_reg_1' using process `\accumulator_24_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1'.
   created $dff cell `$procdff$35' with positive edge clock.
-Creating register for signal `\accumulator_24_30_4.\cir_shift_reg_2' using process `\accumulator_24_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1'.
+Creating register for signal `\accumulator_24_30_4.\cir_shift_reg_2' using process `\accumulator_24_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1'.
   created $dff cell `$procdff$36' with positive edge clock.
-Creating register for signal `\accumulator_24_30_4.\cir_shift_reg_3' using process `\accumulator_24_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1'.
+Creating register for signal `\accumulator_24_30_4.\cir_shift_reg_3' using process `\accumulator_24_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1'.
   created $dff cell `$procdff$37' with positive edge clock.
-Creating register for signal `\accumulator_24_30_4.\out_reg' using process `\accumulator_24_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1'.
+Creating register for signal `\accumulator_24_30_4.\out_reg' using process `\accumulator_24_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1'.
   created $dff cell `$procdff$38' with positive edge clock.
-Creating register for signal `\accumulator_24_30_4.\in_reg' using process `\accumulator_24_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1'.
+Creating register for signal `\accumulator_24_30_4.\in_reg' using process `\accumulator_24_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1'.
   created $dff cell `$procdff$39' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 3 empty switches in `\accumulator_24_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1'.
-Removing empty process `accumulator_24_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1'.
+Found and cleaned up 3 empty switches in `\accumulator_24_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1'.
+Removing empty process `accumulator_24_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:18$1'.
 Cleaned up 3 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -126,8 +126,8 @@ Removed a total of 0 cells.
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
 Adding SRST signal on $procdff$39 ($dff) from module accumulator_24_30_4 (D = $procmux$8_Y, Q = \in_reg, rval = 30'000000000000000000000000000000).
 Adding SRST signal on $procdff$38 ($dff) from module accumulator_24_30_4 (D = $procmux$29_Y, Q = \out_reg, rval = 30'000000000000000000000000000000).
-Adding EN signal on $auto$ff.cc:262:slice$41 ($sdff) from module accumulator_24_30_4 (D = $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:36$6_Y, Q = \out_reg).
-Adding SRST signal on $procdff$37 ($dff) from module accumulator_24_30_4 (D = $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:36$6_Y, Q = \cir_shift_reg_3, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$41 ($sdff) from module accumulator_24_30_4 (D = $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:36$6_Y, Q = \out_reg).
+Adding SRST signal on $procdff$37 ($dff) from module accumulator_24_30_4 (D = $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/accumulator_24_30_4.v:36$6_Y, Q = \cir_shift_reg_3, rval = 30'000000000000000000000000000000).
 Adding SRST signal on $procdff$34 ($dff) from module accumulator_24_30_4 (D = \cir_shift_reg_1, Q = \cir_shift_reg_0, rval = 30'000000000000000000000000000000).
 Adding SRST signal on $procdff$35 ($dff) from module accumulator_24_30_4 (D = \cir_shift_reg_2, Q = \cir_shift_reg_1, rval = 30'000000000000000000000000000000).
 Adding SRST signal on $procdff$36 ($dff) from module accumulator_24_30_4 (D = \cir_shift_reg_3, Q = \cir_shift_reg_2, rval = 30'000000000000000000000000000000).
@@ -180,12 +180,12 @@ Optimizing module accumulator_24_30_4.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            1
-     $mux                            1
-     $reduce_or                      1
-     $sdff                           5
-     $sdffe                          1
+     $add                           30
+     $mux                           30
+     $reduce_or                      2
+     $sdff                         150
+     $sdffe                         30
 
-End of script. Logfile hash: 0e1ad1b252, CPU: user 0.02s system 0.00s, MEM: 11.34 MB peak
+End of script. Logfile hash: 05fc25503b, CPU: user 0.03s system 0.00s, MEM: 11.60 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 19% 4x opt_expr (0 sec), 19% 2x read_verilog (0 sec), ...
+Time spent: 24% 3x opt_merge (0 sec), 24% 2x opt_clean (0 sec), ...

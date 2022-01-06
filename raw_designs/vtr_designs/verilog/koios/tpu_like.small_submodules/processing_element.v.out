@@ -11,8 +11,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $sdff                           2
-     seq_mac                         1
+     $sdff                          16
 
 === qadd ===
 
@@ -24,7 +23,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $add                            1
+     $add                           16
 
 === qmult ===
 
@@ -36,7 +35,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $mul                            1
+     $mul                           16
 
 === seq_mac ===
 
@@ -48,31 +47,24 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $dff                            4
-     $mux                            3
-     $reduce_or                      1
-     qadd                            1
-     qmult                           1
+     $dff                           48
+     $mux                           24
+     $reduce_or                      8
 
 === design hierarchy ===
 
    processing_element                1
-     seq_mac                         1
-       qadd                          1
-       qmult                         1
+     seq_mac                         0
+       qadd                          0
+       qmult                         0
 
-   Number of wires:                 28
-   Number of wire bits:            253
-   Number of public wires:          25
-   Number of public wire bits:     236
+   Number of wires:                  8
+   Number of wire bits:             50
+   Number of public wires:           8
+   Number of public wire bits:      50
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 12
-     $add                            1
-     $dff                            4
-     $mul                            1
-     $mux                            3
-     $reduce_or                      1
-     $sdff                           2
+   Number of cells:                  3
+     $sdff                          16
 

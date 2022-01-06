@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/special.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/special.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/special.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/special.v' to AST representation.
 Generating RTLIL representation for module `\special'.
 Successfully finished Verilog frontend.
 
@@ -148,11 +148,11 @@ Optimizing module special.
    Number of processes:              0
    Number of cells:                 17
      $and                            2
-     $ge                             1
-     $mux                            6
+     $ge                            23
+     $mux                          126
      $not                            1
      $or                             7
 
-End of script. Logfile hash: 1fa57b2f24, CPU: user 0.02s system 0.00s, MEM: 11.13 MB peak
+End of script. Logfile hash: ae9128e95c, CPU: user 0.04s system 0.00s, MEM: 11.36 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 24% 4x opt_expr (0 sec), 24% 2x read_verilog (0 sec), ...
+Time spent: 49% 4x opt_expr (0 sec), 12% 3x opt_merge (0 sec), ...

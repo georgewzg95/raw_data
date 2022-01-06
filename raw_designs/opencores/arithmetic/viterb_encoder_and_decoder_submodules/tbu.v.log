@@ -295,18 +295,18 @@ Optimizing module tbu.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 79
-     $adff                           1
+     $adff                           3
      $and                           16
      $dff                            3
      $dlatch                         1
-     $eq                             7
+     $eq                            21
      $logic_and                      1
-     $logic_not                      1
-     $mux                           12
+     $logic_not                      3
+     $mux                           32
      $not                           17
-     $pmux                          18
-     $reduce_or                      2
+     $pmux                          52
+     $reduce_or                     16
 
-End of script. Logfile hash: 19806d0304, CPU: user 0.06s system 0.00s, MEM: 12.80 MB peak
+End of script. Logfile hash: 155f50e8b4, CPU: user 0.11s system 0.00s, MEM: 12.94 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 24% 5x opt_expr (0 sec), 18% 3x opt_clean (0 sec), ...
+Time spent: 38% 5x opt_expr (0 sec), 15% 1x proc_mux (0 sec), ...

@@ -11,10 +11,8 @@
    Number of memory bits:          160
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                          32
+     $mux                           38
 
 === reg_file ===
 
@@ -27,26 +25,21 @@
    Number of processes:              0
    Number of cells:                  4
      $and                            1
-     $paramod$9b20c7c7990eeca2a248be4fd72c1393416d670c\single_port_ram      2
-     $reduce_or                      1
+     $reduce_or                     32
 
 === design hierarchy ===
 
    reg_file                          1
-     $paramod$9b20c7c7990eeca2a248be4fd72c1393416d670c\single_port_ram      2
+     $paramod$9b20c7c7990eeca2a248be4fd72c1393416d670c\single_port_ram      0
 
-   Number of wires:                 33
-   Number of wire bits:            607
-   Number of public wires:          24
-   Number of public wire bits:     404
-   Number of memories:               2
-   Number of memory bits:          320
+   Number of wires:                 15
+   Number of wire bits:            263
+   Number of public wires:          14
+   Number of public wire bits:     262
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 14
+   Number of cells:                  4
      $and                            1
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
-     $reduce_or                      1
+     $reduce_or                     32
 

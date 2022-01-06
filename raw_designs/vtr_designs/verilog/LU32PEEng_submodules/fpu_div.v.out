@@ -11,9 +11,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 94
-     $le                            24
-     $mux                           47
-     $sub                           23
+     $le                           852
+     $mux                         1105
+     $sub                          805
 
 === fpu_div ===
 
@@ -25,32 +25,30 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 83
-     $add                            1
-     $dff                            6
-     $ge                             1
-     $mux                           47
-     $sub                           26
+     $add                            8
+     $dff                           64
+     $ge                             8
+     $mux                          721
+     $sub                          208
      $xor                            1
-     div_24b                         1
 
 === design hierarchy ===
 
    fpu_div                           1
-     div_24b                         1
+     div_24b                         0
 
-   Number of wires:                137
-   Number of wire bits:           3170
-   Number of public wires:          40
-   Number of public wire bits:    1442
+   Number of wires:                 62
+   Number of wire bits:           1094
+   Number of public wires:          12
+   Number of public wire bits:     195
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                176
-     $add                            1
-     $dff                            6
-     $ge                             1
-     $le                            24
-     $mux                           94
-     $sub                           49
+   Number of cells:                 83
+     $add                            8
+     $dff                           64
+     $ge                             8
+     $mux                          721
+     $sub                          208
      $xor                            1
 

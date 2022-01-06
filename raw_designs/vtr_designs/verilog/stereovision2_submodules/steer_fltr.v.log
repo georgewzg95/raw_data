@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v' to AST representation.
 Generating RTLIL representation for module `\steer_fltr'.
 Successfully finished Verilog frontend.
 
@@ -59,8 +59,8 @@ Promoted 21 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
-Creating decoders for process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
+Creating decoders for process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating decoders for process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
      1/7: $0\h4_reg[27:0]
      2/7: $0\h3_reg[27:0]
      3/7: $0\h2_reg[27:0]
@@ -72,69 +72,69 @@ Creating decoders for process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\steer_fltr.\re_z' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\re_z' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$32' with positive edge clock.
-Creating register for signal `\steer_fltr.\im_z' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\im_z' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$33' with positive edge clock.
-Creating register for signal `\steer_fltr.\re_p' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\re_p' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$34' with positive edge clock.
-Creating register for signal `\steer_fltr.\im_p' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\im_p' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$35' with positive edge clock.
-Creating register for signal `\steer_fltr.\re_n' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\re_n' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$36' with positive edge clock.
-Creating register for signal `\steer_fltr.\im_n' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\im_n' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$37' with positive edge clock.
-Creating register for signal `\steer_fltr.\re_z_tmp_1' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\re_z_tmp_1' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$38' with positive edge clock.
-Creating register for signal `\steer_fltr.\im_z_tmp_1' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\im_z_tmp_1' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$39' with positive edge clock.
-Creating register for signal `\steer_fltr.\re_p_tmp_1' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\re_p_tmp_1' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$40' with positive edge clock.
-Creating register for signal `\steer_fltr.\re_p_tmp_2' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\re_p_tmp_2' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$41' with positive edge clock.
-Creating register for signal `\steer_fltr.\re_p_tmp_3' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\re_p_tmp_3' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$42' with positive edge clock.
-Creating register for signal `\steer_fltr.\im_p_tmp_1' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\im_p_tmp_1' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$43' with positive edge clock.
-Creating register for signal `\steer_fltr.\im_p_tmp_2' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\im_p_tmp_2' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$44' with positive edge clock.
-Creating register for signal `\steer_fltr.\im_p_tmp_3' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\im_p_tmp_3' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$45' with positive edge clock.
-Creating register for signal `\steer_fltr.\im_p_tmp_4' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\im_p_tmp_4' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$46' with positive edge clock.
-Creating register for signal `\steer_fltr.\re_z_tmp' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\re_z_tmp' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$47' with positive edge clock.
-Creating register for signal `\steer_fltr.\im_z_tmp' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\im_z_tmp' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$48' with positive edge clock.
-Creating register for signal `\steer_fltr.\re_p_tmp' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\re_p_tmp' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$49' with positive edge clock.
-Creating register for signal `\steer_fltr.\im_p_tmp' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\im_p_tmp' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$50' with positive edge clock.
-Creating register for signal `\steer_fltr.\re_n_tmp' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\re_n_tmp' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$51' with positive edge clock.
-Creating register for signal `\steer_fltr.\im_n_tmp' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Creating register for signal `\steer_fltr.\im_n_tmp' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
   created $dff cell `$procdff$52' with positive edge clock.
-Creating register for signal `\steer_fltr.\f1_reg' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
+Creating register for signal `\steer_fltr.\f1_reg' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
   created $dff cell `$procdff$53' with positive edge clock.
-Creating register for signal `\steer_fltr.\f2_reg' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
+Creating register for signal `\steer_fltr.\f2_reg' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
   created $dff cell `$procdff$54' with positive edge clock.
-Creating register for signal `\steer_fltr.\f3_reg' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
+Creating register for signal `\steer_fltr.\f3_reg' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
   created $dff cell `$procdff$55' with positive edge clock.
-Creating register for signal `\steer_fltr.\h1_reg' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
+Creating register for signal `\steer_fltr.\h1_reg' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
   created $dff cell `$procdff$56' with positive edge clock.
-Creating register for signal `\steer_fltr.\h2_reg' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
+Creating register for signal `\steer_fltr.\h2_reg' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
   created $dff cell `$procdff$57' with positive edge clock.
-Creating register for signal `\steer_fltr.\h3_reg' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
+Creating register for signal `\steer_fltr.\h3_reg' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
   created $dff cell `$procdff$58' with positive edge clock.
-Creating register for signal `\steer_fltr.\h4_reg' using process `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
+Creating register for signal `\steer_fltr.\h4_reg' using process `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
   created $dff cell `$procdff$59' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
-Found and cleaned up 1 empty switch in `\steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
-Removing empty process `steer_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
+Removing empty process `steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:129$3'.
+Found and cleaned up 1 empty switch in `\steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
+Removing empty process `steer_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/steer_fltr.v:115$1'.
 Cleaned up 1 empty switch.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -221,11 +221,11 @@ Optimizing module steer_fltr.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 42
-     $add                           11
-     $dff                           21
-     $dffe                           7
-     $sub                            3
+     $add                          333
+     $dff                          543
+     $dffe                         196
+     $sub                           93
 
-End of script. Logfile hash: df5e0fa70d, CPU: user 0.08s system 0.00s, MEM: 12.45 MB peak
+End of script. Logfile hash: a93ccd36ac, CPU: user 0.05s system 0.00s, MEM: 12.61 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 22% 4x opt_expr (0 sec), 22% 2x opt_clean (0 sec), ...
+Time spent: 24% 4x opt_expr (0 sec), 24% 2x opt_clean (0 sec), ...

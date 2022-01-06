@@ -2058,23 +2058,14 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 36
-     $dffe                           4
-     $mux                            7
+     $dffe                        1746
+     $mux                         1165
      $not                            1
      $or                             1
-     $reduce_and                     1
-     $reduce_bool                    1
+     $reduce_and                     2
+     $reduce_bool                    2
      $sdff                           3
-     $sdffe                          4
-     f36m_cubic                      1
-     f36m_mult                       1
-     f3_sub1                         1
-     f3m_add3                        1
-     f3m_cubic                       2
-     f3m_mult                        2
-     f3m_neg                         2
-     f3m_nine                        2
-     func6                           2
+     $sdffe                       1265
 
 === f32m_add ===
 
@@ -2086,7 +2077,6 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     f3m_add                         2
 
 === f32m_add3 ===
 
@@ -2098,7 +2088,6 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     f32m_add                        2
 
 === f32m_add4 ===
 
@@ -2110,7 +2099,6 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     f32m_add                        3
 
 === f32m_cubic ===
 
@@ -2122,9 +2110,7 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            1
-     f3m_cubic                       2
-     f3m_neg                         1
+     $dff                          388
 
 === f32m_mult ===
 
@@ -2137,14 +2123,10 @@ Optimizing module func8.
    Number of processes:              0
    Number of cells:                 12
      $dff                            1
-     $dffe                           1
+     $dffe                         388
      $not                            1
-     $reduce_and                     1
+     $reduce_and                     2
      $sdffe                          1
-     f3m_add                         3
-     f3m_mult3                       1
-     f3m_sub                         2
-     func6                           1
 
 === f32m_mux6 ===
 
@@ -2156,7 +2138,6 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     f3m_mux6                        2
 
 === f32m_neg ===
 
@@ -2168,7 +2149,6 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     f3m_neg                         2
 
 === f32m_sub ===
 
@@ -2180,7 +2160,6 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     f3m_sub                         2
 
 === f36m_cubic ===
 
@@ -2192,10 +2171,7 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $dff                            1
-     f32m_add                        2
-     f32m_cubic                      3
-     f32m_sub                        1
+     $dff                         1164
 
 === f36m_mult ===
 
@@ -2207,21 +2183,14 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 37
-     $dff                            4
-     $dffe                           7
+     $dff                          778
+     $dffe                        3492
      $mux                            1
      $not                            1
      $or                             1
-     $reduce_and                     1
+     $reduce_and                     2
      $sdff                           1
-     $sdffe                          2
-     f32m_add                        8
-     f32m_add3                       3
-     f32m_add4                       1
-     f32m_mult                       1
-     f32m_mux6                       2
-     f32m_neg                        3
-     func6                           1
+     $sdffe                          8
 
 === f3_add ===
 
@@ -2261,7 +2230,6 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     f3_add                          1
 
 === f3_sub1 ===
 
@@ -2286,7 +2254,6 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 97
-     f3_add                         97
 
 === f3m_add3 ===
 
@@ -2298,7 +2265,6 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     f3m_add                         2
 
 === f3m_cubic ===
 
@@ -2310,7 +2276,6 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 88
-     f3_add                         88
 
 === f3m_mult ===
 
@@ -2322,14 +2287,11 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 12
-     $dff                            2
-     $dffe                           1
-     $mux                            2
-     $sdff                           3
+     $dff                          382
+     $dffe                         194
+     $mux                          388
+     $sdff                         234
      $sdffe                          1
-     f3m_add                         1
-     func7                           1
-     func8                           1
 
 === f3m_mult3 ===
 
@@ -2342,14 +2304,11 @@ Optimizing module func8.
    Number of processes:              0
    Number of cells:                 14
      $dff                            2
-     $dffe                           3
+     $dffe                         582
      $mux                            1
      $or                             1
      $sdff                           1
-     $sdffe                          2
-     f3m_mult                        1
-     f3m_mux3                        2
-     func6                           1
+     $sdffe                          5
 
 === f3m_mux3 ===
 
@@ -2398,8 +2357,7 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $dff                            1
-     f3m_cubic                       2
+     $dff                          194
 
 === f3m_sub ===
 
@@ -2411,7 +2369,6 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 97
-     f3_sub                         97
 
 === func6 ===
 
@@ -2423,8 +2380,8 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $eq                             1
-     $mux                            1
+     $eq                             2
+     $mux                           32
      $sdff                           2
 
 === func7 ===
@@ -2437,7 +2394,6 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     f3_add                          3
 
 === func8 ===
 
@@ -2449,99 +2405,94 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                488
-     f3_add                        197
-     f3_mult                       291
 
 === design hierarchy ===
 
    duursma_lee_algo                  1
-     f36m_cubic                      1
-       f32m_add                      2
-         f3m_add                     2
-           f3_add                   97
-       f32m_cubic                    3
-         f3m_cubic                   2
-           f3_add                   88
-         f3m_neg                     1
-       f32m_sub                      1
-         f3m_sub                     2
-           f3_sub                   97
-             f3_add                  1
-     f36m_mult                       1
-       f32m_add                      8
-         f3m_add                     2
-           f3_add                   97
-       f32m_add3                     3
-         f32m_add                    2
-           f3m_add                   2
-             f3_add                 97
-       f32m_add4                     1
-         f32m_add                    3
-           f3m_add                   2
-             f3_add                 97
-       f32m_mult                     1
-         f3m_add                     3
-           f3_add                   97
-         f3m_mult3                   1
-           f3m_mult                  1
-             f3m_add                 1
-               f3_add               97
-             func7                   1
-               f3_add                3
-             func8                   1
-               f3_add              197
-               f3_mult             291
-           f3m_mux3                  2
-           func6                     1
-         f3m_sub                     2
-           f3_sub                   97
-             f3_add                  1
-         func6                       1
-       f32m_mux6                     2
-         f3m_mux6                    2
-       f32m_neg                      3
-         f3m_neg                     2
-       func6                         1
-     f3_sub1                         1
-     f3m_add3                        1
-       f3m_add                       2
-         f3_add                     97
-     f3m_cubic                       2
-       f3_add                       88
-     f3m_mult                        2
-       f3m_add                       1
-         f3_add                     97
-       func7                         1
-         f3_add                      3
-       func8                         1
-         f3_add                    197
-         f3_mult                   291
-     f3m_neg                         2
-     f3m_nine                        2
-       f3m_cubic                     2
-         f3_add                     88
-     func6                           2
+     f36m_cubic                      0
+       f32m_add                      0
+         f3m_add                     0
+           f3_add                    0
+       f32m_cubic                    0
+         f3m_cubic                   0
+           f3_add                    0
+         f3m_neg                     0
+       f32m_sub                      0
+         f3m_sub                     0
+           f3_sub                    0
+             f3_add                  0
+     f36m_mult                       0
+       f32m_add                      0
+         f3m_add                     0
+           f3_add                    0
+       f32m_add3                     0
+         f32m_add                    0
+           f3m_add                   0
+             f3_add                  0
+       f32m_add4                     0
+         f32m_add                    0
+           f3m_add                   0
+             f3_add                  0
+       f32m_mult                     0
+         f3m_add                     0
+           f3_add                    0
+         f3m_mult3                   0
+           f3m_mult                  0
+             f3m_add                 0
+               f3_add                0
+             func7                   0
+               f3_add                0
+             func8                   0
+               f3_add                0
+               f3_mult               0
+           f3m_mux3                  0
+           func6                     0
+         f3m_sub                     0
+           f3_sub                    0
+             f3_add                  0
+         func6                       0
+       f32m_mux6                     0
+         f3m_mux6                    0
+       f32m_neg                      0
+         f3m_neg                     0
+       func6                         0
+     f3_sub1                         0
+     f3m_add3                        0
+       f3m_add                       0
+         f3_add                      0
+     f3m_cubic                       0
+       f3_add                        0
+     f3m_mult                        0
+       f3m_add                       0
+         f3_add                      0
+       func7                         0
+         f3_add                      0
+       func8                         0
+         f3_add                      0
+         f3_mult                     0
+     f3m_neg                         0
+     f3m_nine                        0
+       f3m_cubic                     0
+         f3_add                      0
+     func6                           0
 
-   Number of wires:             220704
-   Number of wire bits:         386850
-   Number of public wires:       69013
-   Number of public wire bits:  232688
+   Number of wires:                 47
+   Number of wire bits:          10207
+   Number of public wires:          36
+   Number of public wire bits:    9038
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:             167688
-     $and                       105636
-     $dff                           19
-     $dffe                          18
-     $eq                             5
-     $mux                           20
-     $not                        29521
-     $or                         32429
-     $reduce_and                     3
-     $reduce_bool                    1
-     $sdff                          24
-     $sdffe                         12
+   Number of cells:                 36
+     $dffe                        1746
+     $mux                         1165
+     $not                            1
+     $or                             1
+     $reduce_and                     2
+     $reduce_bool                    2
+     $sdff                           3
+     $sdffe                       1265
 
-End of script. Logfile hash: cca05137a3, CPU: user 2.35s system 0.02s, MEM: 50.34 MB peak
+End of script. Logfile hash: 6fbd0f04f5, CPU: user 2.39s system 0.02s, MEM: 50.76 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
 Time spent: 26% 3x opt_clean (0 sec), 19% 5x opt_expr (0 sec), ...

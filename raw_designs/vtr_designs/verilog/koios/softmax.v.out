@@ -11,11 +11,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     $add                            1
-     $and                            1
-     $mux                           10
-     $not                            1
-     reverseFp16                     1
+     $add                           32
+     $and                           32
+     $mux                           40
+     $not                           10
 
 === $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\fNToRecFN ===
 
@@ -27,15 +26,14 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 15
-     $add                            1
-     $eq                             1
+     $add                           32
+     $eq                             2
      $logic_and                      1
-     $logic_not                      3
-     $mux                            5
-     $or                             1
-     $paramod$2a1f131e11d1b2199ecce1cc3c4396a32c4d7a6f\countLeadingZerosfp16      1
-     $shl                            1
-     $xor                            1
+     $logic_not                     16
+     $mux                           80
+     $or                            32
+     $shl                           10
+     $xor                           32
 
 === $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\isSigNaNRecFN ===
 
@@ -47,7 +45,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $eq                             1
+     $eq                             3
      $logic_and                      1
      $logic_not                      1
 
@@ -61,9 +59,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $eq                             1
+     $eq                             2
      $logic_and                      2
-     $logic_not                      3
+     $logic_not                     34
 
 === FPAddSub ===
 
@@ -75,7 +73,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     FPAddSub_16                     1
 
 === FPAddSub_16 ===
 
@@ -87,17 +84,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     $sdff                           4
-     FPAddSub_AlignModule            1
-     FPAddSub_AlignShift1            1
-     FPAddSub_AlignShift2            1
-     FPAddSub_ExceptionModule        1
-     FPAddSub_ExecutionModule        1
-     FPAddSub_NormalizeModule        1
-     FPAddSub_NormalizeShift1        1
-     FPAddSub_NormalizeShift2        1
-     FPAddSub_PrealignModule         1
-     FPAddSub_RoundModule            1
+     $sdff                         157
 
 === FPAddSub_AlignModule ===
 
@@ -109,8 +96,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $lt                             1
-     $mux                            4
+     $lt                            15
+     $mux                           30
 
 === FPAddSub_AlignShift1 ===
 
@@ -122,10 +109,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 11
-     $mux                            1
+     $mux                           11
      $not                            1
-     $pmux                           8
-     $reduce_or                      1
+     $pmux                          11
+     $reduce_or                      2
 
 === FPAddSub_AlignShift2 ===
 
@@ -137,10 +124,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 17
-     $eq                             3
-     $logic_not                      1
+     $eq                             6
+     $logic_not                      2
      $pmux                          11
-     $reduce_or                      2
+     $reduce_or                      5
 
 === FPAddSub_ExceptionModule ===
 
@@ -156,8 +143,8 @@
      $logic_not                      1
      $not                            2
      $or                             5
-     $reduce_and                     1
-     $reduce_or                      2
+     $reduce_and                     5
+     $reduce_or                      8
 
 === FPAddSub_ExecutionModule ===
 
@@ -169,9 +156,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $add                            1
-     $mux                            2
-     $sub                            1
+     $add                           17
+     $mux                           18
+     $sub                           17
      $xor                            2
 
 === FPAddSub_NormalizeModule ===
@@ -184,7 +171,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     $mux                           14
+     $mux                           82
 
 === FPAddSub_NormalizeShift1 ===
 
@@ -197,13 +184,13 @@
    Number of processes:              0
    Number of cells:                 41
      $and                            3
-     $dlatch                         3
-     $eq                             6
-     $logic_not                      2
-     $mux                            2
+     $dlatch                        13
+     $eq                            12
+     $logic_not                      4
+     $mux                            8
      $not                            3
-     $pmux                          18
-     $reduce_or                      4
+     $pmux                          21
+     $reduce_or                     10
 
 === FPAddSub_NormalizeShift2 ===
 
@@ -215,11 +202,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $add                            1
+     $add                            6
      $logic_not                      1
-     $mux                            1
-     $reduce_or                      2
-     $sub                            1
+     $mux                            6
+     $reduce_or                     21
+     $sub                            6
 
 === FPAddSub_PrealignModule ===
 
@@ -231,13 +218,13 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 19
-     $add                            4
+     $add                          128
      $and                            4
      $logic_not                      2
-     $not                            2
+     $not                           64
      $or                             3
-     $reduce_and                     2
-     $reduce_or                      2
+     $reduce_and                    10
+     $reduce_or                     20
 
 === FPAddSub_RoundModule ===
 
@@ -249,9 +236,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 22
-     $add                            2
+     $add                           38
      $and                            7
-     $mux                            4
+     $mux                           18
      $not                            2
      $or                             5
      $xor                            2
@@ -266,7 +253,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     FPMult_16                       1
 
 === FPMult_16 ===
 
@@ -278,11 +264,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $sdff                           5
-     FPMult_ExecuteModule            1
-     FPMult_NormalizeModule          1
-     FPMult_PrepModule               1
-     FPMult_RoundModule              1
+     $sdff                         175
 
 === FPMult_ExecuteModule ===
 
@@ -294,11 +276,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $add                            2
+     $add                           12
      $and                            1
-     $mux                            1
+     $mux                           10
      $or                             1
-     $reduce_or                      1
+     $reduce_or                     10
      $xor                            1
 
 === FPMult_NormalizeModule ===
@@ -311,7 +293,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $sub                            3
+     $sub                           70
 
 === FPMult_PrepModule ===
 
@@ -325,10 +307,10 @@
    Number of cells:                 15
      $and                            4
      $logic_not                      2
-     $mul                            1
+     $mul                           22
      $or                             3
-     $reduce_and                     2
-     $reduce_or                      3
+     $reduce_and                    10
+     $reduce_or                     20
 
 === FPMult_RoundModule ===
 
@@ -340,7 +322,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $mux                            3
+     $mux                           28
 
 === LUT ===
 
@@ -352,9 +334,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 65
-     $eq                            63
-     $logic_not                      1
-     $pmux                           1
+     $eq                           378
+     $logic_not                      6
+     $pmux                          32
 
 === LUT1 ===
 
@@ -366,9 +348,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 33
-     $eq                            31
-     $logic_not                      1
-     $pmux                           1
+     $eq                           155
+     $logic_not                      5
+     $pmux                          16
 
 === LUT2 ===
 
@@ -380,9 +362,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 65
-     $eq                            63
-     $logic_not                      1
-     $pmux                           1
+     $eq                           378
+     $logic_not                      6
+     $pmux                          16
 
 === comparator ===
 
@@ -396,8 +378,6 @@
    Number of cells:                  6
      $not                            1
      $or                             2
-     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\fNToRecFN      2
-     compareRecFN_Fp16               1
 
 === compareRecFN_Fp16 ===
 
@@ -409,13 +389,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 43
-     $eq                             3
+     $eq                            20
      $logic_and                     17
      $logic_not                     10
      $logic_or                       7
-     $lt                             2
-     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\isSigNaNRecFN      2
-     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\recFNToRawFN      2
+     $lt                            19
 
 === expunit ===
 
@@ -428,12 +406,8 @@
    Number of processes:              0
    Number of cells:                 10
      $not                            1
-     $reduce_and                     1
-     $sdffe                          4
-     FPAddSub                        1
-     FPMult                          1
-     LUT                             1
-     fptofixed_para                  1
+     $reduce_and                     2
+     $sdffe                         96
 
 === fptofixed_para ===
 
@@ -445,14 +419,14 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 11
-     $add                            1
-     $gt                             1
-     $logic_not                      1
-     $mux                            4
-     $not                            1
-     $shl                            1
-     $shr                            1
-     $sub                            1
+     $add                           32
+     $gt                            32
+     $logic_not                     15
+     $mux                           80
+     $not                           32
+     $shl                           16
+     $shr                           16
+     $sub                           32
 
 === logunit ===
 
@@ -464,9 +438,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     FPAddSub                        1
-     LUT1                            1
-     LUT2                            1
 
 === mode1_max_tree ===
 
@@ -479,11 +450,10 @@
    Number of processes:              0
    Number of cells:                 35
      $logic_and                      4
-     $mux                            7
+     $mux                          112
      $not                            5
-     $reduce_and                     3
-     $sdffe                          8
-     comparator                      8
+     $reduce_and                    10
+     $sdffe                        128
 
 === mode2_sub ===
 
@@ -495,7 +465,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     FPAddSub                        8
 
 === mode3_exp ===
 
@@ -507,7 +476,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     expunit                         8
 
 === mode4_adder_tree ===
 
@@ -519,12 +487,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 34
-     $dffe                           8
+     $dffe                         128
      $logic_and                      4
-     $mux                            9
+     $mux                          144
      $not                            1
-     $reduce_bool                    4
-     FPAddSub                        8
+     $reduce_bool                    8
 
 === mode5_ln ===
 
@@ -536,7 +503,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     logunit                         1
 
 === mode6_sub ===
 
@@ -548,7 +514,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     FPAddSub                        8
 
 === mode7_exp ===
 
@@ -560,7 +525,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     expunit                         8
 
 === reverseFp16 ===
 
@@ -583,170 +547,150 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                166
-     $add                            3
+     $add                           96
      $and                            2
      $dff                            2
-     $eq                             3
+     $eq                            21
      $logic_and                      5
-     $lt                             3
-     $mux                           44
-     $ne                             5
+     $lt                            21
+     $mux                          739
+     $ne                            10
      $not                            8
-     $reduce_and                     8
-     $reduce_bool                    6
+     $reduce_and                    18
+     $reduce_bool                   17
      $sdff                          15
-     $sdffe                         54
-     mode1_max_tree                  1
-     mode2_sub                       1
-     mode3_exp                       1
-     mode4_adder_tree                1
-     mode5_ln                        1
-     mode6_sub                       2
-     mode7_exp                       1
+     $sdffe                       1068
 
 === design hierarchy ===
 
    softmax                           1
-     mode1_max_tree                  1
-       comparator                    8
-         $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\fNToRecFN      2
-           $paramod$2a1f131e11d1b2199ecce1cc3c4396a32c4d7a6f\countLeadingZerosfp16      1
-             reverseFp16             1
-         compareRecFN_Fp16           1
-           $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\isSigNaNRecFN      2
-           $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\recFNToRawFN      2
-     mode2_sub                       1
-       FPAddSub                      8
-         FPAddSub_16                 1
-           FPAddSub_AlignModule      1
-           FPAddSub_AlignShift1      1
-           FPAddSub_AlignShift2      1
-           FPAddSub_ExceptionModule      1
-           FPAddSub_ExecutionModule      1
-           FPAddSub_NormalizeModule      1
-           FPAddSub_NormalizeShift1      1
-           FPAddSub_NormalizeShift2      1
-           FPAddSub_PrealignModule      1
-           FPAddSub_RoundModule      1
-     mode3_exp                       1
-       expunit                       8
-         FPAddSub                    1
-           FPAddSub_16               1
-             FPAddSub_AlignModule      1
-             FPAddSub_AlignShift1      1
-             FPAddSub_AlignShift2      1
-             FPAddSub_ExceptionModule      1
-             FPAddSub_ExecutionModule      1
-             FPAddSub_NormalizeModule      1
-             FPAddSub_NormalizeShift1      1
-             FPAddSub_NormalizeShift2      1
-             FPAddSub_PrealignModule      1
-             FPAddSub_RoundModule      1
-         FPMult                      1
-           FPMult_16                 1
-             FPMult_ExecuteModule      1
-             FPMult_NormalizeModule      1
-             FPMult_PrepModule       1
-             FPMult_RoundModule      1
-         LUT                         1
-         fptofixed_para              1
-     mode4_adder_tree                1
-       FPAddSub                      8
-         FPAddSub_16                 1
-           FPAddSub_AlignModule      1
-           FPAddSub_AlignShift1      1
-           FPAddSub_AlignShift2      1
-           FPAddSub_ExceptionModule      1
-           FPAddSub_ExecutionModule      1
-           FPAddSub_NormalizeModule      1
-           FPAddSub_NormalizeShift1      1
-           FPAddSub_NormalizeShift2      1
-           FPAddSub_PrealignModule      1
-           FPAddSub_RoundModule      1
-     mode5_ln                        1
-       logunit                       1
-         FPAddSub                    1
-           FPAddSub_16               1
-             FPAddSub_AlignModule      1
-             FPAddSub_AlignShift1      1
-             FPAddSub_AlignShift2      1
-             FPAddSub_ExceptionModule      1
-             FPAddSub_ExecutionModule      1
-             FPAddSub_NormalizeModule      1
-             FPAddSub_NormalizeShift1      1
-             FPAddSub_NormalizeShift2      1
-             FPAddSub_PrealignModule      1
-             FPAddSub_RoundModule      1
-         LUT1                        1
-         LUT2                        1
-     mode6_sub                       2
-       FPAddSub                      8
-         FPAddSub_16                 1
-           FPAddSub_AlignModule      1
-           FPAddSub_AlignShift1      1
-           FPAddSub_AlignShift2      1
-           FPAddSub_ExceptionModule      1
-           FPAddSub_ExecutionModule      1
-           FPAddSub_NormalizeModule      1
-           FPAddSub_NormalizeShift1      1
-           FPAddSub_NormalizeShift2      1
-           FPAddSub_PrealignModule      1
-           FPAddSub_RoundModule      1
-     mode7_exp                       1
-       expunit                       8
-         FPAddSub                    1
-           FPAddSub_16               1
-             FPAddSub_AlignModule      1
-             FPAddSub_AlignShift1      1
-             FPAddSub_AlignShift2      1
-             FPAddSub_ExceptionModule      1
-             FPAddSub_ExecutionModule      1
-             FPAddSub_NormalizeModule      1
-             FPAddSub_NormalizeShift1      1
-             FPAddSub_NormalizeShift2      1
-             FPAddSub_PrealignModule      1
-             FPAddSub_RoundModule      1
-         FPMult                      1
-           FPMult_16                 1
-             FPMult_ExecuteModule      1
-             FPMult_NormalizeModule      1
-             FPMult_PrepModule       1
-             FPMult_RoundModule      1
-         LUT                         1
-         fptofixed_para              1
+     mode1_max_tree                  0
+       comparator                    0
+         $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\fNToRecFN      0
+           $paramod$2a1f131e11d1b2199ecce1cc3c4396a32c4d7a6f\countLeadingZerosfp16      0
+             reverseFp16             0
+         compareRecFN_Fp16           0
+           $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\isSigNaNRecFN      0
+           $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\recFNToRawFN      0
+     mode2_sub                       0
+       FPAddSub                      0
+         FPAddSub_16                 0
+           FPAddSub_AlignModule      0
+           FPAddSub_AlignShift1      0
+           FPAddSub_AlignShift2      0
+           FPAddSub_ExceptionModule      0
+           FPAddSub_ExecutionModule      0
+           FPAddSub_NormalizeModule      0
+           FPAddSub_NormalizeShift1      0
+           FPAddSub_NormalizeShift2      0
+           FPAddSub_PrealignModule      0
+           FPAddSub_RoundModule      0
+     mode3_exp                       0
+       expunit                       0
+         FPAddSub                    0
+           FPAddSub_16               0
+             FPAddSub_AlignModule      0
+             FPAddSub_AlignShift1      0
+             FPAddSub_AlignShift2      0
+             FPAddSub_ExceptionModule      0
+             FPAddSub_ExecutionModule      0
+             FPAddSub_NormalizeModule      0
+             FPAddSub_NormalizeShift1      0
+             FPAddSub_NormalizeShift2      0
+             FPAddSub_PrealignModule      0
+             FPAddSub_RoundModule      0
+         FPMult                      0
+           FPMult_16                 0
+             FPMult_ExecuteModule      0
+             FPMult_NormalizeModule      0
+             FPMult_PrepModule       0
+             FPMult_RoundModule      0
+         LUT                         0
+         fptofixed_para              0
+     mode4_adder_tree                0
+       FPAddSub                      0
+         FPAddSub_16                 0
+           FPAddSub_AlignModule      0
+           FPAddSub_AlignShift1      0
+           FPAddSub_AlignShift2      0
+           FPAddSub_ExceptionModule      0
+           FPAddSub_ExecutionModule      0
+           FPAddSub_NormalizeModule      0
+           FPAddSub_NormalizeShift1      0
+           FPAddSub_NormalizeShift2      0
+           FPAddSub_PrealignModule      0
+           FPAddSub_RoundModule      0
+     mode5_ln                        0
+       logunit                       0
+         FPAddSub                    0
+           FPAddSub_16               0
+             FPAddSub_AlignModule      0
+             FPAddSub_AlignShift1      0
+             FPAddSub_AlignShift2      0
+             FPAddSub_ExceptionModule      0
+             FPAddSub_ExecutionModule      0
+             FPAddSub_NormalizeModule      0
+             FPAddSub_NormalizeShift1      0
+             FPAddSub_NormalizeShift2      0
+             FPAddSub_PrealignModule      0
+             FPAddSub_RoundModule      0
+         LUT1                        0
+         LUT2                        0
+     mode6_sub                       0
+       FPAddSub                      0
+         FPAddSub_16                 0
+           FPAddSub_AlignModule      0
+           FPAddSub_AlignShift1      0
+           FPAddSub_AlignShift2      0
+           FPAddSub_ExceptionModule      0
+           FPAddSub_ExecutionModule      0
+           FPAddSub_NormalizeModule      0
+           FPAddSub_NormalizeShift1      0
+           FPAddSub_NormalizeShift2      0
+           FPAddSub_PrealignModule      0
+           FPAddSub_RoundModule      0
+     mode7_exp                       0
+       expunit                       0
+         FPAddSub                    0
+           FPAddSub_16               0
+             FPAddSub_AlignModule      0
+             FPAddSub_AlignShift1      0
+             FPAddSub_AlignShift2      0
+             FPAddSub_ExceptionModule      0
+             FPAddSub_ExecutionModule      0
+             FPAddSub_NormalizeModule      0
+             FPAddSub_NormalizeShift1      0
+             FPAddSub_NormalizeShift2      0
+             FPAddSub_PrealignModule      0
+             FPAddSub_RoundModule      0
+         FPMult                      0
+           FPMult_16                 0
+             FPMult_ExecuteModule      0
+             FPMult_NormalizeModule      0
+             FPMult_PrepModule       0
+             FPMult_RoundModule      0
+         LUT                         0
+         fptofixed_para              0
 
-   Number of wires:              16892
-   Number of wire bits:         126151
-   Number of public wires:       10628
-   Number of public wire bits:   95382
+   Number of wires:                211
+   Number of wire bits:           3051
+   Number of public wires:         124
+   Number of public wire bits:    2176
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:              10901
-     $add                          475
-     $and                          980
+   Number of cells:                166
+     $add                           96
+     $and                            2
      $dff                            2
-     $dffe                           8
-     $dlatch                       147
-     $eq                          1618
-     $gt                            16
-     $logic_and                    213
-     $logic_not                    601
-     $logic_or                      56
-     $lt                            68
-     $mul                           16
-     $mux                         1800
-     $ne                             5
-     $not                          560
-     $or                           733
-     $pmux                        1831
-     $reduce_and                   206
-     $reduce_bool                   10
-     $reduce_or                    701
-     $sdff                         291
-     $sdffe                        126
-     $shl                           32
-     $shr                           16
-     $sub                          162
-     $xor                          228
+     $eq                            21
+     $logic_and                      5
+     $lt                            21
+     $mux                          739
+     $ne                            10
+     $not                            8
+     $reduce_and                    18
+     $reduce_bool                   17
+     $sdff                          15
+     $sdffe                       1068
 

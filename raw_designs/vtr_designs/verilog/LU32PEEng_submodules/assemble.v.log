@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU32PEEng_submodules/assemble.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU32PEEng_submodules/assemble.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU32PEEng_submodules/assemble.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU32PEEng_submodules/assemble.v' to AST representation.
 Generating RTLIL representation for module `\assemble'.
 Successfully finished Verilog frontend.
 
@@ -147,9 +147,9 @@ Optimizing module assemble.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $mux                            6
+     $mux                          156
      $xor                            1
 
-End of script. Logfile hash: 6ac4580168, CPU: user 0.02s system 0.00s, MEM: 11.27 MB peak
+End of script. Logfile hash: 0ffb7ef3f9, CPU: user 0.03s system 0.00s, MEM: 11.36 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 33% 4x opt_expr (0 sec), 33% 2x opt_dff (0 sec), ...
+Time spent: 28% 2x opt_clean (0 sec), 14% 4x opt_expr (0 sec), ...

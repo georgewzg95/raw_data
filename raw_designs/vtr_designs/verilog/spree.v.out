@@ -11,10 +11,8 @@
    Number of memory bits:          160
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                          32
+     $mux                           38
 
 === $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\dual_port_ram ===
 
@@ -26,10 +24,8 @@
    Number of memory bits:          320
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                          64
+     $mux                           86
 
 === $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram ===
 
@@ -41,10 +37,8 @@
    Number of memory bits:          320
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                          32
+     $mux                           43
 
 === addersub ===
 
@@ -57,7 +51,6 @@
    Number of processes:              0
    Number of cells:                  2
      $not                            1
-     dummy_add_sub                   1
 
 === branchresolve ===
 
@@ -70,10 +63,10 @@
    Number of processes:              0
    Number of cells:                 13
      $and                            6
-     $eq                             1
+     $eq                            32
      $not                            4
      $or                             1
-     $reduce_or                      1
+     $reduce_or                     32
 
 === data_mem ===
 
@@ -87,10 +80,6 @@
    Number of cells:                  7
      $and                            1
      $not                            2
-     $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram      1
-     load_data_translator            1
-     onecyclestall                   1
-     store_data_translator           1
 
 === dummy_add_sub ===
 
@@ -102,7 +91,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 32
-     full_adder                     32
 
 === dummy_counter ===
 
@@ -114,16 +102,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 16
-     $add                            1
-     $dffe                           1
-     $eq                             7
-     $logic_not                      1
-     $mux                            1
-     $ne                             1
+     $add                           32
+     $dffe                          30
+     $eq                            21
+     $logic_not                      3
+     $mux                           30
+     $ne                             2
      $not                            1
-     $pmux                           1
-     $reduce_and                     1
-     $reduce_or                      1
+     $pmux                          30
+     $reduce_and                     2
+     $reduce_or                      5
 
 === dummy_mult ===
 
@@ -135,8 +123,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $mul                            1
-     $sdff                           1
+     $mul                           32
+     $sdff                          32
 
 === fakedelay ===
 
@@ -173,7 +161,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sdffe                          1
+     $sdffe                         32
 
 === ifetch ===
 
@@ -186,12 +174,9 @@
    Number of processes:              0
    Number of cells:                 15
      $and                            4
-     $mux                            1
+     $mux                           30
      $not                            5
      $or                             2
-     $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\dual_port_ram      1
-     dummy_counter                   1
-     register_1bit                   1
 
 === lo_reg ===
 
@@ -203,7 +188,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sdffe                          1
+     $sdffe                         32
 
 === load_data_translator ===
 
@@ -226,13 +211,13 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $and                            1
-     $eq                             3
-     $logic_not                      1
-     $not                            1
-     $or                             1
-     $pmux                           1
-     $xor                            1
+     $and                           32
+     $eq                             6
+     $logic_not                      2
+     $not                           32
+     $or                            32
+     $pmux                          32
+     $xor                           32
 
 === merge26lo ===
 
@@ -256,12 +241,10 @@
    Number of processes:              0
    Number of cells:                 11
      $and                            4
-     $mux                            1
+     $mux                           32
      $not                            1
      $or                             1
-     $reduce_or                      2
-     dummy_mult                      1
-     onecyclestall                   1
+     $reduce_or                     10
 
 === nop ===
 
@@ -299,7 +282,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $add                            1
+     $add                           34
 
 === pipereg_w1 ===
 
@@ -327,7 +310,7 @@
    Number of cells:                  4
      $logic_or                       1
      $not                            2
-     $sdffe                          1
+     $sdffe                         26
 
 === pipereg_w32 ===
 
@@ -341,7 +324,7 @@
    Number of cells:                  4
      $logic_or                       1
      $not                            2
-     $sdffe                          1
+     $sdffe                         32
 
 === pipereg_w5 ===
 
@@ -355,7 +338,7 @@
    Number of cells:                  4
      $logic_or                       1
      $not                            2
-     $sdffe                          1
+     $sdffe                          5
 
 === pipereg_w6 ===
 
@@ -369,7 +352,7 @@
    Number of cells:                  4
      $logic_or                       1
      $not                            2
-     $sdffe                          1
+     $sdffe                          6
 
 === reg_file ===
 
@@ -382,8 +365,7 @@
    Number of processes:              0
    Number of cells:                  4
      $and                            1
-     $paramod$9b20c7c7990eeca2a248be4fd72c1393416d670c\single_port_ram      2
-     $reduce_or                      1
+     $reduce_or                     32
 
 === register_1bit ===
 
@@ -418,10 +400,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 11
-     $eq                             4
-     $logic_not                      1
-     $mux                            2
-     $pmux                           4
+     $eq                             8
+     $logic_not                      2
+     $mux                           36
+     $pmux                          72
 
 === system ===
 
@@ -435,37 +417,18 @@
    Number of cells:                318
      $and                            1
      $dff                            1
-     $dffe                          21
-     $eq                           108
+     $dffe                          37
+     $eq                           635
      $logic_and                      2
-     $logic_not                      4
-     $mux                           34
-     $ne                            14
+     $logic_not                     24
+     $mux                          595
+     $ne                            48
      $not                            4
      $or                             1
-     $pmux                          27
-     $reduce_and                    16
-     $reduce_bool                   15
-     $reduce_or                     40
-     addersub                        1
-     branchresolve                   1
-     data_mem                        1
-     fakedelay                       1
-     hi_reg                          1
-     ifetch                          1
-     lo_reg                          1
-     logic_unit                      1
-     merge26lo                       1
-     mul                             1
-     nop                             4
-     pcadder                         1
-     pipereg_w1                      2
-     pipereg_w26                     1
-     pipereg_w32                     3
-     pipereg_w5                      3
-     pipereg_w6                      2
-     reg_file                        1
-     zeroer                          3
+     $pmux                          53
+     $reduce_and                    32
+     $reduce_bool                   52
+     $reduce_or                    352
 
 === zeroer ===
 
@@ -477,71 +440,63 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $mux                            1
+     $mux                           32
 
 === design hierarchy ===
 
    system                            1
-     addersub                        1
-       dummy_add_sub                 1
-         full_adder                 32
-     branchresolve                   1
-     data_mem                        1
-       $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram      1
-       load_data_translator          1
-       onecyclestall                 1
-       store_data_translator         1
-     fakedelay                       1
-     hi_reg                          1
-     ifetch                          1
-       $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\dual_port_ram      1
-       dummy_counter                 1
-       register_1bit                 1
-     lo_reg                          1
-     logic_unit                      1
-     merge26lo                       1
-     mul                             1
-       dummy_mult                    1
-       onecyclestall                 1
-     nop                             4
-     pcadder                         1
-     pipereg_w1                      2
-     pipereg_w26                     1
-     pipereg_w32                     3
-     pipereg_w5                      3
-     pipereg_w6                      2
-     reg_file                        1
-       $paramod$9b20c7c7990eeca2a248be4fd72c1393416d670c\single_port_ram      2
-     zeroer                          3
+     addersub                        0
+       dummy_add_sub                 0
+         full_adder                  0
+     branchresolve                   0
+     data_mem                        0
+       $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram      0
+       load_data_translator          0
+       onecyclestall                 0
+       store_data_translator         0
+     fakedelay                       0
+     hi_reg                          0
+     ifetch                          0
+       $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\dual_port_ram      0
+       dummy_counter                 0
+       register_1bit                 0
+     lo_reg                          0
+     logic_unit                      0
+     merge26lo                       0
+     mul                             0
+       dummy_mult                    0
+       onecyclestall                 0
+     nop                             0
+     pcadder                         0
+     pipereg_w1                      0
+     pipereg_w26                     0
+     pipereg_w32                     0
+     pipereg_w5                      0
+     pipereg_w6                      0
+     reg_file                        0
+       $paramod$9b20c7c7990eeca2a248be4fd72c1393416d670c\single_port_ram      0
+     zeroer                          0
 
-   Number of wires:               1114
-   Number of wire bits:           7376
-   Number of public wires:         587
-   Number of public wire bits:    5470
-   Number of memories:               4
-   Number of memory bits:          960
+   Number of wires:                398
+   Number of wire bits:           2301
+   Number of public wires:         141
+   Number of public wire bits:    1603
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                679
-     $add                            2
-     $and                          116
+   Number of cells:                318
+     $and                            1
      $dff                            1
-     $dffe                          27
-     $eq                           123
+     $dffe                          37
+     $eq                           635
      $logic_and                      2
-     $logic_not                      7
-     $logic_or                      11
-     $memrd                          5
-     $memwr_v2                       5
-     $mul                            1
-     $mux                           57
-     $ne                            15
-     $not                           43
-     $or                            70
-     $pmux                          35
-     $reduce_and                    17
-     $reduce_bool                   15
-     $reduce_or                     45
-     $sdff                           3
-     $sdffe                         14
-     $xor                           65
+     $logic_not                     24
+     $mux                          595
+     $ne                            48
+     $not                            4
+     $or                             1
+     $pmux                          53
+     $reduce_and                    32
+     $reduce_bool                   52
+     $reduce_or                    352
 

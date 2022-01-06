@@ -11,26 +11,24 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                255
-     $add                            2
+     $add                           11
      $dff                            1
-     $dffe                          10
-     $eq                            27
+     $dffe                         344
+     $eq                           215
      $logic_and                     58
-     $logic_not                      9
+     $logic_not                     15
      $logic_or                      32
-     $lt                             1
-     $mux                           74
-     $ne                             8
+     $lt                            32
+     $mux                         2508
+     $ne                            21
      $not                            1
-     $or                             1
-     $pmux                           3
-     $reduce_and                     6
-     $reduce_bool                    5
-     $reduce_or                      3
-     $sdffe                          5
+     $or                             4
+     $pmux                          12
+     $reduce_and                    20
+     $reduce_bool                   18
+     $reduce_or                      8
+     $sdffe                         22
      $xor                            1
-     single_port_ram_128_8           4
-     single_port_ram_21_8            4
 
 === single_port_ram_128_8 ===
 
@@ -42,10 +40,8 @@
    Number of memory bits:        32768
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                         128
+     $mux                          137
 
 === single_port_ram_21_8 ===
 
@@ -57,43 +53,39 @@
    Number of memory bits:         5376
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                          21
+     $mux                           30
 
 === design hierarchy ===
 
    a25_dcache                        1
-     single_port_ram_128_8           4
-     single_port_ram_21_8            4
+     single_port_ram_128_8           0
+     single_port_ram_21_8            0
 
-   Number of wires:                332
-   Number of wire bits:           7138
-   Number of public wires:         116
-   Number of public wire bits:    3450
-   Number of memories:               8
-   Number of memory bits:       152576
+   Number of wires:                260
+   Number of wire bits:           4014
+   Number of public wires:          76
+   Number of public wire bits:    2178
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                295
-     $add                            2
+   Number of cells:                255
+     $add                           11
      $dff                            1
-     $dffe                          18
-     $eq                            27
+     $dffe                         344
+     $eq                           215
      $logic_and                     58
-     $logic_not                      9
+     $logic_not                     15
      $logic_or                      32
-     $lt                             1
-     $memrd                          8
-     $memwr_v2                       8
-     $mux                           98
-     $ne                             8
+     $lt                            32
+     $mux                         2508
+     $ne                            21
      $not                            1
-     $or                             1
-     $pmux                           3
-     $reduce_and                     6
-     $reduce_bool                    5
-     $reduce_or                      3
-     $sdffe                          5
+     $or                             4
+     $pmux                          12
+     $reduce_and                    20
+     $reduce_bool                   18
+     $reduce_or                      8
+     $sdffe                         22
      $xor                            1
 

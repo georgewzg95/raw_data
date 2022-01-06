@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPAddSub_ExecutionModule.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPAddSub_ExecutionModule.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPAddSub_ExecutionModule.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPAddSub_ExecutionModule.v' to AST representation.
 Generating RTLIL representation for module `\FPAddSub_ExecutionModule'.
 Successfully finished Verilog frontend.
 
@@ -148,11 +148,11 @@ Optimizing module FPAddSub_ExecutionModule.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $add                            1
-     $mux                            2
-     $sub                            1
+     $add                           17
+     $mux                           18
+     $sub                           17
      $xor                            2
 
-End of script. Logfile hash: 497f16b7ca, CPU: user 0.01s system 0.00s, MEM: 10.99 MB peak
+End of script. Logfile hash: 25af802027, CPU: user 0.02s system 0.00s, MEM: 11.25 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 99% 2x opt_dff (0 sec), 0% 4x opt_expr (0 sec), ...
+Time spent: 39% 4x opt_expr (0 sec), 19% 2x opt_dff (0 sec), ...

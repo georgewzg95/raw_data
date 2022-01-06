@@ -11,10 +11,8 @@
    Number of memory bits:          512
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                         256
+     $mux                          266
 
 === arSRLFIFO_d ===
 
@@ -26,7 +24,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     generic_fifo_sc_d               1
 
 === generic_fifo_sc_d ===
 
@@ -38,51 +35,33 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 84
-     $add                            5
+     $add                           22
      $and                           25
-     $eq                             4
-     $ge                             2
-     $le                             2
+     $eq                            16
+     $ge                            64
+     $le                            64
      $logic_not                      5
-     $lt                             2
-     $mux                           14
-     $ne                             3
+     $lt                            64
+     $mux                           22
+     $ne                            12
      $not                            1
-     $or                             3
-     $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram      1
-     $reduce_bool                    7
-     $reduce_or                      1
-     $sdffe                          9
+     $or                             4
+     $reduce_bool                   14
+     $reduce_or                      2
+     $sdffe                         19
 
 === design hierarchy ===
 
    arSRLFIFO_d                       1
-     generic_fifo_sc_d               1
-       $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram      1
+     generic_fifo_sc_d               0
+       $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram      0
 
-   Number of wires:                128
-   Number of wire bits:           2209
-   Number of public wires:          54
-   Number of public wire bits:    1351
-   Number of memories:               1
-   Number of memory bits:          512
+   Number of wires:                 18
+   Number of wire bits:            273
+   Number of public wires:          18
+   Number of public wire bits:     273
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 95
-     $add                            5
-     $and                           25
-     $dffe                           2
-     $eq                             4
-     $ge                             2
-     $le                             2
-     $logic_not                      5
-     $lt                             2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                           20
-     $ne                             3
-     $not                            1
-     $or                             3
-     $reduce_bool                    7
-     $reduce_or                      1
-     $sdffe                          9
+   Number of cells:                  1
 

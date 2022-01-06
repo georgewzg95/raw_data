@@ -11,10 +11,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $add                            1
-     $le                             1
-     $mux                            1
-     $sdffe                          1
+     $add                           32
+     $le                            32
+     $mux                           14
+     $sdffe                         14
 
 === counter_63_1 ===
 
@@ -26,10 +26,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $add                            1
-     $le                             1
-     $mux                            1
-     $sdffe                          1
+     $add                           32
+     $le                            32
+     $mux                           14
+     $sdffe                         14
 
 === dual_port_ram ===
 
@@ -41,10 +41,8 @@
    Number of memory bits:         1728
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                         576
+     $mux                          590
 
 === ram_288_0_64 ===
 
@@ -56,7 +54,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     dual_port_ram                   1
 
 === shift_register_unit_12 ===
 
@@ -80,47 +77,38 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 35
-     $eq                             3
+     $eq                            42
      $logic_and                      9
-     $logic_not                      3
-     $mux                            6
+     $logic_not                     42
+     $mux                           11
      $not                            2
-     $reduce_bool                    2
+     $reduce_bool                    4
      $sdff                           1
      $sdffe                          2
-     counter_30_1                    1
-     counter_63_1                    2
-     ram_288_0_64                    1
-     shift_register_unit_12          3
 
 === design hierarchy ===
 
    stage2_mt_buffer_18_1_16_64_32      1
-     counter_30_1                    1
-     counter_63_1                    2
-     ram_288_0_64                    1
-       dual_port_ram                 1
-     shift_register_unit_12          3
+     counter_30_1                    0
+     counter_63_1                    0
+     ram_288_0_64                    0
+       dual_port_ram                 0
+     shift_register_unit_12          0
 
-   Number of wires:                139
-   Number of wire bits:           5520
-   Number of public wires:         100
-   Number of public wire bits:    3617
-   Number of memories:               1
-   Number of memory bits:         1728
+   Number of wires:                 72
+   Number of wire bits:           1234
+   Number of public wires:          50
+   Number of public wire bits:    1212
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 58
-     $add                            3
-     $dffe                           2
-     $eq                             3
-     $le                             3
+   Number of cells:                 35
+     $eq                            42
      $logic_and                      9
-     $logic_not                      3
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                           15
+     $logic_not                     42
+     $mux                           11
      $not                            2
-     $reduce_bool                    2
+     $reduce_bool                    4
      $sdff                           1
-     $sdffe                         11
+     $sdffe                          2
 

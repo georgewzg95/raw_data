@@ -11,8 +11,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 11
-     $mul                            2
-     $sdffe                          9
+     $mul                           74
+     $sdffe                        149
 
 === elementwise_mult_core_18_18_10_16_1 ===
 
@@ -25,9 +25,7 @@
    Number of processes:              0
    Number of cells:                 58
      $and                            1
-     $sdffe                         33
-     dsp_signed_mult_18x18_unit_18_18_1      8
-     fp_rounding_unit_1_37_10       16
+     $sdffe                        577
 
 === fp_rounding_unit_1_37_10 ===
 
@@ -39,27 +37,24 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     $add                            1
-     $mux                            1
-     $sdffe                          6
+     $add                           37
+     $mux                           37
+     $sdffe                        104
 
 === design hierarchy ===
 
    elementwise_mult_core_18_18_10_16_1      1
-     dsp_signed_mult_18x18_unit_18_18_1      8
-     fp_rounding_unit_1_37_10       16
+     dsp_signed_mult_18x18_unit_18_18_1      0
+     fp_rounding_unit_1_37_10        0
 
-   Number of wires:                585
-   Number of wire bits:          10217
-   Number of public wires:         553
-   Number of public wire bits:    9033
+   Number of wires:                169
+   Number of wire bits:           2953
+   Number of public wires:         169
+   Number of public wire bits:    2953
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                250
-     $add                           16
+   Number of cells:                 58
      $and                            1
-     $mul                           16
-     $mux                           16
-     $sdffe                        201
+     $sdffe                        577
 

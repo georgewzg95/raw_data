@@ -24,10 +24,10 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v' to AST representation.
-Warning: Literal has a width of 3 bit, but value requires 4 bit. (/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:838)
-Warning: Literal has a width of 3 bit, but value requires 4 bit. (/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:843)
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v' to AST representation.
+Warning: Literal has a width of 3 bit, but value requires 4 bit. (/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:838)
+Warning: Literal has a width of 3 bit, but value requires 4 bit. (/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:843)
 Generating RTLIL representation for module `\or1200_except'.
 Successfully finished Verilog frontend.
 
@@ -50,12 +50,12 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 7 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93 in module or1200_except.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:785$85 in module or1200_except.
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:751$81 in module or1200_except.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:740$79 in module or1200_except.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:724$77 in module or1200_except.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:701$75 in module or1200_except.
+Marked 7 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93 in module or1200_except.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:785$85 in module or1200_except.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:751$81 in module or1200_except.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:740$79 in module or1200_except.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:724$77 in module or1200_except.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:701$75 in module or1200_except.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -67,7 +67,7 @@ Promoted 0 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
+Creating decoders for process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
      1/7: $0\extend_flush_last[0:0]
      2/7: $0\state[2:0]
      3/7: $0\except_type[3:0]
@@ -75,75 +75,75 @@ Creating decoders for process `\or1200_except.$proc$/home/zhigang/DATA/raw_desig
      5/7: $0\esr[15:0]
      6/7: $0\eear[31:0]
      7/7: $0\epcr[31:0]
-Creating decoders for process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:785$85'.
+Creating decoders for process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:785$85'.
      1/1: $0\wb_pc[31:0]
-Creating decoders for process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:751$81'.
+Creating decoders for process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:751$81'.
      1/5: $0\delayed2_ex_dslot[0:0]
      2/5: $0\delayed1_ex_dslot[0:0]
      3/5: $0\ex_dslot[0:0]
      4/5: $0\ex_exceptflags[2:0]
      5/5: $0\ex_pc[31:0]
-Creating decoders for process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:740$79'.
+Creating decoders for process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:740$79'.
      1/1: $0\delayed_tee[2:0]
-Creating decoders for process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:724$77'.
+Creating decoders for process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:724$77'.
      1/1: $0\delayed_iee[2:0]
-Creating decoders for process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:701$75'.
+Creating decoders for process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:701$75'.
      1/2: $0\id_exceptflags[2:0]
      2/2: $0\id_pc[31:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\or1200_except.\epcr' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
+Creating register for signal `\or1200_except.\epcr' using process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
   created $dff cell `$procdff$352' with positive edge clock.
-Creating register for signal `\or1200_except.\eear' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
+Creating register for signal `\or1200_except.\eear' using process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
   created $dff cell `$procdff$353' with positive edge clock.
-Creating register for signal `\or1200_except.\esr' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
+Creating register for signal `\or1200_except.\esr' using process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
   created $dff cell `$procdff$354' with positive edge clock.
-Creating register for signal `\or1200_except.\extend_flush' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
+Creating register for signal `\or1200_except.\extend_flush' using process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
   created $dff cell `$procdff$355' with positive edge clock.
-Creating register for signal `\or1200_except.\except_type' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
+Creating register for signal `\or1200_except.\except_type' using process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
   created $dff cell `$procdff$356' with positive edge clock.
-Creating register for signal `\or1200_except.\state' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
+Creating register for signal `\or1200_except.\state' using process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
   created $dff cell `$procdff$357' with positive edge clock.
-Creating register for signal `\or1200_except.\extend_flush_last' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
+Creating register for signal `\or1200_except.\extend_flush_last' using process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
   created $dff cell `$procdff$358' with positive edge clock.
-Creating register for signal `\or1200_except.\wb_pc' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:785$85'.
+Creating register for signal `\or1200_except.\wb_pc' using process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:785$85'.
   created $dff cell `$procdff$359' with positive edge clock.
-Creating register for signal `\or1200_except.\ex_pc' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:751$81'.
+Creating register for signal `\or1200_except.\ex_pc' using process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:751$81'.
   created $dff cell `$procdff$360' with positive edge clock.
-Creating register for signal `\or1200_except.\ex_exceptflags' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:751$81'.
+Creating register for signal `\or1200_except.\ex_exceptflags' using process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:751$81'.
   created $dff cell `$procdff$361' with positive edge clock.
-Creating register for signal `\or1200_except.\ex_dslot' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:751$81'.
+Creating register for signal `\or1200_except.\ex_dslot' using process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:751$81'.
   created $dff cell `$procdff$362' with positive edge clock.
-Creating register for signal `\or1200_except.\delayed1_ex_dslot' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:751$81'.
+Creating register for signal `\or1200_except.\delayed1_ex_dslot' using process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:751$81'.
   created $dff cell `$procdff$363' with positive edge clock.
-Creating register for signal `\or1200_except.\delayed2_ex_dslot' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:751$81'.
+Creating register for signal `\or1200_except.\delayed2_ex_dslot' using process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:751$81'.
   created $dff cell `$procdff$364' with positive edge clock.
-Creating register for signal `\or1200_except.\delayed_tee' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:740$79'.
+Creating register for signal `\or1200_except.\delayed_tee' using process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:740$79'.
   created $dff cell `$procdff$365' with positive edge clock.
-Creating register for signal `\or1200_except.\delayed_iee' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:724$77'.
+Creating register for signal `\or1200_except.\delayed_iee' using process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:724$77'.
   created $dff cell `$procdff$366' with positive edge clock.
-Creating register for signal `\or1200_except.\id_pc' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:701$75'.
+Creating register for signal `\or1200_except.\id_pc' using process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:701$75'.
   created $dff cell `$procdff$367' with positive edge clock.
-Creating register for signal `\or1200_except.\id_exceptflags' using process `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:701$75'.
+Creating register for signal `\or1200_except.\id_exceptflags' using process `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:701$75'.
   created $dff cell `$procdff$368' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 12 empty switches in `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
-Removing empty process `or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
-Found and cleaned up 2 empty switches in `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:785$85'.
-Removing empty process `or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:785$85'.
-Found and cleaned up 4 empty switches in `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:751$81'.
-Removing empty process `or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:751$81'.
-Found and cleaned up 2 empty switches in `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:740$79'.
-Removing empty process `or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:740$79'.
-Found and cleaned up 2 empty switches in `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:724$77'.
-Removing empty process `or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:724$77'.
-Found and cleaned up 3 empty switches in `\or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:701$75'.
-Removing empty process `or1200_except.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:701$75'.
+Found and cleaned up 12 empty switches in `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
+Removing empty process `or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:812$93'.
+Found and cleaned up 2 empty switches in `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:785$85'.
+Removing empty process `or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:785$85'.
+Found and cleaned up 4 empty switches in `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:751$81'.
+Removing empty process `or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:751$81'.
+Found and cleaned up 2 empty switches in `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:740$79'.
+Removing empty process `or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:740$79'.
+Found and cleaned up 2 empty switches in `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:724$77'.
+Removing empty process `or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:724$77'.
+Found and cleaned up 3 empty switches in `\or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:701$75'.
+Removing empty process `or1200_except.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/or1200_submodules/or1200_except.v:701$75'.
 Cleaned up 25 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -295,21 +295,21 @@ Optimizing module or1200_except.
    Number of processes:              0
    Number of cells:                162
      $and                           45
-     $eq                             4
+     $eq                            12
      $logic_and                      3
-     $logic_not                      5
-     $mux                           33
-     $ne                             8
+     $logic_not                      7
+     $mux                          645
+     $ne                            20
      $not                           20
      $or                             8
-     $pmux                           3
-     $reduce_and                     6
-     $reduce_bool                    7
-     $reduce_or                      6
-     $sdff                           2
-     $sdffe                         12
+     $pmux                           8
+     $reduce_and                    21
+     $reduce_bool                   24
+     $reduce_or                     27
+     $sdff                           3
+     $sdffe                        191
 
 Warnings: 2 unique messages, 2 total
-End of script. Logfile hash: 9a67cc9ed6, CPU: user 0.17s system 0.00s, MEM: 13.72 MB peak
+End of script. Logfile hash: aa8d3ea83f, CPU: user 0.13s system 0.00s, MEM: 13.89 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 26% 5x opt_expr (0 sec), 19% 2x read_verilog (0 sec), ...
+Time spent: 29% 5x opt_expr (0 sec), 16% 3x opt_dff (0 sec), ...

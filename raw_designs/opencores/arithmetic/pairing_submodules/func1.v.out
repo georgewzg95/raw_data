@@ -39,7 +39,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     f3_add                          1
 
 === func1 ===
 
@@ -51,8 +50,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 99
-     f3_sub                         98
-     func4                           1
 
 === func4 ===
 
@@ -64,25 +61,21 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 98
-     f3_mult                        98
 
 === design hierarchy ===
 
    func1                             1
-     f3_sub                         98
-       f3_add                        1
-     func4                           1
-       f3_mult                      98
+     f3_sub                          0
+       f3_add                        0
+     func4                           0
+       f3_mult                       0
 
-   Number of wires:               5202
-   Number of wire bits:           7256
-   Number of public wires:        1870
-   Number of public wire bits:    3924
+   Number of wires:                  5
+   Number of wire bits:            786
+   Number of public wires:           5
+   Number of public wire bits:     786
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               3724
-     $and                         2352
-     $not                          784
-     $or                           588
+   Number of cells:                 99
 

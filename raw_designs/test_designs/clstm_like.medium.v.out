@@ -11,10 +11,8 @@
    Number of memory bits:         1944
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                         162
+     $mux                          175
 
 === C_LSTM_datapath ===
 
@@ -27,18 +25,6 @@
    Number of processes:              0
    Number of cells:                 19
      $and                            1
-     C_LSTM_stage_1_18_10_160_512_2_16_1      1
-     C_LSTM_stage_2_18_10_32_1       1
-     C_LSTM_stage_3_18_10_64_2048_2_16_1      1
-     pipelined_input_18_2_16         3
-     shift_register_group_18_16_3      1
-     shift_register_group_18_32_3      4
-     shift_register_unit_1_3         2
-     stage1_parameter_buffer_18_2_16_42_2688      1
-     stage2_Ct_buffer_18_2_16_64      1
-     stage2_mt_buffer_18_2_16_64_32      1
-     stage2_parameter_buffer_18_2_16_64      1
-     stage3_X_Y_buffer_18_16_2_10_32_64      1
 
 === C_LSTM_stage_1_18_10_160_512_2_16_1 ===
 
@@ -51,7 +37,6 @@
    Number of processes:              0
    Number of cells:                 10
      $and                            6
-     matrix_times_two_vectors_18_10_2_672_16_1      4
 
 === C_LSTM_stage_2_18_10_32_1 ===
 
@@ -64,15 +49,7 @@
    Number of processes:              0
    Number of cells:                495
      $and                            1
-     $sdffe                        450
-     elementwise_add_core_18_18_32      1
-     elementwise_mult_core_18_18_10_32_1      3
-     lstm_gate_18_10_32_1            3
-     output_activation_18_10_32_1      1
-     shift_register_group_18_32_14      1
-     shift_register_group_18_32_18      2
-     shift_register_group_18_32_6      1
-     tanh_core_18_18_10_32_1        32
+     $sdffe                       8066
 
 === C_LSTM_stage_3_18_10_64_2048_2_16_1 ===
 
@@ -85,10 +62,6 @@
    Number of processes:              0
    Number of cells:                  5
      $sdff                           1
-     multiple_c_matrix_vec_mult_and_sum_18_10_16_1_2_64      1
-     shift_register_group_18_16_3      1
-     shift_register_unit_18_3        1
-     stage3_parameter_buffer_18_2_16_64_2048      1
 
 === abs_unit_18 ===
 
@@ -100,9 +73,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $mux                            1
-     $neg                            1
-     $sdffe                          2
+     $mux                           18
+     $neg                           18
+     $sdffe                         19
 
 === addfxp_18_1 ===
 
@@ -114,8 +87,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $add                            1
-     $dff                            1
+     $add                           18
+     $dff                           18
 
 === c_matrix_vec_mult_core_18_10_16_2_1 ===
 
@@ -128,14 +101,9 @@
    Number of processes:              0
    Number of cells:                161
      $and                            7
-     $neg                           14
+     $neg                          252
      $not                            1
-     $sdffe                        122
-     dft_16_top_18                   1
-     elementwise_add_core_18_18_9      2
-     elementwise_mult_core_18_1810_9_1      8
-     elementwise_sub_core_18_18_9      2
-     shift_register_group_18_910      4
+     $sdffe                       2128
 
 === codeBlock88206_18 ===
 
@@ -147,14 +115,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                182
-     $add                            4
-     $dffe                          80
-     $not                            4
+     $add                          128
+     $dffe                        1440
+     $not                          128
      $sdff                           1
-     addfxp_18_1                    40
-     multfix_alt_dsp_18             12
-     shiftRegFIFO_5_1                1
-     subfxp_18_1                    40
 
 === codeBlock89324_18 ===
 
@@ -166,11 +130,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 98
-     $dffe                          32
+     $dffe                         576
      $sdff                           1
-     addfxp_18_1                    32
-     shiftRegFIFO_2_1                1
-     subfxp_18_1                    32
 
 === codeBlock98050_18 ===
 
@@ -182,14 +143,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                182
-     $add                            4
-     $dffe                          80
-     $not                            4
+     $add                          128
+     $dffe                        1440
+     $not                          128
      $sdff                           1
-     addfxp_18_1                    40
-     multfix_alt_dsp_18             12
-     shiftRegFIFO_5_1                1
-     subfxp_18_1                    40
 
 === codeBlock99168_18 ===
 
@@ -201,11 +158,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 98
-     $dffe                          32
+     $dffe                         576
      $sdff                           1
-     addfxp_18_1                    32
-     shiftRegFIFO_2_1                1
-     subfxp_18_1                    32
 
 === counter_14_1 ===
 
@@ -217,10 +171,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $add                            1
-     $le                             1
-     $mux                            1
-     $sdffe                          1
+     $add                           32
+     $le                            32
+     $mux                           14
+     $sdffe                         14
 
 === counter_31_1 ===
 
@@ -232,10 +186,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $add                            1
-     $le                             1
-     $mux                            1
-     $sdffe                          1
+     $add                           32
+     $le                            32
+     $mux                           14
+     $sdffe                         14
 
 === counter_31_2 ===
 
@@ -247,10 +201,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $add                            1
-     $le                             1
-     $mux                            1
-     $sdffe                          1
+     $add                           32
+     $le                            32
+     $mux                           14
+     $sdffe                         14
 
 === counter_41_1 ===
 
@@ -262,10 +216,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $add                            1
-     $le                             1
-     $mux                            1
-     $sdffe                          1
+     $add                           32
+     $le                            32
+     $mux                           14
+     $sdffe                         14
 
 === counter_41_1_32 ===
 
@@ -277,10 +231,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $add                            1
-     $le                             1
-     $mux                            1
-     $sdffe                          1
+     $add                           32
+     $le                            32
+     $mux                           14
+     $sdffe                         14
 
 === counter_63_1 ===
 
@@ -292,10 +246,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $add                            1
-     $le                             1
-     $mux                            1
-     $sdffe                          1
+     $add                           32
+     $le                            32
+     $mux                           14
+     $sdffe                         14
 
 === counter_63_2 ===
 
@@ -307,10 +261,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $add                            1
-     $le                             1
-     $mux                            1
-     $sdffe                          1
+     $add                           32
+     $le                            32
+     $mux                           14
+     $sdffe                         14
 
 === dft_16_top_18 ===
 
@@ -322,8 +276,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     codeBlock88206_18               1
-     codeBlock89324_18               1
 
 === dsp_signed_mac_18_13_23_32 ===
 
@@ -335,9 +287,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            1
-     $mul                            1
-     $sdff                           4
+     $add                           32
+     $mul                           32
+     $sdff                          86
      $sdffe                          3
 
 === dsp_signed_mult_18x18_unit_18_18_1 ===
@@ -350,8 +302,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 11
-     $mul                            2
-     $sdffe                          9
+     $mul                           74
+     $sdffe                        149
 
 === dsp_signed_mult_18x18_unit_18_36_0 ===
 
@@ -363,8 +315,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $dff                            2
-     $mul                            2
+     $dff                           72
+     $mul                           72
      $sdffe                          3
 
 === dual_port_ram ===
@@ -377,10 +329,8 @@
    Number of memory bits:         1728
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                         576
+     $mux                          590
 
 === elementwise_add_core_18_18_32 ===
 
@@ -392,9 +342,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                131
-     $add                           32
+     $add                          576
      $and                            1
-     $sdffe                         98
+     $sdffe                       1730
 
 === elementwise_add_core_18_18_9 ===
 
@@ -406,9 +356,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 39
-     $add                            9
+     $add                          162
      $and                            1
-     $sdffe                         29
+     $sdffe                        488
 
 === elementwise_mult_core_18_1810_9_1 ===
 
@@ -421,9 +371,7 @@
    Number of processes:              0
    Number of cells:                 34
      $and                            1
-     $sdffe                         19
-     dsp_signed_mult_18x18_unit_18_18_1      5
-     fp_rounding_unit_1_37_10        9
+     $sdffe                        325
 
 === elementwise_mult_core_18_18_10_32_1 ===
 
@@ -436,9 +384,7 @@
    Number of processes:              0
    Number of cells:                114
      $and                            1
-     $sdffe                         65
-     dsp_signed_mult_18x18_unit_18_18_1     16
-     fp_rounding_unit_1_37_10       32
+     $sdffe                       1153
 
 === elementwise_sub_core_18_18_9 ===
 
@@ -451,8 +397,8 @@
    Number of processes:              0
    Number of cells:                 39
      $and                            1
-     $sdffe                         29
-     $sub                            9
+     $sdffe                        488
+     $sub                          162
 
 === fp_rounding_unit_1_32_11 ===
 
@@ -464,9 +410,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     $add                            1
-     $mux                            1
-     $sdffe                          6
+     $add                           32
+     $mux                           32
+     $sdffe                         88
 
 === fp_rounding_unit_1_37_10 ===
 
@@ -478,9 +424,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     $add                            1
-     $mux                            1
-     $sdffe                          6
+     $add                           37
+     $mux                           37
+     $sdffe                        104
 
 === idft_16_top_18 ===
 
@@ -492,8 +438,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     codeBlock98050_18               1
-     codeBlock99168_18               1
 
 === lstm_gate_18_10_32_1 ===
 
@@ -506,10 +450,6 @@
    Number of processes:              0
    Number of cells:                 37
      $and                            1
-     elementwise_add_core_18_18_32      2
-     elementwise_mult_core_18_18_10_32_1      1
-     shift_register_group_18_32_10      1
-     sigmoid_core_18_18_10_32_1     32
 
 === matrix_times_two_vectors_18_10_2_672_16_1 ===
 
@@ -521,7 +461,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     multiple_c_matrix_vec_mult_and_sum_18_10_16_1_2_42      1
 
 === multfix_alt_dsp_18 ===
 
@@ -533,7 +472,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     dsp_signed_mult_18x18_unit_18_36_0      1
 
 === multiple_c_matrix_vec_mult_and_sum_18_10_16_1_2_42 ===
 
@@ -546,11 +484,7 @@
    Number of processes:              0
    Number of cells:                 44
      $and                            1
-     $sdffe                         34
-     c_matrix_vec_mult_core_18_10_16_2_1      1
-     idft_16_top_18                  2
-     shift_register_group_18_16_1      4
-     sum_complex_vector_unit_18_18_16_42      2
+     $sdffe                        450
 
 === multiple_c_matrix_vec_mult_and_sum_18_10_16_1_2_64 ===
 
@@ -563,11 +497,7 @@
    Number of processes:              0
    Number of cells:                 44
      $and                            1
-     $sdffe                         34
-     c_matrix_vec_mult_core_18_10_16_2_1      1
-     idft_16_top_18                  2
-     shift_register_group_18_16_1      4
-     sum_complex_vector_unit_18_18_16_64      2
+     $sdffe                        450
 
 === output_activation_18_10_32_1 ===
 
@@ -580,8 +510,6 @@
    Number of processes:              0
    Number of cells:                 34
      $and                            1
-     elementwise_add_core_18_18_32      1
-     sigmoid_core_18_18_10_32_1     32
 
 === pipelined_input_18_2_16 ===
 
@@ -593,8 +521,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                102
-     $mux                           51
-     $sdffe                         51
+     $mux                          867
+     $sdffe                        867
 
 === ram_288_0_42 ===
 
@@ -606,7 +534,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     dual_port_ram                   1
 
 === ram_288_0_64 ===
 
@@ -618,7 +545,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     dual_port_ram                   1
 
 === shiftRegFIFO_2_1 ===
 
@@ -654,7 +580,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 16
-     shift_register_unit_18_1       16
 
 === shift_register_group_18_16_3 ===
 
@@ -666,7 +591,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 16
-     shift_register_unit_18_3       16
 
 === shift_register_group_18_32_10 ===
 
@@ -678,7 +602,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 32
-     shift_register_unit_18_18      32
 
 === shift_register_group_18_32_14 ===
 
@@ -690,7 +613,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 32
-     shift_register_unit_18_14      32
 
 === shift_register_group_18_32_18 ===
 
@@ -702,7 +624,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 32
-     shift_register_unit_18_18      32
 
 === shift_register_group_18_32_3 ===
 
@@ -714,7 +635,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 32
-     shift_register_unit_18_3       32
 
 === shift_register_group_18_32_6 ===
 
@@ -726,7 +646,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 32
-     shift_register_unit_18_6       32
 
 === shift_register_group_18_910 ===
 
@@ -738,7 +657,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     shift_register_unit_18_10       9
 
 === shift_register_unit_12 ===
 
@@ -762,7 +680,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sdffe                          1
+     $sdffe                         18
 
 === shift_register_unit_18_10 ===
 
@@ -774,7 +692,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $sdffe                         10
+     $sdffe                        180
 
 === shift_register_unit_18_14 ===
 
@@ -786,7 +704,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     $sdffe                         14
+     $sdffe                        252
 
 === shift_register_unit_18_18 ===
 
@@ -798,7 +716,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 18
-     $sdffe                         18
+     $sdffe                        324
 
 === shift_register_unit_18_3 ===
 
@@ -810,7 +728,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $sdffe                          3
+     $sdffe                         54
 
 === shift_register_unit_18_6 ===
 
@@ -822,7 +740,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $sdffe                          6
+     $sdffe                        108
 
 === shift_register_unit_1_2 ===
 
@@ -860,18 +778,14 @@
    Number of cells:                114
      $and                            1
      $dffe                           1
-     $eq                            31
-     $ge                             1
-     $logic_not                      1
-     $mux                           68
+     $eq                           155
+     $ge                            32
+     $logic_not                      5
+     $mux                          901
      $not                            1
-     $reduce_and                     1
-     $sdffe                          4
-     $sub                            1
-     abs_unit_18                     1
-     dsp_signed_mac_18_13_23_32      1
-     fp_rounding_unit_1_32_11        1
-     shift_register_unit_1_3         1
+     $reduce_and                     2
+     $sdffe                         38
+     $sub                           32
 
 === single_port_ram ===
 
@@ -883,10 +797,8 @@
    Number of memory bits:         1728
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                         288
+     $mux                          295
 
 === stage1_parameter_buffer_18_2_16_42_2688 ===
 
@@ -898,20 +810,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     $add                            1
+     $add                           32
      $and                            1
-     $eq                             1
-     $mul                            1
-     counter_41_1                    1
-     counter_63_2                    1
-     weight_buffer_18_9_42_2_2688Wcxr_imag_half_0      1
-     weight_buffer_18_9_42_2_2688Wcxr_real_half_0      1
-     weight_buffer_18_9_42_2_2688Wfxr_imag_half_0      1
-     weight_buffer_18_9_42_2_2688Wfxr_real_half_0      1
-     weight_buffer_18_9_42_2_2688Wixr_imag_half_0      1
-     weight_buffer_18_9_42_2_2688Wixr_real_half_0      1
-     weight_buffer_18_9_42_2_2688Woxr_imag_half_0      1
-     weight_buffer_18_9_42_2_2688Woxr_real_half_0      1
+     $eq                            14
+     $mul                           31
 
 === stage2_Ct_buffer_18_2_16_64 ===
 
@@ -923,11 +825,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     $add                            1
-     $lt                             2
-     $sdff                           2
-     counter_63_1                    1
-     ram_288_0_64                    2
+     $add                           32
+     $lt                            64
+     $sdff                          12
 
 === stage2_mt_buffer_18_2_16_64_32 ===
 
@@ -939,18 +839,14 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 35
-     $eq                             3
+     $eq                            42
      $logic_and                      9
-     $logic_not                      3
-     $mux                            6
+     $logic_not                     42
+     $mux                           11
      $not                            2
-     $reduce_bool                    2
+     $reduce_bool                    4
      $sdff                           1
      $sdffe                          2
-     counter_14_1                    1
-     counter_63_1                    2
-     ram_288_0_64                    1
-     shift_register_unit_12          3
 
 === stage2_parameter_buffer_18_2_16_64 ===
 
@@ -962,14 +858,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     counter_63_2                    1
-     weight_buffer_18_16_2_64_Wfc_0      1
-     weight_buffer_18_16_2_64_Wic_0      1
-     weight_buffer_18_16_2_64_Woc_0      1
-     weight_buffer_18_16_2_64_bc_0      1
-     weight_buffer_18_16_2_64_bf_0      1
-     weight_buffer_18_16_2_64_bi_0      1
-     weight_buffer_18_16_2_64_bo_0      1
 
 === stage3_X_Y_buffer_18_16_2_10_32_64 ===
 
@@ -981,20 +869,15 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 43
-     $eq                             2
-     $ge                             1
+     $eq                            28
+     $ge                            32
      $logic_and                      6
-     $logic_not                      1
-     $mux                           21
+     $logic_not                     14
+     $mux                          293
      $not                            2
-     $reduce_bool                    2
+     $reduce_bool                    4
      $sdff                           1
      $sdffe                          2
-     counter_31_1                    1
-     counter_41_1                    1
-     counter_41_1_32                 1
-     ram_288_0_42                    1
-     shift_register_unit_1_2         1
 
 === stage3_parameter_buffer_18_2_16_64_2048 ===
 
@@ -1006,13 +889,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $add                            1
+     $add                           32
      $and                            1
-     $eq                             1
-     counter_31_2                    1
-     counter_63_1                    1
-     weight_buffer_18_9_2_64_2048_Wym_imag_half_0      1
-     weight_buffer_18_9_2_64_2048_Wym_real_half_0      1
+     $eq                            14
 
 === subfxp_18_1 ===
 
@@ -1024,8 +903,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $add                            1
-     $dff                            1
+     $add                           18
+     $dff                           18
 
 === sum_complex_vector_unit_18_18_16_42 ===
 
@@ -1037,12 +916,12 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                103
-     $add                           33
+     $add                          608
      $and                            1
-     $eq                             1
-     $mux                           33
-     $reduce_and                     1
-     $sdffe                         34
+     $eq                            14
+     $mux                          590
+     $reduce_and                     2
+     $sdffe                        591
 
 === sum_complex_vector_unit_18_18_16_64 ===
 
@@ -1054,12 +933,12 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                103
-     $add                           33
+     $add                          608
      $and                            1
-     $eq                             1
-     $mux                           33
-     $reduce_and                     1
-     $sdffe                         34
+     $eq                            14
+     $mux                          590
+     $reduce_and                     2
+     $sdffe                        591
 
 === tanh_core_18_18_10_32_1 ===
 
@@ -1073,18 +952,14 @@
    Number of cells:                114
      $and                            1
      $dffe                           1
-     $eq                            31
-     $ge                             1
-     $logic_not                      1
-     $mux                           68
+     $eq                           155
+     $ge                            32
+     $logic_not                      5
+     $mux                          901
      $not                            1
-     $reduce_and                     1
-     $sdffe                          4
-     $sub                            1
-     abs_unit_18                     1
-     dsp_signed_mac_18_13_23_32      1
-     fp_rounding_unit_1_32_11        1
-     shift_register_unit_1_3         1
+     $reduce_and                     2
+     $sdffe                         38
+     $sub                           32
 
 === weight_buffer_18_16_2_64_Wfc_0 ===
 
@@ -1096,9 +971,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     single_port_ram                 2
+     $add                            6
+     $dff                           12
 
 === weight_buffer_18_16_2_64_Wic_0 ===
 
@@ -1110,9 +984,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     single_port_ram                 2
+     $add                            6
+     $dff                           12
 
 === weight_buffer_18_16_2_64_Woc_0 ===
 
@@ -1124,9 +997,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     single_port_ram                 2
+     $add                            6
+     $dff                           12
 
 === weight_buffer_18_16_2_64_bc_0 ===
 
@@ -1138,9 +1010,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     single_port_ram                 2
+     $add                            6
+     $dff                           12
 
 === weight_buffer_18_16_2_64_bf_0 ===
 
@@ -1152,9 +1023,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     single_port_ram                 2
+     $add                            6
+     $dff                           12
 
 === weight_buffer_18_16_2_64_bi_0 ===
 
@@ -1166,9 +1036,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     single_port_ram                 2
+     $add                            6
+     $dff                           12
 
 === weight_buffer_18_16_2_64_bo_0 ===
 
@@ -1180,9 +1049,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     single_port_ram                 2
+     $add                            6
+     $dff                           12
 
 === weight_buffer_18_9_2_64_2048_Wym_imag_half_0 ===
 
@@ -1194,9 +1062,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     $add                           11
+     $dff                           22
 
 === weight_buffer_18_9_2_64_2048_Wym_real_half_0 ===
 
@@ -1208,9 +1075,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     $add                           11
+     $dff                           22
 
 === weight_buffer_18_9_42_2_2688Wcxr_imag_half_0 ===
 
@@ -1222,9 +1088,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     $add                           12
+     $dff                           24
 
 === weight_buffer_18_9_42_2_2688Wcxr_real_half_0 ===
 
@@ -1236,9 +1101,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     $add                           12
+     $dff                           24
 
 === weight_buffer_18_9_42_2_2688Wfxr_imag_half_0 ===
 
@@ -1250,9 +1114,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     $add                           12
+     $dff                           24
 
 === weight_buffer_18_9_42_2_2688Wfxr_real_half_0 ===
 
@@ -1264,9 +1127,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     $add                           12
+     $dff                           24
 
 === weight_buffer_18_9_42_2_2688Wixr_imag_half_0 ===
 
@@ -1278,9 +1140,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     $add                           12
+     $dff                           24
 
 === weight_buffer_18_9_42_2_2688Wixr_real_half_0 ===
 
@@ -1292,9 +1153,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     $add                           12
+     $dff                           24
 
 === weight_buffer_18_9_42_2_2688Woxr_imag_half_0 ===
 
@@ -1306,9 +1166,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     $add                           12
+     $dff                           24
 
 === weight_buffer_18_9_42_2_2688Woxr_real_half_0 ===
 
@@ -1320,215 +1179,194 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     $add                           12
+     $dff                           24
 
 === design hierarchy ===
 
    C_LSTM_datapath                   1
-     C_LSTM_stage_1_18_10_160_512_2_16_1      1
-       matrix_times_two_vectors_18_10_2_672_16_1      4
-         multiple_c_matrix_vec_mult_and_sum_18_10_16_1_2_42      1
-           c_matrix_vec_mult_core_18_10_16_2_1      1
-             dft_16_top_18           1
-               codeBlock88206_18      1
-                 addfxp_18_1        40
-                 multfix_alt_dsp_18     12
-                   dsp_signed_mult_18x18_unit_18_36_0      1
-                 shiftRegFIFO_5_1      1
-                 subfxp_18_1        40
-               codeBlock89324_18      1
-                 addfxp_18_1        32
-                 shiftRegFIFO_2_1      1
-                 subfxp_18_1        32
-             elementwise_add_core_18_18_9      2
-             elementwise_mult_core_18_1810_9_1      8
-               dsp_signed_mult_18x18_unit_18_18_1      5
-               fp_rounding_unit_1_37_10      9
-             elementwise_sub_core_18_18_9      2
-             shift_register_group_18_910      4
-               shift_register_unit_18_10      9
-           idft_16_top_18            2
-             codeBlock98050_18       1
-               addfxp_18_1          40
-               multfix_alt_dsp_18     12
-                 dsp_signed_mult_18x18_unit_18_36_0      1
-               shiftRegFIFO_5_1      1
-               subfxp_18_1          40
-             codeBlock99168_18       1
-               addfxp_18_1          32
-               shiftRegFIFO_2_1      1
-               subfxp_18_1          32
-           shift_register_group_18_16_1      4
-             shift_register_unit_18_1     16
-           sum_complex_vector_unit_18_18_16_42      2
-     C_LSTM_stage_2_18_10_32_1       1
-       elementwise_add_core_18_18_32      1
-       elementwise_mult_core_18_18_10_32_1      3
-         dsp_signed_mult_18x18_unit_18_18_1     16
-         fp_rounding_unit_1_37_10     32
-       lstm_gate_18_10_32_1          3
-         elementwise_add_core_18_18_32      2
-         elementwise_mult_core_18_18_10_32_1      1
-           dsp_signed_mult_18x18_unit_18_18_1     16
-           fp_rounding_unit_1_37_10     32
-         shift_register_group_18_32_10      1
-           shift_register_unit_18_18     32
-         sigmoid_core_18_18_10_32_1     32
-           abs_unit_18               1
-           dsp_signed_mac_18_13_23_32      1
-           fp_rounding_unit_1_32_11      1
-           shift_register_unit_1_3      1
-       output_activation_18_10_32_1      1
-         elementwise_add_core_18_18_32      1
-         sigmoid_core_18_18_10_32_1     32
-           abs_unit_18               1
-           dsp_signed_mac_18_13_23_32      1
-           fp_rounding_unit_1_32_11      1
-           shift_register_unit_1_3      1
-       shift_register_group_18_32_14      1
-         shift_register_unit_18_14     32
-       shift_register_group_18_32_18      2
-         shift_register_unit_18_18     32
-       shift_register_group_18_32_6      1
-         shift_register_unit_18_6     32
-       tanh_core_18_18_10_32_1      32
-         abs_unit_18                 1
-         dsp_signed_mac_18_13_23_32      1
-         fp_rounding_unit_1_32_11      1
-         shift_register_unit_1_3      1
-     C_LSTM_stage_3_18_10_64_2048_2_16_1      1
-       multiple_c_matrix_vec_mult_and_sum_18_10_16_1_2_64      1
-         c_matrix_vec_mult_core_18_10_16_2_1      1
-           dft_16_top_18             1
-             codeBlock88206_18       1
-               addfxp_18_1          40
-               multfix_alt_dsp_18     12
-                 dsp_signed_mult_18x18_unit_18_36_0      1
-               shiftRegFIFO_5_1      1
-               subfxp_18_1          40
-             codeBlock89324_18       1
-               addfxp_18_1          32
-               shiftRegFIFO_2_1      1
-               subfxp_18_1          32
-           elementwise_add_core_18_18_9      2
-           elementwise_mult_core_18_1810_9_1      8
-             dsp_signed_mult_18x18_unit_18_18_1      5
-             fp_rounding_unit_1_37_10      9
-           elementwise_sub_core_18_18_9      2
-           shift_register_group_18_910      4
-             shift_register_unit_18_10      9
-         idft_16_top_18              2
-           codeBlock98050_18         1
-             addfxp_18_1            40
-             multfix_alt_dsp_18     12
-               dsp_signed_mult_18x18_unit_18_36_0      1
-             shiftRegFIFO_5_1        1
-             subfxp_18_1            40
-           codeBlock99168_18         1
-             addfxp_18_1            32
-             shiftRegFIFO_2_1        1
-             subfxp_18_1            32
-         shift_register_group_18_16_1      4
-           shift_register_unit_18_1     16
-         sum_complex_vector_unit_18_18_16_64      2
-       shift_register_group_18_16_3      1
-         shift_register_unit_18_3     16
-       shift_register_unit_18_3      1
-       stage3_parameter_buffer_18_2_16_64_2048      1
-         counter_31_2                1
-         counter_63_1                1
-         weight_buffer_18_9_2_64_2048_Wym_imag_half_0      1
-           $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
-         weight_buffer_18_9_2_64_2048_Wym_real_half_0      1
-           $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
-     pipelined_input_18_2_16         3
-     shift_register_group_18_16_3      1
-       shift_register_unit_18_3     16
-     shift_register_group_18_32_3      4
-       shift_register_unit_18_3     32
-     shift_register_unit_1_3         2
-     stage1_parameter_buffer_18_2_16_42_2688      1
-       counter_41_1                  1
-       counter_63_2                  1
-       weight_buffer_18_9_42_2_2688Wcxr_imag_half_0      1
-         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
-       weight_buffer_18_9_42_2_2688Wcxr_real_half_0      1
-         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
-       weight_buffer_18_9_42_2_2688Wfxr_imag_half_0      1
-         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
-       weight_buffer_18_9_42_2_2688Wfxr_real_half_0      1
-         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
-       weight_buffer_18_9_42_2_2688Wixr_imag_half_0      1
-         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
-       weight_buffer_18_9_42_2_2688Wixr_real_half_0      1
-         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
-       weight_buffer_18_9_42_2_2688Woxr_imag_half_0      1
-         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
-       weight_buffer_18_9_42_2_2688Woxr_real_half_0      1
-         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
-     stage2_Ct_buffer_18_2_16_64      1
-       counter_63_1                  1
-       ram_288_0_64                  2
-         dual_port_ram               1
-     stage2_mt_buffer_18_2_16_64_32      1
-       counter_14_1                  1
-       counter_63_1                  2
-       ram_288_0_64                  1
-         dual_port_ram               1
-       shift_register_unit_12        3
-     stage2_parameter_buffer_18_2_16_64      1
-       counter_63_2                  1
-       weight_buffer_18_16_2_64_Wfc_0      1
-         single_port_ram             2
-       weight_buffer_18_16_2_64_Wic_0      1
-         single_port_ram             2
-       weight_buffer_18_16_2_64_Woc_0      1
-         single_port_ram             2
-       weight_buffer_18_16_2_64_bc_0      1
-         single_port_ram             2
-       weight_buffer_18_16_2_64_bf_0      1
-         single_port_ram             2
-       weight_buffer_18_16_2_64_bi_0      1
-         single_port_ram             2
-       weight_buffer_18_16_2_64_bo_0      1
-         single_port_ram             2
-     stage3_X_Y_buffer_18_16_2_10_32_64      1
-       counter_31_1                  1
-       counter_41_1                  1
-       counter_41_1_32               1
-       ram_288_0_42                  1
-         dual_port_ram               1
-       shift_register_unit_1_2       1
+     C_LSTM_stage_1_18_10_160_512_2_16_1      0
+       matrix_times_two_vectors_18_10_2_672_16_1      0
+         multiple_c_matrix_vec_mult_and_sum_18_10_16_1_2_42      0
+           c_matrix_vec_mult_core_18_10_16_2_1      0
+             dft_16_top_18           0
+               codeBlock88206_18      0
+                 addfxp_18_1         0
+                 multfix_alt_dsp_18      0
+                   dsp_signed_mult_18x18_unit_18_36_0      0
+                 shiftRegFIFO_5_1      0
+                 subfxp_18_1         0
+               codeBlock89324_18      0
+                 addfxp_18_1         0
+                 shiftRegFIFO_2_1      0
+                 subfxp_18_1         0
+             elementwise_add_core_18_18_9      0
+             elementwise_mult_core_18_1810_9_1      0
+               dsp_signed_mult_18x18_unit_18_18_1      0
+               fp_rounding_unit_1_37_10      0
+             elementwise_sub_core_18_18_9      0
+             shift_register_group_18_910      0
+               shift_register_unit_18_10      0
+           idft_16_top_18            0
+             codeBlock98050_18       0
+               addfxp_18_1           0
+               multfix_alt_dsp_18      0
+                 dsp_signed_mult_18x18_unit_18_36_0      0
+               shiftRegFIFO_5_1      0
+               subfxp_18_1           0
+             codeBlock99168_18       0
+               addfxp_18_1           0
+               shiftRegFIFO_2_1      0
+               subfxp_18_1           0
+           shift_register_group_18_16_1      0
+             shift_register_unit_18_1      0
+           sum_complex_vector_unit_18_18_16_42      0
+     C_LSTM_stage_2_18_10_32_1       0
+       elementwise_add_core_18_18_32      0
+       elementwise_mult_core_18_18_10_32_1      0
+         dsp_signed_mult_18x18_unit_18_18_1      0
+         fp_rounding_unit_1_37_10      0
+       lstm_gate_18_10_32_1          0
+         elementwise_add_core_18_18_32      0
+         elementwise_mult_core_18_18_10_32_1      0
+           dsp_signed_mult_18x18_unit_18_18_1      0
+           fp_rounding_unit_1_37_10      0
+         shift_register_group_18_32_10      0
+           shift_register_unit_18_18      0
+         sigmoid_core_18_18_10_32_1      0
+           abs_unit_18               0
+           dsp_signed_mac_18_13_23_32      0
+           fp_rounding_unit_1_32_11      0
+           shift_register_unit_1_3      0
+       output_activation_18_10_32_1      0
+         elementwise_add_core_18_18_32      0
+         sigmoid_core_18_18_10_32_1      0
+           abs_unit_18               0
+           dsp_signed_mac_18_13_23_32      0
+           fp_rounding_unit_1_32_11      0
+           shift_register_unit_1_3      0
+       shift_register_group_18_32_14      0
+         shift_register_unit_18_14      0
+       shift_register_group_18_32_18      0
+         shift_register_unit_18_18      0
+       shift_register_group_18_32_6      0
+         shift_register_unit_18_6      0
+       tanh_core_18_18_10_32_1       0
+         abs_unit_18                 0
+         dsp_signed_mac_18_13_23_32      0
+         fp_rounding_unit_1_32_11      0
+         shift_register_unit_1_3      0
+     C_LSTM_stage_3_18_10_64_2048_2_16_1      0
+       multiple_c_matrix_vec_mult_and_sum_18_10_16_1_2_64      0
+         c_matrix_vec_mult_core_18_10_16_2_1      0
+           dft_16_top_18             0
+             codeBlock88206_18       0
+               addfxp_18_1           0
+               multfix_alt_dsp_18      0
+                 dsp_signed_mult_18x18_unit_18_36_0      0
+               shiftRegFIFO_5_1      0
+               subfxp_18_1           0
+             codeBlock89324_18       0
+               addfxp_18_1           0
+               shiftRegFIFO_2_1      0
+               subfxp_18_1           0
+           elementwise_add_core_18_18_9      0
+           elementwise_mult_core_18_1810_9_1      0
+             dsp_signed_mult_18x18_unit_18_18_1      0
+             fp_rounding_unit_1_37_10      0
+           elementwise_sub_core_18_18_9      0
+           shift_register_group_18_910      0
+             shift_register_unit_18_10      0
+         idft_16_top_18              0
+           codeBlock98050_18         0
+             addfxp_18_1             0
+             multfix_alt_dsp_18      0
+               dsp_signed_mult_18x18_unit_18_36_0      0
+             shiftRegFIFO_5_1        0
+             subfxp_18_1             0
+           codeBlock99168_18         0
+             addfxp_18_1             0
+             shiftRegFIFO_2_1        0
+             subfxp_18_1             0
+         shift_register_group_18_16_1      0
+           shift_register_unit_18_1      0
+         sum_complex_vector_unit_18_18_16_64      0
+       shift_register_group_18_16_3      0
+         shift_register_unit_18_3      0
+       shift_register_unit_18_3      0
+       stage3_parameter_buffer_18_2_16_64_2048      0
+         counter_31_2                0
+         counter_63_1                0
+         weight_buffer_18_9_2_64_2048_Wym_imag_half_0      0
+           $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
+         weight_buffer_18_9_2_64_2048_Wym_real_half_0      0
+           $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
+     pipelined_input_18_2_16         0
+     shift_register_group_18_16_3      0
+       shift_register_unit_18_3      0
+     shift_register_group_18_32_3      0
+       shift_register_unit_18_3      0
+     shift_register_unit_1_3         0
+     stage1_parameter_buffer_18_2_16_42_2688      0
+       counter_41_1                  0
+       counter_63_2                  0
+       weight_buffer_18_9_42_2_2688Wcxr_imag_half_0      0
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
+       weight_buffer_18_9_42_2_2688Wcxr_real_half_0      0
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
+       weight_buffer_18_9_42_2_2688Wfxr_imag_half_0      0
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
+       weight_buffer_18_9_42_2_2688Wfxr_real_half_0      0
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
+       weight_buffer_18_9_42_2_2688Wixr_imag_half_0      0
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
+       weight_buffer_18_9_42_2_2688Wixr_real_half_0      0
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
+       weight_buffer_18_9_42_2_2688Woxr_imag_half_0      0
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
+       weight_buffer_18_9_42_2_2688Woxr_real_half_0      0
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
+     stage2_Ct_buffer_18_2_16_64      0
+       counter_63_1                  0
+       ram_288_0_64                  0
+         dual_port_ram               0
+     stage2_mt_buffer_18_2_16_64_32      0
+       counter_14_1                  0
+       counter_63_1                  0
+       ram_288_0_64                  0
+         dual_port_ram               0
+       shift_register_unit_12        0
+     stage2_parameter_buffer_18_2_16_64      0
+       counter_63_2                  0
+       weight_buffer_18_16_2_64_Wfc_0      0
+         single_port_ram             0
+       weight_buffer_18_16_2_64_Wic_0      0
+         single_port_ram             0
+       weight_buffer_18_16_2_64_Woc_0      0
+         single_port_ram             0
+       weight_buffer_18_16_2_64_bc_0      0
+         single_port_ram             0
+       weight_buffer_18_16_2_64_bf_0      0
+         single_port_ram             0
+       weight_buffer_18_16_2_64_bi_0      0
+         single_port_ram             0
+       weight_buffer_18_16_2_64_bo_0      0
+         single_port_ram             0
+     stage3_X_Y_buffer_18_16_2_10_32_64      0
+       counter_31_1                  0
+       counter_41_1                  0
+       counter_41_1_32               0
+       ram_288_0_42                  0
+         dual_port_ram               0
+       shift_register_unit_1_2       0
 
-   Number of wires:             117077
-   Number of wire bits:         1743007
-   Number of public wires:       95198
-   Number of public wire bits:  1433191
-   Number of memories:              38
-   Number of memory bits:        69984
+   Number of wires:               1143
+   Number of wire bits:          20183
+   Number of public wires:        1143
+   Number of public wire bits:   20183
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:              48911
-     $add                         3800
-     $and                          298
-     $dff                         2554
-     $dffe                        1882
-     $eq                          4977
-     $ge                           161
-     $le                            12
-     $logic_and                     15
-     $logic_not                    164
-     $lt                             2
-     $memrd                         42
-     $memwr_v2                      42
-     $mul                         1113
-     $mux                        12400
-     $neg                          230
-     $not                          229
-     $reduce_and                   170
-     $reduce_bool                    4
-     $sdff                         780
-     $sdffe                      19786
-     $sub                          250
+   Number of cells:                 19
+     $and                            1
 

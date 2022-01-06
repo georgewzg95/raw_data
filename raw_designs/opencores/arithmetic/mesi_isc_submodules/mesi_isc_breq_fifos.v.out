@@ -11,16 +11,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 36
-     $add                            2
-     $adff                           1
-     $adffe                          6
+     $add                           64
+     $adff                          43
+     $adffe                         90
      $and                            8
      $logic_not                      2
-     $mux                            6
+     $mux                           90
      $not                            4
-     $pmux                           2
-     $reduce_and                     2
-     $reduce_bool                    2
+     $pmux                          86
+     $reduce_and                     4
+     $reduce_bool                    4
      $sub                            1
 
 === $paramod$fa124f254fc07247d3616d7140cad4eee82db7a3\mesi_isc_breq_fifos_cntl ===
@@ -33,15 +33,15 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 86
-     $add                            1
-     $adff                           2
-     $adffe                          2
-     $and                           29
-     $eq                             8
-     $mux                           12
-     $not                           10
-     $or                            16
-     $reduce_or                      6
+     $add                           32
+     $adff                          12
+     $adffe                          9
+     $and                          200
+     $eq                            24
+     $mux                           32
+     $not                           13
+     $or                           133
+     $reduce_or                     24
 
 === mesi_isc_breq_fifos ===
 
@@ -53,35 +53,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $paramod$30de7674ae1e9a06a594b326d7ae820eb84dc684\mesi_isc_basic_fifo      4
-     $paramod$fa124f254fc07247d3616d7140cad4eee82db7a3\mesi_isc_breq_fifos_cntl      1
 
 === design hierarchy ===
 
    mesi_isc_breq_fifos               1
-     $paramod$30de7674ae1e9a06a594b326d7ae820eb84dc684\mesi_isc_basic_fifo      4
-     $paramod$fa124f254fc07247d3616d7140cad4eee82db7a3\mesi_isc_breq_fifos_cntl      1
+     $paramod$30de7674ae1e9a06a594b326d7ae820eb84dc684\mesi_isc_basic_fifo      0
+     $paramod$fa124f254fc07247d3616d7140cad4eee82db7a3\mesi_isc_breq_fifos_cntl      0
 
-   Number of wires:                302
-   Number of wire bits:           3019
-   Number of public wires:         129
-   Number of public wire bits:    1623
+   Number of wires:                 22
+   Number of wire bits:            423
+   Number of public wires:          22
+   Number of public wire bits:     423
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                230
-     $add                            9
-     $adff                           6
-     $adffe                         26
-     $and                           61
-     $eq                             8
-     $logic_not                      8
-     $mux                           36
-     $not                           26
-     $or                            16
-     $pmux                           8
-     $reduce_and                     8
-     $reduce_bool                    8
-     $reduce_or                      6
-     $sub                            4
+   Number of cells:                  5
 

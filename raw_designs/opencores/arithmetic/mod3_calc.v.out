@@ -11,8 +11,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     mod3_adder                      3
-     type_conv                       4
 
 === mod3_adder ===
 
@@ -24,9 +22,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $eq                             6
-     $pmux                           1
-     $reduce_or                      2
+     $eq                            24
+     $pmux                           2
+     $reduce_or                      6
 
 === type_conv ===
 
@@ -38,27 +36,23 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $eq                             3
-     $logic_not                      1
-     $pmux                           1
-     $reduce_or                      1
+     $eq                             6
+     $logic_not                      2
+     $pmux                           2
+     $reduce_or                      2
 
 === design hierarchy ===
 
    mod3                              1
-     mod3_adder                      3
-     type_conv                       4
+     mod3_adder                      0
+     type_conv                       0
 
-   Number of wires:                 73
-   Number of wire bits:            100
-   Number of public wires:          29
-   Number of public wire bits:      56
+   Number of wires:                  8
+   Number of wire bits:             22
+   Number of public wires:           8
+   Number of public wire bits:      22
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 51
-     $eq                            30
-     $logic_not                      4
-     $pmux                           7
-     $reduce_or                     10
+   Number of cells:                  7
 

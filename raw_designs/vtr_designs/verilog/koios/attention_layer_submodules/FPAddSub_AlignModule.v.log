@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/FPAddSub_AlignModule.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/FPAddSub_AlignModule.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/FPAddSub_AlignModule.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/FPAddSub_AlignModule.v' to AST representation.
 Generating RTLIL representation for module `\FPAddSub_AlignModule'.
 Successfully finished Verilog frontend.
 
@@ -147,9 +147,9 @@ Optimizing module FPAddSub_AlignModule.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $lt                             1
-     $mux                            4
+     $lt                            15
+     $mux                           30
 
-End of script. Logfile hash: e4ef6bf391, CPU: user 0.03s system 0.00s, MEM: 11.02 MB peak
+End of script. Logfile hash: c7024137c4, CPU: user 0.02s system 0.00s, MEM: 11.30 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 28% 4x opt_expr (0 sec), 28% 2x opt_dff (0 sec), ...
+Time spent: 39% 4x opt_expr (0 sec), 19% 2x read_verilog (0 sec), ...

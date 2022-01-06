@@ -510,10 +510,8 @@ Optimizing module ldpc_vncluster.
    Number of memory bits:         4352
    Number of processes:              0
    Number of cells:                  7
-     $dff                            2
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dff                           25
+     $mux                           26
 
 === $paramod$15f2135f1cf1ff921bc82d687b6eb61508a42638\ldpc_ram_behav ===
 
@@ -525,10 +523,8 @@ Optimizing module ldpc_vncluster.
    Number of memory bits:         8704
    Number of processes:              0
    Number of cells:                  7
-     $dff                            2
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dff                           42
+     $mux                           43
 
 === $paramod$8c1ce3194e684cb4d6f1da1d7eb7f84d0a1c0224\ldpc_vn ===
 
@@ -540,18 +536,18 @@ Optimizing module ldpc_vncluster.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 57
-     $add                            1
-     $adff                          27
+     $add                            9
+     $adff                         124
      $and                            5
-     $eq                             2
+     $eq                             9
      $logic_or                       1
-     $lt                             1
-     $mux                           11
+     $lt                             9
+     $mux                          128
      $ne                             1
      $not                            3
      $or                             2
-     $reduce_bool                    1
-     $sub                            2
+     $reduce_bool                    4
+     $sub                           18
 
 === ldpc_vncluster ===
 
@@ -563,42 +559,24 @@ Optimizing module ldpc_vncluster.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $paramod$05c8fffe832d3ad9cd67fde8bd0e8c7fec3dd69e\ldpc_ram_behav      1
-     $paramod$15f2135f1cf1ff921bc82d687b6eb61508a42638\ldpc_ram_behav      1
-     $paramod$8c1ce3194e684cb4d6f1da1d7eb7f84d0a1c0224\ldpc_vn      3
 
 === design hierarchy ===
 
    ldpc_vncluster                    1
-     $paramod$05c8fffe832d3ad9cd67fde8bd0e8c7fec3dd69e\ldpc_ram_behav      1
-     $paramod$15f2135f1cf1ff921bc82d687b6eb61508a42638\ldpc_ram_behav      1
-     $paramod$8c1ce3194e684cb4d6f1da1d7eb7f84d0a1c0224\ldpc_vn      3
+     $paramod$05c8fffe832d3ad9cd67fde8bd0e8c7fec3dd69e\ldpc_ram_behav      0
+     $paramod$15f2135f1cf1ff921bc82d687b6eb61508a42638\ldpc_ram_behav      0
+     $paramod$8c1ce3194e684cb4d6f1da1d7eb7f84d0a1c0224\ldpc_vn      0
 
-   Number of wires:                385
-   Number of wire bits:           2641
-   Number of public wires:         293
-   Number of public wire bits:    1983
-   Number of memories:               2
-   Number of memory bits:        13056
+   Number of wires:                 40
+   Number of wire bits:            392
+   Number of public wires:          40
+   Number of public wire bits:     392
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                185
-     $add                            3
-     $adff                          81
-     $and                           15
-     $dff                            4
-     $eq                             6
-     $logic_or                       3
-     $lt                             3
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                           39
-     $ne                             3
-     $not                            9
-     $or                             6
-     $reduce_bool                    3
-     $sub                            6
+   Number of cells:                  5
 
 Warnings: 8 unique messages, 16 total
-End of script. Logfile hash: 637750d226, CPU: user 0.09s system 0.00s, MEM: 13.67 MB peak
+End of script. Logfile hash: eba13eca82, CPU: user 0.14s system 0.00s, MEM: 13.74 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 22% 2x read_verilog (0 sec), 18% 4x opt_expr (0 sec), ...
+Time spent: 31% 2x read_verilog (0 sec), 19% 1x hierarchy (0 sec), ...

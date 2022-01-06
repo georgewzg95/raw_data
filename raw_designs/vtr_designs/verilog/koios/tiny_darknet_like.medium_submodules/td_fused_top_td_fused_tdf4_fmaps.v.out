@@ -11,20 +11,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 71
-     $add                            3
+     $add                            4
      $and                            4
-     $eq                             1
+     $eq                             2
      $logic_and                     10
-     $logic_not                      6
+     $logic_not                      7
      $logic_or                       1
-     $mux                           29
+     $mux                          398
      $not                            1
-     $reduce_bool                    3
-     $reduce_or                      1
+     $reduce_bool                    6
+     $reduce_or                      2
      $sdff                           2
-     $sdffe                          7
-     $sub                            1
-     td_fused_top_td_fused_tdf4_fmaps_memcore      2
+     $sdffe                         71
+     $sub                            2
 
 === td_fused_top_td_fused_tdf4_fmaps_memcore ===
 
@@ -36,7 +35,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     td_fused_top_td_fused_tdf4_fmaps_memcore_ram      1
 
 === td_fused_top_td_fused_tdf4_fmaps_memcore_ram ===
 
@@ -48,39 +46,34 @@
    Number of memory bits:       802816
    Number of processes:              0
    Number of cells:                  9
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            6
+     $dffe                          64
+     $mux                          158
 
 === design hierarchy ===
 
    td_fused_top_td_fused_tdf4_fmaps      1
-     td_fused_top_td_fused_tdf4_fmaps_memcore      2
-       td_fused_top_td_fused_tdf4_fmaps_memcore_ram      1
+     td_fused_top_td_fused_tdf4_fmaps_memcore      0
+       td_fused_top_td_fused_tdf4_fmaps_memcore_ram      0
 
-   Number of wires:                138
-   Number of wire bits:           2233
-   Number of public wires:          81
-   Number of public wire bits:    1427
-   Number of memories:               2
-   Number of memory bits:       1605632
+   Number of wires:                 90
+   Number of wire bits:            895
+   Number of public wires:          47
+   Number of public wire bits:     785
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 87
-     $add                            3
+   Number of cells:                 71
+     $add                            4
      $and                            4
-     $dffe                           2
-     $eq                             1
+     $eq                             2
      $logic_and                     10
-     $logic_not                      6
+     $logic_not                      7
      $logic_or                       1
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                           41
+     $mux                          398
      $not                            1
-     $reduce_bool                    3
-     $reduce_or                      1
+     $reduce_bool                    6
+     $reduce_or                      2
      $sdff                           2
-     $sdffe                          7
-     $sub                            1
+     $sdffe                         71
+     $sub                            2
 

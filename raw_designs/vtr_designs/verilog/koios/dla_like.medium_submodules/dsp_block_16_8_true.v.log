@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v' to AST representation.
 Generating RTLIL representation for module `\dsp_block_16_8_true'.
 Successfully finished Verilog frontend.
 
@@ -48,7 +48,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:38$1 in module dsp_block_16_8_true.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:38$1 in module dsp_block_16_8_true.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -60,7 +60,7 @@ Promoted 0 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\dsp_block_16_8_true.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:38$1'.
+Creating decoders for process `\dsp_block_16_8_true.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:38$1'.
      1/5: $0\by_reg[7:0]
      2/5: $0\bx_reg[15:0]
      3/5: $0\ay_reg[7:0]
@@ -70,22 +70,22 @@ Creating decoders for process `\dsp_block_16_8_true.$proc$/home/zhigang/DATA/raw
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\dsp_block_16_8_true.\resulta' using process `\dsp_block_16_8_true.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:38$1'.
+Creating register for signal `\dsp_block_16_8_true.\resulta' using process `\dsp_block_16_8_true.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:38$1'.
   created $dff cell `$procdff$21' with positive edge clock.
-Creating register for signal `\dsp_block_16_8_true.\ax_reg' using process `\dsp_block_16_8_true.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:38$1'.
+Creating register for signal `\dsp_block_16_8_true.\ax_reg' using process `\dsp_block_16_8_true.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:38$1'.
   created $dff cell `$procdff$22' with positive edge clock.
-Creating register for signal `\dsp_block_16_8_true.\ay_reg' using process `\dsp_block_16_8_true.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:38$1'.
+Creating register for signal `\dsp_block_16_8_true.\ay_reg' using process `\dsp_block_16_8_true.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:38$1'.
   created $dff cell `$procdff$23' with positive edge clock.
-Creating register for signal `\dsp_block_16_8_true.\bx_reg' using process `\dsp_block_16_8_true.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:38$1'.
+Creating register for signal `\dsp_block_16_8_true.\bx_reg' using process `\dsp_block_16_8_true.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:38$1'.
   created $dff cell `$procdff$24' with positive edge clock.
-Creating register for signal `\dsp_block_16_8_true.\by_reg' using process `\dsp_block_16_8_true.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:38$1'.
+Creating register for signal `\dsp_block_16_8_true.\by_reg' using process `\dsp_block_16_8_true.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:38$1'.
   created $dff cell `$procdff$25' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\dsp_block_16_8_true.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:38$1'.
-Removing empty process `dsp_block_16_8_true.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:38$1'.
+Found and cleaned up 1 empty switch in `\dsp_block_16_8_true.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:38$1'.
+Removing empty process `dsp_block_16_8_true.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:38$1'.
 Cleaned up 1 empty switch.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -117,7 +117,7 @@ Finding identical cells in module `\dsp_block_16_8_true'.
 Removed a total of 0 cells.
 
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding SRST signal on $procdff$21 ($dff) from module dsp_block_16_8_true (D = $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:51$5_Y [23:0], Q = \resulta, rval = 24'000000000000000000000000).
+Adding SRST signal on $procdff$21 ($dff) from module dsp_block_16_8_true (D = $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/dsp_block_16_8_true.v:51$5_Y [23:0], Q = \resulta, rval = 24'000000000000000000000000).
 Adding SRST signal on $procdff$22 ($dff) from module dsp_block_16_8_true (D = \ax, Q = \ax_reg, rval = 16'0000000000000000).
 Adding SRST signal on $procdff$23 ($dff) from module dsp_block_16_8_true (D = \ay, Q = \ay_reg, rval = 8'00000000).
 Adding SRST signal on $procdff$24 ($dff) from module dsp_block_16_8_true (D = \bx, Q = \bx_reg, rval = 16'0000000000000000).
@@ -169,10 +169,10 @@ Optimizing module dsp_block_16_8_true.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            2
-     $mul                            2
-     $sdff                           5
+     $add                          128
+     $mul                          128
+     $sdff                          72
 
-End of script. Logfile hash: f61fc560fa, CPU: user 0.02s system 0.00s, MEM: 11.33 MB peak
+End of script. Logfile hash: 028d0aca99, CPU: user 0.03s system 0.01s, MEM: 11.50 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 39% 4x opt_expr (0 sec), 19% 3x opt_merge (0 sec), ...
+Time spent: 44% 4x opt_expr (0 sec), 22% 2x opt_dff (0 sec), ...

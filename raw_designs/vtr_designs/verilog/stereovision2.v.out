@@ -11,7 +11,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $dffe                           3
+     $dffe                          24
 
 === fifo316 ===
 
@@ -23,7 +23,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $dffe                           3
+     $dffe                          24
 
 === fifo496 ===
 
@@ -35,7 +35,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $dffe                           3
+     $dffe                          24
 
 === fltr_compute_f1 ===
 
@@ -47,9 +47,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 22
-     $add                            6
-     $dff                            9
-     $mul                            7
+     $add                          120
+     $dff                          155
+     $mul                          119
 
 === fltr_compute_f2 ===
 
@@ -61,9 +61,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $add                            6
-     $dff                            9
-     $mul                            5
+     $add                          120
+     $dff                          135
+     $mul                           83
 
 === fltr_compute_f3 ===
 
@@ -75,9 +75,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 19
-     $add                            5
-     $dff                            8
-     $mul                            6
+     $add                          100
+     $dff                          130
+     $mul                           94
 
 === fltr_compute_h1 ===
 
@@ -89,9 +89,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 19
-     $add                            5
-     $dff                            8
-     $mul                            6
+     $add                          100
+     $dff                          138
+     $mul                          102
 
 === fltr_compute_h2 ===
 
@@ -103,9 +103,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $add                            6
-     $dff                            9
-     $mul                            5
+     $add                          120
+     $dff                          135
+     $mul                           83
 
 === fltr_compute_h3 ===
 
@@ -117,9 +117,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 19
-     $add                            5
-     $dff                            8
-     $mul                            6
+     $add                          100
+     $dff                          132
+     $mul                           96
 
 === fltr_compute_h4 ===
 
@@ -131,9 +131,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 22
-     $add                            6
-     $dff                            9
-     $mul                            7
+     $add                          120
+     $dff                          143
+     $mul                          107
 
 === h_fltr ===
 
@@ -145,16 +145,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 21
-     $dff                            6
-     $dffe                           7
-     my_fir_f1                       1
-     my_fir_f2                       1
-     my_fir_f3                       1
-     my_fir_h1                       1
-     my_fir_h2                       1
-     my_fir_h3                       1
-     my_fir_h4                       1
-     steer_fltr                      1
+     $dff                           96
+     $dffe                         196
 
 === my_fir_f1 ===
 
@@ -166,10 +158,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 22
-     $add                            6
+     $add                          192
      $dff                            1
-     $dffe                           7
-     $mul                            7
+     $dffe                         124
+     $mul                          224
      $mux                            1
 
 === my_fir_f2 ===
@@ -182,10 +174,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $add                            6
+     $add                          192
      $dff                            1
-     $dffe                           7
-     $mul                            5
+     $dffe                         124
+     $mul                          158
      $mux                            1
 
 === my_fir_f3 ===
@@ -198,10 +190,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $add                            5
+     $add                          160
      $dff                            1
-     $dffe                           7
-     $mul                            6
+     $dffe                         124
+     $mul                          184
      $mux                            1
 
 === my_fir_h1 ===
@@ -214,10 +206,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $add                            5
+     $add                          160
      $dff                            1
-     $dffe                           7
-     $mul                            6
+     $dffe                         124
+     $mul                          192
      $mux                            1
 
 === my_fir_h2 ===
@@ -230,10 +222,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $add                            6
+     $add                          192
      $dff                            1
-     $dffe                           7
-     $mul                            5
+     $dffe                         124
+     $mul                          158
      $mux                            1
 
 === my_fir_h3 ===
@@ -246,10 +238,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $add                            5
+     $add                          160
      $dff                            1
-     $dffe                           7
-     $mul                            6
+     $dffe                         124
+     $mul                          186
      $mux                            1
 
 === my_fir_h4 ===
@@ -262,10 +254,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $add                            5
+     $add                          160
      $dff                            1
-     $dffe                           7
-     $mul                            6
+     $dffe                         124
+     $mul                          186
      $mux                            1
 
 === port_bus_2to1 ===
@@ -278,13 +270,13 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 58
-     $dff                           10
-     $dffe                          26
-     $eq                            13
-     $logic_not                      1
-     $pmux                           6
-     $reduce_or                      1
-     $sdff                           1
+     $dff                          134
+     $dffe                         404
+     $eq                            45
+     $logic_not                      3
+     $pmux                          71
+     $reduce_or                      2
+     $sdff                           4
 
 === steer_fltr ===
 
@@ -296,10 +288,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 42
-     $add                           11
-     $dff                           21
-     $dffe                           7
-     $sub                            3
+     $add                          333
+     $dff                          543
+     $dffe                         196
+     $sub                           93
 
 === sv_chip2_hierarchy_no_mem ===
 
@@ -311,24 +303,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                115
-     $add                            4
-     $dff                           19
-     $dffe                          18
-     $eq                            18
-     $logic_not                      2
-     $mux                            8
+     $add                          104
+     $dff                          103
+     $dffe                         436
+     $eq                            74
+     $logic_not                      6
+     $mux                           72
      $not                            1
-     $pmux                           5
-     $reduce_and                    13
-     $reduce_or                      7
+     $pmux                         101
+     $reduce_and                    36
+     $reduce_or                     28
      $sdff                           2
-     $sdffce                         3
-     $sdffe                          2
-     h_fltr                          6
-     port_bus_2to1                   1
-     v_fltr_226x7                    2
-     v_fltr_316x7                    2
-     v_fltr_496x7                    2
+     $sdffce                        70
+     $sdffe                         20
 
 === v_fltr_226x7 ===
 
@@ -340,14 +327,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     fifo226                         7
-     fltr_compute_f1                 1
-     fltr_compute_f2                 1
-     fltr_compute_f3                 1
-     fltr_compute_h1                 1
-     fltr_compute_h2                 1
-     fltr_compute_h3                 1
-     fltr_compute_h4                 1
 
 === v_fltr_316x7 ===
 
@@ -359,14 +338,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     fifo316                         7
-     fltr_compute_f1                 1
-     fltr_compute_f2                 1
-     fltr_compute_f3                 1
-     fltr_compute_h1                 1
-     fltr_compute_h2                 1
-     fltr_compute_h3                 1
-     fltr_compute_h4                 1
 
 === v_fltr_496x7 ===
 
@@ -378,77 +349,67 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     fifo496                         7
-     fltr_compute_f1                 1
-     fltr_compute_f2                 1
-     fltr_compute_f3                 1
-     fltr_compute_h1                 1
-     fltr_compute_h2                 1
-     fltr_compute_h3                 1
-     fltr_compute_h4                 1
 
 === design hierarchy ===
 
    sv_chip2_hierarchy_no_mem         1
-     h_fltr                          6
-       my_fir_f1                     1
-       my_fir_f2                     1
-       my_fir_f3                     1
-       my_fir_h1                     1
-       my_fir_h2                     1
-       my_fir_h3                     1
-       my_fir_h4                     1
-       steer_fltr                    1
-     port_bus_2to1                   1
-     v_fltr_226x7                    2
-       fifo226                       7
-       fltr_compute_f1               1
-       fltr_compute_f2               1
-       fltr_compute_f3               1
-       fltr_compute_h1               1
-       fltr_compute_h2               1
-       fltr_compute_h3               1
-       fltr_compute_h4               1
-     v_fltr_316x7                    2
-       fifo316                       7
-       fltr_compute_f1               1
-       fltr_compute_f2               1
-       fltr_compute_f3               1
-       fltr_compute_h1               1
-       fltr_compute_h2               1
-       fltr_compute_h3               1
-       fltr_compute_h4               1
-     v_fltr_496x7                    2
-       fifo496                       7
-       fltr_compute_f1               1
-       fltr_compute_f2               1
-       fltr_compute_f3               1
-       fltr_compute_h1               1
-       fltr_compute_h2               1
-       fltr_compute_h3               1
-       fltr_compute_h4               1
+     h_fltr                          0
+       my_fir_f1                     0
+       my_fir_f2                     0
+       my_fir_f3                     0
+       my_fir_h1                     0
+       my_fir_h2                     0
+       my_fir_h3                     0
+       my_fir_h4                     0
+       steer_fltr                    0
+     port_bus_2to1                   0
+     v_fltr_226x7                    0
+       fifo226                       0
+       fltr_compute_f1               0
+       fltr_compute_f2               0
+       fltr_compute_f3               0
+       fltr_compute_h1               0
+       fltr_compute_h2               0
+       fltr_compute_h3               0
+       fltr_compute_h4               0
+     v_fltr_316x7                    0
+       fifo316                       0
+       fltr_compute_f1               0
+       fltr_compute_f2               0
+       fltr_compute_f3               0
+       fltr_compute_h1               0
+       fltr_compute_h2               0
+       fltr_compute_h3               0
+       fltr_compute_h4               0
+     v_fltr_496x7                    0
+       fifo496                       0
+       fltr_compute_f1               0
+       fltr_compute_f2               0
+       fltr_compute_f3               0
+       fltr_compute_h1               0
+       fltr_compute_h2               0
+       fltr_compute_h3               0
+       fltr_compute_h4               0
 
-   Number of wires:               3134
-   Number of wire bits:          57735
-   Number of public wires:        1969
-   Number of public wire bits:   30601
+   Number of wires:                204
+   Number of wire bits:           2665
+   Number of public wires:         146
+   Number of public wire bits:    2347
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               2314
-     $add                          532
-     $dff                          593
-     $dffe                         548
-     $eq                            31
-     $logic_not                      3
-     $mul                          498
-     $mux                           50
+   Number of cells:                115
+     $add                          104
+     $dff                          103
+     $dffe                         436
+     $eq                            74
+     $logic_not                      6
+     $mux                           72
      $not                            1
-     $pmux                          11
-     $reduce_and                    13
-     $reduce_or                      8
-     $sdff                           3
-     $sdffce                         3
-     $sdffe                          2
-     $sub                           18
+     $pmux                         101
+     $reduce_and                    36
+     $reduce_or                     28
+     $sdff                           2
+     $sdffce                        70
+     $sdffe                         20
 

@@ -317,26 +317,26 @@ Optimizing module cavlc_read_levels.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                268
-     $add                            6
-     $adffe                         20
-     $and                            1
-     $eq                            19
-     $gt                             4
-     $le                             1
+     $add                          163
+     $adffe                        169
+     $and                           32
+     $eq                           102
+     $gt                            82
+     $le                            32
      $logic_and                     16
-     $logic_not                      3
+     $logic_not                     39
      $logic_or                       2
-     $lt                             2
-     $mux                           88
-     $ne                            61
-     $neg                            2
-     $pmux                          15
-     $reduce_and                    17
-     $reduce_bool                    2
-     $shl                            2
-     $shr                            1
-     $sub                            6
+     $lt                            64
+     $mux                          754
+     $ne                           196
+     $neg                           41
+     $pmux                         135
+     $reduce_and                    79
+     $reduce_bool                    7
+     $shl                           41
+     $shr                            6
+     $sub                          134
 
-End of script. Logfile hash: ead0bbcb65, CPU: user 0.19s system 0.00s, MEM: 14.87 MB peak
+End of script. Logfile hash: 6535823d70, CPU: user 0.24s system 0.00s, MEM: 15.06 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 34% 5x opt_expr (0 sec), 17% 3x opt_clean (0 sec), ...
+Time spent: 31% 5x opt_expr (0 sec), 16% 2x read_verilog (0 sec), ...

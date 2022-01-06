@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v' to AST representation.
 Generating RTLIL representation for module `\fp16_to_fp32'.
 Successfully finished Verilog frontend.
 
@@ -48,7 +48,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 13 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v:24$2 in module fp16_to_fp32.
+Marked 13 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v:24$2 in module fp16_to_fp32.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -60,7 +60,7 @@ Promoted 4 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\fp16_to_fp32.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v:24$2'.
+Creating decoders for process `\fp16_to_fp32.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v:24$2'.
      1/24: $3\b_temp[31:0] [31]
      2/24: $3\b_temp[31:0] [30:23]
      3/24: $3\b_temp[31:0] [22:0]
@@ -87,18 +87,18 @@ Creating decoders for process `\fp16_to_fp32.$proc$/home/zhigang/DATA/raw_design
     24/24: $1\j[3:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\fp16_to_fp32.\b_temp' from process `\fp16_to_fp32.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v:24$2'.
-Latch inferred for signal `\fp16_to_fp32.\j' from process `\fp16_to_fp32.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v:24$2': $auto$proc_dlatch.cc:427:proc_dlatch$222
-Latch inferred for signal `\fp16_to_fp32.\k' from process `\fp16_to_fp32.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v:24$2': $auto$proc_dlatch.cc:427:proc_dlatch$225
-Latch inferred for signal `\fp16_to_fp32.\k_temp' from process `\fp16_to_fp32.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v:24$2': $auto$proc_dlatch.cc:427:proc_dlatch$470
+No latch inferred for signal `\fp16_to_fp32.\b_temp' from process `\fp16_to_fp32.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v:24$2'.
+Latch inferred for signal `\fp16_to_fp32.\j' from process `\fp16_to_fp32.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v:24$2': $auto$proc_dlatch.cc:427:proc_dlatch$222
+Latch inferred for signal `\fp16_to_fp32.\k' from process `\fp16_to_fp32.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v:24$2': $auto$proc_dlatch.cc:427:proc_dlatch$225
+Latch inferred for signal `\fp16_to_fp32.\k_temp' from process `\fp16_to_fp32.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v:24$2': $auto$proc_dlatch.cc:427:proc_dlatch$470
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 13 empty switches in `\fp16_to_fp32.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v:24$2'.
-Removing empty process `fp16_to_fp32.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v:24$2'.
+Found and cleaned up 13 empty switches in `\fp16_to_fp32.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v:24$2'.
+Removing empty process `fp16_to_fp32.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/gemm_layer_submodules/fp16_to_fp32.v:24$2'.
 Cleaned up 13 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -197,17 +197,17 @@ Optimizing module fp16_to_fp32.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 70
-     $add                            2
-     $and                           33
-     $dlatch                         1
-     $eq                             1
-     $logic_not                      2
-     $mux                           14
+     $add                           12
+     $and                           55
+     $dlatch                         4
+     $eq                             5
+     $logic_not                     20
+     $mux                          110
      $not                           12
-     $reduce_or                      2
-     $shl                            1
-     $sub                            2
+     $reduce_or                      4
+     $shl                           23
+     $sub                           40
 
-End of script. Logfile hash: 5252446861, CPU: user 0.04s system 0.00s, MEM: 12.29 MB peak
+End of script. Logfile hash: 4c5004dadc, CPU: user 0.05s system 0.01s, MEM: 12.46 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 45% 4x opt_expr (0 sec), 9% 2x read_verilog (0 sec), ...
+Time spent: 21% 4x opt_expr (0 sec), 14% 3x opt_merge (0 sec), ...

@@ -11,11 +11,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $sdff                           5
-     FPMult_ExecuteModule            1
-     FPMult_NormalizeModule          1
-     FPMult_PrepModule               1
-     FPMult_RoundModule              1
+     $sdff                         175
 
 === FPMult_ExecuteModule ===
 
@@ -27,11 +23,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $add                            2
+     $add                           12
      $and                            1
-     $mux                            1
+     $mux                           10
      $or                             1
-     $reduce_or                      1
+     $reduce_or                     10
      $xor                            1
 
 === FPMult_NormalizeModule ===
@@ -44,7 +40,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $sub                            3
+     $sub                           70
 
 === FPMult_PrepModule ===
 
@@ -58,10 +54,10 @@
    Number of cells:                 15
      $and                            4
      $logic_not                      2
-     $mul                            1
+     $mul                           22
      $or                             3
-     $reduce_and                     2
-     $reduce_or                      3
+     $reduce_and                    10
+     $reduce_or                     20
 
 === FPMult_RoundModule ===
 
@@ -73,7 +69,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $mux                            3
+     $mux                           28
 
 === seq_mul ===
 
@@ -85,35 +81,24 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $sdff                           3
-     FPMult_16                       1
+     $sdff                          48
 
 === design hierarchy ===
 
    seq_mul                           1
-     FPMult_16                       1
-       FPMult_ExecuteModule          1
-       FPMult_NormalizeModule        1
-       FPMult_PrepModule             1
-       FPMult_RoundModule            1
+     FPMult_16                       0
+       FPMult_ExecuteModule          0
+       FPMult_NormalizeModule        0
+       FPMult_PrepModule             0
+       FPMult_RoundModule            0
 
-   Number of wires:                 95
-   Number of wire bits:            855
-   Number of public wires:          81
-   Number of public wire bits:     774
+   Number of wires:                  9
+   Number of wire bits:            114
+   Number of public wires:           9
+   Number of public wire bits:     114
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 36
-     $add                            2
-     $and                            5
-     $logic_not                      2
-     $mul                            1
-     $mux                            4
-     $or                             4
-     $reduce_and                     2
-     $reduce_or                      4
-     $sdff                           8
-     $sub                            3
-     $xor                            1
+   Number of cells:                  4
+     $sdff                          48
 

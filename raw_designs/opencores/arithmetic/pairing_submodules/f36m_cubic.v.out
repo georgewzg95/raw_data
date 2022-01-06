@@ -11,7 +11,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     f3m_add                         2
 
 === f32m_cubic ===
 
@@ -23,9 +22,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            1
-     f3m_cubic                       2
-     f3m_neg                         1
+     $dff                          388
 
 === f32m_sub ===
 
@@ -37,7 +34,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     f3m_sub                         2
 
 === f36m_cubic ===
 
@@ -49,10 +45,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $dff                            1
-     f32m_add                        2
-     f32m_cubic                      3
-     f32m_sub                        1
+     $dff                         1164
 
 === f3_add ===
 
@@ -78,7 +71,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     f3_add                          1
 
 === f3m_add ===
 
@@ -90,7 +82,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 97
-     f3_add                         97
 
 === f3m_cubic ===
 
@@ -102,7 +93,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 88
-     f3_add                         88
 
 === f3m_neg ===
 
@@ -125,33 +115,29 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 97
-     f3_sub                         97
 
 === design hierarchy ===
 
    f36m_cubic                        1
-     f32m_add                        2
-       f3m_add                       2
-         f3_add                     97
-     f32m_cubic                      3
-       f3m_cubic                     2
-         f3_add                     88
-       f3m_neg                       1
-     f32m_sub                        1
-       f3m_sub                       2
-         f3_sub                     97
-           f3_add                    1
+     f32m_add                        0
+       f3m_add                       0
+         f3_add                      0
+     f32m_cubic                      0
+       f3m_cubic                     0
+         f3_add                      0
+       f3m_neg                       0
+     f32m_sub                        0
+       f3m_sub                       0
+         f3_sub                      0
+           f3_add                    0
 
-   Number of wires:              33382
-   Number of wire bits:          59666
-   Number of public wires:       11182
-   Number of public wire bits:   37466
+   Number of wires:                 13
+   Number of wire bits:           6209
+   Number of public wires:          13
+   Number of public wire bits:    6209
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:              24424
-     $and                        15540
-     $dff                            4
-     $not                         4440
-     $or                          4440
+   Number of cells:                  7
+     $dff                         1164
 

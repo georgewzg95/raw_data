@@ -12,7 +12,6 @@
    Number of processes:              0
    Number of cells:                  3
      $or                             1
-     half_adder                      2
 
 === half_adder ===
 
@@ -37,7 +36,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     full_adder                      4
 
 === ripple_adder_6bit ===
 
@@ -49,7 +47,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     full_adder                      6
 
 === vedic2x2 ===
 
@@ -62,7 +59,6 @@
    Number of processes:              0
    Number of cells:                  6
      $and                            4
-     half_adder                      2
 
 === vedic4x4 ===
 
@@ -74,31 +70,25 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     ripple_adder_4bit               1
-     ripple_adder_6bit               2
-     vedic2x2                        4
 
 === design hierarchy ===
 
    vedic4x4                          1
-     ripple_adder_4bit               1
-       full_adder                    4
-         half_adder                  2
-     ripple_adder_6bit               2
-       full_adder                    6
-         half_adder                  2
-     vedic2x2                        4
-       half_adder                    2
+     ripple_adder_4bit               0
+       full_adder                    0
+         half_adder                  0
+     ripple_adder_6bit               0
+       full_adder                    0
+         half_adder                  0
+     vedic2x2                        0
+       half_adder                    0
 
-   Number of wires:                361
-   Number of wire bits:            458
-   Number of public wires:         361
-   Number of public wire bits:     458
+   Number of wires:                 13
+   Number of wire bits:             51
+   Number of public wires:          13
+   Number of public wire bits:      51
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                112
-     $and                           56
-     $or                            16
-     $xor                           40
+   Number of cells:                  7
 

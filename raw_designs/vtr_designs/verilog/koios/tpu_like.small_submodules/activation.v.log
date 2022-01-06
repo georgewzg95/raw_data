@@ -24,16 +24,16 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v' to AST representation.
 Generating RTLIL representation for module `\activation'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:172.1-189.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:172.1-189.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:192.1-209.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:192.1-209.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:212.1-251.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:212.1-251.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Successfully finished Verilog frontend.
@@ -57,11 +57,11 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 176 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:212$87 in module activation.
-Marked 16 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:192$86 in module activation.
-Marked 16 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:172$85 in module activation.
-Marked 22 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9 in module activation.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:82$5 in module activation.
+Marked 176 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:212$87 in module activation.
+Marked 16 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:192$86 in module activation.
+Marked 16 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:172$85 in module activation.
+Marked 22 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9 in module activation.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:82$5 in module activation.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -73,7 +73,7 @@ Promoted 53 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:212$87'.
+Creating decoders for process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:212$87'.
      1/176: $176\address[63:60]
      2/176: $175\address[63:60]
      3/176: $174\address[63:60]
@@ -250,7 +250,7 @@ Creating decoders for process `\activation.$proc$/home/zhigang/DATA/raw_designs/
    174/176: $3\address[3:0]
    175/176: $2\address[3:0]
    176/176: $1\address[3:0]
-Creating decoders for process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:192$86'.
+Creating decoders for process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:192$86'.
      1/16: $16\data_intercept[127:120]
      2/16: $15\data_intercept[119:112]
      3/16: $14\data_intercept[111:104]
@@ -267,7 +267,7 @@ Creating decoders for process `\activation.$proc$/home/zhigang/DATA/raw_designs/
     14/16: $3\data_intercept[23:16]
     15/16: $2\data_intercept[15:8]
     16/16: $1\data_intercept[7:0]
-Creating decoders for process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:172$85'.
+Creating decoders for process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:172$85'.
      1/16: $16\data_slope[127:120]
      2/16: $15\data_slope[119:112]
      3/16: $14\data_slope[111:104]
@@ -284,7 +284,7 @@ Creating decoders for process `\activation.$proc$/home/zhigang/DATA/raw_designs/
     14/16: $3\data_slope[23:16]
     15/16: $2\data_slope[15:8]
     16/16: $1\data_slope[7:0]
-Creating decoders for process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
+Creating decoders for process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
      1/88: $0\data_intercept_flopped[127:0] [127:120]
      2/88: $0\relu_applied_data_internal[127:0] [111:104]
      3/88: $0\intercept_applied_data_internal[127:0] [111:104]
@@ -373,59 +373,59 @@ Creating decoders for process `\activation.$proc$/home/zhigang/DATA/raw_designs/
     86/88: $2\i[31:0]
     87/88: $0\out_data_available_internal[0:0]
     88/88: $0\done_activation_internal[0:0]
-Creating decoders for process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:82$5'.
+Creating decoders for process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:82$5'.
      1/2: $0\data_slope_flopped[127:0]
      2/2: $0\inp_data_flopped[127:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\activation.\i' from process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:212$87'.
-No latch inferred for signal `\activation.\address' from process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:212$87'.
-No latch inferred for signal `\activation.\i' from process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:192$86'.
-No latch inferred for signal `\activation.\data_intercept' from process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:192$86'.
-No latch inferred for signal `\activation.\i' from process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:172$85'.
-No latch inferred for signal `\activation.\data_slope' from process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:172$85'.
+No latch inferred for signal `\activation.\i' from process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:212$87'.
+No latch inferred for signal `\activation.\address' from process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:212$87'.
+No latch inferred for signal `\activation.\i' from process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:192$86'.
+No latch inferred for signal `\activation.\data_intercept' from process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:192$86'.
+No latch inferred for signal `\activation.\i' from process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:172$85'.
+No latch inferred for signal `\activation.\data_slope' from process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:172$85'.
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\activation.\done_activation_internal' using process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
+Creating register for signal `\activation.\done_activation_internal' using process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
   created $dff cell `$procdff$4798' with positive edge clock.
-Creating register for signal `\activation.\out_data_available_internal' using process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
+Creating register for signal `\activation.\out_data_available_internal' using process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
   created $dff cell `$procdff$4799' with positive edge clock.
-Creating register for signal `\activation.\slope_applied_data_internal' using process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
+Creating register for signal `\activation.\slope_applied_data_internal' using process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
   created $dff cell `$procdff$4800' with positive edge clock.
-Creating register for signal `\activation.\intercept_applied_data_internal' using process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
+Creating register for signal `\activation.\intercept_applied_data_internal' using process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
   created $dff cell `$procdff$4801' with positive edge clock.
-Creating register for signal `\activation.\relu_applied_data_internal' using process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
+Creating register for signal `\activation.\relu_applied_data_internal' using process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
   created $dff cell `$procdff$4802' with positive edge clock.
-Creating register for signal `\activation.\i' using process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
+Creating register for signal `\activation.\i' using process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
   created $dff cell `$procdff$4803' with positive edge clock.
-Creating register for signal `\activation.\cycle_count' using process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
+Creating register for signal `\activation.\cycle_count' using process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
   created $dff cell `$procdff$4804' with positive edge clock.
-Creating register for signal `\activation.\activation_in_progress' using process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
+Creating register for signal `\activation.\activation_in_progress' using process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
   created $dff cell `$procdff$4805' with positive edge clock.
-Creating register for signal `\activation.\data_intercept_delayed' using process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
+Creating register for signal `\activation.\data_intercept_delayed' using process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
   created $dff cell `$procdff$4806' with positive edge clock.
-Creating register for signal `\activation.\data_intercept_flopped' using process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
+Creating register for signal `\activation.\data_intercept_flopped' using process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
   created $dff cell `$procdff$4807' with positive edge clock.
-Creating register for signal `\activation.\in_data_available_flopped' using process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
+Creating register for signal `\activation.\in_data_available_flopped' using process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
   created $dff cell `$procdff$4808' with positive edge clock.
-Creating register for signal `\activation.\data_slope_flopped' using process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:82$5'.
+Creating register for signal `\activation.\data_slope_flopped' using process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:82$5'.
   created $dff cell `$procdff$4809' with positive edge clock.
-Creating register for signal `\activation.\inp_data_flopped' using process `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:82$5'.
+Creating register for signal `\activation.\inp_data_flopped' using process `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:82$5'.
   created $dff cell `$procdff$4810' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 176 empty switches in `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:212$87'.
-Removing empty process `activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:212$87'.
-Found and cleaned up 16 empty switches in `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:192$86'.
-Removing empty process `activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:192$86'.
-Found and cleaned up 16 empty switches in `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:172$85'.
-Removing empty process `activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:172$85'.
-Found and cleaned up 24 empty switches in `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
-Removing empty process `activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
-Found and cleaned up 1 empty switch in `\activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:82$5'.
-Removing empty process `activation.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:82$5'.
+Found and cleaned up 176 empty switches in `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:212$87'.
+Removing empty process `activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:212$87'.
+Found and cleaned up 16 empty switches in `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:192$86'.
+Removing empty process `activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:192$86'.
+Found and cleaned up 16 empty switches in `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:172$85'.
+Removing empty process `activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:172$85'.
+Found and cleaned up 24 empty switches in `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
+Removing empty process `activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:97$9'.
+Found and cleaned up 1 empty switch in `\activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:82$5'.
+Removing empty process `activation.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:82$5'.
 Cleaned up 233 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -446,22 +446,22 @@ Removed a total of 64 cells.
 Running muxtree optimizer on module \activation..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$21: \inp_data [15:8] -> { \inp_data [15:9] 1'0 }
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$25: \inp_data [23:16] -> { \inp_data [23:17] 1'0 }
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$29: \inp_data [31:24] -> { \inp_data [31:25] 1'0 }
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$33: \inp_data [39:32] -> { \inp_data [39:33] 1'0 }
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$37: \inp_data [47:40] -> { \inp_data [47:41] 1'0 }
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$41: \inp_data [55:48] -> { \inp_data [55:49] 1'0 }
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$45: \inp_data [63:56] -> { \inp_data [63:57] 1'0 }
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$49: \inp_data [71:64] -> { \inp_data [71:65] 1'0 }
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$53: \inp_data [79:72] -> { \inp_data [79:73] 1'0 }
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$57: \inp_data [87:80] -> { \inp_data [87:81] 1'0 }
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$61: \inp_data [95:88] -> { \inp_data [95:89] 1'0 }
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$65: \inp_data [103:96] -> { \inp_data [103:97] 1'0 }
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$69: \inp_data [111:104] -> { \inp_data [111:105] 1'0 }
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$73: \inp_data [119:112] -> { \inp_data [119:113] 1'0 }
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$77: \inp_data [127:120] -> { \inp_data [127:121] 1'0 }
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$17: \inp_data [7:0] -> { \inp_data [7:1] 1'0 }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$21: \inp_data [15:8] -> { \inp_data [15:9] 1'0 }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$25: \inp_data [23:16] -> { \inp_data [23:17] 1'0 }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$29: \inp_data [31:24] -> { \inp_data [31:25] 1'0 }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$33: \inp_data [39:32] -> { \inp_data [39:33] 1'0 }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$37: \inp_data [47:40] -> { \inp_data [47:41] 1'0 }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$41: \inp_data [55:48] -> { \inp_data [55:49] 1'0 }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$45: \inp_data [63:56] -> { \inp_data [63:57] 1'0 }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$49: \inp_data [71:64] -> { \inp_data [71:65] 1'0 }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$53: \inp_data [79:72] -> { \inp_data [79:73] 1'0 }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$57: \inp_data [87:80] -> { \inp_data [87:81] 1'0 }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$61: \inp_data [95:88] -> { \inp_data [95:89] 1'0 }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$65: \inp_data [103:96] -> { \inp_data [103:97] 1'0 }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$69: \inp_data [111:104] -> { \inp_data [111:105] 1'0 }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$73: \inp_data [119:112] -> { \inp_data [119:113] 1'0 }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$77: \inp_data [127:120] -> { \inp_data [127:121] 1'0 }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$17: \inp_data [7:0] -> { \inp_data [7:1] 1'0 }
   Analyzing evaluation results.
     dead port 1/2 on $mux $procmux$4762.
     dead port 1/2 on $mux $procmux$4696.
@@ -1385,11 +1385,11 @@ Adding EN signal on $auto$ff.cc:262:slice$4916 ($sdff) from module activation (D
 Adding SRST signal on $procdff$4805 ($dff) from module activation (D = $procmux$4706_Y, Q = \activation_in_progress, rval = 1'0).
 Adding SRST signal on $procdff$4804 ($dff) from module activation (D = $2\cycle_count[31:0], Q = \cycle_count, rval = 0).
 Adding SRST signal on $procdff$4802 ($dff) from module activation (D = { $procmux$4667_Y $procmux$4685_Y $procmux$4019_Y $procmux$4064_Y $procmux$4109_Y $procmux$4154_Y $procmux$4199_Y $procmux$4244_Y $procmux$4289_Y $procmux$4334_Y $procmux$4379_Y $procmux$4424_Y $procmux$4469_Y $procmux$4514_Y $procmux$4559_Y $procmux$4604_Y }, Q = \relu_applied_data_internal, rval = 128'00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
-Adding EN signal on $auto$ff.cc:262:slice$4928 ($sdff) from module activation (D = { $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$77_Y $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$73_Y $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$69_Y $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$65_Y $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$61_Y $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$57_Y $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$53_Y $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$49_Y $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$45_Y $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$41_Y $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$37_Y $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$33_Y $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$29_Y $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$25_Y $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$21_Y $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$17_Y }, Q = \relu_applied_data_internal).
+Adding EN signal on $auto$ff.cc:262:slice$4928 ($sdff) from module activation (D = { $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$77_Y $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$73_Y $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$69_Y $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$65_Y $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$61_Y $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$57_Y $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$53_Y $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$49_Y $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$45_Y $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$41_Y $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$37_Y $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$33_Y $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$29_Y $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$25_Y $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$21_Y $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:119$17_Y }, Q = \relu_applied_data_internal).
 Adding SRST signal on $procdff$4801 ($dff) from module activation (D = { $procmux$4649_Y $procmux$4733_Y $procmux$4028_Y $procmux$4073_Y $procmux$4118_Y $procmux$4163_Y $procmux$4208_Y $procmux$4253_Y $procmux$4298_Y $procmux$4343_Y $procmux$4388_Y $procmux$4433_Y $procmux$4478_Y $procmux$4523_Y $procmux$4568_Y $procmux$4613_Y }, Q = \intercept_applied_data_internal, rval = 128'00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
-Adding EN signal on $auto$ff.cc:262:slice$4934 ($sdff) from module activation (D = { $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$76_Y $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$72_Y $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$68_Y $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$64_Y $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$60_Y $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$56_Y $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$52_Y $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$48_Y $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$44_Y $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$40_Y $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$36_Y $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$32_Y $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$28_Y $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$24_Y $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$20_Y $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$16_Y }, Q = \intercept_applied_data_internal).
+Adding EN signal on $auto$ff.cc:262:slice$4934 ($sdff) from module activation (D = { $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$76_Y $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$72_Y $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$68_Y $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$64_Y $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$60_Y $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$56_Y $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$52_Y $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$48_Y $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$44_Y $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$40_Y $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$36_Y $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$32_Y $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$28_Y $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$24_Y $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$20_Y $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:117$16_Y }, Q = \intercept_applied_data_internal).
 Adding SRST signal on $procdff$4800 ($dff) from module activation (D = { $procmux$4658_Y $procmux$4751_Y $procmux$4055_Y $procmux$4100_Y $procmux$4145_Y $procmux$4190_Y $procmux$4235_Y $procmux$4280_Y $procmux$4325_Y $procmux$4370_Y $procmux$4415_Y $procmux$4460_Y $procmux$4505_Y $procmux$4550_Y $procmux$4595_Y $procmux$4640_Y }, Q = \slope_applied_data_internal, rval = 128'00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000).
-Adding EN signal on $auto$ff.cc:262:slice$4940 ($sdff) from module activation (D = { $mul$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$75_Y $mul$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$71_Y $mul$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$67_Y $mul$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$63_Y $mul$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$59_Y $mul$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$55_Y $mul$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$51_Y $mul$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$47_Y $mul$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$43_Y $mul$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$39_Y $mul$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$35_Y $mul$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$31_Y $mul$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$27_Y $mul$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$23_Y $mul$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$19_Y $mul$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$15_Y }, Q = \slope_applied_data_internal).
+Adding EN signal on $auto$ff.cc:262:slice$4940 ($sdff) from module activation (D = { $mul$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$75_Y $mul$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$71_Y $mul$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$67_Y $mul$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$63_Y $mul$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$59_Y $mul$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$55_Y $mul$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$51_Y $mul$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$47_Y $mul$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$43_Y $mul$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$39_Y $mul$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$35_Y $mul$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$31_Y $mul$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$27_Y $mul$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$23_Y $mul$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$19_Y $mul$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:114$15_Y }, Q = \slope_applied_data_internal).
 Adding SRST signal on $procdff$4799 ($dff) from module activation (D = $procmux$4770_Y, Q = \out_data_available_internal, rval = 1'0).
 Adding EN signal on $auto$ff.cc:262:slice$4946 ($sdff) from module activation (D = $procmux$4770_Y, Q = \out_data_available_internal).
 Adding SRST signal on $procdff$4798 ($dff) from module activation (D = $procmux$4785_Y, Q = \done_activation_internal, rval = 1'0).
@@ -1424,7 +1424,7 @@ Finding identical cells in module `\activation'.
 Removed a total of 14 cells.
 
 4.13. Executing OPT_DFF pass (perform DFF optimizations).
-Adding SRST signal on $auto$ff.cc:262:slice$4927 ($sdff) from module activation (D = $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:110$13_Y, Q = \cycle_count, rval = 0).
+Adding SRST signal on $auto$ff.cc:262:slice$4927 ($sdff) from module activation (D = $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/activation.v:110$13_Y, Q = \cycle_count, rval = 0).
 
 4.14. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \activation..
@@ -1503,27 +1503,27 @@ Optimizing module activation.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                937
-     $add                           17
+     $add                          160
      $dffe                           1
-     $eq                           148
-     $ge                            80
-     $gt                            64
-     $le                            80
+     $eq                           704
+     $ge                          2560
+     $gt                          2048
+     $le                          2560
      $logic_and                    128
-     $logic_not                     32
+     $logic_not                    192
      $logic_or                       2
-     $lt                            64
-     $mul                           16
-     $mux                          205
-     $ne                             2
+     $lt                          2048
+     $mul                          128
+     $mux                         1099
+     $ne                             4
      $not                            2
-     $pmux                          32
-     $reduce_and                     2
-     $reduce_bool                    2
-     $reduce_or                     49
-     $sdff                           4
-     $sdffe                          7
+     $pmux                         256
+     $reduce_and                     4
+     $reduce_bool                    4
+     $reduce_or                     98
+     $sdff                         289
+     $sdffe                        642
 
-End of script. Logfile hash: e0abace5fc, CPU: user 0.82s system 0.00s, MEM: 27.93 MB peak
+End of script. Logfile hash: 21b8ad039d, CPU: user 0.88s system 0.02s, MEM: 28.30 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
 Time spent: 29% 6x opt_expr (0 sec), 17% 2x read_verilog (0 sec), ...

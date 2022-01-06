@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v' to AST representation.
 Generating RTLIL representation for module `\processing_element'.
 Generating RTLIL representation for module `\weight_cache_2048_8_0_weight_init_25'.
 Generating RTLIL representation for module `\dual_port_ram'.
@@ -201,13 +201,13 @@ Warning: Resizing cell port processing_element.weight_cache_2048_8_0_weight_init
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1433$89 in module dsp_block_16_8_false.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1377$84 in module dsp_block_16_8_true.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82 in module dot_product_16_8_30_4.
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76 in module accumulator_24_30_4.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:685$104 in module $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:676$96 in module $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.
-Marked 4 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5 in module processing_element.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1433$89 in module dsp_block_16_8_false.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1377$84 in module dsp_block_16_8_true.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82 in module dot_product_16_8_30_4.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76 in module accumulator_24_30_4.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:685$104 in module $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:676$96 in module $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.
+Marked 4 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5 in module processing_element.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -219,19 +219,19 @@ Promoted 62 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\dsp_block_16_8_false.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1433$89'.
+Creating decoders for process `\dsp_block_16_8_false.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1433$89'.
      1/5: $0\by_reg[7:0]
      2/5: $0\bx_reg[15:0]
      3/5: $0\ay_reg[7:0]
      4/5: $0\ax_reg[15:0]
      5/5: $0\resulta[23:0]
-Creating decoders for process `\dsp_block_16_8_true.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1377$84'.
+Creating decoders for process `\dsp_block_16_8_true.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1377$84'.
      1/5: $0\by_reg[7:0]
      2/5: $0\bx_reg[15:0]
      3/5: $0\ay_reg[7:0]
      4/5: $0\ax_reg[15:0]
      5/5: $0\resulta[23:0]
-Creating decoders for process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating decoders for process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
      1/17: $0\r_pipeline_1[0:0]
      2/17: $0\w_pipeline_3_1[7:0]
      3/17: $0\f_pipeline_3_1[15:0]
@@ -249,37 +249,37 @@ Creating decoders for process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/r
     15/17: $0\f_pipeline_1_0[15:0]
     16/17: $0\w_pipeline_0_0[7:0]
     17/17: $0\f_pipeline_0_0[15:0]
-Creating decoders for process `\accumulator_24_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76'.
+Creating decoders for process `\accumulator_24_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76'.
      1/6: $0\in_reg[29:0]
      2/6: $0\cir_shift_reg_3[29:0]
      3/6: $0\cir_shift_reg_2[29:0]
      4/6: $0\cir_shift_reg_1[29:0]
      5/6: $0\cir_shift_reg_0[29:0]
      6/6: $0\out_reg[29:0]
-Creating decoders for process `\weight_cache_2048_8_0_weight_init_00.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1164$75'.
-Creating decoders for process `\weight_cache_2048_8_0_weight_init_20.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1119$74'.
-Creating decoders for process `\weight_cache_2048_8_0_weight_init_01.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1074$73'.
-Creating decoders for process `\weight_cache_2048_8_0_weight_init_21.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1028$72'.
-Creating decoders for process `\weight_cache_2048_8_0_weight_init_02.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:983$71'.
-Creating decoders for process `\weight_cache_2048_8_0_weight_init_22.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:938$70'.
-Creating decoders for process `\weight_cache_2048_8_0_weight_init_03.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:893$69'.
-Creating decoders for process `\weight_cache_2048_8_0_weight_init_23.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:848$68'.
-Creating decoders for process `\weight_cache_2048_8_0_weight_init_04.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:803$67'.
-Creating decoders for process `\weight_cache_2048_8_0_weight_init_24.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:758$66'.
-Creating decoders for process `\weight_cache_2048_8_0_weight_init_05.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:713$65'.
-Creating decoders for process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:685$104'.
-     1/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:687$95_EN[7:0]$110
-     2/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:687$95_DATA[7:0]$109
-     3/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:687$95_ADDR[10:0]$108
+Creating decoders for process `\weight_cache_2048_8_0_weight_init_00.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1164$75'.
+Creating decoders for process `\weight_cache_2048_8_0_weight_init_20.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1119$74'.
+Creating decoders for process `\weight_cache_2048_8_0_weight_init_01.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1074$73'.
+Creating decoders for process `\weight_cache_2048_8_0_weight_init_21.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1028$72'.
+Creating decoders for process `\weight_cache_2048_8_0_weight_init_02.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:983$71'.
+Creating decoders for process `\weight_cache_2048_8_0_weight_init_22.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:938$70'.
+Creating decoders for process `\weight_cache_2048_8_0_weight_init_03.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:893$69'.
+Creating decoders for process `\weight_cache_2048_8_0_weight_init_23.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:848$68'.
+Creating decoders for process `\weight_cache_2048_8_0_weight_init_04.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:803$67'.
+Creating decoders for process `\weight_cache_2048_8_0_weight_init_24.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:758$66'.
+Creating decoders for process `\weight_cache_2048_8_0_weight_init_05.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:713$65'.
+Creating decoders for process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:685$104'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:687$95_EN[7:0]$110
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:687$95_DATA[7:0]$109
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:687$95_ADDR[10:0]$108
      4/4: $0\out2[7:0]
-Creating decoders for process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:676$96'.
-     1/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:678$94_EN[7:0]$102
-     2/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:678$94_DATA[7:0]$101
-     3/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:678$94_ADDR[10:0]$100
+Creating decoders for process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:676$96'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:678$94_EN[7:0]$102
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:678$94_DATA[7:0]$101
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:678$94_ADDR[10:0]$100
      4/4: $0\out1[7:0]
-Creating decoders for process `\weight_cache_2048_8_0_weight_init_25.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:623$46'.
-Creating decoders for process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:404$20'.
-Creating decoders for process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating decoders for process `\weight_cache_2048_8_0_weight_init_25.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:623$46'.
+Creating decoders for process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:404$20'.
+Creating decoders for process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
      1/24: $0\valid_11[0:0]
      2/24: $0\valid_10[0:0]
      3/24: $0\valid_9[0:0]
@@ -304,7 +304,7 @@ Creating decoders for process `\processing_element.$proc$/home/zhigang/DATA/raw_
     22/24: $0\L_counter[1:0]
     23/24: $0\offset[10:0]
     24/24: $0\base_addr[10:0]
-Creating decoders for process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating decoders for process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
      1/24: $0\if_reg_5_3[15:0]
      2/24: $0\if_reg_5_2[15:0]
      3/24: $0\if_reg_5_1[15:0]
@@ -331,330 +331,330 @@ Creating decoders for process `\processing_element.$proc$/home/zhigang/DATA/raw_
     24/24: $0\if_reg_0_0[15:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\processing_element.\weight_cache_addr' from process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:404$20'.
+No latch inferred for signal `\processing_element.\weight_cache_addr' from process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:404$20'.
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\dsp_block_16_8_false.\resulta' using process `\dsp_block_16_8_false.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1433$89'.
+Creating register for signal `\dsp_block_16_8_false.\resulta' using process `\dsp_block_16_8_false.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1433$89'.
   created $dff cell `$procdff$541' with positive edge clock.
-Creating register for signal `\dsp_block_16_8_false.\ax_reg' using process `\dsp_block_16_8_false.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1433$89'.
+Creating register for signal `\dsp_block_16_8_false.\ax_reg' using process `\dsp_block_16_8_false.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1433$89'.
   created $dff cell `$procdff$542' with positive edge clock.
-Creating register for signal `\dsp_block_16_8_false.\ay_reg' using process `\dsp_block_16_8_false.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1433$89'.
+Creating register for signal `\dsp_block_16_8_false.\ay_reg' using process `\dsp_block_16_8_false.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1433$89'.
   created $dff cell `$procdff$543' with positive edge clock.
-Creating register for signal `\dsp_block_16_8_false.\bx_reg' using process `\dsp_block_16_8_false.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1433$89'.
+Creating register for signal `\dsp_block_16_8_false.\bx_reg' using process `\dsp_block_16_8_false.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1433$89'.
   created $dff cell `$procdff$544' with positive edge clock.
-Creating register for signal `\dsp_block_16_8_false.\by_reg' using process `\dsp_block_16_8_false.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1433$89'.
+Creating register for signal `\dsp_block_16_8_false.\by_reg' using process `\dsp_block_16_8_false.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1433$89'.
   created $dff cell `$procdff$545' with positive edge clock.
-Creating register for signal `\dsp_block_16_8_true.\resulta' using process `\dsp_block_16_8_true.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1377$84'.
+Creating register for signal `\dsp_block_16_8_true.\resulta' using process `\dsp_block_16_8_true.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1377$84'.
   created $dff cell `$procdff$546' with positive edge clock.
-Creating register for signal `\dsp_block_16_8_true.\ax_reg' using process `\dsp_block_16_8_true.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1377$84'.
+Creating register for signal `\dsp_block_16_8_true.\ax_reg' using process `\dsp_block_16_8_true.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1377$84'.
   created $dff cell `$procdff$547' with positive edge clock.
-Creating register for signal `\dsp_block_16_8_true.\ay_reg' using process `\dsp_block_16_8_true.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1377$84'.
+Creating register for signal `\dsp_block_16_8_true.\ay_reg' using process `\dsp_block_16_8_true.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1377$84'.
   created $dff cell `$procdff$548' with positive edge clock.
-Creating register for signal `\dsp_block_16_8_true.\bx_reg' using process `\dsp_block_16_8_true.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1377$84'.
+Creating register for signal `\dsp_block_16_8_true.\bx_reg' using process `\dsp_block_16_8_true.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1377$84'.
   created $dff cell `$procdff$549' with positive edge clock.
-Creating register for signal `\dsp_block_16_8_true.\by_reg' using process `\dsp_block_16_8_true.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1377$84'.
+Creating register for signal `\dsp_block_16_8_true.\by_reg' using process `\dsp_block_16_8_true.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1377$84'.
   created $dff cell `$procdff$550' with positive edge clock.
-Creating register for signal `\dot_product_16_8_30_4.\f_pipeline_0_0' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating register for signal `\dot_product_16_8_30_4.\f_pipeline_0_0' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
   created $dff cell `$procdff$551' with positive edge clock.
-Creating register for signal `\dot_product_16_8_30_4.\w_pipeline_0_0' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating register for signal `\dot_product_16_8_30_4.\w_pipeline_0_0' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
   created $dff cell `$procdff$552' with positive edge clock.
-Creating register for signal `\dot_product_16_8_30_4.\f_pipeline_0_1' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating register for signal `\dot_product_16_8_30_4.\f_pipeline_0_1' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
   created $dff cell `$procdff$553' with positive edge clock.
-Creating register for signal `\dot_product_16_8_30_4.\w_pipeline_0_1' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating register for signal `\dot_product_16_8_30_4.\w_pipeline_0_1' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
   created $dff cell `$procdff$554' with positive edge clock.
-Creating register for signal `\dot_product_16_8_30_4.\f_pipeline_1_0' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating register for signal `\dot_product_16_8_30_4.\f_pipeline_1_0' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
   created $dff cell `$procdff$555' with positive edge clock.
-Creating register for signal `\dot_product_16_8_30_4.\w_pipeline_1_0' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating register for signal `\dot_product_16_8_30_4.\w_pipeline_1_0' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
   created $dff cell `$procdff$556' with positive edge clock.
-Creating register for signal `\dot_product_16_8_30_4.\f_pipeline_1_1' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating register for signal `\dot_product_16_8_30_4.\f_pipeline_1_1' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
   created $dff cell `$procdff$557' with positive edge clock.
-Creating register for signal `\dot_product_16_8_30_4.\w_pipeline_1_1' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating register for signal `\dot_product_16_8_30_4.\w_pipeline_1_1' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
   created $dff cell `$procdff$558' with positive edge clock.
-Creating register for signal `\dot_product_16_8_30_4.\f_pipeline_2_0' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating register for signal `\dot_product_16_8_30_4.\f_pipeline_2_0' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
   created $dff cell `$procdff$559' with positive edge clock.
-Creating register for signal `\dot_product_16_8_30_4.\w_pipeline_2_0' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating register for signal `\dot_product_16_8_30_4.\w_pipeline_2_0' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
   created $dff cell `$procdff$560' with positive edge clock.
-Creating register for signal `\dot_product_16_8_30_4.\f_pipeline_2_1' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating register for signal `\dot_product_16_8_30_4.\f_pipeline_2_1' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
   created $dff cell `$procdff$561' with positive edge clock.
-Creating register for signal `\dot_product_16_8_30_4.\w_pipeline_2_1' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating register for signal `\dot_product_16_8_30_4.\w_pipeline_2_1' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
   created $dff cell `$procdff$562' with positive edge clock.
-Creating register for signal `\dot_product_16_8_30_4.\f_pipeline_3_0' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating register for signal `\dot_product_16_8_30_4.\f_pipeline_3_0' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
   created $dff cell `$procdff$563' with positive edge clock.
-Creating register for signal `\dot_product_16_8_30_4.\w_pipeline_3_0' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating register for signal `\dot_product_16_8_30_4.\w_pipeline_3_0' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
   created $dff cell `$procdff$564' with positive edge clock.
-Creating register for signal `\dot_product_16_8_30_4.\f_pipeline_3_1' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating register for signal `\dot_product_16_8_30_4.\f_pipeline_3_1' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
   created $dff cell `$procdff$565' with positive edge clock.
-Creating register for signal `\dot_product_16_8_30_4.\w_pipeline_3_1' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating register for signal `\dot_product_16_8_30_4.\w_pipeline_3_1' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
   created $dff cell `$procdff$566' with positive edge clock.
-Creating register for signal `\dot_product_16_8_30_4.\r_pipeline_0' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating register for signal `\dot_product_16_8_30_4.\r_pipeline_0' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
   created $dff cell `$procdff$567' with positive edge clock.
-Creating register for signal `\dot_product_16_8_30_4.\r_pipeline_1' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Creating register for signal `\dot_product_16_8_30_4.\r_pipeline_1' using process `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
   created $dff cell `$procdff$568' with positive edge clock.
-Creating register for signal `\accumulator_24_30_4.\cir_shift_reg_0' using process `\accumulator_24_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76'.
+Creating register for signal `\accumulator_24_30_4.\cir_shift_reg_0' using process `\accumulator_24_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76'.
   created $dff cell `$procdff$569' with positive edge clock.
-Creating register for signal `\accumulator_24_30_4.\cir_shift_reg_1' using process `\accumulator_24_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76'.
+Creating register for signal `\accumulator_24_30_4.\cir_shift_reg_1' using process `\accumulator_24_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76'.
   created $dff cell `$procdff$570' with positive edge clock.
-Creating register for signal `\accumulator_24_30_4.\cir_shift_reg_2' using process `\accumulator_24_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76'.
+Creating register for signal `\accumulator_24_30_4.\cir_shift_reg_2' using process `\accumulator_24_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76'.
   created $dff cell `$procdff$571' with positive edge clock.
-Creating register for signal `\accumulator_24_30_4.\cir_shift_reg_3' using process `\accumulator_24_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76'.
+Creating register for signal `\accumulator_24_30_4.\cir_shift_reg_3' using process `\accumulator_24_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76'.
   created $dff cell `$procdff$572' with positive edge clock.
-Creating register for signal `\accumulator_24_30_4.\out_reg' using process `\accumulator_24_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76'.
+Creating register for signal `\accumulator_24_30_4.\out_reg' using process `\accumulator_24_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76'.
   created $dff cell `$procdff$573' with positive edge clock.
-Creating register for signal `\accumulator_24_30_4.\in_reg' using process `\accumulator_24_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76'.
+Creating register for signal `\accumulator_24_30_4.\in_reg' using process `\accumulator_24_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76'.
   created $dff cell `$procdff$574' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_00.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_00.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1164$75'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_00.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_00.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1164$75'.
   created $dff cell `$procdff$575' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_00.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_00.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1164$75'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_00.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_00.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1164$75'.
   created $dff cell `$procdff$576' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_00.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_00.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1164$75'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_00.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_00.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1164$75'.
   created $dff cell `$procdff$577' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_00.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_00.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1164$75'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_00.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_00.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1164$75'.
   created $dff cell `$procdff$578' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_20.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_20.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1119$74'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_20.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_20.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1119$74'.
   created $dff cell `$procdff$579' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_20.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_20.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1119$74'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_20.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_20.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1119$74'.
   created $dff cell `$procdff$580' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_20.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_20.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1119$74'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_20.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_20.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1119$74'.
   created $dff cell `$procdff$581' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_20.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_20.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1119$74'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_20.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_20.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1119$74'.
   created $dff cell `$procdff$582' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_01.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_01.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1074$73'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_01.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_01.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1074$73'.
   created $dff cell `$procdff$583' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_01.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_01.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1074$73'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_01.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_01.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1074$73'.
   created $dff cell `$procdff$584' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_01.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_01.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1074$73'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_01.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_01.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1074$73'.
   created $dff cell `$procdff$585' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_01.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_01.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1074$73'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_01.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_01.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1074$73'.
   created $dff cell `$procdff$586' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_21.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_21.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1028$72'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_21.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_21.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1028$72'.
   created $dff cell `$procdff$587' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_21.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_21.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1028$72'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_21.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_21.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1028$72'.
   created $dff cell `$procdff$588' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_21.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_21.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1028$72'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_21.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_21.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1028$72'.
   created $dff cell `$procdff$589' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_21.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_21.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1028$72'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_21.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_21.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1028$72'.
   created $dff cell `$procdff$590' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_02.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_02.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:983$71'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_02.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_02.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:983$71'.
   created $dff cell `$procdff$591' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_02.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_02.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:983$71'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_02.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_02.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:983$71'.
   created $dff cell `$procdff$592' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_02.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_02.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:983$71'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_02.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_02.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:983$71'.
   created $dff cell `$procdff$593' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_02.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_02.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:983$71'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_02.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_02.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:983$71'.
   created $dff cell `$procdff$594' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_22.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_22.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:938$70'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_22.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_22.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:938$70'.
   created $dff cell `$procdff$595' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_22.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_22.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:938$70'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_22.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_22.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:938$70'.
   created $dff cell `$procdff$596' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_22.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_22.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:938$70'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_22.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_22.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:938$70'.
   created $dff cell `$procdff$597' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_22.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_22.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:938$70'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_22.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_22.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:938$70'.
   created $dff cell `$procdff$598' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_03.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_03.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:893$69'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_03.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_03.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:893$69'.
   created $dff cell `$procdff$599' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_03.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_03.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:893$69'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_03.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_03.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:893$69'.
   created $dff cell `$procdff$600' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_03.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_03.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:893$69'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_03.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_03.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:893$69'.
   created $dff cell `$procdff$601' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_03.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_03.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:893$69'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_03.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_03.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:893$69'.
   created $dff cell `$procdff$602' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_23.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_23.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:848$68'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_23.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_23.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:848$68'.
   created $dff cell `$procdff$603' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_23.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_23.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:848$68'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_23.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_23.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:848$68'.
   created $dff cell `$procdff$604' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_23.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_23.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:848$68'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_23.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_23.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:848$68'.
   created $dff cell `$procdff$605' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_23.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_23.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:848$68'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_23.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_23.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:848$68'.
   created $dff cell `$procdff$606' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_04.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_04.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:803$67'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_04.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_04.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:803$67'.
   created $dff cell `$procdff$607' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_04.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_04.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:803$67'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_04.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_04.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:803$67'.
   created $dff cell `$procdff$608' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_04.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_04.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:803$67'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_04.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_04.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:803$67'.
   created $dff cell `$procdff$609' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_04.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_04.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:803$67'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_04.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_04.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:803$67'.
   created $dff cell `$procdff$610' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_24.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_24.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:758$66'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_24.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_24.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:758$66'.
   created $dff cell `$procdff$611' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_24.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_24.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:758$66'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_24.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_24.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:758$66'.
   created $dff cell `$procdff$612' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_24.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_24.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:758$66'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_24.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_24.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:758$66'.
   created $dff cell `$procdff$613' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_24.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_24.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:758$66'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_24.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_24.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:758$66'.
   created $dff cell `$procdff$614' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_05.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_05.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:713$65'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_05.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_05.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:713$65'.
   created $dff cell `$procdff$615' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_05.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_05.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:713$65'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_05.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_05.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:713$65'.
   created $dff cell `$procdff$616' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_05.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_05.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:713$65'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_05.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_05.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:713$65'.
   created $dff cell `$procdff$617' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_05.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_05.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:713$65'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_05.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_05.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:713$65'.
   created $dff cell `$procdff$618' with positive edge clock.
-Creating register for signal `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.\out2' using process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:685$104'.
+Creating register for signal `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.\out2' using process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:685$104'.
   created $dff cell `$procdff$619' with positive edge clock.
-Creating register for signal `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:687$95_ADDR' using process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:685$104'.
+Creating register for signal `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:687$95_ADDR' using process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:685$104'.
   created $dff cell `$procdff$620' with positive edge clock.
-Creating register for signal `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:687$95_DATA' using process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:685$104'.
+Creating register for signal `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:687$95_DATA' using process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:685$104'.
   created $dff cell `$procdff$621' with positive edge clock.
-Creating register for signal `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:687$95_EN' using process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:685$104'.
+Creating register for signal `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:687$95_EN' using process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:685$104'.
   created $dff cell `$procdff$622' with positive edge clock.
-Creating register for signal `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.\out1' using process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:676$96'.
+Creating register for signal `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.\out1' using process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:676$96'.
   created $dff cell `$procdff$623' with positive edge clock.
-Creating register for signal `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:678$94_ADDR' using process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:676$96'.
+Creating register for signal `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:678$94_ADDR' using process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:676$96'.
   created $dff cell `$procdff$624' with positive edge clock.
-Creating register for signal `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:678$94_DATA' using process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:676$96'.
+Creating register for signal `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:678$94_DATA' using process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:676$96'.
   created $dff cell `$procdff$625' with positive edge clock.
-Creating register for signal `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:678$94_EN' using process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:676$96'.
+Creating register for signal `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:678$94_EN' using process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:676$96'.
   created $dff cell `$procdff$626' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_25.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_25.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:623$46'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_25.\addr0_reg' using process `\weight_cache_2048_8_0_weight_init_25.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:623$46'.
   created $dff cell `$procdff$627' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_25.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_25.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:623$46'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_25.\addr1_reg' using process `\weight_cache_2048_8_0_weight_init_25.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:623$46'.
   created $dff cell `$procdff$628' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_25.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_25.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:623$46'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_25.\pipeline0_reg_0' using process `\weight_cache_2048_8_0_weight_init_25.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:623$46'.
   created $dff cell `$procdff$629' with positive edge clock.
-Creating register for signal `\weight_cache_2048_8_0_weight_init_25.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_25.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:623$46'.
+Creating register for signal `\weight_cache_2048_8_0_weight_init_25.\pipeline1_reg_0' using process `\weight_cache_2048_8_0_weight_init_25.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:623$46'.
   created $dff cell `$procdff$630' with positive edge clock.
-Creating register for signal `\processing_element.\base_addr' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\base_addr' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$631' with positive edge clock.
-Creating register for signal `\processing_element.\offset' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\offset' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$632' with positive edge clock.
-Creating register for signal `\processing_element.\L_counter' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\L_counter' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$633' with positive edge clock.
-Creating register for signal `\processing_element.\C_counter' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\C_counter' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$634' with positive edge clock.
-Creating register for signal `\processing_element.\T_counter' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\T_counter' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$635' with positive edge clock.
-Creating register for signal `\processing_element.\done' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\done' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$636' with positive edge clock.
-Creating register for signal `\processing_element.\done_1' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\done_1' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$637' with positive edge clock.
-Creating register for signal `\processing_element.\done_2' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\done_2' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$638' with positive edge clock.
-Creating register for signal `\processing_element.\done_3' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\done_3' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$639' with positive edge clock.
-Creating register for signal `\processing_element.\done_4' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\done_4' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$640' with positive edge clock.
-Creating register for signal `\processing_element.\done_5' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\done_5' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$641' with positive edge clock.
-Creating register for signal `\processing_element.\done_6' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\done_6' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$642' with positive edge clock.
-Creating register for signal `\processing_element.\valid_0' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\valid_0' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$643' with positive edge clock.
-Creating register for signal `\processing_element.\valid_1' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\valid_1' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$644' with positive edge clock.
-Creating register for signal `\processing_element.\valid_2' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\valid_2' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$645' with positive edge clock.
-Creating register for signal `\processing_element.\valid_3' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\valid_3' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$646' with positive edge clock.
-Creating register for signal `\processing_element.\valid_4' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\valid_4' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$647' with positive edge clock.
-Creating register for signal `\processing_element.\valid_5' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\valid_5' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$648' with positive edge clock.
-Creating register for signal `\processing_element.\valid_6' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\valid_6' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$649' with positive edge clock.
-Creating register for signal `\processing_element.\valid_7' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\valid_7' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$650' with positive edge clock.
-Creating register for signal `\processing_element.\valid_8' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\valid_8' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$651' with positive edge clock.
-Creating register for signal `\processing_element.\valid_9' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\valid_9' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$652' with positive edge clock.
-Creating register for signal `\processing_element.\valid_10' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\valid_10' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$653' with positive edge clock.
-Creating register for signal `\processing_element.\valid_11' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\valid_11' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$654' with positive edge clock.
-Creating register for signal `\processing_element.\next_valid' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Creating register for signal `\processing_element.\next_valid' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
   created $dff cell `$procdff$655' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_0_0' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_0_0' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$656' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_0_1' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_0_1' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$657' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_0_2' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_0_2' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$658' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_0_3' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_0_3' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$659' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_1_0' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_1_0' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$660' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_1_1' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_1_1' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$661' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_1_2' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_1_2' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$662' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_1_3' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_1_3' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$663' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_2_0' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_2_0' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$664' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_2_1' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_2_1' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$665' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_2_2' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_2_2' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$666' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_2_3' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_2_3' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$667' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_3_0' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_3_0' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$668' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_3_1' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_3_1' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$669' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_3_2' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_3_2' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$670' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_3_3' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_3_3' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$671' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_4_0' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_4_0' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$672' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_4_1' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_4_1' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$673' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_4_2' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_4_2' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$674' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_4_3' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_4_3' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$675' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_5_0' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_5_0' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$676' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_5_1' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_5_1' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$677' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_5_2' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_5_2' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$678' with positive edge clock.
-Creating register for signal `\processing_element.\if_reg_5_3' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\if_reg_5_3' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$679' with positive edge clock.
-Creating register for signal `\processing_element.\reset_1' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\reset_1' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$680' with positive edge clock.
-Creating register for signal `\processing_element.\reset_2' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\reset_2' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$681' with positive edge clock.
-Creating register for signal `\processing_element.\reset_3' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\reset_3' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$682' with positive edge clock.
-Creating register for signal `\processing_element.\next_reset' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\next_reset' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$683' with positive edge clock.
-Creating register for signal `\processing_element.\next_reset_2' using process `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Creating register for signal `\processing_element.\next_reset_2' using process `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
   created $dff cell `$procdff$684' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\dsp_block_16_8_false.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1433$89'.
-Removing empty process `dsp_block_16_8_false.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1433$89'.
-Found and cleaned up 1 empty switch in `\dsp_block_16_8_true.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1377$84'.
-Removing empty process `dsp_block_16_8_true.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1377$84'.
-Found and cleaned up 1 empty switch in `\dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
-Removing empty process `dot_product_16_8_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
-Found and cleaned up 3 empty switches in `\accumulator_24_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76'.
-Removing empty process `accumulator_24_30_4.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76'.
-Removing empty process `weight_cache_2048_8_0_weight_init_00.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1164$75'.
-Removing empty process `weight_cache_2048_8_0_weight_init_20.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1119$74'.
-Removing empty process `weight_cache_2048_8_0_weight_init_01.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1074$73'.
-Removing empty process `weight_cache_2048_8_0_weight_init_21.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1028$72'.
-Removing empty process `weight_cache_2048_8_0_weight_init_02.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:983$71'.
-Removing empty process `weight_cache_2048_8_0_weight_init_22.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:938$70'.
-Removing empty process `weight_cache_2048_8_0_weight_init_03.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:893$69'.
-Removing empty process `weight_cache_2048_8_0_weight_init_23.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:848$68'.
-Removing empty process `weight_cache_2048_8_0_weight_init_04.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:803$67'.
-Removing empty process `weight_cache_2048_8_0_weight_init_24.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:758$66'.
-Removing empty process `weight_cache_2048_8_0_weight_init_05.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:713$65'.
-Found and cleaned up 1 empty switch in `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:685$104'.
-Removing empty process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:685$104'.
-Found and cleaned up 1 empty switch in `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:676$96'.
-Removing empty process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:676$96'.
-Removing empty process `weight_cache_2048_8_0_weight_init_25.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:623$46'.
-Removing empty process `processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:404$20'.
-Found and cleaned up 6 empty switches in `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
-Removing empty process `processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
-Found and cleaned up 1 empty switch in `\processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
-Removing empty process `processing_element.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Found and cleaned up 1 empty switch in `\dsp_block_16_8_false.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1433$89'.
+Removing empty process `dsp_block_16_8_false.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1433$89'.
+Found and cleaned up 1 empty switch in `\dsp_block_16_8_true.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1377$84'.
+Removing empty process `dsp_block_16_8_true.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1377$84'.
+Found and cleaned up 1 empty switch in `\dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Removing empty process `dot_product_16_8_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1271$82'.
+Found and cleaned up 3 empty switches in `\accumulator_24_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76'.
+Removing empty process `accumulator_24_30_4.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1206$76'.
+Removing empty process `weight_cache_2048_8_0_weight_init_00.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1164$75'.
+Removing empty process `weight_cache_2048_8_0_weight_init_20.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1119$74'.
+Removing empty process `weight_cache_2048_8_0_weight_init_01.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1074$73'.
+Removing empty process `weight_cache_2048_8_0_weight_init_21.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1028$72'.
+Removing empty process `weight_cache_2048_8_0_weight_init_02.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:983$71'.
+Removing empty process `weight_cache_2048_8_0_weight_init_22.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:938$70'.
+Removing empty process `weight_cache_2048_8_0_weight_init_03.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:893$69'.
+Removing empty process `weight_cache_2048_8_0_weight_init_23.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:848$68'.
+Removing empty process `weight_cache_2048_8_0_weight_init_04.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:803$67'.
+Removing empty process `weight_cache_2048_8_0_weight_init_24.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:758$66'.
+Removing empty process `weight_cache_2048_8_0_weight_init_05.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:713$65'.
+Found and cleaned up 1 empty switch in `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:685$104'.
+Removing empty process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:685$104'.
+Found and cleaned up 1 empty switch in `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:676$96'.
+Removing empty process `$paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:676$96'.
+Removing empty process `weight_cache_2048_8_0_weight_init_25.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:623$46'.
+Removing empty process `processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:404$20'.
+Found and cleaned up 6 empty switches in `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Removing empty process `processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:202$5'.
+Found and cleaned up 1 empty switch in `\processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
+Removing empty process `processing_element.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:168$1'.
 Cleaned up 15 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -843,12 +843,12 @@ Finding identical cells in module `\processing_element'.
 Removed a total of 0 cells.
 
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding SRST signal on $procdff$541 ($dff) from module dsp_block_16_8_false (D = $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1446$93_Y [23:0], Q = \resulta, rval = 24'000000000000000000000000).
+Adding SRST signal on $procdff$541 ($dff) from module dsp_block_16_8_false (D = $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1446$93_Y [23:0], Q = \resulta, rval = 24'000000000000000000000000).
 Adding SRST signal on $procdff$542 ($dff) from module dsp_block_16_8_false (D = \ax, Q = \ax_reg, rval = 16'0000000000000000).
 Adding SRST signal on $procdff$543 ($dff) from module dsp_block_16_8_false (D = \ay, Q = \ay_reg, rval = 8'00000000).
 Adding SRST signal on $procdff$544 ($dff) from module dsp_block_16_8_false (D = \bx, Q = \bx_reg, rval = 16'0000000000000000).
 Adding SRST signal on $procdff$545 ($dff) from module dsp_block_16_8_false (D = \by, Q = \by_reg, rval = 8'00000000).
-Adding SRST signal on $procdff$546 ($dff) from module dsp_block_16_8_true (D = $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1390$88_Y [23:0], Q = \resulta, rval = 24'000000000000000000000000).
+Adding SRST signal on $procdff$546 ($dff) from module dsp_block_16_8_true (D = $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1390$88_Y [23:0], Q = \resulta, rval = 24'000000000000000000000000).
 Adding SRST signal on $procdff$547 ($dff) from module dsp_block_16_8_true (D = \ax, Q = \ax_reg, rval = 16'0000000000000000).
 Adding SRST signal on $procdff$548 ($dff) from module dsp_block_16_8_true (D = \ay, Q = \ay_reg, rval = 8'00000000).
 Adding SRST signal on $procdff$549 ($dff) from module dsp_block_16_8_true (D = \bx, Q = \bx_reg, rval = 16'0000000000000000).
@@ -872,13 +872,13 @@ Adding SRST signal on $procdff$565 ($dff) from module dot_product_16_8_30_4 (D =
 Adding SRST signal on $procdff$566 ($dff) from module dot_product_16_8_30_4 (D = \w_pipeline_3_0, Q = \w_pipeline_3_1, rval = 8'00000000).
 Adding SRST signal on $procdff$574 ($dff) from module accumulator_24_30_4 (D = $procmux$194_Y, Q = \in_reg, rval = 30'000000000000000000000000000000).
 Adding SRST signal on $procdff$573 ($dff) from module accumulator_24_30_4 (D = $procmux$215_Y, Q = \out_reg, rval = 30'000000000000000000000000000000).
-Adding EN signal on $auto$ff.cc:262:slice$715 ($sdff) from module accumulator_24_30_4 (D = $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1224$81_Y, Q = \out_reg).
-Adding SRST signal on $procdff$572 ($dff) from module accumulator_24_30_4 (D = $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1224$81_Y, Q = \cir_shift_reg_3, rval = 30'000000000000000000000000000000).
+Adding EN signal on $auto$ff.cc:262:slice$715 ($sdff) from module accumulator_24_30_4 (D = $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1224$81_Y, Q = \out_reg).
+Adding SRST signal on $procdff$572 ($dff) from module accumulator_24_30_4 (D = $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:1224$81_Y, Q = \cir_shift_reg_3, rval = 30'000000000000000000000000000000).
 Adding SRST signal on $procdff$569 ($dff) from module accumulator_24_30_4 (D = \cir_shift_reg_1, Q = \cir_shift_reg_0, rval = 30'000000000000000000000000000000).
 Adding SRST signal on $procdff$570 ($dff) from module accumulator_24_30_4 (D = \cir_shift_reg_2, Q = \cir_shift_reg_1, rval = 30'000000000000000000000000000000).
 Adding SRST signal on $procdff$571 ($dff) from module accumulator_24_30_4 (D = \cir_shift_reg_3, Q = \cir_shift_reg_2, rval = 30'000000000000000000000000000000).
-Adding EN signal on $procdff$619 ($dff) from module $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:690$111_DATA, Q = \out2).
-Adding EN signal on $procdff$623 ($dff) from module $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:681$103_DATA, Q = \out1).
+Adding EN signal on $procdff$619 ($dff) from module $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:690$111_DATA, Q = \out2).
+Adding EN signal on $procdff$623 ($dff) from module $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.medium_submodules/processing_element.v:681$103_DATA, Q = \out1).
 Adding EN signal on $procdff$631 ($dff) from module processing_element (D = $procmux$488_Y, Q = \base_addr).
 Adding SRST signal on $auto$ff.cc:262:slice$725 ($dffe) from module processing_element (D = $procmux$485_Y, Q = \base_addr, rval = 11'00000000000).
 Adding EN signal on $procdff$632 ($dff) from module processing_element (D = $procmux$472_Y, Q = \offset).
@@ -1306,10 +1306,8 @@ Optimizing module weight_cache_2048_8_0_weight_init_25.
    Number of memory bits:           88
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                          16
+     $mux                           40
 
 === accumulator_24_30_4 ===
 
@@ -1321,11 +1319,11 @@ Optimizing module weight_cache_2048_8_0_weight_init_25.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            1
-     $mux                            1
-     $reduce_or                      1
-     $sdff                           5
-     $sdffe                          1
+     $add                           30
+     $mux                           30
+     $reduce_or                      2
+     $sdff                         150
+     $sdffe                         30
 
 === dot_product_16_8_30_4 ===
 
@@ -1338,9 +1336,7 @@ Optimizing module weight_cache_2048_8_0_weight_init_25.
    Number of processes:              0
    Number of cells:                 16
      $dff                            1
-     $sdff                          13
-     dsp_block_16_8_false            1
-     dsp_block_16_8_true             1
+     $sdff                         145
 
 === dsp_block_16_8_false ===
 
@@ -1352,9 +1348,9 @@ Optimizing module weight_cache_2048_8_0_weight_init_25.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            2
-     $mul                            2
-     $sdff                           5
+     $add                          128
+     $mul                          128
+     $sdff                          72
 
 === dsp_block_16_8_true ===
 
@@ -1366,9 +1362,9 @@ Optimizing module weight_cache_2048_8_0_weight_init_25.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            2
-     $mul                            2
-     $sdff                           5
+     $add                          128
+     $mul                          128
+     $sdff                          72
 
 === processing_element ===
 
@@ -1380,35 +1376,21 @@ Optimizing module weight_cache_2048_8_0_weight_init_25.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                137
-     $add                            6
+     $add                           74
      $dff                            5
-     $dffe                          24
-     $eq                             1
-     $le                             1
+     $dffe                         384
+     $eq                             2
+     $le                            32
      $logic_and                      2
-     $logic_not                      1
+     $logic_not                      2
      $logic_or                       1
-     $mux                           35
-     $ne                             3
+     $mux                          168
+     $ne                            12
      $not                            5
-     $reduce_and                     4
-     $reduce_bool                    1
-     $sdffce                        12
+     $reduce_and                    13
+     $reduce_bool                    2
+     $sdffce                        49
      $sdffe                         12
-     accumulator_24_30_4             6
-     dot_product_16_8_30_4           6
-     weight_cache_2048_8_0_weight_init_00      1
-     weight_cache_2048_8_0_weight_init_01      1
-     weight_cache_2048_8_0_weight_init_02      1
-     weight_cache_2048_8_0_weight_init_03      1
-     weight_cache_2048_8_0_weight_init_04      1
-     weight_cache_2048_8_0_weight_init_05      1
-     weight_cache_2048_8_0_weight_init_20      1
-     weight_cache_2048_8_0_weight_init_21      1
-     weight_cache_2048_8_0_weight_init_22      1
-     weight_cache_2048_8_0_weight_init_23      1
-     weight_cache_2048_8_0_weight_init_24      1
-     weight_cache_2048_8_0_weight_init_25      1
 
 === weight_cache_2048_8_0_weight_init_00 ===
 
@@ -1420,8 +1402,7 @@ Optimizing module weight_cache_2048_8_0_weight_init_25.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_01 ===
 
@@ -1433,8 +1414,7 @@ Optimizing module weight_cache_2048_8_0_weight_init_25.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_02 ===
 
@@ -1446,8 +1426,7 @@ Optimizing module weight_cache_2048_8_0_weight_init_25.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_03 ===
 
@@ -1459,8 +1438,7 @@ Optimizing module weight_cache_2048_8_0_weight_init_25.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_04 ===
 
@@ -1472,8 +1450,7 @@ Optimizing module weight_cache_2048_8_0_weight_init_25.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_05 ===
 
@@ -1485,8 +1462,7 @@ Optimizing module weight_cache_2048_8_0_weight_init_25.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_20 ===
 
@@ -1498,8 +1474,7 @@ Optimizing module weight_cache_2048_8_0_weight_init_25.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_21 ===
 
@@ -1511,8 +1486,7 @@ Optimizing module weight_cache_2048_8_0_weight_init_25.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_22 ===
 
@@ -1524,8 +1498,7 @@ Optimizing module weight_cache_2048_8_0_weight_init_25.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_23 ===
 
@@ -1537,8 +1510,7 @@ Optimizing module weight_cache_2048_8_0_weight_init_25.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_24 ===
 
@@ -1550,8 +1522,7 @@ Optimizing module weight_cache_2048_8_0_weight_init_25.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_25 ===
 
@@ -1563,71 +1534,65 @@ Optimizing module weight_cache_2048_8_0_weight_init_25.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === design hierarchy ===
 
    processing_element                1
-     accumulator_24_30_4             6
-     dot_product_16_8_30_4           6
-       dsp_block_16_8_false          1
-       dsp_block_16_8_true           1
-     weight_cache_2048_8_0_weight_init_00      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_01      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_02      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_03      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_04      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_05      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_20      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_21      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_22      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_23      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_24      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     weight_cache_2048_8_0_weight_init_25      1
-       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     accumulator_24_30_4             0
+     dot_product_16_8_30_4           0
+       dsp_block_16_8_false          0
+       dsp_block_16_8_true           0
+     weight_cache_2048_8_0_weight_init_00      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_01      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_02      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_03      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_04      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_05      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_20      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_21      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_22      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_23      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_24      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     weight_cache_2048_8_0_weight_init_25      0
+       $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
 
-   Number of wires:               1097
-   Number of wire bits:          15909
-   Number of public wires:         876
-   Number of public wire bits:   11381
-   Number of memories:              12
-   Number of memory bits:         1056
+   Number of wires:                227
+   Number of wire bits:           2385
+   Number of public wires:         168
+   Number of public wire bits:    2135
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                551
-     $add                           36
-     $dff                           59
-     $dffe                          48
-     $eq                             1
-     $le                             1
+   Number of cells:                137
+     $add                           74
+     $dff                            5
+     $dffe                         384
+     $eq                             2
+     $le                            32
      $logic_and                      2
-     $logic_not                      1
+     $logic_not                      2
      $logic_or                       1
-     $memrd                         24
-     $memwr_v2                      24
-     $mul                           24
-     $mux                          113
-     $ne                             3
+     $mux                          168
+     $ne                            12
      $not                            5
-     $reduce_and                     4
-     $reduce_bool                    1
-     $reduce_or                      6
-     $sdff                         168
-     $sdffce                        12
-     $sdffe                         18
+     $reduce_and                    13
+     $reduce_bool                    2
+     $sdffce                        49
+     $sdffe                         12
 
 Warnings: 24 unique messages, 24 total
-End of script. Logfile hash: b310f526e3, CPU: user 0.32s system 0.00s, MEM: 16.93 MB peak
+End of script. Logfile hash: fbca38fb91, CPU: user 0.38s system 0.01s, MEM: 17.00 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 22% 5x opt_expr (0 sec), 19% 3x opt_dff (0 sec), ...
+Time spent: 22% 5x opt_expr (0 sec), 17% 3x opt_dff (0 sec), ...

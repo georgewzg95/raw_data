@@ -11,9 +11,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $eq                             3
-     $logic_not                      1
-     $pmux                           1
+     $eq                             6
+     $logic_not                      2
+     $pmux                          32
 
 === datapath ===
 
@@ -25,26 +25,21 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                160
-     $add                            1
-     $adff                          12
-     $adffe                         27
-     $and                            3
-     $dff                            1
-     $eq                            11
+     $add                           32
+     $adff                          21
+     $adffe                        780
+     $and                            9
+     $dff                           32
+     $eq                            26
      $logic_and                      6
-     $logic_not                      6
+     $logic_not                     11
      $logic_or                      16
-     $mux                           51
-     $ne                             1
-     $or                            11
-     $pmux                           4
-     $reduce_and                     1
-     $xor                            3
-     data_swap                       2
-     key_expander                    1
-     mix_columns                     1
-     sBox                            1
-     shift_rows                      1
+     $mux                         1490
+     $ne                             2
+     $or                            20
+     $pmux                         224
+     $reduce_and                     2
+     $xor                           96
 
 === key_expander ===
 
@@ -56,13 +51,13 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 27
-     $eq                             3
-     $logic_not                      1
-     $mux                           10
-     $shl                            1
-     $shr                            1
-     $sub                            1
-     $xor                           10
+     $eq                            12
+     $logic_not                      4
+     $mux                          104
+     $shl                            8
+     $shr                           32
+     $sub                           32
+     $xor                          200
 
 === mix_columns ===
 
@@ -74,8 +69,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 36
-     $and                            9
-     $xor                           27
+     $and                           72
+     $xor                          240
 
 === sBox ===
 
@@ -87,7 +82,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     sBox_8                          4
 
 === sBox_8 ===
 
@@ -99,14 +93,14 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                163
-     $and                           26
-     $dff                            2
-     $mux                            1
-     $not                           37
+     $and                           34
+     $dff                           12
+     $mux                            8
+     $not                           66
      $or                             6
-     $reduce_xor                    10
+     $reduce_xor                    24
      $xnor                          13
-     $xor                           68
+     $xor                           81
 
 === shift_rows ===
 
@@ -122,40 +116,34 @@
 === design hierarchy ===
 
    datapath                          1
-     data_swap                       2
-     key_expander                    1
-     mix_columns                     1
-     sBox                            1
-       sBox_8                        4
-     shift_rows                      1
+     data_swap                       0
+     key_expander                    0
+     mix_columns                     0
+     sBox                            0
+       sBox_8                        0
+     shift_rows                      0
 
-   Number of wires:               1336
-   Number of wire bits:           8221
-   Number of public wires:         748
-   Number of public wire bits:    5916
+   Number of wires:                201
+   Number of wire bits:           3797
+   Number of public wires:         112
+   Number of public wire bits:    2424
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                879
-     $add                            1
-     $adff                          12
-     $adffe                         27
-     $and                          116
-     $dff                            9
-     $eq                            20
+   Number of cells:                160
+     $add                           32
+     $adff                          21
+     $adffe                        780
+     $and                            9
+     $dff                           32
+     $eq                            26
      $logic_and                      6
-     $logic_not                      9
+     $logic_not                     11
      $logic_or                      16
-     $mux                           65
-     $ne                             1
-     $not                          148
-     $or                            35
-     $pmux                           6
-     $reduce_and                     1
-     $reduce_xor                    40
-     $shl                            1
-     $shr                            1
-     $sub                            1
-     $xnor                          52
-     $xor                          312
+     $mux                         1490
+     $ne                             2
+     $or                            20
+     $pmux                         224
+     $reduce_and                     2
+     $xor                           96
 

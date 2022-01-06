@@ -11,10 +11,8 @@
    Number of memory bits:          320
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                          32
+     $mux                           43
 
 === $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram ===
 
@@ -26,10 +24,8 @@
    Number of memory bits:          320
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                          32
+     $mux                           43
 
 === Absorber ===
 
@@ -41,19 +37,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                103
-     $add                            3
+     $add                          144
      $dff                            1
-     $eq                             9
-     $ge                             2
+     $eq                           143
+     $ge                            64
      $logic_and                      2
-     $mul                            3
-     $mux                           18
-     $pmux                           1
-     $sdffe                          7
-     $sub                            1
-     PhotonBlock1                   18
-     PhotonBlock2                   37
-     Sqrt_64b                        1
+     $mul                          192
+     $mux                          625
+     $pmux                          32
+     $sdffe                        352
+     $sub                           32
 
 === Boundary ===
 
@@ -65,17 +58,15 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                932
-     $eq                             5
-     $gt                             1
+     $eq                            15
+     $gt                            32
      $logic_and                      2
-     $logic_not                      2
-     $mux                            8
-     $pmux                           3
-     $reduce_bool                    1
-     $sdffe                        903
-     $sub                            3
-     mult_signed_32_bc               3
-     signed_div_30                   1
+     $logic_not                     35
+     $mux                          225
+     $pmux                          96
+     $reduce_bool                   32
+     $sdffe                      24366
+     $sub                           96
 
 === Div_64b ===
 
@@ -87,10 +78,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $mux                            2
-     $neg                            2
+     $mux                           96
+     $neg                           96
      $xor                            1
-     Div_64b_unsigned                1
 
 === Div_64b_unsigned ===
 
@@ -102,10 +92,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                315
-     $dff                           59
-     $ge                            64
-     $mux                          128
-     $sub                           64
+     $dff                         3105
+     $ge                          4064
+     $mux                         6144
+     $sub                         4064
 
 === DropSpinWrapper ===
 
@@ -118,10 +108,7 @@
    Number of processes:              0
    Number of cells:                 45
      $not                            1
-     $pmux                           5
-     Absorber                        1
-     PhotonBlock5                   37
-     ScattererReflectorWrapper       1
+     $pmux                         100
 
 === Hop ===
 
@@ -133,14 +120,13 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 39
-     $add                            3
+     $add                           99
      $eq                             3
      $logic_and                      3
-     $mux                            8
+     $mux                          225
      $ne                             3
      $or                             2
-     $sdffe                         14
-     mult_signed_32                  3
+     $sdffe                        357
 
 === InternalsBlock ===
 
@@ -152,7 +138,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 24
-     $sdffe                         24
+     $sdffe                        832
 
 === InternalsBlock_Reflector ===
 
@@ -164,7 +150,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $sdffe                          7
+     $sdffe                        352
 
 === LogCalc ===
 
@@ -176,14 +162,13 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 87
-     $add                            2
-     $eq                            22
-     $ge                             2
-     $mul                            1
-     $mux                           55
-     $paramod$af5eb2417a99fbdccc048a055f25a88ec12c1790\single_port_ram      1
-     $sdffe                          2
-     $sub                            2
+     $add                           64
+     $eq                           132
+     $ge                            12
+     $mul                           32
+     $mux                          932
+     $sdffe                         38
+     $sub                           64
 
 === Memory_Wrapper ===
 
@@ -195,7 +180,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram      2
 
 === Move ===
 
@@ -207,13 +191,13 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 32
-     $eq                             5
-     $logic_not                      2
-     $mul                            2
-     $mux                            7
-     $pmux                           3
-     $sdffe                         12
-     $sub                            1
+     $eq                            15
+     $logic_not                     35
+     $mul                          128
+     $mux                          224
+     $pmux                          96
+     $sdffe                        324
+     $sub                           32
 
 === Mult_32b ===
 
@@ -225,10 +209,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $mul                            1
-     $mux                            5
+     $mul                           64
+     $mux                          130
      $ne                             1
-     $neg                            3
+     $neg                          128
 
 === PhotonBlock1 ===
 
@@ -240,7 +224,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $sdffe                          3
+     $sdffe                         96
 
 === PhotonBlock2 ===
 
@@ -252,7 +236,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $sdffe                          3
+     $sdffe                         34
 
 === PhotonBlock5 ===
 
@@ -264,7 +248,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     $sdffe                         14
+     $sdffe                        357
 
 === PhotonCalculator ===
 
@@ -276,24 +260,17 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 48
-     $add                            1
-     $dffe                           1
-     $gt                             2
+     $add                           32
+     $dffe                          32
+     $gt                            64
      $logic_and                      1
-     $mux                           20
-     $ne                             2
+     $mux                          549
+     $ne                             7
      $not                            2
-     $reduce_and                     2
-     $reduce_bool                    1
-     $sdffe                          4
-     $sub                            1
-     Boundary                        1
-     DropSpinWrapper                 1
-     Hop                             1
-     LogCalc                         1
-     Move                            1
-     Roulette                        1
-     rng                             5
+     $reduce_and                     5
+     $reduce_bool                    2
+     $sdffe                         35
+     $sub                           32
 
 === Reflector ===
 
@@ -305,22 +282,20 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                227
-     $add                            1
+     $add                            3
      $and                           68
-     $eq                            19
-     $le                             4
+     $eq                            51
+     $le                           128
      $logic_and                      4
-     $logic_not                      2
-     $mux                           25
-     $neg                            3
+     $logic_not                      4
+     $mux                          472
+     $neg                           96
      $not                           11
-     $or                            27
-     $pmux                          16
-     $reduce_or                      2
-     $sdffe                          5
-     $sub                            1
-     InternalsBlock_Reflector       37
-     sub_64b                         2
+     $or                           972
+     $pmux                         386
+     $reduce_or                      4
+     $sdffe                        100
+     $sub                            3
 
 === Roulette ===
 
@@ -333,11 +308,11 @@
    Number of processes:              0
    Number of cells:                 27
      $logic_and                      1
-     $logic_not                      2
-     $lt                             2
-     $mux                            8
+     $logic_not                     33
+     $lt                            64
+     $mux                          101
      $or                             1
-     $sdffe                         13
+     $sdffe                        356
 
 === Scatterer ===
 
@@ -350,21 +325,17 @@
    Number of processes:              0
    Number of cells:                271
      $and                           64
-     $eq                            15
-     $ge                             1
-     $logic_not                      2
+     $eq                           300
+     $ge                            32
+     $logic_not                      4
      $logic_or                       8
-     $mux                            9
-     $neg                            1
+     $mux                          257
+     $neg                           32
      $not                           36
-     $or                            86
-     $pmux                           2
-     $reduce_or                      2
-     $sdffe                          3
-     InternalsBlock                 36
-     add_32b                         3
-     sub_32b                         2
-     sub_64b                         1
+     $or                           275
+     $pmux                          64
+     $reduce_or                      4
+     $sdffe                         96
 
 === ScattererReflectorWrapper ===
 
@@ -376,15 +347,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 34
-     $eq                             4
-     $mux                            9
-     $pmux                           1
-     Div_64b                         1
-     Memory_Wrapper                  1
-     Mult_32b                       15
-     Reflector                       1
-     Scatterer                       1
-     Sqrt_64b                        1
+     $eq                            12
+     $mux                          320
+     $pmux                           3
 
 === Sqrt_64b ===
 
@@ -396,16 +361,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                443
-     $add                           62
+     $add                         3968
      $and                           61
-     $dff                           28
-     $ge                            32
-     $logic_not                     32
-     $mux                           95
+     $dff                         1339
+     $ge                          2048
+     $logic_not                   2048
+     $mux                         5056
      $not                           31
      $or                            32
      $sdff                           9
-     $sub                           61
+     $sub                         3904
 
 === add_32b ===
 
@@ -417,7 +382,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $add                            1
+     $add                           33
 
 === mult_signed_32 ===
 
@@ -429,10 +394,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $mul                            1
-     $mux                            5
+     $mul                           64
+     $mux                          130
      $ne                             1
-     $neg                            3
+     $neg                          128
 
 === mult_signed_32_bc ===
 
@@ -444,11 +409,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 12
-     $add                            3
-     $dff                            1
-     $mul                            1
-     $mux                            3
-     $not                            3
+     $add                          128
+     $dff                           64
+     $mul                           64
+     $mux                          128
+     $not                          128
      $xor                            1
 
 === rng ===
@@ -461,10 +426,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 19
-     $adffe                          3
-     $and                            3
-     $mux                            3
-     $xor                           10
+     $adffe                         96
+     $and                           96
+     $mux                           96
+     $xor                          320
 
 === signed_div_30 ===
 
@@ -476,7 +441,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     Div_64b                         1
 
 === sub_32b ===
 
@@ -488,7 +452,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sub                            1
+     $sub                           33
 
 === sub_64b ===
 
@@ -500,80 +464,62 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sub                            1
+     $sub                           64
 
 === design hierarchy ===
 
    PhotonCalculator                  1
-     Boundary                        1
-       mult_signed_32_bc             3
-       signed_div_30                 1
-         Div_64b                     1
-           Div_64b_unsigned          1
-     DropSpinWrapper                 1
-       Absorber                      1
-         PhotonBlock1               18
-         PhotonBlock2               37
-         Sqrt_64b                    1
-       PhotonBlock5                 37
-       ScattererReflectorWrapper      1
-         Div_64b                     1
-           Div_64b_unsigned          1
-         Memory_Wrapper              1
-           $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram      2
-         Mult_32b                   15
-         Reflector                   1
-           InternalsBlock_Reflector     37
-           sub_64b                   2
-         Scatterer                   1
-           InternalsBlock           36
-           add_32b                   3
-           sub_32b                   2
-           sub_64b                   1
-         Sqrt_64b                    1
-     Hop                             1
-       mult_signed_32                3
-     LogCalc                         1
-       $paramod$af5eb2417a99fbdccc048a055f25a88ec12c1790\single_port_ram      1
-     Move                            1
-     Roulette                        1
-     rng                             5
+     Boundary                        0
+       mult_signed_32_bc             0
+       signed_div_30                 0
+         Div_64b                     0
+           Div_64b_unsigned          0
+     DropSpinWrapper                 0
+       Absorber                      0
+         PhotonBlock1                0
+         PhotonBlock2                0
+         Sqrt_64b                    0
+       PhotonBlock5                  0
+       ScattererReflectorWrapper      0
+         Div_64b                     0
+           Div_64b_unsigned          0
+         Memory_Wrapper              0
+           $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram      0
+         Mult_32b                    0
+         Reflector                   0
+           InternalsBlock_Reflector      0
+           sub_64b                   0
+         Scatterer                   0
+           InternalsBlock            0
+           add_32b                   0
+           sub_32b                   0
+           sub_64b                   0
+         Sqrt_64b                    0
+     Hop                             0
+       mult_signed_32                0
+     LogCalc                         0
+       $paramod$af5eb2417a99fbdccc048a055f25a88ec12c1790\single_port_ram      0
+     Move                            0
+     Roulette                        0
+     rng                             0
 
-   Number of wires:              11205
-   Number of wire bits:         344060
-   Number of public wires:        9674
-   Number of public wire bits:  307909
-   Number of memories:               3
-   Number of memory bits:          960
+   Number of wires:                205
+   Number of wire bits:           5829
+   Number of public wires:         189
+   Number of public wire bits:    5627
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               5299
-     $add                          146
-     $adffe                         15
-     $and                          269
-     $dff                          178
-     $dffe                           4
-     $eq                            82
-     $ge                           197
-     $gt                             3
-     $le                             4
-     $logic_and                     13
-     $logic_not                     74
-     $logic_or                       8
-     $lt                             2
-     $memrd                          3
-     $memwr_v2                       3
-     $mul                           27
-     $mux                          740
-     $ne                            23
-     $neg                           62
-     $not                          121
-     $or                           180
-     $pmux                          31
-     $reduce_and                     2
+   Number of cells:                 48
+     $add                           32
+     $dffe                          32
+     $gt                            64
+     $logic_and                      1
+     $mux                          549
+     $ne                             7
+     $not                            2
+     $reduce_and                     5
      $reduce_bool                    2
-     $reduce_or                      4
-     $sdff                          18
-     $sdffe                       2769
-     $sub                          264
-     $xor                           55
+     $sdffe                         35
+     $sub                           32
 

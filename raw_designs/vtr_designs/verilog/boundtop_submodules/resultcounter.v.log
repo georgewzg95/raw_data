@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resultcounter.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resultcounter.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resultcounter.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resultcounter.v' to AST representation.
 Generating RTLIL representation for module `\resultcounter'.
 Successfully finished Verilog frontend.
 
@@ -48,7 +48,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resultcounter.v:21$4 in module resultcounter.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resultcounter.v:21$4 in module resultcounter.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -60,23 +60,23 @@ Promoted 0 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\resultcounter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resultcounter.v:21$4'.
+Creating decoders for process `\resultcounter.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resultcounter.v:21$4'.
      1/2: $0\curr[1:0]
      2/2: $0\count[3:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\resultcounter.\count' using process `\resultcounter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resultcounter.v:21$4'.
+Creating register for signal `\resultcounter.\count' using process `\resultcounter.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resultcounter.v:21$4'.
   created $dff cell `$procdff$22' with positive edge clock.
-Creating register for signal `\resultcounter.\curr' using process `\resultcounter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resultcounter.v:21$4'.
+Creating register for signal `\resultcounter.\curr' using process `\resultcounter.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resultcounter.v:21$4'.
   created $dff cell `$procdff$23' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 2 empty switches in `\resultcounter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resultcounter.v:21$4'.
-Removing empty process `resultcounter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resultcounter.v:21$4'.
+Found and cleaned up 2 empty switches in `\resultcounter.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resultcounter.v:21$4'.
+Removing empty process `resultcounter.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resultcounter.v:21$4'.
 Cleaned up 2 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -112,7 +112,7 @@ Removed a total of 0 cells.
 Adding SRST signal on $procdff$23 ($dff) from module resultcounter (D = $procmux$12_Y, Q = \curr, rval = 2'00).
 Adding EN signal on $auto$ff.cc:262:slice$24 ($sdff) from module resultcounter (D = \resultID, Q = \curr).
 Adding SRST signal on $procdff$22 ($dff) from module resultcounter (D = $procmux$17_Y, Q = \count, rval = 4'1000).
-Adding EN signal on $auto$ff.cc:262:slice$26 ($sdff) from module resultcounter (D = $sub$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/resultcounter.v:32$11_Y [3:0], Q = \count).
+Adding EN signal on $auto$ff.cc:262:slice$26 ($sdff) from module resultcounter (D = $sub$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/resultcounter.v:32$11_Y [3:0], Q = \count).
 
 4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \resultcounter..
@@ -163,13 +163,13 @@ Optimizing module resultcounter.
    Number of processes:              0
    Number of cells:                 10
      $and                            2
-     $logic_not                      1
-     $mux                            1
+     $logic_not                      4
+     $mux                            2
      $or                             1
-     $reduce_bool                    2
-     $sdffe                          2
-     $sub                            1
+     $reduce_bool                    6
+     $sdffe                          6
+     $sub                           32
 
-End of script. Logfile hash: 0b8fb219a6, CPU: user 0.01s system 0.00s, MEM: 11.00 MB peak
+End of script. Logfile hash: 833f306d26, CPU: user 0.02s system 0.00s, MEM: 11.12 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 33% 4x opt_expr (0 sec), 33% 3x opt_merge (0 sec), ...
+Time spent: 49% 4x opt_expr (0 sec), 24% 3x opt_merge (0 sec), ...

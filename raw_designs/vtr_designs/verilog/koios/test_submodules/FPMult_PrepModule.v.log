@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/test_submodules/FPMult_PrepModule.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/test_submodules/FPMult_PrepModule.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/test_submodules/FPMult_PrepModule.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/test_submodules/FPMult_PrepModule.v' to AST representation.
 Generating RTLIL representation for module `\FPMult_PrepModule'.
 Successfully finished Verilog frontend.
 
@@ -146,11 +146,11 @@ Optimizing module FPMult_PrepModule.
    Number of cells:                 15
      $and                            4
      $logic_not                      2
-     $mul                            1
+     $mul                           22
      $or                             3
-     $reduce_and                     2
-     $reduce_or                      3
+     $reduce_and                    10
+     $reduce_or                     20
 
-End of script. Logfile hash: 6a37d0c35f, CPU: user 0.02s system 0.00s, MEM: 11.10 MB peak
+End of script. Logfile hash: e13b9366ef, CPU: user 0.04s system 0.00s, MEM: 11.25 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 39% 4x opt_expr (0 sec), 19% 3x opt_merge (0 sec), ...
+Time spent: 37% 4x opt_expr (0 sec), 12% 3x opt_merge (0 sec), ...

@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v' to AST representation.
 Generating RTLIL representation for module `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram'.
 Successfully finished Verilog frontend.
 
@@ -48,7 +48,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:38$2 in module td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:38$2 in module td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -60,35 +60,35 @@ Promoted 3 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:47$12'.
+Creating decoders for process `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:47$12'.
      1/1: $0\q1[15:0]
-Creating decoders for process `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:38$2'.
-     1/6: $2$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:42$1_EN[15:0]$11
-     2/6: $2$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:42$1_DATA[15:0]$10
-     3/6: $2$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:42$1_ADDR[4:0]$9
-     4/6: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:42$1_EN[15:0]$8
-     5/6: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:42$1_DATA[15:0]$7
-     6/6: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:42$1_ADDR[4:0]$6
+Creating decoders for process `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:38$2'.
+     1/6: $2$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:42$1_EN[15:0]$11
+     2/6: $2$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:42$1_DATA[15:0]$10
+     3/6: $2$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:42$1_ADDR[4:0]$9
+     4/6: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:42$1_EN[15:0]$8
+     5/6: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:42$1_DATA[15:0]$7
+     6/6: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:42$1_ADDR[4:0]$6
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.\q1' using process `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:47$12'.
+Creating register for signal `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.\q1' using process `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:47$12'.
   created $dff cell `$procdff$43' with positive edge clock.
-Creating register for signal `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:42$1_ADDR' using process `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:38$2'.
+Creating register for signal `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:42$1_ADDR' using process `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:38$2'.
   created $dff cell `$procdff$44' with positive edge clock.
-Creating register for signal `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:42$1_DATA' using process `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:38$2'.
+Creating register for signal `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:42$1_DATA' using process `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:38$2'.
   created $dff cell `$procdff$45' with positive edge clock.
-Creating register for signal `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:42$1_EN' using process `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:38$2'.
+Creating register for signal `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:42$1_EN' using process `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:38$2'.
   created $dff cell `$procdff$46' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:47$12'.
-Removing empty process `td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:47$12'.
-Found and cleaned up 2 empty switches in `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:38$2'.
-Removing empty process `td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:38$2'.
+Found and cleaned up 1 empty switch in `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:47$12'.
+Removing empty process `td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:47$12'.
+Found and cleaned up 2 empty switches in `\td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:38$2'.
+Removing empty process `td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:38$2'.
 Cleaned up 3 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -133,7 +133,7 @@ Finding identical cells in module `\td_fused_top_tdf7_l2_writeOutputs_149_runnin
 Removed a total of 0 cells.
 
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $procdff$43 ($dff) from module td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:50$13_DATA, Q = \q1).
+Adding EN signal on $procdff$43 ($dff) from module td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.v:50$13_DATA, Q = \q1).
 
 4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram..
@@ -183,11 +183,9 @@ Optimizing module td_fused_top_tdf7_l2_writeOutputs_149_running_sums_ram.
    Number of memory bits:          512
    Number of processes:              0
    Number of cells:                  9
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            6
+     $dffe                          16
+     $mux                           44
 
-End of script. Logfile hash: 2818d4d6d5, CPU: user 0.01s system 0.01s, MEM: 10.93 MB peak
+End of script. Logfile hash: dc73d72548, CPU: user 0.02s system 0.00s, MEM: 11.09 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 49% 2x opt_dff (0 sec), 24% 4x opt_expr (0 sec), ...
+Time spent: 24% 4x opt_expr (0 sec), 24% 2x read_verilog (0 sec), ...

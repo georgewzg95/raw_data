@@ -180,24 +180,22 @@ Optimizing module vedic2x2.
    Number of processes:              0
    Number of cells:                  6
      $and                            4
-     half_adder                      2
 
 === design hierarchy ===
 
    vedic2x2                          1
-     half_adder                      2
+     half_adder                      0
 
-   Number of wires:                 16
-   Number of wire bits:             21
-   Number of public wires:          16
-   Number of public wire bits:      21
+   Number of wires:                  8
+   Number of wire bits:             13
+   Number of public wires:           8
+   Number of public wire bits:      13
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  8
-     $and                            6
-     $xor                            2
+   Number of cells:                  6
+     $and                            4
 
-End of script. Logfile hash: 6e1a227497, CPU: user 0.02s system 0.00s, MEM: 11.01 MB peak
+End of script. Logfile hash: ebdfdb972a, CPU: user 0.02s system 0.00s, MEM: 11.29 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 49% 4x opt_expr (0 sec), 24% 3x opt_merge (0 sec), ...
+Time spent: 66% 4x opt_expr (0 sec), 33% 3x opt_merge (0 sec), ...

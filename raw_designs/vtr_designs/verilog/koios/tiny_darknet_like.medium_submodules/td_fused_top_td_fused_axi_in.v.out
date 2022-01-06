@@ -11,7 +11,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     td_fused_top_td_fused_axi_in_p_ram      1
 
 === td_fused_top_td_fused_axi_in ===
 
@@ -23,20 +22,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                104
-     $add                            6
+     $add                           62
      $and                           20
-     $dffe                          15
-     $eq                             7
-     $mux                           35
+     $dffe                         100
+     $eq                            41
+     $mux                          174
      $not                            7
      $or                             2
-     $paramod$3b3093dce04cc215b30fddfb79efe68f534335c0\td_fused_top_td_fused_axi_in_p      1
-     $pmux                           1
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           4
+     $pmux                           3
+     $reduce_bool                    4
+     $reduce_or                      4
+     $sdff                           6
      $sdffe                          1
-     $sub                            1
+     $sub                           16
 
 === td_fused_top_td_fused_axi_in_p_ram ===
 
@@ -48,38 +46,34 @@
    Number of memory bits:          256
    Number of processes:              0
    Number of cells:                 18
-     $dffe                           4
-     $memrd                          4
-     $memwr_v2                       4
-     $mux                            6
+     $dffe                          64
+     $mux                           38
 
 === design hierarchy ===
 
    td_fused_top_td_fused_axi_in      1
-     $paramod$3b3093dce04cc215b30fddfb79efe68f534335c0\td_fused_top_td_fused_axi_in_p      1
-       td_fused_top_td_fused_axi_in_p_ram      1
+     $paramod$3b3093dce04cc215b30fddfb79efe68f534335c0\td_fused_top_td_fused_axi_in_p      0
+       td_fused_top_td_fused_axi_in_p_ram      0
 
-   Number of wires:                193
-   Number of wire bits:           1207
-   Number of public wires:         135
-   Number of public wire bits:     948
-   Number of memories:               4
-   Number of memory bits:          256
+   Number of wires:                148
+   Number of wire bits:            880
+   Number of public wires:         100
+   Number of public wire bits:     753
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                121
-     $add                            6
+   Number of cells:                104
+     $add                           62
      $and                           20
-     $dffe                          19
-     $eq                             7
-     $memrd                          4
-     $memwr_v2                       4
-     $mux                           41
+     $dffe                         100
+     $eq                            41
+     $mux                          174
      $not                            7
      $or                             2
-     $pmux                           1
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           4
+     $pmux                           3
+     $reduce_bool                    4
+     $reduce_or                      4
+     $sdff                           6
      $sdffe                          1
-     $sub                            1
+     $sub                           16
 

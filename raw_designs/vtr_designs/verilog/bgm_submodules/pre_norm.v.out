@@ -12,11 +12,11 @@
    Number of processes:              0
    Number of cells:                 85
      $and                           27
-     $dlatch                         1
-     $eq                            27
-     $logic_not                      1
+     $dlatch                        27
+     $eq                           135
+     $logic_not                      5
      $not                           28
-     $pmux                           1
+     $pmux                          27
 
 === pre_norm ===
 
@@ -29,45 +29,43 @@
    Number of processes:              0
    Number of cells:                135
      $and                           13
-     $dff                           11
-     $eq                            38
-     $gt                             3
-     $logic_not                      8
-     $lt                             1
-     $mux                           15
+     $dff                           63
+     $eq                           190
+     $gt                            43
+     $logic_not                     14
+     $lt                            23
+     $mux                          173
      $not                            1
      $or                             6
      $pmux                           3
-     $reduce_or                     32
-     $sdff                           1
-     $sub                            2
-     b_right_shifter_new             1
+     $reduce_or                    335
+     $sdff                           8
+     $sub                           16
 
 === design hierarchy ===
 
    pre_norm                          1
-     b_right_shifter_new             1
+     b_right_shifter_new             0
 
-   Number of wires:                237
-   Number of wire bits:            749
-   Number of public wires:          55
-   Number of public wire bits:     541
+   Number of wires:                150
+   Number of wire bits:            580
+   Number of public wires:          52
+   Number of public wire bits:     482
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                219
-     $and                           40
-     $dff                           11
-     $dlatch                         1
-     $eq                            65
-     $gt                             3
-     $logic_not                      9
-     $lt                             1
-     $mux                           15
-     $not                           29
+   Number of cells:                135
+     $and                           13
+     $dff                           63
+     $eq                           190
+     $gt                            43
+     $logic_not                     14
+     $lt                            23
+     $mux                          173
+     $not                            1
      $or                             6
-     $pmux                           4
-     $reduce_or                     32
-     $sdff                           1
-     $sub                            2
+     $pmux                           3
+     $reduce_or                    335
+     $sdff                           8
+     $sub                           16
 

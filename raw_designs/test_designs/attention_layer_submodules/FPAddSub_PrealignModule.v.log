@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/FPAddSub_PrealignModule.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/FPAddSub_PrealignModule.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/FPAddSub_PrealignModule.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/FPAddSub_PrealignModule.v' to AST representation.
 Generating RTLIL representation for module `\FPAddSub_PrealignModule'.
 Successfully finished Verilog frontend.
 
@@ -144,14 +144,14 @@ Optimizing module FPAddSub_PrealignModule.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 19
-     $add                            4
+     $add                          128
      $and                            4
      $logic_not                      2
-     $not                            2
+     $not                           64
      $or                             3
-     $reduce_and                     2
-     $reduce_or                      2
+     $reduce_and                    10
+     $reduce_or                     20
 
-End of script. Logfile hash: 5cfa46d377, CPU: user 0.03s system 0.00s, MEM: 10.91 MB peak
+End of script. Logfile hash: c1ce36e087, CPU: user 0.02s system 0.00s, MEM: 11.79 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 33% 4x opt_expr (0 sec), 33% 2x opt_clean (0 sec), ...
+Time spent: 24% 3x opt_merge (0 sec), 24% 2x opt_dff (0 sec), ...

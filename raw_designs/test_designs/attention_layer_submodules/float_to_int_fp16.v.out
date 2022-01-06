@@ -11,7 +11,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sub                            1
+     $sub                           32
 
 === am_shift_t ===
 
@@ -23,11 +23,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $ge                             1
-     $le                             1
+     $ge                            32
+     $le                            32
      $logic_and                      1
-     $mux                            1
-     $shr                            1
+     $mux                           28
+     $shr                           28
 
 === final_out_t ===
 
@@ -39,10 +39,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $eq                             1
-     $gt                             1
+     $eq                             5
+     $gt                             5
      $logic_and                      2
-     $mux                            2
+     $mux                           56
      $not                            1
 
 === float_to_int_fp16 ===
@@ -55,11 +55,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     align_t                         1
-     am_shift_t                      1
-     final_out_t                     1
-     sub_t                           1
-     two_comp_t                      1
 
 === sub_t ===
 
@@ -71,7 +66,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sub                            1
+     $sub                           32
 
 === two_comp_t ===
 
@@ -83,34 +78,24 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $mux                            1
-     $neg                            1
+     $mux                           28
+     $neg                           28
 
 === design hierarchy ===
 
    float_to_int_fp16                 1
-     align_t                         1
-     am_shift_t                      1
-     final_out_t                     1
-     sub_t                           1
-     two_comp_t                      1
+     align_t                         0
+     am_shift_t                      0
+     final_out_t                     0
+     sub_t                           0
+     two_comp_t                      0
 
-   Number of wires:                 39
-   Number of wire bits:            531
-   Number of public wires:          26
-   Number of public wire bits:     375
+   Number of wires:                  8
+   Number of wire bits:            117
+   Number of public wires:           8
+   Number of public wire bits:     117
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 16
-     $eq                             1
-     $ge                             1
-     $gt                             1
-     $le                             1
-     $logic_and                      3
-     $mux                            4
-     $neg                            1
-     $not                            1
-     $shr                            1
-     $sub                            2
+   Number of cells:                  5
 

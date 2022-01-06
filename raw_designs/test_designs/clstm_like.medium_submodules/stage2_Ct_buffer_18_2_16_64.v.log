@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v' to AST representation.
 Generating RTLIL representation for module `\stage2_Ct_buffer_18_2_16_64'.
 Generating RTLIL representation for module `\counter_63_1'.
 Generating RTLIL representation for module `\ram_288_0_64'.
@@ -62,10 +62,10 @@ Warning: Resizing cell port stage2_Ct_buffer_18_2_16_64.ram_288_0_64_inst_0.wadd
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:243$22 in module dual_port_ram.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:234$14 in module dual_port_ram.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:168$8 in module counter_63_1.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:81$1 in module stage2_Ct_buffer_18_2_16_64.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:243$22 in module dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:234$14 in module dual_port_ram.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:168$8 in module counter_63_1.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:81$1 in module stage2_Ct_buffer_18_2_16_64.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -77,59 +77,59 @@ Promoted 6 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:243$22'.
-     1/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:245$13_EN[287:0]$28
-     2/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:245$13_DATA[287:0]$27
-     3/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:245$13_ADDR[5:0]$26
+Creating decoders for process `\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:243$22'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:245$13_EN[287:0]$28
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:245$13_DATA[287:0]$27
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:245$13_ADDR[5:0]$26
      4/4: $0\out2[287:0]
-Creating decoders for process `\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:234$14'.
-     1/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:236$12_EN[287:0]$20
-     2/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:236$12_DATA[287:0]$19
-     3/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:236$12_ADDR[5:0]$18
+Creating decoders for process `\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:234$14'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:236$12_EN[287:0]$20
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:236$12_DATA[287:0]$19
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:236$12_ADDR[5:0]$18
      4/4: $0\out1[287:0]
-Creating decoders for process `\counter_63_1.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:168$8'.
+Creating decoders for process `\counter_63_1.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:168$8'.
      1/1: $0\count[13:0]
-Creating decoders for process `\stage2_Ct_buffer_18_2_16_64.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:81$1'.
+Creating decoders for process `\stage2_Ct_buffer_18_2_16_64.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:81$1'.
      1/2: $0\raddrs_1[5:0]
      2/2: $0\raddrs_0[5:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\dual_port_ram.\out2' using process `\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:243$22'.
+Creating register for signal `\dual_port_ram.\out2' using process `\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:243$22'.
   created $dff cell `$procdff$68' with positive edge clock.
-Creating register for signal `\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:245$13_ADDR' using process `\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:243$22'.
+Creating register for signal `\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:245$13_ADDR' using process `\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:243$22'.
   created $dff cell `$procdff$69' with positive edge clock.
-Creating register for signal `\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:245$13_DATA' using process `\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:243$22'.
+Creating register for signal `\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:245$13_DATA' using process `\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:243$22'.
   created $dff cell `$procdff$70' with positive edge clock.
-Creating register for signal `\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:245$13_EN' using process `\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:243$22'.
+Creating register for signal `\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:245$13_EN' using process `\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:243$22'.
   created $dff cell `$procdff$71' with positive edge clock.
-Creating register for signal `\dual_port_ram.\out1' using process `\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:234$14'.
+Creating register for signal `\dual_port_ram.\out1' using process `\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:234$14'.
   created $dff cell `$procdff$72' with positive edge clock.
-Creating register for signal `\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:236$12_ADDR' using process `\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:234$14'.
+Creating register for signal `\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:236$12_ADDR' using process `\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:234$14'.
   created $dff cell `$procdff$73' with positive edge clock.
-Creating register for signal `\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:236$12_DATA' using process `\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:234$14'.
+Creating register for signal `\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:236$12_DATA' using process `\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:234$14'.
   created $dff cell `$procdff$74' with positive edge clock.
-Creating register for signal `\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:236$12_EN' using process `\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:234$14'.
+Creating register for signal `\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:236$12_EN' using process `\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:234$14'.
   created $dff cell `$procdff$75' with positive edge clock.
-Creating register for signal `\counter_63_1.\count' using process `\counter_63_1.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:168$8'.
+Creating register for signal `\counter_63_1.\count' using process `\counter_63_1.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:168$8'.
   created $dff cell `$procdff$76' with positive edge clock.
-Creating register for signal `\stage2_Ct_buffer_18_2_16_64.\raddrs_0' using process `\stage2_Ct_buffer_18_2_16_64.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:81$1'.
+Creating register for signal `\stage2_Ct_buffer_18_2_16_64.\raddrs_0' using process `\stage2_Ct_buffer_18_2_16_64.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:81$1'.
   created $dff cell `$procdff$77' with positive edge clock.
-Creating register for signal `\stage2_Ct_buffer_18_2_16_64.\raddrs_1' using process `\stage2_Ct_buffer_18_2_16_64.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:81$1'.
+Creating register for signal `\stage2_Ct_buffer_18_2_16_64.\raddrs_1' using process `\stage2_Ct_buffer_18_2_16_64.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:81$1'.
   created $dff cell `$procdff$78' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:243$22'.
-Removing empty process `dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:243$22'.
-Found and cleaned up 1 empty switch in `\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:234$14'.
-Removing empty process `dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:234$14'.
-Found and cleaned up 3 empty switches in `\counter_63_1.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:168$8'.
-Removing empty process `counter_63_1.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:168$8'.
-Found and cleaned up 2 empty switches in `\stage2_Ct_buffer_18_2_16_64.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:81$1'.
-Removing empty process `stage2_Ct_buffer_18_2_16_64.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:81$1'.
+Found and cleaned up 1 empty switch in `\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:243$22'.
+Removing empty process `dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:243$22'.
+Found and cleaned up 1 empty switch in `\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:234$14'.
+Removing empty process `dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:234$14'.
+Found and cleaned up 3 empty switches in `\counter_63_1.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:168$8'.
+Removing empty process `counter_63_1.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:168$8'.
+Found and cleaned up 2 empty switches in `\stage2_Ct_buffer_18_2_16_64.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:81$1'.
+Removing empty process `stage2_Ct_buffer_18_2_16_64.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:81$1'.
 Cleaned up 7 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -199,12 +199,12 @@ Finding identical cells in module `\stage2_Ct_buffer_18_2_16_64'.
 Removed a total of 0 cells.
 
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $procdff$68 ($dff) from module dual_port_ram (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:248$29_DATA, Q = \out2).
-Adding EN signal on $procdff$72 ($dff) from module dual_port_ram (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:239$21_DATA, Q = \out1).
+Adding EN signal on $procdff$68 ($dff) from module dual_port_ram (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:248$29_DATA, Q = \out2).
+Adding EN signal on $procdff$72 ($dff) from module dual_port_ram (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:239$21_DATA, Q = \out1).
 Adding SRST signal on $procdff$76 ($dff) from module counter_63_1 (D = $procmux$57_Y, Q = \count, rval = 14'00000000000000).
 Adding EN signal on $auto$ff.cc:262:slice$83 ($sdff) from module counter_63_1 (D = $procmux$55_Y, Q = \count).
-Adding SRST signal on $procdff$77 ($dff) from module stage2_Ct_buffer_18_2_16_64 (D = $add$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:83$4_Y [5:0], Q = \raddrs_0, rval = 6'000000).
-Adding SRST signal on $procdff$78 ($dff) from module stage2_Ct_buffer_18_2_16_64 (D = $add$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:87$7_Y [5:0], Q = \raddrs_1, rval = 6'000000).
+Adding SRST signal on $procdff$77 ($dff) from module stage2_Ct_buffer_18_2_16_64 (D = $add$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:83$4_Y [5:0], Q = \raddrs_0, rval = 6'000000).
+Adding SRST signal on $procdff$78 ($dff) from module stage2_Ct_buffer_18_2_16_64 (D = $add$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/stage2_Ct_buffer_18_2_16_64.v:87$7_Y [5:0], Q = \raddrs_1, rval = 6'000000).
 
 4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \dual_port_ram..
@@ -282,10 +282,10 @@ Optimizing module stage2_Ct_buffer_18_2_16_64.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $add                            1
-     $le                             1
-     $mux                            1
-     $sdffe                          1
+     $add                           32
+     $le                            32
+     $mux                           14
+     $sdffe                         14
 
 === dual_port_ram ===
 
@@ -297,10 +297,8 @@ Optimizing module stage2_Ct_buffer_18_2_16_64.
    Number of memory bits:         1728
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                         576
+     $mux                          590
 
 === ram_288_0_64 ===
 
@@ -312,7 +310,6 @@ Optimizing module stage2_Ct_buffer_18_2_16_64.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     dual_port_ram                   1
 
 === stage2_Ct_buffer_18_2_16_64 ===
 
@@ -324,38 +321,30 @@ Optimizing module stage2_Ct_buffer_18_2_16_64.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     $add                            1
-     $lt                             2
-     $sdff                           2
-     counter_63_1                    1
-     ram_288_0_64                    2
+     $add                           32
+     $lt                            64
+     $sdff                          12
 
 === design hierarchy ===
 
    stage2_Ct_buffer_18_2_16_64       1
-     counter_63_1                    1
-     ram_288_0_64                    2
-       dual_port_ram                 1
+     counter_63_1                    0
+     ram_288_0_64                    0
+       dual_port_ram                 0
 
-   Number of wires:                119
-   Number of wire bits:          10003
-   Number of public wires:          97
-   Number of public wire bits:    6442
-   Number of memories:               2
-   Number of memory bits:         3456
+   Number of wires:                 62
+   Number of wire bits:           1793
+   Number of public wires:          59
+   Number of public wire bits:    1759
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 33
-     $add                            2
-     $dffe                           4
-     $le                             1
-     $lt                             2
-     $memrd                          4
-     $memwr_v2                       4
-     $mux                           13
-     $sdff                           2
-     $sdffe                          1
+   Number of cells:                  8
+     $add                           32
+     $lt                            64
+     $sdff                          12
 
 Warnings: 2 unique messages, 2 total
-End of script. Logfile hash: f40f8b6b8f, CPU: user 0.15s system 0.00s, MEM: 14.41 MB peak
+End of script. Logfile hash: 70e8b7a05a, CPU: user 0.15s system 0.00s, MEM: 14.50 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 21% 2x opt_clean (0 sec), 16% 4x opt_expr (0 sec), ...
+Time spent: 19% 2x opt_clean (0 sec), 16% 4x opt_expr (0 sec), ...

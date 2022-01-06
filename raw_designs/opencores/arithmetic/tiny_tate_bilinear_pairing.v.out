@@ -11,20 +11,20 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 50
-     $add                            1
-     $dff                            1
-     $eq                            12
+     $add                            9
+     $dff                           11
+     $eq                            69
      $logic_and                      4
-     $logic_not                      3
-     $mux                            8
-     $ne                             1
-     $pmux                           8
-     $reduce_and                     1
-     $reduce_bool                    2
-     $reduce_or                      2
+     $logic_not                     17
+     $mux                           50
+     $ne                             2
+     $pmux                          68
+     $reduce_and                     2
+     $reduce_bool                    7
+     $reduce_or                      4
      $sdff                           1
-     $sdffe                          5
-     $sub                            1
+     $sdffe                        614
+     $sub                            9
 
 === PE ===
 
@@ -36,18 +36,12 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 32
-     $mux                           10
+     $mux                        11864
      $not                            1
-     $reduce_bool                    1
-     $reduce_or                      1
-     $sdff                           1
-     $sdffe                          3
-     PPG                             3
-     f3m_add                         3
-     mod_p                           6
-     v0                              1
-     v1                              1
-     v2                              1
+     $reduce_bool                    2
+     $reduce_or                      2
+     $sdff                        1186
+     $sdffe                       3560
 
 === PPG ===
 
@@ -59,7 +53,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                593
-     f3_mult                       593
 
 === const_ ===
 
@@ -71,11 +64,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $dff                            2
-     $eq                             5
+     $dff                         1189
+     $eq                            30
      $mux                            1
-     $pmux                           1
-     $reduce_or                      1
+     $pmux                        1188
+     $reduce_or                      5
 
 === f3_add ===
 
@@ -115,7 +108,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     f3_add                          1
 
 === f3m_add ===
 
@@ -127,7 +119,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                593
-     f3_add                        593
 
 === mod_p ===
 
@@ -139,8 +130,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     f3_mult                         2
-     f3_sub                          2
 
 === muxer ===
 
@@ -152,7 +141,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $mux                            1
+     $mux                         1188
 
 === pairing ===
 
@@ -164,11 +153,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $mux                            2
-     $reduce_bool                    1
-     $sdffe                          1
-     tiny                            1
+     $dffe                        1188
+     $mux                         2376
+     $reduce_bool                    2
+     $sdffe                       1188
 
 === ram ===
 
@@ -180,11 +168,8 @@
    Number of memory bits:        76032
    Number of processes:              0
    Number of cells:                 78
-     $dff                            2
-     $meminit_v2                    64
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            8
+     $dff                         2376
+     $mux                         4766
 
 === rom ===
 
@@ -196,11 +181,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                458
-     $dff                            1
-     $eq                           423
-     $logic_not                      1
-     $pmux                           1
-     $reduce_or                     32
+     $dff                           29
+     $eq                          3807
+     $logic_not                      9
+     $pmux                          29
+     $reduce_or                     73
 
 === select ===
 
@@ -213,7 +198,7 @@
    Number of processes:              0
    Number of cells:                  2
      $and                            1
-     $mux                            1
+     $mux                            6
 
 === tiny ===
 
@@ -225,13 +210,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     FSM                             1
-     PE                              1
-     const_                          2
-     muxer                           2
-     ram                             1
-     rom                             1
-     select                          1
 
 === v0 ===
 
@@ -269,53 +247,36 @@
 === design hierarchy ===
 
    pairing                           1
-     tiny                            1
-       FSM                           1
-       PE                            1
-         PPG                         3
-           f3_mult                 593
-         f3m_add                     3
-           f3_add                  593
-         mod_p                       6
-           f3_mult                   2
-           f3_sub                    2
-             f3_add                  1
-         v0                          1
-         v1                          1
-         v2                          1
-       const_                        2
-       muxer                         2
-       ram                           1
-       rom                           1
-       select                        1
+     tiny                            0
+       FSM                           0
+       PE                            0
+         PPG                         0
+           f3_mult                   0
+         f3m_add                     0
+           f3_add                    0
+         mod_p                       0
+           f3_mult                   0
+           f3_sub                    0
+             f3_add                  0
+         v0                          0
+         v1                          0
+         v2                          0
+       const_                        0
+       muxer                         0
+       ram                           0
+       rom                           0
+       select                        0
 
-   Number of wires:              90310
-   Number of wire bits:         230192
-   Number of public wires:       28884
-   Number of public wire bits:  150817
-   Number of memories:               1
-   Number of memory bits:        76032
+   Number of wires:                 16
+   Number of wire bits:           5956
+   Number of public wires:          13
+   Number of public wire bits:    3579
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:              68690
-     $add                            1
-     $and                        42985
-     $dff                            8
-     $dffe                           1
-     $eq                           445
-     $logic_and                      4
-     $logic_not                      4
-     $meminit_v2                    64
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                           33
-     $ne                             1
-     $not                        14329
-     $or                         10746
-     $pmux                          11
-     $reduce_and                     1
-     $reduce_bool                    4
-     $reduce_or                     37
-     $sdff                           2
-     $sdffe                          9
-     $sub                            1
+   Number of cells:                  6
+     $dffe                        1188
+     $mux                         2376
+     $reduce_bool                    2
+     $sdffe                       1188
 

@@ -192,7 +192,6 @@ Optimizing module ripple_adder_4bit.
    Number of processes:              0
    Number of cells:                  3
      $or                             1
-     half_adder                      2
 
 === half_adder ===
 
@@ -217,26 +216,22 @@ Optimizing module ripple_adder_4bit.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     full_adder                      4
 
 === design hierarchy ===
 
    ripple_adder_4bit                 1
-     full_adder                      4
-       half_adder                    2
+     full_adder                      0
+       half_adder                    0
 
-   Number of wires:                 72
-   Number of wire bits:             81
-   Number of public wires:          72
-   Number of public wire bits:      81
+   Number of wires:                  8
+   Number of wire bits:             17
+   Number of public wires:           8
+   Number of public wire bits:      17
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 20
-     $and                            8
-     $or                             4
-     $xor                            8
+   Number of cells:                  4
 
-End of script. Logfile hash: 2a0345b715, CPU: user 0.02s system 0.00s, MEM: 10.97 MB peak
+End of script. Logfile hash: abdea266c8, CPU: user 0.02s system 0.00s, MEM: 11.25 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 59% 4x opt_expr (0 sec), 19% 3x opt_merge (0 sec), ...
+Time spent: 16% 4x opt_expr (0 sec), 16% 3x opt_merge (0 sec), ...

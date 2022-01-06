@@ -24,25 +24,25 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v' to AST representation.
 Generating RTLIL representation for module `\Reflector'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1922.1-1954.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1922.1-1954.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1956.1-1983.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1956.1-1983.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2007.1-2036.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2007.1-2036.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2049.1-2112.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2049.1-2112.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2197.1-2215.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2197.1-2215.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233.1-2292.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233.1-2292.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\sub_64b'.
@@ -74,19 +74,19 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135 in module InternalsBlock_Reflector.
-Removed 1 dead cases from process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113 in module Reflector.
-Marked 7 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113 in module Reflector.
-Removed 2 dead cases from process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2197$112 in module Reflector.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2197$112 in module Reflector.
-Removed 1 dead cases from process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2049$85 in module Reflector.
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2049$85 in module Reflector.
-Removed 1 dead cases from process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2007$84 in module Reflector.
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2007$84 in module Reflector.
-Removed 1 dead cases from process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1956$82 in module Reflector.
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1956$82 in module Reflector.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1922$81 in module Reflector.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1885$80 in module Reflector.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135 in module InternalsBlock_Reflector.
+Removed 1 dead cases from process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113 in module Reflector.
+Marked 7 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113 in module Reflector.
+Removed 2 dead cases from process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2197$112 in module Reflector.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2197$112 in module Reflector.
+Removed 1 dead cases from process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2049$85 in module Reflector.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2049$85 in module Reflector.
+Removed 1 dead cases from process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2007$84 in module Reflector.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2007$84 in module Reflector.
+Removed 1 dead cases from process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1956$82 in module Reflector.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1956$82 in module Reflector.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1922$81 in module Reflector.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1885$80 in module Reflector.
 Removed a total of 6 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -98,7 +98,7 @@ Promoted 14 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\InternalsBlock_Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
+Creating decoders for process `\InternalsBlock_Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
      1/7: $0\o_uy_transmitted[31:0]
      2/7: $0\o_ux_transmitted[31:0]
      3/7: $0\o_uz2_2[63:0]
@@ -106,7 +106,7 @@ Creating decoders for process `\InternalsBlock_Reflector.$proc$/home/zhigang/DAT
      5/7: $0\o_oneMinusUz_2[63:0]
      6/7: $0\o_uz2[31:0]
      7/7: $0\o_uz_2[63:0]
-Creating decoders for process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113'.
+Creating decoders for process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113'.
      1/27: $7\new_dead[0:0]
      2/27: $7\new_layer[2:0]
      3/27: $6\new_dead[0:0]
@@ -134,28 +134,28 @@ Creating decoders for process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/v
     25/27: $1\new_uz[31:0]
     26/27: $1\new_uy[31:0]
     27/27: $1\new_ux[31:0]
-Creating decoders for process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2197$112'.
+Creating decoders for process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2197$112'.
      1/2: $1\new_uy_transmitted[31:0]
      2/2: $1\new_ux_transmitted[31:0]
-Creating decoders for process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2049$85'.
+Creating decoders for process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2049$85'.
      1/6: $3\op2_36_2[31:0]
      2/6: $3\op1_36_2[31:0]
      3/6: $2\op2_36_2[31:0]
      4/6: $2\op1_36_2[31:0]
      5/6: $1\op2_36_2[31:0]
      6/6: $1\op1_36_2[31:0]
-Creating decoders for process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2007$84'.
+Creating decoders for process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2007$84'.
      1/3: $3\op1_4_1[31:0]
      2/3: $2\op1_4_1[31:0]
      3/3: $1\op1_4_1[31:0]
-Creating decoders for process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1956$82'.
+Creating decoders for process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1956$82'.
      1/3: $3\fresIndex[9:0]
      2/3: $2\fresIndex[9:0]
      3/3: $1\fresIndex[9:0]
-Creating decoders for process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1922$81'.
+Creating decoders for process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1922$81'.
      1/2: $1\upCritAngle[31:0]
      2/2: $1\downCritAngle[31:0]
-Creating decoders for process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1885$80'.
+Creating decoders for process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1885$80'.
      1/5: $0\dead_reflector[0:0]
      2/5: $0\layer_reflector[2:0]
      3/5: $0\uz_reflector[31:0]
@@ -163,66 +163,66 @@ Creating decoders for process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/v
      5/5: $0\ux_reflector[31:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\Reflector.\new_ux' from process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113'.
-No latch inferred for signal `\Reflector.\new_uy' from process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113'.
-No latch inferred for signal `\Reflector.\new_uz' from process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113'.
-No latch inferred for signal `\Reflector.\new_layer' from process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113'.
-No latch inferred for signal `\Reflector.\new_dead' from process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113'.
-No latch inferred for signal `\Reflector.\new_ux_transmitted' from process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2197$112'.
-No latch inferred for signal `\Reflector.\new_uy_transmitted' from process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2197$112'.
-No latch inferred for signal `\Reflector.\op1_36_2' from process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2049$85'.
-No latch inferred for signal `\Reflector.\op2_36_2' from process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2049$85'.
-No latch inferred for signal `\Reflector.\op1_4_1' from process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2007$84'.
-No latch inferred for signal `\Reflector.\fresIndex' from process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1956$82'.
-No latch inferred for signal `\Reflector.\negUz' from process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1956$82'.
-No latch inferred for signal `\Reflector.\downCritAngle' from process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1922$81'.
-No latch inferred for signal `\Reflector.\upCritAngle' from process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1922$81'.
+No latch inferred for signal `\Reflector.\new_ux' from process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113'.
+No latch inferred for signal `\Reflector.\new_uy' from process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113'.
+No latch inferred for signal `\Reflector.\new_uz' from process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113'.
+No latch inferred for signal `\Reflector.\new_layer' from process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113'.
+No latch inferred for signal `\Reflector.\new_dead' from process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113'.
+No latch inferred for signal `\Reflector.\new_ux_transmitted' from process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2197$112'.
+No latch inferred for signal `\Reflector.\new_uy_transmitted' from process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2197$112'.
+No latch inferred for signal `\Reflector.\op1_36_2' from process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2049$85'.
+No latch inferred for signal `\Reflector.\op2_36_2' from process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2049$85'.
+No latch inferred for signal `\Reflector.\op1_4_1' from process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2007$84'.
+No latch inferred for signal `\Reflector.\fresIndex' from process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1956$82'.
+No latch inferred for signal `\Reflector.\negUz' from process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1956$82'.
+No latch inferred for signal `\Reflector.\downCritAngle' from process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1922$81'.
+No latch inferred for signal `\Reflector.\upCritAngle' from process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1922$81'.
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\InternalsBlock_Reflector.\o_uz_2' using process `\InternalsBlock_Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
+Creating register for signal `\InternalsBlock_Reflector.\o_uz_2' using process `\InternalsBlock_Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
   created $dff cell `$procdff$563' with positive edge clock.
-Creating register for signal `\InternalsBlock_Reflector.\o_uz2' using process `\InternalsBlock_Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
+Creating register for signal `\InternalsBlock_Reflector.\o_uz2' using process `\InternalsBlock_Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
   created $dff cell `$procdff$564' with positive edge clock.
-Creating register for signal `\InternalsBlock_Reflector.\o_oneMinusUz_2' using process `\InternalsBlock_Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
+Creating register for signal `\InternalsBlock_Reflector.\o_oneMinusUz_2' using process `\InternalsBlock_Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
   created $dff cell `$procdff$565' with positive edge clock.
-Creating register for signal `\InternalsBlock_Reflector.\o_sa2_2' using process `\InternalsBlock_Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
+Creating register for signal `\InternalsBlock_Reflector.\o_sa2_2' using process `\InternalsBlock_Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
   created $dff cell `$procdff$566' with positive edge clock.
-Creating register for signal `\InternalsBlock_Reflector.\o_uz2_2' using process `\InternalsBlock_Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
+Creating register for signal `\InternalsBlock_Reflector.\o_uz2_2' using process `\InternalsBlock_Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
   created $dff cell `$procdff$567' with positive edge clock.
-Creating register for signal `\InternalsBlock_Reflector.\o_ux_transmitted' using process `\InternalsBlock_Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
+Creating register for signal `\InternalsBlock_Reflector.\o_ux_transmitted' using process `\InternalsBlock_Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
   created $dff cell `$procdff$568' with positive edge clock.
-Creating register for signal `\InternalsBlock_Reflector.\o_uy_transmitted' using process `\InternalsBlock_Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
+Creating register for signal `\InternalsBlock_Reflector.\o_uy_transmitted' using process `\InternalsBlock_Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
   created $dff cell `$procdff$569' with positive edge clock.
-Creating register for signal `\Reflector.\ux_reflector' using process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1885$80'.
+Creating register for signal `\Reflector.\ux_reflector' using process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1885$80'.
   created $dff cell `$procdff$570' with positive edge clock.
-Creating register for signal `\Reflector.\uy_reflector' using process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1885$80'.
+Creating register for signal `\Reflector.\uy_reflector' using process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1885$80'.
   created $dff cell `$procdff$571' with positive edge clock.
-Creating register for signal `\Reflector.\uz_reflector' using process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1885$80'.
+Creating register for signal `\Reflector.\uz_reflector' using process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1885$80'.
   created $dff cell `$procdff$572' with positive edge clock.
-Creating register for signal `\Reflector.\layer_reflector' using process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1885$80'.
+Creating register for signal `\Reflector.\layer_reflector' using process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1885$80'.
   created $dff cell `$procdff$573' with positive edge clock.
-Creating register for signal `\Reflector.\dead_reflector' using process `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1885$80'.
+Creating register for signal `\Reflector.\dead_reflector' using process `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1885$80'.
   created $dff cell `$procdff$574' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 2 empty switches in `\InternalsBlock_Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
-Removing empty process `InternalsBlock_Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
-Found and cleaned up 7 empty switches in `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113'.
-Removing empty process `Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113'.
-Found and cleaned up 2 empty switches in `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2197$112'.
-Removing empty process `Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2197$112'.
-Found and cleaned up 3 empty switches in `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2049$85'.
-Removing empty process `Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2049$85'.
-Found and cleaned up 3 empty switches in `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2007$84'.
-Removing empty process `Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2007$84'.
-Found and cleaned up 3 empty switches in `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1956$82'.
-Removing empty process `Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1956$82'.
-Found and cleaned up 1 empty switch in `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1922$81'.
-Removing empty process `Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1922$81'.
-Found and cleaned up 2 empty switches in `\Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1885$80'.
-Removing empty process `Reflector.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1885$80'.
+Found and cleaned up 2 empty switches in `\InternalsBlock_Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
+Removing empty process `InternalsBlock_Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2372$135'.
+Found and cleaned up 7 empty switches in `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113'.
+Removing empty process `Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2233$113'.
+Found and cleaned up 2 empty switches in `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2197$112'.
+Removing empty process `Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2197$112'.
+Found and cleaned up 3 empty switches in `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2049$85'.
+Removing empty process `Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2049$85'.
+Found and cleaned up 3 empty switches in `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2007$84'.
+Removing empty process `Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:2007$84'.
+Found and cleaned up 3 empty switches in `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1956$82'.
+Removing empty process `Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1956$82'.
+Found and cleaned up 1 empty switch in `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1922$81'.
+Removing empty process `Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1922$81'.
+Found and cleaned up 2 empty switches in `\Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1885$80'.
+Removing empty process `Reflector.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Reflector.v:1885$80'.
 Cleaned up 23 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -438,7 +438,7 @@ Optimizing module sub_64b.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $sdffe                          7
+     $sdffe                        352
 
 === Reflector ===
 
@@ -450,22 +450,20 @@ Optimizing module sub_64b.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                227
-     $add                            1
+     $add                            3
      $and                           68
-     $eq                            19
-     $le                             4
+     $eq                            51
+     $le                           128
      $logic_and                      4
-     $logic_not                      2
-     $mux                           25
-     $neg                            3
+     $logic_not                      4
+     $mux                          472
+     $neg                           96
      $not                           11
-     $or                            27
-     $pmux                          16
-     $reduce_or                      2
-     $sdffe                          5
-     $sub                            1
-     InternalsBlock_Reflector       37
-     sub_64b                         2
+     $or                           972
+     $pmux                         386
+     $reduce_or                      4
+     $sdffe                        100
+     $sub                            3
 
 === sub_64b ===
 
@@ -477,37 +475,37 @@ Optimizing module sub_64b.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sub                            1
+     $sub                           64
 
 === design hierarchy ===
 
    Reflector                         1
-     InternalsBlock_Reflector       37
-     sub_64b                         2
+     InternalsBlock_Reflector        0
+     sub_64b                         0
 
-   Number of wires:               1153
-   Number of wire bits:          44474
-   Number of public wires:         995
-   Number of public wire bits:   42904
+   Number of wires:                518
+   Number of wire bits:          17931
+   Number of public wires:         360
+   Number of public wire bits:   16361
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                449
-     $add                            1
+   Number of cells:                227
+     $add                            3
      $and                           68
-     $eq                            19
-     $le                             4
+     $eq                            51
+     $le                           128
      $logic_and                      4
-     $logic_not                      2
-     $mux                           25
-     $neg                            3
+     $logic_not                      4
+     $mux                          472
+     $neg                           96
      $not                           11
-     $or                            27
-     $pmux                          16
-     $reduce_or                      2
-     $sdffe                        264
+     $or                           972
+     $pmux                         386
+     $reduce_or                      4
+     $sdffe                        100
      $sub                            3
 
-End of script. Logfile hash: 65b82df8e5, CPU: user 0.45s system 0.01s, MEM: 29.04 MB peak
+End of script. Logfile hash: 66cfa3f6e8, CPU: user 0.46s system 0.03s, MEM: 28.46 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
 Time spent: 34% 2x opt_clean (0 sec), 19% 2x read_verilog (0 sec), ...

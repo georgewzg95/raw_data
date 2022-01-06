@@ -11,7 +11,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 24
-     $sdffe                         24
+     $sdffe                        832
 
 === Scatterer ===
 
@@ -24,21 +24,17 @@
    Number of processes:              0
    Number of cells:                271
      $and                           64
-     $eq                            15
-     $ge                             1
-     $logic_not                      2
+     $eq                           300
+     $ge                            32
+     $logic_not                      4
      $logic_or                       8
-     $mux                            9
-     $neg                            1
+     $mux                          257
+     $neg                           32
      $not                           36
-     $or                            86
-     $pmux                           2
-     $reduce_or                      2
-     $sdffe                          3
-     InternalsBlock                 36
-     add_32b                         3
-     sub_32b                         2
-     sub_64b                         1
+     $or                           275
+     $pmux                          64
+     $reduce_or                      4
+     $sdffe                         96
 
 === add_32b ===
 
@@ -50,7 +46,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $add                            1
+     $add                           33
 
 === sub_32b ===
 
@@ -62,7 +58,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sub                            1
+     $sub                           33
 
 === sub_64b ===
 
@@ -74,36 +70,34 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sub                            1
+     $sub                           64
 
 === design hierarchy ===
 
    Scatterer                         1
-     InternalsBlock                 36
-     add_32b                         3
-     sub_32b                         2
-     sub_64b                         1
+     InternalsBlock                  0
+     add_32b                         0
+     sub_32b                         0
+     sub_64b                         0
 
-   Number of wires:               3078
-   Number of wire bits:          95602
-   Number of public wires:        2874
-   Number of public wire bits:   95241
+   Number of wires:               1214
+   Number of wire bits:          34748
+   Number of public wires:        1010
+   Number of public wire bits:   34387
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               1099
-     $add                            3
+   Number of cells:                271
      $and                           64
-     $eq                            15
-     $ge                             1
-     $logic_not                      2
+     $eq                           300
+     $ge                            32
+     $logic_not                      4
      $logic_or                       8
-     $mux                            9
-     $neg                            1
+     $mux                          257
+     $neg                           32
      $not                           36
-     $or                            86
-     $pmux                           2
-     $reduce_or                      2
-     $sdffe                        867
-     $sub                            3
+     $or                           275
+     $pmux                          64
+     $reduce_or                      4
+     $sdffe                         96
 

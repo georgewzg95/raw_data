@@ -304,19 +304,19 @@ Optimizing module control_unit.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                113
-     $add                            1
-     $adff                           1
-     $adffe                          1
-     $eq                            22
+     $add                            4
+     $adff                           4
+     $adffe                          4
+     $eq                            78
      $logic_and                      5
-     $logic_not                      4
+     $logic_not                     11
      $logic_or                       8
-     $mux                           49
+     $mux                          147
      $or                             1
-     $pmux                           8
-     $reduce_bool                    1
-     $reduce_or                     12
+     $pmux                          24
+     $reduce_bool                    2
+     $reduce_or                     40
 
-End of script. Logfile hash: e0e198284a, CPU: user 0.09s system 0.00s, MEM: 13.24 MB peak
+End of script. Logfile hash: 0cab8c1dc3, CPU: user 0.10s system 0.00s, MEM: 12.90 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 30% 5x opt_expr (0 sec), 17% 2x read_verilog (0 sec), ...
+Time spent: 29% 5x opt_expr (0 sec), 16% 2x read_verilog (0 sec), ...

@@ -11,7 +11,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     f3m_add                         2
 
 === f32m_add3 ===
 
@@ -23,7 +22,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     f32m_add                        2
 
 === f32m_add4 ===
 
@@ -35,7 +33,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     f32m_add                        3
 
 === f32m_mult ===
 
@@ -48,14 +45,10 @@
    Number of processes:              0
    Number of cells:                 12
      $dff                            1
-     $dffe                           1
+     $dffe                         388
      $not                            1
-     $reduce_and                     1
+     $reduce_and                     2
      $sdffe                          1
-     f3m_add                         3
-     f3m_mult3                       1
-     f3m_sub                         2
-     func6                           1
 
 === f32m_mux6 ===
 
@@ -67,7 +60,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     f3m_mux6                        2
 
 === f32m_neg ===
 
@@ -79,7 +71,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     f3m_neg                         2
 
 === f36m_mult ===
 
@@ -91,21 +82,14 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 37
-     $dff                            4
-     $dffe                           7
+     $dff                          778
+     $dffe                        3492
      $mux                            1
      $not                            1
      $or                             1
-     $reduce_and                     1
+     $reduce_and                     2
      $sdff                           1
-     $sdffe                          2
-     f32m_add                        8
-     f32m_add3                       3
-     f32m_add4                       1
-     f32m_mult                       1
-     f32m_mux6                       2
-     f32m_neg                        3
-     func6                           1
+     $sdffe                          8
 
 === f3_add ===
 
@@ -145,7 +129,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     f3_add                          1
 
 === f3m_add ===
 
@@ -157,7 +140,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 97
-     f3_add                         97
 
 === f3m_mult ===
 
@@ -169,14 +151,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 12
-     $dff                            2
-     $dffe                           1
-     $mux                            2
-     $sdff                           3
+     $dff                          382
+     $dffe                         194
+     $mux                          388
+     $sdff                         234
      $sdffe                          1
-     f3m_add                         1
-     func7                           1
-     func8                           1
 
 === f3m_mult3 ===
 
@@ -189,14 +168,11 @@
    Number of processes:              0
    Number of cells:                 14
      $dff                            2
-     $dffe                           3
+     $dffe                         582
      $mux                            1
      $or                             1
      $sdff                           1
-     $sdffe                          2
-     f3m_mult                        1
-     f3m_mux3                        2
-     func6                           1
+     $sdffe                          5
 
 === f3m_mux3 ===
 
@@ -245,7 +221,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 97
-     f3_sub                         97
 
 === func6 ===
 
@@ -257,8 +232,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $eq                             1
-     $mux                            1
+     $eq                             2
+     $mux                           32
      $sdff                           2
 
 === func7 ===
@@ -271,7 +246,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     f3_add                          3
 
 === func8 ===
 
@@ -283,63 +257,59 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                488
-     f3_add                        197
-     f3_mult                       291
 
 === design hierarchy ===
 
    f36m_mult                         1
-     f32m_add                        8
-       f3m_add                       2
-         f3_add                     97
-     f32m_add3                       3
-       f32m_add                      2
-         f3m_add                     2
-           f3_add                   97
-     f32m_add4                       1
-       f32m_add                      3
-         f3m_add                     2
-           f3_add                   97
-     f32m_mult                       1
-       f3m_add                       3
-         f3_add                     97
-       f3m_mult3                     1
-         f3m_mult                    1
-           f3m_add                   1
-             f3_add                 97
-           func7                     1
-             f3_add                  3
-           func8                     1
-             f3_add                197
-             f3_mult               291
-         f3m_mux3                    2
-         func6                       1
-       f3m_sub                       2
-         f3_sub                     97
-           f3_add                    1
-       func6                         1
-     f32m_mux6                       2
-       f3m_mux6                      2
-     f32m_neg                        3
-       f3m_neg                       2
-     func6                           1
+     f32m_add                        0
+       f3m_add                       0
+         f3_add                      0
+     f32m_add3                       0
+       f32m_add                      0
+         f3m_add                     0
+           f3_add                    0
+     f32m_add4                       0
+       f32m_add                      0
+         f3m_add                     0
+           f3_add                    0
+     f32m_mult                       0
+       f3m_add                       0
+         f3_add                      0
+       f3m_mult3                     0
+         f3m_mult                    0
+           f3m_add                   0
+             f3_add                  0
+           func7                     0
+             f3_add                  0
+           func8                     0
+             f3_add                  0
+             f3_mult                 0
+         f3m_mux3                    0
+         func6                       0
+       f3m_sub                       0
+         f3_sub                      0
+           f3_add                    0
+       func6                         0
+     f32m_mux6                       0
+       f3m_mux6                      0
+     f32m_neg                        0
+       f3m_neg                       0
+     func6                           0
 
-   Number of wires:             135272
-   Number of wire bits:         243541
-   Number of public wires:       40270
-   Number of public wire bits:  148060
+   Number of wires:                 57
+   Number of wire bits:          16710
+   Number of public wires:          53
+   Number of public wire bits:   16706
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:             104946
-     $and                        65850
-     $dff                            9
-     $dffe                          12
-     $eq                             3
-     $mux                            7
-     $not                        17486
-     $or                         21560
+   Number of cells:                 37
+     $dff                          778
+     $dffe                        3492
+     $mux                            1
+     $not                            1
+     $or                             1
      $reduce_and                     2
-     $sdff                          11
-     $sdffe                          6
+     $sdff                           1
+     $sdffe                          8
 

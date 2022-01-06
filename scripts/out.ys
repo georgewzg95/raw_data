@@ -1,0 +1,5 @@
+read_verilog -sv /home/zhigang/raw_data/raw_designs/opencores/arithmetic/ecg_submodules/func7.v;
+hierarchy -auto-top;
+proc; 
+opt;
+tee -o /home/zhigang/raw_data/raw_designs/opencores/arithmetic/ecg_submodules/func7.v.out stat -width;

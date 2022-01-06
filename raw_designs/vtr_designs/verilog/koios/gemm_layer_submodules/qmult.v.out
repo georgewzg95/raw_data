@@ -11,11 +11,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $sdff                           5
-     FPMult_ExecuteModule            1
-     FPMult_NormalizeModule          1
-     FPMult_PrepModule               1
-     FPMult_RoundModule              1
+     $sdff                         175
 
 === FPMult_ExecuteModule ===
 
@@ -27,11 +23,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $add                            2
+     $add                           12
      $and                            1
-     $mux                            1
+     $mux                           10
      $or                             1
-     $reduce_or                      1
+     $reduce_or                     10
      $xor                            1
 
 === FPMult_NormalizeModule ===
@@ -44,7 +40,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $sub                            3
+     $sub                           70
 
 === FPMult_PrepModule ===
 
@@ -58,10 +54,10 @@
    Number of cells:                 15
      $and                            4
      $logic_not                      2
-     $mul                            1
+     $mul                           22
      $or                             3
-     $reduce_and                     2
-     $reduce_or                      3
+     $reduce_and                    10
+     $reduce_or                     20
 
 === FPMult_RoundModule ===
 
@@ -73,7 +69,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $mux                            3
+     $mux                           28
 
 === fp16_to_fp32 ===
 
@@ -85,16 +81,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 70
-     $add                            2
-     $and                           33
-     $dlatch                         1
-     $eq                             1
-     $logic_not                      2
-     $mux                           14
+     $add                           12
+     $and                           55
+     $dlatch                         4
+     $eq                             5
+     $logic_not                     20
+     $mux                          110
      $not                           12
-     $reduce_or                      2
-     $shl                            1
-     $sub                            2
+     $reduce_or                      4
+     $shl                           23
+     $sub                           40
 
 === qmult ===
 
@@ -106,40 +102,23 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     FPMult_16                       1
-     fp16_to_fp32                    1
 
 === design hierarchy ===
 
    qmult                             1
-     FPMult_16                       1
-       FPMult_ExecuteModule          1
-       FPMult_NormalizeModule        1
-       FPMult_PrepModule             1
-       FPMult_RoundModule            1
-     fp16_to_fp32                    1
+     FPMult_16                       0
+       FPMult_ExecuteModule          0
+       FPMult_NormalizeModule        0
+       FPMult_PrepModule             0
+       FPMult_RoundModule            0
+     fp16_to_fp32                    0
 
-   Number of wires:                166
-   Number of wire bits:           1171
-   Number of public wires:          84
-   Number of public wire bits:     835
+   Number of wires:                  7
+   Number of wire bits:             87
+   Number of public wires:           7
+   Number of public wire bits:      87
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                103
-     $add                            4
-     $and                           38
-     $dlatch                         1
-     $eq                             1
-     $logic_not                      4
-     $mul                            1
-     $mux                           18
-     $not                           12
-     $or                             4
-     $reduce_and                     2
-     $reduce_or                      6
-     $sdff                           5
-     $shl                            1
-     $sub                            5
-     $xor                            1
+   Number of cells:                  2
 

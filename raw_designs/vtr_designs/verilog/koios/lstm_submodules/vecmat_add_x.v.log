@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v' to AST representation.
 Generating RTLIL representation for module `\vecmat_add_x'.
 Generating RTLIL representation for module `\qadd2'.
 Successfully finished Verilog frontend.
@@ -63,7 +63,7 @@ Promoted 0 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\vecmat_add_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
+Creating decoders for process `\vecmat_add_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
      1/14: $0\ff73[15:0]
      2/14: $0\ff71[15:0]
      3/14: $0\ff69[15:0]
@@ -82,40 +82,40 @@ Creating decoders for process `\vecmat_add_x.$proc$/home/zhigang/DATA/raw_design
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\vecmat_add_x.\data_out' using process `\vecmat_add_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
+Creating register for signal `\vecmat_add_x.\data_out' using process `\vecmat_add_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
   created $dff cell `$procdff$32' with positive edge clock.
-Creating register for signal `\vecmat_add_x.\ff49' using process `\vecmat_add_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
+Creating register for signal `\vecmat_add_x.\ff49' using process `\vecmat_add_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
   created $dff cell `$procdff$33' with positive edge clock.
-Creating register for signal `\vecmat_add_x.\ff51' using process `\vecmat_add_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
+Creating register for signal `\vecmat_add_x.\ff51' using process `\vecmat_add_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
   created $dff cell `$procdff$34' with positive edge clock.
-Creating register for signal `\vecmat_add_x.\ff53' using process `\vecmat_add_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
+Creating register for signal `\vecmat_add_x.\ff53' using process `\vecmat_add_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
   created $dff cell `$procdff$35' with positive edge clock.
-Creating register for signal `\vecmat_add_x.\ff55' using process `\vecmat_add_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
+Creating register for signal `\vecmat_add_x.\ff55' using process `\vecmat_add_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
   created $dff cell `$procdff$36' with positive edge clock.
-Creating register for signal `\vecmat_add_x.\ff57' using process `\vecmat_add_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
+Creating register for signal `\vecmat_add_x.\ff57' using process `\vecmat_add_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
   created $dff cell `$procdff$37' with positive edge clock.
-Creating register for signal `\vecmat_add_x.\ff59' using process `\vecmat_add_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
+Creating register for signal `\vecmat_add_x.\ff59' using process `\vecmat_add_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
   created $dff cell `$procdff$38' with positive edge clock.
-Creating register for signal `\vecmat_add_x.\ff61' using process `\vecmat_add_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
+Creating register for signal `\vecmat_add_x.\ff61' using process `\vecmat_add_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
   created $dff cell `$procdff$39' with positive edge clock.
-Creating register for signal `\vecmat_add_x.\ff63' using process `\vecmat_add_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
+Creating register for signal `\vecmat_add_x.\ff63' using process `\vecmat_add_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
   created $dff cell `$procdff$40' with positive edge clock.
-Creating register for signal `\vecmat_add_x.\ff65' using process `\vecmat_add_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
+Creating register for signal `\vecmat_add_x.\ff65' using process `\vecmat_add_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
   created $dff cell `$procdff$41' with positive edge clock.
-Creating register for signal `\vecmat_add_x.\ff67' using process `\vecmat_add_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
+Creating register for signal `\vecmat_add_x.\ff67' using process `\vecmat_add_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
   created $dff cell `$procdff$42' with positive edge clock.
-Creating register for signal `\vecmat_add_x.\ff69' using process `\vecmat_add_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
+Creating register for signal `\vecmat_add_x.\ff69' using process `\vecmat_add_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
   created $dff cell `$procdff$43' with positive edge clock.
-Creating register for signal `\vecmat_add_x.\ff71' using process `\vecmat_add_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
+Creating register for signal `\vecmat_add_x.\ff71' using process `\vecmat_add_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
   created $dff cell `$procdff$44' with positive edge clock.
-Creating register for signal `\vecmat_add_x.\ff73' using process `\vecmat_add_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
+Creating register for signal `\vecmat_add_x.\ff73' using process `\vecmat_add_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
   created $dff cell `$procdff$45' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\vecmat_add_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
-Removing empty process `vecmat_add_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
+Found and cleaned up 1 empty switch in `\vecmat_add_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
+Removing empty process `vecmat_add_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/lstm_submodules/vecmat_add_x.v:23$1'.
 Cleaned up 1 empty switch.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -226,7 +226,7 @@ Optimizing module vecmat_add_x.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $add                            1
+     $add                           16
 
 === vecmat_add_x ===
 
@@ -238,25 +238,23 @@ Optimizing module vecmat_add_x.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                113
-     $dffe                          14
-     qadd2                          99
+     $dffe                         224
 
 === design hierarchy ===
 
    vecmat_add_x                      1
-     qadd2                          99
+     qadd2                           0
 
-   Number of wires:                413
-   Number of wire bits:           8162
-   Number of public wires:         413
-   Number of public wire bits:    8162
+   Number of wires:                116
+   Number of wire bits:           3410
+   Number of public wires:         116
+   Number of public wire bits:    3410
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                113
-     $add                           99
-     $dffe                          14
+     $dffe                         224
 
-End of script. Logfile hash: 3eccc3686e, CPU: user 0.11s system 0.00s, MEM: 14.43 MB peak
+End of script. Logfile hash: 27666ddc24, CPU: user 0.12s system 0.00s, MEM: 14.68 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 25% 2x read_verilog (0 sec), 25% 2x opt_clean (0 sec), ...
+Time spent: 29% 2x opt_clean (0 sec), 19% 2x read_verilog (0 sec), ...

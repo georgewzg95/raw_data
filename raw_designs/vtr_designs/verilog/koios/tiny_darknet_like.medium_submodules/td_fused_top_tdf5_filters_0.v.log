@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v' to AST representation.
 Generating RTLIL representation for module `\td_fused_top_tdf5_filters_0'.
 Generating RTLIL representation for module `\td_fused_top_tdf5_filters_0_ram'.
 Successfully finished Verilog frontend.
@@ -52,7 +52,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:81$4 in module td_fused_top_tdf5_filters_0_ram.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:81$4 in module td_fused_top_tdf5_filters_0_ram.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -64,35 +64,35 @@ Promoted 3 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:81$4'.
-     1/6: $2$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:85$1_EN[31:0]$13
-     2/6: $2$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:85$1_DATA[31:0]$12
-     3/6: $2$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:85$1_ADDR[11:0]$11
-     4/6: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:85$1_EN[31:0]$10
-     5/6: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:85$1_DATA[31:0]$9
-     6/6: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:85$1_ADDR[11:0]$8
-Creating decoders for process `\td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:73$2'.
+Creating decoders for process `\td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:81$4'.
+     1/6: $2$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:85$1_EN[31:0]$13
+     2/6: $2$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:85$1_DATA[31:0]$12
+     3/6: $2$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:85$1_ADDR[11:0]$11
+     4/6: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:85$1_EN[31:0]$10
+     5/6: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:85$1_DATA[31:0]$9
+     6/6: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:85$1_ADDR[11:0]$8
+Creating decoders for process `\td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:73$2'.
      1/1: $0\q0[31:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\td_fused_top_tdf5_filters_0_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:85$1_ADDR' using process `\td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:81$4'.
+Creating register for signal `\td_fused_top_tdf5_filters_0_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:85$1_ADDR' using process `\td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:81$4'.
   created $dff cell `$procdff$43' with positive edge clock.
-Creating register for signal `\td_fused_top_tdf5_filters_0_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:85$1_DATA' using process `\td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:81$4'.
+Creating register for signal `\td_fused_top_tdf5_filters_0_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:85$1_DATA' using process `\td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:81$4'.
   created $dff cell `$procdff$44' with positive edge clock.
-Creating register for signal `\td_fused_top_tdf5_filters_0_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:85$1_EN' using process `\td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:81$4'.
+Creating register for signal `\td_fused_top_tdf5_filters_0_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:85$1_EN' using process `\td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:81$4'.
   created $dff cell `$procdff$45' with positive edge clock.
-Creating register for signal `\td_fused_top_tdf5_filters_0_ram.\q0' using process `\td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:73$2'.
+Creating register for signal `\td_fused_top_tdf5_filters_0_ram.\q0' using process `\td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:73$2'.
   created $dff cell `$procdff$46' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 2 empty switches in `\td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:81$4'.
-Removing empty process `td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:81$4'.
-Found and cleaned up 1 empty switch in `\td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:73$2'.
-Removing empty process `td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:73$2'.
+Found and cleaned up 2 empty switches in `\td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:81$4'.
+Removing empty process `td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:81$4'.
+Found and cleaned up 1 empty switch in `\td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:73$2'.
+Removing empty process `td_fused_top_tdf5_filters_0_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:73$2'.
 Cleaned up 3 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -145,7 +145,7 @@ Finding identical cells in module `\td_fused_top_tdf5_filters_0'.
 Removed a total of 0 cells.
 
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $procdff$46 ($dff) from module td_fused_top_tdf5_filters_0_ram (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:76$3_DATA, Q = \q0).
+Adding EN signal on $procdff$46 ($dff) from module td_fused_top_tdf5_filters_0_ram (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/td_fused_top_tdf5_filters_0.v:76$3_DATA, Q = \q0).
 
 4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \td_fused_top_tdf5_filters_0_ram..
@@ -204,7 +204,6 @@ Optimizing module td_fused_top_tdf5_filters_0_ram.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     td_fused_top_tdf5_filters_0_ram      1
 
 === td_fused_top_tdf5_filters_0_ram ===
 
@@ -216,29 +215,23 @@ Optimizing module td_fused_top_tdf5_filters_0_ram.
    Number of memory bits:        73728
    Number of processes:              0
    Number of cells:                  9
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            6
+     $dffe                          32
+     $mux                           90
 
 === design hierarchy ===
 
    td_fused_top_tdf5_filters_0       1
-     td_fused_top_tdf5_filters_0_ram      1
+     td_fused_top_tdf5_filters_0_ram      0
 
-   Number of wires:                 24
-   Number of wire bits:            369
-   Number of public wires:          17
-   Number of public wire bits:     185
-   Number of memories:               1
-   Number of memory bits:        73728
+   Number of wires:                  9
+   Number of wire bits:             93
+   Number of public wires:           9
+   Number of public wire bits:      93
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                  9
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            6
+   Number of cells:                  1
 
-End of script. Logfile hash: 54f3439de2, CPU: user 0.02s system 0.00s, MEM: 11.36 MB peak
+End of script. Logfile hash: feebcff53c, CPU: user 0.04s system 0.00s, MEM: 11.59 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 33% 4x opt_expr (0 sec), 33% 2x opt_muxtree (0 sec), ...
+Time spent: 36% 4x opt_expr (0 sec), 18% 2x opt_clean (0 sec), ...

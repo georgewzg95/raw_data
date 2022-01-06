@@ -11,11 +11,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $sdff                           5
-     FPMult_ExecuteModule            1
-     FPMult_NormalizeModule          1
-     FPMult_PrepModule               1
-     FPMult_RoundModule              1
+     $sdff                         172
 
 === FPMult_ExecuteModule ===
 
@@ -27,11 +23,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $add                            2
+     $add                           18
      $and                            1
-     $mux                            1
+     $mux                            7
      $or                             1
-     $reduce_or                      1
+     $reduce_or                      7
      $xor                            1
 
 === FPMult_NormalizeModule ===
@@ -44,7 +40,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $sub                            3
+     $sub                           73
 
 === FPMult_PrepModule ===
 
@@ -58,10 +54,10 @@
    Number of cells:                 15
      $and                            4
      $logic_not                      2
-     $mul                            1
+     $mul                           16
      $or                             3
-     $reduce_and                     2
-     $reduce_or                      3
+     $reduce_and                    16
+     $reduce_or                     23
 
 === FPMult_RoundModule ===
 
@@ -73,7 +69,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $mux                            3
+     $mux                           25
 
 === dot_product_16_8_30_4 ===
 
@@ -86,8 +82,7 @@
    Number of processes:              0
    Number of cells:                 16
      $dff                            1
-     $sdff                          13
-     dsp_block_16_8                  2
+     $sdff                         145
 
 === dsp_block_16_8 ===
 
@@ -99,9 +94,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            2
-     $mul                            2
-     $sdff                           5
+     $add                          128
+     $mul                          128
+     $sdff                          72
 
 === seq_mul ===
 
@@ -113,8 +108,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $sdff                           3
-     FPMult_16                       1
+     $sdff                          48
 
 === top ===
 
@@ -126,39 +120,25 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     dot_product_16_8_30_4           1
-     seq_mul                         1
 
 === design hierarchy ===
 
    top                               1
-     dot_product_16_8_30_4           1
-       dsp_block_16_8                2
-     seq_mul                         1
-       FPMult_16                     1
-         FPMult_ExecuteModule        1
-         FPMult_NormalizeModule      1
-         FPMult_PrepModule           1
-         FPMult_RoundModule          1
+     dot_product_16_8_30_4           0
+       dsp_block_16_8                0
+     seq_mul                         0
+       FPMult_16                     0
+         FPMult_ExecuteModule        0
+         FPMult_NormalizeModule      0
+         FPMult_PrepModule           0
+         FPMult_RoundModule          0
 
-   Number of wires:                176
-   Number of wire bits:           2502
-   Number of public wires:         154
-   Number of public wire bits:    1906
+   Number of wires:                 14
+   Number of wire bits:            170
+   Number of public wires:          14
+   Number of public wire bits:     170
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 68
-     $add                            6
-     $and                            5
-     $dff                            1
-     $logic_not                      2
-     $mul                            5
-     $mux                            4
-     $or                             4
-     $reduce_and                     2
-     $reduce_or                      4
-     $sdff                          31
-     $sub                            3
-     $xor                            1
+   Number of cells:                  2
 

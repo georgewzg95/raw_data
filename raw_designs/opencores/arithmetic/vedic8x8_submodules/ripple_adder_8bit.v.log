@@ -215,7 +215,6 @@ Optimizing module ripple_adder_8bit.
    Number of processes:              0
    Number of cells:                  3
      $or                             1
-     half_adder                      2
 
 === half_adder ===
 
@@ -240,7 +239,6 @@ Optimizing module ripple_adder_8bit.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     full_adder                      4
 
 === ripple_adder_8bit ===
 
@@ -252,27 +250,23 @@ Optimizing module ripple_adder_8bit.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     ripple_adder_4bit               2
 
 === design hierarchy ===
 
    ripple_adder_8bit                 1
-     ripple_adder_4bit               2
-       full_adder                    4
-         half_adder                  2
+     ripple_adder_4bit               0
+       full_adder                    0
+         half_adder                  0
 
-   Number of wires:                150
-   Number of wire bits:            189
-   Number of public wires:         150
-   Number of public wire bits:     189
+   Number of wires:                  6
+   Number of wire bits:             27
+   Number of public wires:           6
+   Number of public wire bits:      27
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 40
-     $and                           16
-     $or                             8
-     $xor                           16
+   Number of cells:                  2
 
-End of script. Logfile hash: e2c70aa8cb, CPU: user 0.05s system 0.00s, MEM: 11.00 MB peak
+End of script. Logfile hash: 908067e368, CPU: user 0.02s system 0.00s, MEM: 11.20 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 27% 4x opt_expr (0 sec), 27% 3x opt_merge (0 sec), ...
+Time spent: 39% 3x opt_merge (0 sec), 19% 4x opt_expr (0 sec), ...

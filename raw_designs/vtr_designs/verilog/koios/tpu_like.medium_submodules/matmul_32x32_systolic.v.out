@@ -11,16 +11,13 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 76
-     $add                            1
-     $eq                             1
-     $logic_not                      2
+     $add                           32
+     $eq                             8
+     $logic_not                     16
      $logic_or                       1
-     $mux                           65
+     $mux                          513
      $not                            1
-     $sdff                           2
-     output_logic                    1
-     systolic_data_setup             1
-     systolic_pe_matrix              1
+     $sdff                           9
 
 === output_logic ===
 
@@ -32,18 +29,18 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                193
-     $add                            2
-     $dffe                           1
-     $eq                             1
-     $ge                             1
-     $mux                          143
-     $ne                             2
+     $add                           48
+     $dffe                          10
+     $eq                             8
+     $ge                            32
+     $mux                        32952
+     $ne                             5
      $not                            1
      $or                             1
-     $reduce_and                     2
-     $reduce_bool                    3
-     $sdffe                         35
-     $sub                            1
+     $reduce_and                     5
+     $reduce_bool                   11
+     $sdffe                       8226
+     $sub                           16
 
 === processing_element ===
 
@@ -55,8 +52,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $sdff                           2
-     seq_mac                         1
+     $sdff                          16
 
 === qadd ===
 
@@ -68,7 +64,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $add                            1
+     $add                           16
 
 === qmult ===
 
@@ -80,7 +76,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $mul                            1
+     $mul                           16
 
 === seq_mac ===
 
@@ -92,11 +88,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $dff                            4
-     $mux                            3
-     $reduce_or                      1
-     qadd                            1
-     qmult                           1
+     $dff                           48
+     $mux                           24
+     $reduce_or                      8
 
 === systolic_data_setup ===
 
@@ -108,22 +102,22 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:               1416
-     $add                            6
-     $and                          128
-     $dffe                           2
-     $eq                            64
-     $ge                             6
+     $add                          160
+     $and                         1024
+     $dffe                          20
+     $eq                           512
+     $ge                           144
      $logic_and                     66
-     $logic_not                      1
+     $logic_not                      8
      $logic_or                      66
-     $lt                             2
-     $mux                            6
+     $lt                            64
+     $mux                           42
      $not                           67
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                         994
+     $reduce_bool                    4
+     $reduce_or                      4
+     $sdff                        7952
      $sdffe                          2
-     $sub                            2
+     $sub                           32
 
 === systolic_pe_matrix ===
 
@@ -136,46 +130,31 @@
    Number of processes:              0
    Number of cells:               1025
      $or                             1
-     processing_element           1024
 
 === design hierarchy ===
 
    matmul_32x32_systolic             1
-     output_logic                    1
-     systolic_data_setup             1
-     systolic_pe_matrix              1
-       processing_element         1024
-         seq_mac                     1
-           qadd                      1
-           qmult                     1
+     output_logic                    0
+     systolic_data_setup             0
+     systolic_pe_matrix              0
+       processing_element            0
+         seq_mac                     0
+           qadd                      0
+           qmult                     0
 
-   Number of wires:              35730
-   Number of wire bits:         356766
-   Number of public wires:       32143
-   Number of public wire bits:  305274
+   Number of wires:               1256
+   Number of wire bits:          12097
+   Number of public wires:        1249
+   Number of public wire bits:   12059
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:              13971
-     $add                         1033
-     $and                          128
-     $dff                         4096
-     $dffe                           3
-     $eq                            66
-     $ge                             7
-     $logic_and                     66
-     $logic_not                      3
-     $logic_or                      67
-     $lt                             2
-     $mul                         1024
-     $mux                         3286
-     $ne                             2
-     $not                           69
-     $or                             2
-     $reduce_and                     2
-     $reduce_bool                    5
-     $reduce_or                   1026
-     $sdff                        3044
-     $sdffe                         37
-     $sub                            3
+   Number of cells:                 76
+     $add                           32
+     $eq                             8
+     $logic_not                     16
+     $logic_or                       1
+     $mux                          513
+     $not                            1
+     $sdff                           9
 

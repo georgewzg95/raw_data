@@ -11,10 +11,8 @@
    Number of memory bits:          160
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                          64
+     $mux                           76
 
 === or1200_rf ===
 
@@ -27,39 +25,35 @@
    Number of processes:              0
    Number of cells:                 32
      $and                            8
-     $eq                             1
+     $eq                             6
      $logic_not                      3
-     $mux                            8
-     $ne                             2
+     $mux                          205
+     $ne                             4
      $not                            2
      $or                             2
-     $paramod$9b20c7c7990eeca2a248be4fd72c1393416d670c\dual_port_ram      2
-     $reduce_or                      1
-     $sdffe                          3
+     $reduce_or                      5
+     $sdffe                         67
 
 === design hierarchy ===
 
    or1200_rf                         1
-     $paramod$9b20c7c7990eeca2a248be4fd72c1393416d670c\dual_port_ram      2
+     $paramod$9b20c7c7990eeca2a248be4fd72c1393416d670c\dual_port_ram      0
 
-   Number of wires:                 89
-   Number of wire bits:           1293
-   Number of public wires:          53
-   Number of public wire bits:     773
-   Number of memories:               2
-   Number of memory bits:          320
+   Number of wires:                 55
+   Number of wire bits:            607
+   Number of public wires:          35
+   Number of public wire bits:     491
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 54
+   Number of cells:                 32
      $and                            8
-     $dffe                           4
-     $eq                             1
+     $eq                             6
      $logic_not                      3
-     $memrd                          4
-     $memwr_v2                       4
-     $mux                           20
-     $ne                             2
+     $mux                          205
+     $ne                             4
      $not                            2
      $or                             2
-     $reduce_or                      1
-     $sdffe                          3
+     $reduce_or                      5
+     $sdffe                         67
 

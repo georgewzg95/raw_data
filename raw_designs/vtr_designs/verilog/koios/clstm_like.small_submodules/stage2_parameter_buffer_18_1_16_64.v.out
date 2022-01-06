@@ -11,10 +11,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $add                            1
-     $le                             1
-     $mux                            1
-     $sdffe                          1
+     $add                           32
+     $le                            32
+     $mux                           14
+     $sdffe                         14
 
 === single_port_ram ===
 
@@ -26,10 +26,8 @@
    Number of memory bits:         1728
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                         288
+     $mux                          295
 
 === stage2_parameter_buffer_18_1_16_64 ===
 
@@ -41,14 +39,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     counter_63_1                    1
-     weight_buffer_18_16_1_64_Wfc_0      1
-     weight_buffer_18_16_1_64_Wic_0      1
-     weight_buffer_18_16_1_64_Woc_0      1
-     weight_buffer_18_16_1_64_bc_0      1
-     weight_buffer_18_16_1_64_bf_0      1
-     weight_buffer_18_16_1_64_bi_0      1
-     weight_buffer_18_16_1_64_bo_0      1
 
 === weight_buffer_18_16_1_64_Wfc_0 ===
 
@@ -60,8 +50,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dff                            1
-     single_port_ram                 1
+     $dff                            6
 
 === weight_buffer_18_16_1_64_Wic_0 ===
 
@@ -73,8 +62,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dff                            1
-     single_port_ram                 1
+     $dff                            6
 
 === weight_buffer_18_16_1_64_Woc_0 ===
 
@@ -86,8 +74,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dff                            1
-     single_port_ram                 1
+     $dff                            6
 
 === weight_buffer_18_16_1_64_bc_0 ===
 
@@ -99,8 +86,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dff                            1
-     single_port_ram                 1
+     $dff                            6
 
 === weight_buffer_18_16_1_64_bf_0 ===
 
@@ -112,8 +98,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dff                            1
-     single_port_ram                 1
+     $dff                            6
 
 === weight_buffer_18_16_1_64_bi_0 ===
 
@@ -125,8 +110,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dff                            1
-     single_port_ram                 1
+     $dff                            6
 
 === weight_buffer_18_16_1_64_bo_0 ===
 
@@ -138,42 +122,33 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dff                            1
-     single_port_ram                 1
+     $dff                            6
 
 === design hierarchy ===
 
    stage2_parameter_buffer_18_1_16_64      1
-     counter_63_1                    1
-     weight_buffer_18_16_1_64_Wfc_0      1
-       single_port_ram               1
-     weight_buffer_18_16_1_64_Wic_0      1
-       single_port_ram               1
-     weight_buffer_18_16_1_64_Woc_0      1
-       single_port_ram               1
-     weight_buffer_18_16_1_64_bc_0      1
-       single_port_ram               1
-     weight_buffer_18_16_1_64_bf_0      1
-       single_port_ram               1
-     weight_buffer_18_16_1_64_bi_0      1
-       single_port_ram               1
-     weight_buffer_18_16_1_64_bo_0      1
-       single_port_ram               1
+     counter_63_1                    0
+     weight_buffer_18_16_1_64_Wfc_0      0
+       single_port_ram               0
+     weight_buffer_18_16_1_64_Wic_0      0
+       single_port_ram               0
+     weight_buffer_18_16_1_64_Woc_0      0
+       single_port_ram               0
+     weight_buffer_18_16_1_64_bc_0      0
+       single_port_ram               0
+     weight_buffer_18_16_1_64_bf_0      0
+       single_port_ram               0
+     weight_buffer_18_16_1_64_bi_0      0
+       single_port_ram               0
+     weight_buffer_18_16_1_64_bo_0      0
+       single_port_ram               0
 
-   Number of wires:                452
-   Number of wire bits:          18463
-   Number of public wires:         421
-   Number of public wire bits:   12326
-   Number of memories:               7
-   Number of memory bits:        12096
+   Number of wires:                228
+   Number of wire bits:           4049
+   Number of public wires:         228
+   Number of public wire bits:    4049
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 53
-     $add                            1
-     $dff                            7
-     $dffe                           7
-     $le                             1
-     $memrd                          7
-     $memwr_v2                       7
-     $mux                           22
-     $sdffe                          1
+   Number of cells:                  8
 

@@ -11,8 +11,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $mux                            1
-     $neg                            1
+     $mux                           16
+     $neg                           16
 
 === am_shift ===
 
@@ -24,7 +24,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $shl                            1
+     $shl                           16
 
 === exception ===
 
@@ -36,12 +36,12 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $add                            2
-     $eq                             1
+     $add                           64
+     $eq                            11
      $logic_and                      1
      $logic_or                       2
-     $mux                            3
-     $reduce_bool                    1
+     $mux                           21
+     $reduce_bool                    3
 
 === final_out ===
 
@@ -53,9 +53,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $logic_not                      1
-     $mux                            3
+     $add                            8
+     $logic_not                     16
+     $mux                           16
 
 === int_to_float_fp16 ===
 
@@ -67,13 +67,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     align                           1
-     am_shift                        1
-     exception                       1
-     final_out                       1
-     lzc                             1
-     sub                             1
-     sub2                            1
 
 === lzc ===
 
@@ -85,8 +78,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $logic_not                      4
-     $mux                            4
+     $logic_not                     30
+     $mux                           18
      $not                            2
 
 === sub ===
@@ -110,36 +103,25 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sub                            1
+     $sub                           32
 
 === design hierarchy ===
 
    int_to_float_fp16                 1
-     align                           1
-     am_shift                        1
-     exception                       1
-     final_out                       1
-     lzc                             1
-     sub                             1
-     sub2                            1
+     align                           0
+     am_shift                        0
+     exception                       0
+     final_out                       0
+     lzc                             0
+     sub                             0
+     sub2                            0
 
-   Number of wires:                 53
-   Number of wire bits:            473
-   Number of public wires:          39
-   Number of public wire bits:     340
+   Number of wires:                 10
+   Number of wire bits:             96
+   Number of public wires:          10
+   Number of public wire bits:      96
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 29
-     $add                            3
-     $eq                             1
-     $logic_and                      1
-     $logic_not                      5
-     $logic_or                       2
-     $mux                           11
-     $neg                            1
-     $not                            2
-     $reduce_bool                    1
-     $shl                            1
-     $sub                            1
+   Number of cells:                  7
 

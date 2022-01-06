@@ -11,10 +11,8 @@
    Number of memory bits:         1944
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                         162
+     $mux                          175
 
 === counter_41_1 ===
 
@@ -26,10 +24,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $add                            1
-     $le                             1
-     $mux                            1
-     $sdffe                          1
+     $add                           32
+     $le                            32
+     $mux                           14
+     $sdffe                         14
 
 === counter_63_2 ===
 
@@ -41,10 +39,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $add                            1
-     $le                             1
-     $mux                            1
-     $sdffe                          1
+     $add                           32
+     $le                            32
+     $mux                           14
+     $sdffe                         14
 
 === stage1_parameter_buffer_18_2_16_42_2688 ===
 
@@ -56,20 +54,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     $add                            1
+     $add                           32
      $and                            1
-     $eq                             1
-     $mul                            1
-     counter_41_1                    1
-     counter_63_2                    1
-     weight_buffer_18_9_42_2_2688Wcxr_imag_half_0      1
-     weight_buffer_18_9_42_2_2688Wcxr_real_half_0      1
-     weight_buffer_18_9_42_2_2688Wfxr_imag_half_0      1
-     weight_buffer_18_9_42_2_2688Wfxr_real_half_0      1
-     weight_buffer_18_9_42_2_2688Wixr_imag_half_0      1
-     weight_buffer_18_9_42_2_2688Wixr_real_half_0      1
-     weight_buffer_18_9_42_2_2688Woxr_imag_half_0      1
-     weight_buffer_18_9_42_2_2688Woxr_real_half_0      1
+     $eq                            14
+     $mul                           31
 
 === weight_buffer_18_9_42_2_2688Wcxr_imag_half_0 ===
 
@@ -81,9 +69,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     $add                           12
+     $dff                           24
 
 === weight_buffer_18_9_42_2_2688Wcxr_real_half_0 ===
 
@@ -95,9 +82,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     $add                           12
+     $dff                           24
 
 === weight_buffer_18_9_42_2_2688Wfxr_imag_half_0 ===
 
@@ -109,9 +95,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     $add                           12
+     $dff                           24
 
 === weight_buffer_18_9_42_2_2688Wfxr_real_half_0 ===
 
@@ -123,9 +108,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     $add                           12
+     $dff                           24
 
 === weight_buffer_18_9_42_2_2688Wixr_imag_half_0 ===
 
@@ -137,9 +121,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     $add                           12
+     $dff                           24
 
 === weight_buffer_18_9_42_2_2688Wixr_real_half_0 ===
 
@@ -151,9 +134,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     $add                           12
+     $dff                           24
 
 === weight_buffer_18_9_42_2_2688Woxr_imag_half_0 ===
 
@@ -165,9 +147,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     $add                           12
+     $dff                           24
 
 === weight_buffer_18_9_42_2_2688Woxr_real_half_0 ===
 
@@ -179,49 +160,41 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $add                            1
-     $dff                            2
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     $add                           12
+     $dff                           24
 
 === design hierarchy ===
 
    stage1_parameter_buffer_18_2_16_42_2688      1
-     counter_41_1                    1
-     counter_63_2                    1
-     weight_buffer_18_9_42_2_2688Wcxr_imag_half_0      1
-       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
-     weight_buffer_18_9_42_2_2688Wcxr_real_half_0      1
-       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
-     weight_buffer_18_9_42_2_2688Wfxr_imag_half_0      1
-       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
-     weight_buffer_18_9_42_2_2688Wfxr_real_half_0      1
-       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
-     weight_buffer_18_9_42_2_2688Wixr_imag_half_0      1
-       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
-     weight_buffer_18_9_42_2_2688Wixr_real_half_0      1
-       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
-     weight_buffer_18_9_42_2_2688Woxr_imag_half_0      1
-       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
-     weight_buffer_18_9_42_2_2688Woxr_real_half_0      1
-       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      2
+     counter_41_1                    0
+     counter_63_2                    0
+     weight_buffer_18_9_42_2_2688Wcxr_imag_half_0      0
+       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
+     weight_buffer_18_9_42_2_2688Wcxr_real_half_0      0
+       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
+     weight_buffer_18_9_42_2_2688Wfxr_imag_half_0      0
+       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
+     weight_buffer_18_9_42_2_2688Wfxr_real_half_0      0
+       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
+     weight_buffer_18_9_42_2_2688Wixr_imag_half_0      0
+       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
+     weight_buffer_18_9_42_2_2688Wixr_real_half_0      0
+       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
+     weight_buffer_18_9_42_2_2688Woxr_imag_half_0      0
+       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
+     weight_buffer_18_9_42_2_2688Woxr_real_half_0      0
+       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
 
-   Number of wires:                536
-   Number of wire bits:          21983
-   Number of public wires:         456
-   Number of public wire bits:   13761
-   Number of memories:              16
-   Number of memory bits:        31104
+   Number of wires:                154
+   Number of wire bits:           2703
+   Number of public wires:         152
+   Number of public wire bits:    2639
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                132
-     $add                           11
+   Number of cells:                 14
+     $add                           32
      $and                            1
-     $dff                           16
-     $dffe                          16
-     $eq                             1
-     $le                             2
-     $memrd                         16
-     $memwr_v2                      16
-     $mul                            1
-     $mux                           50
-     $sdffe                          2
+     $eq                            14
+     $mul                           31
 

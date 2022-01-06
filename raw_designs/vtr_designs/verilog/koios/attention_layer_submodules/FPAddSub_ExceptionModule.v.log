@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/FPAddSub_ExceptionModule.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/FPAddSub_ExceptionModule.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/FPAddSub_ExceptionModule.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/FPAddSub_ExceptionModule.v' to AST representation.
 Generating RTLIL representation for module `\FPAddSub_ExceptionModule'.
 Successfully finished Verilog frontend.
 
@@ -148,9 +148,9 @@ Optimizing module FPAddSub_ExceptionModule.
      $logic_not                      1
      $not                            2
      $or                             5
-     $reduce_and                     1
-     $reduce_or                      2
+     $reduce_and                     5
+     $reduce_or                      8
 
-End of script. Logfile hash: 04b339d56e, CPU: user 0.02s system 0.00s, MEM: 11.09 MB peak
+End of script. Logfile hash: 781a19242e, CPU: user 0.03s system 0.00s, MEM: 11.16 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 39% 4x opt_expr (0 sec), 19% 2x opt_muxtree (0 sec), ...
+Time spent: 33% 4x opt_expr (0 sec), 33% 3x opt_merge (0 sec), ...

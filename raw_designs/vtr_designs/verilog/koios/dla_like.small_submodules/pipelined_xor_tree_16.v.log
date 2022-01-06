@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v' to AST representation.
 Generating RTLIL representation for module `\pipelined_xor_tree_16'.
 Successfully finished Verilog frontend.
 
@@ -48,7 +48,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1 in module pipelined_xor_tree_16.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1 in module pipelined_xor_tree_16.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -60,7 +60,7 @@ Promoted 0 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating decoders for process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
      1/48: $0\pipeline_15_0[0:0]
      2/48: $0\pipeline_14_0[0:0]
      3/48: $0\pipeline_13_0[0:0]
@@ -113,108 +113,108 @@ Creating decoders for process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/r
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_0_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_0_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$161' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_0_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_0_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$162' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_0_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_0_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$163' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_1_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_1_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$164' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_1_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_1_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$165' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_1_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_1_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$166' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_2_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_2_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$167' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_2_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_2_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$168' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_2_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_2_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$169' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_3_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_3_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$170' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_3_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_3_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$171' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_3_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_3_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$172' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_4_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_4_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$173' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_4_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_4_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$174' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_4_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_4_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$175' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_5_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_5_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$176' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_5_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_5_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$177' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_5_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_5_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$178' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_6_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_6_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$179' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_6_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_6_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$180' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_6_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_6_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$181' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_7_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_7_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$182' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_7_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_7_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$183' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_7_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_7_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$184' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_8_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_8_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$185' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_8_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_8_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$186' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_8_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_8_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$187' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_9_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_9_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$188' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_9_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_9_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$189' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_9_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_9_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$190' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_10_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_10_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$191' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_10_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_10_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$192' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_10_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_10_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$193' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_11_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_11_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$194' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_11_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_11_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$195' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_11_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_11_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$196' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_12_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_12_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$197' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_12_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_12_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$198' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_12_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_12_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$199' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_13_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_13_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$200' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_13_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_13_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$201' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_13_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_13_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$202' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_14_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_14_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$203' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_14_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_14_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$204' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_14_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_14_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$205' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_15_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_15_0' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$206' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_15_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_15_1' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$207' with positive edge clock.
-Creating register for signal `\pipelined_xor_tree_16.\pipeline_15_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Creating register for signal `\pipelined_xor_tree_16.\pipeline_15_2' using process `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
   created $dff cell `$procdff$208' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
-Removing empty process `pipelined_xor_tree_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Found and cleaned up 1 empty switch in `\pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
+Removing empty process `pipelined_xor_tree_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:59$1'.
 Cleaned up 1 empty switch.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -247,8 +247,8 @@ Removed a total of 0 cells.
 
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
 Adding SRST signal on $procdff$161 ($dff) from module pipelined_xor_tree_16 (D = \signal [15], Q = \pipeline_0_0, rval = 1'0).
-Adding SRST signal on $procdff$162 ($dff) from module pipelined_xor_tree_16 (D = $xor$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:126$4_Y, Q = \pipeline_0_1, rval = 1'0).
-Adding SRST signal on $procdff$163 ($dff) from module pipelined_xor_tree_16 (D = $xor$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:130$16_Y, Q = \pipeline_0_2, rval = 1'0).
+Adding SRST signal on $procdff$162 ($dff) from module pipelined_xor_tree_16 (D = $xor$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:126$4_Y, Q = \pipeline_0_1, rval = 1'0).
+Adding SRST signal on $procdff$163 ($dff) from module pipelined_xor_tree_16 (D = $xor$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:130$16_Y, Q = \pipeline_0_2, rval = 1'0).
 Adding SRST signal on $procdff$164 ($dff) from module pipelined_xor_tree_16 (D = \signal [14], Q = \pipeline_1_0, rval = 1'0).
 Adding EN signal on $procdff$165 ($dff) from module pipelined_xor_tree_16 (D = 1'0, Q = \pipeline_1_1).
 Setting constant 0-bit at position 0 on $auto$ff.cc:262:slice$213 ($dffe) from module pipelined_xor_tree_16.
@@ -265,7 +265,7 @@ Setting constant 0-bit at position 0 on $auto$ff.cc:262:slice$219 ($dffe) from m
 Adding EN signal on $procdff$172 ($dff) from module pipelined_xor_tree_16 (D = 1'0, Q = \pipeline_3_2).
 Setting constant 0-bit at position 0 on $auto$ff.cc:262:slice$220 ($dffe) from module pipelined_xor_tree_16.
 Adding SRST signal on $procdff$173 ($dff) from module pipelined_xor_tree_16 (D = \signal [11], Q = \pipeline_4_0, rval = 1'0).
-Adding SRST signal on $procdff$174 ($dff) from module pipelined_xor_tree_16 (D = $xor$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:127$7_Y, Q = \pipeline_4_1, rval = 1'0).
+Adding SRST signal on $procdff$174 ($dff) from module pipelined_xor_tree_16 (D = $xor$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:127$7_Y, Q = \pipeline_4_1, rval = 1'0).
 Adding EN signal on $procdff$175 ($dff) from module pipelined_xor_tree_16 (D = 1'0, Q = \pipeline_4_2).
 Setting constant 0-bit at position 0 on $auto$ff.cc:262:slice$223 ($dffe) from module pipelined_xor_tree_16.
 Adding SRST signal on $procdff$176 ($dff) from module pipelined_xor_tree_16 (D = \signal [10], Q = \pipeline_5_0, rval = 1'0).
@@ -284,7 +284,7 @@ Setting constant 0-bit at position 0 on $auto$ff.cc:262:slice$231 ($dffe) from m
 Adding EN signal on $procdff$184 ($dff) from module pipelined_xor_tree_16 (D = 1'0, Q = \pipeline_7_2).
 Setting constant 0-bit at position 0 on $auto$ff.cc:262:slice$232 ($dffe) from module pipelined_xor_tree_16.
 Adding SRST signal on $procdff$185 ($dff) from module pipelined_xor_tree_16 (D = \signal [7], Q = \pipeline_8_0, rval = 1'0).
-Adding SRST signal on $procdff$186 ($dff) from module pipelined_xor_tree_16 (D = $xor$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:128$10_Y, Q = \pipeline_8_1, rval = 1'0).
+Adding SRST signal on $procdff$186 ($dff) from module pipelined_xor_tree_16 (D = $xor$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:128$10_Y, Q = \pipeline_8_1, rval = 1'0).
 Adding EN signal on $procdff$187 ($dff) from module pipelined_xor_tree_16 (D = 1'0, Q = \pipeline_8_2).
 Setting constant 0-bit at position 0 on $auto$ff.cc:262:slice$235 ($dffe) from module pipelined_xor_tree_16.
 Adding SRST signal on $procdff$188 ($dff) from module pipelined_xor_tree_16 (D = \signal [6], Q = \pipeline_9_0, rval = 1'0).
@@ -303,7 +303,7 @@ Setting constant 0-bit at position 0 on $auto$ff.cc:262:slice$243 ($dffe) from m
 Adding EN signal on $procdff$196 ($dff) from module pipelined_xor_tree_16 (D = 1'0, Q = \pipeline_11_2).
 Setting constant 0-bit at position 0 on $auto$ff.cc:262:slice$244 ($dffe) from module pipelined_xor_tree_16.
 Adding SRST signal on $procdff$197 ($dff) from module pipelined_xor_tree_16 (D = \signal [3], Q = \pipeline_12_0, rval = 1'0).
-Adding SRST signal on $procdff$198 ($dff) from module pipelined_xor_tree_16 (D = $xor$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:129$13_Y, Q = \pipeline_12_1, rval = 1'0).
+Adding SRST signal on $procdff$198 ($dff) from module pipelined_xor_tree_16 (D = $xor$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/dla_like.small_submodules/pipelined_xor_tree_16.v:129$13_Y, Q = \pipeline_12_1, rval = 1'0).
 Adding EN signal on $procdff$199 ($dff) from module pipelined_xor_tree_16 (D = 1'0, Q = \pipeline_12_2).
 Setting constant 0-bit at position 0 on $auto$ff.cc:262:slice$247 ($dffe) from module pipelined_xor_tree_16.
 Adding SRST signal on $procdff$200 ($dff) from module pipelined_xor_tree_16 (D = \signal [2], Q = \pipeline_13_0, rval = 1'0).
@@ -371,6 +371,6 @@ Optimizing module pipelined_xor_tree_16.
      $sdff                          21
      $xor                           15
 
-End of script. Logfile hash: e34e9ccf09, CPU: user 0.04s system 0.00s, MEM: 11.70 MB peak
+End of script. Logfile hash: c8f60fda60, CPU: user 0.06s system 0.01s, MEM: 11.98 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 24% 2x opt_dff (0 sec), 12% 4x opt_expr (0 sec), ...
+Time spent: 28% 4x opt_expr (0 sec), 21% 2x read_verilog (0 sec), ...

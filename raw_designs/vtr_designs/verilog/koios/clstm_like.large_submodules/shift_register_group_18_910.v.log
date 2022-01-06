@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v' to AST representation.
 Generating RTLIL representation for module `\shift_register_group_18_910'.
 Generating RTLIL representation for module `\shift_register_unit_18_10'.
 Successfully finished Verilog frontend.
@@ -52,7 +52,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1 in module shift_register_unit_18_10.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1 in module shift_register_unit_18_10.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -64,7 +64,7 @@ Promoted 0 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
+Creating decoders for process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
      1/10: $0\shift_registers_9[17:0]
      2/10: $0\shift_registers_8[17:0]
      3/10: $0\shift_registers_7[17:0]
@@ -79,32 +79,32 @@ Creating decoders for process `\shift_register_unit_18_10.$proc$/home/zhigang/DA
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_0' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_0' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
   created $dff cell `$procdff$52' with positive edge clock.
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_1' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_1' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
   created $dff cell `$procdff$53' with positive edge clock.
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_2' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_2' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
   created $dff cell `$procdff$54' with positive edge clock.
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_3' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_3' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
   created $dff cell `$procdff$55' with positive edge clock.
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_4' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_4' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
   created $dff cell `$procdff$56' with positive edge clock.
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_5' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_5' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
   created $dff cell `$procdff$57' with positive edge clock.
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_6' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_6' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
   created $dff cell `$procdff$58' with positive edge clock.
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_7' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_7' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
   created $dff cell `$procdff$59' with positive edge clock.
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_8' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_8' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
   created $dff cell `$procdff$60' with positive edge clock.
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_9' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_9' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
   created $dff cell `$procdff$61' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 2 empty switches in `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
-Removing empty process `shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
+Found and cleaned up 2 empty switches in `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
+Removing empty process `shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.large_submodules/shift_register_group_18_910.v:118$1'.
 Cleaned up 2 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -220,7 +220,6 @@ Optimizing module shift_register_unit_18_10.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     shift_register_unit_18_10       9
 
 === shift_register_unit_18_10 ===
 
@@ -232,23 +231,22 @@ Optimizing module shift_register_unit_18_10.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $sdffe                         10
+     $sdffe                        180
 
 === design hierarchy ===
 
    shift_register_group_18_910       1
-     shift_register_unit_18_10       9
+     shift_register_unit_18_10       0
 
-   Number of wires:                156
-   Number of wire bits:           2298
-   Number of public wires:         156
-   Number of public wire bits:    2298
+   Number of wires:                 21
+   Number of wire bits:            327
+   Number of public wires:          21
+   Number of public wire bits:     327
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 90
-     $sdffe                         90
+   Number of cells:                  9
 
-End of script. Logfile hash: 7a2202cd21, CPU: user 0.03s system 0.00s, MEM: 11.75 MB peak
+End of script. Logfile hash: 6c60d44b8a, CPU: user 0.06s system 0.00s, MEM: 11.95 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 28% 4x opt_expr (0 sec), 28% 2x opt_dff (0 sec), ...
+Time spent: 21% 4x opt_expr (0 sec), 21% 2x opt_dff (0 sec), ...

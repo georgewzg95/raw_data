@@ -24,12 +24,12 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v' to AST representation.
 Generating RTLIL representation for module `\a25_wishbone'.
 Generating RTLIL representation for module `\a25_wishbone_buf'.
-Warning: reg '\push' is assigned in a continuous assignment at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:355.8-355.107.
-Warning: reg '\pop' is assigned in a continuous assignment at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:356.8-356.62.
+Warning: reg '\push' is assigned in a continuous assignment at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:355.8-355.107.
+Warning: reg '\pop' is assigned in a continuous assignment at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:356.8-356.62.
 Successfully finished Verilog frontend.
 
 2. Executing HIERARCHY pass (managing design hierarchy).
@@ -54,12 +54,12 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:428$81 in module a25_wishbone_buf.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:422$78 in module a25_wishbone_buf.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45 in module a25_wishbone_buf.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:366$39 in module a25_wishbone_buf.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:358$35 in module a25_wishbone_buf.
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12 in module a25_wishbone.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:428$81 in module a25_wishbone_buf.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:422$78 in module a25_wishbone_buf.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45 in module a25_wishbone_buf.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:366$39 in module a25_wishbone_buf.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:358$35 in module a25_wishbone_buf.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12 in module a25_wishbone.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -67,52 +67,52 @@ Removed 0 redundant assignments.
 Promoted 14 assignments to connections.
 
 3.4. Executing PROC_INIT pass (extract init attributes).
-Found init rule in `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:347$91'.
+Found init rule in `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:347$91'.
   Set init value: \ack_owed_r = 1'0
-Found init rule in `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:345$90'.
+Found init rule in `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:345$90'.
   Set init value: \wait_rdata_valid_r = 1'0
-Found init rule in `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:344$89'.
+Found init rule in `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:344$89'.
   Set init value: \busy_reading_r = 1'0
-Found init rule in `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:343$88'.
+Found init rule in `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:343$88'.
   Set init value: \wbuf_rp_r = 1'0
-Found init rule in `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:342$87'.
+Found init rule in `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:342$87'.
   Set init value: \wbuf_wp_r = 1'0
-Found init rule in `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:341$86'.
+Found init rule in `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:341$86'.
   Set init value: \wbuf_write_r = 2'00
-Found init rule in `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:331$85'.
+Found init rule in `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:331$85'.
   Set init value: \wbuf_used_r = 2'00
-Found init rule in `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:130$22'.
+Found init rule in `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:130$22'.
   Set init value: \serving_port = 3'000
-Found init rule in `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:112$21'.
+Found init rule in `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:112$21'.
   Set init value: \o_wb_stb = 1'0
-Found init rule in `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:111$20'.
+Found init rule in `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:111$20'.
   Set init value: \o_wb_cyc = 1'0
-Found init rule in `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:110$19'.
+Found init rule in `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:110$19'.
   Set init value: \o_wb_dat = 128'00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-Found init rule in `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:109$18'.
+Found init rule in `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:109$18'.
   Set init value: \o_wb_we = 1'0
-Found init rule in `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:108$17'.
+Found init rule in `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:108$17'.
   Set init value: \o_wb_sel = 16'0000000000000000
-Found init rule in `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:107$16'.
+Found init rule in `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:107$16'.
   Set init value: \o_wb_adr = 0
 
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:347$91'.
-Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:345$90'.
-Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:344$89'.
-Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:343$88'.
-Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:342$87'.
-Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:341$86'.
-Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:331$85'.
-Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:428$81'.
+Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:347$91'.
+Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:345$90'.
+Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:344$89'.
+Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:343$88'.
+Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:342$87'.
+Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:341$86'.
+Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:331$85'.
+Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:428$81'.
      1/1: $0\wait_rdata_valid_r[0:0]
-Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:422$78'.
+Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:422$78'.
      1/1: $0\busy_reading_r[0:0]
-Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:395$51'.
+Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:395$51'.
      1/1: $0\wbuf_rp_r[0:0]
-Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
+Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
      1/9: $0\wbuf_write_r[1:0] [1]
      2/9: $0\wbuf_write_r[1:0] [0]
      3/9: $0\wbuf_wp_r[0:0]
@@ -122,18 +122,18 @@ Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_de
      7/9: $0\wbuf_wdata_r0[127:0]
      8/9: $0\wbuf_addr_r1[31:0]
      9/9: $0\wbuf_addr_r0[31:0]
-Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:366$39'.
+Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:366$39'.
      1/1: $0\ack_owed_r[0:0]
-Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:358$35'.
+Creating decoders for process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:358$35'.
      1/1: $0\wbuf_used_r[1:0]
-Creating decoders for process `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:130$22'.
-Creating decoders for process `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:112$21'.
-Creating decoders for process `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:111$20'.
-Creating decoders for process `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:110$19'.
-Creating decoders for process `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:109$18'.
-Creating decoders for process `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:108$17'.
-Creating decoders for process `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:107$16'.
-Creating decoders for process `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
+Creating decoders for process `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:130$22'.
+Creating decoders for process `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:112$21'.
+Creating decoders for process `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:111$20'.
+Creating decoders for process `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:110$19'.
+Creating decoders for process `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:109$18'.
+Creating decoders for process `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:108$17'.
+Creating decoders for process `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:107$16'.
+Creating decoders for process `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
      1/7: $0\serving_port[2:0]
      2/7: $0\o_wb_stb[0:0]
      3/7: $0\o_wb_cyc[0:0]
@@ -145,78 +145,78 @@ Creating decoders for process `\a25_wishbone.$proc$/home/zhigang/DATA/raw_design
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\a25_wishbone_buf.\wait_rdata_valid_r' using process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:428$81'.
+Creating register for signal `\a25_wishbone_buf.\wait_rdata_valid_r' using process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:428$81'.
   created $dff cell `$procdff$244' with positive edge clock.
-Creating register for signal `\a25_wishbone_buf.\busy_reading_r' using process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:422$78'.
+Creating register for signal `\a25_wishbone_buf.\busy_reading_r' using process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:422$78'.
   created $dff cell `$procdff$245' with positive edge clock.
-Creating register for signal `\a25_wishbone_buf.\wbuf_rp_r' using process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:395$51'.
+Creating register for signal `\a25_wishbone_buf.\wbuf_rp_r' using process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:395$51'.
   created $dff cell `$procdff$246' with positive edge clock.
-Creating register for signal `\a25_wishbone_buf.\wbuf_addr_r0' using process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
+Creating register for signal `\a25_wishbone_buf.\wbuf_addr_r0' using process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
   created $dff cell `$procdff$247' with positive edge clock.
-Creating register for signal `\a25_wishbone_buf.\wbuf_addr_r1' using process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
+Creating register for signal `\a25_wishbone_buf.\wbuf_addr_r1' using process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
   created $dff cell `$procdff$248' with positive edge clock.
-Creating register for signal `\a25_wishbone_buf.\wbuf_wdata_r0' using process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
+Creating register for signal `\a25_wishbone_buf.\wbuf_wdata_r0' using process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
   created $dff cell `$procdff$249' with positive edge clock.
-Creating register for signal `\a25_wishbone_buf.\wbuf_wdata_r1' using process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
+Creating register for signal `\a25_wishbone_buf.\wbuf_wdata_r1' using process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
   created $dff cell `$procdff$250' with positive edge clock.
-Creating register for signal `\a25_wishbone_buf.\wbuf_be_r0' using process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
+Creating register for signal `\a25_wishbone_buf.\wbuf_be_r0' using process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
   created $dff cell `$procdff$251' with positive edge clock.
-Creating register for signal `\a25_wishbone_buf.\wbuf_be_r1' using process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
+Creating register for signal `\a25_wishbone_buf.\wbuf_be_r1' using process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
   created $dff cell `$procdff$252' with positive edge clock.
-Creating register for signal `\a25_wishbone_buf.\wbuf_write_r' using process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
+Creating register for signal `\a25_wishbone_buf.\wbuf_write_r' using process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
   created $dff cell `$procdff$253' with positive edge clock.
-Creating register for signal `\a25_wishbone_buf.\wbuf_wp_r' using process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
+Creating register for signal `\a25_wishbone_buf.\wbuf_wp_r' using process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
   created $dff cell `$procdff$254' with positive edge clock.
-Creating register for signal `\a25_wishbone_buf.\ack_owed_r' using process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:366$39'.
+Creating register for signal `\a25_wishbone_buf.\ack_owed_r' using process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:366$39'.
   created $dff cell `$procdff$255' with positive edge clock.
-Creating register for signal `\a25_wishbone_buf.\wbuf_used_r' using process `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:358$35'.
+Creating register for signal `\a25_wishbone_buf.\wbuf_used_r' using process `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:358$35'.
   created $dff cell `$procdff$256' with positive edge clock.
-Creating register for signal `\a25_wishbone.\o_wb_adr' using process `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
+Creating register for signal `\a25_wishbone.\o_wb_adr' using process `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
   created $dff cell `$procdff$257' with positive edge clock.
-Creating register for signal `\a25_wishbone.\o_wb_sel' using process `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
+Creating register for signal `\a25_wishbone.\o_wb_sel' using process `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
   created $dff cell `$procdff$258' with positive edge clock.
-Creating register for signal `\a25_wishbone.\o_wb_we' using process `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
+Creating register for signal `\a25_wishbone.\o_wb_we' using process `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
   created $dff cell `$procdff$259' with positive edge clock.
-Creating register for signal `\a25_wishbone.\o_wb_dat' using process `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
+Creating register for signal `\a25_wishbone.\o_wb_dat' using process `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
   created $dff cell `$procdff$260' with positive edge clock.
-Creating register for signal `\a25_wishbone.\o_wb_cyc' using process `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
+Creating register for signal `\a25_wishbone.\o_wb_cyc' using process `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
   created $dff cell `$procdff$261' with positive edge clock.
-Creating register for signal `\a25_wishbone.\o_wb_stb' using process `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
+Creating register for signal `\a25_wishbone.\o_wb_stb' using process `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
   created $dff cell `$procdff$262' with positive edge clock.
-Creating register for signal `\a25_wishbone.\serving_port' using process `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
+Creating register for signal `\a25_wishbone.\serving_port' using process `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
   created $dff cell `$procdff$263' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:347$91'.
-Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:345$90'.
-Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:344$89'.
-Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:343$88'.
-Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:342$87'.
-Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:341$86'.
-Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:331$85'.
-Found and cleaned up 2 empty switches in `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:428$81'.
-Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:428$81'.
-Found and cleaned up 2 empty switches in `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:422$78'.
-Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:422$78'.
-Found and cleaned up 1 empty switch in `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:395$51'.
-Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:395$51'.
-Found and cleaned up 3 empty switches in `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
-Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
-Found and cleaned up 2 empty switches in `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:366$39'.
-Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:366$39'.
-Found and cleaned up 3 empty switches in `\a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:358$35'.
-Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:358$35'.
-Removing empty process `a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:130$22'.
-Removing empty process `a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:112$21'.
-Removing empty process `a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:111$20'.
-Removing empty process `a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:110$19'.
-Removing empty process `a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:109$18'.
-Removing empty process `a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:108$17'.
-Removing empty process `a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:107$16'.
-Found and cleaned up 4 empty switches in `\a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
-Removing empty process `a25_wishbone.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
+Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:347$91'.
+Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:345$90'.
+Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:344$89'.
+Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:343$88'.
+Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:342$87'.
+Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:341$86'.
+Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:331$85'.
+Found and cleaned up 2 empty switches in `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:428$81'.
+Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:428$81'.
+Found and cleaned up 2 empty switches in `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:422$78'.
+Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:422$78'.
+Found and cleaned up 1 empty switch in `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:395$51'.
+Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:395$51'.
+Found and cleaned up 3 empty switches in `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
+Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:372$45'.
+Found and cleaned up 2 empty switches in `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:366$39'.
+Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:366$39'.
+Found and cleaned up 3 empty switches in `\a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:358$35'.
+Removing empty process `a25_wishbone_buf.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:358$35'.
+Removing empty process `a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:130$22'.
+Removing empty process `a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:112$21'.
+Removing empty process `a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:111$20'.
+Removing empty process `a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:110$19'.
+Removing empty process `a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:109$18'.
+Removing empty process `a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:108$17'.
+Removing empty process `a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:107$16'.
+Found and cleaned up 4 empty switches in `\a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
+Removing empty process `a25_wishbone.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:221$12'.
 Cleaned up 17 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -266,17 +266,17 @@ Finding identical cells in module `\a25_wishbone'.
 Removed a total of 5 cells.
 
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $procdff$246 ($dff) from module a25_wishbone_buf (D = $logic_not$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:397$52_Y, Q = \wbuf_rp_r).
+Adding EN signal on $procdff$246 ($dff) from module a25_wishbone_buf (D = $logic_not$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:397$52_Y, Q = \wbuf_rp_r).
 Adding EN signal on $procdff$247 ($dff) from module a25_wishbone_buf (D = \i_addr, Q = \wbuf_addr_r0).
 Adding EN signal on $procdff$256 ($dff) from module a25_wishbone_buf (D = $procmux$162_Y, Q = \wbuf_used_r).
 Adding EN signal on $procdff$248 ($dff) from module a25_wishbone_buf (D = \i_addr, Q = \wbuf_addr_r1).
 Adding EN signal on $procdff$249 ($dff) from module a25_wishbone_buf (D = \i_wdata, Q = \wbuf_wdata_r0).
 Adding EN signal on $procdff$250 ($dff) from module a25_wishbone_buf (D = \i_wdata, Q = \wbuf_wdata_r1).
-Adding EN signal on $procdff$251 ($dff) from module a25_wishbone_buf (D = $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:379$47_Y, Q = \wbuf_be_r0).
-Adding EN signal on $procdff$252 ($dff) from module a25_wishbone_buf (D = $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:388$49_Y, Q = \wbuf_be_r1).
+Adding EN signal on $procdff$251 ($dff) from module a25_wishbone_buf (D = $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:379$47_Y, Q = \wbuf_be_r0).
+Adding EN signal on $procdff$252 ($dff) from module a25_wishbone_buf (D = $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:388$49_Y, Q = \wbuf_be_r1).
 Adding EN signal on $procdff$253 ($dff) from module a25_wishbone_buf (D = \i_write, Q = \wbuf_write_r [0]).
 Adding EN signal on $procdff$253 ($dff) from module a25_wishbone_buf (D = \i_write, Q = \wbuf_write_r [1]).
-Adding EN signal on $procdff$254 ($dff) from module a25_wishbone_buf (D = $logic_not$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:392$50_Y, Q = \wbuf_wp_r).
+Adding EN signal on $procdff$254 ($dff) from module a25_wishbone_buf (D = $logic_not$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_wishbone.v:392$50_Y, Q = \wbuf_wp_r).
 Adding SRST signal on $procdff$255 ($dff) from module a25_wishbone_buf (D = $procmux$154_Y, Q = \ack_owed_r, rval = 1'1).
 Adding EN signal on $auto$ff.cc:262:slice$305 ($sdff) from module a25_wishbone_buf (D = 1'0, Q = \ack_owed_r).
 Adding SRST signal on $procdff$245 ($dff) from module a25_wishbone_buf (D = $procmux$97_Y, Q = \busy_reading_r, rval = 1'1).
@@ -429,18 +429,17 @@ Optimizing module a25_wishbone_buf.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 40
-     $and                            2
-     $dffe                           4
+     $and                            4
+     $dffe                         177
      $logic_and                      5
      $logic_not                      3
      $logic_or                       1
-     $mux                           15
+     $mux                          538
      $not                            1
-     $reduce_and                     1
-     $reduce_bool                    1
-     $reduce_or                      1
-     $sdffce                         3
-     a25_wishbone_buf                3
+     $reduce_and                     2
+     $reduce_bool                    3
+     $reduce_or                      2
+     $sdffce                         4
 
 === a25_wishbone_buf ===
 
@@ -452,49 +451,45 @@ Optimizing module a25_wishbone_buf.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 62
-     $add                            1
-     $dffe                          11
-     $eq                             1
+     $add                            2
+     $dffe                         358
+     $eq                             2
      $logic_and                     14
-     $logic_not                      9
+     $logic_not                     10
      $logic_or                       3
-     $mux                           12
+     $mux                          375
      $not                            2
-     $reduce_and                     3
-     $reduce_bool                    2
+     $reduce_and                     6
+     $reduce_bool                    4
      $sdffe                          3
-     $sub                            1
+     $sub                            2
 
 === design hierarchy ===
 
    a25_wishbone                      1
-     a25_wishbone_buf                3
+     a25_wishbone_buf                0
 
-   Number of wires:                283
-   Number of wire bits:           5955
-   Number of public wires:         141
-   Number of public wire bits:    4714
+   Number of wires:                 70
+   Number of wire bits:           2322
+   Number of public wires:          45
+   Number of public wire bits:    1774
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                223
-     $add                            3
-     $and                            2
-     $dffe                          37
-     $eq                             3
-     $logic_and                     47
-     $logic_not                     30
-     $logic_or                      10
-     $mux                           51
-     $not                            7
-     $reduce_and                    10
-     $reduce_bool                    7
-     $reduce_or                      1
-     $sdffce                         3
-     $sdffe                          9
-     $sub                            3
+   Number of cells:                 40
+     $and                            4
+     $dffe                         177
+     $logic_and                      5
+     $logic_not                      3
+     $logic_or                       1
+     $mux                          538
+     $not                            1
+     $reduce_and                     2
+     $reduce_bool                    3
+     $reduce_or                      2
+     $sdffce                         4
 
 Warnings: 2 unique messages, 2 total
-End of script. Logfile hash: b5036da6d3, CPU: user 0.17s system 0.00s, MEM: 14.05 MB peak
+End of script. Logfile hash: 8ffefacb96, CPU: user 0.18s system 0.01s, MEM: 14.36 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
 Time spent: 25% 4x opt_clean (0 sec), 23% 6x opt_expr (0 sec), ...

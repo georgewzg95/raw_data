@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/FPMult_NormalizeModule.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/FPMult_NormalizeModule.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/FPMult_NormalizeModule.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/FPMult_NormalizeModule.v' to AST representation.
 Generating RTLIL representation for module `\FPMult_NormalizeModule'.
 Successfully finished Verilog frontend.
 
@@ -117,8 +117,8 @@ Optimizing module FPMult_NormalizeModule.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $sub                            2
+     $sub                           64
 
-End of script. Logfile hash: 7ce941d3ed, CPU: user 0.02s system 0.00s, MEM: 11.18 MB peak
+End of script. Logfile hash: 09fa038232, CPU: user 0.01s system 0.01s, MEM: 11.33 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 66% 3x opt_expr (0 sec), 33% 1x opt_dff (0 sec), ...
+Time spent: 24% 3x opt_expr (0 sec), 24% 2x opt_merge (0 sec), ...

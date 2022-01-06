@@ -11,7 +11,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $mux                            6
+     $mux                          156
      $xor                            1
 
 === exponent ===
@@ -24,11 +24,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $add                            2
+     $add                           64
      $logic_not                      1
      $or                             1
-     $reduce_or                      1
-     $sub                            1
+     $reduce_or                      9
+     $sub                           32
 
 === flag ===
 
@@ -55,18 +55,8 @@
    Number of processes:              0
    Number of cells:                 14
      $and                            1
-     $dff                            1
+     $dff                           32
      $or                             2
-     assemble                        1
-     exponent                        1
-     flag                            1
-     multiply_a                      1
-     normalize                       1
-     prenorm                         1
-     preprocess                      1
-     round                           1
-     shift                           1
-     special                         1
 
 === multiply_a ===
 
@@ -78,7 +68,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $mul                            1
+     $mul                           48
 
 === normalize ===
 
@@ -91,7 +81,7 @@
    Number of processes:              0
    Number of cells:                  4
      $and                            1
-     $mux                            2
+     $mux                           96
      $xor                            1
 
 === prenorm ===
@@ -104,10 +94,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 98
-     $eq                            46
-     $mux                           48
-     $pmux                           2
-     $sub                            2
+     $eq                           230
+     $mux                         1520
+     $pmux                          48
+     $sub                           64
 
 === preprocess ===
 
@@ -122,8 +112,8 @@
      $and                            8
      $logic_not                      4
      $or                             2
-     $reduce_and                     2
-     $reduce_or                      4
+     $reduce_and                    16
+     $reduce_or                     62
      $xor                            1
 
 === round ===
@@ -136,14 +126,14 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 34
-     $add                            2
+     $add                           42
      $and                           10
      $logic_not                      1
-     $mux                            2
+     $mux                           64
      $not                            4
      $or                             9
-     $reduce_and                     1
-     $reduce_or                      4
+     $reduce_and                     8
+     $reduce_or                    153
      $xor                            1
 
 === shift ===
@@ -157,14 +147,14 @@
    Number of processes:              0
    Number of cells:                 42
      $and                            2
-     $eq                            31
-     $gt                             1
-     $mux                            3
-     $neg                            1
+     $eq                           155
+     $gt                            32
+     $mux                          160
+     $neg                           10
      $not                            1
      $or                             1
-     $pmux                           1
-     $reduce_or                      1
+     $pmux                          96
+     $reduce_or                     48
 
 === special ===
 
@@ -177,48 +167,34 @@
    Number of processes:              0
    Number of cells:                 17
      $and                            2
-     $ge                             1
-     $mux                            6
+     $ge                            23
+     $mux                          126
      $not                            1
      $or                             7
 
 === design hierarchy ===
 
    fpmul                             1
-     assemble                        1
-     exponent                        1
-     flag                            1
-     multiply_a                      1
-     normalize                       1
-     prenorm                         1
-     preprocess                      1
-     round                           1
-     shift                           1
-     special                         1
+     assemble                        0
+     exponent                        0
+     flag                            0
+     multiply_a                      0
+     normalize                       0
+     prenorm                         0
+     preprocess                      0
+     round                           0
+     shift                           0
+     special                         0
 
-   Number of wires:                344
-   Number of wire bits:           4098
-   Number of public wires:         157
-   Number of public wire bits:    1978
+   Number of wires:                 42
+   Number of wire bits:            502
+   Number of public wires:          41
+   Number of public wire bits:     501
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                239
-     $add                            4
-     $and                           26
-     $dff                            1
-     $eq                            77
-     $ge                             1
-     $gt                             1
-     $logic_not                      6
-     $mul                            1
-     $mux                           67
-     $neg                            1
-     $not                            7
-     $or                            24
-     $pmux                           3
-     $reduce_and                     3
-     $reduce_or                     10
-     $sub                            3
-     $xor                            4
+   Number of cells:                 14
+     $and                            1
+     $dff                           32
+     $or                             2
 

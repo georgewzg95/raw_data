@@ -11,10 +11,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $dff                            2
-     $dffe                           2
-     $mux                            1
-     td_fused_top_ap_hmul_2_max_dsp_16      1
+     $dff                           17
+     $dffe                          32
+     $mux                           16
 
 === FPMult_16 ===
 
@@ -26,11 +25,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $mux                            5
-     FPMult_ExecuteModule            1
-     FPMult_NormalizeModule          1
-     FPMult_PrepModule               1
-     FPMult_RoundModule              1
+     $mux                          165
 
 === FPMult_ExecuteModule ===
 
@@ -42,11 +37,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $add                            2
+     $add                           12
      $and                            1
-     $mux                            1
+     $mux                           10
      $or                             1
-     $reduce_or                      1
+     $reduce_or                     10
      $xor                            1
 
 === FPMult_NormalizeModule ===
@@ -59,7 +54,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $sub                            2
+     $sub                           64
 
 === FPMult_PrepModule ===
 
@@ -73,10 +68,10 @@
    Number of cells:                 15
      $and                            4
      $logic_not                      2
-     $mul                            1
+     $mul                           22
      $or                             3
-     $reduce_and                     2
-     $reduce_or                      3
+     $reduce_and                    10
+     $reduce_or                     20
 
 === FPMult_RoundModule ===
 
@@ -88,7 +83,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $mux                            3
+     $mux                           28
 
 === td_fused_top_ap_hmul_2_max_dsp_16 ===
 
@@ -100,8 +95,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dffe                           3
-     FPMult_16                       1
+     $dffe                          48
 
 === td_fused_top_tdf11_l2_multiply72 ===
 
@@ -113,56 +107,50 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 81
-     $add                            1
+     $add                            8
      $and                           12
-     $dff                           10
-     $dffe                           7
-     $eq                             4
-     $mux                           16
+     $dff                           45
+     $dffe                          51
+     $eq                            17
+     $mux                           43
      $not                           10
      $or                             6
-     $paramod$446b85b08a7a06b40d768e83a34c90ce7206f74e\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1      1
-     $pmux                           1
-     $reduce_bool                    1
-     $reduce_or                      2
-     $sdff                           9
+     $pmux                           3
+     $reduce_bool                    2
+     $reduce_or                      4
+     $sdff                          11
      $sdffe                          1
 
 === design hierarchy ===
 
    td_fused_top_tdf11_l2_multiply72      1
-     $paramod$446b85b08a7a06b40d768e83a34c90ce7206f74e\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1      1
-       td_fused_top_ap_hmul_2_max_dsp_16      1
-         FPMult_16                   1
-           FPMult_ExecuteModule      1
-           FPMult_NormalizeModule      1
-           FPMult_PrepModule         1
-           FPMult_RoundModule        1
+     $paramod$446b85b08a7a06b40d768e83a34c90ce7206f74e\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1      0
+       td_fused_top_ap_hmul_2_max_dsp_16      0
+         FPMult_16                   0
+           FPMult_ExecuteModule      0
+           FPMult_NormalizeModule      0
+           FPMult_PrepModule         0
+           FPMult_RoundModule        0
 
-   Number of wires:                227
-   Number of wire bits:           1499
-   Number of public wires:         173
-   Number of public wire bits:    1358
+   Number of wires:                111
+   Number of wire bits:            472
+   Number of public wires:          71
+   Number of public wire bits:     412
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                120
-     $add                            3
-     $and                           17
-     $dff                           12
-     $dffe                          12
-     $eq                             4
-     $logic_not                      2
-     $mul                            1
-     $mux                           26
+   Number of cells:                 81
+     $add                            8
+     $and                           12
+     $dff                           45
+     $dffe                          51
+     $eq                            17
+     $mux                           43
      $not                           10
-     $or                            10
-     $pmux                           1
-     $reduce_and                     2
-     $reduce_bool                    1
-     $reduce_or                      6
-     $sdff                           9
+     $or                             6
+     $pmux                           3
+     $reduce_bool                    2
+     $reduce_or                      4
+     $sdff                          11
      $sdffe                          1
-     $sub                            2
-     $xor                            1
 

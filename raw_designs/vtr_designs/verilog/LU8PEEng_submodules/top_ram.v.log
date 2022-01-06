@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v' to AST representation.
 Generating RTLIL representation for module `\top_ram'.
 Generating RTLIL representation for module `\dual_port_ram'.
 Successfully finished Verilog frontend.
@@ -64,8 +64,8 @@ Removed 1 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:262$31 in module $paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:253$23 in module $paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:262$31 in module $paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:253$23 in module $paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -77,44 +77,44 @@ Promoted 6 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:262$31'.
-     1/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:264$22_EN[31:0]$37
-     2/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:264$22_DATA[31:0]$36
-     3/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:264$22_ADDR[7:0]$35
+Creating decoders for process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:262$31'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:264$22_EN[31:0]$37
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:264$22_DATA[31:0]$36
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:264$22_ADDR[7:0]$35
      4/4: $0\out2[31:0]
-Creating decoders for process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:253$23'.
-     1/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:255$21_EN[31:0]$29
-     2/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:255$21_DATA[31:0]$28
-     3/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:255$21_ADDR[7:0]$27
+Creating decoders for process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:253$23'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:255$21_EN[31:0]$29
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:255$21_DATA[31:0]$28
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:255$21_ADDR[7:0]$27
      4/4: $0\out1[31:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.\out2' using process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:262$31'.
+Creating register for signal `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.\out2' using process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:262$31'.
   created $dff cell `$procdff$63' with positive edge clock.
-Creating register for signal `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:264$22_ADDR' using process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:262$31'.
+Creating register for signal `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:264$22_ADDR' using process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:262$31'.
   created $dff cell `$procdff$64' with positive edge clock.
-Creating register for signal `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:264$22_DATA' using process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:262$31'.
+Creating register for signal `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:264$22_DATA' using process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:262$31'.
   created $dff cell `$procdff$65' with positive edge clock.
-Creating register for signal `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:264$22_EN' using process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:262$31'.
+Creating register for signal `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:264$22_EN' using process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:262$31'.
   created $dff cell `$procdff$66' with positive edge clock.
-Creating register for signal `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.\out1' using process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:253$23'.
+Creating register for signal `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.\out1' using process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:253$23'.
   created $dff cell `$procdff$67' with positive edge clock.
-Creating register for signal `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:255$21_ADDR' using process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:253$23'.
+Creating register for signal `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:255$21_ADDR' using process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:253$23'.
   created $dff cell `$procdff$68' with positive edge clock.
-Creating register for signal `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:255$21_DATA' using process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:253$23'.
+Creating register for signal `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:255$21_DATA' using process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:253$23'.
   created $dff cell `$procdff$69' with positive edge clock.
-Creating register for signal `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:255$21_EN' using process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:253$23'.
+Creating register for signal `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:255$21_EN' using process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:253$23'.
   created $dff cell `$procdff$70' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:262$31'.
-Removing empty process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:262$31'.
-Found and cleaned up 1 empty switch in `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:253$23'.
-Removing empty process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:253$23'.
+Found and cleaned up 1 empty switch in `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:262$31'.
+Removing empty process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:262$31'.
+Found and cleaned up 1 empty switch in `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:253$23'.
+Removing empty process `$paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:253$23'.
 Cleaned up 2 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -163,8 +163,8 @@ Finding identical cells in module `\top_ram'.
 Removed a total of 0 cells.
 
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $procdff$63 ($dff) from module $paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:267$38_DATA, Q = \out2).
-Adding EN signal on $procdff$67 ($dff) from module $paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:258$30_DATA, Q = \out1).
+Adding EN signal on $procdff$63 ($dff) from module $paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:267$38_DATA, Q = \out2).
+Adding EN signal on $procdff$67 ($dff) from module $paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/top_ram.v:258$30_DATA, Q = \out1).
 
 4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module $paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram..
@@ -223,10 +223,8 @@ Optimizing module top_ram.
    Number of memory bits:          256
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                          64
+     $mux                           82
 
 === top_ram ===
 
@@ -238,30 +236,25 @@ Optimizing module top_ram.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $and                            1
-     $or                             1
-     $paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram      1
+     $and                           32
+     $or                            32
 
 === design hierarchy ===
 
    top_ram                           1
-     $paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram      1
+     $paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram      0
 
-   Number of wires:                 26
-   Number of wire bits:            533
-   Number of public wires:          18
-   Number of public wire bits:     325
-   Number of memories:               1
-   Number of memory bits:          256
+   Number of wires:                  9
+   Number of wire bits:            178
+   Number of public wires:           9
+   Number of public wire bits:     178
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 14
-     $and                            1
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
-     $or                             1
+   Number of cells:                  3
+     $and                           32
+     $or                            32
 
-End of script. Logfile hash: ba37bb31fa, CPU: user 0.03s system 0.00s, MEM: 11.28 MB peak
+End of script. Logfile hash: 264eca818c, CPU: user 0.03s system 0.00s, MEM: 11.43 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
 Time spent: 24% 4x opt_expr (0 sec), 24% 2x read_verilog (0 sec), ...

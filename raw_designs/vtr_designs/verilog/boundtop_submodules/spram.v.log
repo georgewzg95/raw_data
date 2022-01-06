@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/spram.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/spram.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/spram.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/spram.v' to AST representation.
 Generating RTLIL representation for module `\spram'.
 Successfully finished Verilog frontend.
 
@@ -59,25 +59,25 @@ Promoted 1 assignment to connection.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\spram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/spram.v:17$1'.
+Creating decoders for process `\spram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/spram.v:17$1'.
      1/2: $0\mem2[12:0]
      2/2: $0\mem1[12:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\spram.\temp_reg' using process `\spram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/spram.v:17$1'.
+Creating register for signal `\spram.\temp_reg' using process `\spram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/spram.v:17$1'.
   created $dff cell `$procdff$8' with positive edge clock.
-Creating register for signal `\spram.\mem1' using process `\spram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/spram.v:17$1'.
+Creating register for signal `\spram.\mem1' using process `\spram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/spram.v:17$1'.
   created $dff cell `$procdff$9' with positive edge clock.
-Creating register for signal `\spram.\mem2' using process `\spram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/spram.v:17$1'.
+Creating register for signal `\spram.\mem2' using process `\spram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/spram.v:17$1'.
   created $dff cell `$procdff$10' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\spram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/spram.v:17$1'.
-Removing empty process `spram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/spram.v:17$1'.
+Found and cleaned up 1 empty switch in `\spram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/spram.v:17$1'.
+Removing empty process `spram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/spram.v:17$1'.
 Cleaned up 1 empty switch.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -124,7 +124,7 @@ Setting constant 0-bit at position 9 on $procdff$8 ($dff) from module spram.
 Setting constant 0-bit at position 10 on $procdff$8 ($dff) from module spram.
 Setting constant 0-bit at position 11 on $procdff$8 ($dff) from module spram.
 Setting constant 0-bit at position 12 on $procdff$8 ($dff) from module spram.
-Adding EN signal on $procdff$9 ($dff) from module spram (D = $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/spram.v:22$3_Y, Q = \mem1).
+Adding EN signal on $procdff$9 ($dff) from module spram (D = $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/spram.v:22$3_Y, Q = \mem1).
 
 4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \spram..
@@ -199,8 +199,8 @@ Optimizing module spram.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dffe                           2
+     $dffe                          26
 
-End of script. Logfile hash: a55edbae2a, CPU: user 0.01s system 0.00s, MEM: 11.03 MB peak
+End of script. Logfile hash: c94cb3314c, CPU: user 0.03s system 0.01s, MEM: 11.22 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 49% 3x opt_dff (0 sec), 24% 3x opt_clean (0 sec), ...
+Time spent: 49% 5x opt_expr (0 sec), 24% 3x opt_dff (0 sec), ...

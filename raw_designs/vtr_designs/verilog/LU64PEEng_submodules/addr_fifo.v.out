@@ -11,10 +11,8 @@
    Number of memory bits:           32
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                          16
+     $mux                           26
 
 === addr_fifo ===
 
@@ -26,39 +24,36 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 22
-     $add                            3
-     $dffe                           4
-     $eq                             1
+     $add                           40
+     $dffe                          21
+     $eq                             5
      $logic_and                      4
-     $logic_not                      3
-     $mux                            2
-     $ne                             1
-     $paramod\dual_port_ram\DATA_WIDTH=5'01000\ADDR_WIDTH=4'0100      1
-     $reduce_bool                    2
-     $sub                            1
+     $logic_not                      7
+     $mux                           10
+     $ne                             5
+     $reduce_bool                    7
+     $sub                            5
 
 === design hierarchy ===
 
    addr_fifo                         1
-     $paramod\dual_port_ram\DATA_WIDTH=5'01000\ADDR_WIDTH=4'0100      1
+     $paramod\dual_port_ram\DATA_WIDTH=5'01000\ADDR_WIDTH=4'0100      0
 
-   Number of wires:                 45
-   Number of wire bits:            221
-   Number of public wires:          22
-   Number of public wire bits:     101
-   Number of memories:               1
-   Number of memory bits:           32
+   Number of wires:                 28
+   Number of wire bits:            122
+   Number of public wires:          13
+   Number of public wire bits:      58
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 33
-     $add                            3
-     $dffe                           6
-     $eq                             1
+   Number of cells:                 22
+     $add                           40
+     $dffe                          21
+     $eq                             5
      $logic_and                      4
-     $logic_not                      3
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            8
-     $ne                             1
-     $reduce_bool                    2
-     $sub                            1
+     $logic_not                      7
+     $mux                           10
+     $ne                             5
+     $reduce_bool                    7
+     $sub                            5
 

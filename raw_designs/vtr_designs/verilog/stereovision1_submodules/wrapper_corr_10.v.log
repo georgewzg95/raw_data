@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v' to AST representation.
 Generating RTLIL representation for module `\wrapper_corr_10'.
 Generating RTLIL representation for module `\corr'.
 Generating RTLIL representation for module `\sh_reg'.
@@ -79,9 +79,9 @@ Mapping positional arguments of cell wrapper_corr_10.inst_sh_reg_r_1 (sh_reg).
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:199$8 in module sh_reg.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:169$3 in module corr.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1 in module wrapper_corr_10.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:199$8 in module sh_reg.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:169$3 in module corr.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1 in module wrapper_corr_10.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -93,12 +93,12 @@ Promoted 3 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\sh_reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:199$8'.
+Creating decoders for process `\sh_reg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:199$8'.
      1/2: $0\dout_2[7:0]
      2/2: $0\dout_1[7:0]
-Creating decoders for process `\corr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:169$3'.
+Creating decoders for process `\corr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:169$3'.
      1/1: $0\corr_out[15:0]
-Creating decoders for process `\wrapper_corr_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
+Creating decoders for process `\wrapper_corr_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
      1/11: $0\corr_out_10[15:0]
      2/11: $0\corr_out_9[15:0]
      3/11: $0\corr_out_8[15:0]
@@ -114,50 +114,50 @@ Creating decoders for process `\wrapper_corr_10.$proc$/home/zhigang/DATA/raw_des
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\sh_reg.\dout_1' using process `\sh_reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:199$8'.
+Creating register for signal `\sh_reg.\dout_1' using process `\sh_reg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:199$8'.
   created $dff cell `$procdff$52' with positive edge clock.
-Creating register for signal `\sh_reg.\dout_2' using process `\sh_reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:199$8'.
+Creating register for signal `\sh_reg.\dout_2' using process `\sh_reg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:199$8'.
   created $dff cell `$procdff$53' with positive edge clock.
-Creating register for signal `\corr.\corr_out' using process `\corr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:169$3'.
+Creating register for signal `\corr.\corr_out' using process `\corr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:169$3'.
   created $dff cell `$procdff$54' with positive edge clock.
-Creating register for signal `\corr.\lrexrre_reg' using process `\corr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:169$3'.
+Creating register for signal `\corr.\lrexrre_reg' using process `\corr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:169$3'.
   created $dff cell `$procdff$55' with positive edge clock.
-Creating register for signal `\corr.\limxrim_reg' using process `\corr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:169$3'.
+Creating register for signal `\corr.\limxrim_reg' using process `\corr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:169$3'.
   created $dff cell `$procdff$56' with positive edge clock.
-Creating register for signal `\corr.\corr_out_tmp' using process `\corr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:169$3'.
+Creating register for signal `\corr.\corr_out_tmp' using process `\corr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:169$3'.
   created $dff cell `$procdff$57' with positive edge clock.
-Creating register for signal `\wrapper_corr_10.\corr_out_0' using process `\wrapper_corr_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
+Creating register for signal `\wrapper_corr_10.\corr_out_0' using process `\wrapper_corr_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
   created $dff cell `$procdff$58' with positive edge clock.
-Creating register for signal `\wrapper_corr_10.\corr_out_1' using process `\wrapper_corr_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
+Creating register for signal `\wrapper_corr_10.\corr_out_1' using process `\wrapper_corr_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
   created $dff cell `$procdff$59' with positive edge clock.
-Creating register for signal `\wrapper_corr_10.\corr_out_2' using process `\wrapper_corr_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
+Creating register for signal `\wrapper_corr_10.\corr_out_2' using process `\wrapper_corr_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
   created $dff cell `$procdff$60' with positive edge clock.
-Creating register for signal `\wrapper_corr_10.\corr_out_3' using process `\wrapper_corr_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
+Creating register for signal `\wrapper_corr_10.\corr_out_3' using process `\wrapper_corr_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
   created $dff cell `$procdff$61' with positive edge clock.
-Creating register for signal `\wrapper_corr_10.\corr_out_4' using process `\wrapper_corr_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
+Creating register for signal `\wrapper_corr_10.\corr_out_4' using process `\wrapper_corr_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
   created $dff cell `$procdff$62' with positive edge clock.
-Creating register for signal `\wrapper_corr_10.\corr_out_5' using process `\wrapper_corr_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
+Creating register for signal `\wrapper_corr_10.\corr_out_5' using process `\wrapper_corr_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
   created $dff cell `$procdff$63' with positive edge clock.
-Creating register for signal `\wrapper_corr_10.\corr_out_6' using process `\wrapper_corr_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
+Creating register for signal `\wrapper_corr_10.\corr_out_6' using process `\wrapper_corr_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
   created $dff cell `$procdff$64' with positive edge clock.
-Creating register for signal `\wrapper_corr_10.\corr_out_7' using process `\wrapper_corr_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
+Creating register for signal `\wrapper_corr_10.\corr_out_7' using process `\wrapper_corr_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
   created $dff cell `$procdff$65' with positive edge clock.
-Creating register for signal `\wrapper_corr_10.\corr_out_8' using process `\wrapper_corr_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
+Creating register for signal `\wrapper_corr_10.\corr_out_8' using process `\wrapper_corr_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
   created $dff cell `$procdff$66' with positive edge clock.
-Creating register for signal `\wrapper_corr_10.\corr_out_9' using process `\wrapper_corr_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
+Creating register for signal `\wrapper_corr_10.\corr_out_9' using process `\wrapper_corr_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
   created $dff cell `$procdff$67' with positive edge clock.
-Creating register for signal `\wrapper_corr_10.\corr_out_10' using process `\wrapper_corr_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
+Creating register for signal `\wrapper_corr_10.\corr_out_10' using process `\wrapper_corr_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
   created $dff cell `$procdff$68' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\sh_reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:199$8'.
-Removing empty process `sh_reg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:199$8'.
-Found and cleaned up 1 empty switch in `\corr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:169$3'.
-Removing empty process `corr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:169$3'.
-Found and cleaned up 1 empty switch in `\wrapper_corr_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
-Removing empty process `wrapper_corr_10.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
+Found and cleaned up 1 empty switch in `\sh_reg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:199$8'.
+Removing empty process `sh_reg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:199$8'.
+Found and cleaned up 1 empty switch in `\corr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:169$3'.
+Removing empty process `corr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:169$3'.
+Found and cleaned up 1 empty switch in `\wrapper_corr_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
+Removing empty process `wrapper_corr_10.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision1_submodules/wrapper_corr_10.v:117$1'.
 Cleaned up 3 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -289,10 +289,10 @@ Optimizing module wrapper_corr_10.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $add                            1
-     $dff                            3
-     $dffe                           1
-     $mul                            2
+     $add                           16
+     $dff                           48
+     $dffe                          16
+     $mul                           32
 
 === sh_reg ===
 
@@ -304,7 +304,7 @@ Optimizing module wrapper_corr_10.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dffe                           2
+     $dffe                          16
 
 === wrapper_corr_10 ===
 
@@ -316,29 +316,24 @@ Optimizing module wrapper_corr_10.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 34
-     $dffe                          11
-     corr                           11
-     sh_reg                         12
+     $dffe                         176
 
 === design hierarchy ===
 
    wrapper_corr_10                   1
-     corr                           11
-     sh_reg                         12
+     corr                            0
+     sh_reg                          0
 
-   Number of wires:                267
-   Number of wire bits:           2592
-   Number of public wires:         234
-   Number of public wire bits:    2064
+   Number of wires:                 52
+   Number of wire bits:            578
+   Number of public wires:          52
+   Number of public wire bits:     578
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                112
-     $add                           11
-     $dff                           33
-     $dffe                          46
-     $mul                           22
+   Number of cells:                 34
+     $dffe                         176
 
-End of script. Logfile hash: 635df68f96, CPU: user 0.04s system 0.00s, MEM: 12.23 MB peak
+End of script. Logfile hash: f954b1ffc5, CPU: user 0.08s system 0.00s, MEM: 12.38 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 27% 3x opt_merge (0 sec), 18% 4x opt_expr (0 sec), ...
+Time spent: 21% 4x opt_expr (0 sec), 21% 2x read_verilog (0 sec), ...

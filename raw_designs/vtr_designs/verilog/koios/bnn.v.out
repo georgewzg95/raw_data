@@ -11,7 +11,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     myproject_mul_16s_10ns_26_2_0_MulnS_4      1
 
 === $paramod$550c09fdea8284353e3c76802c597bf3d4e95998\myproject_mul_16s_8ns_24_2_0 ===
 
@@ -23,7 +22,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     myproject_mul_16s_8ns_24_2_0_MulnS_5      1
 
 === $paramod$7f0a320bc5e26b892d2fafdb055ed84c02c7ec6b\myproject_mul_16s_11ns_26_2_0 ===
 
@@ -35,7 +33,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     myproject_mul_16s_11ns_26_2_0_MulnS_1      1
 
 === $paramod$984ecd35e0f89596ee5f02ee0100f9125a86007a\myproject_mul_16s_9ns_25_2_0 ===
 
@@ -47,7 +44,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     myproject_mul_16s_9ns_25_2_0_MulnS_3      1
 
 === $paramod$ba914997bfc9b4edf1973d51a5957c60a5cecff0\myproject_mul_16s_12ns_26_2_0 ===
 
@@ -59,7 +55,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     myproject_mul_16s_12ns_26_2_0_MulnS_0      1
 
 === $paramod$c930608449b9447e164d2770ef98965886712494\myproject_mul_16s_13ns_26_2_0 ===
 
@@ -71,7 +66,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     myproject_mul_16s_13ns_26_2_0_MulnS_2      1
 
 === dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1 ===
 
@@ -83,11 +77,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:               1029
-     $add                          251
-     $dff                           65
-     $dffe                         301
-     $mux                           64
-     $sub                          348
+     $add                         4016
+     $dff                         1025
+     $dffe                        5056
+     $mux                         1024
+     $sub                         5568
 
 === dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_2 ===
 
@@ -99,11 +93,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:               1327
-     $add                          339
-     $dff                           33
-     $dffe                         464
-     $mux                           32
-     $sub                          459
+     $add                         5424
+     $dff                          513
+     $dffe                        7424
+     $mux                          512
+     $sub                         7344
 
 === dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s ===
 
@@ -115,11 +109,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:               2974
-     $add                          719
-     $dff                           33
-     $dffe                        1234
-     $mux                           32
-     $sub                          956
+     $add                        11504
+     $dff                          513
+     $dffe                       19744
+     $mux                          512
+     $sub                        15296
 
 === dense_latency_ap_fixed_ap_fixed_config14_0_0_0_0_0_0 ===
 
@@ -131,11 +125,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                348
-     $add                           71
-     $dff                            6
-     $dffe                         193
-     $mux                            5
-     $sub                           73
+     $add                         1136
+     $dff                           81
+     $dffe                        3088
+     $mux                           80
+     $sub                         1168
 
 === myproject ===
 
@@ -148,23 +142,12 @@
    Number of processes:              0
    Number of cells:                620
      $and                           72
-     $dffe                         389
-     $mux                            7
+     $dffe                        6224
+     $mux                          262
      $not                           70
      $or                             1
-     $reduce_or                      1
-     $sdffe                         69
-     dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1      1
-     dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_2      1
-     dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s      1
-     dense_latency_ap_fixed_ap_fixed_config14_0_0_0_0_0_0      1
-     normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1      1
-     normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_2      1
-     normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s      1
-     normalize_ap_fixed_ap_fixed_config16_0_0_0_0_0_0_0_0_0_0      1
-     relu_max_ap_fixed_ap_fixed_1_relu1_config13_s      1
-     relu_max_ap_fixed_ap_fixed_1_relu1_config5_s      1
-     relu_max_ap_fixed_ap_fixed_1_relu1_config9_s      1
+     $reduce_or                      2
+     $sdffe                        324
 
 === myproject_mul_16s_10ns_26_2_0_MulnS_4 ===
 
@@ -176,8 +159,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dffe                           1
-     $mul                            1
+     $dffe                          26
+     $mul                           26
 
 === myproject_mul_16s_11ns_26_2_0_MulnS_1 ===
 
@@ -189,8 +172,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dffe                           1
-     $mul                            1
+     $dffe                          26
+     $mul                           26
 
 === myproject_mul_16s_12ns_26_2_0_MulnS_0 ===
 
@@ -202,8 +185,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dffe                           1
-     $mul                            1
+     $dffe                          26
+     $mul                           26
 
 === myproject_mul_16s_13ns_26_2_0_MulnS_2 ===
 
@@ -215,8 +198,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dffe                           1
-     $mul                            1
+     $dffe                          26
+     $mul                           26
 
 === myproject_mul_16s_8ns_24_2_0_MulnS_5 ===
 
@@ -228,8 +211,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dffe                           1
-     $mul                            1
+     $dffe                          24
+     $mul                           24
 
 === myproject_mul_16s_9ns_25_2_0_MulnS_3 ===
 
@@ -241,8 +224,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dffe                           1
-     $mul                            1
+     $dffe                          25
+     $mul                           25
 
 === normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1 ===
 
@@ -254,13 +237,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                389
-     $add                           67
-     $dff                           65
-     $dffe                         131
-     $mux                           65
-     $paramod$7f0a320bc5e26b892d2fafdb055ed84c02c7ec6b\myproject_mul_16s_11ns_26_2_0     21
-     $paramod$ba914997bfc9b4edf1973d51a5957c60a5cecff0\myproject_mul_16s_12ns_26_2_0     36
-     $paramod$c930608449b9447e164d2770ef98965886712494\myproject_mul_16s_13ns_26_2_0      4
+     $add                         1102
+     $dff                         1025
+     $dffe                        2096
+     $mux                         1025
 
 === normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_2 ===
 
@@ -272,15 +252,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                195
-     $add                           32
-     $dff                           33
-     $dffe                          65
-     $mux                           33
-     $paramod$06ed9e44535b073d8948b994de3cf7848819b6b5\myproject_mul_16s_10ns_26_2_0     19
-     $paramod$550c09fdea8284353e3c76802c597bf3d4e95998\myproject_mul_16s_8ns_24_2_0      1
-     $paramod$7f0a320bc5e26b892d2fafdb055ed84c02c7ec6b\myproject_mul_16s_11ns_26_2_0      3
-     $paramod$984ecd35e0f89596ee5f02ee0100f9125a86007a\myproject_mul_16s_9ns_25_2_0      8
-     $sub                            1
+     $add                          511
+     $dff                          513
+     $dffe                        1028
+     $mux                          513
+     $sub                           25
 
 === normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s ===
 
@@ -292,12 +268,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                197
-     $add                           35
-     $dff                           33
-     $dffe                          67
-     $mux                           33
-     $paramod$06ed9e44535b073d8948b994de3cf7848819b6b5\myproject_mul_16s_10ns_26_2_0      7
-     $paramod$984ecd35e0f89596ee5f02ee0100f9125a86007a\myproject_mul_16s_9ns_25_2_0     22
+     $add                          585
+     $dff                          513
+     $dffe                        1042
+     $mux                          513
 
 === normalize_ap_fixed_ap_fixed_config16_0_0_0_0_0_0_0_0_0_0 ===
 
@@ -309,11 +283,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 32
-     $add                            5
-     $dff                            6
-     $dffe                          11
-     $mux                            6
-     $paramod$984ecd35e0f89596ee5f02ee0100f9125a86007a\myproject_mul_16s_9ns_25_2_0      4
+     $add                           78
+     $dff                           81
+     $dffe                         166
+     $mux                           81
 
 === relu_max_ap_fixed_ap_fixed_1_relu1_config13_s ===
 
@@ -325,8 +298,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                160
-     $gt                            32
-     $mux                           64
+     $gt                           512
+     $mux                          544
      $not                           32
      $or                            32
 
@@ -340,8 +313,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                320
-     $gt                            64
-     $mux                          128
+     $gt                          1024
+     $mux                         1088
      $not                           64
      $or                            64
 
@@ -355,64 +328,59 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                160
-     $gt                            32
-     $mux                           64
+     $gt                           512
+     $mux                          544
      $not                           32
      $or                            32
 
 === design hierarchy ===
 
    myproject                         1
-     dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1      1
-     dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_2      1
-     dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s      1
-     dense_latency_ap_fixed_ap_fixed_config14_0_0_0_0_0_0      1
-     normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1      1
-       $paramod$7f0a320bc5e26b892d2fafdb055ed84c02c7ec6b\myproject_mul_16s_11ns_26_2_0     21
-         myproject_mul_16s_11ns_26_2_0_MulnS_1      1
-       $paramod$ba914997bfc9b4edf1973d51a5957c60a5cecff0\myproject_mul_16s_12ns_26_2_0     36
-         myproject_mul_16s_12ns_26_2_0_MulnS_0      1
-       $paramod$c930608449b9447e164d2770ef98965886712494\myproject_mul_16s_13ns_26_2_0      4
-         myproject_mul_16s_13ns_26_2_0_MulnS_2      1
-     normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_2      1
-       $paramod$06ed9e44535b073d8948b994de3cf7848819b6b5\myproject_mul_16s_10ns_26_2_0     19
-         myproject_mul_16s_10ns_26_2_0_MulnS_4      1
-       $paramod$550c09fdea8284353e3c76802c597bf3d4e95998\myproject_mul_16s_8ns_24_2_0      1
-         myproject_mul_16s_8ns_24_2_0_MulnS_5      1
-       $paramod$7f0a320bc5e26b892d2fafdb055ed84c02c7ec6b\myproject_mul_16s_11ns_26_2_0      3
-         myproject_mul_16s_11ns_26_2_0_MulnS_1      1
-       $paramod$984ecd35e0f89596ee5f02ee0100f9125a86007a\myproject_mul_16s_9ns_25_2_0      8
-         myproject_mul_16s_9ns_25_2_0_MulnS_3      1
-     normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s      1
-       $paramod$06ed9e44535b073d8948b994de3cf7848819b6b5\myproject_mul_16s_10ns_26_2_0      7
-         myproject_mul_16s_10ns_26_2_0_MulnS_4      1
-       $paramod$984ecd35e0f89596ee5f02ee0100f9125a86007a\myproject_mul_16s_9ns_25_2_0     22
-         myproject_mul_16s_9ns_25_2_0_MulnS_3      1
-     normalize_ap_fixed_ap_fixed_config16_0_0_0_0_0_0_0_0_0_0      1
-       $paramod$984ecd35e0f89596ee5f02ee0100f9125a86007a\myproject_mul_16s_9ns_25_2_0      4
-         myproject_mul_16s_9ns_25_2_0_MulnS_3      1
-     relu_max_ap_fixed_ap_fixed_1_relu1_config13_s      1
-     relu_max_ap_fixed_ap_fixed_1_relu1_config5_s      1
-     relu_max_ap_fixed_ap_fixed_1_relu1_config9_s      1
+     dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1      0
+     dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_2      0
+     dense_latency_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s      0
+     dense_latency_ap_fixed_ap_fixed_config14_0_0_0_0_0_0      0
+     normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_1      0
+       $paramod$7f0a320bc5e26b892d2fafdb055ed84c02c7ec6b\myproject_mul_16s_11ns_26_2_0      0
+         myproject_mul_16s_11ns_26_2_0_MulnS_1      0
+       $paramod$ba914997bfc9b4edf1973d51a5957c60a5cecff0\myproject_mul_16s_12ns_26_2_0      0
+         myproject_mul_16s_12ns_26_2_0_MulnS_0      0
+       $paramod$c930608449b9447e164d2770ef98965886712494\myproject_mul_16s_13ns_26_2_0      0
+         myproject_mul_16s_13ns_26_2_0_MulnS_2      0
+     normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_2      0
+       $paramod$06ed9e44535b073d8948b994de3cf7848819b6b5\myproject_mul_16s_10ns_26_2_0      0
+         myproject_mul_16s_10ns_26_2_0_MulnS_4      0
+       $paramod$550c09fdea8284353e3c76802c597bf3d4e95998\myproject_mul_16s_8ns_24_2_0      0
+         myproject_mul_16s_8ns_24_2_0_MulnS_5      0
+       $paramod$7f0a320bc5e26b892d2fafdb055ed84c02c7ec6b\myproject_mul_16s_11ns_26_2_0      0
+         myproject_mul_16s_11ns_26_2_0_MulnS_1      0
+       $paramod$984ecd35e0f89596ee5f02ee0100f9125a86007a\myproject_mul_16s_9ns_25_2_0      0
+         myproject_mul_16s_9ns_25_2_0_MulnS_3      0
+     normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s      0
+       $paramod$06ed9e44535b073d8948b994de3cf7848819b6b5\myproject_mul_16s_10ns_26_2_0      0
+         myproject_mul_16s_10ns_26_2_0_MulnS_4      0
+       $paramod$984ecd35e0f89596ee5f02ee0100f9125a86007a\myproject_mul_16s_9ns_25_2_0      0
+         myproject_mul_16s_9ns_25_2_0_MulnS_3      0
+     normalize_ap_fixed_ap_fixed_config16_0_0_0_0_0_0_0_0_0_0      0
+       $paramod$984ecd35e0f89596ee5f02ee0100f9125a86007a\myproject_mul_16s_9ns_25_2_0      0
+         myproject_mul_16s_9ns_25_2_0_MulnS_3      0
+     relu_max_ap_fixed_ap_fixed_1_relu1_config13_s      0
+     relu_max_ap_fixed_ap_fixed_1_relu1_config5_s      0
+     relu_max_ap_fixed_ap_fixed_1_relu1_config9_s      0
 
-   Number of wires:              11734
-   Number of wire bits:         153967
-   Number of public wires:       11464
-   Number of public wire bits:  153697
+   Number of wires:               1657
+   Number of wire bits:          14272
+   Number of public wires:        1515
+   Number of public wire bits:   14130
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               7865
-     $add                         1519
+   Number of cells:                620
      $and                           72
-     $dff                          274
-     $dffe                        2980
-     $gt                           128
-     $mul                          125
-     $mux                          533
-     $not                          198
-     $or                           129
-     $reduce_or                      1
-     $sdffe                         69
-     $sub                         1837
+     $dffe                        6224
+     $mux                          262
+     $not                           70
+     $or                             1
+     $reduce_or                      2
+     $sdffe                        324
 

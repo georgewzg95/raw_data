@@ -11,12 +11,12 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            1
-     $eq                             1
-     $gt                             1
-     $logic_not                      1
-     $lt                             1
-     $mux                            4
+     $add                           20
+     $eq                             2
+     $gt                            20
+     $logic_not                      2
+     $lt                            20
+     $mux                           80
 
 === $paramod$5acd687b4b9e547544b6afb40aa21b02d10bac56\rounding ===
 
@@ -28,7 +28,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $add                            1
+     $add                           20
      $logic_not                      1
 
 === $paramod$ab59b465056463fc04d10aed504d582ed3f913f6\processing_element ===
@@ -41,12 +41,12 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            1
-     $eq                             1
-     $gt                             1
-     $logic_not                      1
-     $lt                             1
-     $mux                            4
+     $add                           20
+     $eq                             2
+     $gt                            16
+     $logic_not                      2
+     $lt                            16
+     $mux                           72
 
 === reduction_layer ===
 
@@ -58,20 +58,17 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 42
-     $add                            2
-     $dffe                           1
-     $eq                             5
-     $logic_not                      2
-     $mux                            8
-     $ne                             4
-     $paramod$5acd687b4b9e547544b6afb40aa21b02d10bac56\rounding      1
-     $pmux                           4
-     $reduce_and                     4
-     $reduce_bool                    4
-     $reduce_or                      1
-     $sdffe                          4
-     reduction_unit                  1
-     spram                           1
+     $add                           64
+     $dffe                           5
+     $eq                            21
+     $logic_not                      6
+     $mux                           43
+     $ne                             8
+     $pmux                          11
+     $reduce_and                    11
+     $reduce_bool                   11
+     $reduce_or                      2
+     $sdffe                         10
 
 === reduction_unit ===
 
@@ -83,9 +80,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                256
-     $paramod$3ba363c57e18702ead9096ac82e02dd89f68084a\processing_element     64
-     $paramod$ab59b465056463fc04d10aed504d582ed3f913f6\processing_element     64
-     $sdff                         128
+     $sdff                        2560
 
 === spram ===
 
@@ -97,42 +92,35 @@
    Number of memory bits:        65536
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                        2048
+     $mux                         2054
 
 === design hierarchy ===
 
    reduction_layer                   1
-     $paramod$5acd687b4b9e547544b6afb40aa21b02d10bac56\rounding      1
-     reduction_unit                  1
-       $paramod$3ba363c57e18702ead9096ac82e02dd89f68084a\processing_element     64
-       $paramod$ab59b465056463fc04d10aed504d582ed3f913f6\processing_element     64
-     spram                           1
+     $paramod$5acd687b4b9e547544b6afb40aa21b02d10bac56\rounding      0
+     reduction_unit                  0
+       $paramod$3ba363c57e18702ead9096ac82e02dd89f68084a\processing_element      0
+       $paramod$ab59b465056463fc04d10aed504d582ed3f913f6\processing_element      0
+     spram                           0
 
-   Number of wires:               1988
-   Number of wire bits:          39979
-   Number of public wires:        1311
-   Number of public wire bits:   30640
-   Number of memories:               1
-   Number of memory bits:        65536
+   Number of wires:                 52
+   Number of wire bits:           4322
+   Number of public wires:          20
+   Number of public wire bits:    4205
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               1327
-     $add                          131
-     $dffe                           2
-     $eq                           133
-     $gt                           128
-     $logic_not                    131
-     $lt                           128
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                          523
-     $ne                             4
-     $pmux                           4
-     $reduce_and                     4
-     $reduce_bool                    4
-     $reduce_or                      1
-     $sdff                         128
-     $sdffe                          4
+   Number of cells:                 42
+     $add                           64
+     $dffe                           5
+     $eq                            21
+     $logic_not                      6
+     $mux                           43
+     $ne                             8
+     $pmux                          11
+     $reduce_and                    11
+     $reduce_bool                   11
+     $reduce_or                      2
+     $sdffe                         10
 

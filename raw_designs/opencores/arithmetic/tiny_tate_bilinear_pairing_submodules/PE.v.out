@@ -11,18 +11,12 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 32
-     $mux                           10
+     $mux                        11864
      $not                            1
-     $reduce_bool                    1
-     $reduce_or                      1
-     $sdff                           1
-     $sdffe                          3
-     PPG                             3
-     f3m_add                         3
-     mod_p                           6
-     v0                              1
-     v1                              1
-     v2                              1
+     $reduce_bool                    2
+     $reduce_or                      2
+     $sdff                        1186
+     $sdffe                       3560
 
 === PPG ===
 
@@ -34,7 +28,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                593
-     f3_mult                       593
 
 === f3_add ===
 
@@ -74,7 +67,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     f3_add                          1
 
 === f3m_add ===
 
@@ -86,7 +78,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                593
-     f3_add                        593
 
 === mod_p ===
 
@@ -98,8 +89,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     f3_mult                         2
-     f3_sub                          2
 
 === v0 ===
 
@@ -137,32 +126,30 @@
 === design hierarchy ===
 
    PE                                1
-     PPG                             3
-       f3_mult                     593
-     f3m_add                         3
-       f3_add                      593
-     mod_p                           6
-       f3_mult                       2
-       f3_sub                        2
-         f3_add                      1
-     v0                              1
-     v1                              1
-     v2                              1
+     PPG                             0
+       f3_mult                       0
+     f3m_add                         0
+       f3_add                        0
+     mod_p                           0
+       f3_mult                       0
+       f3_sub                        0
+         f3_add                      0
+     v0                              0
+     v1                              0
+     v2                              0
 
-   Number of wires:              89693
-   Number of wire bits:         185843
-   Number of public wires:       28793
-   Number of public wire bits:  121384
+   Number of wires:                 53
+   Number of wire bits:          39179
+   Number of public wires:          47
+   Number of public wire bits:   35614
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:              68075
-     $and                        42984
-     $mux                           10
-     $not                        14329
-     $or                         10746
-     $reduce_bool                    1
-     $reduce_or                      1
-     $sdff                           1
-     $sdffe                          3
+   Number of cells:                 32
+     $mux                        11864
+     $not                            1
+     $reduce_bool                    2
+     $reduce_or                      2
+     $sdff                        1186
+     $sdffe                       3560
 

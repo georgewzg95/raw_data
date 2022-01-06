@@ -24,36 +24,36 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v' to AST representation.
 Generating RTLIL representation for module `\mult_add'.
 Generating RTLIL representation for module `\fpu_add'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:239.2-421.5 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:239.2-421.5 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:424.2-464.5 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:424.2-464.5 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:469.2-571.5 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:469.2-571.5 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\fpmul'.
-/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:631: Warning: Identifier `\sign' is implicitly declared.
+/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:631: Warning: Identifier `\sign' is implicitly declared.
 Generating RTLIL representation for module `\assemble'.
 Generating RTLIL representation for module `\flag'.
 Generating RTLIL representation for module `\round'.
 Generating RTLIL representation for module `\shift'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:903.3-1033.5 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:903.3-1033.5 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\normalize'.
 Generating RTLIL representation for module `\exponent'.
 Generating RTLIL representation for module `\multiply_a'.
 Generating RTLIL representation for module `\prenorm'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1188.2-1286.5 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1188.2-1286.5 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1291.2-1389.5 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1291.2-1389.5 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\special'.
@@ -125,12 +125,12 @@ Mapping positional arguments of cell fpmul.preprocesser (preprocess).
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1291$283 in module prenorm.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1188$258 in module prenorm.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:903$159 in module shift.
-Marked 24 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:469$73 in module fpu_add.
-Marked 6 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:424$59 in module fpu_add.
-Marked 4 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:239$4 in module fpu_add.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1291$283 in module prenorm.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1188$258 in module prenorm.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:903$159 in module shift.
+Marked 24 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:469$73 in module fpu_add.
+Marked 6 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:424$59 in module fpu_add.
+Marked 4 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:239$4 in module fpu_add.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -142,14 +142,14 @@ Promoted 16 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\prenorm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1291$283'.
+Creating decoders for process `\prenorm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1291$283'.
      1/1: $1\shiftedb[23:0]
-Creating decoders for process `\prenorm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1188$258'.
+Creating decoders for process `\prenorm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1188$258'.
      1/1: $1\shifteda[23:0]
-Creating decoders for process `\shift.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:903$159'.
+Creating decoders for process `\shift.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:903$159'.
      1/1: $1\postshift[95:0]
-Creating decoders for process `\fpmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:683$102'.
-Creating decoders for process `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:469$73'.
+Creating decoders for process `\fpmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:683$102'.
+Creating decoders for process `\fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:469$73'.
      1/48: $24\sum[30:0] [30:23]
      2/48: $24\sum[30:0] [22:0]
      3/48: $23\sum[30:0] [30:23]
@@ -198,7 +198,7 @@ Creating decoders for process `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr
     46/48: $2\sum[30:0] [22:0]
     47/48: $1\sum[30:0] [30:23]
     48/48: $1\sum[30:0] [22:0]
-Creating decoders for process `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:424$59'.
+Creating decoders for process `\fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:424$59'.
      1/11: $5\sum[31:31]
      2/11: $5\sum_man[24:0]
      3/11: $4\sum[31:31]
@@ -210,7 +210,7 @@ Creating decoders for process `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr
      9/11: $1\sum[31:31]
     10/11: $1\sum_man[24:0]
     11/11: $1\smaller[0:0]
-Creating decoders for process `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:239$4'.
+Creating decoders for process `\fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:239$4'.
      1/10: $3\b_man[23:0]
      2/10: $2\a_exp[7:0]
      3/10: $2\b_man[23:0]
@@ -221,52 +221,52 @@ Creating decoders for process `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr
      8/10: $1\b_man[23:0]
      9/10: $1\a_man[23:0]
     10/10: $1\temp[7:0]
-Creating decoders for process `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:231$3'.
-Creating decoders for process `\mult_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:203$2'.
+Creating decoders for process `\fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:231$3'.
+Creating decoders for process `\mult_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:203$2'.
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\prenorm.\shiftedb' from process `\prenorm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1291$283'.
-No latch inferred for signal `\prenorm.\shifteda' from process `\prenorm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1188$258'.
-No latch inferred for signal `\shift.\postshift' from process `\shift.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:903$159'.
-No latch inferred for signal `\fpu_add.\sum [30:0]' from process `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:469$73'.
-No latch inferred for signal `\fpu_add.\sum [31]' from process `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:424$59'.
-No latch inferred for signal `\fpu_add.\sum_man' from process `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:424$59'.
-No latch inferred for signal `\fpu_add.\smaller' from process `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:424$59'.
-No latch inferred for signal `\fpu_add.\a_exp' from process `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:239$4'.
-No latch inferred for signal `\fpu_add.\a_man' from process `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:239$4'.
-No latch inferred for signal `\fpu_add.\b_man' from process `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:239$4'.
-No latch inferred for signal `\fpu_add.\temp' from process `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:239$4'.
+No latch inferred for signal `\prenorm.\shiftedb' from process `\prenorm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1291$283'.
+No latch inferred for signal `\prenorm.\shifteda' from process `\prenorm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1188$258'.
+No latch inferred for signal `\shift.\postshift' from process `\shift.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:903$159'.
+No latch inferred for signal `\fpu_add.\sum [30:0]' from process `\fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:469$73'.
+No latch inferred for signal `\fpu_add.\sum [31]' from process `\fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:424$59'.
+No latch inferred for signal `\fpu_add.\sum_man' from process `\fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:424$59'.
+No latch inferred for signal `\fpu_add.\smaller' from process `\fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:424$59'.
+No latch inferred for signal `\fpu_add.\a_exp' from process `\fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:239$4'.
+No latch inferred for signal `\fpu_add.\a_man' from process `\fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:239$4'.
+No latch inferred for signal `\fpu_add.\b_man' from process `\fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:239$4'.
+No latch inferred for signal `\fpu_add.\temp' from process `\fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:239$4'.
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\fpmul.\y_out' using process `\fpmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:683$102'.
+Creating register for signal `\fpmul.\y_out' using process `\fpmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:683$102'.
   created $dff cell `$procdff$2415' with positive edge clock.
-Creating register for signal `\fpu_add.\a' using process `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:231$3'.
+Creating register for signal `\fpu_add.\a' using process `\fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:231$3'.
   created $dff cell `$procdff$2416' with positive edge clock.
-Creating register for signal `\fpu_add.\b' using process `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:231$3'.
+Creating register for signal `\fpu_add.\b' using process `\fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:231$3'.
   created $dff cell `$procdff$2417' with positive edge clock.
-Creating register for signal `\mult_add.\mult_result' using process `\mult_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:203$2'.
+Creating register for signal `\mult_add.\mult_result' using process `\mult_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:203$2'.
   created $dff cell `$procdff$2418' with positive edge clock.
-Creating register for signal `\mult_add.\add_result' using process `\mult_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:203$2'.
+Creating register for signal `\mult_add.\add_result' using process `\mult_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:203$2'.
   created $dff cell `$procdff$2419' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\prenorm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1291$283'.
-Removing empty process `prenorm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1291$283'.
-Found and cleaned up 1 empty switch in `\prenorm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1188$258'.
-Removing empty process `prenorm.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1188$258'.
-Found and cleaned up 1 empty switch in `\shift.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:903$159'.
-Removing empty process `shift.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:903$159'.
-Removing empty process `fpmul.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:683$102'.
-Found and cleaned up 24 empty switches in `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:469$73'.
-Removing empty process `fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:469$73'.
-Found and cleaned up 6 empty switches in `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:424$59'.
-Removing empty process `fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:424$59'.
-Found and cleaned up 4 empty switches in `\fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:239$4'.
-Removing empty process `fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:239$4'.
-Removing empty process `fpu_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:231$3'.
-Removing empty process `mult_add.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:203$2'.
+Found and cleaned up 1 empty switch in `\prenorm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1291$283'.
+Removing empty process `prenorm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1291$283'.
+Found and cleaned up 1 empty switch in `\prenorm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1188$258'.
+Removing empty process `prenorm.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:1188$258'.
+Found and cleaned up 1 empty switch in `\shift.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:903$159'.
+Removing empty process `shift.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:903$159'.
+Removing empty process `fpmul.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:683$102'.
+Found and cleaned up 24 empty switches in `\fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:469$73'.
+Removing empty process `fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:469$73'.
+Found and cleaned up 6 empty switches in `\fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:424$59'.
+Removing empty process `fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:424$59'.
+Found and cleaned up 4 empty switches in `\fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:239$4'.
+Removing empty process `fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:239$4'.
+Removing empty process `fpu_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:231$3'.
+Removing empty process `mult_add.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/mult_add.v:203$2'.
 Cleaned up 37 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -1277,7 +1277,7 @@ Optimizing module special.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $mux                            6
+     $mux                          156
      $xor                            1
 
 === exponent ===
@@ -1290,11 +1290,11 @@ Optimizing module special.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $add                            2
+     $add                           64
      $logic_not                      1
      $or                             1
-     $reduce_or                      1
-     $sub                            1
+     $reduce_or                      9
+     $sub                           32
 
 === flag ===
 
@@ -1321,18 +1321,8 @@ Optimizing module special.
    Number of processes:              0
    Number of cells:                 14
      $and                            1
-     $dff                            1
+     $dff                           32
      $or                             2
-     assemble                        1
-     exponent                        1
-     flag                            1
-     multiply_a                      1
-     normalize                       1
-     prenorm                         1
-     preprocess                      1
-     round                           1
-     shift                           1
-     special                         1
 
 === fpu_add ===
 
@@ -1344,16 +1334,16 @@ Optimizing module special.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                148
-     $add                            2
-     $dff                            2
-     $eq                            46
-     $gt                             1
+     $add                           33
+     $dff                           64
+     $eq                           368
+     $gt                             8
      $logic_and                      3
-     $lt                             2
-     $mux                           61
+     $lt                            32
+     $mux                          905
      $not                            2
-     $pmux                           2
-     $sub                           27
+     $pmux                          48
+     $sub                          250
 
 === mult_add ===
 
@@ -1365,9 +1355,7 @@ Optimizing module special.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            2
-     fpmul                           1
-     fpu_add                         1
+     $dff                           64
 
 === multiply_a ===
 
@@ -1379,7 +1367,7 @@ Optimizing module special.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $mul                            1
+     $mul                           48
 
 === normalize ===
 
@@ -1392,7 +1380,7 @@ Optimizing module special.
    Number of processes:              0
    Number of cells:                  4
      $and                            1
-     $mux                            2
+     $mux                           96
      $xor                            1
 
 === prenorm ===
@@ -1405,10 +1393,10 @@ Optimizing module special.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 98
-     $eq                            46
-     $mux                           48
-     $pmux                           2
-     $sub                            2
+     $eq                           230
+     $mux                         1520
+     $pmux                          48
+     $sub                           64
 
 === preprocess ===
 
@@ -1423,8 +1411,8 @@ Optimizing module special.
      $and                            8
      $logic_not                      4
      $or                             2
-     $reduce_and                     2
-     $reduce_or                      4
+     $reduce_and                    16
+     $reduce_or                     62
      $xor                            1
 
 === round ===
@@ -1437,14 +1425,14 @@ Optimizing module special.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 34
-     $add                            2
+     $add                           42
      $and                           10
      $logic_not                      1
-     $mux                            2
+     $mux                           64
      $not                            4
      $or                             9
-     $reduce_and                     1
-     $reduce_or                      4
+     $reduce_and                     8
+     $reduce_or                    153
      $xor                            1
 
 === shift ===
@@ -1458,14 +1446,14 @@ Optimizing module special.
    Number of processes:              0
    Number of cells:                 42
      $and                            2
-     $eq                            31
-     $gt                             1
-     $mux                            3
-     $neg                            1
+     $eq                           155
+     $gt                            32
+     $mux                          160
+     $neg                           10
      $not                            1
      $or                             1
-     $pmux                           1
-     $reduce_or                      1
+     $pmux                          96
+     $reduce_or                     48
 
 === special ===
 
@@ -1478,56 +1466,38 @@ Optimizing module special.
    Number of processes:              0
    Number of cells:                 17
      $and                            2
-     $ge                             1
-     $mux                            6
+     $ge                            23
+     $mux                          126
      $not                            1
      $or                             7
 
 === design hierarchy ===
 
    mult_add                          1
-     fpmul                           1
-       assemble                      1
-       exponent                      1
-       flag                          1
-       multiply_a                    1
-       normalize                     1
-       prenorm                       1
-       preprocess                    1
-       round                         1
-       shift                         1
-       special                       1
-     fpu_add                         1
+     fpmul                           0
+       assemble                      0
+       exponent                      0
+       flag                          0
+       multiply_a                    0
+       normalize                     0
+       prenorm                       0
+       preprocess                    0
+       round                         0
+       shift                         0
+       special                       0
+     fpu_add                         0
 
-   Number of wires:                480
-   Number of wire bits:           5779
-   Number of public wires:         178
-   Number of public wire bits:    2483
+   Number of wires:                 10
+   Number of wire bits:            262
+   Number of public wires:          10
+   Number of public wire bits:     262
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                389
-     $add                            6
-     $and                           26
-     $dff                            5
-     $eq                           123
-     $ge                             1
-     $gt                             2
-     $logic_and                      3
-     $logic_not                      6
-     $lt                             2
-     $mul                            1
-     $mux                          128
-     $neg                            1
-     $not                            9
-     $or                            24
-     $pmux                           5
-     $reduce_and                     3
-     $reduce_or                     10
-     $sub                           30
-     $xor                            4
+   Number of cells:                  4
+     $dff                           64
 
 Warnings: 1 unique messages, 1 total
-End of script. Logfile hash: d7aa9488bc, CPU: user 0.57s system 0.02s, MEM: 24.93 MB peak
+End of script. Logfile hash: 2ee3e4de60, CPU: user 0.61s system 0.01s, MEM: 25.15 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 27% 5x opt_expr (0 sec), 16% 2x read_verilog (0 sec), ...
+Time spent: 28% 5x opt_expr (0 sec), 16% 2x read_verilog (0 sec), ...

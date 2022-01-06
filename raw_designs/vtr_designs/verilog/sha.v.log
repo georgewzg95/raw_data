@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v' to AST representation.
 Generating RTLIL representation for module `\sha1'.
 Successfully finished Verilog frontend.
 
@@ -48,10 +48,10 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 4 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:2134$38 in module sha1.
-Marked 4 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:2110$34 in module sha1.
-Marked 4 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28 in module sha1.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:106$1 in module sha1.
+Marked 4 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:2134$38 in module sha1.
+Marked 4 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:2110$34 in module sha1.
+Marked 4 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28 in module sha1.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:106$1 in module sha1.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -63,12 +63,12 @@ Promoted 0 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:2134$38'.
+Creating decoders for process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:2134$38'.
      1/2: $0\read_counter[2:0]
      2/2: $0\text_o[31:0]
-Creating decoders for process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:2110$34'.
+Creating decoders for process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:2110$34'.
      1/1: $0\Kt[31:0]
-Creating decoders for process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating decoders for process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
      1/28: $0\round[6:0]
      2/28: $0\busy[0:0]
      3/28: $0\Wt[31:0]
@@ -97,7 +97,7 @@ Creating decoders for process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_de
     26/28: $0\C[31:0]
     27/28: $0\B[31:0]
     28/28: $0\A[31:0]
-Creating decoders for process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:106$1'.
+Creating decoders for process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:106$1'.
      1/3: $0\cmd[3:0] [2]
      2/3: $0\cmd[3:0] [1:0]
      3/3: $0\cmd[3:0] [3]
@@ -105,82 +105,82 @@ Creating decoders for process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_de
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\sha1.\text_o' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:2134$38'.
+Creating register for signal `\sha1.\text_o' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:2134$38'.
   created $dff cell `$procdff$2356' with positive edge clock.
-Creating register for signal `\sha1.\read_counter' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:2134$38'.
+Creating register for signal `\sha1.\read_counter' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:2134$38'.
   created $dff cell `$procdff$2357' with positive edge clock.
-Creating register for signal `\sha1.\Kt' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:2110$34'.
+Creating register for signal `\sha1.\Kt' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:2110$34'.
   created $dff cell `$procdff$2358' with positive edge clock.
-Creating register for signal `\sha1.\A' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\A' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2359' with positive edge clock.
-Creating register for signal `\sha1.\B' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\B' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2360' with positive edge clock.
-Creating register for signal `\sha1.\C' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\C' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2361' with positive edge clock.
-Creating register for signal `\sha1.\D' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\D' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2362' with positive edge clock.
-Creating register for signal `\sha1.\E' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\E' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2363' with positive edge clock.
-Creating register for signal `\sha1.\round' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\round' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2364' with positive edge clock.
-Creating register for signal `\sha1.\H0' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\H0' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2365' with positive edge clock.
-Creating register for signal `\sha1.\H1' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\H1' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2366' with positive edge clock.
-Creating register for signal `\sha1.\H2' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\H2' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2367' with positive edge clock.
-Creating register for signal `\sha1.\H3' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\H3' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2368' with positive edge clock.
-Creating register for signal `\sha1.\H4' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\H4' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2369' with positive edge clock.
-Creating register for signal `\sha1.\W0' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\W0' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2370' with positive edge clock.
-Creating register for signal `\sha1.\W1' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\W1' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2371' with positive edge clock.
-Creating register for signal `\sha1.\W2' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\W2' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2372' with positive edge clock.
-Creating register for signal `\sha1.\W3' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\W3' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2373' with positive edge clock.
-Creating register for signal `\sha1.\W4' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\W4' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2374' with positive edge clock.
-Creating register for signal `\sha1.\W5' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\W5' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2375' with positive edge clock.
-Creating register for signal `\sha1.\W6' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\W6' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2376' with positive edge clock.
-Creating register for signal `\sha1.\W7' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\W7' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2377' with positive edge clock.
-Creating register for signal `\sha1.\W8' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\W8' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2378' with positive edge clock.
-Creating register for signal `\sha1.\W9' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\W9' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2379' with positive edge clock.
-Creating register for signal `\sha1.\W10' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\W10' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2380' with positive edge clock.
-Creating register for signal `\sha1.\W11' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\W11' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2381' with positive edge clock.
-Creating register for signal `\sha1.\W12' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\W12' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2382' with positive edge clock.
-Creating register for signal `\sha1.\W13' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\W13' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2383' with positive edge clock.
-Creating register for signal `\sha1.\W14' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\W14' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2384' with positive edge clock.
-Creating register for signal `\sha1.\Wt' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\Wt' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2385' with positive edge clock.
-Creating register for signal `\sha1.\busy' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Creating register for signal `\sha1.\busy' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
   created $dff cell `$procdff$2386' with positive edge clock.
-Creating register for signal `\sha1.\cmd' using process `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:106$1'.
+Creating register for signal `\sha1.\cmd' using process `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:106$1'.
   created $dff cell `$procdff$2387' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 5 empty switches in `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:2134$38'.
-Removing empty process `sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:2134$38'.
-Found and cleaned up 4 empty switches in `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:2110$34'.
-Removing empty process `sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:2110$34'.
-Found and cleaned up 4 empty switches in `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
-Removing empty process `sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:148$28'.
-Found and cleaned up 3 empty switches in `\sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:106$1'.
-Removing empty process `sha1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:106$1'.
+Found and cleaned up 5 empty switches in `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:2134$38'.
+Removing empty process `sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:2134$38'.
+Found and cleaned up 4 empty switches in `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:2110$34'.
+Removing empty process `sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:2110$34'.
+Found and cleaned up 4 empty switches in `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Removing empty process `sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:148$28'.
+Found and cleaned up 3 empty switches in `\sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:106$1'.
+Removing empty process `sha1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:106$1'.
 Cleaned up 16 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -243,7 +243,7 @@ Adding SRST signal on $procdff$2356 ($dff) from module sha1 (D = $procmux$64_Y, 
 Adding EN signal on $auto$ff.cc:262:slice$2436 ($sdff) from module sha1 (D = $procmux$61_Y, Q = \text_o).
 Adding SRST signal on $procdff$2357 ($dff) from module sha1 (D = $procmux$48_Y [2], Q = \read_counter [2], rval = 1'0).
 Adding SRST signal on $procdff$2357 ($dff) from module sha1 (D = $procmux$45_Y [1:0], Q = \read_counter [1:0], rval = 2'00).
-Adding EN signal on $auto$ff.cc:262:slice$2439 ($sdff) from module sha1 (D = $sub$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/sha.v:2160$41_Y [1:0], Q = \read_counter [1:0]).
+Adding EN signal on $auto$ff.cc:262:slice$2439 ($sdff) from module sha1 (D = $sub$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/sha.v:2160$41_Y [1:0], Q = \read_counter [1:0]).
 Adding EN signal on $auto$ff.cc:262:slice$2438 ($sdff) from module sha1 (D = $procmux$48_Y [2], Q = \read_counter [2]).
 Adding SRST signal on $procdff$2358 ($dff) from module sha1 (D = { $procmux$76_Y [30] $procmux$76_Y [28:27] $procmux$76_Y [25] $procmux$76_Y [23] $procmux$76_Y [17] $procmux$76_Y [14:11] $procmux$76_Y [8:7] $procmux$76_Y [4:3] $procmux$76_Y [0] }, Q = { \Kt [30] \Kt [28:27] \Kt [25] \Kt [23] \Kt [17] \Kt [14:11] \Kt [8:7] \Kt [4:3] \Kt [0] }, rval = 15'000000000000000).
 Adding SRST signal on $procdff$2358 ($dff) from module sha1 (D = { $procmux$73_Y [29] $procmux$73_Y [26] $procmux$73_Y [22] $procmux$73_Y [20:19] $procmux$73_Y [16:15] $procmux$73_Y [9] $procmux$73_Y [5] }, Q = { \Kt [29] \Kt [26] \Kt [22] \Kt [20:19] \Kt [16:15] \Kt [9] \Kt [5] }, rval = 9'000000000).
@@ -386,23 +386,23 @@ Optimizing module sha1.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                246
-     $add                           10
-     $and                            4
-     $eq                            84
-     $logic_not                      2
-     $lt                             6
-     $mux                           25
-     $ne                             4
-     $not                            4
-     $pmux                          29
-     $reduce_and                     7
-     $reduce_bool                   18
-     $reduce_or                      7
-     $sdff                           4
-     $sdffe                         33
-     $sub                            1
-     $xor                            8
+     $add                          320
+     $and                          128
+     $eq                           572
+     $logic_not                     10
+     $lt                            42
+     $mux                          597
+     $ne                             9
+     $not                           35
+     $pmux                         872
+     $reduce_and                    15
+     $reduce_bool                   39
+     $reduce_or                    168
+     $sdff                          39
+     $sdffe                        872
+     $sub                            7
+     $xor                          256
 
-End of script. Logfile hash: e444cf4f5f, CPU: user 0.70s system 0.00s, MEM: 24.64 MB peak
+End of script. Logfile hash: cfacefd0c3, CPU: user 0.72s system 0.02s, MEM: 24.77 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 26% 5x opt_expr (0 sec), 20% 2x read_verilog (0 sec), ...
+Time spent: 25% 5x opt_expr (0 sec), 20% 2x read_verilog (0 sec), ...

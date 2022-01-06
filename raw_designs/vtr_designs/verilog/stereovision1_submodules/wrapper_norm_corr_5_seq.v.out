@@ -11,10 +11,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 11
-     $add                            1
-     $dff                            3
-     $dffe                           5
-     $mul                            2
+     $add                           16
+     $dff                           48
+     $dffe                          48
+     $mul                           32
 
 === my_divider ===
 
@@ -26,17 +26,17 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 42
-     $add                            3
-     $eq                             2
-     $logic_not                      2
-     $mux                           17
-     $not                            2
-     $or                             2
-     $pmux                           3
-     $reduce_bool                    2
-     $reduce_or                      3
-     $sdff                           2
-     $sdffe                          4
+     $add                           96
+     $eq                             4
+     $logic_not                      6
+     $mux                           95
+     $not                           33
+     $or                            24
+     $pmux                           4
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                           3
+     $sdffe                         45
 
 === my_wrapper_divider ===
 
@@ -48,13 +48,12 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 12
-     $eq                             3
-     $logic_not                      1
-     $mux                            1
-     $pmux                           3
-     $reduce_or                      2
-     $sdff                           1
-     my_divider                      1
+     $eq                             6
+     $logic_not                      2
+     $mux                            2
+     $pmux                           4
+     $reduce_or                      6
+     $sdff                           2
 
 === sh_reg ===
 
@@ -66,7 +65,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dffe                           2
+     $dffe                          16
 
 === wrapper_corr_5_seq ===
 
@@ -78,9 +77,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 19
-     $dffe                           6
-     corr_seq                        6
-     sh_reg                          7
+     $dffe                          96
 
 === wrapper_norm_corr_5_seq ===
 
@@ -92,8 +89,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     wrapper_corr_5_seq              1
-     wrapper_norm_seq                2
 
 === wrapper_norm_seq ===
 
@@ -105,45 +100,29 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 18
-     $add                            2
-     $dff                            7
-     $dffe                           2
-     $mux                            2
+     $add                           33
+     $dff                          112
+     $dffe                          32
+     $mux                           32
      $sdff                           1
-     $sub                            2
-     my_wrapper_divider              2
+     $sub                           32
 
 === design hierarchy ===
 
    wrapper_norm_corr_5_seq           1
-     wrapper_corr_5_seq              1
-       corr_seq                      6
-       sh_reg                        7
-     wrapper_norm_seq                2
-       my_wrapper_divider            2
-         my_divider                  1
+     wrapper_corr_5_seq              0
+       corr_seq                      0
+       sh_reg                        0
+     wrapper_norm_seq                0
+       my_wrapper_divider            0
+         my_divider                  0
 
-   Number of wires:                522
-   Number of wire bits:           4182
-   Number of public wires:         356
-   Number of public wire bits:    2664
+   Number of wires:                 16
+   Number of wire bits:            194
+   Number of public wires:          16
+   Number of public wire bits:     194
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                330
-     $add                           22
-     $dff                           32
-     $dffe                          54
-     $eq                            20
-     $logic_not                     12
-     $mul                           12
-     $mux                           76
-     $not                            8
-     $or                             8
-     $pmux                          24
-     $reduce_bool                    8
-     $reduce_or                     20
-     $sdff                          14
-     $sdffe                         16
-     $sub                            4
+   Number of cells:                  3
 

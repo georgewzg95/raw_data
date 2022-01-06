@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/preprocess.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/preprocess.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/preprocess.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU8PEEng_submodules/preprocess.v' to AST representation.
 Generating RTLIL representation for module `\preprocess'.
 Successfully finished Verilog frontend.
 
@@ -147,10 +147,10 @@ Optimizing module preprocess.
      $and                            8
      $logic_not                      4
      $or                             2
-     $reduce_and                     2
-     $reduce_or                      4
+     $reduce_and                    16
+     $reduce_or                     62
      $xor                            1
 
-End of script. Logfile hash: ac16cba2f8, CPU: user 0.02s system 0.00s, MEM: 11.18 MB peak
+End of script. Logfile hash: c906aa8c5b, CPU: user 0.04s system 0.00s, MEM: 11.23 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 74% 4x opt_expr (0 sec), 24% 3x opt_merge (0 sec), ...
+Time spent: 44% 4x opt_expr (0 sec), 22% 2x read_verilog (0 sec), ...

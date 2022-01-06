@@ -1,10 +1,11 @@
 import os
+import argparse
 
 # root_path = os.getcwd()
 # #start_path = root_path + "/raw_designs/test_designs"
 # start_path = root_path + "/raw_designs/opencores/arithmetic"
 
-def parse_arges():
+def parse_args():
   parser = argparse.ArgumentParser()
   parser.add_argument(  "-d",
                         "--directory",

@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v' to AST representation.
 Generating RTLIL representation for module `\FPMult'.
 Generating RTLIL representation for module `\FPMult_16'.
 Generating RTLIL representation for module `\FPMult_RoundModule'.
@@ -72,7 +72,7 @@ Mapping positional arguments of cell FPMult_16.PrepModule (FPMult_PrepModule).
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:148$1 in module FPMult_16.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:148$1 in module FPMult_16.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -84,7 +84,7 @@ Promoted 0 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\FPMult_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:148$1'.
+Creating decoders for process `\FPMult_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:148$1'.
      1/5: $0\pipe_4[20:0]
      2/5: $0\pipe_3[40:0]
      3/5: $0\pipe_2[22:0]
@@ -94,22 +94,22 @@ Creating decoders for process `\FPMult_16.$proc$/home/zhigang/DATA/raw_designs/v
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\FPMult_16.\pipe_0' using process `\FPMult_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:148$1'.
+Creating register for signal `\FPMult_16.\pipe_0' using process `\FPMult_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:148$1'.
   created $dff cell `$procdff$48' with positive edge clock.
-Creating register for signal `\FPMult_16.\pipe_1' using process `\FPMult_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:148$1'.
+Creating register for signal `\FPMult_16.\pipe_1' using process `\FPMult_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:148$1'.
   created $dff cell `$procdff$49' with positive edge clock.
-Creating register for signal `\FPMult_16.\pipe_2' using process `\FPMult_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:148$1'.
+Creating register for signal `\FPMult_16.\pipe_2' using process `\FPMult_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:148$1'.
   created $dff cell `$procdff$50' with positive edge clock.
-Creating register for signal `\FPMult_16.\pipe_3' using process `\FPMult_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:148$1'.
+Creating register for signal `\FPMult_16.\pipe_3' using process `\FPMult_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:148$1'.
   created $dff cell `$procdff$51' with positive edge clock.
-Creating register for signal `\FPMult_16.\pipe_4' using process `\FPMult_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:148$1'.
+Creating register for signal `\FPMult_16.\pipe_4' using process `\FPMult_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:148$1'.
   created $dff cell `$procdff$52' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\FPMult_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:148$1'.
-Removing empty process `FPMult_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:148$1'.
+Found and cleaned up 1 empty switch in `\FPMult_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:148$1'.
+Removing empty process `FPMult_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:148$1'.
 Cleaned up 1 empty switch.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -154,8 +154,8 @@ Running muxtree optimizer on module \FPMult_NormalizeModule..
 Running muxtree optimizer on module \FPMult_RoundModule..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
-      Replacing known input bits on port A of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:237$3: \PreShiftM -> { 1'0 \PreShiftM [9:0] }
-      Replacing known input bits on port B of cell $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:237$3: { 1'0 \PreShiftM [10:1] } -> { 2'01 \PreShiftM [9:1] }
+      Replacing known input bits on port A of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:237$3: \PreShiftM -> { 1'0 \PreShiftM [9:0] }
+      Replacing known input bits on port B of cell $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/softmax_submodules/FPMult.v:237$3: { 1'0 \PreShiftM [10:1] } -> { 2'01 \PreShiftM [9:1] }
   Analyzing evaluation results.
 Running muxtree optimizer on module \FPMult_16..
   Creating internal representation of mux trees.
@@ -286,7 +286,6 @@ Optimizing module FPMult_RoundModule.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     FPMult_16                       1
 
 === FPMult_16 ===
 
@@ -298,11 +297,7 @@ Optimizing module FPMult_RoundModule.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $sdff                           5
-     FPMult_ExecuteModule            1
-     FPMult_NormalizeModule          1
-     FPMult_PrepModule               1
-     FPMult_RoundModule              1
+     $sdff                         175
 
 === FPMult_ExecuteModule ===
 
@@ -314,11 +309,11 @@ Optimizing module FPMult_RoundModule.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $add                            2
+     $add                           12
      $and                            1
-     $mux                            1
+     $mux                           10
      $or                             1
-     $reduce_or                      1
+     $reduce_or                     10
      $xor                            1
 
 === FPMult_NormalizeModule ===
@@ -331,7 +326,7 @@ Optimizing module FPMult_RoundModule.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $sub                            3
+     $sub                           70
 
 === FPMult_PrepModule ===
 
@@ -345,10 +340,10 @@ Optimizing module FPMult_RoundModule.
    Number of cells:                 15
      $and                            4
      $logic_not                      2
-     $mul                            1
+     $mul                           22
      $or                             3
-     $reduce_and                     2
-     $reduce_or                      3
+     $reduce_and                    10
+     $reduce_or                     20
 
 === FPMult_RoundModule ===
 
@@ -360,37 +355,26 @@ Optimizing module FPMult_RoundModule.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $mux                            3
+     $mux                           28
 
 === design hierarchy ===
 
    FPMult                            1
-     FPMult_16                       1
-       FPMult_ExecuteModule          1
-       FPMult_NormalizeModule        1
-       FPMult_PrepModule             1
-       FPMult_RoundModule            1
+     FPMult_16                       0
+       FPMult_ExecuteModule          0
+       FPMult_NormalizeModule        0
+       FPMult_PrepModule             0
+       FPMult_RoundModule            0
 
-   Number of wires:                 92
-   Number of wire bits:            796
-   Number of public wires:          78
-   Number of public wire bits:     715
+   Number of wires:                  6
+   Number of wire bits:             55
+   Number of public wires:           6
+   Number of public wire bits:      55
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 33
-     $add                            2
-     $and                            5
-     $logic_not                      2
-     $mul                            1
-     $mux                            4
-     $or                             4
-     $reduce_and                     2
-     $reduce_or                      4
-     $sdff                           5
-     $sub                            3
-     $xor                            1
+   Number of cells:                  1
 
-End of script. Logfile hash: 9f3be643dd, CPU: user 0.07s system 0.00s, MEM: 12.33 MB peak
+End of script. Logfile hash: 657ed8e6a5, CPU: user 0.08s system 0.00s, MEM: 12.39 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 18% 4x opt_expr (0 sec), 18% 2x read_verilog (0 sec), ...
+Time spent: 15% 4x opt_expr (0 sec), 15% 3x opt_merge (0 sec), ...

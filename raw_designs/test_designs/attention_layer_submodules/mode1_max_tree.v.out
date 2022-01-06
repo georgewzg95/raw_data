@@ -11,15 +11,15 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 55
-     $add                            2
+     $add                           64
      $and                            9
      $dlatch                         3
-     $gt                             2
+     $gt                            32
      $logic_and                      4
-     $lt                             2
+     $lt                            32
      $mux                           21
-     $ne                             1
-     $not                            9
+     $ne                            16
+     $not                           71
      $or                             2
 
 === mode1_max_tree ===
@@ -33,35 +33,27 @@
    Number of processes:              0
    Number of cells:                 17
      $logic_and                      3
-     $mux                            3
+     $mux                           48
      $not                            2
-     $reduce_and                     1
-     $sdffe                          4
-     comparator                      4
+     $reduce_and                     2
+     $sdffe                         64
 
 === design hierarchy ===
 
    mode1_max_tree                    1
-     comparator                      4
+     comparator                      0
 
-   Number of wires:                302
-   Number of wire bits:           1203
-   Number of public wires:         100
-   Number of public wire bits:     505
+   Number of wires:                 50
+   Number of wire bits:            215
+   Number of public wires:          44
+   Number of public wire bits:     209
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                233
-     $add                            8
-     $and                           36
-     $dlatch                        12
-     $gt                             8
-     $logic_and                     19
-     $lt                             8
-     $mux                           87
-     $ne                             4
-     $not                           38
-     $or                             8
-     $reduce_and                     1
-     $sdffe                          4
+   Number of cells:                 17
+     $logic_and                      3
+     $mux                           48
+     $not                            2
+     $reduce_and                     2
+     $sdffe                         64
 

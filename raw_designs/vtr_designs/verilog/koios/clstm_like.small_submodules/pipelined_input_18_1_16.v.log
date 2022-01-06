@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v' to AST representation.
 Generating RTLIL representation for module `\pipelined_input_18_1_16'.
 Successfully finished Verilog frontend.
 
@@ -48,7 +48,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1 in module pipelined_input_18_1_16.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1 in module pipelined_input_18_1_16.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -60,7 +60,7 @@ Promoted 0 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Creating decoders for process `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
      1/17: $0\pipeline_valid_0[0:0]
      2/17: $0\pipeline_0_15[17:0]
      3/17: $0\pipeline_0_14[17:0]
@@ -82,46 +82,46 @@ Creating decoders for process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_0' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_0' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
   created $dff cell `$procdff$138' with positive edge clock.
-Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_1' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_1' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
   created $dff cell `$procdff$139' with positive edge clock.
-Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_2' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_2' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
   created $dff cell `$procdff$140' with positive edge clock.
-Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_3' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_3' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
   created $dff cell `$procdff$141' with positive edge clock.
-Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_4' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_4' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
   created $dff cell `$procdff$142' with positive edge clock.
-Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_5' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_5' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
   created $dff cell `$procdff$143' with positive edge clock.
-Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_6' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_6' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
   created $dff cell `$procdff$144' with positive edge clock.
-Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_7' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_7' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
   created $dff cell `$procdff$145' with positive edge clock.
-Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_8' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_8' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
   created $dff cell `$procdff$146' with positive edge clock.
-Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_9' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_9' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
   created $dff cell `$procdff$147' with positive edge clock.
-Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_10' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_10' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
   created $dff cell `$procdff$148' with positive edge clock.
-Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_11' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_11' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
   created $dff cell `$procdff$149' with positive edge clock.
-Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_12' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_12' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
   created $dff cell `$procdff$150' with positive edge clock.
-Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_13' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_13' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
   created $dff cell `$procdff$151' with positive edge clock.
-Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_14' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_14' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
   created $dff cell `$procdff$152' with positive edge clock.
-Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_15' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Creating register for signal `\pipelined_input_18_1_16.\pipeline_0_15' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
   created $dff cell `$procdff$153' with positive edge clock.
-Creating register for signal `\pipelined_input_18_1_16.\pipeline_valid_0' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Creating register for signal `\pipelined_input_18_1_16.\pipeline_valid_0' using process `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
   created $dff cell `$procdff$154' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 3 empty switches in `\pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
-Removing empty process `pipelined_input_18_1_16.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Found and cleaned up 3 empty switches in `\pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
+Removing empty process `pipelined_input_18_1_16.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/pipelined_input_18_1_16.v:61$1'.
 Cleaned up 3 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -236,9 +236,9 @@ Optimizing module pipelined_input_18_1_16.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 34
-     $mux                           17
-     $sdffe                         17
+     $mux                          289
+     $sdffe                        289
 
-End of script. Logfile hash: be8d8c6e88, CPU: user 0.04s system 0.00s, MEM: 12.68 MB peak
+End of script. Logfile hash: ac46085b67, CPU: user 0.05s system 0.00s, MEM: 12.92 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 18% 4x opt_expr (0 sec), 18% 3x opt_merge (0 sec), ...
+Time spent: 24% 4x opt_expr (0 sec), 16% 3x opt_merge (0 sec), ...

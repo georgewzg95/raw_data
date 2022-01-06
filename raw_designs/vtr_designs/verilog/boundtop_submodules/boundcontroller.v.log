@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v' to AST representation.
 Generating RTLIL representation for module `\boundcontroller'.
 Successfully finished Verilog frontend.
 
@@ -48,8 +48,8 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 61 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18 in module boundcontroller.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9 in module boundcontroller.
+Marked 61 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18 in module boundcontroller.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9 in module boundcontroller.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -61,7 +61,7 @@ Promoted 44 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18'.
+Creating decoders for process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18'.
      1/165: $1\temp_hitmask[2:0] [2]
      2/165: $28\temp_busy[0:0]
      3/165: $28\next_state[4:0]
@@ -227,7 +227,7 @@ Creating decoders for process `\boundcontroller.$proc$/home/zhigang/DATA/raw_des
    163/165: $1\temp_addr[11:0]
    164/165: $1\temp_l0reset[0:0]
    165/165: $1\temp_resetcount[2:0]
-Creating decoders for process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating decoders for process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
      1/40: $0\busy[0:0]
      2/40: $0\id3[15:0]
      3/40: $0\id2[15:0]
@@ -270,142 +270,142 @@ Creating decoders for process `\boundcontroller.$proc$/home/zhigang/DATA/raw_des
     40/40: $0\statepeek[4:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-Latch inferred for signal `\boundcontroller.\raygroupwe' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$2629
-Latch inferred for signal `\boundcontroller.\raygroupid' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$2670
-Latch inferred for signal `\boundcontroller.\enablenear' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$2693
-Latch inferred for signal `\boundcontroller.\temp_busy' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$2818
-Latch inferred for signal `\boundcontroller.\lhreset' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$2829
-Latch inferred for signal `\boundcontroller.\bcvalid' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$2912
-Latch inferred for signal `\boundcontroller.\next_state' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3037
-Latch inferred for signal `\boundcontroller.\temp_statepeek' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3162
-Latch inferred for signal `\boundcontroller.\temp_raygroupoutl' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3173
-Latch inferred for signal `\boundcontroller.\temp_cts' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3318
-Latch inferred for signal `\boundcontroller.\temp_passCTSout' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3559
-Latch inferred for signal `\boundcontroller.\temp_resetcount' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3582
-Latch inferred for signal `\boundcontroller.\temp_l0reset' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3617
-Latch inferred for signal `\boundcontroller.\temp_addr' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3640
-Latch inferred for signal `\boundcontroller.\temp_startAddr' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3657
-Latch inferred for signal `\boundcontroller.\temp_boundNodeIDout' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3674
-Latch inferred for signal `\boundcontroller.\temp_baseaddress' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3691
-Latch inferred for signal `\boundcontroller.\temp_hitmask [0]' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3726
-Latch inferred for signal `\boundcontroller.\temp_hitmask [1]' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3761
-Latch inferred for signal `\boundcontroller.\temp_hitmask [2]' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3796
-Latch inferred for signal `\boundcontroller.\temp_hit1' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3823
-Latch inferred for signal `\boundcontroller.\temp_hit2' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3850
-Latch inferred for signal `\boundcontroller.\temp_hit3' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3877
-Latch inferred for signal `\boundcontroller.\temp_triIDvalid' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3954
-Latch inferred for signal `\boundcontroller.\temp_triID' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3971
-Latch inferred for signal `\boundcontroller.\temp_lack' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3992
-Latch inferred for signal `\boundcontroller.\temp_addrind' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4021
-Latch inferred for signal `\boundcontroller.\temp_addrindvalid' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4066
-Latch inferred for signal `\boundcontroller.\temp_tladdrvalid' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4183
-Latch inferred for signal `\boundcontroller.\temp_tladdr' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4232
-Latch inferred for signal `\boundcontroller.\temp_count' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4261
-Latch inferred for signal `\boundcontroller.\temp_subcount' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4296
-Latch inferred for signal `\boundcontroller.\temp_maskcount' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4313
-Latch inferred for signal `\boundcontroller.\temp_triDatalatch' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4340
-Latch inferred for signal `\boundcontroller.\temp_t1' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4361
-Latch inferred for signal `\boundcontroller.\temp_u1' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4382
-Latch inferred for signal `\boundcontroller.\temp_v1' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4403
-Latch inferred for signal `\boundcontroller.\temp_id1' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4424
-Latch inferred for signal `\boundcontroller.\temp_t2' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4445
-Latch inferred for signal `\boundcontroller.\temp_u2' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4466
-Latch inferred for signal `\boundcontroller.\temp_v2' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4487
-Latch inferred for signal `\boundcontroller.\temp_id2' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4508
-Latch inferred for signal `\boundcontroller.\temp_t3' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4529
-Latch inferred for signal `\boundcontroller.\temp_u3' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4550
-Latch inferred for signal `\boundcontroller.\temp_v3' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4571
-Latch inferred for signal `\boundcontroller.\temp_id3' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4592
+Latch inferred for signal `\boundcontroller.\raygroupwe' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$2629
+Latch inferred for signal `\boundcontroller.\raygroupid' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$2670
+Latch inferred for signal `\boundcontroller.\enablenear' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$2693
+Latch inferred for signal `\boundcontroller.\temp_busy' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$2818
+Latch inferred for signal `\boundcontroller.\lhreset' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$2829
+Latch inferred for signal `\boundcontroller.\bcvalid' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$2912
+Latch inferred for signal `\boundcontroller.\next_state' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3037
+Latch inferred for signal `\boundcontroller.\temp_statepeek' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3162
+Latch inferred for signal `\boundcontroller.\temp_raygroupoutl' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3173
+Latch inferred for signal `\boundcontroller.\temp_cts' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3318
+Latch inferred for signal `\boundcontroller.\temp_passCTSout' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3559
+Latch inferred for signal `\boundcontroller.\temp_resetcount' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3582
+Latch inferred for signal `\boundcontroller.\temp_l0reset' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3617
+Latch inferred for signal `\boundcontroller.\temp_addr' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3640
+Latch inferred for signal `\boundcontroller.\temp_startAddr' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3657
+Latch inferred for signal `\boundcontroller.\temp_boundNodeIDout' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3674
+Latch inferred for signal `\boundcontroller.\temp_baseaddress' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3691
+Latch inferred for signal `\boundcontroller.\temp_hitmask [0]' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3726
+Latch inferred for signal `\boundcontroller.\temp_hitmask [1]' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3761
+Latch inferred for signal `\boundcontroller.\temp_hitmask [2]' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3796
+Latch inferred for signal `\boundcontroller.\temp_hit1' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3823
+Latch inferred for signal `\boundcontroller.\temp_hit2' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3850
+Latch inferred for signal `\boundcontroller.\temp_hit3' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3877
+Latch inferred for signal `\boundcontroller.\temp_triIDvalid' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3954
+Latch inferred for signal `\boundcontroller.\temp_triID' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3971
+Latch inferred for signal `\boundcontroller.\temp_lack' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$3992
+Latch inferred for signal `\boundcontroller.\temp_addrind' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4021
+Latch inferred for signal `\boundcontroller.\temp_addrindvalid' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4066
+Latch inferred for signal `\boundcontroller.\temp_tladdrvalid' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4183
+Latch inferred for signal `\boundcontroller.\temp_tladdr' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4232
+Latch inferred for signal `\boundcontroller.\temp_count' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4261
+Latch inferred for signal `\boundcontroller.\temp_subcount' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4296
+Latch inferred for signal `\boundcontroller.\temp_maskcount' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4313
+Latch inferred for signal `\boundcontroller.\temp_triDatalatch' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4340
+Latch inferred for signal `\boundcontroller.\temp_t1' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4361
+Latch inferred for signal `\boundcontroller.\temp_u1' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4382
+Latch inferred for signal `\boundcontroller.\temp_v1' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4403
+Latch inferred for signal `\boundcontroller.\temp_id1' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4424
+Latch inferred for signal `\boundcontroller.\temp_t2' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4445
+Latch inferred for signal `\boundcontroller.\temp_u2' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4466
+Latch inferred for signal `\boundcontroller.\temp_v2' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4487
+Latch inferred for signal `\boundcontroller.\temp_id2' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4508
+Latch inferred for signal `\boundcontroller.\temp_t3' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4529
+Latch inferred for signal `\boundcontroller.\temp_u3' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4550
+Latch inferred for signal `\boundcontroller.\temp_v3' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4571
+Latch inferred for signal `\boundcontroller.\temp_id3' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18': $auto$proc_dlatch.cc:427:proc_dlatch$4592
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\boundcontroller.\busy' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\busy' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4593' with positive edge clock.
-Creating register for signal `\boundcontroller.\triIDvalid' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\triIDvalid' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4594' with positive edge clock.
-Creating register for signal `\boundcontroller.\triID' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\triID' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4595' with positive edge clock.
-Creating register for signal `\boundcontroller.\l0reset' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\l0reset' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4596' with positive edge clock.
-Creating register for signal `\boundcontroller.\baseaddress' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\baseaddress' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4597' with positive edge clock.
-Creating register for signal `\boundcontroller.\boundNodeIDout' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\boundNodeIDout' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4598' with positive edge clock.
-Creating register for signal `\boundcontroller.\hitmask' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\hitmask' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4599' with positive edge clock.
-Creating register for signal `\boundcontroller.\lack' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\lack' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4600' with positive edge clock.
-Creating register for signal `\boundcontroller.\addrind' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\addrind' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4601' with positive edge clock.
-Creating register for signal `\boundcontroller.\addrindvalid' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\addrindvalid' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4602' with positive edge clock.
-Creating register for signal `\boundcontroller.\tladdr' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\tladdr' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4603' with positive edge clock.
-Creating register for signal `\boundcontroller.\tladdrvalid' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\tladdrvalid' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4604' with positive edge clock.
-Creating register for signal `\boundcontroller.\t1' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\t1' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4605' with positive edge clock.
-Creating register for signal `\boundcontroller.\t2' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\t2' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4606' with positive edge clock.
-Creating register for signal `\boundcontroller.\t3' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\t3' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4607' with positive edge clock.
-Creating register for signal `\boundcontroller.\u1' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\u1' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4608' with positive edge clock.
-Creating register for signal `\boundcontroller.\u2' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\u2' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4609' with positive edge clock.
-Creating register for signal `\boundcontroller.\u3' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\u3' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4610' with positive edge clock.
-Creating register for signal `\boundcontroller.\v1' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\v1' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4611' with positive edge clock.
-Creating register for signal `\boundcontroller.\v2' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\v2' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4612' with positive edge clock.
-Creating register for signal `\boundcontroller.\v3' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\v3' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4613' with positive edge clock.
-Creating register for signal `\boundcontroller.\id1' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\id1' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4614' with positive edge clock.
-Creating register for signal `\boundcontroller.\id2' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\id2' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4615' with positive edge clock.
-Creating register for signal `\boundcontroller.\id3' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\id3' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4616' with positive edge clock.
-Creating register for signal `\boundcontroller.\hit1' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\hit1' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4617' with positive edge clock.
-Creating register for signal `\boundcontroller.\hit2' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\hit2' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4618' with positive edge clock.
-Creating register for signal `\boundcontroller.\hit3' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\hit3' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4619' with positive edge clock.
-Creating register for signal `\boundcontroller.\resetcnt' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\resetcnt' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4620' with positive edge clock.
-Creating register for signal `\boundcontroller.\passCTSout' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\passCTSout' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4621' with positive edge clock.
-Creating register for signal `\boundcontroller.\statepeek' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\statepeek' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4622' with positive edge clock.
-Creating register for signal `\boundcontroller.\state' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\state' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4623' with positive edge clock.
-Creating register for signal `\boundcontroller.\cts' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\cts' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4624' with positive edge clock.
-Creating register for signal `\boundcontroller.\addr' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\addr' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4625' with positive edge clock.
-Creating register for signal `\boundcontroller.\startAddr' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\startAddr' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4626' with positive edge clock.
-Creating register for signal `\boundcontroller.\resetcount' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\resetcount' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4627' with positive edge clock.
-Creating register for signal `\boundcontroller.\raygroupoutl' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\raygroupoutl' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4628' with positive edge clock.
-Creating register for signal `\boundcontroller.\count' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\count' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4629' with positive edge clock.
-Creating register for signal `\boundcontroller.\triDatalatch' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\triDatalatch' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4630' with positive edge clock.
-Creating register for signal `\boundcontroller.\subcount' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\subcount' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4631' with positive edge clock.
-Creating register for signal `\boundcontroller.\maskcount' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Creating register for signal `\boundcontroller.\maskcount' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
   created $dff cell `$procdff$4632' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 61 empty switches in `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18'.
-Removing empty process `boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18'.
-Found and cleaned up 2 empty switches in `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
-Removing empty process `boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Found and cleaned up 61 empty switches in `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18'.
+Removing empty process `boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:269$18'.
+Found and cleaned up 2 empty switches in `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
+Removing empty process `boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop_submodules/boundcontroller.v:170$9'.
 Cleaned up 63 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -898,23 +898,23 @@ Optimizing module boundcontroller.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                373
-     $add                            7
+     $add                          187
      $and                          127
-     $dffe                           1
-     $dlatch                        30
-     $eq                            29
-     $logic_not                      4
-     $lt                             1
-     $mux                           56
-     $ne                             3
+     $dffe                           5
+     $dlatch                       268
+     $eq                           157
+     $logic_not                     23
+     $lt                             2
+     $mux                          265
+     $ne                            15
      $not                           44
      $or                             7
-     $pmux                           6
-     $reduce_bool                    3
-     $reduce_or                     23
-     $sdff                          28
-     $sub                            4
+     $pmux                          42
+     $reduce_bool                   18
+     $reduce_or                     84
+     $sdff                         262
+     $sub                          128
 
-End of script. Logfile hash: 07ab69e471, CPU: user 0.61s system 0.01s, MEM: 22.23 MB peak
+End of script. Logfile hash: 864dcd9638, CPU: user 0.71s system 0.01s, MEM: 22.48 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 24% 8x opt_expr (0 sec), 24% 7x opt_merge (0 sec), ...
+Time spent: 24% 8x opt_expr (0 sec), 21% 7x opt_merge (0 sec), ...

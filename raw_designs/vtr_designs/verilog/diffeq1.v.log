@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/diffeq1.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/diffeq1.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/diffeq1.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/diffeq1.v' to AST representation.
 Generating RTLIL representation for module `\diffeq_paj_convert'.
 Successfully finished Verilog frontend.
 
@@ -48,7 +48,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/diffeq1.v:23$2 in module diffeq_paj_convert.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/diffeq1.v:23$2 in module diffeq_paj_convert.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -60,7 +60,7 @@ Promoted 0 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\diffeq_paj_convert.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
+Creating decoders for process `\diffeq_paj_convert.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
      1/7: $0\looping[0:0]
      2/7: $0\u_var[31:0]
      3/7: $0\y_var[31:0]
@@ -72,26 +72,26 @@ Creating decoders for process `\diffeq_paj_convert.$proc$/home/zhigang/DATA/raw_
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\diffeq_paj_convert.\Xoutport' using process `\diffeq_paj_convert.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
+Creating register for signal `\diffeq_paj_convert.\Xoutport' using process `\diffeq_paj_convert.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
   created $dff cell `$procdff$77' with positive edge clock.
-Creating register for signal `\diffeq_paj_convert.\Youtport' using process `\diffeq_paj_convert.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
+Creating register for signal `\diffeq_paj_convert.\Youtport' using process `\diffeq_paj_convert.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
   created $dff cell `$procdff$78' with positive edge clock.
-Creating register for signal `\diffeq_paj_convert.\Uoutport' using process `\diffeq_paj_convert.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
+Creating register for signal `\diffeq_paj_convert.\Uoutport' using process `\diffeq_paj_convert.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
   created $dff cell `$procdff$79' with positive edge clock.
-Creating register for signal `\diffeq_paj_convert.\x_var' using process `\diffeq_paj_convert.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
+Creating register for signal `\diffeq_paj_convert.\x_var' using process `\diffeq_paj_convert.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
   created $dff cell `$procdff$80' with positive edge clock.
-Creating register for signal `\diffeq_paj_convert.\y_var' using process `\diffeq_paj_convert.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
+Creating register for signal `\diffeq_paj_convert.\y_var' using process `\diffeq_paj_convert.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
   created $dff cell `$procdff$81' with positive edge clock.
-Creating register for signal `\diffeq_paj_convert.\u_var' using process `\diffeq_paj_convert.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
+Creating register for signal `\diffeq_paj_convert.\u_var' using process `\diffeq_paj_convert.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
   created $dff cell `$procdff$82' with positive edge clock.
-Creating register for signal `\diffeq_paj_convert.\looping' using process `\diffeq_paj_convert.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
+Creating register for signal `\diffeq_paj_convert.\looping' using process `\diffeq_paj_convert.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
   created $dff cell `$procdff$83' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 3 empty switches in `\diffeq_paj_convert.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
-Removing empty process `diffeq_paj_convert.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
+Found and cleaned up 3 empty switches in `\diffeq_paj_convert.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
+Removing empty process `diffeq_paj_convert.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/diffeq1.v:23$2'.
 Cleaned up 3 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -213,18 +213,18 @@ Optimizing module diffeq_paj_convert.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 29
-     $add                            2
-     $dffe                           3
-     $lt                             1
-     $mul                            5
-     $mux                            8
-     $ne                             1
+     $add                           64
+     $dffe                          96
+     $lt                            32
+     $mul                          160
+     $mux                          194
+     $ne                             2
      $not                            2
-     $reduce_and                     1
+     $reduce_and                     3
      $sdff                           1
-     $sdffe                          3
-     $sub                            2
+     $sdffe                         96
+     $sub                           64
 
-End of script. Logfile hash: 6ef9558943, CPU: user 0.08s system 0.01s, MEM: 12.23 MB peak
+End of script. Logfile hash: 2102998801, CPU: user 0.08s system 0.00s, MEM: 12.38 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 28% 5x opt_expr (0 sec), 19% 4x opt_merge (0 sec), ...
+Time spent: 27% 5x opt_expr (0 sec), 18% 3x opt_dff (0 sec), ...

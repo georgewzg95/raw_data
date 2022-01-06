@@ -11,10 +11,8 @@
    Number of memory bits:         1944
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                         162
+     $mux                          175
 
 === counter_31_1 ===
 
@@ -26,10 +24,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $add                            1
-     $le                             1
-     $mux                            1
-     $sdffe                          1
+     $add                           32
+     $le                            32
+     $mux                           14
+     $sdffe                         14
 
 === counter_63_1 ===
 
@@ -41,10 +39,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $add                            1
-     $le                             1
-     $mux                            1
-     $sdffe                          1
+     $add                           32
+     $le                            32
+     $mux                           14
+     $sdffe                         14
 
 === stage3_parameter_buffer_18_1_16_64_2048 ===
 
@@ -56,13 +54,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $add                            1
+     $add                           32
      $and                            1
-     $eq                             1
-     counter_31_1                    1
-     counter_63_1                    1
-     weight_buffer_18_9_1_64_2048_Wym_imag_half_0      1
-     weight_buffer_18_9_1_64_2048_Wym_real_half_0      1
+     $eq                            14
 
 === weight_buffer_18_9_1_64_2048_Wym_imag_half_0 ===
 
@@ -74,8 +68,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dff                            1
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      1
+     $dff                           11
 
 === weight_buffer_18_9_1_64_2048_Wym_real_half_0 ===
 
@@ -87,35 +80,27 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dff                            1
-     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      1
+     $dff                           11
 
 === design hierarchy ===
 
    stage3_parameter_buffer_18_1_16_64_2048      1
-     counter_31_1                    1
-     counter_63_1                    1
-     weight_buffer_18_9_1_64_2048_Wym_imag_half_0      1
-       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      1
-     weight_buffer_18_9_1_64_2048_Wym_real_half_0      1
-       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      1
+     counter_31_1                    0
+     counter_63_1                    0
+     weight_buffer_18_9_1_64_2048_Wym_imag_half_0      0
+       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
+     weight_buffer_18_9_1_64_2048_Wym_real_half_0      0
+       $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      0
 
-   Number of wires:                 89
-   Number of wire bits:           2921
-   Number of public wires:          73
-   Number of public wire bits:    1798
-   Number of memories:               2
-   Number of memory bits:         3888
+   Number of wires:                 27
+   Number of wire bits:            403
+   Number of public wires:          25
+   Number of public wire bits:     370
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 25
-     $add                            3
+   Number of cells:                  7
+     $add                           32
      $and                            1
-     $dff                            2
-     $dffe                           2
-     $eq                             1
-     $le                             2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            8
-     $sdffe                          2
+     $eq                            14
 

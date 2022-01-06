@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v' to AST representation.
 Generating RTLIL representation for module `\lp_fltr'.
 Successfully finished Verilog frontend.
 
@@ -59,7 +59,7 @@ Promoted 5 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\lp_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
+Creating decoders for process `\lp_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
      1/4: $0\din_tmp_3[7:0]
      2/4: $0\din_tmp_2[7:0]
      3/4: $0\din_tmp_1[7:0]
@@ -68,30 +68,30 @@ Creating decoders for process `\lp_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\lp_fltr.\dout' using process `\lp_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
+Creating register for signal `\lp_fltr.\dout' using process `\lp_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
   created $dff cell `$procdff$13' with positive edge clock.
-Creating register for signal `\lp_fltr.\din_tmp_1' using process `\lp_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
+Creating register for signal `\lp_fltr.\din_tmp_1' using process `\lp_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
   created $dff cell `$procdff$14' with positive edge clock.
-Creating register for signal `\lp_fltr.\din_tmp_2' using process `\lp_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
+Creating register for signal `\lp_fltr.\din_tmp_2' using process `\lp_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
   created $dff cell `$procdff$15' with positive edge clock.
-Creating register for signal `\lp_fltr.\din_tmp_3' using process `\lp_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
+Creating register for signal `\lp_fltr.\din_tmp_3' using process `\lp_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
   created $dff cell `$procdff$16' with positive edge clock.
-Creating register for signal `\lp_fltr.\sum_tmp_1' using process `\lp_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
+Creating register for signal `\lp_fltr.\sum_tmp_1' using process `\lp_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
   created $dff cell `$procdff$17' with positive edge clock.
-Creating register for signal `\lp_fltr.\sum_tmp_2' using process `\lp_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
+Creating register for signal `\lp_fltr.\sum_tmp_2' using process `\lp_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
   created $dff cell `$procdff$18' with positive edge clock.
-Creating register for signal `\lp_fltr.\sum_tmp_3' using process `\lp_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
+Creating register for signal `\lp_fltr.\sum_tmp_3' using process `\lp_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
   created $dff cell `$procdff$19' with positive edge clock.
-Creating register for signal `\lp_fltr.\add_tmp_1' using process `\lp_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
+Creating register for signal `\lp_fltr.\add_tmp_1' using process `\lp_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
   created $dff cell `$procdff$20' with positive edge clock.
-Creating register for signal `\lp_fltr.\add_tmp_2' using process `\lp_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
+Creating register for signal `\lp_fltr.\add_tmp_2' using process `\lp_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
   created $dff cell `$procdff$21' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\lp_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
-Removing empty process `lp_fltr.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
+Found and cleaned up 1 empty switch in `\lp_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
+Removing empty process `lp_fltr.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision0_submodules/lp_fltr.v:19$1'.
 Cleaned up 1 empty switch.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -176,10 +176,10 @@ Optimizing module lp_fltr.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 11
-     $add                            2
-     $dff                            5
-     $dffe                           4
+     $add                           20
+     $dff                           49
+     $dffe                          32
 
-End of script. Logfile hash: eeb357bb4a, CPU: user 0.02s system 0.00s, MEM: 11.04 MB peak
+End of script. Logfile hash: 415878c8f5, CPU: user 0.03s system 0.00s, MEM: 11.22 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
 Time spent: 33% 4x opt_expr (0 sec), 16% 3x opt_merge (0 sec), ...

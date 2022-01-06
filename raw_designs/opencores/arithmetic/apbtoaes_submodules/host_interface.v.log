@@ -293,25 +293,25 @@ Optimizing module host_interface.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                137
-     $add                            1
+     $add                            2
      $adff                           2
-     $adffe                          7
-     $and                           22
-     $eq                            19
+     $adffe                         19
+     $and                           32
+     $eq                            64
      $logic_and                     20
-     $logic_not                      4
+     $logic_not                      9
      $logic_or                       3
-     $mux                           33
-     $ne                             4
-     $not                            6
+     $mux                          172
+     $ne                            15
+     $not                            7
      $or                             1
-     $pmux                           3
-     $reduce_and                     1
-     $reduce_bool                    6
-     $reduce_or                      3
-     $shr                            1
+     $pmux                          36
+     $reduce_and                     2
+     $reduce_bool                   13
+     $reduce_or                     10
+     $shr                            4
      $xor                            1
 
-End of script. Logfile hash: 5dbb372f8a, CPU: user 0.09s system 0.00s, MEM: 12.42 MB peak
+End of script. Logfile hash: 1d7737a19b, CPU: user 0.09s system 0.00s, MEM: 12.65 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 31% 5x opt_expr (0 sec), 18% 4x opt_merge (0 sec), ...
+Time spent: 23% 5x opt_expr (0 sec), 19% 4x opt_merge (0 sec), ...

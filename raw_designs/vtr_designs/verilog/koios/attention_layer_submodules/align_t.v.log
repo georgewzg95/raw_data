@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/align_t.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/align_t.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/align_t.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/align_t.v' to AST representation.
 Generating RTLIL representation for module `\align_t'.
 Successfully finished Verilog frontend.
 
@@ -117,8 +117,8 @@ Optimizing module align_t.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sub                            1
+     $sub                           32
 
-End of script. Logfile hash: 4bb565d96d, CPU: user 0.02s system 0.00s, MEM: 11.11 MB peak
+End of script. Logfile hash: 454a4221e0, CPU: user 0.02s system 0.00s, MEM: 11.33 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 24% 3x opt_expr (0 sec), 24% 1x proc_dlatch (0 sec), ...
+Time spent: 33% 2x opt_merge (0 sec), 33% 1x proc_dlatch (0 sec), ...

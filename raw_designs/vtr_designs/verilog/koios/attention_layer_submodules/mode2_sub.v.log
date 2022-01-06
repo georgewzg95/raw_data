@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v' to AST representation.
 Generating RTLIL representation for module `\mode2_sub'.
 Generating RTLIL representation for module `\fixed_point_addsub'.
 Successfully finished Verilog frontend.
@@ -52,8 +52,8 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:99$8 in module fixed_point_addsub.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:89$4 in module fixed_point_addsub.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:99$8 in module fixed_point_addsub.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:89$4 in module fixed_point_addsub.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -65,25 +65,25 @@ Promoted 2 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\fixed_point_addsub.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:99$8'.
+Creating decoders for process `\fixed_point_addsub.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:99$8'.
      1/2: $2\result[15:0]
      2/2: $1\result[15:0]
-Creating decoders for process `\fixed_point_addsub.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:89$4'.
+Creating decoders for process `\fixed_point_addsub.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:89$4'.
      1/1: $1\result_t[16:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\fixed_point_addsub.\result' from process `\fixed_point_addsub.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:99$8'.
-No latch inferred for signal `\fixed_point_addsub.\result_t' from process `\fixed_point_addsub.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:89$4'.
+No latch inferred for signal `\fixed_point_addsub.\result' from process `\fixed_point_addsub.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:99$8'.
+No latch inferred for signal `\fixed_point_addsub.\result_t' from process `\fixed_point_addsub.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:89$4'.
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 2 empty switches in `\fixed_point_addsub.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:99$8'.
-Removing empty process `fixed_point_addsub.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:99$8'.
-Found and cleaned up 1 empty switch in `\fixed_point_addsub.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:89$4'.
-Removing empty process `fixed_point_addsub.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:89$4'.
+Found and cleaned up 2 empty switches in `\fixed_point_addsub.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:99$8'.
+Removing empty process `fixed_point_addsub.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:99$8'.
+Found and cleaned up 1 empty switch in `\fixed_point_addsub.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:89$4'.
+Removing empty process `fixed_point_addsub.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/attention_layer_submodules/mode2_sub.v:89$4'.
 Cleaned up 3 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -184,10 +184,10 @@ Optimizing module mode2_sub.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $add                            3
+     $add                           66
      $logic_and                      2
-     $mux                            3
-     $not                            2
+     $mux                           49
+     $not                           33
 
 === mode2_sub ===
 
@@ -199,26 +199,21 @@ Optimizing module mode2_sub.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     fixed_point_addsub              4
 
 === design hierarchy ===
 
    mode2_sub                         1
-     fixed_point_addsub              4
+     fixed_point_addsub              0
 
-   Number of wires:                 83
-   Number of wire bits:            990
-   Number of public wires:          51
-   Number of public wire bits:     522
+   Number of wires:                 15
+   Number of wire bits:            166
+   Number of public wires:          15
+   Number of public wire bits:     166
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 40
-     $add                           12
-     $logic_and                      8
-     $mux                           12
-     $not                            8
+   Number of cells:                  4
 
-End of script. Logfile hash: 37543ee99a, CPU: user 0.04s system 0.00s, MEM: 11.43 MB peak
+End of script. Logfile hash: f5fe794d3f, CPU: user 0.04s system 0.00s, MEM: 11.17 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 22% 3x opt_merge (0 sec), 22% 2x opt_clean (0 sec), ...
+Time spent: 29% 4x opt_expr (0 sec), 19% 2x opt_dff (0 sec), ...

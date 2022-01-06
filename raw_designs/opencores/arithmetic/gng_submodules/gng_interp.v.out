@@ -11,10 +11,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                252
-     $dff                            3
-     $eq                           247
-     $logic_not                      1
-     $pmux                           1
+     $dff                           53
+     $eq                          1976
+     $logic_not                      8
+     $pmux                          53
 
 === gng_interp ===
 
@@ -26,19 +26,15 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 48
-     $add                            3
-     $and                            1
-     $dff                           13
-     $eq                            15
-     $mux                            1
-     $not                            1
-     $pmux                           1
-     $reduce_and                     1
-     $sdff                           8
-     gng_coef                        1
-     gng_lzd                         1
-     gng_smul_16_18                  1
-     gng_smul_16_18_sadd_37          1
+     $add                           50
+     $and                           15
+     $dff                          211
+     $eq                            90
+     $mux                           16
+     $not                           15
+     $pmux                          15
+     $reduce_and                     2
+     $sdff                          64
 
 === gng_lzd ===
 
@@ -50,7 +46,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                147
-     $mux                           30
+     $mux                           56
      $not                           61
      $or                            56
 
@@ -64,8 +60,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     $mul                            1
+     $dff                           68
+     $mul                           34
 
 === gng_smul_16_18_sadd_37 ===
 
@@ -77,36 +73,33 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $add                            1
-     $dff                            5
-     $mul                            1
+     $add                           38
+     $dff                          143
+     $mul                           34
 
 === design hierarchy ===
 
    gng_interp                        1
-     gng_coef                        1
-     gng_lzd                         1
-     gng_smul_16_18                  1
-     gng_smul_16_18_sadd_37          1
+     gng_coef                        0
+     gng_lzd                         0
+     gng_smul_16_18                  0
+     gng_smul_16_18_sadd_37          0
 
-   Number of wires:                401
-   Number of wire bits:           1812
-   Number of public wires:         128
-   Number of public wire bits:    1369
+   Number of wires:                 56
+   Number of wire bits:            640
+   Number of public wires:          33
+   Number of public wire bits:     513
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                454
-     $add                            4
-     $and                            1
-     $dff                           24
-     $eq                           262
-     $logic_not                      1
-     $mul                            2
-     $mux                           31
-     $not                           62
-     $or                            56
-     $pmux                           2
-     $reduce_and                     1
-     $sdff                           8
+   Number of cells:                 48
+     $add                           50
+     $and                           15
+     $dff                          211
+     $eq                            90
+     $mux                           16
+     $not                           15
+     $pmux                          15
+     $reduce_and                     2
+     $sdff                          64
 

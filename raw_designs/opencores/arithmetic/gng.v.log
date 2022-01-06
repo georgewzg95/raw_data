@@ -537,9 +537,9 @@ Optimizing module gng_smul_16_18_sadd_37.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $sdff                           2
-     $sdffe                          3
-     $xor                            5
+     $sdff                          65
+     $sdffe                        192
+     $xor                          188
 
 === gng ===
 
@@ -551,8 +551,6 @@ Optimizing module gng_smul_16_18_sadd_37.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $paramod$f39658601130dabd5995c2537a5ec6c66075ff2e\gng_ctg      1
-     gng_interp                      1
 
 === gng_coef ===
 
@@ -564,10 +562,10 @@ Optimizing module gng_smul_16_18_sadd_37.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                252
-     $dff                            3
-     $eq                           247
-     $logic_not                      1
-     $pmux                           1
+     $dff                           53
+     $eq                          1976
+     $logic_not                      8
+     $pmux                          53
 
 === gng_interp ===
 
@@ -579,19 +577,15 @@ Optimizing module gng_smul_16_18_sadd_37.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 48
-     $add                            3
-     $and                            1
-     $dff                           13
-     $eq                            15
-     $mux                            1
-     $not                            1
-     $pmux                           1
-     $reduce_and                     1
-     $sdff                           8
-     gng_coef                        1
-     gng_lzd                         1
-     gng_smul_16_18                  1
-     gng_smul_16_18_sadd_37          1
+     $add                           50
+     $and                           15
+     $dff                          211
+     $eq                            90
+     $mux                           16
+     $not                           15
+     $pmux                          15
+     $reduce_and                     2
+     $sdff                          64
 
 === gng_lzd ===
 
@@ -603,7 +597,7 @@ Optimizing module gng_smul_16_18_sadd_37.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                147
-     $mux                           30
+     $mux                           56
      $not                           61
      $or                            56
 
@@ -617,8 +611,8 @@ Optimizing module gng_smul_16_18_sadd_37.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     $mul                            1
+     $dff                           68
+     $mul                           34
 
 === gng_smul_16_18_sadd_37 ===
 
@@ -630,43 +624,29 @@ Optimizing module gng_smul_16_18_sadd_37.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $add                            1
-     $dff                            5
-     $mul                            1
+     $add                           38
+     $dff                          143
+     $mul                           34
 
 === design hierarchy ===
 
    gng                               1
-     $paramod$f39658601130dabd5995c2537a5ec6c66075ff2e\gng_ctg      1
-     gng_interp                      1
-       gng_coef                      1
-       gng_lzd                       1
-       gng_smul_16_18                1
-       gng_smul_16_18_sadd_37        1
+     $paramod$f39658601130dabd5995c2537a5ec6c66075ff2e\gng_ctg      0
+     gng_interp                      0
+       gng_coef                      0
+       gng_lzd                       0
+       gng_smul_16_18                0
+       gng_smul_16_18_sadd_37        0
 
-   Number of wires:                421
-   Number of wire bits:           2477
-   Number of public wires:         146
-   Number of public wire bits:    1906
+   Number of wires:                  7
+   Number of wire bits:             85
+   Number of public wires:           7
+   Number of public wire bits:      85
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                464
-     $add                            4
-     $and                            1
-     $dff                           24
-     $eq                           262
-     $logic_not                      1
-     $mul                            2
-     $mux                           31
-     $not                           62
-     $or                            56
-     $pmux                           2
-     $reduce_and                     1
-     $sdff                          10
-     $sdffe                          3
-     $xor                            5
+   Number of cells:                  2
 
-End of script. Logfile hash: 5e1fe41034, CPU: user 0.40s system 0.00s, MEM: 16.02 MB peak
+End of script. Logfile hash: 216b9961a0, CPU: user 0.46s system 0.00s, MEM: 16.19 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 31% 2x opt_reduce (0 sec), 18% 4x opt_expr (0 sec), ...
+Time spent: 27% 2x opt_reduce (0 sec), 17% 2x read_verilog (0 sec), ...

@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v' to AST representation.
 Generating RTLIL representation for module `\Memory_Wrapper'.
 Generating RTLIL representation for module `\single_port_ram'.
 Successfully finished Verilog frontend.
@@ -67,7 +67,7 @@ Removed 1 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:107$11 in module $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:107$11 in module $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -79,29 +79,29 @@ Promoted 3 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:107$11'.
-     1/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:109$10_EN[31:0]$17
-     2/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:109$10_DATA[31:0]$16
-     3/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:109$10_ADDR[9:0]$15
+Creating decoders for process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:107$11'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:109$10_EN[31:0]$17
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:109$10_DATA[31:0]$16
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:109$10_ADDR[9:0]$15
      4/4: $0\out[31:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.\out' using process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:107$11'.
+Creating register for signal `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.\out' using process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:107$11'.
   created $dff cell `$procdff$31' with positive edge clock.
-Creating register for signal `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:109$10_ADDR' using process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:107$11'.
+Creating register for signal `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:109$10_ADDR' using process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:107$11'.
   created $dff cell `$procdff$32' with positive edge clock.
-Creating register for signal `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:109$10_DATA' using process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:107$11'.
+Creating register for signal `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:109$10_DATA' using process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:107$11'.
   created $dff cell `$procdff$33' with positive edge clock.
-Creating register for signal `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:109$10_EN' using process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:107$11'.
+Creating register for signal `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:109$10_EN' using process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:107$11'.
   created $dff cell `$procdff$34' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:107$11'.
-Removing empty process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:107$11'.
+Found and cleaned up 1 empty switch in `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:107$11'.
+Removing empty process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:107$11'.
 Cleaned up 1 empty switch.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -146,7 +146,7 @@ Finding identical cells in module `\Memory_Wrapper'.
 Removed a total of 0 cells.
 
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $procdff$31 ($dff) from module $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:112$18_DATA, Q = \out).
+Adding EN signal on $procdff$31 ($dff) from module $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mcml_submodules/Memory_Wrapper.v:112$18_DATA, Q = \out).
 
 4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram..
@@ -205,10 +205,8 @@ Optimizing module Memory_Wrapper.
    Number of memory bits:          320
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                          32
+     $mux                           43
 
 === Memory_Wrapper ===
 
@@ -220,26 +218,21 @@ Optimizing module Memory_Wrapper.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram      2
 
 === design hierarchy ===
 
    Memory_Wrapper                    1
-     $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram      2
+     $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram      0
 
-   Number of wires:                 23
-   Number of wire bits:            471
-   Number of public wires:          15
-   Number of public wire bits:     259
-   Number of memories:               2
-   Number of memory bits:          640
+   Number of wires:                  5
+   Number of wire bits:            107
+   Number of public wires:           5
+   Number of public wire bits:     107
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+   Number of cells:                  2
 
-End of script. Logfile hash: 07f1d1c9b5, CPU: user 0.04s system 0.00s, MEM: 11.55 MB peak
+End of script. Logfile hash: d3b5d86745, CPU: user 0.05s system 0.00s, MEM: 11.58 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 36% 4x opt_expr (0 sec), 18% 2x read_verilog (0 sec), ...
+Time spent: 27% 4x opt_expr (0 sec), 18% 2x read_verilog (0 sec), ...

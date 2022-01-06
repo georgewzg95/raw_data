@@ -231,14 +231,14 @@ Optimizing module variableresetrandomwalkfilter.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 11
-     $add                            1
+     $add                           32
      $dff                            2
-     $eq                             2
+     $eq                            16
      $logic_or                       1
-     $mux                            2
-     $reduce_bool                    1
-     $sdffe                          1
-     $sub                            1
+     $mux                           16
+     $reduce_bool                    2
+     $sdffe                          8
+     $sub                           32
 
 === variableresetrandomwalkfilter ===
 
@@ -250,56 +250,55 @@ Optimizing module variableresetrandomwalkfilter.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 40
-     $add                            2
+     $add                           64
      $dff                            2
-     $dffe                           1
-     $eq                             8
-     $ge                             1
-     $gt                             2
-     $le                             1
+     $dffe                           8
+     $eq                            40
+     $ge                            32
+     $gt                            64
+     $le                            32
      $logic_and                      1
      $logic_or                       3
-     $lt                             2
-     $mux                            7
-     $ne                             2
-     $paramod\randomwalkfilter\FilterResetValue=s32'00000000000000000000000000100000      1
-     $pmux                           1
-     $reduce_and                     1
-     $reduce_bool                    2
-     $sdffe                          1
-     $sub                            2
+     $lt                            64
+     $mux                           40
+     $ne                             5
+     $pmux                           8
+     $reduce_and                     3
+     $reduce_bool                    5
+     $sdffe                          4
+     $sub                           64
 
 === design hierarchy ===
 
    variableresetrandomwalkfilter      1
-     $paramod\randomwalkfilter\FilterResetValue=s32'00000000000000000000000000100000      1
+     $paramod\randomwalkfilter\FilterResetValue=s32'00000000000000000000000000100000      0
 
-   Number of wires:                 58
-   Number of wire bits:            315
-   Number of public wires:          16
-   Number of public wire bits:      40
+   Number of wires:                 44
+   Number of wire bits:            218
+   Number of public wires:          10
+   Number of public wire bits:      27
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 50
-     $add                            3
-     $dff                            4
-     $dffe                           1
-     $eq                            10
-     $ge                             1
-     $gt                             2
-     $le                             1
+   Number of cells:                 40
+     $add                           64
+     $dff                            2
+     $dffe                           8
+     $eq                            40
+     $ge                            32
+     $gt                            64
+     $le                            32
      $logic_and                      1
-     $logic_or                       4
-     $lt                             2
-     $mux                            9
-     $ne                             2
-     $pmux                           1
-     $reduce_and                     1
-     $reduce_bool                    3
-     $sdffe                          2
-     $sub                            3
+     $logic_or                       3
+     $lt                            64
+     $mux                           40
+     $ne                             5
+     $pmux                           8
+     $reduce_and                     3
+     $reduce_bool                    5
+     $sdffe                          4
+     $sub                           64
 
-End of script. Logfile hash: 4314aba269, CPU: user 0.07s system 0.00s, MEM: 11.50 MB peak
+End of script. Logfile hash: e855d6d3a9, CPU: user 0.06s system 0.00s, MEM: 11.54 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 33% 4x opt_expr (0 sec), 13% 3x opt_merge (0 sec), ...
+Time spent: 21% 4x opt_expr (0 sec), 14% 3x opt_merge (0 sec), ...

@@ -11,10 +11,8 @@
    Number of memory bits:       141312
    Number of processes:              0
    Number of cells:                  7
-     $dff                            2
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dff                           80
+     $mux                           81
 
 === $paramod$3a01ecc002fbf882396b9626f9384c1d0268de67\ldpc_muxreg ===
 
@@ -26,10 +24,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $adff                           1
-     $eq                             7
-     $logic_not                      1
-     $pmux                           1
+     $adff                           6
+     $eq                            21
+     $logic_not                      3
+     $pmux                           6
 
 === $paramod$48a70bf0ba10747621c6fc4932d4b68873e68d78\ldpc_ram_behav ===
 
@@ -41,10 +39,8 @@
    Number of memory bits:       104448
    Number of processes:              0
    Number of cells:                  7
-     $dff                            2
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dff                           62
+     $mux                           63
 
 === $paramod$5286b89f6dbd3428fc907167e1681a23dbf67976\ldpc_muxreg ===
 
@@ -56,10 +52,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $adff                           1
-     $eq                             3
-     $logic_not                      1
-     $pmux                           1
+     $adff                           6
+     $eq                             6
+     $logic_not                      2
+     $pmux                           6
 
 === $paramod$5315276096adc0669d7ab177a65e7e1062b7af27\ldpc_iocontrol ===
 
@@ -71,24 +67,24 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                269
-     $add                            5
-     $adff                          57
-     $adffe                         17
+     $add                          117
+     $adff                         219
+     $adffe                         93
      $and                            2
-     $dffe                           1
-     $eq                            20
-     $gt                            10
+     $dffe                           8
+     $eq                            68
+     $gt                           320
      $logic_and                      6
-     $logic_not                      7
+     $logic_not                     25
      $logic_or                       2
-     $mux                           75
-     $ne                             7
+     $mux                         1000
+     $ne                            26
      $not                            2
-     $pmux                          20
-     $reduce_and                    10
-     $reduce_bool                   11
-     $reduce_or                      3
-     $sub                           13
+     $pmux                          90
+     $reduce_and                    28
+     $reduce_bool                   40
+     $reduce_or                      7
+     $sub                          416
      $xor                            1
 
 === $paramod$553c0b0449ac8698c9739fae0c85a8ffef4d7a44\ldpc_ram_behav ===
@@ -101,10 +97,8 @@
    Number of memory bits:        34816
    Number of processes:              0
    Number of cells:                  7
-     $dff                            2
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dff                           28
+     $mux                           29
 
 === $paramod$67740ac302c43ff1e2835eb02a021c5d3ac3181c\ldpc_muxreg ===
 
@@ -116,10 +110,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $adff                           1
-     $eq                             2
-     $logic_not                      1
-     $pmux                           1
+     $adff                           6
+     $eq                             4
+     $logic_not                      2
+     $pmux                           6
 
 === $paramod$715b108239c670d1e6cfe38079dfbcb00e98e154\ldpc_shuffle ===
 
@@ -131,10 +125,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:               1440
-     $mux                          360
-     $paramod$3a01ecc002fbf882396b9626f9384c1d0268de67\ldpc_muxreg    360
-     $paramod$5286b89f6dbd3428fc907167e1681a23dbf67976\ldpc_muxreg    360
-     $paramod$67740ac302c43ff1e2835eb02a021c5d3ac3181c\ldpc_muxreg    360
+     $mux                         2160
 
 === $paramod$8b5ecdcae1db8b1e1406b8c471f4059c4a934879\ldpc_cn ===
 
@@ -146,24 +137,24 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                139
-     $add                            3
-     $adff                          55
+     $add                           70
+     $adff                         301
      $adffe                          1
-     $and                            7
-     $eq                             3
-     $le                             1
+     $and                           36
+     $eq                            21
+     $le                             5
      $logic_and                      4
      $logic_not                      1
      $logic_or                       1
-     $lt                             2
-     $mux                           35
-     $ne                             3
-     $not                            7
-     $or                             6
-     $reduce_bool                    1
-     $shiftx                         1
-     $shl                            2
-     $sub                            2
+     $lt                            10
+     $mux                          293
+     $ne                             4
+     $not                           36
+     $or                            35
+     $reduce_bool                    2
+     $shiftx                        30
+     $shl                           60
+     $sub                           10
      $xor                            4
 
 === $paramod$8b5ecdcae1db8b1e1406b8c471f4059c4a934879\ldpc_vn ===
@@ -176,18 +167,18 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 57
-     $add                            1
-     $adff                          27
+     $add                            9
+     $adff                         139
      $and                            5
-     $eq                             2
+     $eq                            12
      $logic_or                       1
-     $lt                             1
-     $mux                           11
+     $lt                             9
+     $mux                          134
      $ne                             1
      $not                            3
      $or                             2
-     $reduce_bool                    1
-     $sub                            2
+     $reduce_bool                    4
+     $sub                           18
 
 === $paramod$9d83dac133bd4beda58a16c5eaae70e8a8d3f161\ldpc_ram_behav ===
 
@@ -199,10 +190,8 @@
    Number of memory bits:        69632
    Number of processes:              0
    Number of cells:                  7
-     $dff                            2
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dff                           45
+     $mux                           46
 
 === $paramod$cb6ff4f3478cf6000d8f5c9b908d73c718dd3e42\ldpc_vncluster ===
 
@@ -214,8 +203,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $paramod$48a70bf0ba10747621c6fc4932d4b68873e68d78\ldpc_ram_behav      1
-     $paramod$8b5ecdcae1db8b1e1406b8c471f4059c4a934879\ldpc_vn      3
 
 === $paramod$f769227a9e810080a856a5e62aa1d344810da814\ldpc_vncluster ===
 
@@ -227,9 +214,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $paramod$553c0b0449ac8698c9739fae0c85a8ffef4d7a44\ldpc_ram_behav      1
-     $paramod$8b5ecdcae1db8b1e1406b8c471f4059c4a934879\ldpc_vn      3
-     $paramod$9d83dac133bd4beda58a16c5eaae70e8a8d3f161\ldpc_ram_behav      1
 
 === ldp_top ===
 
@@ -241,13 +225,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                843
-     $paramod$06932410006ae846943720d4fb05b31890371b43\ldpc_ram_behav    360
-     $paramod$5315276096adc0669d7ab177a65e7e1062b7af27\ldpc_iocontrol      1
-     $paramod$715b108239c670d1e6cfe38079dfbcb00e98e154\ldpc_shuffle      1
-     $paramod$8b5ecdcae1db8b1e1406b8c471f4059c4a934879\ldpc_cn    360
-     $paramod$cb6ff4f3478cf6000d8f5c9b908d73c718dd3e42\ldpc_vncluster    119
-     $paramod$f769227a9e810080a856a5e62aa1d344810da814\ldpc_vncluster      1
-     ldpc_edgetable                  1
 
 === ldpc_edgetable ===
 
@@ -259,64 +236,37 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:               8680
-     $adff                           1
-     $eq                          7976
-     $logic_not                      1
-     $pmux                           1
-     $reduce_or                    701
+     $adff                          17
+     $eq                        103688
+     $logic_not                     13
+     $pmux                          17
+     $reduce_or                   4050
 
 === design hierarchy ===
 
    ldp_top                           1
-     $paramod$06932410006ae846943720d4fb05b31890371b43\ldpc_ram_behav    360
-     $paramod$5315276096adc0669d7ab177a65e7e1062b7af27\ldpc_iocontrol      1
-     $paramod$715b108239c670d1e6cfe38079dfbcb00e98e154\ldpc_shuffle      1
-       $paramod$3a01ecc002fbf882396b9626f9384c1d0268de67\ldpc_muxreg    360
-       $paramod$5286b89f6dbd3428fc907167e1681a23dbf67976\ldpc_muxreg    360
-       $paramod$67740ac302c43ff1e2835eb02a021c5d3ac3181c\ldpc_muxreg    360
-     $paramod$8b5ecdcae1db8b1e1406b8c471f4059c4a934879\ldpc_cn    360
-     $paramod$cb6ff4f3478cf6000d8f5c9b908d73c718dd3e42\ldpc_vncluster    119
-       $paramod$48a70bf0ba10747621c6fc4932d4b68873e68d78\ldpc_ram_behav      1
-       $paramod$8b5ecdcae1db8b1e1406b8c471f4059c4a934879\ldpc_vn      3
-     $paramod$f769227a9e810080a856a5e62aa1d344810da814\ldpc_vncluster      1
-       $paramod$553c0b0449ac8698c9739fae0c85a8ffef4d7a44\ldpc_ram_behav      1
-       $paramod$8b5ecdcae1db8b1e1406b8c471f4059c4a934879\ldpc_vn      3
-       $paramod$9d83dac133bd4beda58a16c5eaae70e8a8d3f161\ldpc_ram_behav      1
-     ldpc_edgetable                  1
+     $paramod$06932410006ae846943720d4fb05b31890371b43\ldpc_ram_behav      0
+     $paramod$5315276096adc0669d7ab177a65e7e1062b7af27\ldpc_iocontrol      0
+     $paramod$715b108239c670d1e6cfe38079dfbcb00e98e154\ldpc_shuffle      0
+       $paramod$3a01ecc002fbf882396b9626f9384c1d0268de67\ldpc_muxreg      0
+       $paramod$5286b89f6dbd3428fc907167e1681a23dbf67976\ldpc_muxreg      0
+       $paramod$67740ac302c43ff1e2835eb02a021c5d3ac3181c\ldpc_muxreg      0
+     $paramod$8b5ecdcae1db8b1e1406b8c471f4059c4a934879\ldpc_cn      0
+     $paramod$cb6ff4f3478cf6000d8f5c9b908d73c718dd3e42\ldpc_vncluster      0
+       $paramod$48a70bf0ba10747621c6fc4932d4b68873e68d78\ldpc_ram_behav      0
+       $paramod$8b5ecdcae1db8b1e1406b8c471f4059c4a934879\ldpc_vn      0
+     $paramod$f769227a9e810080a856a5e62aa1d344810da814\ldpc_vncluster      0
+       $paramod$553c0b0449ac8698c9739fae0c85a8ffef4d7a44\ldpc_ram_behav      0
+       $paramod$8b5ecdcae1db8b1e1406b8c471f4059c4a934879\ldpc_vn      0
+       $paramod$9d83dac133bd4beda58a16c5eaae70e8a8d3f161\ldpc_ram_behav      0
+     ldpc_edgetable                  0
 
-   Number of wires:             144656
-   Number of wire bits:         1199101
-   Number of public wires:       90303
-   Number of public wire bits:  824479
-   Number of memories:             481
-   Number of memory bits:       63406080
+   Number of wires:               2673
+   Number of wire bits:          81458
+   Number of public wires:        2672
+   Number of public wire bits:   81456
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:              90796
-     $add                         1445
-     $adff                       30658
-     $adffe                        377
-     $and                         4322
-     $dff                          962
-     $dffe                           1
-     $eq                         14116
-     $gt                            10
-     $le                           360
-     $logic_and                   1446
-     $logic_not                   1448
-     $logic_or                     722
-     $lt                          1080
-     $memrd                        481
-     $memwr_v2                     481
-     $mux                        18438
-     $ne                          1447
-     $not                         3602
-     $or                          2880
-     $pmux                        1101
-     $reduce_and                    10
-     $reduce_bool                  731
-     $reduce_or                    704
-     $shiftx                       360
-     $shl                          720
-     $sub                         1453
-     $xor                         1441
+   Number of cells:                843
 

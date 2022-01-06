@@ -24,10 +24,10 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/pri_encoder.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/pri_encoder.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/pri_encoder.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/pri_encoder.v' to AST representation.
 Generating RTLIL representation for module `\pri_encoder'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/pri_encoder.v:12.1-112.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/pri_encoder.v:12.1-112.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Successfully finished Verilog frontend.
@@ -51,7 +51,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 49 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/pri_encoder.v:12$1 in module pri_encoder.
+Marked 49 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/pri_encoder.v:12$1 in module pri_encoder.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -63,7 +63,7 @@ Promoted 1 assignment to connection.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\pri_encoder.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/pri_encoder.v:12$1'.
+Creating decoders for process `\pri_encoder.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/pri_encoder.v:12$1'.
      1/49: $49\fi_ldz_r0[5:0]
      2/49: $48\fi_ldz_r0[5:0]
      3/49: $47\fi_ldz_r0[5:0]
@@ -115,15 +115,15 @@ Creating decoders for process `\pri_encoder.$proc$/home/zhigang/DATA/raw_designs
     49/49: $1\fi_ldz_r0[5:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-Latch inferred for signal `\pri_encoder.\fi_ldz_r0' from process `\pri_encoder.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/pri_encoder.v:12$1': $auto$proc_dlatch.cc:427:proc_dlatch$13528
+Latch inferred for signal `\pri_encoder.\fi_ldz_r0' from process `\pri_encoder.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/pri_encoder.v:12$1': $auto$proc_dlatch.cc:427:proc_dlatch$13528
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 49 empty switches in `\pri_encoder.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/pri_encoder.v:12$1'.
-Removing empty process `pri_encoder.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/bgm_submodules/pri_encoder.v:12$1'.
+Found and cleaned up 49 empty switches in `\pri_encoder.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/pri_encoder.v:12$1'.
+Removing empty process `pri_encoder.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/bgm_submodules/pri_encoder.v:12$1'.
 Cleaned up 49 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -207,12 +207,12 @@ Optimizing module pri_encoder.
    Number of processes:              0
    Number of cells:               1369
      $and                         1224
-     $dlatch                         1
-     $eq                            47
-     $logic_not                      1
-     $mux                           47
+     $dlatch                         6
+     $eq                          1175
+     $logic_not                     48
+     $mux                          282
      $not                           49
 
-End of script. Logfile hash: ce5cd6c1ca, CPU: user 0.72s system 0.01s, MEM: 35.75 MB peak
+End of script. Logfile hash: 1612e46622, CPU: user 0.78s system 0.02s, MEM: 36.02 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 33% 4x opt_expr (0 sec), 32% 1x proc_dlatch (0 sec), ...
+Time spent: 34% 4x opt_expr (0 sec), 31% 1x proc_dlatch (0 sec), ...

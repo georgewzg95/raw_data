@@ -11,13 +11,13 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     $add                            2
-     $eq                             3
-     $gt                             1
-     $logic_not                      1
-     $mux                            3
+     $add                           16
+     $eq                             6
+     $gt                             8
+     $logic_not                      2
+     $mux                           17
      $pmux                           2
-     $reduce_or                      2
+     $reduce_or                      5
 
 === bmc000 ===
 
@@ -141,27 +141,15 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 73
-     $add                            1
-     $adff                          10
-     $adffe                          1
-     $and                            8
-     $dff                            6
+     $add                           10
+     $adff                          80
+     $adffe                         10
+     $and                           64
+     $dff                           45
      $logic_and                      7
-     $mux                           18
-     $sdff                           1
-     $sub                            1
-     ACS                             8
-     bmc000                          1
-     bmc001                          1
-     bmc010                          1
-     bmc011                          1
-     bmc100                          1
-     bmc101                          1
-     bmc110                          1
-     bmc111                          1
-     mem                             2
-     mem_disp                        1
-     tbu                             1
+     $mux                          144
+     $sdff                          10
+     $sub                           10
 
 === mem ===
 
@@ -173,10 +161,8 @@
    Number of memory bits:         8192
    Number of processes:              0
    Number of cells:                  6
-     $dff                            1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dff                            8
+     $mux                           19
 
 === mem_disp ===
 
@@ -189,9 +175,7 @@
    Number of processes:              0
    Number of cells:                  6
      $dff                            1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $mux                           12
 
 === tbu ===
 
@@ -203,59 +187,49 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 79
-     $adff                           1
+     $adff                           3
      $and                           16
      $dff                            3
      $dlatch                         1
-     $eq                             7
+     $eq                            21
      $logic_and                      1
-     $logic_not                      1
-     $mux                           12
+     $logic_not                      3
+     $mux                           32
      $not                           17
-     $pmux                          18
-     $reduce_or                      2
+     $pmux                          52
+     $reduce_or                     16
 
 === design hierarchy ===
 
    decoder                           1
-     ACS                             8
-     bmc000                          1
-     bmc001                          1
-     bmc010                          1
-     bmc011                          1
-     bmc100                          1
-     bmc101                          1
-     bmc110                          1
-     bmc111                          1
-     mem                             2
-     mem_disp                        1
-     tbu                             1
+     ACS                             0
+     bmc000                          0
+     bmc001                          0
+     bmc010                          0
+     bmc011                          0
+     bmc100                          0
+     bmc101                          0
+     bmc110                          0
+     bmc111                          0
+     mem                             0
+     mem_disp                        0
+     tbu                             0
 
-   Number of wires:                456
-   Number of wire bits:           1521
-   Number of public wires:         265
-   Number of public wire bits:     953
-   Number of memories:               3
-   Number of memory bits:        17408
+   Number of wires:                128
+   Number of wire bits:            623
+   Number of public wires:          93
+   Number of public wire bits:     388
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                310
-     $add                           17
-     $adff                          11
-     $adffe                          1
-     $and                           40
-     $dff                           12
-     $dlatch                         1
-     $eq                            31
-     $gt                             8
-     $logic_and                      8
-     $logic_not                      9
-     $memrd                          3
-     $memwr_v2                       3
-     $mux                           63
-     $not                           33
-     $pmux                          34
-     $reduce_or                     18
-     $sdff                           1
-     $sub                            1
-     $xor                           16
+   Number of cells:                 73
+     $add                           10
+     $adff                          80
+     $adffe                         10
+     $and                           64
+     $dff                           45
+     $logic_and                      7
+     $mux                          144
+     $sdff                          10
+     $sub                           10
 

@@ -11,8 +11,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $mul                            1
-     $sdff                           1
+     $mul                           32
+     $sdff                          32
 
 === mul ===
 
@@ -25,12 +25,10 @@
    Number of processes:              0
    Number of cells:                 11
      $and                            4
-     $mux                            1
+     $mux                           32
      $not                            1
      $or                             1
-     $reduce_or                      2
-     dummy_mult                      1
-     onecyclestall                   1
+     $reduce_or                     10
 
 === onecyclestall ===
 
@@ -50,23 +48,20 @@
 === design hierarchy ===
 
    mul                               1
-     dummy_mult                      1
-     onecyclestall                   1
+     dummy_mult                      0
+     onecyclestall                   0
 
-   Number of wires:                 38
-   Number of wire bits:            390
-   Number of public wires:          31
-   Number of public wire bits:     352
+   Number of wires:                 25
+   Number of wire bits:            253
+   Number of public wires:          20
+   Number of public wire bits:     248
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 15
-     $and                            5
-     $mul                            1
-     $mux                            1
-     $not                            2
+   Number of cells:                 11
+     $and                            4
+     $mux                           32
+     $not                            1
      $or                             1
-     $pmux                           1
-     $reduce_or                      2
-     $sdff                           2
+     $reduce_or                     10
 

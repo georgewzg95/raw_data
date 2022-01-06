@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/bnn_submodules/myproject_mul_16s_13ns_26_2_0_MulnS_2.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/bnn_submodules/myproject_mul_16s_13ns_26_2_0_MulnS_2.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/bnn_submodules/myproject_mul_16s_13ns_26_2_0_MulnS_2.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/bnn_submodules/myproject_mul_16s_13ns_26_2_0_MulnS_2.v' to AST representation.
 Generating RTLIL representation for module `\myproject_mul_16s_13ns_26_2_0_MulnS_2'.
 Successfully finished Verilog frontend.
 
@@ -59,20 +59,20 @@ Promoted 0 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\myproject_mul_16s_13ns_26_2_0_MulnS_2.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/bnn_submodules/myproject_mul_16s_13ns_26_2_0_MulnS_2.v:12$2'.
+Creating decoders for process `\myproject_mul_16s_13ns_26_2_0_MulnS_2.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/bnn_submodules/myproject_mul_16s_13ns_26_2_0_MulnS_2.v:12$2'.
      1/1: $0\p[25:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\myproject_mul_16s_13ns_26_2_0_MulnS_2.\p' using process `\myproject_mul_16s_13ns_26_2_0_MulnS_2.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/bnn_submodules/myproject_mul_16s_13ns_26_2_0_MulnS_2.v:12$2'.
+Creating register for signal `\myproject_mul_16s_13ns_26_2_0_MulnS_2.\p' using process `\myproject_mul_16s_13ns_26_2_0_MulnS_2.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/bnn_submodules/myproject_mul_16s_13ns_26_2_0_MulnS_2.v:12$2'.
   created $dff cell `$procdff$5' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\myproject_mul_16s_13ns_26_2_0_MulnS_2.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/bnn_submodules/myproject_mul_16s_13ns_26_2_0_MulnS_2.v:12$2'.
-Removing empty process `myproject_mul_16s_13ns_26_2_0_MulnS_2.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/bnn_submodules/myproject_mul_16s_13ns_26_2_0_MulnS_2.v:12$2'.
+Found and cleaned up 1 empty switch in `\myproject_mul_16s_13ns_26_2_0_MulnS_2.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/bnn_submodules/myproject_mul_16s_13ns_26_2_0_MulnS_2.v:12$2'.
+Removing empty process `myproject_mul_16s_13ns_26_2_0_MulnS_2.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/bnn_submodules/myproject_mul_16s_13ns_26_2_0_MulnS_2.v:12$2'.
 Cleaned up 1 empty switch.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -104,7 +104,7 @@ Finding identical cells in module `\myproject_mul_16s_13ns_26_2_0_MulnS_2'.
 Removed a total of 0 cells.
 
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $procdff$5 ($dff) from module myproject_mul_16s_13ns_26_2_0_MulnS_2 (D = $mul$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/bnn_submodules/myproject_mul_16s_13ns_26_2_0_MulnS_2.v:11$1_Y, Q = \p).
+Adding EN signal on $procdff$5 ($dff) from module myproject_mul_16s_13ns_26_2_0_MulnS_2 (D = $mul$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/bnn_submodules/myproject_mul_16s_13ns_26_2_0_MulnS_2.v:11$1_Y, Q = \p).
 
 4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \myproject_mul_16s_13ns_26_2_0_MulnS_2..
@@ -152,9 +152,9 @@ Optimizing module myproject_mul_16s_13ns_26_2_0_MulnS_2.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dffe                           1
-     $mul                            1
+     $dffe                          26
+     $mul                           26
 
-End of script. Logfile hash: 38c9faa538, CPU: user 0.03s system 0.00s, MEM: 11.12 MB peak
+End of script. Logfile hash: 1d5ade3010, CPU: user 0.02s system 0.00s, MEM: 11.20 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 59% 4x opt_expr (0 sec), 39% 2x opt_dff (0 sec), ...
+Time spent: 74% 4x opt_expr (0 sec), 24% 2x opt_dff (0 sec), ...

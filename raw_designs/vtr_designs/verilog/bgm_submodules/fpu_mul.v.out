@@ -12,11 +12,11 @@
    Number of processes:              0
    Number of cells:                148
      $and                           48
-     $dlatch                         1
-     $eq                            48
-     $logic_not                      1
+     $dlatch                        48
+     $eq                           288
+     $logic_not                      6
      $not                           49
-     $pmux                           1
+     $pmux                          48
 
 === b_left_shifter_new ===
 
@@ -29,11 +29,11 @@
    Number of processes:              0
    Number of cells:                172
      $and                           56
-     $dlatch                         1
-     $eq                            56
-     $logic_not                      1
+     $dlatch                        56
+     $eq                           336
+     $logic_not                      6
      $not                           57
-     $pmux                           1
+     $pmux                          56
 
 === b_right_shifter ===
 
@@ -46,11 +46,11 @@
    Number of processes:              0
    Number of cells:                148
      $and                           48
-     $dlatch                         1
-     $eq                            48
-     $logic_not                      1
+     $dlatch                        48
+     $eq                           288
+     $logic_not                      6
      $not                           49
-     $pmux                           1
+     $pmux                          48
 
 === except ===
 
@@ -66,8 +66,8 @@
      $dff                           22
      $logic_not                      6
      $or                             3
-     $reduce_and                     2
-     $reduce_or                      6
+     $reduce_and                    16
+     $reduce_or                    106
 
 === fpu_mul ===
 
@@ -80,18 +80,14 @@
    Number of processes:              0
    Number of cells:                105
      $and                           21
-     $dff                           28
-     $eq                             1
-     $logic_not                     15
-     $mux                            3
+     $dff                          161
+     $eq                             8
+     $logic_not                     44
+     $mux                           63
      $or                            29
-     $reduce_and                     1
-     $reduce_bool                    1
-     $reduce_or                      2
-     except                          1
-     mul_r2                          1
-     post_norm                       1
-     pre_norm_fmul                   1
+     $reduce_and                     8
+     $reduce_bool                   48
+     $reduce_or                     54
 
 === mul_r2 ===
 
@@ -103,8 +99,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $dff                            2
-     $mul                            1
+     $dff                           96
+     $mul                           48
 
 === post_norm ===
 
@@ -116,23 +112,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                435
-     $add                            8
+     $add                           81
      $and                          169
-     $eq                            10
-     $gt                             7
-     $logic_not                     37
-     $lt                             9
-     $mux                           70
-     $ne                             4
+     $eq                            34
+     $gt                            55
+     $logic_not                     38
+     $lt                            66
+     $mux                          628
+     $ne                            32
      $or                            83
-     $pmux                           2
-     $reduce_and                     5
-     $reduce_or                     12
-     $sub                           15
-     b_left_shifter                  1
-     b_left_shifter_new              1
-     b_right_shifter                 1
-     pri_encoder                     1
+     $pmux                          31
+     $reduce_and                    54
+     $reduce_or                    197
+     $sub                          118
 
 === pre_norm_fmul ===
 
@@ -144,18 +136,18 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 75
-     $add                            4
+     $add                           34
      $and                           15
-     $dff                            6
-     $eq                             5
-     $gt                             1
-     $logic_not                      9
-     $lt                             1
-     $mux                           13
+     $dff                           16
+     $eq                            17
+     $gt                             9
+     $logic_not                     10
+     $lt                             8
+     $mux                           85
      $or                             8
      $pmux                           1
-     $reduce_or                      8
-     $sub                            4
+     $reduce_or                    128
+     $sub                           34
 
 === pri_encoder ===
 
@@ -168,48 +160,39 @@
    Number of processes:              0
    Number of cells:               1369
      $and                         1224
-     $dlatch                         1
-     $eq                            47
-     $logic_not                      1
-     $mux                           47
+     $dlatch                         6
+     $eq                          1175
+     $logic_not                     48
+     $mux                          282
      $not                           49
 
 === design hierarchy ===
 
    fpu_mul                           1
-     except                          1
-     mul_r2                          1
-     post_norm                       1
-       b_left_shifter                1
-       b_left_shifter_new            1
-       b_right_shifter               1
-       pri_encoder                   1
-     pre_norm_fmul                   1
+     except                          0
+     mul_r2                          0
+     post_norm                       0
+       b_left_shifter                0
+       b_left_shifter_new            0
+       b_right_shifter               0
+       pri_encoder                   0
+     pre_norm_fmul                   0
 
-   Number of wires:               2603
-   Number of wire bits:           5491
-   Number of public wires:         306
-   Number of public wire bits:    2504
+   Number of wires:                151
+   Number of wire bits:            696
+   Number of public wires:          91
+   Number of public wire bits:     606
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               2499
-     $add                           12
-     $and                         1594
-     $dff                           58
-     $dlatch                         4
-     $eq                           215
-     $gt                             8
-     $logic_not                     71
-     $lt                            10
-     $mul                            1
-     $mux                          133
-     $ne                             4
-     $not                          204
-     $or                           123
-     $pmux                           6
+   Number of cells:                105
+     $and                           21
+     $dff                          161
+     $eq                             8
+     $logic_not                     44
+     $mux                           63
+     $or                            29
      $reduce_and                     8
-     $reduce_bool                    1
-     $reduce_or                     28
-     $sub                           19
+     $reduce_bool                   48
+     $reduce_or                     54
 

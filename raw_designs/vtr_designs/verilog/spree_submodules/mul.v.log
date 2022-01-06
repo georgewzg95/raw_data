@@ -24,12 +24,12 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v' to AST representation.
 Generating RTLIL representation for module `\mul'.
 Generating RTLIL representation for module `\dummy_mult'.
 Generating RTLIL representation for module `\onecyclestall'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:227.3-233.6 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:227.3-233.6 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Successfully finished Verilog frontend.
@@ -62,10 +62,10 @@ Warning: Resizing cell port mul.fake_mult_one.opB_mux_out from 33 bits to 32 bit
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:234$13 in module onecyclestall.
-Removed 1 dead cases from process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:227$12 in module onecyclestall.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:227$12 in module onecyclestall.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:201$10 in module dummy_mult.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:234$13 in module onecyclestall.
+Removed 1 dead cases from process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:227$12 in module onecyclestall.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:227$12 in module onecyclestall.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:201$10 in module dummy_mult.
 Removed a total of 1 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -77,31 +77,31 @@ Promoted 1 assignment to connection.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\onecyclestall.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:234$13'.
+Creating decoders for process `\onecyclestall.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:234$13'.
      1/1: $0\T[0:0]
-Creating decoders for process `\onecyclestall.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:227$12'.
+Creating decoders for process `\onecyclestall.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:227$12'.
      1/1: $1\Tnext[0:0]
-Creating decoders for process `\dummy_mult.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:201$10'.
+Creating decoders for process `\dummy_mult.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:201$10'.
      1/1: $0\result[31:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\onecyclestall.\Tnext' from process `\onecyclestall.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:227$12'.
+No latch inferred for signal `\onecyclestall.\Tnext' from process `\onecyclestall.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:227$12'.
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\onecyclestall.\T' using process `\onecyclestall.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:234$13'.
+Creating register for signal `\onecyclestall.\T' using process `\onecyclestall.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:234$13'.
   created $dff cell `$procdff$26' with positive edge clock.
-Creating register for signal `\dummy_mult.\result' using process `\dummy_mult.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:201$10'.
+Creating register for signal `\dummy_mult.\result' using process `\dummy_mult.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:201$10'.
   created $dff cell `$procdff$27' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\onecyclestall.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:234$13'.
-Removing empty process `onecyclestall.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:234$13'.
-Found and cleaned up 1 empty switch in `\onecyclestall.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:227$12'.
-Removing empty process `onecyclestall.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:227$12'.
-Found and cleaned up 1 empty switch in `\dummy_mult.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:201$10'.
-Removing empty process `dummy_mult.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:201$10'.
+Found and cleaned up 1 empty switch in `\onecyclestall.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:234$13'.
+Removing empty process `onecyclestall.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:234$13'.
+Found and cleaned up 1 empty switch in `\onecyclestall.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:227$12'.
+Removing empty process `onecyclestall.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:227$12'.
+Found and cleaned up 1 empty switch in `\dummy_mult.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:201$10'.
+Removing empty process `dummy_mult.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:201$10'.
 Cleaned up 3 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -154,7 +154,7 @@ Removed a total of 0 cells.
 
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
 Adding SRST signal on $procdff$26 ($dff) from module onecyclestall (D = $procmux$20_Y, Q = \T, rval = 1'0).
-Adding SRST signal on $procdff$27 ($dff) from module dummy_mult (D = $mul$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:208$11_Y, Q = \result, rval = 0).
+Adding SRST signal on $procdff$27 ($dff) from module dummy_mult (D = $mul$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/spree_submodules/mul.v:208$11_Y, Q = \result, rval = 0).
 
 4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \onecyclestall..
@@ -223,8 +223,8 @@ Optimizing module onecyclestall.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $mul                            1
-     $sdff                           1
+     $mul                           32
+     $sdff                          32
 
 === mul ===
 
@@ -237,12 +237,10 @@ Optimizing module onecyclestall.
    Number of processes:              0
    Number of cells:                 11
      $and                            4
-     $mux                            1
+     $mux                           32
      $not                            1
      $or                             1
-     $reduce_or                      2
-     dummy_mult                      1
-     onecyclestall                   1
+     $reduce_or                     10
 
 === onecyclestall ===
 
@@ -262,27 +260,24 @@ Optimizing module onecyclestall.
 === design hierarchy ===
 
    mul                               1
-     dummy_mult                      1
-     onecyclestall                   1
+     dummy_mult                      0
+     onecyclestall                   0
 
-   Number of wires:                 38
-   Number of wire bits:            390
-   Number of public wires:          31
-   Number of public wire bits:     352
+   Number of wires:                 25
+   Number of wire bits:            253
+   Number of public wires:          20
+   Number of public wire bits:     248
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 15
-     $and                            5
-     $mul                            1
-     $mux                            1
-     $not                            2
+   Number of cells:                 11
+     $and                            4
+     $mux                           32
+     $not                            1
      $or                             1
-     $pmux                           1
-     $reduce_or                      2
-     $sdff                           2
+     $reduce_or                     10
 
 Warnings: 1 unique messages, 1 total
-End of script. Logfile hash: ffd8a43a55, CPU: user 0.03s system 0.00s, MEM: 10.92 MB peak
+End of script. Logfile hash: c654c03525, CPU: user 0.04s system 0.01s, MEM: 11.07 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 42% 4x opt_expr (0 sec), 28% 2x opt_dff (0 sec), ...
+Time spent: 33% 4x opt_expr (0 sec), 24% 3x opt_merge (0 sec), ...

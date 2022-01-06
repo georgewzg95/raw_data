@@ -11,11 +11,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $mux                            5
-     FPMult_ExecuteModule            1
-     FPMult_NormalizeModule          1
-     FPMult_PrepModule               1
-     FPMult_RoundModule              1
+     $mux                          165
 
 === FPMult_ExecuteModule ===
 
@@ -27,11 +23,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $add                            2
+     $add                           12
      $and                            1
-     $mux                            1
+     $mux                           10
      $or                             1
-     $reduce_or                      1
+     $reduce_or                     10
      $xor                            1
 
 === FPMult_NormalizeModule ===
@@ -44,7 +40,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $sub                            2
+     $sub                           64
 
 === FPMult_PrepModule ===
 
@@ -58,10 +54,10 @@
    Number of cells:                 15
      $and                            4
      $logic_not                      2
-     $mul                            1
+     $mul                           22
      $or                             3
-     $reduce_and                     2
-     $reduce_or                      3
+     $reduce_and                    10
+     $reduce_or                     20
 
 === FPMult_RoundModule ===
 
@@ -73,32 +69,23 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $mux                            3
+     $mux                           28
 
 === design hierarchy ===
 
    FPMult_16                         1
-     FPMult_ExecuteModule            1
-     FPMult_NormalizeModule          1
-     FPMult_PrepModule               1
-     FPMult_RoundModule              1
+     FPMult_ExecuteModule            0
+     FPMult_NormalizeModule          0
+     FPMult_PrepModule               0
+     FPMult_RoundModule              0
 
-   Number of wires:                 85
-   Number of wire bits:            741
-   Number of public wires:          71
-   Number of public wire bits:     660
+   Number of wires:                 27
+   Number of wire bits:            348
+   Number of public wires:          27
+   Number of public wire bits:     348
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 32
-     $add                            2
-     $and                            5
-     $logic_not                      2
-     $mul                            1
-     $mux                            9
-     $or                             4
-     $reduce_and                     2
-     $reduce_or                      4
-     $sub                            2
-     $xor                            1
+   Number of cells:                  9
+     $mux                          165
 

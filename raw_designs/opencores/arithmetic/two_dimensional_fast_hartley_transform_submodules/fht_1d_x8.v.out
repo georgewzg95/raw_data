@@ -14,9 +14,9 @@
      $and                           41
      $eq                             2
      $mux                            2
-     $not                            2
+     $not                           10
      $or                            16
-     $sdffe                          2
+     $sdffe                         18
      $xor                           42
 
 === $paramod\fht_bfly\N=s32'00000000000000000000000000001010 ===
@@ -32,9 +32,9 @@
      $and                           46
      $eq                             2
      $mux                            2
-     $not                            2
+     $not                           11
      $or                            18
-     $sdffe                          2
+     $sdffe                         20
      $xor                           47
 
 === $paramod\fht_bfly_noFF\N=s32'00000000000000000000000000001000 ===
@@ -50,7 +50,7 @@
      $and                           36
      $eq                             2
      $mux                            2
-     $not                            2
+     $not                            9
      $or                            14
      $xor                           37
 
@@ -64,42 +64,36 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 66
-     $add                            1
-     $adff                           4
-     $adffe                         25
-     $and                            8
-     $eq                             1
+     $add                           32
+     $adff                          27
+     $adffe                        219
+     $and                           88
+     $eq                             3
      $logic_and                      1
      $mux                            1
-     $or                            14
-     $paramod\fht_bfly\N=s32'00000000000000000000000000001001      3
-     $paramod\fht_bfly\N=s32'00000000000000000000000000001010      4
-     $paramod\fht_bfly_noFF\N=s32'00000000000000000000000000001000      4
+     $or                            84
 
 === design hierarchy ===
 
    fht_1d_x8                         1
-     $paramod\fht_bfly\N=s32'00000000000000000000000000001001      3
-     $paramod\fht_bfly\N=s32'00000000000000000000000000001010      4
-     $paramod\fht_bfly_noFF\N=s32'00000000000000000000000000001000      4
+     $paramod\fht_bfly\N=s32'00000000000000000000000000001001      0
+     $paramod\fht_bfly\N=s32'00000000000000000000000000001010      0
+     $paramod\fht_bfly_noFF\N=s32'00000000000000000000000000001000      0
 
-   Number of wires:               2647
-   Number of wire bits:           6385
-   Number of public wires:        1700
-   Number of public wire bits:    5014
+   Number of wires:                 93
+   Number of wire bits:            730
+   Number of public wires:          70
+   Number of public wire bits:     536
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               1224
-     $add                            1
-     $adff                           4
-     $adffe                         25
-     $and                          459
-     $eq                            23
+   Number of cells:                 66
+     $add                           32
+     $adff                          27
+     $adffe                        219
+     $and                           88
+     $eq                             3
      $logic_and                      1
-     $mux                           23
-     $not                           22
-     $or                           190
-     $sdffe                         14
-     $xor                          462
+     $mux                            1
+     $or                            84
 

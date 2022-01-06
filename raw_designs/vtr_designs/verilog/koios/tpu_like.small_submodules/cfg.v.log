@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v' to AST representation.
 Generating RTLIL representation for module `\cfg'.
 Successfully finished Verilog frontend.
 
@@ -48,7 +48,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 5 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1 in module cfg.
+Marked 5 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1 in module cfg.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -60,7 +60,7 @@ Promoted 0 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating decoders for process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
      1/42: $0\State[1:0]
      2/42: $0\reg_dummy[31:0]
      3/42: $0\pe_reset[0:0]
@@ -107,96 +107,96 @@ Creating decoders for process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_des
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\cfg.\PRDATA' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\PRDATA' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$934' with positive edge clock.
-Creating register for signal `\cfg.\PREADY' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\PREADY' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$935' with positive edge clock.
-Creating register for signal `\cfg.\start_tpu' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\start_tpu' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$936' with positive edge clock.
-Creating register for signal `\cfg.\enable_matmul' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\enable_matmul' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$937' with positive edge clock.
-Creating register for signal `\cfg.\enable_norm' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\enable_norm' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$938' with positive edge clock.
-Creating register for signal `\cfg.\enable_pool' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\enable_pool' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$939' with positive edge clock.
-Creating register for signal `\cfg.\enable_activation' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\enable_activation' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$940' with positive edge clock.
-Creating register for signal `\cfg.\enable_conv_mode' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\enable_conv_mode' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$941' with positive edge clock.
-Creating register for signal `\cfg.\mean' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\mean' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$942' with positive edge clock.
-Creating register for signal `\cfg.\inv_var' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\inv_var' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$943' with positive edge clock.
-Creating register for signal `\cfg.\pool_window_size' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\pool_window_size' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$944' with positive edge clock.
-Creating register for signal `\cfg.\address_mat_a' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\address_mat_a' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$945' with positive edge clock.
-Creating register for signal `\cfg.\address_mat_b' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\address_mat_b' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$946' with positive edge clock.
-Creating register for signal `\cfg.\address_mat_c' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\address_mat_c' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$947' with positive edge clock.
-Creating register for signal `\cfg.\validity_mask_a_rows' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\validity_mask_a_rows' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$948' with positive edge clock.
-Creating register for signal `\cfg.\validity_mask_a_cols' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\validity_mask_a_cols' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$949' with positive edge clock.
-Creating register for signal `\cfg.\validity_mask_b_rows' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\validity_mask_b_rows' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$950' with positive edge clock.
-Creating register for signal `\cfg.\validity_mask_b_cols' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\validity_mask_b_cols' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$951' with positive edge clock.
-Creating register for signal `\cfg.\save_output_to_accum' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\save_output_to_accum' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$952' with positive edge clock.
-Creating register for signal `\cfg.\add_accum_to_output' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\add_accum_to_output' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$953' with positive edge clock.
-Creating register for signal `\cfg.\address_stride_a' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\address_stride_a' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$954' with positive edge clock.
-Creating register for signal `\cfg.\address_stride_b' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\address_stride_b' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$955' with positive edge clock.
-Creating register for signal `\cfg.\address_stride_c' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\address_stride_c' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$956' with positive edge clock.
-Creating register for signal `\cfg.\activation_type' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\activation_type' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$957' with positive edge clock.
-Creating register for signal `\cfg.\conv_filter_height' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\conv_filter_height' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$958' with positive edge clock.
-Creating register for signal `\cfg.\conv_filter_width' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\conv_filter_width' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$959' with positive edge clock.
-Creating register for signal `\cfg.\conv_stride_horiz' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\conv_stride_horiz' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$960' with positive edge clock.
-Creating register for signal `\cfg.\conv_stride_verti' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\conv_stride_verti' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$961' with positive edge clock.
-Creating register for signal `\cfg.\conv_padding_left' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\conv_padding_left' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$962' with positive edge clock.
-Creating register for signal `\cfg.\conv_padding_right' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\conv_padding_right' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$963' with positive edge clock.
-Creating register for signal `\cfg.\conv_padding_top' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\conv_padding_top' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$964' with positive edge clock.
-Creating register for signal `\cfg.\conv_padding_bottom' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\conv_padding_bottom' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$965' with positive edge clock.
-Creating register for signal `\cfg.\num_channels_inp' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\num_channels_inp' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$966' with positive edge clock.
-Creating register for signal `\cfg.\num_channels_out' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\num_channels_out' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$967' with positive edge clock.
-Creating register for signal `\cfg.\inp_img_height' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\inp_img_height' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$968' with positive edge clock.
-Creating register for signal `\cfg.\inp_img_width' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\inp_img_width' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$969' with positive edge clock.
-Creating register for signal `\cfg.\out_img_height' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\out_img_height' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$970' with positive edge clock.
-Creating register for signal `\cfg.\out_img_width' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\out_img_width' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$971' with positive edge clock.
-Creating register for signal `\cfg.\batch_size' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\batch_size' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$972' with positive edge clock.
-Creating register for signal `\cfg.\pe_reset' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\pe_reset' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$973' with positive edge clock.
-Creating register for signal `\cfg.\reg_dummy' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\reg_dummy' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$974' with positive edge clock.
-Creating register for signal `\cfg.\State' using process `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Creating register for signal `\cfg.\State' using process `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
   created $dff cell `$procdff$975' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 8 empty switches in `\cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
-Removing empty process `cfg.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Found and cleaned up 8 empty switches in `\cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
+Removing empty process `cfg.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tpu_like.small_submodules/cfg.v:114$1'.
 Cleaned up 8 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -395,18 +395,18 @@ Optimizing module cfg.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                117
-     $eq                            23
+     $eq                           172
      $logic_and                      4
-     $logic_not                      3
-     $mux                            6
-     $ne                             3
+     $logic_not                     11
+     $mux                           38
+     $ne                             7
      $not                            1
-     $pmux                           4
-     $reduce_and                    27
-     $reduce_bool                    3
-     $reduce_or                      1
-     $sdffe                         42
+     $pmux                          66
+     $reduce_and                    79
+     $reduce_bool                    7
+     $reduce_or                     22
+     $sdffe                        398
 
-End of script. Logfile hash: 09d51c7e9d, CPU: user 0.19s system 0.00s, MEM: 14.63 MB peak
+End of script. Logfile hash: e48c543c52, CPU: user 0.19s system 0.01s, MEM: 14.32 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 30% 5x opt_expr (0 sec), 13% 2x read_verilog (0 sec), ...
+Time spent: 27% 5x opt_expr (0 sec), 14% 2x read_verilog (0 sec), ...

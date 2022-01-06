@@ -11,7 +11,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     td_fused_top_mac_muladd_10s_9ns_8ns_16_4_1_DSP48_0      1
 
 === td_fused_top_mac_muladd_10s_9ns_8ns_16_4_1_DSP48_0 ===
 
@@ -23,9 +22,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $add                            1
-     $dffe                           4
-     $mul                            1
+     $add                           48
+     $dffe                         112
+     $mul                           45
 
 === td_fused_top_td_fused_axi_out ===
 
@@ -37,49 +36,47 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                160
-     $add                            6
+     $add                           56
      $and                           51
-     $dffe                          15
-     $eq                             9
-     $mux                           40
+     $dffe                         138
+     $eq                            74
+     $mux                          274
      $not                           14
      $or                            10
-     $paramod$6a718d018631f38c70b32ebbc300a5888ff0cde8\td_fused_top_mac_muladd_10s_9ns_8ns_16_4_1      1
-     $pmux                           1
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           2
-     $sdffce                         3
+     $pmux                           6
+     $reduce_bool                    4
+     $reduce_or                      4
+     $sdff                           7
+     $sdffce                        22
      $sdffe                          3
-     $sub                            1
+     $sub                            9
 
 === design hierarchy ===
 
    td_fused_top_td_fused_axi_out      1
-     $paramod$6a718d018631f38c70b32ebbc300a5888ff0cde8\td_fused_top_mac_muladd_10s_9ns_8ns_16_4_1      1
-       td_fused_top_mac_muladd_10s_9ns_8ns_16_4_1_DSP48_0      1
+     $paramod$6a718d018631f38c70b32ebbc300a5888ff0cde8\td_fused_top_mac_muladd_10s_9ns_8ns_16_4_1      0
+       td_fused_top_mac_muladd_10s_9ns_8ns_16_4_1_DSP48_0      0
 
-   Number of wires:                234
-   Number of wire bits:           1328
-   Number of public wires:         138
-   Number of public wire bits:    1063
+   Number of wires:                211
+   Number of wire bits:            912
+   Number of public wires:         115
+   Number of public wire bits:     647
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                165
-     $add                            7
+   Number of cells:                160
+     $add                           56
      $and                           51
-     $dffe                          19
-     $eq                             9
-     $mul                            1
-     $mux                           40
+     $dffe                         138
+     $eq                            74
+     $mux                          274
      $not                           14
      $or                            10
-     $pmux                           1
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           2
-     $sdffce                         3
+     $pmux                           6
+     $reduce_bool                    4
+     $reduce_or                      4
+     $sdff                           7
+     $sdffce                        22
      $sdffe                          3
-     $sub                            1
+     $sub                            9
 

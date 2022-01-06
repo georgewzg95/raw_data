@@ -11,7 +11,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $add                            1
+     $add                           32
 
 === seq_mac ===
 
@@ -24,29 +24,25 @@
    Number of processes:              0
    Number of cells:                 12
      $and                            1
-     $mux                            4
-     $reduce_or                      1
-     $sdff                           4
-     mac_int                         1
-     qadd                            1
+     $mux                           80
+     $reduce_or                     16
+     $sdff                          80
 
 === design hierarchy ===
 
    seq_mac                           1
-     qadd                            1
+     qadd                            0
 
-   Number of wires:                 26
-   Number of wire bits:            496
-   Number of public wires:          21
-   Number of public wire bits:     430
+   Number of wires:                 23
+   Number of wire bits:            400
+   Number of public wires:          18
+   Number of public wire bits:     334
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 12
-     $add                            1
      $and                            1
-     $mux                            4
-     $reduce_or                      1
-     $sdff                           4
-     mac_int                         1
+     $mux                           80
+     $reduce_or                     16
+     $sdff                          80
 

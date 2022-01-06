@@ -758,7 +758,6 @@ Optimizing module f3_mult.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                593
-     f3_mult                       593
 
 === f3_mult ===
 
@@ -777,20 +776,17 @@ Optimizing module f3_mult.
 === design hierarchy ===
 
    PPG                               1
-     f3_mult                       593
+     f3_mult                         0
 
-   Number of wires:              12456
-   Number of wire bits:          16606
-   Number of public wires:        4154
-   Number of public wire bits:    8304
+   Number of wires:                  3
+   Number of wire bits:           2374
+   Number of public wires:           3
+   Number of public wire bits:    2374
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               9488
-     $and                         5930
-     $not                         2372
-     $or                          1186
+   Number of cells:                593
 
-End of script. Logfile hash: 97a0e28241, CPU: user 0.11s system 0.00s, MEM: 17.44 MB peak
+End of script. Logfile hash: a3edd6c552, CPU: user 0.16s system 0.01s, MEM: 17.68 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 59% 2x read_verilog (0 sec), 14% 2x opt_clean (0 sec), ...
+Time spent: 64% 2x read_verilog (0 sec), 9% 2x opt_clean (0 sec), ...

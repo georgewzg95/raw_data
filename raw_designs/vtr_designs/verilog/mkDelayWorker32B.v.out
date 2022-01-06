@@ -11,10 +11,8 @@
    Number of memory bits:          180
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                         120
+     $mux                          128
 
 === $paramod$204b100ee0c0bb69566d1d462d247eed36eba337\dual_port_ram ===
 
@@ -26,10 +24,8 @@
    Number of memory bits:          939
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                         626
+     $mux                          634
 
 === $paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram ===
 
@@ -41,10 +37,8 @@
    Number of memory bits:          128
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                          64
+     $mux                           74
 
 === $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram ===
 
@@ -56,10 +50,8 @@
    Number of memory bits:          262
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                         262
+     $mux                          268
 
 === $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram ===
 
@@ -71,10 +63,8 @@
    Number of memory bits:          512
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                         256
+     $mux                          266
 
 === $paramod$d85aaca54bcf0da34d73bd45e5702b091208a1fc\dual_port_ram ===
 
@@ -86,10 +76,8 @@
    Number of memory bits:         2560
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                         512
+     $mux                          534
 
 === ResetToBool ===
 
@@ -112,7 +100,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     generic_fifo_sc_f               1
 
 === SizedFIFO_b ===
 
@@ -124,7 +111,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     generic_fifo_sc_g               1
 
 === SizedFIFO_x ===
 
@@ -136,7 +122,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     generic_fifo_sc_x               1
 
 === arSRLFIFO_a ===
 
@@ -148,7 +133,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     generic_fifo_sc_a               1
 
 === arSRLFIFO_b ===
 
@@ -160,7 +144,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     generic_fifo_sc_b               1
 
 === arSRLFIFO_c ===
 
@@ -172,7 +155,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     generic_fifo_sc_c               1
 
 === arSRLFIFO_d ===
 
@@ -184,7 +166,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     generic_fifo_sc_d               1
 
 === generic_fifo_sc_a ===
 
@@ -196,21 +177,20 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 84
-     $add                            5
+     $add                           22
      $and                           25
-     $eq                             4
-     $ge                             2
-     $le                             2
+     $eq                            16
+     $ge                            64
+     $le                            64
      $logic_not                      5
-     $lt                             2
-     $mux                           14
-     $ne                             3
+     $lt                            64
+     $mux                           22
+     $ne                            12
      $not                            1
-     $or                             3
-     $paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram      1
-     $reduce_bool                    7
-     $reduce_or                      1
-     $sdffe                          9
+     $or                             4
+     $reduce_bool                   14
+     $reduce_or                      2
+     $sdffe                         19
 
 === generic_fifo_sc_b ===
 
@@ -222,21 +202,20 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 84
-     $add                            5
+     $add                           22
      $and                           25
-     $eq                             4
-     $ge                             2
-     $le                             2
+     $eq                            16
+     $ge                            64
+     $le                            64
      $logic_not                      5
-     $lt                             2
-     $mux                           14
-     $ne                             3
+     $lt                            64
+     $mux                           22
+     $ne                            12
      $not                            1
-     $or                             3
-     $paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram      1
-     $reduce_bool                    7
-     $reduce_or                      1
-     $sdffe                          9
+     $or                             4
+     $reduce_bool                   14
+     $reduce_or                      2
+     $sdffe                         19
 
 === generic_fifo_sc_c ===
 
@@ -248,21 +227,20 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 84
-     $add                            5
+     $add                           22
      $and                           25
-     $eq                             4
-     $ge                             2
-     $le                             2
+     $eq                            16
+     $ge                            64
+     $le                            64
      $logic_not                      5
-     $lt                             2
-     $mux                           14
-     $ne                             3
+     $lt                            64
+     $mux                           22
+     $ne                            12
      $not                            1
-     $or                             3
-     $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram      1
-     $reduce_bool                    7
-     $reduce_or                      1
-     $sdffe                          9
+     $or                             4
+     $reduce_bool                   14
+     $reduce_or                      2
+     $sdffe                         19
 
 === generic_fifo_sc_d ===
 
@@ -274,21 +252,20 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 84
-     $add                            5
+     $add                           22
      $and                           25
-     $eq                             4
-     $ge                             2
-     $le                             2
+     $eq                            16
+     $ge                            64
+     $le                            64
      $logic_not                      5
-     $lt                             2
-     $mux                           14
-     $ne                             3
+     $lt                            64
+     $mux                           22
+     $ne                            12
      $not                            1
-     $or                             3
-     $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram      1
-     $reduce_bool                    7
-     $reduce_or                      1
-     $sdffe                          9
+     $or                             4
+     $reduce_bool                   14
+     $reduce_or                      2
+     $sdffe                         19
 
 === generic_fifo_sc_f ===
 
@@ -300,21 +277,20 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 84
-     $add                            5
+     $add                           17
      $and                           25
-     $eq                             4
-     $ge                             2
-     $le                             2
+     $eq                            12
+     $ge                            64
+     $le                            64
      $logic_not                      5
-     $lt                             2
-     $mux                           14
-     $ne                             3
+     $lt                            64
+     $mux                           20
+     $ne                             9
      $not                            1
-     $or                             3
-     $paramod$17b29d3f804c36b130a09071f0e00c567b827562\dual_port_ram      1
-     $reduce_bool                    7
-     $reduce_or                      1
-     $sdffe                          9
+     $or                             4
+     $reduce_bool                   14
+     $reduce_or                      2
+     $sdffe                         16
 
 === generic_fifo_sc_g ===
 
@@ -326,21 +302,20 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 84
-     $add                            5
+     $add                           17
      $and                           25
-     $eq                             4
-     $ge                             2
-     $le                             2
+     $eq                            12
+     $ge                            64
+     $le                            64
      $logic_not                      5
-     $lt                             2
-     $mux                           14
-     $ne                             3
+     $lt                            64
+     $mux                           20
+     $ne                             9
      $not                            1
-     $or                             3
-     $paramod$204b100ee0c0bb69566d1d462d247eed36eba337\dual_port_ram      1
-     $reduce_bool                    7
-     $reduce_or                      1
-     $sdffe                          9
+     $or                             4
+     $reduce_bool                   14
+     $reduce_or                      2
+     $sdffe                         16
 
 === generic_fifo_sc_x ===
 
@@ -352,21 +327,20 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 84
-     $add                            5
+     $add                           12
      $and                           25
-     $eq                             4
-     $ge                             2
-     $le                             2
+     $eq                             8
+     $ge                            64
+     $le                            64
      $logic_not                      5
-     $lt                             2
-     $mux                           14
-     $ne                             3
+     $lt                            64
+     $mux                           18
+     $ne                             6
      $not                            1
-     $or                             3
-     $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram      1
-     $reduce_bool                    7
-     $reduce_or                      1
-     $sdffe                          9
+     $or                             4
+     $reduce_bool                   14
+     $reduce_or                      2
+     $sdffe                         13
 
 === mkDelayWorker32B ===
 
@@ -378,96 +352,82 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                719
-     $add                           35
+     $add                          611
      $and                            8
-     $dff                            3
-     $dffe                           7
-     $eq                            61
-     $ge                             2
-     $gt                             4
+     $dff                           16
+     $dffe                         224
+     $eq                           571
+     $ge                            64
+     $gt                            32
      $logic_and                    204
-     $logic_not                     52
+     $logic_not                    265
      $logic_or                      98
-     $mux                           76
-     $ne                            25
+     $mux                         3325
+     $ne                           164
      $not                            1
-     $paramod$d85aaca54bcf0da34d73bd45e5702b091208a1fc\dual_port_ram      2
-     $pmux                          16
-     $reduce_and                     9
-     $reduce_bool                   15
-     $reduce_or                      3
-     $sdff                           8
-     $sdffe                         67
-     $sub                           10
-     $xor                            2
-     ResetToBool                     4
-     SizedFIFO_a                     1
-     SizedFIFO_b                     1
-     SizedFIFO_x                     1
-     arSRLFIFO_a                     1
-     arSRLFIFO_b                     1
-     arSRLFIFO_c                     1
-     arSRLFIFO_d                     1
+     $pmux                        1449
+     $reduce_and                  1336
+     $reduce_bool                  106
+     $reduce_or                      9
+     $sdff                          33
+     $sdffe                       2364
+     $sub                           72
+     $xor                           28
 
 === design hierarchy ===
 
    mkDelayWorker32B                  1
-     $paramod$d85aaca54bcf0da34d73bd45e5702b091208a1fc\dual_port_ram      2
-     ResetToBool                     4
-     SizedFIFO_a                     1
-       generic_fifo_sc_f             1
-         $paramod$17b29d3f804c36b130a09071f0e00c567b827562\dual_port_ram      1
-     SizedFIFO_b                     1
-       generic_fifo_sc_g             1
-         $paramod$204b100ee0c0bb69566d1d462d247eed36eba337\dual_port_ram      1
-     SizedFIFO_x                     1
-       generic_fifo_sc_x             1
-         $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram      1
-     arSRLFIFO_a                     1
-       generic_fifo_sc_a             1
-         $paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram      1
-     arSRLFIFO_b                     1
-       generic_fifo_sc_b             1
-         $paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram      1
-     arSRLFIFO_c                     1
-       generic_fifo_sc_c             1
-         $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram      1
-     arSRLFIFO_d                     1
-       generic_fifo_sc_d             1
-         $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram      1
+     $paramod$d85aaca54bcf0da34d73bd45e5702b091208a1fc\dual_port_ram      0
+     ResetToBool                     0
+     SizedFIFO_a                     0
+       generic_fifo_sc_f             0
+         $paramod$17b29d3f804c36b130a09071f0e00c567b827562\dual_port_ram      0
+     SizedFIFO_b                     0
+       generic_fifo_sc_g             0
+         $paramod$204b100ee0c0bb69566d1d462d247eed36eba337\dual_port_ram      0
+     SizedFIFO_x                     0
+       generic_fifo_sc_x             0
+         $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram      0
+     arSRLFIFO_a                     0
+       generic_fifo_sc_a             0
+         $paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram      0
+     arSRLFIFO_b                     0
+       generic_fifo_sc_b             0
+         $paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram      0
+     arSRLFIFO_c                     0
+       generic_fifo_sc_c             0
+         $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram      0
+     arSRLFIFO_d                     0
+       generic_fifo_sc_d             0
+         $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram      0
 
-   Number of wires:               2100
-   Number of wire bits:          38523
-   Number of public wires:        1238
-   Number of public wire bits:   29389
-   Number of memories:               9
-   Number of memory bits:         7781
+   Number of wires:               1165
+   Number of wire bits:          19057
+   Number of public wires:         837
+   Number of public wire bits:   18585
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               1395
-     $add                           70
-     $and                          183
-     $dff                            3
-     $dffe                          25
-     $eq                            89
-     $ge                            16
-     $gt                             4
-     $le                            14
+   Number of cells:                719
+     $add                          611
+     $and                            8
+     $dff                           16
+     $dffe                         224
+     $eq                           571
+     $ge                            64
+     $gt                            32
      $logic_and                    204
-     $logic_not                     87
+     $logic_not                    265
      $logic_or                      98
-     $lt                            14
-     $memrd                         18
-     $memwr_v2                      18
-     $mux                          228
-     $ne                            46
-     $not                            8
-     $or                            21
-     $pmux                          16
-     $reduce_and                     9
-     $reduce_bool                   64
-     $reduce_or                     10
-     $sdff                           8
-     $sdffe                        130
-     $sub                           10
-     $xor                            2
+     $mux                         3325
+     $ne                           164
+     $not                            1
+     $pmux                        1449
+     $reduce_and                  1336
+     $reduce_bool                  106
+     $reduce_or                      9
+     $sdff                          33
+     $sdffe                       2364
+     $sub                           72
+     $xor                           28
 

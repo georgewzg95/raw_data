@@ -11,10 +11,8 @@
    Number of memory bits:           88
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                          16
+     $mux                           40
 
 === DLA ===
 
@@ -26,62 +24,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                102
-     inverse_winograd_0              1
-     inverse_winograd_1              1
-     inverse_winograd_10             1
-     inverse_winograd_11             1
-     inverse_winograd_12             1
-     inverse_winograd_13             1
-     inverse_winograd_14             1
-     inverse_winograd_15             1
-     inverse_winograd_16             1
-     inverse_winograd_17             1
-     inverse_winograd_18             1
-     inverse_winograd_19             1
-     inverse_winograd_2              1
-     inverse_winograd_20             1
-     inverse_winograd_21             1
-     inverse_winograd_22             1
-     inverse_winograd_23             1
-     inverse_winograd_3              1
-     inverse_winograd_4              1
-     inverse_winograd_5              1
-     inverse_winograd_6              1
-     inverse_winograd_7              1
-     inverse_winograd_8              1
-     inverse_winograd_9              1
-     pooling                        24
-     processing_element             24
-     signal_width_reducer            1
-     store_output                    1
-     stream_buffer_0_0               1
-     stream_buffer_0_1               1
-     stream_buffer_0_2               1
-     stream_buffer_0_3               1
-     stream_buffer_1_0               1
-     stream_buffer_1_1               1
-     stream_buffer_1_2               1
-     stream_buffer_1_3               1
-     stream_buffer_2_0               1
-     stream_buffer_2_1               1
-     stream_buffer_2_2               1
-     stream_buffer_2_3               1
-     stream_buffer_3_0               1
-     stream_buffer_3_1               1
-     stream_buffer_3_2               1
-     stream_buffer_3_3               1
-     stream_buffer_4_0               1
-     stream_buffer_4_1               1
-     stream_buffer_4_2               1
-     stream_buffer_4_3               1
-     stream_buffer_5_0               1
-     stream_buffer_5_1               1
-     stream_buffer_5_2               1
-     stream_buffer_5_3               1
-     winograd_transform_0            1
-     winograd_transform_1            1
-     winograd_transform_2            1
-     winograd_transform_3            1
 
 === accumulator_24_30_4 ===
 
@@ -93,11 +35,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            1
-     $mux                            1
-     $reduce_or                      1
-     $sdff                           5
-     $sdffe                          1
+     $add                           30
+     $mux                           30
+     $reduce_or                      2
+     $sdff                         150
+     $sdffe                         30
 
 === buffer_16_12100_buffer_init_00 ===
 
@@ -109,8 +51,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_01 ===
 
@@ -122,8 +63,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_02 ===
 
@@ -135,8 +75,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_03 ===
 
@@ -148,8 +87,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_04 ===
 
@@ -161,8 +99,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_05 ===
 
@@ -174,8 +111,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_10 ===
 
@@ -187,8 +123,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_11 ===
 
@@ -200,8 +135,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_12 ===
 
@@ -213,8 +147,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_13 ===
 
@@ -226,8 +159,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_14 ===
 
@@ -239,8 +171,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_15 ===
 
@@ -252,8 +183,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_20 ===
 
@@ -265,8 +195,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_21 ===
 
@@ -278,8 +207,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_22 ===
 
@@ -291,8 +219,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_23 ===
 
@@ -304,8 +231,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_24 ===
 
@@ -317,8 +243,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_25 ===
 
@@ -330,8 +255,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_30 ===
 
@@ -343,8 +267,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_31 ===
 
@@ -356,8 +279,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_32 ===
 
@@ -369,8 +291,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_33 ===
 
@@ -382,8 +303,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_34 ===
 
@@ -395,8 +315,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === buffer_16_12100_buffer_init_35 ===
 
@@ -408,8 +327,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            3
-     dual_port_ram                   1
+     $dff                           46
 
 === dot_product_16_8_30_4 ===
 
@@ -422,9 +340,7 @@
    Number of processes:              0
    Number of cells:                 16
      $dff                            1
-     $sdff                          13
-     dsp_block_16_8_false            1
-     dsp_block_16_8_true             1
+     $sdff                         145
 
 === dsp_block_16_8_false ===
 
@@ -436,9 +352,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            2
-     $mul                            2
-     $sdff                           5
+     $add                          128
+     $mul                          128
+     $sdff                          72
 
 === dsp_block_16_8_true ===
 
@@ -450,9 +366,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            2
-     $mul                            2
-     $sdff                           5
+     $add                          128
+     $mul                          128
+     $sdff                          72
 
 === dual_port_ram ===
 
@@ -464,10 +380,8 @@
    Number of memory bits:          224
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                          32
+     $mux                           62
 
 === inverse_winograd_0 ===
 
@@ -479,20 +393,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                360
-     $add                            1
-     $dff                          141
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         3391
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_1 ===
 
@@ -504,20 +417,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                355
-     $add                            1
-     $dff                          136
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         3270
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_10 ===
 
@@ -529,20 +441,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                310
-     $add                            1
-     $dff                           91
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         2181
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_11 ===
 
@@ -554,20 +465,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                305
-     $add                            1
-     $dff                           86
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         2060
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_12 ===
 
@@ -579,20 +489,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                300
-     $add                            1
-     $dff                           81
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         1939
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_13 ===
 
@@ -604,20 +513,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                295
-     $add                            1
-     $dff                           76
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         1818
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_14 ===
 
@@ -629,20 +537,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                290
-     $add                            1
-     $dff                           71
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         1697
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_15 ===
 
@@ -654,20 +561,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                285
-     $add                            1
-     $dff                           66
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         1576
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_16 ===
 
@@ -679,20 +585,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                280
-     $add                            1
-     $dff                           61
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         1455
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_17 ===
 
@@ -704,20 +609,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                275
-     $add                            1
-     $dff                           56
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         1334
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_18 ===
 
@@ -729,20 +633,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                270
-     $add                            1
-     $dff                           51
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         1213
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_19 ===
 
@@ -754,20 +657,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                265
-     $add                            1
-     $dff                           46
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         1092
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_2 ===
 
@@ -779,20 +681,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                350
-     $add                            1
-     $dff                          131
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         3149
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_20 ===
 
@@ -804,20 +705,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                260
-     $add                            1
-     $dff                           41
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                          971
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_21 ===
 
@@ -829,20 +729,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                255
-     $add                            1
-     $dff                           36
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                          850
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_22 ===
 
@@ -854,20 +753,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                250
-     $add                            1
-     $dff                           31
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                          729
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_23 ===
 
@@ -879,20 +777,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                245
-     $add                            1
-     $dff                           26
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                          608
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_3 ===
 
@@ -904,20 +801,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                345
-     $add                            1
-     $dff                          126
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         3028
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_4 ===
 
@@ -929,20 +825,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                340
-     $add                            1
-     $dff                          121
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         2907
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_5 ===
 
@@ -954,20 +849,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                335
-     $add                            1
-     $dff                          116
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         2786
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_6 ===
 
@@ -979,20 +873,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                330
-     $add                            1
-     $dff                          111
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         2665
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_7 ===
 
@@ -1004,20 +897,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                325
-     $add                            1
-     $dff                          106
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         2544
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_8 ===
 
@@ -1029,20 +921,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                320
-     $add                            1
-     $dff                          101
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         2423
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_9 ===
 
@@ -1054,20 +945,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                315
-     $add                            1
-     $dff                           96
-     $dffe                          44
-     $eq                             3
-     $logic_not                      1
-     $lt                             1
-     $mux                          142
-     $ne                             2
-     $neg                            7
+     $add                            2
+     $dff                         2302
+     $dffe                        1320
+     $eq                             8
+     $logic_not                      3
+     $lt                            32
+     $mux                         4042
+     $ne                             5
+     $neg                          210
      $not                            3
-     $reduce_and                     3
-     $reduce_bool                    2
-     $sdffe                          2
-     inverse_winograd_adder_30_3      8
+     $reduce_and                    10
+     $reduce_bool                    4
+     $sdffe                          3
 
 === inverse_winograd_adder_30_3 ===
 
@@ -1079,8 +969,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 11
-     $add                            5
-     $dff                            6
+     $add                          165
+     $dff                          198
 
 === pipelined_xor_tree_16 ===
 
@@ -1106,14 +996,14 @@
    Number of processes:              0
    Number of cells:                 26
      $add                            1
-     $dff                            5
-     $dffe                           4
-     $gt                             4
+     $dff                           35
+     $dffe                          64
+     $gt                            64
      $logic_or                       1
-     $mux                            5
+     $mux                           80
      $not                            2
-     $reduce_and                     2
-     $reduce_or                      1
+     $reduce_and                     5
+     $reduce_or                      3
      $sdff                           1
 
 === processing_element ===
@@ -1126,35 +1016,21 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                137
-     $add                            6
+     $add                           74
      $dff                            5
-     $dffe                          24
-     $eq                             1
-     $le                             1
+     $dffe                         384
+     $eq                             2
+     $le                            32
      $logic_and                      2
-     $logic_not                      1
+     $logic_not                      2
      $logic_or                       1
-     $mux                           35
-     $ne                             3
+     $mux                          168
+     $ne                            12
      $not                            5
-     $reduce_and                     4
-     $reduce_bool                    1
-     $sdffce                        12
+     $reduce_and                    13
+     $reduce_bool                    2
+     $sdffce                        49
      $sdffe                         12
-     accumulator_24_30_4             6
-     dot_product_16_8_30_4           6
-     weight_cache_2048_8_0_weight_init_00      1
-     weight_cache_2048_8_0_weight_init_01      1
-     weight_cache_2048_8_0_weight_init_02      1
-     weight_cache_2048_8_0_weight_init_03      1
-     weight_cache_2048_8_0_weight_init_04      1
-     weight_cache_2048_8_0_weight_init_05      1
-     weight_cache_2048_8_0_weight_init_20      1
-     weight_cache_2048_8_0_weight_init_21      1
-     weight_cache_2048_8_0_weight_init_22      1
-     weight_cache_2048_8_0_weight_init_23      1
-     weight_cache_2048_8_0_weight_init_24      1
-     weight_cache_2048_8_0_weight_init_25      1
 
 === signal_width_reducer ===
 
@@ -1166,7 +1042,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 24
-     pipelined_xor_tree_16          24
 
 === store_output ===
 
@@ -1178,17 +1053,17 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                103
-     $add                            6
-     $dff                           26
-     $eq                             7
+     $add                           96
+     $dff                          399
+     $eq                            42
      $logic_and                      6
-     $logic_not                      1
+     $logic_not                      6
      $logic_or                       1
-     $mux                           31
-     $ne                             4
-     $reduce_and                     6
-     $reduce_bool                    2
-     $sdffe                         13
+     $mux                          220
+     $ne                            12
+     $reduce_and                    17
+     $reduce_bool                    4
+     $sdffe                         58
 
 === stream_buffer_0_0 ===
 
@@ -1200,17 +1075,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_00      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_0_1 ===
 
@@ -1222,17 +1096,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_10      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_0_2 ===
 
@@ -1244,17 +1117,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_20      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_0_3 ===
 
@@ -1266,17 +1138,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_30      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_1_0 ===
 
@@ -1288,17 +1159,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_01      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_1_1 ===
 
@@ -1310,17 +1180,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_11      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_1_2 ===
 
@@ -1332,17 +1201,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_21      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_1_3 ===
 
@@ -1354,17 +1222,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_31      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_2_0 ===
 
@@ -1376,17 +1243,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_02      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_2_1 ===
 
@@ -1398,17 +1264,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_12      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_2_2 ===
 
@@ -1420,17 +1285,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_22      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_2_3 ===
 
@@ -1442,17 +1306,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_32      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_3_0 ===
 
@@ -1464,17 +1327,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_03      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_3_1 ===
 
@@ -1486,17 +1348,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_13      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_3_2 ===
 
@@ -1508,17 +1369,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_23      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_3_3 ===
 
@@ -1530,17 +1390,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_33      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_4_0 ===
 
@@ -1552,17 +1411,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_04      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_4_1 ===
 
@@ -1574,17 +1432,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_14      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_4_2 ===
 
@@ -1596,17 +1453,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_24      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_4_3 ===
 
@@ -1618,17 +1474,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_34      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_5_0 ===
 
@@ -1640,17 +1495,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_05      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_5_1 ===
 
@@ -1662,17 +1516,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_15      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_5_2 ===
 
@@ -1684,17 +1537,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_25      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === stream_buffer_5_3 ===
 
@@ -1706,17 +1558,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 45
-     $add                           12
+     $add                          192
      $dff                            1
-     $eq                             2
+     $eq                             4
      $logic_and                      2
-     $logic_not                      2
-     $mux                           10
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           6
-     $sdffe                          4
-     buffer_16_12100_buffer_init_35      2
+     $logic_not                      4
+     $mux                           81
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                          34
+     $sdffe                         32
 
 === weight_cache_2048_8_0_weight_init_00 ===
 
@@ -1728,8 +1579,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_01 ===
 
@@ -1741,8 +1591,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_02 ===
 
@@ -1754,8 +1603,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_03 ===
 
@@ -1767,8 +1615,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_04 ===
 
@@ -1780,8 +1627,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_05 ===
 
@@ -1793,8 +1639,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_20 ===
 
@@ -1806,8 +1651,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_21 ===
 
@@ -1819,8 +1663,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_22 ===
 
@@ -1832,8 +1675,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_23 ===
 
@@ -1845,8 +1687,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_24 ===
 
@@ -1858,8 +1699,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === weight_cache_2048_8_0_weight_init_25 ===
 
@@ -1871,8 +1711,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $dff                            4
-     $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
+     $dff                           38
 
 === winograd_adder_16_20_4 ===
 
@@ -1884,8 +1723,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 30
-     $add                           15
-     $dff                           15
+     $add                          300
+     $dff                          300
 
 === winograd_dsp_16 ===
 
@@ -1897,12 +1736,12 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 44
-     $eq                            14
-     $logic_not                      2
-     $mul                            2
-     $mux                           16
-     $reduce_or                      2
-     $sdff                           8
+     $eq                            42
+     $logic_not                      6
+     $mul                           32
+     $mux                          256
+     $reduce_or                      4
+     $sdff                          96
 
 === winograd_transform_0 ===
 
@@ -1914,16 +1753,14 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                269
-     $add                            1
-     $dff                           85
-     $dffe                          12
-     $eq                             1
-     $mux                           31
-     $neg                           72
-     $reduce_or                      1
-     $sdff                           2
-     winograd_adder_16_20_4         36
-     winograd_dsp_16                28
+     $add                            3
+     $dff                         1285
+     $dffe                         216
+     $eq                             3
+     $mux                          601
+     $neg                         1152
+     $reduce_or                      2
+     $sdff                           4
 
 === winograd_transform_1 ===
 
@@ -1935,16 +1772,14 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                269
-     $add                            1
-     $dff                           85
-     $dffe                          12
-     $eq                             1
-     $mux                           31
-     $neg                           72
-     $reduce_or                      1
-     $sdff                           2
-     winograd_adder_16_20_4         36
-     winograd_dsp_16                28
+     $add                            3
+     $dff                         1285
+     $dffe                         216
+     $eq                             3
+     $mux                          601
+     $neg                         1152
+     $reduce_or                      2
+     $sdff                           4
 
 === winograd_transform_2 ===
 
@@ -1956,16 +1791,14 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                269
-     $add                            1
-     $dff                           85
-     $dffe                          12
-     $eq                             1
-     $mux                           31
-     $neg                           72
-     $reduce_or                      1
-     $sdff                           2
-     winograd_adder_16_20_4         36
-     winograd_dsp_16                28
+     $add                            3
+     $dff                         1285
+     $dffe                         216
+     $eq                             3
+     $mux                          601
+     $neg                         1152
+     $reduce_or                      2
+     $sdff                           4
 
 === winograd_transform_3 ===
 
@@ -1977,216 +1810,190 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                269
-     $add                            1
-     $dff                           85
-     $dffe                          12
-     $eq                             1
-     $mux                           31
-     $neg                           72
-     $reduce_or                      1
-     $sdff                           2
-     winograd_adder_16_20_4         36
-     winograd_dsp_16                28
+     $add                            3
+     $dff                         1285
+     $dffe                         216
+     $eq                             3
+     $mux                          601
+     $neg                         1152
+     $reduce_or                      2
+     $sdff                           4
 
 === design hierarchy ===
 
    DLA                               1
-     inverse_winograd_0              1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_1              1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_10             1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_11             1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_12             1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_13             1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_14             1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_15             1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_16             1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_17             1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_18             1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_19             1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_2              1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_20             1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_21             1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_22             1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_23             1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_3              1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_4              1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_5              1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_6              1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_7              1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_8              1
-       inverse_winograd_adder_30_3      8
-     inverse_winograd_9              1
-       inverse_winograd_adder_30_3      8
-     pooling                        24
-     processing_element             24
-       accumulator_24_30_4           6
-       dot_product_16_8_30_4         6
-         dsp_block_16_8_false        1
-         dsp_block_16_8_true         1
-       weight_cache_2048_8_0_weight_init_00      1
-         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-       weight_cache_2048_8_0_weight_init_01      1
-         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-       weight_cache_2048_8_0_weight_init_02      1
-         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-       weight_cache_2048_8_0_weight_init_03      1
-         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-       weight_cache_2048_8_0_weight_init_04      1
-         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-       weight_cache_2048_8_0_weight_init_05      1
-         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-       weight_cache_2048_8_0_weight_init_20      1
-         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-       weight_cache_2048_8_0_weight_init_21      1
-         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-       weight_cache_2048_8_0_weight_init_22      1
-         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-       weight_cache_2048_8_0_weight_init_23      1
-         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-       weight_cache_2048_8_0_weight_init_24      1
-         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-       weight_cache_2048_8_0_weight_init_25      1
-         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      1
-     signal_width_reducer            1
-       pipelined_xor_tree_16        24
-     store_output                    1
-     stream_buffer_0_0               1
-       buffer_16_12100_buffer_init_00      2
-         dual_port_ram               1
-     stream_buffer_0_1               1
-       buffer_16_12100_buffer_init_10      2
-         dual_port_ram               1
-     stream_buffer_0_2               1
-       buffer_16_12100_buffer_init_20      2
-         dual_port_ram               1
-     stream_buffer_0_3               1
-       buffer_16_12100_buffer_init_30      2
-         dual_port_ram               1
-     stream_buffer_1_0               1
-       buffer_16_12100_buffer_init_01      2
-         dual_port_ram               1
-     stream_buffer_1_1               1
-       buffer_16_12100_buffer_init_11      2
-         dual_port_ram               1
-     stream_buffer_1_2               1
-       buffer_16_12100_buffer_init_21      2
-         dual_port_ram               1
-     stream_buffer_1_3               1
-       buffer_16_12100_buffer_init_31      2
-         dual_port_ram               1
-     stream_buffer_2_0               1
-       buffer_16_12100_buffer_init_02      2
-         dual_port_ram               1
-     stream_buffer_2_1               1
-       buffer_16_12100_buffer_init_12      2
-         dual_port_ram               1
-     stream_buffer_2_2               1
-       buffer_16_12100_buffer_init_22      2
-         dual_port_ram               1
-     stream_buffer_2_3               1
-       buffer_16_12100_buffer_init_32      2
-         dual_port_ram               1
-     stream_buffer_3_0               1
-       buffer_16_12100_buffer_init_03      2
-         dual_port_ram               1
-     stream_buffer_3_1               1
-       buffer_16_12100_buffer_init_13      2
-         dual_port_ram               1
-     stream_buffer_3_2               1
-       buffer_16_12100_buffer_init_23      2
-         dual_port_ram               1
-     stream_buffer_3_3               1
-       buffer_16_12100_buffer_init_33      2
-         dual_port_ram               1
-     stream_buffer_4_0               1
-       buffer_16_12100_buffer_init_04      2
-         dual_port_ram               1
-     stream_buffer_4_1               1
-       buffer_16_12100_buffer_init_14      2
-         dual_port_ram               1
-     stream_buffer_4_2               1
-       buffer_16_12100_buffer_init_24      2
-         dual_port_ram               1
-     stream_buffer_4_3               1
-       buffer_16_12100_buffer_init_34      2
-         dual_port_ram               1
-     stream_buffer_5_0               1
-       buffer_16_12100_buffer_init_05      2
-         dual_port_ram               1
-     stream_buffer_5_1               1
-       buffer_16_12100_buffer_init_15      2
-         dual_port_ram               1
-     stream_buffer_5_2               1
-       buffer_16_12100_buffer_init_25      2
-         dual_port_ram               1
-     stream_buffer_5_3               1
-       buffer_16_12100_buffer_init_35      2
-         dual_port_ram               1
-     winograd_transform_0            1
-       winograd_adder_16_20_4       36
-       winograd_dsp_16              28
-     winograd_transform_1            1
-       winograd_adder_16_20_4       36
-       winograd_dsp_16              28
-     winograd_transform_2            1
-       winograd_adder_16_20_4       36
-       winograd_dsp_16              28
-     winograd_transform_3            1
-       winograd_adder_16_20_4       36
-       winograd_dsp_16              28
+     inverse_winograd_0              0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_1              0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_10             0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_11             0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_12             0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_13             0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_14             0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_15             0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_16             0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_17             0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_18             0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_19             0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_2              0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_20             0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_21             0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_22             0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_23             0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_3              0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_4              0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_5              0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_6              0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_7              0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_8              0
+       inverse_winograd_adder_30_3      0
+     inverse_winograd_9              0
+       inverse_winograd_adder_30_3      0
+     pooling                         0
+     processing_element              0
+       accumulator_24_30_4           0
+       dot_product_16_8_30_4         0
+         dsp_block_16_8_false        0
+         dsp_block_16_8_true         0
+       weight_cache_2048_8_0_weight_init_00      0
+         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+       weight_cache_2048_8_0_weight_init_01      0
+         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+       weight_cache_2048_8_0_weight_init_02      0
+         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+       weight_cache_2048_8_0_weight_init_03      0
+         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+       weight_cache_2048_8_0_weight_init_04      0
+         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+       weight_cache_2048_8_0_weight_init_05      0
+         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+       weight_cache_2048_8_0_weight_init_20      0
+         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+       weight_cache_2048_8_0_weight_init_21      0
+         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+       weight_cache_2048_8_0_weight_init_22      0
+         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+       weight_cache_2048_8_0_weight_init_23      0
+         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+       weight_cache_2048_8_0_weight_init_24      0
+         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+       weight_cache_2048_8_0_weight_init_25      0
+         $paramod$058c6f8c26a499fadb7bf4f0083f81a0616d373e\dual_port_ram      0
+     signal_width_reducer            0
+       pipelined_xor_tree_16         0
+     store_output                    0
+     stream_buffer_0_0               0
+       buffer_16_12100_buffer_init_00      0
+         dual_port_ram               0
+     stream_buffer_0_1               0
+       buffer_16_12100_buffer_init_10      0
+         dual_port_ram               0
+     stream_buffer_0_2               0
+       buffer_16_12100_buffer_init_20      0
+         dual_port_ram               0
+     stream_buffer_0_3               0
+       buffer_16_12100_buffer_init_30      0
+         dual_port_ram               0
+     stream_buffer_1_0               0
+       buffer_16_12100_buffer_init_01      0
+         dual_port_ram               0
+     stream_buffer_1_1               0
+       buffer_16_12100_buffer_init_11      0
+         dual_port_ram               0
+     stream_buffer_1_2               0
+       buffer_16_12100_buffer_init_21      0
+         dual_port_ram               0
+     stream_buffer_1_3               0
+       buffer_16_12100_buffer_init_31      0
+         dual_port_ram               0
+     stream_buffer_2_0               0
+       buffer_16_12100_buffer_init_02      0
+         dual_port_ram               0
+     stream_buffer_2_1               0
+       buffer_16_12100_buffer_init_12      0
+         dual_port_ram               0
+     stream_buffer_2_2               0
+       buffer_16_12100_buffer_init_22      0
+         dual_port_ram               0
+     stream_buffer_2_3               0
+       buffer_16_12100_buffer_init_32      0
+         dual_port_ram               0
+     stream_buffer_3_0               0
+       buffer_16_12100_buffer_init_03      0
+         dual_port_ram               0
+     stream_buffer_3_1               0
+       buffer_16_12100_buffer_init_13      0
+         dual_port_ram               0
+     stream_buffer_3_2               0
+       buffer_16_12100_buffer_init_23      0
+         dual_port_ram               0
+     stream_buffer_3_3               0
+       buffer_16_12100_buffer_init_33      0
+         dual_port_ram               0
+     stream_buffer_4_0               0
+       buffer_16_12100_buffer_init_04      0
+         dual_port_ram               0
+     stream_buffer_4_1               0
+       buffer_16_12100_buffer_init_14      0
+         dual_port_ram               0
+     stream_buffer_4_2               0
+       buffer_16_12100_buffer_init_24      0
+         dual_port_ram               0
+     stream_buffer_4_3               0
+       buffer_16_12100_buffer_init_34      0
+         dual_port_ram               0
+     stream_buffer_5_0               0
+       buffer_16_12100_buffer_init_05      0
+         dual_port_ram               0
+     stream_buffer_5_1               0
+       buffer_16_12100_buffer_init_15      0
+         dual_port_ram               0
+     stream_buffer_5_2               0
+       buffer_16_12100_buffer_init_25      0
+         dual_port_ram               0
+     stream_buffer_5_3               0
+       buffer_16_12100_buffer_init_35      0
+         dual_port_ram               0
+     winograd_transform_0            0
+       winograd_adder_16_20_4        0
+       winograd_dsp_16               0
+     winograd_transform_1            0
+       winograd_adder_16_20_4        0
+       winograd_dsp_16               0
+     winograd_transform_2            0
+       winograd_adder_16_20_4        0
+       winograd_dsp_16               0
+     winograd_transform_3            0
+       winograd_adder_16_20_4        0
+       winograd_dsp_16               0
 
-   Number of wires:              59205
-   Number of wire bits:         960350
-   Number of public wires:       41053
-   Number of public wire bits:  629719
-   Number of memories:             336
-   Number of memory bits:        36096
+   Number of wires:               1166
+   Number of wire bits:          17955
+   Number of public wires:        1166
+   Number of public wire bits:   17955
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:              35815
-     $add                         4330
-     $dff                         7386
-     $dffe                        2448
-     $eq                          1723
-     $gt                            96
-     $le                            24
-     $logic_and                    102
-     $logic_not                    321
-     $logic_or                      49
-     $lt                            24
-     $memrd                        672
-     $memwr_v2                     672
-     $mul                          800
-     $mux                         8715
-     $ne                           124
-     $neg                          456
-     $not                          240
-     $reduce_and                   222
-     $reduce_bool                  122
-     $reduce_or                    444
-     $sdff                        5608
-     $sdffce                       288
-     $sdffe                        589
-     $xor                          360
+   Number of cells:                102
 

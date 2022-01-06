@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v' to AST representation.
 Warning: Encountered `translate_off' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using a portable and standards-compliant construct such as `ifdef is recommended!
 Generating RTLIL representation for module `\a25_dcache'.
 Generating RTLIL representation for module `\single_port_ram_128_8'.
@@ -57,11 +57,11 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1278$269 in module single_port_ram_21_8.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1247$260 in module single_port_ram_128_8.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:572$52 in module a25_dcache.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:548$40 in module a25_dcache.
-Marked 6 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:390$20 in module a25_dcache.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1278$269 in module single_port_ram_21_8.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1247$260 in module single_port_ram_128_8.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:572$52 in module a25_dcache.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:548$40 in module a25_dcache.
+Marked 6 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:390$20 in module a25_dcache.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -69,81 +69,81 @@ Removed 0 redundant assignments.
 Promoted 21 assignments to connections.
 
 3.4. Executing PROC_INIT pass (extract init attributes).
-Found init rule in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:346$258'.
+Found init rule in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:346$258'.
   Set init value: \wb_address = 0
-Found init rule in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:341$257'.
+Found init rule in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:341$257'.
   Set init value: \ex_read_hit_way = 4'0000
-Found init rule in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:340$256'.
+Found init rule in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:340$256'.
   Set init value: \ex_read_hit_r = 1'0
-Found init rule in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:336$255'.
+Found init rule in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:336$255'.
   Set init value: \wb_rdata_burst = 128'00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-Found init rule in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:334$254'.
+Found init rule in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:334$254'.
   Set init value: \request_r = 1'0
-Found init rule in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:323$253'.
+Found init rule in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:323$253'.
   Set init value: \miss_address = 0
-Found init rule in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:310$252'.
+Found init rule in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:310$252'.
   Set init value: \data_wdata_r = 128'00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-Found init rule in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:302$251'.
+Found init rule in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:302$251'.
   Set init value: \random_num = 4'1111
-Found init rule in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:300$250'.
+Found init rule in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:300$250'.
   Set init value: \valid_bits_r = 4'0000
-Found init rule in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:298$249'.
+Found init rule in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:298$249'.
   Set init value: \select_way = 4'0000
-Found init rule in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:296$248'.
+Found init rule in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:296$248'.
   Set init value: \data_hit_way_r = 4'0000
-Found init rule in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:284$247'.
+Found init rule in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:284$247'.
   Set init value: \init_count = 9'000000000
-Found init rule in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:283$246'.
+Found init rule in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:283$246'.
   Set init value: \source_sel = 4'0010
-Found init rule in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:281$245'.
+Found init rule in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:281$245'.
   Set init value: \c_state = 4'0001
 
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\single_port_ram_21_8.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1278$269'.
-     1/4: $1$memwr$\RAM$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1282$268_EN[20:0]$275
-     2/4: $1$memwr$\RAM$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1282$268_DATA[20:0]$274
-     3/4: $1$memwr$\RAM$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1282$268_ADDR[7:0]$273
+Creating decoders for process `\single_port_ram_21_8.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1278$269'.
+     1/4: $1$memwr$\RAM$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1282$268_EN[20:0]$275
+     2/4: $1$memwr$\RAM$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1282$268_DATA[20:0]$274
+     3/4: $1$memwr$\RAM$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1282$268_ADDR[7:0]$273
      4/4: $0\out[20:0]
-Creating decoders for process `\single_port_ram_128_8.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1247$260'.
-     1/4: $1$memwr$\RAM$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1251$259_EN[127:0]$266
-     2/4: $1$memwr$\RAM$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1251$259_DATA[127:0]$265
-     3/4: $1$memwr$\RAM$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1251$259_ADDR[7:0]$264
+Creating decoders for process `\single_port_ram_128_8.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1247$260'.
+     1/4: $1$memwr$\RAM$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1251$259_EN[127:0]$266
+     2/4: $1$memwr$\RAM$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1251$259_DATA[127:0]$265
+     3/4: $1$memwr$\RAM$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1251$259_ADDR[7:0]$264
      4/4: $0\out[127:0]
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:346$258'.
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:341$257'.
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:340$256'.
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:336$255'.
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:334$254'.
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:323$253'.
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:310$252'.
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:302$251'.
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:300$250'.
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:298$249'.
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:296$248'.
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:284$247'.
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:283$246'.
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:281$245'.
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:907$219'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:346$258'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:341$257'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:340$256'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:336$255'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:334$254'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:323$253'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:310$252'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:302$251'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:300$250'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:298$249'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:296$248'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:284$247'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:283$246'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:281$245'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:907$219'.
      1/1: $0\valid_bits_r[3:0]
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:593$55'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:593$55'.
      1/1: $0\ex_read_address[7:0]
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:572$52'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:572$52'.
      1/2: $0\ex_read_hit_way[3:0]
      2/2: $0\ex_read_hit_r[0:0]
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:561$47'.
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:548$40'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:561$47'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:548$40'.
      1/1: $0\wb_address[31:0]
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:536$33'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:536$33'.
      1/1: $0\data_wdata_r[127:0]
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:530$32'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:530$32'.
      1/1: $0\data_hit_way_r[3:0]
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:526$30'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:526$30'.
      1/1: $0\miss_address[31:0]
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:517$29'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:517$29'.
      1/1: $0\wb_rdata_burst[127:0]
-Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:390$20'.
+Creating decoders for process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:390$20'.
      1/5: $0\random_num[3:0]
      2/5: $0\select_way[3:0]
      3/5: $0\init_count[8:0]
@@ -153,93 +153,93 @@ Creating decoders for process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\single_port_ram_21_8.\out' using process `\single_port_ram_21_8.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1278$269'.
+Creating register for signal `\single_port_ram_21_8.\out' using process `\single_port_ram_21_8.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1278$269'.
   created $dff cell `$procdff$444' with positive edge clock.
-Creating register for signal `\single_port_ram_21_8.$memwr$\RAM$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1282$268_ADDR' using process `\single_port_ram_21_8.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1278$269'.
+Creating register for signal `\single_port_ram_21_8.$memwr$\RAM$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1282$268_ADDR' using process `\single_port_ram_21_8.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1278$269'.
   created $dff cell `$procdff$445' with positive edge clock.
-Creating register for signal `\single_port_ram_21_8.$memwr$\RAM$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1282$268_DATA' using process `\single_port_ram_21_8.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1278$269'.
+Creating register for signal `\single_port_ram_21_8.$memwr$\RAM$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1282$268_DATA' using process `\single_port_ram_21_8.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1278$269'.
   created $dff cell `$procdff$446' with positive edge clock.
-Creating register for signal `\single_port_ram_21_8.$memwr$\RAM$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1282$268_EN' using process `\single_port_ram_21_8.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1278$269'.
+Creating register for signal `\single_port_ram_21_8.$memwr$\RAM$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1282$268_EN' using process `\single_port_ram_21_8.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1278$269'.
   created $dff cell `$procdff$447' with positive edge clock.
-Creating register for signal `\single_port_ram_128_8.\out' using process `\single_port_ram_128_8.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1247$260'.
+Creating register for signal `\single_port_ram_128_8.\out' using process `\single_port_ram_128_8.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1247$260'.
   created $dff cell `$procdff$448' with positive edge clock.
-Creating register for signal `\single_port_ram_128_8.$memwr$\RAM$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1251$259_ADDR' using process `\single_port_ram_128_8.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1247$260'.
+Creating register for signal `\single_port_ram_128_8.$memwr$\RAM$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1251$259_ADDR' using process `\single_port_ram_128_8.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1247$260'.
   created $dff cell `$procdff$449' with positive edge clock.
-Creating register for signal `\single_port_ram_128_8.$memwr$\RAM$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1251$259_DATA' using process `\single_port_ram_128_8.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1247$260'.
+Creating register for signal `\single_port_ram_128_8.$memwr$\RAM$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1251$259_DATA' using process `\single_port_ram_128_8.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1247$260'.
   created $dff cell `$procdff$450' with positive edge clock.
-Creating register for signal `\single_port_ram_128_8.$memwr$\RAM$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1251$259_EN' using process `\single_port_ram_128_8.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1247$260'.
+Creating register for signal `\single_port_ram_128_8.$memwr$\RAM$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1251$259_EN' using process `\single_port_ram_128_8.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1247$260'.
   created $dff cell `$procdff$451' with positive edge clock.
-Creating register for signal `\a25_dcache.\valid_bits_r' using process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:907$219'.
+Creating register for signal `\a25_dcache.\valid_bits_r' using process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:907$219'.
   created $dff cell `$procdff$452' with positive edge clock.
-Creating register for signal `\a25_dcache.\ex_read_address' using process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:593$55'.
+Creating register for signal `\a25_dcache.\ex_read_address' using process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:593$55'.
   created $dff cell `$procdff$453' with positive edge clock.
-Creating register for signal `\a25_dcache.\ex_read_hit_r' using process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:572$52'.
+Creating register for signal `\a25_dcache.\ex_read_hit_r' using process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:572$52'.
   created $dff cell `$procdff$454' with positive edge clock.
-Creating register for signal `\a25_dcache.\ex_read_hit_way' using process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:572$52'.
+Creating register for signal `\a25_dcache.\ex_read_hit_way' using process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:572$52'.
   created $dff cell `$procdff$455' with positive edge clock.
-Creating register for signal `\a25_dcache.\request_r' using process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:561$47'.
+Creating register for signal `\a25_dcache.\request_r' using process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:561$47'.
   created $dff cell `$procdff$456' with positive edge clock.
-Creating register for signal `\a25_dcache.\wb_address' using process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:548$40'.
+Creating register for signal `\a25_dcache.\wb_address' using process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:548$40'.
   created $dff cell `$procdff$457' with positive edge clock.
-Creating register for signal `\a25_dcache.\data_wdata_r' using process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:536$33'.
+Creating register for signal `\a25_dcache.\data_wdata_r' using process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:536$33'.
   created $dff cell `$procdff$458' with positive edge clock.
-Creating register for signal `\a25_dcache.\data_hit_way_r' using process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:530$32'.
+Creating register for signal `\a25_dcache.\data_hit_way_r' using process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:530$32'.
   created $dff cell `$procdff$459' with positive edge clock.
-Creating register for signal `\a25_dcache.\miss_address' using process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:526$30'.
+Creating register for signal `\a25_dcache.\miss_address' using process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:526$30'.
   created $dff cell `$procdff$460' with positive edge clock.
-Creating register for signal `\a25_dcache.\wb_rdata_burst' using process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:517$29'.
+Creating register for signal `\a25_dcache.\wb_rdata_burst' using process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:517$29'.
   created $dff cell `$procdff$461' with positive edge clock.
-Creating register for signal `\a25_dcache.\c_state' using process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:390$20'.
+Creating register for signal `\a25_dcache.\c_state' using process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:390$20'.
   created $dff cell `$procdff$462' with positive edge clock.
-Creating register for signal `\a25_dcache.\source_sel' using process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:390$20'.
+Creating register for signal `\a25_dcache.\source_sel' using process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:390$20'.
   created $dff cell `$procdff$463' with positive edge clock.
-Creating register for signal `\a25_dcache.\init_count' using process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:390$20'.
+Creating register for signal `\a25_dcache.\init_count' using process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:390$20'.
   created $dff cell `$procdff$464' with positive edge clock.
-Creating register for signal `\a25_dcache.\select_way' using process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:390$20'.
+Creating register for signal `\a25_dcache.\select_way' using process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:390$20'.
   created $dff cell `$procdff$465' with positive edge clock.
-Creating register for signal `\a25_dcache.\random_num' using process `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:390$20'.
+Creating register for signal `\a25_dcache.\random_num' using process `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:390$20'.
   created $dff cell `$procdff$466' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\single_port_ram_21_8.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1278$269'.
-Removing empty process `single_port_ram_21_8.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1278$269'.
-Found and cleaned up 1 empty switch in `\single_port_ram_128_8.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1247$260'.
-Removing empty process `single_port_ram_128_8.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1247$260'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:346$258'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:341$257'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:340$256'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:336$255'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:334$254'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:323$253'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:310$252'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:302$251'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:300$250'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:298$249'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:296$248'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:284$247'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:283$246'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:281$245'.
-Found and cleaned up 1 empty switch in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:907$219'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:907$219'.
-Found and cleaned up 1 empty switch in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:593$55'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:593$55'.
-Found and cleaned up 3 empty switches in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:572$52'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:572$52'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:561$47'.
-Found and cleaned up 2 empty switches in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:548$40'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:548$40'.
-Found and cleaned up 1 empty switch in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:536$33'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:536$33'.
-Found and cleaned up 1 empty switch in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:530$32'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:530$32'.
-Found and cleaned up 1 empty switch in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:526$30'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:526$30'.
-Found and cleaned up 1 empty switch in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:517$29'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:517$29'.
-Found and cleaned up 12 empty switches in `\a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:390$20'.
-Removing empty process `a25_dcache.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:390$20'.
+Found and cleaned up 1 empty switch in `\single_port_ram_21_8.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1278$269'.
+Removing empty process `single_port_ram_21_8.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1278$269'.
+Found and cleaned up 1 empty switch in `\single_port_ram_128_8.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1247$260'.
+Removing empty process `single_port_ram_128_8.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1247$260'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:346$258'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:341$257'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:340$256'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:336$255'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:334$254'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:323$253'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:310$252'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:302$251'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:300$250'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:298$249'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:296$248'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:284$247'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:283$246'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:281$245'.
+Found and cleaned up 1 empty switch in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:907$219'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:907$219'.
+Found and cleaned up 1 empty switch in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:593$55'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:593$55'.
+Found and cleaned up 3 empty switches in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:572$52'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:572$52'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:561$47'.
+Found and cleaned up 2 empty switches in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:548$40'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:548$40'.
+Found and cleaned up 1 empty switch in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:536$33'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:536$33'.
+Found and cleaned up 1 empty switch in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:530$32'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:530$32'.
+Found and cleaned up 1 empty switch in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:526$30'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:526$30'.
+Found and cleaned up 1 empty switch in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:517$29'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:517$29'.
+Found and cleaned up 12 empty switches in `\a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:390$20'.
+Removing empty process `a25_dcache.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:390$20'.
 Cleaned up 25 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -305,10 +305,10 @@ Finding identical cells in module `\a25_dcache'.
 Removed a total of 3 cells.
 
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $procdff$444 ($dff) from module single_port_ram_21_8 (D = $memrd$\RAM$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1283$276_DATA, Q = \out).
-Adding EN signal on $procdff$448 ($dff) from module single_port_ram_128_8 (D = $memrd$\RAM$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1252$267_DATA, Q = \out).
-Adding EN signal on $procdff$458 ($dff) from module a25_dcache (D = $ternary$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:617$68_Y, Q = \data_wdata_r).
-Adding EN signal on $procdff$459 ($dff) from module a25_dcache (D = { $logic_and$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:876$218_Y $logic_and$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:845$205_Y $logic_and$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:814$192_Y $logic_and$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:782$179_Y }, Q = \data_hit_way_r).
+Adding EN signal on $procdff$444 ($dff) from module single_port_ram_21_8 (D = $memrd$\RAM$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1283$276_DATA, Q = \out).
+Adding EN signal on $procdff$448 ($dff) from module single_port_ram_128_8 (D = $memrd$\RAM$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:1252$267_DATA, Q = \out).
+Adding EN signal on $procdff$458 ($dff) from module a25_dcache (D = $ternary$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:617$68_Y, Q = \data_wdata_r).
+Adding EN signal on $procdff$459 ($dff) from module a25_dcache (D = { $logic_and$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:876$218_Y $logic_and$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:845$205_Y $logic_and$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:814$192_Y $logic_and$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:782$179_Y }, Q = \data_hit_way_r).
 Adding EN signal on $procdff$460 ($dff) from module a25_dcache (D = \i_address, Q = \miss_address).
 Adding EN signal on $procdff$461 ($dff) from module a25_dcache (D = \i_wb_cached_rdata, Q = \wb_rdata_burst).
 Adding EN signal on $procdff$457 ($dff) from module a25_dcache (D = $procmux$322_Y [3:0], Q = \wb_address [3:0]).
@@ -318,9 +318,9 @@ Adding EN signal on $auto$ff.cc:262:slice$489 ($sdff) from module a25_dcache (D 
 Adding SRST signal on $procdff$463 ($dff) from module a25_dcache (D = $procmux$381_Y, Q = \source_sel, rval = 4'0001).
 Adding EN signal on $auto$ff.cc:262:slice$503 ($sdff) from module a25_dcache (D = $procmux$381_Y, Q = \source_sel).
 Adding SRST signal on $procdff$464 ($dff) from module a25_dcache (D = $procmux$373_Y, Q = \init_count, rval = 9'000000000).
-Adding EN signal on $auto$ff.cc:262:slice$513 ($sdff) from module a25_dcache (D = $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:406$22_Y, Q = \init_count).
+Adding EN signal on $auto$ff.cc:262:slice$513 ($sdff) from module a25_dcache (D = $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:406$22_Y, Q = \init_count).
 Adding EN signal on $procdff$465 ($dff) from module a25_dcache (D = $procmux$353_Y, Q = \select_way).
-Adding EN signal on $procdff$466 ($dff) from module a25_dcache (D = { \random_num [2:0] $xor$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:459$27_Y }, Q = \random_num).
+Adding EN signal on $procdff$466 ($dff) from module a25_dcache (D = { \random_num [2:0] $xor$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:459$27_Y }, Q = \random_num).
 Adding EN signal on $procdff$452 ($dff) from module a25_dcache (D = { \tag_rdata_way3 [20] \tag_rdata_way2 [20] \tag_rdata_way1 [20] \tag_rdata_way0 [20] }, Q = \valid_bits_r).
 Adding EN signal on $procdff$453 ($dff) from module a25_dcache (D = \i_address [11:4], Q = \ex_read_address).
 Adding SRST signal on $procdff$454 ($dff) from module a25_dcache (D = $procmux$314_Y, Q = \ex_read_hit_r, rval = 1'0).
@@ -361,7 +361,7 @@ Removed 0 multiplexer ports.
 
 4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \a25_dcache.
-    New ctrl vector for $pmux cell $procmux$408: { $eq$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:710$158_Y $eq$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:382$17_Y \fill_state $eq$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:710$156_Y $auto$opt_reduce.cc:134:opt_mux$470 $eq$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:544$37_Y $auto$opt_reduce.cc:134:opt_mux$542 }
+    New ctrl vector for $pmux cell $procmux$408: { $eq$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:710$158_Y $eq$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:382$17_Y \fill_state $eq$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:710$156_Y $auto$opt_reduce.cc:134:opt_mux$470 $eq$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/arm_core_submodules/a25_dcache.v:544$37_Y $auto$opt_reduce.cc:134:opt_mux$542 }
   Optimizing cells in module \a25_dcache.
   Optimizing cells in module \single_port_ram_128_8.
   Optimizing cells in module \single_port_ram_21_8.
@@ -491,26 +491,24 @@ Optimizing module single_port_ram_21_8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                255
-     $add                            2
+     $add                           11
      $dff                            1
-     $dffe                          10
-     $eq                            27
+     $dffe                         344
+     $eq                           215
      $logic_and                     58
-     $logic_not                      9
+     $logic_not                     15
      $logic_or                      32
-     $lt                             1
-     $mux                           74
-     $ne                             8
+     $lt                            32
+     $mux                         2508
+     $ne                            21
      $not                            1
-     $or                             1
-     $pmux                           3
-     $reduce_and                     6
-     $reduce_bool                    5
-     $reduce_or                      3
-     $sdffe                          5
+     $or                             4
+     $pmux                          12
+     $reduce_and                    20
+     $reduce_bool                   18
+     $reduce_or                      8
+     $sdffe                         22
      $xor                            1
-     single_port_ram_128_8           4
-     single_port_ram_21_8            4
 
 === single_port_ram_128_8 ===
 
@@ -522,10 +520,8 @@ Optimizing module single_port_ram_21_8.
    Number of memory bits:        32768
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                         128
+     $mux                          137
 
 === single_port_ram_21_8 ===
 
@@ -537,47 +533,43 @@ Optimizing module single_port_ram_21_8.
    Number of memory bits:         5376
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                          21
+     $mux                           30
 
 === design hierarchy ===
 
    a25_dcache                        1
-     single_port_ram_128_8           4
-     single_port_ram_21_8            4
+     single_port_ram_128_8           0
+     single_port_ram_21_8            0
 
-   Number of wires:                332
-   Number of wire bits:           7138
-   Number of public wires:         116
-   Number of public wire bits:    3450
-   Number of memories:               8
-   Number of memory bits:       152576
+   Number of wires:                260
+   Number of wire bits:           4014
+   Number of public wires:          76
+   Number of public wire bits:    2178
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                295
-     $add                            2
+   Number of cells:                255
+     $add                           11
      $dff                            1
-     $dffe                          18
-     $eq                            27
+     $dffe                         344
+     $eq                           215
      $logic_and                     58
-     $logic_not                      9
+     $logic_not                     15
      $logic_or                      32
-     $lt                             1
-     $memrd                          8
-     $memwr_v2                       8
-     $mux                           98
-     $ne                             8
+     $lt                            32
+     $mux                         2508
+     $ne                            21
      $not                            1
-     $or                             1
-     $pmux                           3
-     $reduce_and                     6
-     $reduce_bool                    5
-     $reduce_or                      3
-     $sdffe                          5
+     $or                             4
+     $pmux                          12
+     $reduce_and                    20
+     $reduce_bool                   18
+     $reduce_or                      8
+     $sdffe                         22
      $xor                            1
 
 Warnings: 1 unique messages, 1 total
-End of script. Logfile hash: 0fe0992fa7, CPU: user 0.35s system 0.00s, MEM: 17.34 MB peak
+End of script. Logfile hash: 21ab9dd33c, CPU: user 0.40s system 0.00s, MEM: 17.52 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 28% 6x opt_expr (0 sec), 19% 4x opt_clean (0 sec), ...
+Time spent: 26% 6x opt_expr (0 sec), 19% 4x opt_clean (0 sec), ...

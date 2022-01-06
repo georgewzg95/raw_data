@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v' to AST representation.
 Generating RTLIL representation for module `\port_bus_2to1'.
 Successfully finished Verilog frontend.
 
@@ -48,8 +48,8 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:214$3 in module port_bus_2to1.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:161$1 in module port_bus_2to1.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:214$3 in module port_bus_2to1.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:161$1 in module port_bus_2to1.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -61,7 +61,7 @@ Promoted 5 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating decoders for process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
      1/26: $0\vidin_data_reg_scld_4_2to3_right_in_tmp[15:0]
      2/26: $0\vidin_data_reg_scld_2_2to3_right_in_tmp[15:0]
      3/26: $0\vidin_data_reg_scld_1_2to3_right_in_tmp[15:0]
@@ -88,102 +88,102 @@ Creating decoders for process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_desig
     24/26: $0\vidin_data_reg_scld_1_2to3_left_rp_tmp[15:0]
     25/26: $0\svid_comp_switch_tmp[0:0]
     26/26: $0\vidin_addr_reg_tmp[18:0]
-Creating decoders for process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:214$3'.
+Creating decoders for process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:214$3'.
      1/5: $0\bus_word_6_tmp[15:0]
      2/5: $0\bus_word_5_tmp[15:0]
      3/5: $0\bus_word_4_tmp[15:0]
      4/5: $0\bus_word_3_tmp[15:0]
      5/5: $0\counter_out_tmp[2:0]
-Creating decoders for process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:161$1'.
+Creating decoders for process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:161$1'.
      1/1: $0\counter[3:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\port_bus_2to1.\bus_word_3' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\bus_word_3' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$116' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\bus_word_4' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\bus_word_4' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$117' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\bus_word_5' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\bus_word_5' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$118' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\bus_word_6' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\bus_word_6' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$119' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\counter_out' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\counter_out' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$120' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_addr_reg_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_addr_reg_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$121' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\svid_comp_switch_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\svid_comp_switch_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$122' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_1_2to3_left_rp_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_1_2to3_left_rp_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$123' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_2_2to3_left_rp_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_2_2to3_left_rp_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$124' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_4_2to3_left_rp_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_4_2to3_left_rp_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$125' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_1_2to3_right_rp_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_1_2to3_right_rp_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$126' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_2_2to3_right_rp_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_2_2to3_right_rp_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$127' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_4_2to3_right_rp_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_4_2to3_right_rp_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$128' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_1_2to3_left_ip_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_1_2to3_left_ip_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$129' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_2_2to3_left_ip_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_2_2to3_left_ip_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$130' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_4_2to3_left_ip_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_4_2to3_left_ip_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$131' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_1_2to3_right_ip_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_1_2to3_right_ip_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$132' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_2_2to3_right_ip_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_2_2to3_right_ip_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$133' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_4_2to3_right_ip_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_4_2to3_right_ip_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$134' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_1_2to3_left_rn_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_1_2to3_left_rn_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$135' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_2_2to3_left_rn_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_2_2to3_left_rn_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$136' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_4_2to3_left_rn_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_4_2to3_left_rn_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$137' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_1_2to3_right_rn_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_1_2to3_right_rn_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$138' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_2_2to3_right_rn_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_2_2to3_right_rn_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$139' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_4_2to3_right_rn_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_4_2to3_right_rn_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$140' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_1_2to3_left_in_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_1_2to3_left_in_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$141' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_2_2to3_left_in_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_2_2to3_left_in_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$142' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_4_2to3_left_in_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_4_2to3_left_in_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$143' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_1_2to3_right_in_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_1_2to3_right_in_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$144' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_2_2to3_right_in_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_2_2to3_right_in_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$145' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_4_2to3_right_in_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Creating register for signal `\port_bus_2to1.\vidin_data_reg_scld_4_2to3_right_in_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
   created $dff cell `$procdff$146' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\bus_word_3_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:214$3'.
+Creating register for signal `\port_bus_2to1.\bus_word_3_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:214$3'.
   created $dff cell `$procdff$147' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\bus_word_4_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:214$3'.
+Creating register for signal `\port_bus_2to1.\bus_word_4_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:214$3'.
   created $dff cell `$procdff$148' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\bus_word_5_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:214$3'.
+Creating register for signal `\port_bus_2to1.\bus_word_5_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:214$3'.
   created $dff cell `$procdff$149' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\bus_word_6_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:214$3'.
+Creating register for signal `\port_bus_2to1.\bus_word_6_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:214$3'.
   created $dff cell `$procdff$150' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\counter_out_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:214$3'.
+Creating register for signal `\port_bus_2to1.\counter_out_tmp' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:214$3'.
   created $dff cell `$procdff$151' with positive edge clock.
-Creating register for signal `\port_bus_2to1.\counter' using process `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:161$1'.
+Creating register for signal `\port_bus_2to1.\counter' using process `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:161$1'.
   created $dff cell `$procdff$152' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
-Removing empty process `port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
-Found and cleaned up 1 empty switch in `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:214$3'.
-Removing empty process `port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:214$3'.
-Found and cleaned up 2 empty switches in `\port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:161$1'.
-Removing empty process `port_bus_2to1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:161$1'.
+Found and cleaned up 1 empty switch in `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Removing empty process `port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:285$4'.
+Found and cleaned up 1 empty switch in `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:214$3'.
+Removing empty process `port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:214$3'.
+Found and cleaned up 2 empty switches in `\port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:161$1'.
+Removing empty process `port_bus_2to1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/stereovision2_submodules/port_bus_2to1.v:161$1'.
 Cleaned up 4 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -297,14 +297,14 @@ Optimizing module port_bus_2to1.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 58
-     $dff                           10
-     $dffe                          26
-     $eq                            13
-     $logic_not                      1
-     $pmux                           6
-     $reduce_or                      1
-     $sdff                           1
+     $dff                          134
+     $dffe                         404
+     $eq                            45
+     $logic_not                      3
+     $pmux                          71
+     $reduce_or                      2
+     $sdff                           4
 
-End of script. Logfile hash: ffbc82ffdb, CPU: user 0.06s system 0.00s, MEM: 12.80 MB peak
+End of script. Logfile hash: 8b9b3b930b, CPU: user 0.08s system 0.00s, MEM: 12.98 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 19% 4x opt_expr (0 sec), 19% 2x opt_dff (0 sec), ...
+Time spent: 24% 4x opt_expr (0 sec), 14% 2x read_verilog (0 sec), ...

@@ -39,7 +39,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     f3_add                          1
 
 === mod_p ===
 
@@ -51,25 +50,20 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     f3_mult                         2
-     f3_sub                          2
 
 === design hierarchy ===
 
    mod_p                             1
-     f3_mult                         2
-     f3_sub                          2
-       f3_add                        1
+     f3_mult                         0
+     f3_sub                          0
+       f3_add                        0
 
-   Number of wires:                111
-   Number of wire bits:           3688
-   Number of public wires:          43
-   Number of public wire bits:    3620
+   Number of wires:                  5
+   Number of wire bits:           3564
+   Number of public wires:           5
+   Number of public wire bits:    3564
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 76
-     $and                           48
-     $not                           16
-     $or                            12
+   Number of cells:                  4
 

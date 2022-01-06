@@ -11,16 +11,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 21
-     $dff                            6
-     $dffe                           7
-     my_fir_f1                       1
-     my_fir_f2                       1
-     my_fir_f3                       1
-     my_fir_h1                       1
-     my_fir_h2                       1
-     my_fir_h3                       1
-     my_fir_h4                       1
-     steer_fltr                      1
+     $dff                           96
+     $dffe                         196
 
 === my_fir_f1 ===
 
@@ -32,10 +24,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 22
-     $add                            6
+     $add                          192
      $dff                            1
-     $dffe                           7
-     $mul                            7
+     $dffe                         124
+     $mul                          224
      $mux                            1
 
 === my_fir_f2 ===
@@ -48,10 +40,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $add                            6
+     $add                          192
      $dff                            1
-     $dffe                           7
-     $mul                            5
+     $dffe                         124
+     $mul                          158
      $mux                            1
 
 === my_fir_f3 ===
@@ -64,10 +56,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $add                            5
+     $add                          160
      $dff                            1
-     $dffe                           7
-     $mul                            6
+     $dffe                         124
+     $mul                          184
      $mux                            1
 
 === my_fir_h1 ===
@@ -80,10 +72,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $add                            5
+     $add                          160
      $dff                            1
-     $dffe                           7
-     $mul                            6
+     $dffe                         124
+     $mul                          192
      $mux                            1
 
 === my_fir_h2 ===
@@ -96,10 +88,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $add                            6
+     $add                          192
      $dff                            1
-     $dffe                           7
-     $mul                            5
+     $dffe                         124
+     $mul                          158
      $mux                            1
 
 === my_fir_h3 ===
@@ -112,10 +104,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $add                            5
+     $add                          160
      $dff                            1
-     $dffe                           7
-     $mul                            6
+     $dffe                         124
+     $mul                          186
      $mux                            1
 
 === my_fir_h4 ===
@@ -128,10 +120,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $add                            5
+     $add                          160
      $dff                            1
-     $dffe                           7
-     $mul                            6
+     $dffe                         124
+     $mul                          186
      $mux                            1
 
 === steer_fltr ===
@@ -144,35 +136,31 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 42
-     $add                           11
-     $dff                           21
-     $dffe                           7
-     $sub                            3
+     $add                          333
+     $dff                          543
+     $dffe                         196
+     $sub                           93
 
 === design hierarchy ===
 
    h_fltr                            1
-     my_fir_f1                       1
-     my_fir_f2                       1
-     my_fir_f3                       1
-     my_fir_h1                       1
-     my_fir_h2                       1
-     my_fir_h3                       1
-     my_fir_h4                       1
-     steer_fltr                      1
+     my_fir_f1                       0
+     my_fir_f2                       0
+     my_fir_f3                       0
+     my_fir_h1                       0
+     my_fir_h2                       0
+     my_fir_h3                       0
+     my_fir_h4                       0
+     steer_fltr                      0
 
-   Number of wires:                256
-   Number of wire bits:           5604
-   Number of public wires:         156
-   Number of public wire bits:    2643
+   Number of wires:                 42
+   Number of wire bits:            705
+   Number of public wires:          42
+   Number of public wire bits:     705
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                197
-     $add                           49
-     $dff                           34
-     $dffe                          63
-     $mul                           41
-     $mux                            7
-     $sub                            3
+   Number of cells:                 21
+     $dff                           96
+     $dffe                         196
 

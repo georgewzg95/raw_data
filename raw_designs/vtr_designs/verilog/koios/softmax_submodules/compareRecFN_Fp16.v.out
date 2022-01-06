@@ -11,7 +11,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $eq                             1
+     $eq                             3
      $logic_and                      1
      $logic_not                      1
 
@@ -25,9 +25,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $eq                             1
+     $eq                             2
      $logic_and                      2
-     $logic_not                      3
+     $logic_not                     34
 
 === compareRecFN_Fp16 ===
 
@@ -39,31 +39,29 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 43
-     $eq                             3
+     $eq                            20
      $logic_and                     17
      $logic_not                     10
      $logic_or                       7
-     $lt                             2
-     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\isSigNaNRecFN      2
-     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\recFNToRawFN      2
+     $lt                            19
 
 === design hierarchy ===
 
    compareRecFN_Fp16                 1
-     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\isSigNaNRecFN      2
-     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\recFNToRawFN      2
+     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\isSigNaNRecFN      0
+     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\recFNToRawFN      0
 
-   Number of wires:                 87
-   Number of wire bits:            283
-   Number of public wires:          57
-   Number of public wire bits:     253
+   Number of wires:                 57
+   Number of wire bits:            127
+   Number of public wires:          31
+   Number of public wire bits:     101
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 57
-     $eq                             7
-     $logic_and                     23
-     $logic_not                     18
+   Number of cells:                 43
+     $eq                            20
+     $logic_and                     17
+     $logic_not                     10
      $logic_or                       7
-     $lt                             2
+     $lt                            19
 

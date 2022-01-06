@@ -11,17 +11,17 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 81
-     $add                            4
+     $add                          128
      $and                            4
-     $eq                             6
-     $logic_not                      4
-     $lt                             1
-     $mux                            5
-     $not                            2
+     $eq                            12
+     $logic_not                      6
+     $lt                            31
+     $mux                           83
+     $not                           64
      $or                             3
-     $pmux                          44
-     $reduce_and                     2
-     $reduce_or                      6
+     $pmux                          48
+     $reduce_and                    16
+     $reduce_or                     56
 
 === FPAddSub_c ===
 
@@ -33,13 +33,13 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 81
-     $add                            1
-     $eq                             6
-     $logic_not                      3
-     $mux                            1
-     $pmux                          63
-     $reduce_or                      6
-     $sub                            1
+     $add                            9
+     $eq                            12
+     $logic_not                      5
+     $mux                            9
+     $pmux                          66
+     $reduce_or                     50
+     $sub                            9
 
 === FPAddSub_d ===
 
@@ -51,14 +51,14 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 36
-     $add                            2
+     $add                           41
      $and                           11
      $logic_not                      1
-     $mux                            4
+     $mux                           34
      $not                            4
      $or                             9
-     $reduce_and                     1
-     $reduce_or                      2
+     $reduce_and                     8
+     $reduce_or                     11
      $xor                            2
 
 === FPAddSub_single ===
@@ -71,11 +71,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $sdff                           3
-     FPAddSub_a                      1
-     FPAddSub_c                      1
-     FPAddSub_d                      1
-     FpAddSub_b                      1
+     $sdff                         170
 
 === FPMult_16 ===
 
@@ -87,11 +83,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $sdff                           5
-     FPMult_ExecuteModule            1
-     FPMult_NormalizeModule          1
-     FPMult_PrepModule               1
-     FPMult_RoundModule              1
+     $sdff                         175
 
 === FPMult_ExecuteModule ===
 
@@ -103,11 +95,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $add                            2
+     $add                           12
      $and                            1
-     $mux                            1
+     $mux                           10
      $or                             1
-     $reduce_or                      1
+     $reduce_or                     10
      $xor                            1
 
 === FPMult_NormalizeModule ===
@@ -120,7 +112,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $sub                            3
+     $sub                           70
 
 === FPMult_PrepModule ===
 
@@ -134,10 +126,10 @@
    Number of cells:                 15
      $and                            4
      $logic_not                      2
-     $mul                            1
+     $mul                           22
      $or                             3
-     $reduce_and                     2
-     $reduce_or                      3
+     $reduce_and                    10
+     $reduce_or                     20
 
 === FPMult_RoundModule ===
 
@@ -149,7 +141,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $mux                            3
+     $mux                           28
 
 === FpAddSub_b ===
 
@@ -161,9 +153,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 33
-     $add                            1
-     $mux                           29
-     $sub                            1
+     $add                           33
+     $mux                          197
+     $sub                           33
      $xor                            2
 
 === fp16_to_fp32 ===
@@ -176,16 +168,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 70
-     $add                            2
-     $and                           33
-     $dlatch                         1
-     $eq                             1
-     $logic_not                      2
-     $mux                           14
+     $add                           12
+     $and                           55
+     $dlatch                         4
+     $eq                             5
+     $logic_not                     20
+     $mux                          110
      $not                           12
-     $reduce_or                      2
-     $shl                            1
-     $sub                            2
+     $reduce_or                      4
+     $shl                           23
+     $sub                           40
 
 === fp32_to_fp16 ===
 
@@ -197,15 +189,15 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     $add                            2
-     $eq                             1
-     $ge                             1
-     $le                             1
+     $add                           16
+     $eq                             8
+     $ge                             8
+     $le                             8
      $logic_and                      1
-     $logic_not                      1
-     $mux                            5
-     $shr                            1
-     $sub                            1
+     $logic_not                     31
+     $mux                           36
+     $shr                           11
+     $sub                            8
 
 === processing_element ===
 
@@ -217,8 +209,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $sdff                           2
-     seq_mac                         1
+     $sdff                          32
 
 === qadd ===
 
@@ -230,7 +221,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     FPAddSub_single                 1
 
 === qmult ===
 
@@ -242,8 +232,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     FPMult_16                       1
-     fp16_to_fp32                    1
 
 === seq_mac ===
 
@@ -255,10 +243,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $sdff                           4
-     fp32_to_fp16                    1
-     qadd                            1
-     qmult                           1
+     $sdff                          96
 
 === systolic_pe_matrix ===
 
@@ -271,55 +256,34 @@
    Number of processes:              0
    Number of cells:                401
      $or                             1
-     processing_element            400
 
 === design hierarchy ===
 
    systolic_pe_matrix                1
-     processing_element            400
-       seq_mac                       1
-         fp32_to_fp16                1
-         qadd                        1
-           FPAddSub_single           1
-             FPAddSub_a              1
-             FPAddSub_c              1
-             FPAddSub_d              1
-             FpAddSub_b              1
-         qmult                       1
-           FPMult_16                 1
-             FPMult_ExecuteModule      1
-             FPMult_NormalizeModule      1
-             FPMult_PrepModule       1
-             FPMult_RoundModule      1
-           fp16_to_fp32              1
+     processing_element              0
+       seq_mac                       0
+         fp32_to_fp16                0
+         qadd                        0
+           FPAddSub_single           0
+             FPAddSub_a              0
+             FPAddSub_c              0
+             FPAddSub_d              0
+             FpAddSub_b              0
+         qmult                       0
+           FPMult_16                 0
+             FPMult_ExecuteModule      0
+             FPMult_NormalizeModule      0
+             FPMult_PrepModule       0
+             FPMult_RoundModule      0
+           fp16_to_fp32              0
 
-   Number of wires:             168046
-   Number of wire bits:         1529284
-   Number of public wires:       94046
-   Number of public wire bits:  1173684
+   Number of wires:               1246
+   Number of wire bits:          20484
+   Number of public wires:        1246
+   Number of public wire bits:   20484
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:             142801
-     $add                         5600
-     $and                        21200
-     $dlatch                       400
-     $eq                          5600
-     $ge                           400
-     $le                           400
-     $logic_and                    400
-     $logic_not                   5200
-     $lt                           400
-     $mul                          400
-     $mux                        24800
-     $not                         7200
-     $or                          6401
-     $pmux                       42800
-     $reduce_and                  2000
-     $reduce_or                   8000
-     $sdff                        5600
-     $shl                          400
-     $shr                          400
-     $sub                         3200
-     $xor                         2000
+   Number of cells:                401
+     $or                             1
 

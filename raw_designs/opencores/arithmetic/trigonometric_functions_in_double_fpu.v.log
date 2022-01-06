@@ -438,13 +438,13 @@ Optimizing module top.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                101
-     $dff                            1
-     $eq                            92
-     $logic_not                      1
+     $dff                           64
+     $eq                          2884
+     $logic_not                     32
      $logic_or                       1
-     $mux                            4
-     $pmux                           1
-     $reduce_or                      1
+     $mux                           66
+     $pmux                          63
+     $reduce_or                     91
 
 === cosine_lut ===
 
@@ -456,13 +456,13 @@ Optimizing module top.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                101
-     $dff                            1
-     $eq                            92
-     $logic_not                      1
+     $dff                           64
+     $eq                          2884
+     $logic_not                     32
      $logic_or                       1
-     $mux                            4
-     $pmux                           1
-     $reduce_or                      1
+     $mux                           66
+     $pmux                          63
+     $reduce_or                     91
 
 === cotangent_lut ===
 
@@ -474,13 +474,13 @@ Optimizing module top.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                101
-     $dff                            1
-     $eq                            92
-     $logic_not                      1
+     $dff                           64
+     $eq                          2884
+     $logic_not                     32
      $logic_or                       1
-     $mux                            4
-     $pmux                           1
-     $reduce_or                      1
+     $mux                           66
+     $pmux                          63
+     $reduce_or                     91
 
 === dividor ===
 
@@ -492,8 +492,8 @@ Optimizing module top.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $mod                            1
-     $sdff                           1
+     $mod                           32
+     $sdff                          32
 
 === secant_lut ===
 
@@ -505,13 +505,13 @@ Optimizing module top.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                101
-     $dff                            1
-     $eq                            92
-     $logic_not                      1
+     $dff                           64
+     $eq                          2884
+     $logic_not                     32
      $logic_or                       1
-     $mux                            4
-     $pmux                           1
-     $reduce_or                      1
+     $mux                           66
+     $pmux                          63
+     $reduce_or                     91
 
 === sine_lut ===
 
@@ -523,13 +523,13 @@ Optimizing module top.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                101
-     $dff                            1
-     $eq                            92
-     $logic_not                      1
+     $dff                           64
+     $eq                          2884
+     $logic_not                     32
      $logic_or                       1
-     $mux                            4
-     $pmux                           1
-     $reduce_or                      1
+     $mux                           66
+     $pmux                          63
+     $reduce_or                     91
 
 === tangent_lut ===
 
@@ -541,13 +541,13 @@ Optimizing module top.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                101
-     $dff                            1
-     $eq                            92
-     $logic_not                      1
+     $dff                           64
+     $eq                          2884
+     $logic_not                     32
      $logic_or                       1
-     $mux                            4
-     $pmux                           1
-     $reduce_or                      1
+     $mux                           66
+     $pmux                          63
+     $reduce_or                     91
 
 === top ===
 
@@ -559,65 +559,57 @@ Optimizing module top.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 81
-     $dff                            3
-     $dffe                           1
-     $eq                             9
-     $gt                             7
+     $dff                           98
+     $dffe                          32
+     $eq                           143
+     $gt                           224
      $logic_and                      4
-     $logic_not                      1
+     $logic_not                      3
      $logic_or                       4
-     $lt                             4
-     $mux                           14
+     $lt                           128
+     $mux                          238
      $not                            7
-     $pmux                           1
-     $reduce_and                     1
-     $reduce_or                      6
+     $pmux                          64
+     $reduce_and                     2
+     $reduce_or                     12
      $sdff                           6
-     $sub                            6
-     cosecant_lut                    1
-     cosine_lut                      1
-     cotangent_lut                   1
-     dividor                         1
-     secant_lut                      1
-     sine_lut                        1
-     tangent_lut                     1
+     $sub                          192
 
 === design hierarchy ===
 
    top                               1
-     cosecant_lut                    1
-     cosine_lut                      1
-     cotangent_lut                   1
-     dividor                         1
-     secant_lut                      1
-     sine_lut                        1
-     tangent_lut                     1
+     cosecant_lut                    0
+     cosine_lut                      0
+     cotangent_lut                   0
+     dividor                         0
+     secant_lut                      0
+     sine_lut                        0
+     tangent_lut                     0
 
-   Number of wires:                722
-   Number of wire bits:           3207
-   Number of public wires:          63
-   Number of public wire bits:    1294
+   Number of wires:                 86
+   Number of wire bits:           1127
+   Number of public wires:          22
+   Number of public wire bits:     590
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                682
-     $dff                            9
-     $dffe                           1
-     $eq                           561
-     $gt                             7
+   Number of cells:                 81
+     $dff                           98
+     $dffe                          32
+     $eq                           143
+     $gt                           224
      $logic_and                      4
-     $logic_not                      7
-     $logic_or                      10
-     $lt                             4
-     $mod                            1
-     $mux                           38
+     $logic_not                      3
+     $logic_or                       4
+     $lt                           128
+     $mux                          238
      $not                            7
-     $pmux                           7
-     $reduce_and                     1
+     $pmux                          64
+     $reduce_and                     2
      $reduce_or                     12
-     $sdff                           7
-     $sub                            6
+     $sdff                           6
+     $sub                          192
 
-End of script. Logfile hash: e22ff4fb58, CPU: user 0.87s system 0.00s, MEM: 21.75 MB peak
+End of script. Logfile hash: 07c9279798, CPU: user 0.87s system 0.01s, MEM: 21.89 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 28% 2x opt_reduce (0 sec), 21% 4x opt_expr (0 sec), ...
+Time spent: 28% 2x opt_reduce (0 sec), 22% 4x opt_expr (0 sec), ...

@@ -11,8 +11,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 30
-     $add                           15
-     $dff                           15
+     $add                          300
+     $dff                          300
 
 === winograd_dsp_16 ===
 
@@ -24,12 +24,12 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 44
-     $eq                            14
-     $logic_not                      2
-     $mul                            2
-     $mux                           16
-     $reduce_or                      2
-     $sdff                           8
+     $eq                            42
+     $logic_not                      6
+     $mul                           32
+     $mux                          256
+     $reduce_or                      4
+     $sdff                          96
 
 === winograd_transform_1 ===
 
@@ -41,39 +41,35 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                269
-     $add                            1
-     $dff                           85
-     $dffe                          12
-     $eq                             1
-     $mux                           31
-     $neg                           72
-     $reduce_or                      1
-     $sdff                           2
-     winograd_adder_16_20_4         36
-     winograd_dsp_16                28
+     $add                            3
+     $dff                         1285
+     $dffe                         216
+     $eq                             3
+     $mux                          601
+     $neg                         1152
+     $reduce_or                      2
+     $sdff                           4
 
 === design hierarchy ===
 
    winograd_transform_1              1
-     winograd_adder_16_20_4         36
-     winograd_dsp_16                28
+     winograd_adder_16_20_4          0
+     winograd_dsp_16                 0
 
-   Number of wires:               3720
-   Number of wire bits:          53438
-   Number of public wires:        2138
-   Number of public wire bits:   33464
+   Number of wires:                528
+   Number of wire bits:           8530
+   Number of public wires:         494
+   Number of public wire bits:    7924
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               2517
-     $add                          541
-     $dff                          625
-     $dffe                          12
-     $eq                           393
-     $logic_not                     56
-     $mul                           56
-     $mux                          479
-     $neg                           72
-     $reduce_or                     57
-     $sdff                         226
+   Number of cells:                269
+     $add                            3
+     $dff                         1285
+     $dffe                         216
+     $eq                             3
+     $mux                          601
+     $neg                         1152
+     $reduce_or                      2
+     $sdff                           4
 

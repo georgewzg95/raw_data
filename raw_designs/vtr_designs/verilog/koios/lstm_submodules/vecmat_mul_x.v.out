@@ -11,12 +11,12 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $add                            3
-     $dff                            7
+     $add                           48
+     $dff                           66
      $eq                             1
-     $mul                            1
-     $mux                            3
-     $not                            3
+     $mul                           32
+     $mux                           48
+     $not                           48
      $sdff                           2
 
 === vecmat_mul_x ===
@@ -29,28 +29,20 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                102
-     $dffe                           2
-     signedmul                     100
+     $dffe                        3200
 
 === design hierarchy ===
 
    vecmat_mul_x                      1
-     signedmul                     100
+     signedmul                       0
 
-   Number of wires:               2107
-   Number of wire bits:          35802
-   Number of public wires:        1407
-   Number of public wire bits:   26102
+   Number of wires:                  7
+   Number of wire bits:           8002
+   Number of public wires:           7
+   Number of public wire bits:    8002
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               2002
-     $add                          300
-     $dff                          700
-     $dffe                           2
-     $eq                           100
-     $mul                          100
-     $mux                          300
-     $not                          300
-     $sdff                         200
+   Number of cells:                102
+     $dffe                        3200
 

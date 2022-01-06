@@ -11,10 +11,8 @@
    Number of memory bits:         1280
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                         512
+     $mux                          524
 
 === $paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram ===
 
@@ -26,10 +24,8 @@
    Number of memory bits:          256
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                          64
+     $mux                           82
 
 === LU ===
 
@@ -41,21 +37,13 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                114
-     $dff                           55
-     $dffe                           1
-     $eq                             7
-     $logic_not                      1
-     $mux                           32
-     $pmux                           2
-     $sdffe                          1
-     LUControl                       1
-     fpu_div                         1
-     mult_add                        8
-     ram                             1
-     ram1                            1
-     ram2                            1
-     ram3                            1
-     top_ram                         1
+     $dff                         3585
+     $dffe                          32
+     $eq                            21
+     $logic_not                      3
+     $mux                         2530
+     $pmux                          64
+     $sdffe                         32
 
 === LUControl ===
 
@@ -67,26 +55,26 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                433
-     $add                           30
-     $dff                          163
-     $dffe                           5
-     $eq                            48
-     $ge                             3
-     $gt                             1
+     $add                          821
+     $dff                         1799
+     $dffe                          25
+     $eq                           379
+     $ge                            96
+     $gt                             5
      $logic_and                     23
-     $logic_not                      4
+     $logic_not                     14
      $logic_or                      11
-     $lt                             3
-     $mux                           89
-     $ne                             4
+     $lt                            96
+     $mux                          416
+     $ne                            18
      $not                            2
-     $pmux                           4
-     $reduce_and                     1
-     $reduce_bool                    6
-     $reduce_or                      4
-     $sdff                          10
-     $sdffe                         15
-     $sub                            7
+     $pmux                          39
+     $reduce_and                     2
+     $reduce_bool                   13
+     $reduce_or                     13
+     $sdff                          80
+     $sdffe                         66
+     $sub                          224
 
 === assemble ===
 
@@ -98,7 +86,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $mux                            6
+     $mux                          156
      $xor                            1
 
 === div_24b ===
@@ -111,9 +99,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 94
-     $le                            24
-     $mux                           47
-     $sub                           23
+     $le                           852
+     $mux                         1105
+     $sub                          805
 
 === exponent ===
 
@@ -125,11 +113,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $add                            2
+     $add                           64
      $logic_not                      1
      $or                             1
-     $reduce_or                      1
-     $sub                            1
+     $reduce_or                      9
+     $sub                           32
 
 === flag ===
 
@@ -155,18 +143,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 12
-     $dff                            1
+     $dff                           32
      $or                             1
-     assemble                        1
-     exponent                        1
-     flag                            1
-     multiply_a                      1
-     normalize                       1
-     prenorm                         1
-     preprocess                      1
-     round                           1
-     shift                           1
-     special                         1
 
 === fpu_add ===
 
@@ -178,16 +156,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                148
-     $add                            2
-     $dff                            2
-     $eq                            46
-     $gt                             1
+     $add                           33
+     $dff                           64
+     $eq                           368
+     $gt                             8
      $logic_and                      3
-     $lt                             2
-     $mux                           61
+     $lt                            32
+     $mux                          905
      $not                            2
-     $pmux                           2
-     $sub                           27
+     $pmux                          48
+     $sub                          250
 
 === fpu_div ===
 
@@ -199,13 +177,12 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 83
-     $add                            1
-     $dff                            6
-     $ge                             1
-     $mux                           47
-     $sub                           26
+     $add                            8
+     $dff                           64
+     $ge                             8
+     $mux                          721
+     $sub                          208
      $xor                            1
-     div_24b                         1
 
 === mult_add ===
 
@@ -217,9 +194,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dff                            2
-     fpmul                           1
-     fpu_add                         1
+     $dff                           64
 
 === multiply_a ===
 
@@ -231,7 +206,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $mul                            1
+     $mul                           48
 
 === normalize ===
 
@@ -244,7 +219,7 @@
    Number of processes:              0
    Number of cells:                  4
      $and                            1
-     $mux                            2
+     $mux                           96
      $xor                            1
 
 === prenorm ===
@@ -257,10 +232,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 98
-     $eq                            46
-     $mux                           48
-     $pmux                           2
-     $sub                            2
+     $eq                           230
+     $mux                         1520
+     $pmux                          48
+     $sub                           64
 
 === preprocess ===
 
@@ -275,8 +250,8 @@
      $and                            8
      $logic_not                      4
      $or                             2
-     $reduce_and                     2
-     $reduce_or                      4
+     $reduce_and                    16
+     $reduce_or                     62
      $xor                            1
 
 === ram ===
@@ -289,9 +264,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $and                            1
-     $or                             1
-     $paramod$1562f140864cc7fdf547927d88f1d7d4344d72f7\dual_port_ram      1
+     $and                          256
+     $or                           256
 
 === ram1 ===
 
@@ -303,9 +277,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $and                            1
-     $or                             1
-     $paramod$1562f140864cc7fdf547927d88f1d7d4344d72f7\dual_port_ram      1
+     $and                          256
+     $or                           256
 
 === ram2 ===
 
@@ -317,9 +290,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $and                            1
-     $or                             1
-     $paramod$1562f140864cc7fdf547927d88f1d7d4344d72f7\dual_port_ram      1
+     $and                          256
+     $or                           256
 
 === ram3 ===
 
@@ -331,9 +303,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $and                            1
-     $or                             1
-     $paramod$1562f140864cc7fdf547927d88f1d7d4344d72f7\dual_port_ram      1
+     $and                          256
+     $or                           256
 
 === round ===
 
@@ -345,14 +316,14 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 34
-     $add                            2
+     $add                           42
      $and                           10
      $logic_not                      1
-     $mux                            2
+     $mux                           64
      $not                            4
      $or                             9
-     $reduce_and                     1
-     $reduce_or                      4
+     $reduce_and                     8
+     $reduce_or                    153
      $xor                            1
 
 === shift ===
@@ -366,14 +337,14 @@
    Number of processes:              0
    Number of cells:                 42
      $and                            2
-     $eq                            31
-     $gt                             1
-     $mux                            3
-     $neg                            1
+     $eq                           155
+     $gt                            32
+     $mux                          160
+     $neg                           10
      $not                            1
      $or                             1
-     $pmux                           1
-     $reduce_or                      1
+     $pmux                          96
+     $reduce_or                     48
 
 === special ===
 
@@ -386,8 +357,8 @@
    Number of processes:              0
    Number of cells:                 17
      $and                            2
-     $ge                             1
-     $mux                            6
+     $ge                            23
+     $mux                          126
      $not                            1
      $or                             7
 
@@ -401,74 +372,52 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $and                            1
-     $or                             1
-     $paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram      1
+     $and                           32
+     $or                            32
 
 === design hierarchy ===
 
    LU                                1
-     LUControl                       1
-     fpu_div                         1
-       div_24b                       1
-     mult_add                        8
-       fpmul                         1
-         assemble                    1
-         exponent                    1
-         flag                        1
-         multiply_a                  1
-         normalize                   1
-         prenorm                     1
-         preprocess                  1
-         round                       1
-         shift                       1
-         special                     1
-       fpu_add                       1
-     ram                             1
-       $paramod$1562f140864cc7fdf547927d88f1d7d4344d72f7\dual_port_ram      1
-     ram1                            1
-       $paramod$1562f140864cc7fdf547927d88f1d7d4344d72f7\dual_port_ram      1
-     ram2                            1
-       $paramod$1562f140864cc7fdf547927d88f1d7d4344d72f7\dual_port_ram      1
-     ram3                            1
-       $paramod$1562f140864cc7fdf547927d88f1d7d4344d72f7\dual_port_ram      1
-     top_ram                         1
-       $paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram      1
+     LUControl                       0
+     fpu_div                         0
+       div_24b                       0
+     mult_add                        0
+       fpmul                         0
+         assemble                    0
+         exponent                    0
+         flag                        0
+         multiply_a                  0
+         normalize                   0
+         prenorm                     0
+         preprocess                  0
+         round                       0
+         shift                       0
+         special                     0
+       fpu_add                       0
+     ram                             0
+       $paramod$1562f140864cc7fdf547927d88f1d7d4344d72f7\dual_port_ram      0
+     ram1                            0
+       $paramod$1562f140864cc7fdf547927d88f1d7d4344d72f7\dual_port_ram      0
+     ram2                            0
+       $paramod$1562f140864cc7fdf547927d88f1d7d4344d72f7\dual_port_ram      0
+     ram3                            0
+       $paramod$1562f140864cc7fdf547927d88f1d7d4344d72f7\dual_port_ram      0
+     top_ram                         0
+       $paramod$ce0c38940747abe9a6fc0e1739aaf602f7b0afe8\dual_port_ram      0
 
-   Number of wires:               4751
-   Number of wire bits:          81041
-   Number of public wires:        1941
-   Number of public wire bits:   43539
-   Number of memories:               5
-   Number of memory bits:         5376
+   Number of wires:                194
+   Number of wire bits:          10633
+   Number of public wires:         165
+   Number of public wire bits:    9343
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               3874
-     $add                           79
-     $and                          205
-     $dff                          264
-     $dffe                          16
-     $eq                          1039
-     $ge                            12
-     $gt                            17
-     $le                            24
-     $logic_and                     47
-     $logic_not                     53
-     $logic_or                      11
-     $lt                            19
-     $memrd                         10
-     $memwr_v2                      10
-     $mul                            8
-     $mux                         1269
-     $ne                             4
-     $neg                            8
-     $not                           74
-     $or                           189
-     $pmux                          46
-     $reduce_and                    25
-     $reduce_bool                    6
-     $reduce_or                     84
-     $sdff                          10
-     $sdffe                         16
-     $sub                          296
-     $xor                           33
+   Number of cells:                114
+     $dff                         3585
+     $dffe                          32
+     $eq                            21
+     $logic_not                      3
+     $mux                         2530
+     $pmux                          64
+     $sdffe                         32
 

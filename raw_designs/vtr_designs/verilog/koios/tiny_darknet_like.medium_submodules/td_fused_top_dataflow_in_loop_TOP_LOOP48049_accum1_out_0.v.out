@@ -11,20 +11,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 88
-     $add                            3
+     $add                            4
      $and                            4
-     $eq                             1
+     $eq                             2
      $logic_and                     11
-     $logic_not                      8
+     $logic_not                      9
      $logic_or                       1
-     $mux                           40
+     $mux                          208
      $not                            1
-     $reduce_bool                    4
-     $reduce_or                      1
+     $reduce_bool                    8
+     $reduce_or                      2
      $sdff                           2
-     $sdffe                          9
-     $sub                            1
-     td_fused_top_dataflow_in_loop_TOP_LOOP48049_accum1_out_0_memcore      2
+     $sdffe                         40
+     $sub                            2
 
 === td_fused_top_dataflow_in_loop_TOP_LOOP48049_accum1_out_0_memcore ===
 
@@ -36,7 +35,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     td_fused_top_dataflow_in_loop_TOP_LOOP48049_accum1_out_0_memcore_ram      1
 
 === td_fused_top_dataflow_in_loop_TOP_LOOP48049_accum1_out_0_memcore_ram ===
 
@@ -48,39 +46,34 @@
    Number of memory bits:          512
    Number of processes:              0
    Number of cells:                 18
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                           12
+     $dffe                          32
+     $mux                           88
 
 === design hierarchy ===
 
    td_fused_top_dataflow_in_loop_TOP_LOOP48049_accum1_out_0      1
-     td_fused_top_dataflow_in_loop_TOP_LOOP48049_accum1_out_0_memcore      2
-       td_fused_top_dataflow_in_loop_TOP_LOOP48049_accum1_out_0_memcore_ram      1
+     td_fused_top_dataflow_in_loop_TOP_LOOP48049_accum1_out_0_memcore      0
+       td_fused_top_dataflow_in_loop_TOP_LOOP48049_accum1_out_0_memcore_ram      0
 
-   Number of wires:                184
-   Number of wire bits:           1129
-   Number of public wires:         104
-   Number of public wire bits:     683
-   Number of memories:               2
-   Number of memory bits:         1024
+   Number of wires:                110
+   Number of wire bits:            451
+   Number of public wires:          58
+   Number of public wire bits:     365
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                122
-     $add                            3
+   Number of cells:                 88
+     $add                            4
      $and                            4
-     $dffe                           4
-     $eq                             1
+     $eq                             2
      $logic_and                     11
-     $logic_not                      8
+     $logic_not                      9
      $logic_or                       1
-     $memrd                          4
-     $memwr_v2                       4
-     $mux                           64
+     $mux                          208
      $not                            1
-     $reduce_bool                    4
-     $reduce_or                      1
+     $reduce_bool                    8
+     $reduce_or                      2
      $sdff                           2
-     $sdffe                          9
-     $sub                            1
+     $sdffe                         40
+     $sub                            2
 

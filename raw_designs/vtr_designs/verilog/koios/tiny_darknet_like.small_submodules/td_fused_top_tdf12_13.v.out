@@ -11,7 +11,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     td_fused_top_mul_10s_9ns_16_1_1_Multiplier_0      1
 
 === $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hadd_16ns_16ns_16_5_full_dsp_1 ===
 
@@ -23,10 +22,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $dff                            2
-     $dffe                           2
-     $mux                            1
-     td_fused_top_ap_hadd_3_full_dsp_16      1
+     $dff                           17
+     $dffe                          32
+     $mux                           16
 
 === $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hsub_16ns_16ns_16_5_full_dsp_1 ===
 
@@ -38,10 +36,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $dff                            2
-     $dffe                           2
-     $mux                            1
-     td_fused_top_ap_hadd_3_full_dsp_16      1
+     $dff                           17
+     $dffe                          32
+     $mux                           16
 
 === $paramod$444f4f35aae1753c454375fdcc6a89a96e0bb6d9\td_fused_top_dataflow_in_loop_TOP_LOOP76_accum1_out_0 ===
 
@@ -53,20 +50,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 77
-     $add                            3
+     $add                            4
      $and                            4
-     $eq                             1
+     $eq                             2
      $logic_and                     10
-     $logic_not                      6
+     $logic_not                      7
      $logic_or                       1
-     $mux                           35
+     $mux                          150
      $not                            1
-     $reduce_bool                    3
-     $reduce_or                      1
+     $reduce_bool                    6
+     $reduce_or                      2
      $sdff                           2
-     $sdffe                          7
-     $sub                            1
-     td_fused_top_dataflow_in_loop_TOP_LOOP76_accum1_out_0_memcore      2
+     $sdffe                         23
+     $sub                            2
 
 === $paramod$446b85b08a7a06b40d768e83a34c90ce7206f74e\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1 ===
 
@@ -78,10 +74,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $dff                            2
-     $dffe                           2
-     $mux                            1
-     td_fused_top_ap_hmul_2_max_dsp_16      1
+     $dff                           17
+     $dffe                          32
+     $mux                           16
 
 === $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP76_ifmap_vec_0_0 ===
 
@@ -93,20 +88,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 77
-     $add                            3
+     $add                            4
      $and                            4
-     $eq                             1
+     $eq                             2
      $logic_and                     10
-     $logic_not                      6
+     $logic_not                      7
      $logic_or                       1
-     $mux                           35
+     $mux                          166
      $not                            1
-     $reduce_bool                    3
-     $reduce_or                      1
+     $reduce_bool                    6
+     $reduce_or                      2
      $sdff                           2
-     $sdffe                          7
-     $sub                            1
-     td_fused_top_dataflow_in_loop_TOP_LOOP76_ifmap_vec_0_0_memcore      2
+     $sdffe                         23
+     $sub                            2
 
 === $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP76_products_0 ===
 
@@ -118,20 +112,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 82
-     $add                            3
+     $add                            4
      $and                            4
-     $eq                             1
+     $eq                             2
      $logic_and                     11
-     $logic_not                      8
+     $logic_not                      9
      $logic_or                       1
-     $mux                           34
+     $mux                          180
      $not                            1
-     $reduce_bool                    4
-     $reduce_or                      1
+     $reduce_bool                    8
+     $reduce_or                      2
      $sdff                           2
-     $sdffe                          9
-     $sub                            1
-     td_fused_top_dataflow_in_loop_TOP_LOOP76_products_0_memcore      2
+     $sdffe                         40
+     $sub                            2
 
 === $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP76_weight_vecs_0_0_0 ===
 
@@ -143,18 +136,17 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 36
-     $add                            3
+     $add                            4
      $and                            4
-     $eq                             1
+     $eq                             2
      $logic_and                      7
-     $logic_not                      4
+     $logic_not                      5
      $logic_or                       1
-     $mux                            6
-     $reduce_bool                    2
-     $reduce_or                      1
-     $sdffe                          5
-     $sub                            1
-     td_fused_top_dataflow_in_loop_TOP_LOOP76_weight_vecs_0_0_0_memcore      1
+     $mux                            8
+     $reduce_bool                    4
+     $reduce_or                      2
+     $sdffe                          6
+     $sub                            2
 
 === FPAddSub ===
 
@@ -166,17 +158,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 19
-     $mux                            9
-     FPAddSub_AlignModule            1
-     FPAddSub_AlignShift1            1
-     FPAddSub_AlignShift2            1
-     FPAddSub_ExceptionModule        1
-     FPAddSub_ExecutionModule        1
-     FPAddSub_NormalizeModule        1
-     FPAddSub_NormalizeShift1        1
-     FPAddSub_NormalizeShift2        1
-     FPAddSub_PrealignModule         1
-     FPAddSub_RoundModule            1
+     $mux                          338
 
 === FPAddSub_AlignModule ===
 
@@ -188,8 +170,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  5
-     $lt                             1
-     $mux                            4
+     $lt                            15
+     $mux                           30
 
 === FPAddSub_AlignShift1 ===
 
@@ -201,11 +183,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 18
-     $eq                             3
-     $logic_not                      1
-     $mux                            1
+     $eq                             6
+     $logic_not                      2
+     $mux                           11
      $pmux                          11
-     $reduce_or                      2
+     $reduce_or                      5
 
 === FPAddSub_AlignShift2 ===
 
@@ -217,10 +199,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 17
-     $eq                             3
-     $logic_not                      1
+     $eq                             6
+     $logic_not                      2
      $pmux                          11
-     $reduce_or                      2
+     $reduce_or                      5
 
 === FPAddSub_ExceptionModule ===
 
@@ -236,8 +218,8 @@
      $logic_not                      1
      $not                            2
      $or                             5
-     $reduce_and                     1
-     $reduce_or                      2
+     $reduce_and                     5
+     $reduce_or                      8
 
 === FPAddSub_ExecutionModule ===
 
@@ -249,9 +231,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $add                            1
-     $mux                            2
-     $sub                            1
+     $add                           17
+     $mux                           18
+     $sub                           17
      $xor                            2
 
 === FPAddSub_NormalizeModule ===
@@ -264,7 +246,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     $mux                           14
+     $mux                           82
 
 === FPAddSub_NormalizeShift1 ===
 
@@ -276,10 +258,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 20
-     $eq                             6
-     $logic_not                      2
-     $pmux                           8
-     $reduce_or                      4
+     $eq                            12
+     $logic_not                      4
+     $pmux                          34
+     $reduce_or                      8
 
 === FPAddSub_NormalizeShift2 ===
 
@@ -291,11 +273,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $add                            1
+     $add                            6
      $logic_not                      1
-     $mux                            1
-     $reduce_or                      2
-     $sub                            1
+     $mux                            6
+     $reduce_or                     21
+     $sub                            6
 
 === FPAddSub_PrealignModule ===
 
@@ -307,13 +289,13 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 19
-     $add                            4
+     $add                          128
      $and                            4
      $logic_not                      2
-     $not                            2
+     $not                           64
      $or                             3
-     $reduce_and                     2
-     $reduce_or                      2
+     $reduce_and                    10
+     $reduce_or                     20
 
 === FPAddSub_RoundModule ===
 
@@ -325,9 +307,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 22
-     $add                            2
+     $add                           38
      $and                            7
-     $mux                            4
+     $mux                           18
      $not                            2
      $or                             5
      $xor                            2
@@ -342,11 +324,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $mux                            5
-     FPMult_ExecuteModule            1
-     FPMult_NormalizeModule          1
-     FPMult_PrepModule               1
-     FPMult_RoundModule              1
+     $mux                          165
 
 === FPMult_ExecuteModule ===
 
@@ -358,11 +336,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $add                            2
+     $add                           12
      $and                            1
-     $mux                            1
+     $mux                           10
      $or                             1
-     $reduce_or                      1
+     $reduce_or                     10
      $xor                            1
 
 === FPMult_NormalizeModule ===
@@ -375,7 +353,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $sub                            2
+     $sub                           64
 
 === FPMult_PrepModule ===
 
@@ -389,10 +367,10 @@
    Number of cells:                 15
      $and                            4
      $logic_not                      2
-     $mul                            1
+     $mul                           22
      $or                             3
-     $reduce_and                     2
-     $reduce_or                      3
+     $reduce_and                    10
+     $reduce_or                     20
 
 === FPMult_RoundModule ===
 
@@ -404,7 +382,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $mux                            3
+     $mux                           28
 
 === td_fused_top_Block_entry_proc_proc446 ===
 
@@ -416,11 +394,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $mux                            4
+     $mux                           19
      $not                            1
      $or                             1
-     $reduce_or                      1
-     $sdff                           2
+     $reduce_or                      2
+     $sdff                          17
 
 === td_fused_top_ap_hadd_3_full_dsp_16 ===
 
@@ -432,8 +410,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dffe                           3
-     FPAddSub                        1
+     $dffe                          48
 
 === td_fused_top_ap_hmul_2_max_dsp_16 ===
 
@@ -445,8 +422,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dffe                           3
-     FPMult_16                       1
+     $dffe                          48
 
 === td_fused_top_dataflow_in_loop_TOP_LOOP76 ===
 
@@ -461,27 +437,8 @@
      $and                           20
      $not                            9
      $or                             2
-     $paramod$444f4f35aae1753c454375fdcc6a89a96e0bb6d9\td_fused_top_dataflow_in_loop_TOP_LOOP76_accum1_out_0      1
-     $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP76_ifmap_vec_0_0      1
-     $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP76_products_0      1
-     $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP76_weight_vecs_0_0_0      1
-     $reduce_or                      1
+     $reduce_or                      2
      $sdff                           2
-     td_fused_top_Block_entry_proc_proc446      1
-     td_fused_top_fifo_w10_d2_S      1
-     td_fused_top_fifo_w10_d7_S_x      1
-     td_fused_top_fifo_w16_d2_S_x9      5
-     td_fused_top_fifo_w4_d7_S_x0      1
-     td_fused_top_fifo_w8_d7_S_x0      1
-     td_fused_top_start_for_tdf12_readFilters78_U0      1
-     td_fused_top_tdf12_accum_1      1
-     td_fused_top_tdf12_accum_2      1
-     td_fused_top_tdf12_adjust       1
-     td_fused_top_tdf12_dot_product      1
-     td_fused_top_tdf12_get_next_ijk      1
-     td_fused_top_tdf12_readFilters78      1
-     td_fused_top_tdf12_readInputs      1
-     td_fused_top_tdf12_writeOutputs_unaligned      1
 
 === td_fused_top_dataflow_in_loop_TOP_LOOP76_accum1_out_0_memcore ===
 
@@ -493,7 +450,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     td_fused_top_dataflow_in_loop_TOP_LOOP76_accum1_out_0_memcore_ram      1
 
 === td_fused_top_dataflow_in_loop_TOP_LOOP76_accum1_out_0_memcore_ram ===
 
@@ -505,10 +461,8 @@
    Number of memory bits:          128
    Number of processes:              0
    Number of cells:                 16
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       2
-     $mux                           12
+     $dffe                          16
+     $mux                           80
 
 === td_fused_top_dataflow_in_loop_TOP_LOOP76_ifmap_vec_0_0_memcore ===
 
@@ -520,7 +474,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     td_fused_top_dataflow_in_loop_TOP_LOOP76_ifmap_vec_0_0_memcore_ram      1
 
 === td_fused_top_dataflow_in_loop_TOP_LOOP76_ifmap_vec_0_0_memcore_ram ===
 
@@ -532,10 +485,8 @@
    Number of memory bits:         2048
    Number of processes:              0
    Number of cells:                 16
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       2
-     $mux                           12
+     $dffe                          16
+     $mux                           96
 
 === td_fused_top_dataflow_in_loop_TOP_LOOP76_products_0_memcore ===
 
@@ -547,7 +498,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     td_fused_top_dataflow_in_loop_TOP_LOOP76_products_0_memcore_ram      1
 
 === td_fused_top_dataflow_in_loop_TOP_LOOP76_products_0_memcore_ram ===
 
@@ -559,10 +509,8 @@
    Number of memory bits:         2048
    Number of processes:              0
    Number of cells:                 11
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       1
-     $mux                            6
+     $dffe                          32
+     $mux                           48
 
 === td_fused_top_dataflow_in_loop_TOP_LOOP76_weight_vecs_0_0_0_memcore ===
 
@@ -574,7 +522,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     td_fused_top_dataflow_in_loop_TOP_LOOP76_weight_vecs_0_0_0_memcore_ram      1
 
 === td_fused_top_dataflow_in_loop_TOP_LOOP76_weight_vecs_0_0_0_memcore_ram ===
 
@@ -586,10 +533,8 @@
    Number of memory bits:         4096
    Number of processes:              0
    Number of cells:                 18
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                           12
+     $dffe                          32
+     $mux                          100
 
 === td_fused_top_fifo_w10_d2_S ===
 
@@ -601,21 +546,20 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 34
-     $add                            1
-     $and                            6
-     $eq                             2
+     $add                            2
+     $and                           68
+     $eq                            64
      $logic_and                      2
-     $logic_not                      3
-     $mux                            6
-     $ne                             1
+     $logic_not                     66
+     $mux                            8
+     $ne                             2
      $not                            2
      $or                             2
-     $reduce_and                     2
-     $reduce_bool                    1
-     $reduce_or                      1
-     $sdffe                          3
-     $sub                            1
-     td_fused_top_fifo_w10_d2_S_shiftReg      1
+     $reduce_and                     4
+     $reduce_bool                    2
+     $reduce_or                      2
+     $sdffe                          4
+     $sub                            2
 
 === td_fused_top_fifo_w10_d2_S_shiftReg ===
 
@@ -627,9 +571,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dffe                           2
+     $dffe                          20
      $not                            1
-     $pmux                           1
+     $pmux                          10
 
 === td_fused_top_fifo_w10_d7_S_x ===
 
@@ -641,21 +585,20 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 35
-     $add                            1
-     $and                            6
-     $eq                             3
+     $add                            4
+     $and                           68
+     $eq                            68
      $logic_and                      2
-     $logic_not                      3
-     $mux                            6
-     $ne                             1
+     $logic_not                     68
+     $mux                           14
+     $ne                             2
      $not                            2
      $or                             2
-     $reduce_and                     2
-     $reduce_bool                    1
-     $reduce_or                      1
-     $sdffe                          3
-     $sub                            1
-     td_fused_top_fifo_w10_d7_S_x_shiftReg      1
+     $reduce_and                     4
+     $reduce_bool                    2
+     $reduce_or                      2
+     $sdffe                          6
+     $sub                            4
 
 === td_fused_top_fifo_w10_d7_S_x_shiftReg ===
 
@@ -667,10 +610,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     $dffe                           7
-     $eq                             5
-     $logic_not                      1
-     $pmux                           1
+     $dffe                          70
+     $eq                            15
+     $logic_not                      3
+     $pmux                          10
 
 === td_fused_top_fifo_w16_d2_S_x9 ===
 
@@ -682,21 +625,20 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 34
-     $add                            1
-     $and                            6
-     $eq                             2
+     $add                            2
+     $and                           68
+     $eq                            64
      $logic_and                      2
-     $logic_not                      3
-     $mux                            6
-     $ne                             1
+     $logic_not                     66
+     $mux                            8
+     $ne                             2
      $not                            2
      $or                             2
-     $reduce_and                     2
-     $reduce_bool                    1
-     $reduce_or                      1
-     $sdffe                          3
-     $sub                            1
-     td_fused_top_fifo_w16_d2_S_x9_shiftReg      1
+     $reduce_and                     4
+     $reduce_bool                    2
+     $reduce_or                      2
+     $sdffe                          4
+     $sub                            2
 
 === td_fused_top_fifo_w16_d2_S_x9_shiftReg ===
 
@@ -708,9 +650,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $dffe                           2
+     $dffe                          32
      $not                            1
-     $pmux                           1
+     $pmux                          16
 
 === td_fused_top_fifo_w4_d7_S_x0 ===
 
@@ -722,21 +664,20 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 35
-     $add                            1
-     $and                            6
-     $eq                             3
+     $add                            4
+     $and                           68
+     $eq                            68
      $logic_and                      2
-     $logic_not                      3
-     $mux                            6
-     $ne                             1
+     $logic_not                     68
+     $mux                           14
+     $ne                             2
      $not                            2
      $or                             2
-     $reduce_and                     2
-     $reduce_bool                    1
-     $reduce_or                      1
-     $sdffe                          3
-     $sub                            1
-     td_fused_top_fifo_w4_d7_S_x0_shiftReg      1
+     $reduce_and                     4
+     $reduce_bool                    2
+     $reduce_or                      2
+     $sdffe                          6
+     $sub                            4
 
 === td_fused_top_fifo_w4_d7_S_x0_shiftReg ===
 
@@ -748,10 +689,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     $dffe                           7
-     $eq                             5
-     $logic_not                      1
-     $pmux                           1
+     $dffe                          28
+     $eq                            15
+     $logic_not                      3
+     $pmux                           4
 
 === td_fused_top_fifo_w8_d7_S_x0 ===
 
@@ -763,21 +704,20 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 35
-     $add                            1
-     $and                            6
-     $eq                             3
+     $add                            4
+     $and                           68
+     $eq                            68
      $logic_and                      2
-     $logic_not                      3
-     $mux                            6
-     $ne                             1
+     $logic_not                     68
+     $mux                           14
+     $ne                             2
      $not                            2
      $or                             2
-     $reduce_and                     2
-     $reduce_bool                    1
-     $reduce_or                      1
-     $sdffe                          3
-     $sub                            1
-     td_fused_top_fifo_w8_d7_S_x0_shiftReg      1
+     $reduce_and                     4
+     $reduce_bool                    2
+     $reduce_or                      2
+     $sdffe                          6
+     $sub                            4
 
 === td_fused_top_fifo_w8_d7_S_x0_shiftReg ===
 
@@ -789,10 +729,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     $dffe                           7
-     $eq                             5
-     $logic_not                      1
-     $pmux                           1
+     $dffe                          56
+     $eq                            15
+     $logic_not                      3
+     $pmux                           8
 
 === td_fused_top_mul_10s_9ns_16_1_1_Multiplier_0 ===
 
@@ -804,7 +744,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $mul                            1
+     $mul                           16
 
 === td_fused_top_start_for_tdf12_readFilters78_U0 ===
 
@@ -816,21 +756,20 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 34
-     $add                            1
-     $and                            6
-     $eq                             2
+     $add                            2
+     $and                           68
+     $eq                            64
      $logic_and                      2
-     $logic_not                      3
-     $mux                            6
-     $ne                             1
+     $logic_not                     66
+     $mux                            8
+     $ne                             2
      $not                            2
      $or                             2
-     $reduce_and                     2
-     $reduce_bool                    1
-     $reduce_or                      1
-     $sdffe                          3
-     $sub                            1
-     td_fused_top_start_for_tdf12_readFilters78_U0_shiftReg      1
+     $reduce_and                     4
+     $reduce_bool                    2
+     $reduce_or                      2
+     $sdffe                          4
+     $sub                            2
 
 === td_fused_top_start_for_tdf12_readFilters78_U0_shiftReg ===
 
@@ -856,16 +795,15 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 33
-     $add                            2
+     $add                           36
      $and                           11
-     $eq                             2
-     $logic_not                      1
-     $mux                            8
+     $eq                            36
+     $logic_not                     18
+     $mux                           76
      $not                            3
      $or                             1
-     $reduce_bool                    2
-     $sdffe                          2
-     td_fused_top_dataflow_in_loop_TOP_LOOP76      1
+     $reduce_bool                    4
+     $sdffe                         36
 
 === td_fused_top_tdf12_accum_1 ===
 
@@ -877,20 +815,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                162
-     $add                            2
+     $add                           12
      $and                           34
-     $dffe                          22
-     $eq                            13
-     $logic_not                      1
-     $mux                           53
+     $dffe                         282
+     $eq                            79
+     $logic_not                      3
+     $mux                          522
      $not                           11
-     $or                            13
-     $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hadd_16ns_16ns_16_5_full_dsp_1      2
-     $pmux                           1
-     $reduce_bool                    2
-     $reduce_or                      2
-     $sdff                           2
-     $sdffe                          4
+     $or                            57
+     $pmux                           8
+     $reduce_bool                    4
+     $reduce_or                      4
+     $sdff                           9
+     $sdffe                          7
 
 === td_fused_top_tdf12_accum_2 ===
 
@@ -902,18 +839,17 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 32
-     $add                            1
+     $add                            4
      $and                            3
-     $dffe                           1
-     $eq                             8
-     $mux                            8
+     $dffe                           4
+     $eq                            53
+     $mux                           35
      $not                            2
      $or                             1
-     $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hadd_16ns_16ns_16_5_full_dsp_1      1
-     $pmux                           1
-     $reduce_or                      1
-     $sdff                           3
-     $sdffe                          2
+     $pmux                           7
+     $reduce_or                      2
+     $sdff                          24
+     $sdffe                         20
 
 === td_fused_top_tdf12_adjust ===
 
@@ -926,17 +862,14 @@
    Number of processes:              0
    Number of cells:                 45
      $and                            2
-     $dffe                           4
-     $eq                            17
-     $mux                            7
+     $dffe                          64
+     $eq                           289
+     $mux                           38
      $not                            3
      $or                             5
-     $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hadd_16ns_16ns_16_5_full_dsp_1      1
-     $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hsub_16ns_16ns_16_5_full_dsp_1      1
-     $paramod$446b85b08a7a06b40d768e83a34c90ce7206f74e\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1      1
-     $pmux                           1
-     $reduce_or                      1
-     $sdff                           2
+     $pmux                          17
+     $reduce_or                      2
+     $sdff                          18
 
 === td_fused_top_tdf12_dot_product ===
 
@@ -948,19 +881,18 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 74
-     $add                            1
+     $add                            8
      $and                           13
-     $dff                            8
-     $dffe                           8
-     $eq                             4
-     $mux                           14
+     $dff                           36
+     $dffe                          74
+     $eq                            17
+     $mux                           34
      $not                           10
      $or                             2
-     $paramod$446b85b08a7a06b40d768e83a34c90ce7206f74e\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1      1
-     $pmux                           1
-     $reduce_bool                    1
-     $reduce_or                      2
-     $sdff                           8
+     $pmux                           3
+     $reduce_bool                    2
+     $reduce_or                      4
+     $sdff                          10
      $sdffe                          1
 
 === td_fused_top_tdf12_get_next_ijk ===
@@ -973,17 +905,17 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 52
-     $add                            3
+     $add                           48
      $and                            8
-     $dffe                           2
-     $eq                             3
-     $mux                           16
+     $dffe                          32
+     $eq                            48
+     $mux                           76
      $not                            9
      $or                             6
-     $reduce_bool                    1
-     $reduce_or                      1
+     $reduce_bool                    2
+     $reduce_or                      2
      $sdff                           1
-     $sdffce                         1
+     $sdffce                        16
      $sdffe                          1
 
 === td_fused_top_tdf12_readFilters78 ===
@@ -996,18 +928,18 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 68
-     $add                            2
+     $add                           25
      $and                           12
-     $dff                            2
-     $dffe                           6
-     $eq                             4
-     $mux                           16
+     $dff                            9
+     $dffe                          36
+     $eq                            17
+     $mux                           43
      $not                           10
      $or                             6
-     $pmux                           1
-     $reduce_bool                    1
-     $reduce_or                      2
-     $sdff                           5
+     $pmux                           3
+     $reduce_bool                    2
+     $reduce_or                      4
+     $sdff                           7
      $sdffe                          1
 
 === td_fused_top_tdf12_readInputs ===
@@ -1020,21 +952,21 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                112
-     $add                            2
+     $add                           18
      $and                           20
-     $dffe                          10
-     $eq                             6
-     $gt                             2
-     $mux                           31
+     $dffe                          64
+     $eq                            33
+     $gt                            32
+     $mux                          184
      $not                           11
-     $or                            16
-     $pmux                           1
-     $reduce_bool                    2
-     $reduce_or                      3
-     $sdff                           2
-     $sdffce                         2
+     $or                            34
+     $pmux                           5
+     $reduce_bool                    4
+     $reduce_or                      6
+     $sdff                           6
+     $sdffce                        32
      $sdffe                          3
-     $sub                            1
+     $sub                            9
 
 === td_fused_top_tdf12_writeOutputs_unaligned ===
 
@@ -1046,161 +978,143 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 61
-     $add                            4
+     $add                           58
      $and                            9
-     $dff                            4
-     $dffe                           3
-     $eq                             9
-     $logic_not                      1
-     $mux                           13
+     $dff                           64
+     $dffe                          27
+     $eq                            54
+     $logic_not                      2
+     $mux                           76
      $not                            5
      $or                             4
-     $paramod$2cc697b95dae621c23ec527898048e96d6aad65a\td_fused_top_mul_10s_9ns_16_1_1      1
-     $pmux                           1
-     $reduce_or                      1
-     $sdff                           2
-     $sdffce                         2
-     $sdffe                          1
-     $sub                            1
+     $pmux                           4
+     $reduce_or                      2
+     $sdff                           5
+     $sdffce                        32
+     $sdffe                         16
+     $sub                            9
 
 === design hierarchy ===
 
    td_fused_top_tdf12_13             1
-     td_fused_top_dataflow_in_loop_TOP_LOOP76      1
-       $paramod$444f4f35aae1753c454375fdcc6a89a96e0bb6d9\td_fused_top_dataflow_in_loop_TOP_LOOP76_accum1_out_0      1
-         td_fused_top_dataflow_in_loop_TOP_LOOP76_accum1_out_0_memcore      2
-           td_fused_top_dataflow_in_loop_TOP_LOOP76_accum1_out_0_memcore_ram      1
-       $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP76_ifmap_vec_0_0      1
-         td_fused_top_dataflow_in_loop_TOP_LOOP76_ifmap_vec_0_0_memcore      2
-           td_fused_top_dataflow_in_loop_TOP_LOOP76_ifmap_vec_0_0_memcore_ram      1
-       $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP76_products_0      1
-         td_fused_top_dataflow_in_loop_TOP_LOOP76_products_0_memcore      2
-           td_fused_top_dataflow_in_loop_TOP_LOOP76_products_0_memcore_ram      1
-       $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP76_weight_vecs_0_0_0      1
-         td_fused_top_dataflow_in_loop_TOP_LOOP76_weight_vecs_0_0_0_memcore      1
-           td_fused_top_dataflow_in_loop_TOP_LOOP76_weight_vecs_0_0_0_memcore_ram      1
-       td_fused_top_Block_entry_proc_proc446      1
-       td_fused_top_fifo_w10_d2_S      1
-         td_fused_top_fifo_w10_d2_S_shiftReg      1
-       td_fused_top_fifo_w10_d7_S_x      1
-         td_fused_top_fifo_w10_d7_S_x_shiftReg      1
-       td_fused_top_fifo_w16_d2_S_x9      5
-         td_fused_top_fifo_w16_d2_S_x9_shiftReg      1
-       td_fused_top_fifo_w4_d7_S_x0      1
-         td_fused_top_fifo_w4_d7_S_x0_shiftReg      1
-       td_fused_top_fifo_w8_d7_S_x0      1
-         td_fused_top_fifo_w8_d7_S_x0_shiftReg      1
-       td_fused_top_start_for_tdf12_readFilters78_U0      1
-         td_fused_top_start_for_tdf12_readFilters78_U0_shiftReg      1
-       td_fused_top_tdf12_accum_1      1
-         $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hadd_16ns_16ns_16_5_full_dsp_1      2
-           td_fused_top_ap_hadd_3_full_dsp_16      1
-             FPAddSub                1
-               FPAddSub_AlignModule      1
-               FPAddSub_AlignShift1      1
-               FPAddSub_AlignShift2      1
-               FPAddSub_ExceptionModule      1
-               FPAddSub_ExecutionModule      1
-               FPAddSub_NormalizeModule      1
-               FPAddSub_NormalizeShift1      1
-               FPAddSub_NormalizeShift2      1
-               FPAddSub_PrealignModule      1
-               FPAddSub_RoundModule      1
-       td_fused_top_tdf12_accum_2      1
-         $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hadd_16ns_16ns_16_5_full_dsp_1      1
-           td_fused_top_ap_hadd_3_full_dsp_16      1
-             FPAddSub                1
-               FPAddSub_AlignModule      1
-               FPAddSub_AlignShift1      1
-               FPAddSub_AlignShift2      1
-               FPAddSub_ExceptionModule      1
-               FPAddSub_ExecutionModule      1
-               FPAddSub_NormalizeModule      1
-               FPAddSub_NormalizeShift1      1
-               FPAddSub_NormalizeShift2      1
-               FPAddSub_PrealignModule      1
-               FPAddSub_RoundModule      1
-       td_fused_top_tdf12_adjust      1
-         $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hadd_16ns_16ns_16_5_full_dsp_1      1
-           td_fused_top_ap_hadd_3_full_dsp_16      1
-             FPAddSub                1
-               FPAddSub_AlignModule      1
-               FPAddSub_AlignShift1      1
-               FPAddSub_AlignShift2      1
-               FPAddSub_ExceptionModule      1
-               FPAddSub_ExecutionModule      1
-               FPAddSub_NormalizeModule      1
-               FPAddSub_NormalizeShift1      1
-               FPAddSub_NormalizeShift2      1
-               FPAddSub_PrealignModule      1
-               FPAddSub_RoundModule      1
-         $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hsub_16ns_16ns_16_5_full_dsp_1      1
-           td_fused_top_ap_hadd_3_full_dsp_16      1
-             FPAddSub                1
-               FPAddSub_AlignModule      1
-               FPAddSub_AlignShift1      1
-               FPAddSub_AlignShift2      1
-               FPAddSub_ExceptionModule      1
-               FPAddSub_ExecutionModule      1
-               FPAddSub_NormalizeModule      1
-               FPAddSub_NormalizeShift1      1
-               FPAddSub_NormalizeShift2      1
-               FPAddSub_PrealignModule      1
-               FPAddSub_RoundModule      1
-         $paramod$446b85b08a7a06b40d768e83a34c90ce7206f74e\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1      1
-           td_fused_top_ap_hmul_2_max_dsp_16      1
-             FPMult_16               1
-               FPMult_ExecuteModule      1
-               FPMult_NormalizeModule      1
-               FPMult_PrepModule      1
-               FPMult_RoundModule      1
-       td_fused_top_tdf12_dot_product      1
-         $paramod$446b85b08a7a06b40d768e83a34c90ce7206f74e\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1      1
-           td_fused_top_ap_hmul_2_max_dsp_16      1
-             FPMult_16               1
-               FPMult_ExecuteModule      1
-               FPMult_NormalizeModule      1
-               FPMult_PrepModule      1
-               FPMult_RoundModule      1
-       td_fused_top_tdf12_get_next_ijk      1
-       td_fused_top_tdf12_readFilters78      1
-       td_fused_top_tdf12_readInputs      1
-       td_fused_top_tdf12_writeOutputs_unaligned      1
-         $paramod$2cc697b95dae621c23ec527898048e96d6aad65a\td_fused_top_mul_10s_9ns_16_1_1      1
-           td_fused_top_mul_10s_9ns_16_1_1_Multiplier_0      1
+     td_fused_top_dataflow_in_loop_TOP_LOOP76      0
+       $paramod$444f4f35aae1753c454375fdcc6a89a96e0bb6d9\td_fused_top_dataflow_in_loop_TOP_LOOP76_accum1_out_0      0
+         td_fused_top_dataflow_in_loop_TOP_LOOP76_accum1_out_0_memcore      0
+           td_fused_top_dataflow_in_loop_TOP_LOOP76_accum1_out_0_memcore_ram      0
+       $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP76_ifmap_vec_0_0      0
+         td_fused_top_dataflow_in_loop_TOP_LOOP76_ifmap_vec_0_0_memcore      0
+           td_fused_top_dataflow_in_loop_TOP_LOOP76_ifmap_vec_0_0_memcore_ram      0
+       $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP76_products_0      0
+         td_fused_top_dataflow_in_loop_TOP_LOOP76_products_0_memcore      0
+           td_fused_top_dataflow_in_loop_TOP_LOOP76_products_0_memcore_ram      0
+       $paramod$68fdee95fd7d91e09535cc4b3d209e7dbf47473a\td_fused_top_dataflow_in_loop_TOP_LOOP76_weight_vecs_0_0_0      0
+         td_fused_top_dataflow_in_loop_TOP_LOOP76_weight_vecs_0_0_0_memcore      0
+           td_fused_top_dataflow_in_loop_TOP_LOOP76_weight_vecs_0_0_0_memcore_ram      0
+       td_fused_top_Block_entry_proc_proc446      0
+       td_fused_top_fifo_w10_d2_S      0
+         td_fused_top_fifo_w10_d2_S_shiftReg      0
+       td_fused_top_fifo_w10_d7_S_x      0
+         td_fused_top_fifo_w10_d7_S_x_shiftReg      0
+       td_fused_top_fifo_w16_d2_S_x9      0
+         td_fused_top_fifo_w16_d2_S_x9_shiftReg      0
+       td_fused_top_fifo_w4_d7_S_x0      0
+         td_fused_top_fifo_w4_d7_S_x0_shiftReg      0
+       td_fused_top_fifo_w8_d7_S_x0      0
+         td_fused_top_fifo_w8_d7_S_x0_shiftReg      0
+       td_fused_top_start_for_tdf12_readFilters78_U0      0
+         td_fused_top_start_for_tdf12_readFilters78_U0_shiftReg      0
+       td_fused_top_tdf12_accum_1      0
+         $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hadd_16ns_16ns_16_5_full_dsp_1      0
+           td_fused_top_ap_hadd_3_full_dsp_16      0
+             FPAddSub                0
+               FPAddSub_AlignModule      0
+               FPAddSub_AlignShift1      0
+               FPAddSub_AlignShift2      0
+               FPAddSub_ExceptionModule      0
+               FPAddSub_ExecutionModule      0
+               FPAddSub_NormalizeModule      0
+               FPAddSub_NormalizeShift1      0
+               FPAddSub_NormalizeShift2      0
+               FPAddSub_PrealignModule      0
+               FPAddSub_RoundModule      0
+       td_fused_top_tdf12_accum_2      0
+         $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hadd_16ns_16ns_16_5_full_dsp_1      0
+           td_fused_top_ap_hadd_3_full_dsp_16      0
+             FPAddSub                0
+               FPAddSub_AlignModule      0
+               FPAddSub_AlignShift1      0
+               FPAddSub_AlignShift2      0
+               FPAddSub_ExceptionModule      0
+               FPAddSub_ExecutionModule      0
+               FPAddSub_NormalizeModule      0
+               FPAddSub_NormalizeShift1      0
+               FPAddSub_NormalizeShift2      0
+               FPAddSub_PrealignModule      0
+               FPAddSub_RoundModule      0
+       td_fused_top_tdf12_adjust      0
+         $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hadd_16ns_16ns_16_5_full_dsp_1      0
+           td_fused_top_ap_hadd_3_full_dsp_16      0
+             FPAddSub                0
+               FPAddSub_AlignModule      0
+               FPAddSub_AlignShift1      0
+               FPAddSub_AlignShift2      0
+               FPAddSub_ExceptionModule      0
+               FPAddSub_ExecutionModule      0
+               FPAddSub_NormalizeModule      0
+               FPAddSub_NormalizeShift1      0
+               FPAddSub_NormalizeShift2      0
+               FPAddSub_PrealignModule      0
+               FPAddSub_RoundModule      0
+         $paramod$3c0377098b222d6572752d08e873f7489758dceb\td_fused_top_hsub_16ns_16ns_16_5_full_dsp_1      0
+           td_fused_top_ap_hadd_3_full_dsp_16      0
+             FPAddSub                0
+               FPAddSub_AlignModule      0
+               FPAddSub_AlignShift1      0
+               FPAddSub_AlignShift2      0
+               FPAddSub_ExceptionModule      0
+               FPAddSub_ExecutionModule      0
+               FPAddSub_NormalizeModule      0
+               FPAddSub_NormalizeShift1      0
+               FPAddSub_NormalizeShift2      0
+               FPAddSub_PrealignModule      0
+               FPAddSub_RoundModule      0
+         $paramod$446b85b08a7a06b40d768e83a34c90ce7206f74e\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1      0
+           td_fused_top_ap_hmul_2_max_dsp_16      0
+             FPMult_16               0
+               FPMult_ExecuteModule      0
+               FPMult_NormalizeModule      0
+               FPMult_PrepModule      0
+               FPMult_RoundModule      0
+       td_fused_top_tdf12_dot_product      0
+         $paramod$446b85b08a7a06b40d768e83a34c90ce7206f74e\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1      0
+           td_fused_top_ap_hmul_2_max_dsp_16      0
+             FPMult_16               0
+               FPMult_ExecuteModule      0
+               FPMult_NormalizeModule      0
+               FPMult_PrepModule      0
+               FPMult_RoundModule      0
+       td_fused_top_tdf12_get_next_ijk      0
+       td_fused_top_tdf12_readFilters78      0
+       td_fused_top_tdf12_readInputs      0
+       td_fused_top_tdf12_writeOutputs_unaligned      0
+         $paramod$2cc697b95dae621c23ec527898048e96d6aad65a\td_fused_top_mul_10s_9ns_16_1_1      0
+           td_fused_top_mul_10s_9ns_16_1_1_Multiplier_0      0
 
-   Number of wires:               3948
-   Number of wire bits:          26562
-   Number of public wires:        2564
-   Number of public wire bits:   21187
-   Number of memories:               7
-   Number of memory bits:        12544
+   Number of wires:                126
+   Number of wire bits:           1615
+   Number of public wires:         100
+   Number of public wire bits:    1487
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               2321
-     $add                           83
-     $and                          293
-     $dff                           28
-     $dffe                         136
-     $eq                           168
-     $gt                             2
-     $logic_and                     58
-     $logic_not                    104
-     $logic_or                       4
-     $lt                             5
-     $memrd                         10
-     $memwr_v2                      12
-     $mul                            3
-     $mux                          612
-     $ne                            10
-     $not                          134
-     $or                           150
-     $pmux                         167
-     $reduce_and                    39
-     $reduce_bool                   31
-     $reduce_or                    107
-     $sdff                          35
-     $sdffce                         5
-     $sdffe                         73
-     $sub                           30
-     $xor                           22
+   Number of cells:                 33
+     $add                           36
+     $and                           11
+     $eq                            36
+     $logic_not                     18
+     $mux                           76
+     $not                            3
+     $or                             1
+     $reduce_bool                    4
+     $sdffe                         36
 

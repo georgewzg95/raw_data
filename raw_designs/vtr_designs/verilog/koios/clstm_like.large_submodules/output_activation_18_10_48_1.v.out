@@ -11,9 +11,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $mux                            1
-     $neg                            1
-     $sdffe                          2
+     $mux                           18
+     $neg                           18
+     $sdffe                         19
 
 === dsp_signed_mac_18_13_23_32 ===
 
@@ -25,9 +25,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            1
-     $mul                            1
-     $sdff                           4
+     $add                           32
+     $mul                           32
+     $sdff                          86
      $sdffe                          3
 
 === elementwise_add_core_18_18_48 ===
@@ -40,9 +40,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                195
-     $add                           48
+     $add                          864
      $and                            1
-     $sdffe                        146
+     $sdffe                       2594
 
 === fp_rounding_unit_1_32_11 ===
 
@@ -54,9 +54,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     $add                            1
-     $mux                            1
-     $sdffe                          6
+     $add                           32
+     $mux                           32
+     $sdffe                         88
 
 === output_activation_18_10_48_1 ===
 
@@ -69,8 +69,6 @@
    Number of processes:              0
    Number of cells:                 50
      $and                            1
-     elementwise_add_core_18_18_48      1
-     sigmoid_core_18_18_10_32_1     48
 
 === shift_register_unit_1_3 ===
 
@@ -96,49 +94,32 @@
    Number of cells:                114
      $and                            1
      $dffe                           1
-     $eq                            31
-     $ge                             1
-     $logic_not                      1
-     $mux                           68
+     $eq                           155
+     $ge                            32
+     $logic_not                      5
+     $mux                          901
      $not                            1
-     $reduce_and                     1
-     $sdffe                          4
-     $sub                            1
-     abs_unit_18                     1
-     dsp_signed_mac_18_13_23_32      1
-     fp_rounding_unit_1_32_11        1
-     shift_register_unit_1_3         1
+     $reduce_and                     2
+     $sdffe                         38
+     $sub                           32
 
 === design hierarchy ===
 
    output_activation_18_10_48_1      1
-     elementwise_add_core_18_18_48      1
-     sigmoid_core_18_18_10_32_1     48
-       abs_unit_18                   1
-       dsp_signed_mac_18_13_23_32      1
-       fp_rounding_unit_1_32_11      1
-       shift_register_unit_1_3       1
+     elementwise_add_core_18_18_48      0
+     sigmoid_core_18_18_10_32_1      0
+       abs_unit_18                   0
+       dsp_signed_mac_18_13_23_32      0
+       fp_rounding_unit_1_32_11      0
+       shift_register_unit_1_3       0
 
-   Number of wires:              12354
-   Number of wire bits:         133890
-   Number of public wires:        7362
-   Number of public wire bits:   85602
+   Number of wires:                345
+   Number of wire bits:           4425
+   Number of public wires:         345
+   Number of public wire bits:    4425
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               6628
-     $add                          144
-     $and                           50
-     $dffe                          48
-     $eq                          1488
-     $ge                            48
-     $logic_not                     48
-     $mul                           48
-     $mux                         3360
-     $neg                           48
-     $not                           48
-     $reduce_and                    48
-     $sdff                         192
-     $sdffe                       1010
-     $sub                           48
+   Number of cells:                 50
+     $and                            1
 

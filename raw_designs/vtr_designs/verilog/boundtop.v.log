@@ -24,46 +24,46 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v' to AST representation.
 Generating RTLIL representation for module `\single_port_ram'.
 Generating RTLIL representation for module `\dual_port_ram'.
 Generating RTLIL representation for module `\paj_boundtop_hierarchy_no_mem'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:316.5-330.8 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:316.5-330.8 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\resulttransmit'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:488.5-569.8 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:488.5-569.8 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\boundcontroller'.
 Generating RTLIL representation for module `\onlyonecycle'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1480.5-1525.8 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1480.5-1525.8 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\vblockramcontroller'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1591.5-1706.8 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1591.5-1706.8 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\spramblock'.
 Generating RTLIL representation for module `\sramcontroller'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1816.5-1963.8 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1816.5-1963.8 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\resultinterface'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091.5-2170.8 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091.5-2170.8 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\rayinterface'.
 Generating RTLIL representation for module `\sortedstack'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2299.5-2335.8 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2299.5-2335.8 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\listhandler'.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2580.5-2601.8 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2580.5-2601.8 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
-Note: Assuming pure combinatorial block at /home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2632.5-2840.4 in
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2632.5-2840.4 in
 compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
 use of @* instead of @(...) for better match of synthesis and simulation.
 Generating RTLIL representation for module `\spram'.
@@ -168,28 +168,28 @@ Mapping positional arguments of cell paj_boundtop_hierarchy_no_mem.oc (onlyonecy
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 36 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2632$430 in module listhandler.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2603$428 in module listhandler.
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2580$424 in module listhandler.
-Marked 8 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387 in module sortedstack.
-Marked 7 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2299$364 in module sortedstack.
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2201$333 in module rayinterface.
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330 in module resultinterface.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328 in module resultinterface.
-Marked 11 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1816$314 in module sramcontroller.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1796$312 in module sramcontroller.
-Marked 11 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1591$298 in module vblockramcontroller.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1572$296 in module vblockramcontroller.
-Marked 4 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1480$289 in module onlyonecycle.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1465$287 in module onlyonecycle.
-Marked 61 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98 in module boundcontroller.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89 in module boundcontroller.
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:488$67 in module resulttransmit.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:444$61 in module resulttransmit.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:340$57 in module paj_boundtop_hierarchy_no_mem.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:316$39 in module paj_boundtop_hierarchy_no_mem.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:21$500 in module $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2887$491 in module resultcounter.
+Marked 36 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2632$430 in module listhandler.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2603$428 in module listhandler.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2580$424 in module listhandler.
+Marked 8 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387 in module sortedstack.
+Marked 7 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2299$364 in module sortedstack.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2201$333 in module rayinterface.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330 in module resultinterface.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328 in module resultinterface.
+Marked 11 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1816$314 in module sramcontroller.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1796$312 in module sramcontroller.
+Marked 11 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1591$298 in module vblockramcontroller.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1572$296 in module vblockramcontroller.
+Marked 4 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1480$289 in module onlyonecycle.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1465$287 in module onlyonecycle.
+Marked 61 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98 in module boundcontroller.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89 in module boundcontroller.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:488$67 in module resulttransmit.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:444$61 in module resulttransmit.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:340$57 in module paj_boundtop_hierarchy_no_mem.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:316$39 in module paj_boundtop_hierarchy_no_mem.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:21$500 in module $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2887$491 in module resultcounter.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -201,10 +201,10 @@ Promoted 107 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\spram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2859$485'.
+Creating decoders for process `\spram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2859$485'.
      1/2: $0\mem2[12:0]
      2/2: $0\mem1[12:0]
-Creating decoders for process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2632$430'.
+Creating decoders for process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2632$430'.
      1/86: $10\temp_readlevel[1:0]
      2/86: $9\temp_readlevel[1:0]
      3/86: $13\temp_lvempty[2:2]
@@ -291,7 +291,7 @@ Creating decoders for process `\listhandler.$proc$/home/zhigang/DATA/raw_designs
     84/86: $1\next_state[1:0]
     85/86: $1\datain[12:0]
     86/86: $1\we[0:0]
-Creating decoders for process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
+Creating decoders for process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
      1/9: $0\offset2[2:0]
      2/9: $0\offset1[2:0]
      3/9: $0\offset0[2:0]
@@ -301,11 +301,11 @@ Creating decoders for process `\listhandler.$proc$/home/zhigang/DATA/raw_designs
      7/9: $0\lvempty[2:0]
      8/9: $0\state[1:0]
      9/9: $0\peekstate[1:0]
-Creating decoders for process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2580$424'.
+Creating decoders for process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2580$424'.
      1/3: $3\address[2:0]
      2/3: $2\address[2:0]
      3/3: $1\address[2:0]
-Creating decoders for process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating decoders for process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
      1/24: $0\full7[0:0]
      2/24: $0\full6[0:0]
      3/24: $0\full5[0:0]
@@ -330,7 +330,7 @@ Creating decoders for process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs
     22/24: $0\key0[31:0]
     23/24: $0\data2[12:0]
     24/24: $0\data1[12:0]
-Creating decoders for process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2299$364'.
+Creating decoders for process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2299$364'.
      1/7: $7\location[2:0]
      2/7: $6\location[2:0]
      3/7: $5\location[2:0]
@@ -338,7 +338,7 @@ Creating decoders for process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs
      5/7: $3\location[2:0]
      6/7: $2\location[2:0]
      7/7: $1\location[2:0]
-Creating decoders for process `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
+Creating decoders for process `\rayinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
      1/9: $0\raydata[31:0] [31:1]
      2/9: $0\raydata[31:0] [0]
      3/9: $0\rgWEl[2:0]
@@ -348,7 +348,7 @@ Creating decoders for process `\rayinterface.$proc$/home/zhigang/DATA/raw_design
      7/9: $0\rgDone[0:0]
      8/9: $0\rayaddr[3:0]
      9/9: $0\rgAddrValidl[0:0]
-Creating decoders for process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330'.
+Creating decoders for process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330'.
      1/20: $2\temp_t1b[31:0]
      2/20: $2\next_state[3:0]
      3/20: $1\temp_t1b[31:0]
@@ -369,7 +369,7 @@ Creating decoders for process `\resultinterface.$proc$/home/zhigang/DATA/raw_des
     18/20: $1\temp_u1b[15:0]
     19/20: $1\temp_t3b[31:0]
     20/20: $1\temp_t2b[31:0]
-Creating decoders for process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating decoders for process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
      1/18: $0\newdata[0:0]
      2/18: $0\resultID[1:0]
      3/18: $0\hit3b[0:0]
@@ -388,7 +388,7 @@ Creating decoders for process `\resultinterface.$proc$/home/zhigang/DATA/raw_des
     16/18: $0\t2b[31:0]
     17/18: $0\t1b[31:0]
     18/18: $0\state[3:0]
-Creating decoders for process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1816$314'.
+Creating decoders for process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1816$314'.
      1/32: $8\next_state[2:0]
      2/32: $7\next_state[2:0]
      3/32: $3\temp_waddress[17:0]
@@ -421,13 +421,13 @@ Creating decoders for process `\sramcontroller.$proc$/home/zhigang/DATA/raw_desi
     30/32: $1\tm3_sram_data_xhdl0[63:0]
     31/32: $1\tm3_sram_we[7:0]
     32/32: $1\temp_data[63:0]
-Creating decoders for process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1796$312'.
+Creating decoders for process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1796$312'.
      1/5: $0\datavalid[0:0]
      2/5: $0\data[63:0]
      3/5: $0\waddress[17:0]
      4/5: $0\state[2:0]
      5/5: $0\statepeek[2:0]
-Creating decoders for process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1591$298'.
+Creating decoders for process `\vblockramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1591$298'.
      1/19: $8\next_state[2:0]
      2/19: $7\next_state[2:0]
      3/19: $3\temp_waddr[9:0]
@@ -447,22 +447,22 @@ Creating decoders for process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw
     17/19: $1\want_addr[0:0]
     18/19: $1\we[0:0]
     19/19: $1\temp_data[31:0]
-Creating decoders for process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1572$296'.
+Creating decoders for process `\vblockramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1572$296'.
      1/4: $0\datavalid[0:0]
      2/4: $0\data[31:0]
      3/4: $0\waddr[9:0]
      4/4: $0\state[2:0]
-Creating decoders for process `\onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1480$289'.
+Creating decoders for process `\onlyonecycle.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1480$289'.
      1/6: $4\next_state[1:0]
      2/6: $3\next_state[1:0]
      3/6: $2\next_state[1:0]
      4/6: $1\temp_count[0:0]
      5/6: $1\next_state[1:0]
      6/6: $1\output_xhdl0[0:0]
-Creating decoders for process `\onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1465$287'.
+Creating decoders for process `\onlyonecycle.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1465$287'.
      1/2: $0\count[0:0]
      2/2: $0\state[1:0]
-Creating decoders for process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98'.
+Creating decoders for process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98'.
      1/165: $1\temp_hitmask[2:0] [2]
      2/165: $28\temp_busy[0:0]
      3/165: $28\next_state[4:0]
@@ -628,7 +628,7 @@ Creating decoders for process `\boundcontroller.$proc$/home/zhigang/DATA/raw_des
    163/165: $1\temp_addr[11:0]
    164/165: $1\temp_l0reset[0:0]
    165/165: $1\temp_resetcount[2:0]
-Creating decoders for process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating decoders for process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
      1/40: $0\busy[0:0]
      2/40: $0\id3[15:0]
      3/40: $0\id2[15:0]
@@ -669,14 +669,14 @@ Creating decoders for process `\boundcontroller.$proc$/home/zhigang/DATA/raw_des
     38/40: $0\raygroupoutl[1:0]
     39/40: $0\state[4:0]
     40/40: $0\statepeek[4:0]
-Creating decoders for process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:488$67'.
+Creating decoders for process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:488$67'.
      1/6: $3\next_state[3:0]
      2/6: $2\next_state[3:0]
      3/6: $1\next_state[3:0]
      4/6: $1\temp_rgResultSource[1:0]
      5/6: $1\temp_rgResultReady[0:0]
      6/6: $1\temp_rgResultData[31:0]
-Creating decoders for process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
+Creating decoders for process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
      1/14: $0\rgResultReady[0:0]
      2/14: $0\rgResultSource[1:0]
      3/14: $0\rgResultData[31:0]
@@ -691,453 +691,453 @@ Creating decoders for process `\resulttransmit.$proc$/home/zhigang/DATA/raw_desi
     12/14: $0\hit01cl[0:0]
     13/14: $0\hit01bl[0:0]
     14/14: $0\hit01al[0:0]
-Creating decoders for process `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:340$57'.
+Creating decoders for process `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:340$57'.
      1/3: $0\oldresultid[1:0]
      2/3: $0\reset[0:0]
      3/3: $0\peeklatch[103:0]
-Creating decoders for process `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:316$39'.
+Creating decoders for process `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:316$39'.
      1/2: $2\boundNodeID[9:0]
      2/2: $1\boundNodeID[9:0]
-Creating decoders for process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:21$500'.
-     1/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:23$499_EN[31:0]$506
-     2/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:23$499_DATA[31:0]$505
-     3/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:23$499_ADDR[9:0]$504
+Creating decoders for process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:21$500'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:23$499_EN[31:0]$506
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:23$499_DATA[31:0]$505
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:23$499_ADDR[9:0]$504
      4/4: $0\out[31:0]
-Creating decoders for process `\resultcounter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2887$491'.
+Creating decoders for process `\resultcounter.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2887$491'.
      1/2: $0\curr[1:0]
      2/2: $0\count[3:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-Latch inferred for signal `\listhandler.\we' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$5403
-Latch inferred for signal `\listhandler.\next_state' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$5426
-Latch inferred for signal `\listhandler.\temp_busy' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$5537
-Latch inferred for signal `\listhandler.\datain' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$5894
-Latch inferred for signal `\listhandler.\temp_peekstate' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$5917
-Latch inferred for signal `\listhandler.\temp_lvempty [0]' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$6072
-Latch inferred for signal `\listhandler.\temp_lvempty [1]' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$6251
-Latch inferred for signal `\listhandler.\temp_lvempty [2]' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$6510
-Latch inferred for signal `\listhandler.\temp_readlevel' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$6681
-Latch inferred for signal `\listhandler.\temp_writelevel' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$6742
-Latch inferred for signal `\listhandler.\temp_offset0' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$6907
-Latch inferred for signal `\listhandler.\temp_offset1' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$7174
-Latch inferred for signal `\listhandler.\temp_offset2' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$7559
-No latch inferred for signal `\listhandler.\address' from process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2580$424'.
-No latch inferred for signal `\sortedstack.\location' from process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2299$364'.
-Latch inferred for signal `\resultinterface.\next_state' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7618
-Latch inferred for signal `\resultinterface.\temp_t1b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7647
-Latch inferred for signal `\resultinterface.\temp_t2b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7658
-Latch inferred for signal `\resultinterface.\temp_t3b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7669
-Latch inferred for signal `\resultinterface.\temp_u1b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7680
-Latch inferred for signal `\resultinterface.\temp_u2b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7691
-Latch inferred for signal `\resultinterface.\temp_u3b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7702
-Latch inferred for signal `\resultinterface.\temp_v1b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7713
-Latch inferred for signal `\resultinterface.\temp_v2b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7724
-Latch inferred for signal `\resultinterface.\temp_v3b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7735
-Latch inferred for signal `\resultinterface.\temp_id1b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7746
-Latch inferred for signal `\resultinterface.\temp_id2b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7757
-Latch inferred for signal `\resultinterface.\temp_id3b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7768
-Latch inferred for signal `\resultinterface.\temp_hit1b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7779
-Latch inferred for signal `\resultinterface.\temp_hit2b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7790
-Latch inferred for signal `\resultinterface.\temp_hit3b' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7801
-Latch inferred for signal `\resultinterface.\temp_resultID' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7812
-Latch inferred for signal `\resultinterface.\temp_newdata' from process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7871
-Latch inferred for signal `\sramcontroller.\tm3_sram_data_xhdl0' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$7912
-Latch inferred for signal `\sramcontroller.\tm3_sram_addr' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$7997
-Latch inferred for signal `\sramcontroller.\tm3_sram_we' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8082
-Latch inferred for signal `\sramcontroller.\tm3_sram_oe' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8147
-Latch inferred for signal `\sramcontroller.\tm3_sram_adsp' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8236
-Latch inferred for signal `\sramcontroller.\next_state' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8277
-Latch inferred for signal `\sramcontroller.\temp_statepeek' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8318
-Latch inferred for signal `\sramcontroller.\want_addr' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8359
-Latch inferred for signal `\sramcontroller.\want_data' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8400
-Latch inferred for signal `\sramcontroller.\temp_data' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8411
-Latch inferred for signal `\sramcontroller.\temp_datavalid' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8446
-Latch inferred for signal `\sramcontroller.\temp_waddress' from process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8499
-Latch inferred for signal `\vblockramcontroller.\we' from process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1591$298': $auto$proc_dlatch.cc:427:proc_dlatch$8584
-Latch inferred for signal `\vblockramcontroller.\next_state' from process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1591$298': $auto$proc_dlatch.cc:427:proc_dlatch$8625
-Latch inferred for signal `\vblockramcontroller.\want_addr' from process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1591$298': $auto$proc_dlatch.cc:427:proc_dlatch$8666
-Latch inferred for signal `\vblockramcontroller.\want_data' from process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1591$298': $auto$proc_dlatch.cc:427:proc_dlatch$8707
-Latch inferred for signal `\vblockramcontroller.\temp_data' from process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1591$298': $auto$proc_dlatch.cc:427:proc_dlatch$8718
-Latch inferred for signal `\vblockramcontroller.\temp_waddr' from process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1591$298': $auto$proc_dlatch.cc:427:proc_dlatch$8771
-Latch inferred for signal `\vblockramcontroller.\temp_datavalid' from process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1591$298': $auto$proc_dlatch.cc:427:proc_dlatch$8806
-Latch inferred for signal `\onlyonecycle.\next_state' from process `\onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1480$289': $auto$proc_dlatch.cc:427:proc_dlatch$8829
-Latch inferred for signal `\onlyonecycle.\temp_count' from process `\onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1480$289': $auto$proc_dlatch.cc:427:proc_dlatch$8846
-Latch inferred for signal `\onlyonecycle.\output_xhdl0' from process `\onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1480$289': $auto$proc_dlatch.cc:427:proc_dlatch$8869
-Latch inferred for signal `\boundcontroller.\raygroupwe' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$8928
-Latch inferred for signal `\boundcontroller.\raygroupid' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$8969
-Latch inferred for signal `\boundcontroller.\enablenear' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$8992
-Latch inferred for signal `\boundcontroller.\next_state' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9117
-Latch inferred for signal `\boundcontroller.\temp_busy' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9242
-Latch inferred for signal `\boundcontroller.\lhreset' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9253
-Latch inferred for signal `\boundcontroller.\bcvalid' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9336
-Latch inferred for signal `\boundcontroller.\temp_statepeek' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9461
-Latch inferred for signal `\boundcontroller.\temp_raygroupoutl' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9472
-Latch inferred for signal `\boundcontroller.\temp_cts' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9617
-Latch inferred for signal `\boundcontroller.\temp_passCTSout' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9858
-Latch inferred for signal `\boundcontroller.\temp_resetcount' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9881
-Latch inferred for signal `\boundcontroller.\temp_l0reset' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9916
-Latch inferred for signal `\boundcontroller.\temp_addr' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9939
-Latch inferred for signal `\boundcontroller.\temp_startAddr' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9956
-Latch inferred for signal `\boundcontroller.\temp_boundNodeIDout' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9973
-Latch inferred for signal `\boundcontroller.\temp_baseaddress' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9990
-Latch inferred for signal `\boundcontroller.\temp_hitmask [0]' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10025
-Latch inferred for signal `\boundcontroller.\temp_hitmask [1]' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10060
-Latch inferred for signal `\boundcontroller.\temp_hitmask [2]' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10095
-Latch inferred for signal `\boundcontroller.\temp_hit1' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10122
-Latch inferred for signal `\boundcontroller.\temp_hit2' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10149
-Latch inferred for signal `\boundcontroller.\temp_hit3' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10176
-Latch inferred for signal `\boundcontroller.\temp_triIDvalid' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10253
-Latch inferred for signal `\boundcontroller.\temp_triID' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10270
-Latch inferred for signal `\boundcontroller.\temp_lack' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10291
-Latch inferred for signal `\boundcontroller.\temp_addrind' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10320
-Latch inferred for signal `\boundcontroller.\temp_addrindvalid' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10365
-Latch inferred for signal `\boundcontroller.\temp_tladdrvalid' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10482
-Latch inferred for signal `\boundcontroller.\temp_tladdr' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10531
-Latch inferred for signal `\boundcontroller.\temp_count' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10560
-Latch inferred for signal `\boundcontroller.\temp_subcount' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10595
-Latch inferred for signal `\boundcontroller.\temp_maskcount' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10612
-Latch inferred for signal `\boundcontroller.\temp_triDatalatch' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10639
-Latch inferred for signal `\boundcontroller.\temp_t1' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10660
-Latch inferred for signal `\boundcontroller.\temp_u1' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10681
-Latch inferred for signal `\boundcontroller.\temp_v1' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10702
-Latch inferred for signal `\boundcontroller.\temp_id1' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10723
-Latch inferred for signal `\boundcontroller.\temp_t2' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10744
-Latch inferred for signal `\boundcontroller.\temp_u2' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10765
-Latch inferred for signal `\boundcontroller.\temp_v2' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10786
-Latch inferred for signal `\boundcontroller.\temp_id2' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10807
-Latch inferred for signal `\boundcontroller.\temp_t3' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10828
-Latch inferred for signal `\boundcontroller.\temp_u3' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10849
-Latch inferred for signal `\boundcontroller.\temp_v3' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10870
-Latch inferred for signal `\boundcontroller.\temp_id3' from process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10891
-Latch inferred for signal `\resulttransmit.\next_state' from process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:488$67': $auto$proc_dlatch.cc:427:proc_dlatch$10950
-Latch inferred for signal `\resulttransmit.\temp_rgResultData' from process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:488$67': $auto$proc_dlatch.cc:427:proc_dlatch$11003
-Latch inferred for signal `\resulttransmit.\temp_rgResultReady' from process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:488$67': $auto$proc_dlatch.cc:427:proc_dlatch$11012
-Latch inferred for signal `\resulttransmit.\temp_rgResultSource' from process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:488$67': $auto$proc_dlatch.cc:427:proc_dlatch$11065
-No latch inferred for signal `\paj_boundtop_hierarchy_no_mem.\boundNodeID' from process `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:316$39'.
+Latch inferred for signal `\listhandler.\we' from process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$5403
+Latch inferred for signal `\listhandler.\next_state' from process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$5426
+Latch inferred for signal `\listhandler.\temp_busy' from process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$5537
+Latch inferred for signal `\listhandler.\datain' from process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$5894
+Latch inferred for signal `\listhandler.\temp_peekstate' from process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$5917
+Latch inferred for signal `\listhandler.\temp_lvempty [0]' from process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$6072
+Latch inferred for signal `\listhandler.\temp_lvempty [1]' from process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$6251
+Latch inferred for signal `\listhandler.\temp_lvempty [2]' from process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$6510
+Latch inferred for signal `\listhandler.\temp_readlevel' from process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$6681
+Latch inferred for signal `\listhandler.\temp_writelevel' from process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$6742
+Latch inferred for signal `\listhandler.\temp_offset0' from process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$6907
+Latch inferred for signal `\listhandler.\temp_offset1' from process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$7174
+Latch inferred for signal `\listhandler.\temp_offset2' from process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2632$430': $auto$proc_dlatch.cc:427:proc_dlatch$7559
+No latch inferred for signal `\listhandler.\address' from process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2580$424'.
+No latch inferred for signal `\sortedstack.\location' from process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2299$364'.
+Latch inferred for signal `\resultinterface.\next_state' from process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7618
+Latch inferred for signal `\resultinterface.\temp_t1b' from process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7647
+Latch inferred for signal `\resultinterface.\temp_t2b' from process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7658
+Latch inferred for signal `\resultinterface.\temp_t3b' from process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7669
+Latch inferred for signal `\resultinterface.\temp_u1b' from process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7680
+Latch inferred for signal `\resultinterface.\temp_u2b' from process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7691
+Latch inferred for signal `\resultinterface.\temp_u3b' from process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7702
+Latch inferred for signal `\resultinterface.\temp_v1b' from process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7713
+Latch inferred for signal `\resultinterface.\temp_v2b' from process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7724
+Latch inferred for signal `\resultinterface.\temp_v3b' from process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7735
+Latch inferred for signal `\resultinterface.\temp_id1b' from process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7746
+Latch inferred for signal `\resultinterface.\temp_id2b' from process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7757
+Latch inferred for signal `\resultinterface.\temp_id3b' from process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7768
+Latch inferred for signal `\resultinterface.\temp_hit1b' from process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7779
+Latch inferred for signal `\resultinterface.\temp_hit2b' from process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7790
+Latch inferred for signal `\resultinterface.\temp_hit3b' from process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7801
+Latch inferred for signal `\resultinterface.\temp_resultID' from process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7812
+Latch inferred for signal `\resultinterface.\temp_newdata' from process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330': $auto$proc_dlatch.cc:427:proc_dlatch$7871
+Latch inferred for signal `\sramcontroller.\tm3_sram_data_xhdl0' from process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$7912
+Latch inferred for signal `\sramcontroller.\tm3_sram_addr' from process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$7997
+Latch inferred for signal `\sramcontroller.\tm3_sram_we' from process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8082
+Latch inferred for signal `\sramcontroller.\tm3_sram_oe' from process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8147
+Latch inferred for signal `\sramcontroller.\tm3_sram_adsp' from process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8236
+Latch inferred for signal `\sramcontroller.\next_state' from process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8277
+Latch inferred for signal `\sramcontroller.\temp_statepeek' from process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8318
+Latch inferred for signal `\sramcontroller.\want_addr' from process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8359
+Latch inferred for signal `\sramcontroller.\want_data' from process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8400
+Latch inferred for signal `\sramcontroller.\temp_data' from process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8411
+Latch inferred for signal `\sramcontroller.\temp_datavalid' from process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8446
+Latch inferred for signal `\sramcontroller.\temp_waddress' from process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1816$314': $auto$proc_dlatch.cc:427:proc_dlatch$8499
+Latch inferred for signal `\vblockramcontroller.\we' from process `\vblockramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1591$298': $auto$proc_dlatch.cc:427:proc_dlatch$8584
+Latch inferred for signal `\vblockramcontroller.\next_state' from process `\vblockramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1591$298': $auto$proc_dlatch.cc:427:proc_dlatch$8625
+Latch inferred for signal `\vblockramcontroller.\want_addr' from process `\vblockramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1591$298': $auto$proc_dlatch.cc:427:proc_dlatch$8666
+Latch inferred for signal `\vblockramcontroller.\want_data' from process `\vblockramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1591$298': $auto$proc_dlatch.cc:427:proc_dlatch$8707
+Latch inferred for signal `\vblockramcontroller.\temp_data' from process `\vblockramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1591$298': $auto$proc_dlatch.cc:427:proc_dlatch$8718
+Latch inferred for signal `\vblockramcontroller.\temp_waddr' from process `\vblockramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1591$298': $auto$proc_dlatch.cc:427:proc_dlatch$8771
+Latch inferred for signal `\vblockramcontroller.\temp_datavalid' from process `\vblockramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1591$298': $auto$proc_dlatch.cc:427:proc_dlatch$8806
+Latch inferred for signal `\onlyonecycle.\next_state' from process `\onlyonecycle.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1480$289': $auto$proc_dlatch.cc:427:proc_dlatch$8829
+Latch inferred for signal `\onlyonecycle.\temp_count' from process `\onlyonecycle.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1480$289': $auto$proc_dlatch.cc:427:proc_dlatch$8846
+Latch inferred for signal `\onlyonecycle.\output_xhdl0' from process `\onlyonecycle.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1480$289': $auto$proc_dlatch.cc:427:proc_dlatch$8869
+Latch inferred for signal `\boundcontroller.\raygroupwe' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$8928
+Latch inferred for signal `\boundcontroller.\raygroupid' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$8969
+Latch inferred for signal `\boundcontroller.\enablenear' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$8992
+Latch inferred for signal `\boundcontroller.\next_state' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9117
+Latch inferred for signal `\boundcontroller.\temp_busy' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9242
+Latch inferred for signal `\boundcontroller.\lhreset' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9253
+Latch inferred for signal `\boundcontroller.\bcvalid' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9336
+Latch inferred for signal `\boundcontroller.\temp_statepeek' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9461
+Latch inferred for signal `\boundcontroller.\temp_raygroupoutl' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9472
+Latch inferred for signal `\boundcontroller.\temp_cts' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9617
+Latch inferred for signal `\boundcontroller.\temp_passCTSout' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9858
+Latch inferred for signal `\boundcontroller.\temp_resetcount' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9881
+Latch inferred for signal `\boundcontroller.\temp_l0reset' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9916
+Latch inferred for signal `\boundcontroller.\temp_addr' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9939
+Latch inferred for signal `\boundcontroller.\temp_startAddr' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9956
+Latch inferred for signal `\boundcontroller.\temp_boundNodeIDout' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9973
+Latch inferred for signal `\boundcontroller.\temp_baseaddress' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$9990
+Latch inferred for signal `\boundcontroller.\temp_hitmask [0]' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10025
+Latch inferred for signal `\boundcontroller.\temp_hitmask [1]' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10060
+Latch inferred for signal `\boundcontroller.\temp_hitmask [2]' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10095
+Latch inferred for signal `\boundcontroller.\temp_hit1' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10122
+Latch inferred for signal `\boundcontroller.\temp_hit2' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10149
+Latch inferred for signal `\boundcontroller.\temp_hit3' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10176
+Latch inferred for signal `\boundcontroller.\temp_triIDvalid' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10253
+Latch inferred for signal `\boundcontroller.\temp_triID' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10270
+Latch inferred for signal `\boundcontroller.\temp_lack' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10291
+Latch inferred for signal `\boundcontroller.\temp_addrind' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10320
+Latch inferred for signal `\boundcontroller.\temp_addrindvalid' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10365
+Latch inferred for signal `\boundcontroller.\temp_tladdrvalid' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10482
+Latch inferred for signal `\boundcontroller.\temp_tladdr' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10531
+Latch inferred for signal `\boundcontroller.\temp_count' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10560
+Latch inferred for signal `\boundcontroller.\temp_subcount' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10595
+Latch inferred for signal `\boundcontroller.\temp_maskcount' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10612
+Latch inferred for signal `\boundcontroller.\temp_triDatalatch' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10639
+Latch inferred for signal `\boundcontroller.\temp_t1' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10660
+Latch inferred for signal `\boundcontroller.\temp_u1' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10681
+Latch inferred for signal `\boundcontroller.\temp_v1' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10702
+Latch inferred for signal `\boundcontroller.\temp_id1' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10723
+Latch inferred for signal `\boundcontroller.\temp_t2' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10744
+Latch inferred for signal `\boundcontroller.\temp_u2' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10765
+Latch inferred for signal `\boundcontroller.\temp_v2' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10786
+Latch inferred for signal `\boundcontroller.\temp_id2' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10807
+Latch inferred for signal `\boundcontroller.\temp_t3' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10828
+Latch inferred for signal `\boundcontroller.\temp_u3' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10849
+Latch inferred for signal `\boundcontroller.\temp_v3' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10870
+Latch inferred for signal `\boundcontroller.\temp_id3' from process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98': $auto$proc_dlatch.cc:427:proc_dlatch$10891
+Latch inferred for signal `\resulttransmit.\next_state' from process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:488$67': $auto$proc_dlatch.cc:427:proc_dlatch$10950
+Latch inferred for signal `\resulttransmit.\temp_rgResultData' from process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:488$67': $auto$proc_dlatch.cc:427:proc_dlatch$11003
+Latch inferred for signal `\resulttransmit.\temp_rgResultReady' from process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:488$67': $auto$proc_dlatch.cc:427:proc_dlatch$11012
+Latch inferred for signal `\resulttransmit.\temp_rgResultSource' from process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:488$67': $auto$proc_dlatch.cc:427:proc_dlatch$11065
+No latch inferred for signal `\paj_boundtop_hierarchy_no_mem.\boundNodeID' from process `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:316$39'.
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\spram.\temp_reg' using process `\spram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2859$485'.
+Creating register for signal `\spram.\temp_reg' using process `\spram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2859$485'.
   created $dff cell `$procdff$11066' with positive edge clock.
-Creating register for signal `\spram.\mem1' using process `\spram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2859$485'.
+Creating register for signal `\spram.\mem1' using process `\spram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2859$485'.
   created $dff cell `$procdff$11067' with positive edge clock.
-Creating register for signal `\spram.\mem2' using process `\spram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2859$485'.
+Creating register for signal `\spram.\mem2' using process `\spram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2859$485'.
   created $dff cell `$procdff$11068' with positive edge clock.
-Creating register for signal `\listhandler.\state' using process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
+Creating register for signal `\listhandler.\state' using process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
   created $dff cell `$procdff$11069' with positive edge clock.
-Creating register for signal `\listhandler.\busy' using process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
+Creating register for signal `\listhandler.\busy' using process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
   created $dff cell `$procdff$11070' with positive edge clock.
-Creating register for signal `\listhandler.\peekstate' using process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
+Creating register for signal `\listhandler.\peekstate' using process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
   created $dff cell `$procdff$11071' with positive edge clock.
-Creating register for signal `\listhandler.\readlevel' using process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
+Creating register for signal `\listhandler.\readlevel' using process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
   created $dff cell `$procdff$11072' with positive edge clock.
-Creating register for signal `\listhandler.\writelevel' using process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
+Creating register for signal `\listhandler.\writelevel' using process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
   created $dff cell `$procdff$11073' with positive edge clock.
-Creating register for signal `\listhandler.\offset0' using process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
+Creating register for signal `\listhandler.\offset0' using process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
   created $dff cell `$procdff$11074' with positive edge clock.
-Creating register for signal `\listhandler.\offset1' using process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
+Creating register for signal `\listhandler.\offset1' using process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
   created $dff cell `$procdff$11075' with positive edge clock.
-Creating register for signal `\listhandler.\offset2' using process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
+Creating register for signal `\listhandler.\offset2' using process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
   created $dff cell `$procdff$11076' with positive edge clock.
-Creating register for signal `\listhandler.\lvempty' using process `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
+Creating register for signal `\listhandler.\lvempty' using process `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
   created $dff cell `$procdff$11077' with positive edge clock.
-Creating register for signal `\sortedstack.\data1' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\data1' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11078' with positive edge clock.
-Creating register for signal `\sortedstack.\data2' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\data2' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11079' with positive edge clock.
-Creating register for signal `\sortedstack.\key0' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\key0' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11080' with positive edge clock.
-Creating register for signal `\sortedstack.\key1' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\key1' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11081' with positive edge clock.
-Creating register for signal `\sortedstack.\key2' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\key2' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11082' with positive edge clock.
-Creating register for signal `\sortedstack.\key3' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\key3' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11083' with positive edge clock.
-Creating register for signal `\sortedstack.\key4' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\key4' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11084' with positive edge clock.
-Creating register for signal `\sortedstack.\key5' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\key5' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11085' with positive edge clock.
-Creating register for signal `\sortedstack.\key6' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\key6' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11086' with positive edge clock.
-Creating register for signal `\sortedstack.\key7' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\key7' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11087' with positive edge clock.
-Creating register for signal `\sortedstack.\data0' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\data0' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11088' with positive edge clock.
-Creating register for signal `\sortedstack.\data3' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\data3' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11089' with positive edge clock.
-Creating register for signal `\sortedstack.\data4' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\data4' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11090' with positive edge clock.
-Creating register for signal `\sortedstack.\data5' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\data5' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11091' with positive edge clock.
-Creating register for signal `\sortedstack.\data6' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\data6' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11092' with positive edge clock.
-Creating register for signal `\sortedstack.\data7' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\data7' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11093' with positive edge clock.
-Creating register for signal `\sortedstack.\full0' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\full0' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11094' with positive edge clock.
-Creating register for signal `\sortedstack.\full1' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\full1' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11095' with positive edge clock.
-Creating register for signal `\sortedstack.\full2' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\full2' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11096' with positive edge clock.
-Creating register for signal `\sortedstack.\full3' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\full3' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11097' with positive edge clock.
-Creating register for signal `\sortedstack.\full4' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\full4' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11098' with positive edge clock.
-Creating register for signal `\sortedstack.\full5' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\full5' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11099' with positive edge clock.
-Creating register for signal `\sortedstack.\full6' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\full6' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11100' with positive edge clock.
-Creating register for signal `\sortedstack.\full7' using process `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Creating register for signal `\sortedstack.\full7' using process `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
   created $dff cell `$procdff$11101' with positive edge clock.
-Creating register for signal `\rayinterface.\raydata' using process `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
+Creating register for signal `\rayinterface.\raydata' using process `\rayinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
   created $dff cell `$procdff$11102' with positive edge clock.
-Creating register for signal `\rayinterface.\rayaddr' using process `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
+Creating register for signal `\rayinterface.\rayaddr' using process `\rayinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
   created $dff cell `$procdff$11103' with positive edge clock.
-Creating register for signal `\rayinterface.\raywe' using process `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
+Creating register for signal `\rayinterface.\raywe' using process `\rayinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
   created $dff cell `$procdff$11104' with positive edge clock.
-Creating register for signal `\rayinterface.\rgDone' using process `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
+Creating register for signal `\rayinterface.\rgDone' using process `\rayinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
   created $dff cell `$procdff$11105' with positive edge clock.
-Creating register for signal `\rayinterface.\rgDatal' using process `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
+Creating register for signal `\rayinterface.\rgDatal' using process `\rayinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
   created $dff cell `$procdff$11106' with positive edge clock.
-Creating register for signal `\rayinterface.\rgAddrl' using process `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
+Creating register for signal `\rayinterface.\rgAddrl' using process `\rayinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
   created $dff cell `$procdff$11107' with positive edge clock.
-Creating register for signal `\rayinterface.\rgWEl' using process `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
+Creating register for signal `\rayinterface.\rgWEl' using process `\rayinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
   created $dff cell `$procdff$11108' with positive edge clock.
-Creating register for signal `\rayinterface.\rgAddrValidl' using process `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
+Creating register for signal `\rayinterface.\rgAddrValidl' using process `\rayinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
   created $dff cell `$procdff$11109' with positive edge clock.
-Creating register for signal `\resultinterface.\state' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating register for signal `\resultinterface.\state' using process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
   created $dff cell `$procdff$11110' with positive edge clock.
-Creating register for signal `\resultinterface.\newdata' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating register for signal `\resultinterface.\newdata' using process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
   created $dff cell `$procdff$11111' with positive edge clock.
-Creating register for signal `\resultinterface.\resultID' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating register for signal `\resultinterface.\resultID' using process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
   created $dff cell `$procdff$11112' with positive edge clock.
-Creating register for signal `\resultinterface.\t1b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating register for signal `\resultinterface.\t1b' using process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
   created $dff cell `$procdff$11113' with positive edge clock.
-Creating register for signal `\resultinterface.\t2b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating register for signal `\resultinterface.\t2b' using process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
   created $dff cell `$procdff$11114' with positive edge clock.
-Creating register for signal `\resultinterface.\t3b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating register for signal `\resultinterface.\t3b' using process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
   created $dff cell `$procdff$11115' with positive edge clock.
-Creating register for signal `\resultinterface.\u1b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating register for signal `\resultinterface.\u1b' using process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
   created $dff cell `$procdff$11116' with positive edge clock.
-Creating register for signal `\resultinterface.\u2b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating register for signal `\resultinterface.\u2b' using process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
   created $dff cell `$procdff$11117' with positive edge clock.
-Creating register for signal `\resultinterface.\u3b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating register for signal `\resultinterface.\u3b' using process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
   created $dff cell `$procdff$11118' with positive edge clock.
-Creating register for signal `\resultinterface.\v1b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating register for signal `\resultinterface.\v1b' using process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
   created $dff cell `$procdff$11119' with positive edge clock.
-Creating register for signal `\resultinterface.\v2b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating register for signal `\resultinterface.\v2b' using process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
   created $dff cell `$procdff$11120' with positive edge clock.
-Creating register for signal `\resultinterface.\v3b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating register for signal `\resultinterface.\v3b' using process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
   created $dff cell `$procdff$11121' with positive edge clock.
-Creating register for signal `\resultinterface.\id1b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating register for signal `\resultinterface.\id1b' using process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
   created $dff cell `$procdff$11122' with positive edge clock.
-Creating register for signal `\resultinterface.\id2b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating register for signal `\resultinterface.\id2b' using process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
   created $dff cell `$procdff$11123' with positive edge clock.
-Creating register for signal `\resultinterface.\id3b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating register for signal `\resultinterface.\id3b' using process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
   created $dff cell `$procdff$11124' with positive edge clock.
-Creating register for signal `\resultinterface.\hit1b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating register for signal `\resultinterface.\hit1b' using process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
   created $dff cell `$procdff$11125' with positive edge clock.
-Creating register for signal `\resultinterface.\hit2b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating register for signal `\resultinterface.\hit2b' using process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
   created $dff cell `$procdff$11126' with positive edge clock.
-Creating register for signal `\resultinterface.\hit3b' using process `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Creating register for signal `\resultinterface.\hit3b' using process `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
   created $dff cell `$procdff$11127' with positive edge clock.
-Creating register for signal `\sramcontroller.\data' using process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1796$312'.
+Creating register for signal `\sramcontroller.\data' using process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1796$312'.
   created $dff cell `$procdff$11128' with positive edge clock.
-Creating register for signal `\sramcontroller.\state' using process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1796$312'.
+Creating register for signal `\sramcontroller.\state' using process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1796$312'.
   created $dff cell `$procdff$11129' with positive edge clock.
-Creating register for signal `\sramcontroller.\statepeek' using process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1796$312'.
+Creating register for signal `\sramcontroller.\statepeek' using process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1796$312'.
   created $dff cell `$procdff$11130' with positive edge clock.
-Creating register for signal `\sramcontroller.\datavalid' using process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1796$312'.
+Creating register for signal `\sramcontroller.\datavalid' using process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1796$312'.
   created $dff cell `$procdff$11131' with positive edge clock.
-Creating register for signal `\sramcontroller.\waddress' using process `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1796$312'.
+Creating register for signal `\sramcontroller.\waddress' using process `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1796$312'.
   created $dff cell `$procdff$11132' with positive edge clock.
-Creating register for signal `\vblockramcontroller.\data' using process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1572$296'.
+Creating register for signal `\vblockramcontroller.\data' using process `\vblockramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1572$296'.
   created $dff cell `$procdff$11133' with positive edge clock.
-Creating register for signal `\vblockramcontroller.\state' using process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1572$296'.
+Creating register for signal `\vblockramcontroller.\state' using process `\vblockramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1572$296'.
   created $dff cell `$procdff$11134' with positive edge clock.
-Creating register for signal `\vblockramcontroller.\datavalid' using process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1572$296'.
+Creating register for signal `\vblockramcontroller.\datavalid' using process `\vblockramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1572$296'.
   created $dff cell `$procdff$11135' with positive edge clock.
-Creating register for signal `\vblockramcontroller.\waddr' using process `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1572$296'.
+Creating register for signal `\vblockramcontroller.\waddr' using process `\vblockramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1572$296'.
   created $dff cell `$procdff$11136' with positive edge clock.
-Creating register for signal `\onlyonecycle.\state' using process `\onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1465$287'.
+Creating register for signal `\onlyonecycle.\state' using process `\onlyonecycle.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1465$287'.
   created $dff cell `$procdff$11137' with positive edge clock.
-Creating register for signal `\onlyonecycle.\count' using process `\onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1465$287'.
+Creating register for signal `\onlyonecycle.\count' using process `\onlyonecycle.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1465$287'.
   created $dff cell `$procdff$11138' with positive edge clock.
-Creating register for signal `\boundcontroller.\addr' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\addr' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11139' with positive edge clock.
-Creating register for signal `\boundcontroller.\triIDvalid' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\triIDvalid' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11140' with positive edge clock.
-Creating register for signal `\boundcontroller.\triID' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\triID' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11141' with positive edge clock.
-Creating register for signal `\boundcontroller.\tladdr' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\tladdr' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11142' with positive edge clock.
-Creating register for signal `\boundcontroller.\tladdrvalid' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\tladdrvalid' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11143' with positive edge clock.
-Creating register for signal `\boundcontroller.\state' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\state' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11144' with positive edge clock.
-Creating register for signal `\boundcontroller.\busy' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\busy' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11145' with positive edge clock.
-Creating register for signal `\boundcontroller.\l0reset' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\l0reset' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11146' with positive edge clock.
-Creating register for signal `\boundcontroller.\baseaddress' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\baseaddress' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11147' with positive edge clock.
-Creating register for signal `\boundcontroller.\boundNodeIDout' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\boundNodeIDout' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11148' with positive edge clock.
-Creating register for signal `\boundcontroller.\hitmask' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\hitmask' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11149' with positive edge clock.
-Creating register for signal `\boundcontroller.\lack' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\lack' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11150' with positive edge clock.
-Creating register for signal `\boundcontroller.\addrind' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\addrind' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11151' with positive edge clock.
-Creating register for signal `\boundcontroller.\addrindvalid' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\addrindvalid' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11152' with positive edge clock.
-Creating register for signal `\boundcontroller.\t1' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\t1' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11153' with positive edge clock.
-Creating register for signal `\boundcontroller.\t2' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\t2' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11154' with positive edge clock.
-Creating register for signal `\boundcontroller.\t3' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\t3' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11155' with positive edge clock.
-Creating register for signal `\boundcontroller.\u1' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\u1' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11156' with positive edge clock.
-Creating register for signal `\boundcontroller.\u2' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\u2' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11157' with positive edge clock.
-Creating register for signal `\boundcontroller.\u3' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\u3' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11158' with positive edge clock.
-Creating register for signal `\boundcontroller.\v1' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\v1' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11159' with positive edge clock.
-Creating register for signal `\boundcontroller.\v2' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\v2' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11160' with positive edge clock.
-Creating register for signal `\boundcontroller.\v3' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\v3' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11161' with positive edge clock.
-Creating register for signal `\boundcontroller.\id1' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\id1' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11162' with positive edge clock.
-Creating register for signal `\boundcontroller.\id2' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\id2' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11163' with positive edge clock.
-Creating register for signal `\boundcontroller.\id3' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\id3' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11164' with positive edge clock.
-Creating register for signal `\boundcontroller.\hit1' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\hit1' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11165' with positive edge clock.
-Creating register for signal `\boundcontroller.\hit2' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\hit2' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11166' with positive edge clock.
-Creating register for signal `\boundcontroller.\hit3' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\hit3' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11167' with positive edge clock.
-Creating register for signal `\boundcontroller.\resetcnt' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\resetcnt' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11168' with positive edge clock.
-Creating register for signal `\boundcontroller.\passCTSout' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\passCTSout' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11169' with positive edge clock.
-Creating register for signal `\boundcontroller.\statepeek' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\statepeek' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11170' with positive edge clock.
-Creating register for signal `\boundcontroller.\cts' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\cts' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11171' with positive edge clock.
-Creating register for signal `\boundcontroller.\startAddr' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\startAddr' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11172' with positive edge clock.
-Creating register for signal `\boundcontroller.\resetcount' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\resetcount' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11173' with positive edge clock.
-Creating register for signal `\boundcontroller.\raygroupoutl' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\raygroupoutl' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11174' with positive edge clock.
-Creating register for signal `\boundcontroller.\count' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\count' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11175' with positive edge clock.
-Creating register for signal `\boundcontroller.\triDatalatch' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\triDatalatch' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11176' with positive edge clock.
-Creating register for signal `\boundcontroller.\subcount' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\subcount' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11177' with positive edge clock.
-Creating register for signal `\boundcontroller.\maskcount' using process `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Creating register for signal `\boundcontroller.\maskcount' using process `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
   created $dff cell `$procdff$11178' with positive edge clock.
-Creating register for signal `\resulttransmit.\rgResultData' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
+Creating register for signal `\resulttransmit.\rgResultData' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
   created $dff cell `$procdff$11179' with positive edge clock.
-Creating register for signal `\resulttransmit.\rgResultReady' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
+Creating register for signal `\resulttransmit.\rgResultReady' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
   created $dff cell `$procdff$11180' with positive edge clock.
-Creating register for signal `\resulttransmit.\rgResultSource' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
+Creating register for signal `\resulttransmit.\rgResultSource' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
   created $dff cell `$procdff$11181' with positive edge clock.
-Creating register for signal `\resulttransmit.\state' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
+Creating register for signal `\resulttransmit.\state' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
   created $dff cell `$procdff$11182' with positive edge clock.
-Creating register for signal `\resulttransmit.\hit01al' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
+Creating register for signal `\resulttransmit.\hit01al' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
   created $dff cell `$procdff$11183' with positive edge clock.
-Creating register for signal `\resulttransmit.\hit01bl' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
+Creating register for signal `\resulttransmit.\hit01bl' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
   created $dff cell `$procdff$11184' with positive edge clock.
-Creating register for signal `\resulttransmit.\hit01cl' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
+Creating register for signal `\resulttransmit.\hit01cl' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
   created $dff cell `$procdff$11185' with positive edge clock.
-Creating register for signal `\resulttransmit.\hit10al' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
+Creating register for signal `\resulttransmit.\hit10al' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
   created $dff cell `$procdff$11186' with positive edge clock.
-Creating register for signal `\resulttransmit.\hit10bl' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
+Creating register for signal `\resulttransmit.\hit10bl' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
   created $dff cell `$procdff$11187' with positive edge clock.
-Creating register for signal `\resulttransmit.\hit10cl' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
+Creating register for signal `\resulttransmit.\hit10cl' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
   created $dff cell `$procdff$11188' with positive edge clock.
-Creating register for signal `\resulttransmit.\pending01' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
+Creating register for signal `\resulttransmit.\pending01' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
   created $dff cell `$procdff$11189' with positive edge clock.
-Creating register for signal `\resulttransmit.\pending10' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
+Creating register for signal `\resulttransmit.\pending10' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
   created $dff cell `$procdff$11190' with positive edge clock.
-Creating register for signal `\resulttransmit.\valid01d' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
+Creating register for signal `\resulttransmit.\valid01d' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
   created $dff cell `$procdff$11191' with positive edge clock.
-Creating register for signal `\resulttransmit.\valid10d' using process `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
+Creating register for signal `\resulttransmit.\valid10d' using process `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
   created $dff cell `$procdff$11192' with positive edge clock.
-Creating register for signal `\paj_boundtop_hierarchy_no_mem.\oldresultid' using process `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:340$57'.
+Creating register for signal `\paj_boundtop_hierarchy_no_mem.\oldresultid' using process `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:340$57'.
   created $dff cell `$procdff$11193' with positive edge clock.
-Creating register for signal `\paj_boundtop_hierarchy_no_mem.\reset' using process `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:340$57'.
+Creating register for signal `\paj_boundtop_hierarchy_no_mem.\reset' using process `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:340$57'.
   created $dff cell `$procdff$11194' with positive edge clock.
-Creating register for signal `\paj_boundtop_hierarchy_no_mem.\peeklatch' using process `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:340$57'.
+Creating register for signal `\paj_boundtop_hierarchy_no_mem.\peeklatch' using process `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:340$57'.
   created $dff cell `$procdff$11195' with positive edge clock.
-Creating register for signal `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.\out' using process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:21$500'.
+Creating register for signal `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.\out' using process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:21$500'.
   created $dff cell `$procdff$11196' with positive edge clock.
-Creating register for signal `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:23$499_ADDR' using process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:21$500'.
+Creating register for signal `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:23$499_ADDR' using process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:21$500'.
   created $dff cell `$procdff$11197' with positive edge clock.
-Creating register for signal `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:23$499_DATA' using process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:21$500'.
+Creating register for signal `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:23$499_DATA' using process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:21$500'.
   created $dff cell `$procdff$11198' with positive edge clock.
-Creating register for signal `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:23$499_EN' using process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:21$500'.
+Creating register for signal `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:23$499_EN' using process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:21$500'.
   created $dff cell `$procdff$11199' with positive edge clock.
-Creating register for signal `\resultcounter.\count' using process `\resultcounter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2887$491'.
+Creating register for signal `\resultcounter.\count' using process `\resultcounter.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2887$491'.
   created $dff cell `$procdff$11200' with positive edge clock.
-Creating register for signal `\resultcounter.\curr' using process `\resultcounter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2887$491'.
+Creating register for signal `\resultcounter.\curr' using process `\resultcounter.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2887$491'.
   created $dff cell `$procdff$11201' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\spram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2859$485'.
-Removing empty process `spram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2859$485'.
-Found and cleaned up 36 empty switches in `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2632$430'.
-Removing empty process `listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2632$430'.
-Found and cleaned up 1 empty switch in `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
-Removing empty process `listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
-Found and cleaned up 3 empty switches in `\listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2580$424'.
-Removing empty process `listhandler.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2580$424'.
-Found and cleaned up 10 empty switches in `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
-Removing empty process `sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
-Found and cleaned up 7 empty switches in `\sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2299$364'.
-Removing empty process `sortedstack.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2299$364'.
-Found and cleaned up 4 empty switches in `\rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
-Removing empty process `rayinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
-Found and cleaned up 3 empty switches in `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330'.
-Removing empty process `resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2091$330'.
-Found and cleaned up 1 empty switch in `\resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
-Removing empty process `resultinterface.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
-Found and cleaned up 11 empty switches in `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1816$314'.
-Removing empty process `sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1816$314'.
-Found and cleaned up 1 empty switch in `\sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1796$312'.
-Removing empty process `sramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1796$312'.
-Found and cleaned up 11 empty switches in `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1591$298'.
-Removing empty process `vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1591$298'.
-Found and cleaned up 1 empty switch in `\vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1572$296'.
-Removing empty process `vblockramcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1572$296'.
-Found and cleaned up 4 empty switches in `\onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1480$289'.
-Removing empty process `onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1480$289'.
-Found and cleaned up 1 empty switch in `\onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1465$287'.
-Removing empty process `onlyonecycle.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:1465$287'.
-Found and cleaned up 61 empty switches in `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98'.
-Removing empty process `boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:862$98'.
-Found and cleaned up 2 empty switches in `\boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
-Removing empty process `boundcontroller.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
-Found and cleaned up 3 empty switches in `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:488$67'.
-Removing empty process `resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:488$67'.
-Found and cleaned up 5 empty switches in `\resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
-Removing empty process `resulttransmit.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
-Found and cleaned up 3 empty switches in `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:340$57'.
-Removing empty process `paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:340$57'.
-Found and cleaned up 2 empty switches in `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:316$39'.
-Removing empty process `paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:316$39'.
-Found and cleaned up 1 empty switch in `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:21$500'.
-Removing empty process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:21$500'.
-Found and cleaned up 2 empty switches in `\resultcounter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2887$491'.
-Removing empty process `resultcounter.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2887$491'.
+Found and cleaned up 1 empty switch in `\spram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2859$485'.
+Removing empty process `spram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2859$485'.
+Found and cleaned up 36 empty switches in `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2632$430'.
+Removing empty process `listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2632$430'.
+Found and cleaned up 1 empty switch in `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
+Removing empty process `listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2603$428'.
+Found and cleaned up 3 empty switches in `\listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2580$424'.
+Removing empty process `listhandler.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2580$424'.
+Found and cleaned up 10 empty switches in `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Removing empty process `sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2338$387'.
+Found and cleaned up 7 empty switches in `\sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2299$364'.
+Removing empty process `sortedstack.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2299$364'.
+Found and cleaned up 4 empty switches in `\rayinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
+Removing empty process `rayinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2201$333'.
+Found and cleaned up 3 empty switches in `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330'.
+Removing empty process `resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2091$330'.
+Found and cleaned up 1 empty switch in `\resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Removing empty process `resultinterface.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2043$328'.
+Found and cleaned up 11 empty switches in `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1816$314'.
+Removing empty process `sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1816$314'.
+Found and cleaned up 1 empty switch in `\sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1796$312'.
+Removing empty process `sramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1796$312'.
+Found and cleaned up 11 empty switches in `\vblockramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1591$298'.
+Removing empty process `vblockramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1591$298'.
+Found and cleaned up 1 empty switch in `\vblockramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1572$296'.
+Removing empty process `vblockramcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1572$296'.
+Found and cleaned up 4 empty switches in `\onlyonecycle.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1480$289'.
+Removing empty process `onlyonecycle.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1480$289'.
+Found and cleaned up 1 empty switch in `\onlyonecycle.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1465$287'.
+Removing empty process `onlyonecycle.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:1465$287'.
+Found and cleaned up 61 empty switches in `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98'.
+Removing empty process `boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:862$98'.
+Found and cleaned up 2 empty switches in `\boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Removing empty process `boundcontroller.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:763$89'.
+Found and cleaned up 3 empty switches in `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:488$67'.
+Removing empty process `resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:488$67'.
+Found and cleaned up 5 empty switches in `\resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
+Removing empty process `resulttransmit.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:444$61'.
+Found and cleaned up 3 empty switches in `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:340$57'.
+Removing empty process `paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:340$57'.
+Found and cleaned up 2 empty switches in `\paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:316$39'.
+Removing empty process `paj_boundtop_hierarchy_no_mem.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:316$39'.
+Found and cleaned up 1 empty switch in `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:21$500'.
+Removing empty process `$paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:21$500'.
+Found and cleaned up 2 empty switches in `\resultcounter.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2887$491'.
+Removing empty process `resultcounter.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2887$491'.
 Cleaned up 174 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -1441,7 +1441,7 @@ Setting constant 0-bit at position 9 on $procdff$11066 ($dff) from module spram.
 Setting constant 0-bit at position 10 on $procdff$11066 ($dff) from module spram.
 Setting constant 0-bit at position 11 on $procdff$11066 ($dff) from module spram.
 Setting constant 0-bit at position 12 on $procdff$11066 ($dff) from module spram.
-Adding EN signal on $procdff$11067 ($dff) from module spram (D = $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2864$487_Y, Q = \mem1).
+Adding EN signal on $procdff$11067 ($dff) from module spram (D = $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2864$487_Y, Q = \mem1).
 Adding SRST signal on $procdff$11073 ($dff) from module listhandler (D = \temp_writelevel, Q = \writelevel, rval = 2'00).
 Adding SRST signal on $procdff$11072 ($dff) from module listhandler (D = \temp_readlevel, Q = \readlevel, rval = 2'00).
 Adding EN signal on $procdff$11071 ($dff) from module listhandler (D = \temp_peekstate, Q = \peekstate).
@@ -1603,11 +1603,11 @@ Adding SRST signal on $procdff$11195 ($dff) from module paj_boundtop_hierarchy_n
 Adding EN signal on $auto$ff.cc:262:slice$11530 ($sdff) from module paj_boundtop_hierarchy_no_mem (D = \peekdata, Q = \peeklatch).
 Adding SRST signal on $procdff$11194 ($dff) from module paj_boundtop_hierarchy_no_mem (D = $procmux$5346_Y, Q = \reset, rval = 1'0).
 Adding SRST signal on $procdff$11193 ($dff) from module paj_boundtop_hierarchy_no_mem (D = \resultid, Q = \oldresultid, rval = 2'00).
-Adding EN signal on $procdff$11196 ($dff) from module $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:26$507_DATA, Q = \out).
+Adding EN signal on $procdff$11196 ($dff) from module $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:26$507_DATA, Q = \out).
 Adding SRST signal on $procdff$11201 ($dff) from module resultcounter (D = $procmux$5377_Y, Q = \curr, rval = 2'00).
 Adding EN signal on $auto$ff.cc:262:slice$11535 ($sdff) from module resultcounter (D = \resultID, Q = \curr).
 Adding SRST signal on $procdff$11200 ($dff) from module resultcounter (D = $procmux$5382_Y, Q = \count, rval = 4'1000).
-Adding EN signal on $auto$ff.cc:262:slice$11537 ($sdff) from module resultcounter (D = $sub$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/boundtop.v:2898$498_Y [3:0], Q = \count).
+Adding EN signal on $auto$ff.cc:262:slice$11537 ($sdff) from module resultcounter (D = $sub$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/boundtop.v:2898$498_Y [3:0], Q = \count).
 
 4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \spram..
@@ -2535,10 +2535,8 @@ Optimizing module vblockramcontroller.
    Number of memory bits:          320
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                          32
+     $mux                           43
 
 === boundcontroller ===
 
@@ -2550,22 +2548,22 @@ Optimizing module vblockramcontroller.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                373
-     $add                            7
+     $add                          187
      $and                          127
-     $dffe                           1
-     $dlatch                        30
-     $eq                            29
-     $logic_not                      4
-     $lt                             1
-     $mux                           56
-     $ne                             3
+     $dffe                           5
+     $dlatch                       268
+     $eq                           157
+     $logic_not                     23
+     $lt                             2
+     $mux                          265
+     $ne                            15
      $not                           44
      $or                             7
-     $pmux                           6
-     $reduce_bool                    3
-     $reduce_or                     23
-     $sdff                          28
-     $sub                            4
+     $pmux                          42
+     $reduce_bool                   18
+     $reduce_or                     84
+     $sdff                         262
+     $sub                          128
 
 === listhandler ===
 
@@ -2577,19 +2575,18 @@ Optimizing module vblockramcontroller.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                422
-     $add                            4
+     $add                          128
      $and                          257
-     $dffe                           1
-     $dlatch                        13
-     $eq                            17
-     $logic_not                      4
-     $mux                           31
+     $dffe                           2
+     $dlatch                        35
+     $eq                            45
+     $logic_not                      9
+     $mux                          161
      $not                           28
      $or                             7
-     $pmux                           3
-     $reduce_or                     48
-     $sdff                           8
-     spram                           1
+     $pmux                           7
+     $reduce_or                    110
+     $sdff                          19
 
 === onlyonecycle ===
 
@@ -2602,14 +2599,14 @@ Optimizing module vblockramcontroller.
    Number of processes:              0
    Number of cells:                 21
      $and                            3
-     $dlatch                         3
-     $eq                             2
-     $logic_not                      1
-     $mux                            5
+     $dlatch                         4
+     $eq                             4
+     $logic_not                      2
+     $mux                            8
      $not                            3
-     $pmux                           1
-     $sdff                           2
-     $sub                            1
+     $pmux                           2
+     $sdff                           3
+     $sub                           32
 
 === paj_boundtop_hierarchy_no_mem ===
 
@@ -2622,23 +2619,13 @@ Optimizing module vblockramcontroller.
    Number of processes:              0
    Number of cells:                 44
      $and                            2
-     $eq                             4
-     $mux                            6
-     $ne                             1
-     $or                            14
-     $reduce_bool                    2
-     $sdff                           2
-     $sdffe                          1
-     boundcontroller                 2
-     listhandler                     2
-     onlyonecycle                    1
-     rayinterface                    1
-     resultcounter                   1
-     resultinterface                 1
-     resulttransmit                  1
-     sortedstack                     1
-     sramcontroller                  1
-     vblockramcontroller             1
+     $eq                             8
+     $mux                           24
+     $ne                             2
+     $or                            57
+     $reduce_bool                    4
+     $sdff                           3
+     $sdffe                        104
 
 === rayinterface ===
 
@@ -2651,14 +2638,14 @@ Optimizing module vblockramcontroller.
    Number of processes:              0
    Number of cells:                 24
      $and                            1
-     $mux                            9
-     $ne                             1
+     $mux                           19
+     $ne                             2
      $not                            1
-     $reduce_and                     1
-     $reduce_bool                    1
-     $reduce_or                      1
-     $sdff                           5
-     $sdffe                          4
+     $reduce_and                     2
+     $reduce_bool                    2
+     $reduce_or                      2
+     $sdff                          43
+     $sdffe                         37
 
 === resultcounter ===
 
@@ -2671,12 +2658,12 @@ Optimizing module vblockramcontroller.
    Number of processes:              0
    Number of cells:                 10
      $and                            2
-     $logic_not                      1
-     $mux                            1
+     $logic_not                      4
+     $mux                            2
      $or                             1
-     $reduce_bool                    2
-     $sdffe                          2
-     $sub                            1
+     $reduce_bool                    6
+     $sdffe                          6
+     $sub                           32
 
 === resultinterface ===
 
@@ -2689,14 +2676,14 @@ Optimizing module vblockramcontroller.
    Number of processes:              0
    Number of cells:                 69
      $and                           10
-     $dlatch                        18
-     $eq                             8
-     $logic_not                      1
-     $mux                            2
+     $dlatch                       250
+     $eq                            32
+     $logic_not                      4
+     $mux                            5
      $not                           10
-     $pmux                           1
-     $reduce_or                      1
-     $sdff                          18
+     $pmux                           4
+     $reduce_or                      2
+     $sdff                         250
 
 === resulttransmit ===
 
@@ -2710,16 +2697,16 @@ Optimizing module vblockramcontroller.
    Number of cells:                 68
      $and                            8
      $dffe                           8
-     $dlatch                         4
-     $eq                             8
-     $logic_not                      1
-     $logic_or                      11
-     $mux                            3
+     $dlatch                        39
+     $eq                            32
+     $logic_not                      4
+     $logic_or                     176
+     $mux                           10
      $not                           10
-     $pmux                           3
-     $reduce_and                     2
-     $reduce_or                      4
-     $sdff                           4
+     $pmux                          37
+     $reduce_and                     4
+     $reduce_or                     14
+     $sdff                          39
      $sdffe                          2
 
 === sortedstack ===
@@ -2732,15 +2719,15 @@ Optimizing module vblockramcontroller.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                163
-     $eq                             6
-     $logic_not                      1
-     $lt                             7
-     $mux                           98
+     $eq                            18
+     $logic_not                      3
+     $lt                           224
+     $mux                         1433
      $not                            7
      $or                             8
-     $reduce_and                     7
-     $reduce_bool                    6
-     $sdffe                         23
+     $reduce_and                    14
+     $reduce_bool                   27
+     $sdffe                        336
 
 === spram ===
 
@@ -2752,7 +2739,7 @@ Optimizing module vblockramcontroller.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dffe                           2
+     $dffe                          26
 
 === spramblock ===
 
@@ -2764,7 +2751,6 @@ Optimizing module vblockramcontroller.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram      1
 
 === sramcontroller ===
 
@@ -2776,17 +2762,17 @@ Optimizing module vblockramcontroller.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 86
-     $add                            1
+     $add                           32
      $and                           24
-     $dffe                           1
-     $dlatch                        12
-     $eq                             5
-     $logic_not                      1
-     $mux                           14
+     $dffe                           3
+     $dlatch                       185
+     $eq                            15
+     $logic_not                      3
+     $mux                          114
      $not                           10
-     $pmux                           3
-     $reduce_or                     11
-     $sdff                           4
+     $pmux                          25
+     $reduce_or                     29
+     $sdff                          86
 
 === vblockramcontroller ===
 
@@ -2798,66 +2784,52 @@ Optimizing module vblockramcontroller.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 67
-     $add                            1
+     $add                           32
      $and                           19
-     $dlatch                         7
-     $eq                             5
-     $logic_not                      1
-     $mux                           12
+     $dlatch                        49
+     $eq                            15
+     $logic_not                      3
+     $mux                           42
      $not                            9
-     $pmux                           1
-     $reduce_bool                    1
-     $reduce_or                      6
-     $sdff                           4
-     spramblock                      1
+     $pmux                           3
+     $reduce_bool                    3
+     $reduce_or                     13
+     $sdff                          46
 
 === design hierarchy ===
 
    paj_boundtop_hierarchy_no_mem      1
-     boundcontroller                 2
-     listhandler                     2
-       spram                         1
-     onlyonecycle                    1
-     rayinterface                    1
-     resultcounter                   1
-     resultinterface                 1
-     resulttransmit                  1
-     sortedstack                     1
-     sramcontroller                  1
-     vblockramcontroller             1
-       spramblock                    1
-         $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram      1
+     boundcontroller                 0
+     listhandler                     0
+       spram                         0
+     onlyonecycle                    0
+     rayinterface                    0
+     resultcounter                   0
+     resultinterface                 0
+     resulttransmit                  0
+     sortedstack                     0
+     sramcontroller                  0
+     vblockramcontroller             0
+       spramblock                    0
+         $paramod$f2486c22f8156b191d4f2958486e3c6079702f1e\single_port_ram      0
 
-   Number of wires:               2547
-   Number of wire bits:          12628
-   Number of public wires:         715
-   Number of public wire bits:    7290
-   Number of memories:               1
-   Number of memory bits:          320
+   Number of wires:                191
+   Number of wire bits:           1830
+   Number of public wires:         178
+   Number of public wire bits:    1808
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               2137
-     $add                           24
-     $and                          837
-     $dffe                          18
-     $dlatch                       130
-     $eq                           130
-     $logic_not                     23
-     $logic_or                      11
-     $lt                             9
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                          327
-     $ne                             8
-     $not                          194
-     $or                            51
-     $pmux                          27
-     $reduce_and                    10
-     $reduce_bool                   18
-     $reduce_or                    165
-     $sdff                         111
-     $sdffe                         32
-     $sub                           10
+   Number of cells:                 44
+     $and                            2
+     $eq                             8
+     $mux                           24
+     $ne                             2
+     $or                            57
+     $reduce_bool                    4
+     $sdff                           3
+     $sdffe                        104
 
-End of script. Logfile hash: 6cdd46bde3, CPU: user 1.80s system 0.01s, MEM: 34.52 MB peak
+End of script. Logfile hash: c8795e31d8, CPU: user 1.88s system 0.00s, MEM: 35.01 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 26% 8x opt_expr (0 sec), 20% 7x opt_merge (0 sec), ...
+Time spent: 26% 8x opt_expr (0 sec), 19% 7x opt_merge (0 sec), ...

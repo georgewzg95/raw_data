@@ -11,10 +11,8 @@
    Number of memory bits:           64
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                          16
+     $mux                           24
 
 === $paramod$8f649395dea8fbb2ab37b257a4c27adb75bba46a\generic_fifo_sc_a ===
 
@@ -26,14 +24,13 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 22
-     $add                            2
-     $adffe                          3
+     $add                            6
+     $adffe                          7
      $and                            3
-     $eq                             2
+     $eq                             6
      $logic_not                      1
-     $mux                            7
-     $paramod$77ff764a4267a648a0627d0b67f82ec67f8fdc0c\dpram      1
-     $reduce_bool                    3
+     $mux                           15
+     $reduce_bool                    7
 
 === $paramod$c5846c4e06878c36e812a0746f90a79309de398c\spram ===
 
@@ -45,10 +42,8 @@
    Number of memory bits:         1024
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                           8
+     $mux                           17
 
 === bvb ===
 
@@ -60,44 +55,36 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 50
-     $add                            1
-     $adffe                          2
+     $add                           32
+     $adffe                         10
      $and                            2
-     $dffe                           3
+     $dffe                          41
      $not                            3
-     $paramod$8f649395dea8fbb2ab37b257a4c27adb75bba46a\generic_fifo_sc_a     32
-     $paramod$c5846c4e06878c36e812a0746f90a79309de398c\spram      1
-     $reduce_and                     1
-     $shl                            2
-     $shr                            3
+     $reduce_and                     2
+     $shl                           64
+     $shr                          320
 
 === design hierarchy ===
 
    bvb                               1
-     $paramod$8f649395dea8fbb2ab37b257a4c27adb75bba46a\generic_fifo_sc_a     32
-       $paramod$77ff764a4267a648a0627d0b67f82ec67f8fdc0c\dpram      1
-     $paramod$c5846c4e06878c36e812a0746f90a79309de398c\spram      1
+     $paramod$8f649395dea8fbb2ab37b257a4c27adb75bba46a\generic_fifo_sc_a      0
+       $paramod$77ff764a4267a648a0627d0b67f82ec67f8fdc0c\dpram      0
+     $paramod$c5846c4e06878c36e812a0746f90a79309de398c\spram      0
 
-   Number of wires:               1543
-   Number of wire bits:           6600
-   Number of public wires:         825
-   Number of public wire bits:    3747
-   Number of memories:              33
-   Number of memory bits:         3072
+   Number of wires:                 30
+   Number of wire bits:           1134
+   Number of public wires:          20
+   Number of public wire bits:     745
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               1079
-     $add                           65
-     $adffe                         98
-     $and                           98
-     $dffe                          68
-     $eq                            64
-     $logic_not                     32
-     $memrd                         65
-     $memwr_v2                      65
-     $mux                          419
+   Number of cells:                 50
+     $add                           32
+     $adffe                         10
+     $and                            2
+     $dffe                          41
      $not                            3
-     $reduce_and                     1
-     $reduce_bool                   96
-     $shl                            2
-     $shr                            3
+     $reduce_and                     2
+     $shl                           64
+     $shr                          320
 

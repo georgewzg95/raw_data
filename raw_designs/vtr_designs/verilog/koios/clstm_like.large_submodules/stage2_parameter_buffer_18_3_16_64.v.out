@@ -11,10 +11,8 @@
    Number of memory bits:         1728
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                         288
+     $mux                          295
 
 === counter_63_3 ===
 
@@ -26,10 +24,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $add                            1
-     $le                             1
-     $mux                            1
-     $sdffe                          1
+     $add                           32
+     $le                            32
+     $mux                           14
+     $sdffe                         14
 
 === stage2_parameter_buffer_18_3_16_64 ===
 
@@ -41,14 +39,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     counter_63_3                    1
-     weight_buffer_18_16_3_64_Wfc_0      1
-     weight_buffer_18_16_3_64_Wic_0      1
-     weight_buffer_18_16_3_64_Woc_0      1
-     weight_buffer_18_16_3_64_bc_0      1
-     weight_buffer_18_16_3_64_bf_0      1
-     weight_buffer_18_16_3_64_bi_0      1
-     weight_buffer_18_16_3_64_bo_0      1
 
 === weight_buffer_18_16_3_64_Wfc_0 ===
 
@@ -60,9 +50,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     $add                            2
-     $dff                            3
-     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+     $add                           12
+     $dff                           18
 
 === weight_buffer_18_16_3_64_Wic_0 ===
 
@@ -74,9 +63,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     $add                            2
-     $dff                            3
-     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+     $add                           12
+     $dff                           18
 
 === weight_buffer_18_16_3_64_Woc_0 ===
 
@@ -88,9 +76,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     $add                            2
-     $dff                            3
-     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+     $add                           12
+     $dff                           18
 
 === weight_buffer_18_16_3_64_bc_0 ===
 
@@ -102,9 +89,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     $add                            2
-     $dff                            3
-     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+     $add                           12
+     $dff                           18
 
 === weight_buffer_18_16_3_64_bf_0 ===
 
@@ -116,9 +102,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     $add                            2
-     $dff                            3
-     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+     $add                           12
+     $dff                           18
 
 === weight_buffer_18_16_3_64_bi_0 ===
 
@@ -130,9 +115,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     $add                            2
-     $dff                            3
-     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+     $add                           12
+     $dff                           18
 
 === weight_buffer_18_16_3_64_bo_0 ===
 
@@ -144,43 +128,34 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     $add                            2
-     $dff                            3
-     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+     $add                           12
+     $dff                           18
 
 === design hierarchy ===
 
    stage2_parameter_buffer_18_3_16_64      1
-     counter_63_3                    1
-     weight_buffer_18_16_3_64_Wfc_0      1
-       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
-     weight_buffer_18_16_3_64_Wic_0      1
-       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
-     weight_buffer_18_16_3_64_Woc_0      1
-       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
-     weight_buffer_18_16_3_64_bc_0      1
-       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
-     weight_buffer_18_16_3_64_bf_0      1
-       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
-     weight_buffer_18_16_3_64_bi_0      1
-       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
-     weight_buffer_18_16_3_64_bo_0      1
-       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+     counter_63_3                    0
+     weight_buffer_18_16_3_64_Wfc_0      0
+       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      0
+     weight_buffer_18_16_3_64_Wic_0      0
+       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      0
+     weight_buffer_18_16_3_64_Woc_0      0
+       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      0
+     weight_buffer_18_16_3_64_bc_0      0
+       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      0
+     weight_buffer_18_16_3_64_bf_0      0
+       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      0
+     weight_buffer_18_16_3_64_bi_0      0
+       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      0
+     weight_buffer_18_16_3_64_bo_0      0
+       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      0
 
-   Number of wires:               1306
-   Number of wire bits:          55199
-   Number of public wires:        1205
-   Number of public wire bits:   36798
-   Number of memories:              21
-   Number of memory bits:        36288
+   Number of wires:                676
+   Number of wire bits:          12113
+   Number of public wires:         676
+   Number of public wire bits:   12113
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                165
-     $add                           15
-     $dff                           21
-     $dffe                          21
-     $le                             1
-     $memrd                         21
-     $memwr_v2                      21
-     $mux                           64
-     $sdffe                          1
+   Number of cells:                  8
 

@@ -11,17 +11,15 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                932
-     $eq                             5
-     $gt                             1
+     $eq                            15
+     $gt                            32
      $logic_and                      2
-     $logic_not                      2
-     $mux                            8
-     $pmux                           3
-     $reduce_bool                    1
-     $sdffe                        903
-     $sub                            3
-     mult_signed_32_bc               3
-     signed_div_30                   1
+     $logic_not                     35
+     $mux                          225
+     $pmux                          96
+     $reduce_bool                   32
+     $sdffe                      24366
+     $sub                           96
 
 === Div_64b ===
 
@@ -33,10 +31,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  6
-     $mux                            2
-     $neg                            2
+     $mux                           96
+     $neg                           96
      $xor                            1
-     Div_64b_unsigned                1
 
 === Div_64b_unsigned ===
 
@@ -48,10 +45,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                315
-     $dff                           59
-     $ge                            64
-     $mux                          128
-     $sub                           64
+     $dff                         3105
+     $ge                          4064
+     $mux                         6144
+     $sub                         4064
 
 === mult_signed_32_bc ===
 
@@ -63,11 +60,11 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 12
-     $add                            3
-     $dff                            1
-     $mul                            1
-     $mux                            3
-     $not                            3
+     $add                          128
+     $dff                           64
+     $mul                           64
+     $mux                          128
+     $not                          128
      $xor                            1
 
 === signed_div_30 ===
@@ -80,38 +77,30 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     Div_64b                         1
 
 === design hierarchy ===
 
    Boundary                          1
-     mult_signed_32_bc               3
-     signed_div_30                   1
-       Div_64b                       1
-         Div_64b_unsigned            1
+     mult_signed_32_bc               0
+     signed_div_30                   0
+       Div_64b                       0
+         Div_64b_unsigned            0
 
-   Number of wires:               2291
-   Number of wire bits:          68907
-   Number of public wires:        2137
-   Number of public wire bits:   64159
+   Number of wires:               1948
+   Number of wire bits:          51087
+   Number of public wires:        1934
+   Number of public wire bits:   50948
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               1284
-     $add                            9
-     $dff                           62
-     $eq                             5
-     $ge                            64
-     $gt                             1
+   Number of cells:                932
+     $eq                            15
+     $gt                            32
      $logic_and                      2
-     $logic_not                      2
-     $mul                            3
-     $mux                          147
-     $neg                            2
-     $not                            9
-     $pmux                           3
-     $reduce_bool                    1
-     $sdffe                        903
-     $sub                           67
-     $xor                            4
+     $logic_not                     35
+     $mux                          225
+     $pmux                          96
+     $reduce_bool                   32
+     $sdffe                      24366
+     $sub                           96
 

@@ -11,10 +11,8 @@
    Number of memory bits:          256
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                         128
+     $mux                          138
 
 === rfifo ===
 
@@ -26,43 +24,40 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 82
-     $add                            4
-     $dffe                          19
-     $eq                            15
+     $add                           17
+     $dffe                        1037
+     $eq                            60
      $logic_and                      3
-     $logic_not                      4
-     $mux                            2
+     $logic_not                     11
+     $mux                           10
      $not                           15
-     $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram      1
-     $reduce_and                    15
-     $reduce_bool                    2
-     $sdff                           1
-     $sub                            1
+     $reduce_and                   135
+     $reduce_bool                    7
+     $sdff                           4
+     $sub                            5
 
 === design hierarchy ===
 
    rfifo                             1
-     $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram      1
+     $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram      0
 
-   Number of wires:                 90
-   Number of wire bits:           2045
-   Number of public wires:          22
-   Number of public wire bits:    1568
-   Number of memories:               1
-   Number of memory bits:          256
+   Number of wires:                 73
+   Number of wire bits:           1386
+   Number of public wires:          13
+   Number of public wire bits:    1301
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 93
-     $add                            4
-     $dffe                          21
-     $eq                            15
+   Number of cells:                 82
+     $add                           17
+     $dffe                        1037
+     $eq                            60
      $logic_and                      3
-     $logic_not                      4
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            8
+     $logic_not                     11
+     $mux                           10
      $not                           15
-     $reduce_and                    15
-     $reduce_bool                    2
-     $sdff                           1
-     $sub                            1
+     $reduce_and                   135
+     $reduce_bool                    7
+     $sdff                           4
+     $sub                            5
 

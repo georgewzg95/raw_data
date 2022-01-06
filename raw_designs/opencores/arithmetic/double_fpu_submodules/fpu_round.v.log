@@ -179,15 +179,15 @@ Optimizing module fpu_round.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 25
-     $add                            2
+     $add                           88
      $and                            6
-     $eq                             2
-     $logic_not                      2
-     $mux                            4
+     $eq                             4
+     $logic_not                      3
+     $mux                          156
      $or                             2
-     $reduce_or                      1
-     $sdff                           6
+     $reduce_or                      2
+     $sdff                         256
 
-End of script. Logfile hash: 366d034603, CPU: user 0.03s system 0.00s, MEM: 11.64 MB peak
+End of script. Logfile hash: 464f2a01bc, CPU: user 0.06s system 0.00s, MEM: 11.89 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 28% 4x opt_expr (0 sec), 14% 3x opt_merge (0 sec), ...
+Time spent: 26% 4x opt_expr (0 sec), 19% 2x opt_clean (0 sec), ...

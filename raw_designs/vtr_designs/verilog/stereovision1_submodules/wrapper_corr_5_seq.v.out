@@ -11,10 +11,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 11
-     $add                            1
-     $dff                            3
-     $dffe                           5
-     $mul                            2
+     $add                           16
+     $dff                           48
+     $dffe                          48
+     $mul                           32
 
 === sh_reg ===
 
@@ -26,7 +26,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $dffe                           2
+     $dffe                          16
 
 === wrapper_corr_5_seq ===
 
@@ -38,26 +38,21 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 19
-     $dffe                           6
-     corr_seq                        6
-     sh_reg                          7
+     $dffe                          96
 
 === design hierarchy ===
 
    wrapper_corr_5_seq                1
-     corr_seq                        6
-     sh_reg                          7
+     corr_seq                        0
+     sh_reg                          0
 
-   Number of wires:                176
-   Number of wire bits:           1644
-   Number of public wires:         158
-   Number of public wire bits:    1356
+   Number of wires:                 32
+   Number of wire bits:            338
+   Number of public wires:          32
+   Number of public wire bits:     338
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 86
-     $add                            6
-     $dff                           18
-     $dffe                          50
-     $mul                           12
+   Number of cells:                 19
+     $dffe                          96
 

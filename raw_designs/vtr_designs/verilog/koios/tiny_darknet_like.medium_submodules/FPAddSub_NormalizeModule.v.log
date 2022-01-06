@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/FPAddSub_NormalizeModule.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/FPAddSub_NormalizeModule.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/FPAddSub_NormalizeModule.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/FPAddSub_NormalizeModule.v' to AST representation.
 Generating RTLIL representation for module `\FPAddSub_NormalizeModule'.
 Successfully finished Verilog frontend.
 
@@ -59,17 +59,17 @@ Promoted 1 assignment to connection.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\FPAddSub_NormalizeModule.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/FPAddSub_NormalizeModule.v:60$14'.
+Creating decoders for process `\FPAddSub_NormalizeModule.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/FPAddSub_NormalizeModule.v:60$14'.
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
-No latch inferred for signal `\FPAddSub_NormalizeModule.\Lvl1' from process `\FPAddSub_NormalizeModule.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/FPAddSub_NormalizeModule.v:60$14'.
+No latch inferred for signal `\FPAddSub_NormalizeModule.\Lvl1' from process `\FPAddSub_NormalizeModule.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/FPAddSub_NormalizeModule.v:60$14'.
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Removing empty process `FPAddSub_NormalizeModule.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/FPAddSub_NormalizeModule.v:60$14'.
+Removing empty process `FPAddSub_NormalizeModule.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.medium_submodules/FPAddSub_NormalizeModule.v:60$14'.
 Cleaned up 0 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -150,8 +150,8 @@ Optimizing module FPAddSub_NormalizeModule.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 14
-     $mux                           14
+     $mux                           82
 
-End of script. Logfile hash: 2b21266753, CPU: user 0.01s system 0.00s, MEM: 10.94 MB peak
+End of script. Logfile hash: 536cab879b, CPU: user 0.02s system 0.00s, MEM: 11.22 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 33% 2x read_verilog (0 sec), 33% 2x opt_reduce (0 sec), ...
+Time spent: 19% 4x opt_expr (0 sec), 19% 3x opt_merge (0 sec), ...

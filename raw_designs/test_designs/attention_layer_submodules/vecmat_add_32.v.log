@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v' to AST representation.
 Generating RTLIL representation for module `\vecmat_add_32'.
 Generating RTLIL representation for module `\qadd2'.
 Successfully finished Verilog frontend.
@@ -63,7 +63,7 @@ Promoted 0 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\vecmat_add_32.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
+Creating decoders for process `\vecmat_add_32.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
      1/9: $0\ff15[15:0]
      2/9: $0\ff13[15:0]
      3/9: $0\ff11[15:0]
@@ -77,30 +77,30 @@ Creating decoders for process `\vecmat_add_32.$proc$/home/zhigang/DATA/raw_desig
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\vecmat_add_32.\data_out' using process `\vecmat_add_32.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
+Creating register for signal `\vecmat_add_32.\data_out' using process `\vecmat_add_32.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
   created $dff cell `$procdff$22' with positive edge clock.
-Creating register for signal `\vecmat_add_32.\ff1' using process `\vecmat_add_32.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
+Creating register for signal `\vecmat_add_32.\ff1' using process `\vecmat_add_32.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
   created $dff cell `$procdff$23' with positive edge clock.
-Creating register for signal `\vecmat_add_32.\ff3' using process `\vecmat_add_32.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
+Creating register for signal `\vecmat_add_32.\ff3' using process `\vecmat_add_32.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
   created $dff cell `$procdff$24' with positive edge clock.
-Creating register for signal `\vecmat_add_32.\ff5' using process `\vecmat_add_32.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
+Creating register for signal `\vecmat_add_32.\ff5' using process `\vecmat_add_32.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
   created $dff cell `$procdff$25' with positive edge clock.
-Creating register for signal `\vecmat_add_32.\ff7' using process `\vecmat_add_32.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
+Creating register for signal `\vecmat_add_32.\ff7' using process `\vecmat_add_32.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
   created $dff cell `$procdff$26' with positive edge clock.
-Creating register for signal `\vecmat_add_32.\ff9' using process `\vecmat_add_32.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
+Creating register for signal `\vecmat_add_32.\ff9' using process `\vecmat_add_32.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
   created $dff cell `$procdff$27' with positive edge clock.
-Creating register for signal `\vecmat_add_32.\ff11' using process `\vecmat_add_32.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
+Creating register for signal `\vecmat_add_32.\ff11' using process `\vecmat_add_32.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
   created $dff cell `$procdff$28' with positive edge clock.
-Creating register for signal `\vecmat_add_32.\ff13' using process `\vecmat_add_32.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
+Creating register for signal `\vecmat_add_32.\ff13' using process `\vecmat_add_32.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
   created $dff cell `$procdff$29' with positive edge clock.
-Creating register for signal `\vecmat_add_32.\ff15' using process `\vecmat_add_32.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
+Creating register for signal `\vecmat_add_32.\ff15' using process `\vecmat_add_32.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
   created $dff cell `$procdff$30' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `\vecmat_add_32.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
-Removing empty process `vecmat_add_32.$proc$/home/zhigang/DATA/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
+Found and cleaned up 1 empty switch in `\vecmat_add_32.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
+Removing empty process `vecmat_add_32.$proc$/home/zhigang/raw_data/raw_designs/test_designs/attention_layer_submodules/vecmat_add_32.v:33$1'.
 Cleaned up 1 empty switch.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -206,7 +206,7 @@ Optimizing module vecmat_add_32.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $add                            1
+     $add                           16
 
 === vecmat_add_32 ===
 
@@ -218,25 +218,23 @@ Optimizing module vecmat_add_32.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 40
-     $dffe                           9
-     qadd2                          31
+     $dffe                         144
 
 === design hierarchy ===
 
    vecmat_add_32                     1
-     qadd2                          31
+     qadd2                           0
 
-   Number of wires:                136
-   Number of wire bits:           2642
-   Number of public wires:         136
-   Number of public wire bits:    2642
+   Number of wires:                 43
+   Number of wire bits:           1154
+   Number of public wires:          43
+   Number of public wire bits:    1154
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 40
-     $add                           31
-     $dffe                           9
+     $dffe                         144
 
-End of script. Logfile hash: aaf68821b8, CPU: user 0.06s system 0.01s, MEM: 12.48 MB peak
+End of script. Logfile hash: df7d9e41ef, CPU: user 0.07s system 0.00s, MEM: 12.50 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 17% 4x opt_expr (0 sec), 17% 2x read_verilog (0 sec), ...
+Time spent: 17% 4x opt_expr (0 sec), 17% 3x opt_merge (0 sec), ...

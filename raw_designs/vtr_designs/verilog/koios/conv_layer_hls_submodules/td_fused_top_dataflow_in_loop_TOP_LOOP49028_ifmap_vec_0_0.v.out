@@ -11,10 +11,8 @@
    Number of memory bits:          512
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                          32
+     $mux                           44
 
 === td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0 ===
 
@@ -26,20 +24,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 77
-     $add                            3
+     $add                            4
      $and                            4
-     $eq                             1
+     $eq                             2
      $logic_and                     10
-     $logic_not                      6
+     $logic_not                      7
      $logic_or                       1
-     $mux                           35
+     $mux                          158
      $not                            1
-     $reduce_bool                    3
-     $reduce_or                      1
+     $reduce_bool                    6
+     $reduce_or                      2
      $sdff                           2
-     $sdffe                          7
-     $sub                            1
-     td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore      2
+     $sdffe                         23
+     $sub                            2
 
 === td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore ===
 
@@ -52,36 +49,32 @@
    Number of processes:              0
    Number of cells:                  3
      $and                            2
-     $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram      1
 
 === design hierarchy ===
 
    td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0      1
-     td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore      2
-       $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram      1
+     td_fused_top_dataflow_in_loop_TOP_LOOP49028_ifmap_vec_0_0_memcore      0
+       $paramod$a6bb0a4edb988afd58ba32a584a6be99c2cc4c33\dpram      0
 
-   Number of wires:                161
-   Number of wire bits:            895
-   Number of public wires:         101
-   Number of public wire bits:     635
-   Number of memories:               2
-   Number of memory bits:         1024
+   Number of wires:                 99
+   Number of wire bits:            365
+   Number of public wires:          55
+   Number of public wire bits:     317
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                103
-     $add                            3
-     $and                            8
-     $dffe                           4
-     $eq                             1
+   Number of cells:                 77
+     $add                            4
+     $and                            4
+     $eq                             2
      $logic_and                     10
-     $logic_not                      6
+     $logic_not                      7
      $logic_or                       1
-     $memrd                          4
-     $memwr_v2                       4
-     $mux                           47
+     $mux                          158
      $not                            1
-     $reduce_bool                    3
-     $reduce_or                      1
+     $reduce_bool                    6
+     $reduce_or                      2
      $sdff                           2
-     $sdffe                          7
-     $sub                            1
+     $sdffe                         23
+     $sub                            2
 

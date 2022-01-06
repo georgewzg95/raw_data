@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v' to AST representation.
 Generating RTLIL representation for module `\rfifo'.
 Generating RTLIL representation for module `\dual_port_ram'.
 Successfully finished Verilog frontend.
@@ -64,10 +64,10 @@ Removed 1 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:359$79 in module $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:350$71 in module $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:299$40 in module rfifo.
-Marked 32 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:228$6 in module rfifo.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:359$79 in module $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:350$71 in module $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:299$40 in module rfifo.
+Marked 32 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:228$6 in module rfifo.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -79,19 +79,19 @@ Promoted 6 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:359$79'.
-     1/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:361$70_EN[63:0]$85
-     2/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:361$70_DATA[63:0]$84
-     3/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:361$70_ADDR[3:0]$83
+Creating decoders for process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:359$79'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:361$70_EN[63:0]$85
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:361$70_DATA[63:0]$84
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:361$70_ADDR[3:0]$83
      4/4: $0\out2[63:0]
-Creating decoders for process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:350$71'.
-     1/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:352$69_EN[63:0]$77
-     2/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:352$69_DATA[63:0]$76
-     3/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:352$69_ADDR[3:0]$75
+Creating decoders for process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:350$71'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:352$69_EN[63:0]$77
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:352$69_DATA[63:0]$76
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:352$69_ADDR[3:0]$75
      4/4: $0\out1[63:0]
-Creating decoders for process `\rfifo.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:299$40'.
+Creating decoders for process `\rfifo.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:299$40'.
      1/1: $0\status_cnt[4:0]
-Creating decoders for process `\rfifo.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:228$6'.
+Creating decoders for process `\rfifo.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:228$6'.
      1/33: $0\q[2047:0] [2047:1984]
      2/33: $0\q[2047:0] [1983:1920]
      3/33: $0\q[2047:0] [1919:1856]
@@ -125,56 +125,56 @@ Creating decoders for process `\rfifo.$proc$/home/zhigang/DATA/raw_designs/vtr_d
     31/33: $0\q[2047:0] [127:64]
     32/33: $0\q[2047:0] [63:0]
     33/33: $0\counter[4:0]
-Creating decoders for process `\rfifo.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:221$4'.
+Creating decoders for process `\rfifo.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:221$4'.
      1/1: $0\rd_pointer[3:0]
-Creating decoders for process `\rfifo.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:214$2'.
+Creating decoders for process `\rfifo.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:214$2'.
      1/1: $0\wr_pointer[3:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.\out2' using process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:359$79'.
+Creating register for signal `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.\out2' using process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:359$79'.
   created $dff cell `$procdff$1706' with positive edge clock.
-Creating register for signal `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:361$70_ADDR' using process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:359$79'.
+Creating register for signal `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:361$70_ADDR' using process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:359$79'.
   created $dff cell `$procdff$1707' with positive edge clock.
-Creating register for signal `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:361$70_DATA' using process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:359$79'.
+Creating register for signal `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:361$70_DATA' using process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:359$79'.
   created $dff cell `$procdff$1708' with positive edge clock.
-Creating register for signal `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:361$70_EN' using process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:359$79'.
+Creating register for signal `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:361$70_EN' using process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:359$79'.
   created $dff cell `$procdff$1709' with positive edge clock.
-Creating register for signal `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.\out1' using process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:350$71'.
+Creating register for signal `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.\out1' using process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:350$71'.
   created $dff cell `$procdff$1710' with positive edge clock.
-Creating register for signal `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:352$69_ADDR' using process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:350$71'.
+Creating register for signal `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:352$69_ADDR' using process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:350$71'.
   created $dff cell `$procdff$1711' with positive edge clock.
-Creating register for signal `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:352$69_DATA' using process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:350$71'.
+Creating register for signal `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:352$69_DATA' using process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:350$71'.
   created $dff cell `$procdff$1712' with positive edge clock.
-Creating register for signal `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:352$69_EN' using process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:350$71'.
+Creating register for signal `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:352$69_EN' using process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:350$71'.
   created $dff cell `$procdff$1713' with positive edge clock.
-Creating register for signal `\rfifo.\status_cnt' using process `\rfifo.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:299$40'.
+Creating register for signal `\rfifo.\status_cnt' using process `\rfifo.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:299$40'.
   created $dff cell `$procdff$1714' with positive edge clock.
-Creating register for signal `\rfifo.\q' using process `\rfifo.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:228$6'.
+Creating register for signal `\rfifo.\q' using process `\rfifo.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:228$6'.
   created $dff cell `$procdff$1715' with positive edge clock.
-Creating register for signal `\rfifo.\counter' using process `\rfifo.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:228$6'.
+Creating register for signal `\rfifo.\counter' using process `\rfifo.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:228$6'.
   created $dff cell `$procdff$1716' with positive edge clock.
-Creating register for signal `\rfifo.\rd_pointer' using process `\rfifo.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:221$4'.
+Creating register for signal `\rfifo.\rd_pointer' using process `\rfifo.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:221$4'.
   created $dff cell `$procdff$1717' with positive edge clock.
-Creating register for signal `\rfifo.\wr_pointer' using process `\rfifo.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:214$2'.
+Creating register for signal `\rfifo.\wr_pointer' using process `\rfifo.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:214$2'.
   created $dff cell `$procdff$1718' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:359$79'.
-Removing empty process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:359$79'.
-Found and cleaned up 1 empty switch in `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:350$71'.
-Removing empty process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:350$71'.
-Found and cleaned up 2 empty switches in `\rfifo.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:299$40'.
-Removing empty process `rfifo.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:299$40'.
-Found and cleaned up 33 empty switches in `\rfifo.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:228$6'.
-Removing empty process `rfifo.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:228$6'.
-Found and cleaned up 1 empty switch in `\rfifo.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:221$4'.
-Removing empty process `rfifo.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:221$4'.
-Found and cleaned up 1 empty switch in `\rfifo.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:214$2'.
-Removing empty process `rfifo.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:214$2'.
+Found and cleaned up 1 empty switch in `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:359$79'.
+Removing empty process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:359$79'.
+Found and cleaned up 1 empty switch in `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:350$71'.
+Removing empty process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:350$71'.
+Found and cleaned up 2 empty switches in `\rfifo.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:299$40'.
+Removing empty process `rfifo.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:299$40'.
+Found and cleaned up 33 empty switches in `\rfifo.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:228$6'.
+Removing empty process `rfifo.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:228$6'.
+Found and cleaned up 1 empty switch in `\rfifo.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:221$4'.
+Removing empty process `rfifo.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:221$4'.
+Found and cleaned up 1 empty switch in `\rfifo.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:214$2'.
+Removing empty process `rfifo.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:214$2'.
 Cleaned up 39 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -225,10 +225,10 @@ Finding identical cells in module `\rfifo'.
 Removed a total of 0 cells.
 
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $procdff$1706 ($dff) from module $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:364$86_DATA, Q = \out2).
-Adding EN signal on $procdff$1710 ($dff) from module $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:355$78_DATA, Q = \out1).
-Adding EN signal on $procdff$1718 ($dff) from module rfifo (D = $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:218$3_Y, Q = \wr_pointer).
-Adding EN signal on $procdff$1717 ($dff) from module rfifo (D = $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:225$5_Y, Q = \rd_pointer).
+Adding EN signal on $procdff$1706 ($dff) from module $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:364$86_DATA, Q = \out2).
+Adding EN signal on $procdff$1710 ($dff) from module $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:355$78_DATA, Q = \out1).
+Adding EN signal on $procdff$1718 ($dff) from module rfifo (D = $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:218$3_Y, Q = \wr_pointer).
+Adding EN signal on $procdff$1717 ($dff) from module rfifo (D = $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:225$5_Y, Q = \rd_pointer).
 Adding EN signal on $procdff$1714 ($dff) from module rfifo (D = $procmux$114_Y, Q = \status_cnt).
 Adding EN signal on $procdff$1715 ($dff) from module rfifo (D = \data_ram, Q = \q [2047:1984]).
 Adding EN signal on $procdff$1715 ($dff) from module rfifo (D = \data_ram, Q = \q [1983:1920]).
@@ -262,7 +262,7 @@ Adding EN signal on $procdff$1715 ($dff) from module rfifo (D = \data_ram, Q = \
 Adding EN signal on $procdff$1715 ($dff) from module rfifo (D = \data_ram, Q = \q [191:128]).
 Adding EN signal on $procdff$1715 ($dff) from module rfifo (D = \data_ram, Q = \q [127:64]).
 Adding EN signal on $procdff$1715 ($dff) from module rfifo (D = \data_ram, Q = \q [63:0]).
-Adding SRST signal on $procdff$1716 ($dff) from module rfifo (D = $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:233$7_Y, Q = \counter, rval = 5'00000).
+Adding SRST signal on $procdff$1716 ($dff) from module rfifo (D = $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/LU64PEEng_submodules/rfifo.v:233$7_Y, Q = \counter, rval = 5'00000).
 
 4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram..
@@ -360,10 +360,8 @@ Optimizing module rfifo.
    Number of memory bits:          256
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                         128
+     $mux                          138
 
 === rfifo ===
 
@@ -375,46 +373,43 @@ Optimizing module rfifo.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                146
-     $add                            4
-     $dffe                          35
-     $eq                            31
+     $add                           18
+     $dffe                        2061
+     $eq                           155
      $logic_and                      3
-     $logic_not                      4
-     $mux                            2
+     $logic_not                     12
+     $mux                           10
      $not                           31
-     $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram      1
-     $reduce_and                    31
-     $reduce_bool                    2
-     $sdff                           1
-     $sub                            1
+     $reduce_and                   527
+     $reduce_bool                    7
+     $sdff                           5
+     $sub                            5
 
 === design hierarchy ===
 
    rfifo                             1
-     $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram      1
+     $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram      0
 
-   Number of wires:                138
-   Number of wire bits:           3119
-   Number of public wires:          22
-   Number of public wire bits:    2593
-   Number of memories:               1
-   Number of memory bits:          256
+   Number of wires:                121
+   Number of wire bits:           2460
+   Number of public wires:          13
+   Number of public wire bits:    2326
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                157
-     $add                            4
-     $dffe                          37
-     $eq                            31
+   Number of cells:                146
+     $add                           18
+     $dffe                        2061
+     $eq                           155
      $logic_and                      3
-     $logic_not                      4
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            8
+     $logic_not                     12
+     $mux                           10
      $not                           31
-     $reduce_and                    31
-     $reduce_bool                    2
-     $sdff                           1
-     $sub                            1
+     $reduce_and                   527
+     $reduce_bool                    7
+     $sdff                           5
+     $sub                            5
 
-End of script. Logfile hash: 7277380529, CPU: user 0.60s system 0.02s, MEM: 48.15 MB peak
+End of script. Logfile hash: c6b31bd793, CPU: user 0.59s system 0.05s, MEM: 48.42 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 24% 5x opt_expr (0 sec), 18% 3x opt_dff (0 sec), ...
+Time spent: 26% 5x opt_expr (0 sec), 19% 3x opt_dff (0 sec), ...

@@ -251,9 +251,9 @@ Optimizing module common_network.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $lt                             1
+     $lt                             8
      $mux                            1
-     $pmux                           2
+     $pmux                          16
 
 === common_network ===
 
@@ -265,25 +265,21 @@ Optimizing module common_network.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 12
-     $paramod$bc2b59cc7c1bbcd9d1df4577f25bb1fb79978649\node     12
 
 === design hierarchy ===
 
    common_network                    1
-     $paramod$bc2b59cc7c1bbcd9d1df4577f25bb1fb79978649\node     12
+     $paramod$bc2b59cc7c1bbcd9d1df4577f25bb1fb79978649\node      0
 
-   Number of wires:                120
-   Number of wire bits:            792
-   Number of public wires:         108
-   Number of public wire bits:     780
+   Number of wires:                 48
+   Number of wire bits:            384
+   Number of public wires:          48
+   Number of public wire bits:     384
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 48
-     $lt                            12
-     $mux                           12
-     $pmux                          24
+   Number of cells:                 12
 
-End of script. Logfile hash: 2eab3e2f0f, CPU: user 0.03s system 0.00s, MEM: 10.96 MB peak
+End of script. Logfile hash: 6b38dfe5c5, CPU: user 0.03s system 0.00s, MEM: 11.93 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 28% 4x opt_expr (0 sec), 14% 3x opt_merge (0 sec), ...
+Time spent: 28% 2x opt_clean (0 sec), 14% 4x opt_expr (0 sec), ...

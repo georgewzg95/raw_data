@@ -970,7 +970,6 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 97
-     f3_add                         97
 
 === f3m_mult ===
 
@@ -982,14 +981,11 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 12
-     $dff                            2
-     $dffe                           1
-     $mux                            2
-     $sdff                           3
+     $dff                          382
+     $dffe                         194
+     $mux                          388
+     $sdff                         234
      $sdffe                          1
-     f3m_add                         1
-     func7                           1
-     func8                           1
 
 === func7 ===
 
@@ -1001,7 +997,6 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     f3_add                          3
 
 === func8 ===
 
@@ -1013,37 +1008,32 @@ Optimizing module func8.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                488
-     f3_add                        197
-     f3_mult                       291
 
 === design hierarchy ===
 
    f3m_mult                          1
-     f3m_add                         1
-       f3_add                       97
-     func7                           1
-       f3_add                        3
-     func8                           1
-       f3_add                      197
-       f3_mult                     291
+     f3m_add                         0
+       f3_add                        0
+     func7                           0
+       f3_add                        0
+     func8                           0
+       f3_add                        0
+       f3_mult                       0
 
-   Number of wires:              15240
-   Number of wire bits:          21200
-   Number of public wires:        5224
-   Number of public wire bits:   10798
+   Number of wires:                 17
+   Number of wire bits:           2366
+   Number of public wires:          15
+   Number of public wire bits:    1978
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:              11199
-     $and                         7068
-     $dff                            2
-     $dffe                           1
-     $mux                            2
-     $not                         2352
-     $or                          1770
-     $sdff                           3
+   Number of cells:                 12
+     $dff                          382
+     $dffe                         194
+     $mux                          388
+     $sdff                         234
      $sdffe                          1
 
-End of script. Logfile hash: c2102d0321, CPU: user 0.20s system 0.01s, MEM: 21.16 MB peak
+End of script. Logfile hash: 261241bd94, CPU: user 0.25s system 0.01s, MEM: 21.17 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 31% 2x read_verilog (0 sec), 18% 3x opt_clean (0 sec), ...
+Time spent: 39% 2x read_verilog (0 sec), 18% 3x opt_clean (0 sec), ...

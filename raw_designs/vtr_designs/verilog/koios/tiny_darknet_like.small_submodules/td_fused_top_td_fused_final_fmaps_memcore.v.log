@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v' to AST representation.
 Generating RTLIL representation for module `\td_fused_top_td_fused_final_fmaps_memcore'.
 Generating RTLIL representation for module `\td_fused_top_td_fused_final_fmaps_memcore_ram'.
 Successfully finished Verilog frontend.
@@ -52,7 +52,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:111$5 in module td_fused_top_td_fused_final_fmaps_memcore_ram.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:111$5 in module td_fused_top_td_fused_final_fmaps_memcore_ram.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -64,16 +64,16 @@ Promoted 3 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:111$5'.
-     1/6: $2$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:115$1_EN[63:0]$14
-     2/6: $2$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:115$1_DATA[63:0]$13
-     3/6: $2$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:115$1_ADDR[15:0]$12
-     4/6: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:115$1_EN[63:0]$11
-     5/6: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:115$1_DATA[63:0]$10
-     6/6: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:115$1_ADDR[15:0]$9
-Creating decoders for process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:103$3'.
+Creating decoders for process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:111$5'.
+     1/6: $2$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:115$1_EN[63:0]$14
+     2/6: $2$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:115$1_DATA[63:0]$13
+     3/6: $2$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:115$1_ADDR[15:0]$12
+     4/6: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:115$1_EN[63:0]$11
+     5/6: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:115$1_DATA[63:0]$10
+     6/6: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:115$1_ADDR[15:0]$9
+Creating decoders for process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:103$3'.
      1/1: $0\q0_t0[63:0]
-Creating decoders for process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:87$2'.
+Creating decoders for process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:87$2'.
      1/5: $0\we1_t1[0:0]
      2/5: $0\d1_t1[63:0]
      3/5: $0\addr1_t1[15:0]
@@ -83,34 +83,34 @@ Creating decoders for process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$p
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\td_fused_top_td_fused_final_fmaps_memcore_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:115$1_ADDR' using process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:111$5'.
+Creating register for signal `\td_fused_top_td_fused_final_fmaps_memcore_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:115$1_ADDR' using process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:111$5'.
   created $dff cell `$procdff$54' with positive edge clock.
-Creating register for signal `\td_fused_top_td_fused_final_fmaps_memcore_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:115$1_DATA' using process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:111$5'.
+Creating register for signal `\td_fused_top_td_fused_final_fmaps_memcore_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:115$1_DATA' using process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:111$5'.
   created $dff cell `$procdff$55' with positive edge clock.
-Creating register for signal `\td_fused_top_td_fused_final_fmaps_memcore_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:115$1_EN' using process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:111$5'.
+Creating register for signal `\td_fused_top_td_fused_final_fmaps_memcore_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:115$1_EN' using process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:111$5'.
   created $dff cell `$procdff$56' with positive edge clock.
-Creating register for signal `\td_fused_top_td_fused_final_fmaps_memcore_ram.\q0_t0' using process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:103$3'.
+Creating register for signal `\td_fused_top_td_fused_final_fmaps_memcore_ram.\q0_t0' using process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:103$3'.
   created $dff cell `$procdff$57' with positive edge clock.
-Creating register for signal `\td_fused_top_td_fused_final_fmaps_memcore_ram.\addr0_t1' using process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:87$2'.
+Creating register for signal `\td_fused_top_td_fused_final_fmaps_memcore_ram.\addr0_t1' using process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:87$2'.
   created $dff cell `$procdff$58' with positive edge clock.
-Creating register for signal `\td_fused_top_td_fused_final_fmaps_memcore_ram.\q0_t1' using process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:87$2'.
+Creating register for signal `\td_fused_top_td_fused_final_fmaps_memcore_ram.\q0_t1' using process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:87$2'.
   created $dff cell `$procdff$59' with positive edge clock.
-Creating register for signal `\td_fused_top_td_fused_final_fmaps_memcore_ram.\addr1_t1' using process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:87$2'.
+Creating register for signal `\td_fused_top_td_fused_final_fmaps_memcore_ram.\addr1_t1' using process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:87$2'.
   created $dff cell `$procdff$60' with positive edge clock.
-Creating register for signal `\td_fused_top_td_fused_final_fmaps_memcore_ram.\d1_t1' using process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:87$2'.
+Creating register for signal `\td_fused_top_td_fused_final_fmaps_memcore_ram.\d1_t1' using process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:87$2'.
   created $dff cell `$procdff$61' with positive edge clock.
-Creating register for signal `\td_fused_top_td_fused_final_fmaps_memcore_ram.\we1_t1' using process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:87$2'.
+Creating register for signal `\td_fused_top_td_fused_final_fmaps_memcore_ram.\we1_t1' using process `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:87$2'.
   created $dff cell `$procdff$62' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 2 empty switches in `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:111$5'.
-Removing empty process `td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:111$5'.
-Found and cleaned up 1 empty switch in `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:103$3'.
-Removing empty process `td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:103$3'.
-Found and cleaned up 2 empty switches in `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:87$2'.
-Removing empty process `td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:87$2'.
+Found and cleaned up 2 empty switches in `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:111$5'.
+Removing empty process `td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:111$5'.
+Found and cleaned up 1 empty switch in `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:103$3'.
+Removing empty process `td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:103$3'.
+Found and cleaned up 2 empty switches in `\td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:87$2'.
+Removing empty process `td_fused_top_td_fused_final_fmaps_memcore_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:87$2'.
 Cleaned up 5 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -165,7 +165,7 @@ Removed a total of 0 cells.
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
 Adding EN signal on $procdff$61 ($dff) from module td_fused_top_td_fused_final_fmaps_memcore_ram (D = \d1, Q = \d1_t1).
 Adding EN signal on $procdff$62 ($dff) from module td_fused_top_td_fused_final_fmaps_memcore_ram (D = \we1, Q = \we1_t1).
-Adding EN signal on $procdff$57 ($dff) from module td_fused_top_td_fused_final_fmaps_memcore_ram (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:106$4_DATA, Q = \q0_t0).
+Adding EN signal on $procdff$57 ($dff) from module td_fused_top_td_fused_final_fmaps_memcore_ram (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/tiny_darknet_like.small_submodules/td_fused_top_td_fused_final_fmaps_memcore.v:106$4_DATA, Q = \q0_t0).
 Adding EN signal on $procdff$58 ($dff) from module td_fused_top_td_fused_final_fmaps_memcore_ram (D = \addr0, Q = \addr0_t1).
 Adding EN signal on $procdff$59 ($dff) from module td_fused_top_td_fused_final_fmaps_memcore_ram (D = \q0_t0, Q = \q0_t1).
 Adding EN signal on $procdff$60 ($dff) from module td_fused_top_td_fused_final_fmaps_memcore_ram (D = \addr1, Q = \addr1_t1).
@@ -227,7 +227,6 @@ Optimizing module td_fused_top_td_fused_final_fmaps_memcore_ram.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     td_fused_top_td_fused_final_fmaps_memcore_ram      1
 
 === td_fused_top_td_fused_final_fmaps_memcore_ram ===
 
@@ -239,29 +238,23 @@ Optimizing module td_fused_top_td_fused_final_fmaps_memcore_ram.
    Number of memory bits:       3136000
    Number of processes:              0
    Number of cells:                 14
-     $dffe                           6
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            6
+     $dffe                         225
+     $mux                          162
 
 === design hierarchy ===
 
    td_fused_top_td_fused_final_fmaps_memcore      1
-     td_fused_top_td_fused_final_fmaps_memcore_ram      1
+     td_fused_top_td_fused_final_fmaps_memcore_ram      0
 
-   Number of wires:                 34
-   Number of wire bits:           1003
-   Number of public wires:          27
-   Number of public wire bits:     651
-   Number of memories:               1
-   Number of memory bits:       3136000
+   Number of wires:                  9
+   Number of wire bits:            165
+   Number of public wires:           9
+   Number of public wire bits:     165
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 14
-     $dffe                           6
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            6
+   Number of cells:                  1
 
-End of script. Logfile hash: d7b31eb4b6, CPU: user 0.03s system 0.00s, MEM: 12.04 MB peak
+End of script. Logfile hash: 43c1d7fac9, CPU: user 0.06s system 0.01s, MEM: 12.10 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 33% 3x opt_merge (0 sec), 22% 2x opt_clean (0 sec), ...
+Time spent: 23% 4x opt_expr (0 sec), 17% 2x opt_dff (0 sec), ...

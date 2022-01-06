@@ -11,17 +11,17 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 41
-     $add                            2
-     $and                            1
-     $eq                             8
+     $add                           66
+     $and                           32
+     $eq                            30
      $logic_and                      5
-     $logic_not                      5
+     $logic_not                      9
      $logic_or                       1
-     $mux                           14
-     $not                            2
-     $or                             1
-     $reduce_or                      1
-     $xor                            1
+     $mux                          355
+     $not                           33
+     $or                            32
+     $reduce_or                     32
+     $xor                           32
 
 === a25_barrel_shift ===
 
@@ -34,12 +34,10 @@
    Number of processes:              0
    Number of cells:                 10
      $and                            1
-     $dff                            3
+     $dff                           34
      $logic_not                      1
-     $mux                            2
-     $reduce_or                      1
-     a25_shifter_full                1
-     a25_shifter_quick               1
+     $mux                           33
+     $reduce_or                      6
 
 === a25_coprocessor ===
 
@@ -51,13 +49,13 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 26
-     $dffe                           7
-     $eq                             8
+     $dffe                         171
+     $eq                            30
      $logic_and                      2
-     $logic_not                      2
+     $logic_not                      5
      $not                            1
-     $pmux                           1
-     $reduce_and                     5
+     $pmux                          32
+     $reduce_and                    14
 
 === a25_dcache ===
 
@@ -69,26 +67,24 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                255
-     $add                            2
+     $add                           11
      $dff                            1
-     $dffe                          10
-     $eq                            27
+     $dffe                         344
+     $eq                           215
      $logic_and                     58
-     $logic_not                      9
+     $logic_not                     15
      $logic_or                      32
-     $lt                             1
-     $mux                           74
-     $ne                             8
+     $lt                            32
+     $mux                         2508
+     $ne                            21
      $not                            1
-     $or                             1
-     $pmux                           3
-     $reduce_and                     6
-     $reduce_bool                    5
-     $reduce_or                      3
-     $sdffe                          5
+     $or                             4
+     $pmux                          12
+     $reduce_and                    20
+     $reduce_bool                   18
+     $reduce_or                      8
+     $sdffe                         22
      $xor                            1
-     single_port_ram_128_8           4
-     single_port_ram_21_8            4
 
 === a25_decode ===
 
@@ -100,21 +96,21 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:               1063
-     $add                           15
-     $and                           16
-     $dffe                          71
-     $eq                           184
-     $gt                             2
-     $logic_and                    182
-     $logic_not                     33
+     $add                           75
+     $and                          256
+     $dffe                         425
+     $eq                           977
+     $gt                            10
+     $logic_and                    197
+     $logic_not                     72
      $logic_or                      77
-     $mux                          409
-     $ne                            14
-     $not                            4
-     $reduce_and                     7
-     $reduce_bool                   24
-     $reduce_or                      8
-     $sdffce                        17
+     $mux                         3296
+     $ne                            64
+     $not                           19
+     $reduce_and                    19
+     $reduce_bool                  297
+     $reduce_or                     26
+     $sdffce                        59
 
 === a25_execute ===
 
@@ -126,26 +122,22 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                250
-     $add                            4
-     $and                            7
-     $dff                            2
-     $dffe                          17
-     $eq                            54
+     $add                          128
+     $and                           41
+     $dff                           36
+     $dffe                         181
+     $eq                           173
      $logic_and                     37
-     $logic_not                     19
-     $logic_or                      23
-     $mux                           71
+     $logic_not                     38
+     $logic_or                      26
+     $mux                         1395
      $ne                             1
-     $not                            2
-     $reduce_and                     1
-     $reduce_bool                    3
-     $reduce_or                      1
-     $sdffce                         3
-     $sub                            1
-     a25_alu                         1
-     a25_barrel_shift                1
-     a25_multiply                    1
-     a25_register_bank               1
+     $not                            5
+     $reduce_and                     2
+     $reduce_bool                   10
+     $reduce_or                      6
+     $sdffce                        10
+     $sub                           32
 
 === a25_fetch ===
 
@@ -158,14 +150,13 @@
    Number of processes:              0
    Number of cells:                103
      $dff                            1
-     $eq                            33
-     $ge                             1
+     $eq                           172
+     $ge                            32
      $logic_and                     10
-     $logic_not                      7
+     $logic_not                     12
      $logic_or                       9
-     $lt                             2
-     $mux                           39
-     a25_icache                      1
+     $lt                            64
+     $mux                          287
 
 === a25_icache ===
 
@@ -177,26 +168,24 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                136
-     $add                            2
-     $dff                            2
-     $dffe                           7
-     $eq                            15
+     $add                           11
+     $dff                           33
+     $dffe                         232
+     $eq                           171
      $logic_and                     28
-     $logic_not                      6
+     $logic_not                     11
      $logic_or                       7
-     $lt                             1
-     $mux                           32
-     $ne                             5
+     $lt                            32
+     $mux                          967
+     $ne                            40
      $not                            1
-     $pmux                           2
-     $reduce_and                     7
-     $reduce_bool                    3
-     $reduce_or                      2
-     $sdffce                         3
-     $sdffe                          4
+     $pmux                           8
+     $reduce_and                    17
+     $reduce_bool                    9
+     $reduce_or                      6
+     $sdffce                         4
+     $sdffe                         18
      $xor                            1
-     single_port_ram_128_8           4
-     single_port_ram_21_8            4
 
 === a25_mem ===
 
@@ -209,15 +198,14 @@
    Number of processes:              0
    Number of cells:                142
      $dff                            6
-     $dffe                           3
-     $eq                            33
-     $ge                             1
+     $dffe                          44
+     $eq                           172
+     $ge                            32
      $logic_and                     28
-     $logic_not                     15
+     $logic_not                     20
      $logic_or                      11
-     $lt                             2
-     $mux                           42
-     a25_dcache                      1
+     $lt                            64
+     $mux                          283
 
 === a25_multiply ===
 
@@ -229,19 +217,19 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 37
-     $add                            4
-     $dffe                           3
-     $eq                             5
-     $le                             1
+     $add                          107
+     $dffe                          39
+     $eq                            22
+     $le                             6
      $logic_and                      3
-     $logic_not                      3
+     $logic_not                     39
      $logic_or                       1
-     $mux                            8
-     $ne                             1
-     $not                            2
-     $reduce_and                     3
-     $reduce_bool                    1
-     $sdffce                         2
+     $mux                          290
+     $ne                             3
+     $not                           35
+     $reduce_and                     9
+     $reduce_bool                    3
+     $sdffce                        36
 
 === a25_register_bank ===
 
@@ -253,16 +241,16 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                280
-     $and                            5
-     $dffe                          27
-     $eq                            65
+     $and                           33
+     $dffe                         856
+     $eq                           244
      $logic_and                     36
-     $logic_not                      8
-     $mux                          106
-     $ne                             1
+     $logic_not                     23
+     $mux                         3376
+     $ne                             2
      $not                            2
-     $pmux                           3
-     $reduce_bool                   27
+     $pmux                          79
+     $reduce_bool                   54
 
 === a25_shifter_full ===
 
@@ -274,9 +262,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                204
-     $eq                            64
-     $logic_not                      3
-     $mux                          137
+     $eq                           410
+     $logic_not                     15
+     $mux                         4521
 
 === a25_shifter_quick ===
 
@@ -288,9 +276,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 28
-     $eq                             6
-     $logic_not                      3
-     $mux                           19
+     $eq                            24
+     $logic_not                     12
+     $mux                          627
 
 === a25_wishbone ===
 
@@ -302,18 +290,17 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 40
-     $and                            2
-     $dffe                           4
+     $and                            4
+     $dffe                         177
      $logic_and                      5
      $logic_not                      3
      $logic_or                       1
-     $mux                           15
+     $mux                          538
      $not                            1
-     $reduce_and                     1
-     $reduce_bool                    1
-     $reduce_or                      1
-     $sdffce                         3
-     a25_wishbone_buf                3
+     $reduce_and                     2
+     $reduce_bool                    3
+     $reduce_or                      2
+     $sdffce                         4
 
 === a25_wishbone_buf ===
 
@@ -325,18 +312,18 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 62
-     $add                            1
-     $dffe                          11
-     $eq                             1
+     $add                            2
+     $dffe                         358
+     $eq                             2
      $logic_and                     14
-     $logic_not                      9
+     $logic_not                     10
      $logic_or                       3
-     $mux                           12
+     $mux                          375
      $not                            2
-     $reduce_and                     3
-     $reduce_bool                    2
+     $reduce_and                     6
+     $reduce_bool                    4
      $sdffe                          3
-     $sub                            1
+     $sub                            2
 
 === a25_write_back ===
 
@@ -348,7 +335,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  3
-     $dffe                           3
+     $dffe                          44
 
 === arm_core ===
 
@@ -361,15 +348,8 @@
    Number of processes:              0
    Number of cells:                 12
      $logic_or                       2
-     $mux                            2
+     $mux                           40
      $or                             1
-     a25_coprocessor                 1
-     a25_decode                      1
-     a25_execute                     1
-     a25_fetch                       1
-     a25_mem                         1
-     a25_wishbone                    1
-     a25_write_back                  1
 
 === single_port_ram_128_8 ===
 
@@ -381,10 +361,8 @@
    Number of memory bits:        32768
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                         128
+     $mux                          137
 
 === single_port_ram_21_8 ===
 
@@ -396,67 +374,42 @@
    Number of memory bits:         5376
    Number of processes:              0
    Number of cells:                  6
-     $dffe                           1
-     $memrd                          1
-     $memwr_v2                       1
-     $mux                            3
+     $dffe                          21
+     $mux                           30
 
 === design hierarchy ===
 
    arm_core                          1
-     a25_coprocessor                 1
-     a25_decode                      1
-     a25_execute                     1
-       a25_alu                       1
-       a25_barrel_shift              1
-         a25_shifter_full            1
-         a25_shifter_quick           1
-       a25_multiply                  1
-       a25_register_bank             1
-     a25_fetch                       1
-       a25_icache                    1
-         single_port_ram_128_8       4
-         single_port_ram_21_8        4
-     a25_mem                         1
-       a25_dcache                    1
-         single_port_ram_128_8       4
-         single_port_ram_21_8        4
-     a25_wishbone                    1
-       a25_wishbone_buf              3
-     a25_write_back                  1
+     a25_coprocessor                 0
+     a25_decode                      0
+     a25_execute                     0
+       a25_alu                       0
+       a25_barrel_shift              0
+         a25_shifter_full            0
+         a25_shifter_quick           0
+       a25_multiply                  0
+       a25_register_bank             0
+     a25_fetch                       0
+       a25_icache                    0
+         single_port_ram_128_8       0
+         single_port_ram_21_8        0
+     a25_mem                         0
+       a25_dcache                    0
+         single_port_ram_128_8       0
+         single_port_ram_21_8        0
+     a25_wishbone                    0
+       a25_wishbone_buf              0
+     a25_write_back                  0
 
-   Number of wires:               3357
-   Number of wire bits:          42040
-   Number of public wires:        1102
-   Number of public wire bits:   20390
-   Number of memories:              16
-   Number of memory bits:       305152
+   Number of wires:                116
+   Number of wire bits:           1628
+   Number of public wires:         115
+   Number of public wire bits:    1627
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               2878
-     $add                           32
-     $and                           32
-     $dff                           15
-     $dffe                         201
-     $eq                           505
-     $ge                             2
-     $gt                             2
-     $le                             1
-     $logic_and                    436
-     $logic_not                    144
-     $logic_or                     173
-     $lt                             6
-     $memrd                         16
-     $memwr_v2                      16
-     $mux                         1054
-     $ne                            30
-     $not                           22
-     $or                             3
-     $pmux                           9
-     $reduce_and                    39
-     $reduce_bool                   70
-     $reduce_or                     17
-     $sdffce                        28
-     $sdffe                         18
-     $sub                            4
-     $xor                            3
+   Number of cells:                 12
+     $logic_or                       2
+     $mux                           40
+     $or                             1
 

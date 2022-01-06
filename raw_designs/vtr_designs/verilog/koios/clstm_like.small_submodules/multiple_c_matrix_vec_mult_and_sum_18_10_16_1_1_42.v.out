@@ -11,8 +11,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $add                            1
-     $dff                            1
+     $add                           18
+     $dff                           18
 
 === c_matrix_vec_mult_core_18_10_16_1_1 ===
 
@@ -25,14 +25,9 @@
    Number of processes:              0
    Number of cells:                101
      $and                            5
-     $neg                            7
+     $neg                          126
      $not                            1
-     $sdffe                         79
-     dft_16_top_18                   1
-     elementwise_add_core_18_18_9      1
-     elementwise_mult_core_18_1810_9_1      4
-     elementwise_sub_core_18_18_9      1
-     shift_register_group_18_910      2
+     $sdffe                       1354
 
 === codeBlock88206_18 ===
 
@@ -44,14 +39,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                182
-     $add                            4
-     $dffe                          80
-     $not                            4
+     $add                          128
+     $dffe                        1440
+     $not                          128
      $sdff                           1
-     addfxp_18_1                    40
-     multfix_alt_dsp_18             12
-     shiftRegFIFO_5_1                1
-     subfxp_18_1                    40
 
 === codeBlock89324_18 ===
 
@@ -63,11 +54,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 98
-     $dffe                          32
+     $dffe                         576
      $sdff                           1
-     addfxp_18_1                    32
-     shiftRegFIFO_2_1                1
-     subfxp_18_1                    32
 
 === codeBlock98050_18 ===
 
@@ -79,14 +67,10 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                182
-     $add                            4
-     $dffe                          80
-     $not                            4
+     $add                          128
+     $dffe                        1440
+     $not                          128
      $sdff                           1
-     addfxp_18_1                    40
-     multfix_alt_dsp_18             12
-     shiftRegFIFO_5_1                1
-     subfxp_18_1                    40
 
 === codeBlock99168_18 ===
 
@@ -98,11 +82,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 98
-     $dffe                          32
+     $dffe                         576
      $sdff                           1
-     addfxp_18_1                    32
-     shiftRegFIFO_2_1                1
-     subfxp_18_1                    32
 
 === dft_16_top_18 ===
 
@@ -114,8 +95,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     codeBlock88206_18               1
-     codeBlock89324_18               1
 
 === dsp_signed_mult_18x18_unit_18_18_1 ===
 
@@ -127,8 +106,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 11
-     $mul                            2
-     $sdffe                          9
+     $mul                           74
+     $sdffe                        149
 
 === dsp_signed_mult_18x18_unit_18_36_0 ===
 
@@ -140,8 +119,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  7
-     $dff                            2
-     $mul                            2
+     $dff                           72
+     $mul                           72
      $sdffe                          3
 
 === elementwise_add_core_18_18_9 ===
@@ -154,9 +133,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 39
-     $add                            9
+     $add                          162
      $and                            1
-     $sdffe                         29
+     $sdffe                        488
 
 === elementwise_mult_core_18_1810_9_1 ===
 
@@ -169,9 +148,7 @@
    Number of processes:              0
    Number of cells:                 34
      $and                            1
-     $sdffe                         19
-     dsp_signed_mult_18x18_unit_18_18_1      5
-     fp_rounding_unit_1_37_10        9
+     $sdffe                        325
 
 === elementwise_sub_core_18_18_9 ===
 
@@ -184,8 +161,8 @@
    Number of processes:              0
    Number of cells:                 39
      $and                            1
-     $sdffe                         29
-     $sub                            9
+     $sdffe                        488
+     $sub                          162
 
 === fp_rounding_unit_1_37_10 ===
 
@@ -197,9 +174,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  8
-     $add                            1
-     $mux                            1
-     $sdffe                          6
+     $add                           37
+     $mux                           37
+     $sdffe                        104
 
 === idft_16_top_18 ===
 
@@ -211,8 +188,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     codeBlock98050_18               1
-     codeBlock99168_18               1
 
 === multfix_alt_dsp_18 ===
 
@@ -224,7 +199,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     dsp_signed_mult_18x18_unit_18_36_0      1
 
 === multiple_c_matrix_vec_mult_and_sum_18_10_16_1_1_42 ===
 
@@ -237,11 +211,7 @@
    Number of processes:              0
    Number of cells:                 24
      $and                            1
-     $sdffe                         18
-     c_matrix_vec_mult_core_18_10_16_1_1      1
-     idft_16_top_18                  1
-     shift_register_group_18_16_1      2
-     sum_complex_vector_unit_18_18_16_42      1
+     $sdffe                        226
 
 === shiftRegFIFO_2_1 ===
 
@@ -277,7 +247,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 16
-     shift_register_unit_18_1       16
 
 === shift_register_group_18_910 ===
 
@@ -289,7 +258,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     shift_register_unit_18_10       9
 
 === shift_register_unit_18_1 ===
 
@@ -301,7 +269,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     $sdffe                          1
+     $sdffe                         18
 
 === shift_register_unit_18_10 ===
 
@@ -313,7 +281,7 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $sdffe                         10
+     $sdffe                        180
 
 === subfxp_18_1 ===
 
@@ -325,8 +293,8 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     $add                            1
-     $dff                            1
+     $add                           18
+     $dff                           18
 
 === sum_complex_vector_unit_18_18_16_42 ===
 
@@ -338,69 +306,58 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                103
-     $add                           33
+     $add                          608
      $and                            1
-     $eq                             1
-     $mux                           33
-     $reduce_and                     1
-     $sdffe                         34
+     $eq                            14
+     $mux                          590
+     $reduce_and                     2
+     $sdffe                        591
 
 === design hierarchy ===
 
    multiple_c_matrix_vec_mult_and_sum_18_10_16_1_1_42      1
-     c_matrix_vec_mult_core_18_10_16_1_1      1
-       dft_16_top_18                 1
-         codeBlock88206_18           1
-           addfxp_18_1              40
-           multfix_alt_dsp_18       12
-             dsp_signed_mult_18x18_unit_18_36_0      1
-           shiftRegFIFO_5_1          1
-           subfxp_18_1              40
-         codeBlock89324_18           1
-           addfxp_18_1              32
-           shiftRegFIFO_2_1          1
-           subfxp_18_1              32
-       elementwise_add_core_18_18_9      1
-       elementwise_mult_core_18_1810_9_1      4
-         dsp_signed_mult_18x18_unit_18_18_1      5
-         fp_rounding_unit_1_37_10      9
-       elementwise_sub_core_18_18_9      1
-       shift_register_group_18_910      2
-         shift_register_unit_18_10      9
-     idft_16_top_18                  1
-       codeBlock98050_18             1
-         addfxp_18_1                40
-         multfix_alt_dsp_18         12
-           dsp_signed_mult_18x18_unit_18_36_0      1
-         shiftRegFIFO_5_1            1
-         subfxp_18_1                40
-       codeBlock99168_18             1
-         addfxp_18_1                32
-         shiftRegFIFO_2_1            1
-         subfxp_18_1                32
-     shift_register_group_18_16_1      2
-       shift_register_unit_18_1     16
-     sum_complex_vector_unit_18_18_16_42      1
+     c_matrix_vec_mult_core_18_10_16_1_1      0
+       dft_16_top_18                 0
+         codeBlock88206_18           0
+           addfxp_18_1               0
+           multfix_alt_dsp_18        0
+             dsp_signed_mult_18x18_unit_18_36_0      0
+           shiftRegFIFO_5_1          0
+           subfxp_18_1               0
+         codeBlock89324_18           0
+           addfxp_18_1               0
+           shiftRegFIFO_2_1          0
+           subfxp_18_1               0
+       elementwise_add_core_18_18_9      0
+       elementwise_mult_core_18_1810_9_1      0
+         dsp_signed_mult_18x18_unit_18_18_1      0
+         fp_rounding_unit_1_37_10      0
+       elementwise_sub_core_18_18_9      0
+       shift_register_group_18_910      0
+         shift_register_unit_18_10      0
+     idft_16_top_18                  0
+       codeBlock98050_18             0
+         addfxp_18_1                 0
+         multfix_alt_dsp_18          0
+           dsp_signed_mult_18x18_unit_18_36_0      0
+         shiftRegFIFO_5_1            0
+         subfxp_18_1                 0
+       codeBlock99168_18             0
+         addfxp_18_1                 0
+         shiftRegFIFO_2_1            0
+         subfxp_18_1                 0
+     shift_register_group_18_16_1      0
+       shift_register_unit_18_1      0
+     sum_complex_vector_unit_18_18_16_42      0
 
-   Number of wires:               6554
-   Number of wire bits:         106770
-   Number of public wires:        6031
-   Number of public wire bits:   94882
+   Number of wires:                191
+   Number of wire bits:           3217
+   Number of public wires:         191
+   Number of public wire bits:    3217
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               2094
-     $add                          374
-     $and                           13
-     $dff                          336
-     $dffe                         224
-     $eq                             1
-     $mul                           88
-     $mux                           69
-     $neg                            7
-     $not                            9
-     $reduce_and                     1
-     $sdff                          18
-     $sdffe                        945
-     $sub                            9
+   Number of cells:                 24
+     $and                            1
+     $sdffe                        226
 

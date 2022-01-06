@@ -11,7 +11,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  2
-     f3m_sub                         2
 
 === f3_add ===
 
@@ -37,7 +36,6 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     f3_add                          1
 
 === f3m_sub ===
 
@@ -49,24 +47,20 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 97
-     f3_sub                         97
 
 === design hierarchy ===
 
    f32m_sub                          1
-     f3m_sub                         2
-       f3_sub                       97
-         f3_add                      1
+     f3m_sub                         0
+       f3_sub                        0
+         f3_add                      0
 
-   Number of wires:               6217
-   Number of wire bits:           9700
-   Number of public wires:        2337
-   Number of public wire bits:    5820
+   Number of wires:                  3
+   Number of wire bits:           1164
+   Number of public wires:           3
+   Number of public wire bits:    1164
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:               4268
-     $and                         2716
-     $not                          776
-     $or                           776
+   Number of cells:                  2
 

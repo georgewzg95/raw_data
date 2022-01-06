@@ -12,9 +12,7 @@
    Number of processes:              0
    Number of cells:                 16
      $dff                            1
-     $sdff                          13
-     dsp_block_16_8_false            1
-     dsp_block_16_8_true             1
+     $sdff                         145
 
 === dsp_block_16_8_false ===
 
@@ -26,9 +24,9 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            2
-     $mul                            2
-     $sdff                           5
+     $add                          128
+     $mul                          128
+     $sdff                          72
 
 === dsp_block_16_8_true ===
 
@@ -40,26 +38,24 @@
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  9
-     $add                            2
-     $mul                            2
-     $sdff                           5
+     $add                          128
+     $mul                          128
+     $sdff                          72
 
 === design hierarchy ===
 
    dot_product_16_8_30_4             1
-     dsp_block_16_8_false            1
-     dsp_block_16_8_true             1
+     dsp_block_16_8_false            0
+     dsp_block_16_8_true             0
 
-   Number of wires:                 67
-   Number of wire bits:           1480
-   Number of public wires:          59
-   Number of public wire bits:     968
+   Number of wires:                 29
+   Number of wire bits:            444
+   Number of public wires:          29
+   Number of public wire bits:     444
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 32
-     $add                            4
+   Number of cells:                 16
      $dff                            1
-     $mul                            4
-     $sdff                          23
+     $sdff                         145
 

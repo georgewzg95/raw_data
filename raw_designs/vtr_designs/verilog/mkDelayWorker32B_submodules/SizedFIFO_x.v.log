@@ -24,9 +24,9 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v' to AST representation.
-Warning: Literal has a width of 3 bit, but value requires 4 bit. (/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:244)
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v' to AST representation.
+Warning: Literal has a width of 3 bit, but value requires 4 bit. (/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:244)
 Generating RTLIL representation for module `\SizedFIFO_x'.
 Generating RTLIL representation for module `\generic_fifo_sc_x'.
 Generating RTLIL representation for module `\dual_port_ram'.
@@ -70,17 +70,17 @@ Removed 1 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:308$109 in module $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:299$101 in module $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:262$71 in module generic_fifo_sc_x.
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:253$61 in module generic_fifo_sc_x.
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:239$53 in module generic_fifo_sc_x.
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:220$36 in module generic_fifo_sc_x.
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:211$23 in module generic_fifo_sc_x.
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:202$17 in module generic_fifo_sc_x.
-Marked 3 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:187$13 in module generic_fifo_sc_x.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:169$5 in module generic_fifo_sc_x.
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:159$1 in module generic_fifo_sc_x.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:308$109 in module $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:299$101 in module $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:262$71 in module generic_fifo_sc_x.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:253$61 in module generic_fifo_sc_x.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:239$53 in module generic_fifo_sc_x.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:220$36 in module generic_fifo_sc_x.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:211$23 in module generic_fifo_sc_x.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:202$17 in module generic_fifo_sc_x.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:187$13 in module generic_fifo_sc_x.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:169$5 in module generic_fifo_sc_x.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:159$1 in module generic_fifo_sc_x.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -92,98 +92,98 @@ Promoted 6 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:308$109'.
-     1/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:310$100_EN[130:0]$115
-     2/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:310$100_DATA[130:0]$114
-     3/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:310$100_ADDR[1:0]$113
+Creating decoders for process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:308$109'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:310$100_EN[130:0]$115
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:310$100_DATA[130:0]$114
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:310$100_ADDR[1:0]$113
      4/4: $0\out2[130:0]
-Creating decoders for process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:299$101'.
-     1/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:301$99_EN[130:0]$107
-     2/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:301$99_DATA[130:0]$106
-     3/4: $1$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:301$99_ADDR[1:0]$105
+Creating decoders for process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:299$101'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:301$99_EN[130:0]$107
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:301$99_DATA[130:0]$106
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:301$99_ADDR[1:0]$105
      4/4: $0\out1[130:0]
-Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:262$71'.
+Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:262$71'.
      1/1: $0\full_n_r[0:0]
-Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:253$61'.
+Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:253$61'.
      1/1: $0\empty_n_r[0:0]
-Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:239$53'.
+Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:239$53'.
      1/1: $0\cnt[2:0]
-Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:220$36'.
+Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:220$36'.
      1/1: $0\empty_r[0:0]
-Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:211$23'.
+Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:211$23'.
      1/1: $0\full_r[0:0]
-Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:202$17'.
+Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:202$17'.
      1/1: $0\gb2[0:0]
-Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:187$13'.
+Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:187$13'.
      1/1: $0\gb[0:0]
-Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:169$5'.
+Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:169$5'.
      1/1: $0\rp[1:0]
-Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:159$1'.
+Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:159$1'.
      1/1: $0\wp[1:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.\out2' using process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:308$109'.
+Creating register for signal `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.\out2' using process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:308$109'.
   created $dff cell `$procdff$234' with positive edge clock.
-Creating register for signal `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:310$100_ADDR' using process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:308$109'.
+Creating register for signal `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:310$100_ADDR' using process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:308$109'.
   created $dff cell `$procdff$235' with positive edge clock.
-Creating register for signal `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:310$100_DATA' using process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:308$109'.
+Creating register for signal `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:310$100_DATA' using process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:308$109'.
   created $dff cell `$procdff$236' with positive edge clock.
-Creating register for signal `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:310$100_EN' using process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:308$109'.
+Creating register for signal `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:310$100_EN' using process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:308$109'.
   created $dff cell `$procdff$237' with positive edge clock.
-Creating register for signal `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.\out1' using process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:299$101'.
+Creating register for signal `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.\out1' using process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:299$101'.
   created $dff cell `$procdff$238' with positive edge clock.
-Creating register for signal `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:301$99_ADDR' using process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:299$101'.
+Creating register for signal `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:301$99_ADDR' using process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:299$101'.
   created $dff cell `$procdff$239' with positive edge clock.
-Creating register for signal `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:301$99_DATA' using process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:299$101'.
+Creating register for signal `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:301$99_DATA' using process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:299$101'.
   created $dff cell `$procdff$240' with positive edge clock.
-Creating register for signal `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$memwr$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:301$99_EN' using process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:299$101'.
+Creating register for signal `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:301$99_EN' using process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:299$101'.
   created $dff cell `$procdff$241' with positive edge clock.
-Creating register for signal `\generic_fifo_sc_x.\full_n_r' using process `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:262$71'.
+Creating register for signal `\generic_fifo_sc_x.\full_n_r' using process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:262$71'.
   created $dff cell `$procdff$242' with positive edge clock.
-Creating register for signal `\generic_fifo_sc_x.\empty_n_r' using process `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:253$61'.
+Creating register for signal `\generic_fifo_sc_x.\empty_n_r' using process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:253$61'.
   created $dff cell `$procdff$243' with positive edge clock.
-Creating register for signal `\generic_fifo_sc_x.\cnt' using process `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:239$53'.
+Creating register for signal `\generic_fifo_sc_x.\cnt' using process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:239$53'.
   created $dff cell `$procdff$244' with positive edge clock.
-Creating register for signal `\generic_fifo_sc_x.\empty_r' using process `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:220$36'.
+Creating register for signal `\generic_fifo_sc_x.\empty_r' using process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:220$36'.
   created $dff cell `$procdff$245' with positive edge clock.
-Creating register for signal `\generic_fifo_sc_x.\full_r' using process `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:211$23'.
+Creating register for signal `\generic_fifo_sc_x.\full_r' using process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:211$23'.
   created $dff cell `$procdff$246' with positive edge clock.
-Creating register for signal `\generic_fifo_sc_x.\gb2' using process `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:202$17'.
+Creating register for signal `\generic_fifo_sc_x.\gb2' using process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:202$17'.
   created $dff cell `$procdff$247' with positive edge clock.
-Creating register for signal `\generic_fifo_sc_x.\gb' using process `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:187$13'.
+Creating register for signal `\generic_fifo_sc_x.\gb' using process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:187$13'.
   created $dff cell `$procdff$248' with positive edge clock.
-Creating register for signal `\generic_fifo_sc_x.\rp' using process `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:169$5'.
+Creating register for signal `\generic_fifo_sc_x.\rp' using process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:169$5'.
   created $dff cell `$procdff$249' with positive edge clock.
-Creating register for signal `\generic_fifo_sc_x.\wp' using process `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:159$1'.
+Creating register for signal `\generic_fifo_sc_x.\wp' using process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:159$1'.
   created $dff cell `$procdff$250' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 1 empty switch in `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:308$109'.
-Removing empty process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:308$109'.
-Found and cleaned up 1 empty switch in `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:299$101'.
-Removing empty process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:299$101'.
-Found and cleaned up 4 empty switches in `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:262$71'.
-Removing empty process `generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:262$71'.
-Found and cleaned up 4 empty switches in `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:253$61'.
-Removing empty process `generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:253$61'.
-Found and cleaned up 4 empty switches in `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:239$53'.
-Removing empty process `generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:239$53'.
-Found and cleaned up 4 empty switches in `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:220$36'.
-Removing empty process `generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:220$36'.
-Found and cleaned up 4 empty switches in `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:211$23'.
-Removing empty process `generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:211$23'.
-Found and cleaned up 4 empty switches in `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:202$17'.
-Removing empty process `generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:202$17'.
-Found and cleaned up 4 empty switches in `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:187$13'.
-Removing empty process `generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:187$13'.
-Found and cleaned up 3 empty switches in `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:169$5'.
-Removing empty process `generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:169$5'.
-Found and cleaned up 3 empty switches in `\generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:159$1'.
-Removing empty process `generic_fifo_sc_x.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:159$1'.
+Found and cleaned up 1 empty switch in `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:308$109'.
+Removing empty process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:308$109'.
+Found and cleaned up 1 empty switch in `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:299$101'.
+Removing empty process `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:299$101'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:262$71'.
+Removing empty process `generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:262$71'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:253$61'.
+Removing empty process `generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:253$61'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:239$53'.
+Removing empty process `generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:239$53'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:220$36'.
+Removing empty process `generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:220$36'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:211$23'.
+Removing empty process `generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:211$23'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:202$17'.
+Removing empty process `generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:202$17'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:187$13'.
+Removing empty process `generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:187$13'.
+Found and cleaned up 3 empty switches in `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:169$5'.
+Removing empty process `generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:169$5'.
+Found and cleaned up 3 empty switches in `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:159$1'.
+Removing empty process `generic_fifo_sc_x.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:159$1'.
 Cleaned up 36 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -243,8 +243,8 @@ Finding identical cells in module `\SizedFIFO_x'.
 Removed a total of 0 cells.
 
 4.6. Executing OPT_DFF pass (perform DFF optimizations).
-Adding EN signal on $procdff$234 ($dff) from module $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:313$116_DATA, Q = \out2).
-Adding EN signal on $procdff$238 ($dff) from module $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram (D = $memrd$\ram$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:304$108_DATA, Q = \out1).
+Adding EN signal on $procdff$234 ($dff) from module $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:313$116_DATA, Q = \out2).
+Adding EN signal on $procdff$238 ($dff) from module $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram (D = $memrd$\ram$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:304$108_DATA, Q = \out1).
 Adding SRST signal on $procdff$242 ($dff) from module generic_fifo_sc_x (D = $procmux$144_Y, Q = \full_n_r, rval = 1'0).
 Adding EN signal on $auto$ff.cc:262:slice$255 ($sdff) from module generic_fifo_sc_x (D = $procmux$144_Y, Q = \full_n_r).
 Adding SRST signal on $procdff$243 ($dff) from module generic_fifo_sc_x (D = $procmux$155_Y, Q = \empty_n_r, rval = 1'1).
@@ -260,9 +260,9 @@ Adding EN signal on $auto$ff.cc:262:slice$295 ($sdff) from module generic_fifo_s
 Adding SRST signal on $procdff$248 ($dff) from module generic_fifo_sc_x (D = $procmux$210_Y, Q = \gb, rval = 1'0).
 Adding EN signal on $auto$ff.cc:262:slice$303 ($sdff) from module generic_fifo_sc_x (D = $procmux$210_Y, Q = \gb).
 Adding SRST signal on $procdff$249 ($dff) from module generic_fifo_sc_x (D = $procmux$218_Y, Q = \rp, rval = 2'00).
-Adding EN signal on $auto$ff.cc:262:slice$311 ($sdff) from module generic_fifo_sc_x (D = $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:176$7_Y, Q = \rp).
+Adding EN signal on $auto$ff.cc:262:slice$311 ($sdff) from module generic_fifo_sc_x (D = $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:176$7_Y, Q = \rp).
 Adding SRST signal on $procdff$250 ($dff) from module generic_fifo_sc_x (D = $procmux$226_Y, Q = \wp, rval = 2'00).
-Adding EN signal on $auto$ff.cc:262:slice$317 ($sdff) from module generic_fifo_sc_x (D = $add$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:166$3_Y, Q = \wp).
+Adding EN signal on $auto$ff.cc:262:slice$317 ($sdff) from module generic_fifo_sc_x (D = $add$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/mkDelayWorker32B_submodules/SizedFIFO_x.v:166$3_Y, Q = \wp).
 
 4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram..
@@ -376,10 +376,8 @@ Optimizing module generic_fifo_sc_x.
    Number of memory bits:          262
    Number of processes:              0
    Number of cells:                 12
-     $dffe                           2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                            6
+     $dffe                         262
+     $mux                          268
 
 === SizedFIFO_x ===
 
@@ -391,7 +389,6 @@ Optimizing module generic_fifo_sc_x.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  1
-     generic_fifo_sc_x               1
 
 === generic_fifo_sc_x ===
 
@@ -403,55 +400,37 @@ Optimizing module generic_fifo_sc_x.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 84
-     $add                            5
+     $add                           12
      $and                           25
-     $eq                             4
-     $ge                             2
-     $le                             2
+     $eq                             8
+     $ge                            64
+     $le                            64
      $logic_not                      5
-     $lt                             2
-     $mux                           14
-     $ne                             3
+     $lt                            64
+     $mux                           18
+     $ne                             6
      $not                            1
-     $or                             3
-     $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram      1
-     $reduce_bool                    7
-     $reduce_or                      1
-     $sdffe                          9
+     $or                             4
+     $reduce_bool                   14
+     $reduce_or                      2
+     $sdffe                         13
 
 === design hierarchy ===
 
    SizedFIFO_x                       1
-     generic_fifo_sc_x               1
-       $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram      1
+     generic_fifo_sc_x               0
+       $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram      0
 
-   Number of wires:                127
-   Number of wire bits:           2228
-   Number of public wires:          53
-   Number of public wire bits:    1364
-   Number of memories:               1
-   Number of memory bits:          262
+   Number of wires:                 17
+   Number of wire bits:            278
+   Number of public wires:          17
+   Number of public wire bits:     278
+   Number of memories:               0
+   Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 95
-     $add                            5
-     $and                           25
-     $dffe                           2
-     $eq                             4
-     $ge                             2
-     $le                             2
-     $logic_not                      5
-     $lt                             2
-     $memrd                          2
-     $memwr_v2                       2
-     $mux                           20
-     $ne                             3
-     $not                            1
-     $or                             3
-     $reduce_bool                    7
-     $reduce_or                      1
-     $sdffe                          9
+   Number of cells:                  1
 
 Warnings: 1 unique messages, 1 total
-End of script. Logfile hash: 70319a2b28, CPU: user 0.11s system 0.00s, MEM: 13.30 MB peak
+End of script. Logfile hash: 697aad721b, CPU: user 0.16s system 0.00s, MEM: 13.48 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 19% 5x opt_expr (0 sec), 19% 3x opt_clean (0 sec), ...
+Time spent: 19% 5x opt_expr (0 sec), 17% 2x read_verilog (0 sec), ...

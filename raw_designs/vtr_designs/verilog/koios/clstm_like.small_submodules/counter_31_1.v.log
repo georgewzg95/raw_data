@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/counter_31_1.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/counter_31_1.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/counter_31_1.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/counter_31_1.v' to AST representation.
 Generating RTLIL representation for module `\counter_31_1'.
 Successfully finished Verilog frontend.
 
@@ -48,7 +48,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 2 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/counter_31_1.v:10$1 in module counter_31_1.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/counter_31_1.v:10$1 in module counter_31_1.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -60,20 +60,20 @@ Promoted 0 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\counter_31_1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/counter_31_1.v:10$1'.
+Creating decoders for process `\counter_31_1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/counter_31_1.v:10$1'.
      1/1: $0\count[13:0]
 
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\counter_31_1.\count' using process `\counter_31_1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/counter_31_1.v:10$1'.
+Creating register for signal `\counter_31_1.\count' using process `\counter_31_1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/counter_31_1.v:10$1'.
   created $dff cell `$procdff$13' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 3 empty switches in `\counter_31_1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/counter_31_1.v:10$1'.
-Removing empty process `counter_31_1.$proc$/home/zhigang/DATA/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/counter_31_1.v:10$1'.
+Found and cleaned up 3 empty switches in `\counter_31_1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/counter_31_1.v:10$1'.
+Removing empty process `counter_31_1.$proc$/home/zhigang/raw_data/raw_designs/vtr_designs/verilog/koios/clstm_like.small_submodules/counter_31_1.v:10$1'.
 Cleaned up 3 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -157,11 +157,11 @@ Optimizing module counter_31_1.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                  4
-     $add                            1
-     $le                             1
-     $mux                            1
-     $sdffe                          1
+     $add                           32
+     $le                            32
+     $mux                           14
+     $sdffe                         14
 
-End of script. Logfile hash: 8f01c081f4, CPU: user 0.02s system 0.00s, MEM: 10.98 MB peak
+End of script. Logfile hash: 9c0cb8543f, CPU: user 0.01s system 0.00s, MEM: 11.24 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 33% 4x opt_expr (0 sec), 33% 2x opt_clean (0 sec), ...
+Time spent: 33% 3x opt_merge (0 sec), 33% 2x opt_dff (0 sec), ...

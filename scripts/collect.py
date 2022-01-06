@@ -20,7 +20,7 @@ field_name = ['Name',
               'Number of cells']
 
 cell_name = [ '$not',  '$pos', '$neg', 
-              '$reduce_and', '$reduce_or', '$reduce_xor', '$reduce_xor', '$reduce_xnor', '$reduce_bool',
+              '$reduce_and', '$reduce_or', '$reduce_xor', '$reduce_xnor', '$reduce_bool',
               '$logic_not', '$slice', '$lut', '$sop',
 
               '$and', '$or', '$xor', '$xnor',

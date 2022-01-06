@@ -24,8 +24,8 @@
 
 -- Executing script file `out.ys' --
 
-1. Executing Verilog-2005 frontend: /home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v
-Parsing SystemVerilog input from `/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v' to AST representation.
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v' to AST representation.
 Generating RTLIL representation for module `\shift_register_unit_18_10'.
 Successfully finished Verilog frontend.
 
@@ -48,7 +48,7 @@ Removed 0 unused modules.
 Cleaned up 0 empty switches.
 
 3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
-Marked 1 switch rules as full_case in process $proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1 in module shift_register_unit_18_10.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1 in module shift_register_unit_18_10.
 Removed a total of 0 dead cases.
 
 3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
@@ -60,7 +60,7 @@ Promoted 0 assignments to connections.
 3.5. Executing PROC_ARST pass (detect async resets in processes).
 
 3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
-Creating decoders for process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
+Creating decoders for process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
      1/10: $0\shift_registers_9[17:0]
      2/10: $0\shift_registers_8[17:0]
      3/10: $0\shift_registers_7[17:0]
@@ -75,32 +75,32 @@ Creating decoders for process `\shift_register_unit_18_10.$proc$/home/zhigang/DA
 3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
 
 3.8. Executing PROC_DFF pass (convert process syncs to FFs).
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_0' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_0' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
   created $dff cell `$procdff$52' with positive edge clock.
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_1' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_1' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
   created $dff cell `$procdff$53' with positive edge clock.
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_2' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_2' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
   created $dff cell `$procdff$54' with positive edge clock.
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_3' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_3' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
   created $dff cell `$procdff$55' with positive edge clock.
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_4' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_4' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
   created $dff cell `$procdff$56' with positive edge clock.
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_5' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_5' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
   created $dff cell `$procdff$57' with positive edge clock.
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_6' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_6' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
   created $dff cell `$procdff$58' with positive edge clock.
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_7' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_7' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
   created $dff cell `$procdff$59' with positive edge clock.
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_8' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_8' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
   created $dff cell `$procdff$60' with positive edge clock.
-Creating register for signal `\shift_register_unit_18_10.\shift_registers_9' using process `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
+Creating register for signal `\shift_register_unit_18_10.\shift_registers_9' using process `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
   created $dff cell `$procdff$61' with positive edge clock.
 
 3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
 3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
-Found and cleaned up 2 empty switches in `\shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
-Removing empty process `shift_register_unit_18_10.$proc$/home/zhigang/DATA/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
+Found and cleaned up 2 empty switches in `\shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
+Removing empty process `shift_register_unit_18_10.$proc$/home/zhigang/raw_data/raw_designs/test_designs/clstm_like.medium_submodules/shift_register_unit_18_10.v:21$1'.
 Cleaned up 2 empty switches.
 
 3.11. Executing OPT_EXPR pass (perform const folding).
@@ -199,8 +199,8 @@ Optimizing module shift_register_unit_18_10.
    Number of memory bits:            0
    Number of processes:              0
    Number of cells:                 10
-     $sdffe                         10
+     $sdffe                        180
 
-End of script. Logfile hash: 7c912421c8, CPU: user 0.02s system 0.00s, MEM: 11.59 MB peak
+End of script. Logfile hash: a9c71dbf5b, CPU: user 0.05s system 0.00s, MEM: 11.78 MB peak
 Yosys 0.10+12 (git sha1 72fac04, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
-Time spent: 33% 4x opt_expr (0 sec), 33% 2x opt_muxtree (0 sec), ...
+Time spent: 27% 4x opt_expr (0 sec), 18% 3x opt_merge (0 sec), ...
