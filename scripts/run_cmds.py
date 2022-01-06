@@ -34,7 +34,7 @@ remain_designs = []
 
 def replace_tcl(design):
   top_module = find_topmodule(design)
-  with open(design.filepath)
+  with open(design.filepath):
     lines = f.readlines()
   create_clock = ''
   #find out the top module clock port
@@ -43,23 +43,20 @@ def replace_tcl(design):
     if line.find("module") >= 0:
       x = line.split()
       if x[0] == "module":
-	k = x[1].split('(')
-	k = k[0].split('#')
-	if k[0] == top_module:
-	  start_parse = True
-    
+        k = x[1].split('(')
+        k = k[0].split('#')
+        if k[0] == top_module:
+          start_parse = True
+      
     if start_parse == True:
       z = re.split('[\s(,;)]', line)
       for ele in z:
-	if 'clk' in ele or 'clock' in ele:
-	create_clock = ele
-	break
+        if 'clk' in ele or 'clock' in ele:
+          create_clock = ele
+          break
 
-      if create_clock != '':
-	break
-
-    if ';' in line:
-	break
+      if create_clock != '' or ';' in line:
+        break
 
   with open(report_dir + os.sep + 'tcl_temp.tcl', 'r') as f:
     lines = f.readlines()
