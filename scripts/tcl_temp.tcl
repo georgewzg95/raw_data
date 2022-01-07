@@ -1,7 +1,7 @@
 set outputDir [OUTPUTDIR]
 file mkdir $outputDir
 read_verilog -quiet [V_FILE]
-synth_design -part xc7z020clg484-3 -top [TOP]
+synth_design -part xc7z020clg484-3 -top [TOP] -mode out_of_context
 #synth_design -part xc7v585tffg1761-3 -top attention
 [CLOCK]
 write_checkpoint -force $outputDir/post_synth
@@ -9,6 +9,7 @@ report_timing_summary -file $outputDir/post_synth_timing_summary.rpt
 report_power -file $outputDir/post_synth_power.rpt
 
 opt_design
+power_opt_design
 place_design
 phys_opt_design
 write_checkpoint -force $outputDir/post_place
