@@ -1,5 +1,5 @@
-read_verilog -sv /home/zhigang/raw_data/designs_width/vtr_designs/verilog/ch_intrinsics_submodules/memory_controller.v;
+read_verilog -sv /home/zhigang/raw_data/designs_width/test_designs/comb_adder/comb_adder_32.v;
 hierarchy -auto-top;
 proc; 
 opt;
-tee -o /home/zhigang/raw_data/designs_width/vtr_designs/verilog/ch_intrinsics_submodules/memory_controller.v.out stat -width;
+tee -o /home/zhigang/raw_data/designs_width/test_designs/comb_adder/comb_adder_32.v.out stat -width;
