@@ -52,7 +52,7 @@ def replace_tcl(design):
       z = re.split('[\s(,;)]', line)
       for ele in z:
         if 'clk' in ele or 'clock' in ele:
-          create_clock = ele
+          create_clock = 'create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports ' + ele + ']'
           break
 
       if create_clock != '' or ';' in line:
