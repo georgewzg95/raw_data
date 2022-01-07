@@ -4,7 +4,7 @@ import os
 import argparse
 import re
 
-report_dir = '/misc/scratch/zwei1/reports/'
+report_dir = '/misc/scratch/zwei1/reports_4'
 root_dir = '/misc/scratch/zwei1/raw_data'
 
 class Design:
@@ -50,17 +50,19 @@ def replace_tcl(design):
       
     if start_parse == True:
       z = re.split('[\s(,;)]', line)
+      #print(z)
       for ele in z:
-        if 'clk' in ele or 'clock' in ele:
-          create_clock = 'create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports ' + ele + ']'
-          break
+        if 'clk' in ele.lower() or 'clock' in ele.lower():
+          create_clock += 'create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports ' + ele + ']\n'
 
-      if create_clock != '' or ';' in line:
+      if ';' in line:
         break
 
   with open(report_dir + os.sep + 'tcl_temp.tcl', 'r') as f:
     lines = f.readlines()
 
+  #print(create_clock)
+  #print(design.r_dir)
   with open(design.r_dir + os.sep + 'run_tcl.tcl', 'w') as f:
     for line in lines:
         line = line.replace('[OUTPUTDIR]', design.r_dir)
