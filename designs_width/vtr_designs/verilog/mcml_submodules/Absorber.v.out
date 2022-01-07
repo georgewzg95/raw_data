@@ -1,0 +1,142 @@
+
+5. Printing statistics.
+
+=== Absorber ===
+
+   Number of wires:                240
+   Number of wire bits:           5091
+   Number of public wires:         213
+   Number of public wire bits:    4581
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                103
+     $add_16                         1
+     $add_64                         2
+     $dff_1                          1
+     $eq_3                           5
+     $eq_32                          4
+     $ge_32                          2
+     $logic_and_1                    2
+     $mul_64                         3
+     $mux_1                          1
+     $mux_16                         1
+     $mux_32                        13
+     $mux_64                         3
+     $pmux_32                        1
+     $sdffe_16                       2
+     $sdffe_64                       5
+     $sub_32                         1
+     PhotonBlock1                   18
+     PhotonBlock2                   37
+     Sqrt_64b                        1
+
+=== PhotonBlock1 ===
+
+   Number of wires:                  9
+   Number of wire bits:            195
+   Number of public wires:           9
+   Number of public wire bits:     195
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $sdffe_32                       3
+
+=== PhotonBlock2 ===
+
+   Number of wires:                  9
+   Number of wire bits:             71
+   Number of public wires:           9
+   Number of public wire bits:      71
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $sdffe_1                        2
+     $sdffe_32                       1
+
+=== Sqrt_64b ===
+
+   Number of wires:                410
+   Number of wire bits:          17246
+   Number of public wires:         131
+   Number of public wire bits:    8257
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                443
+     $add_64                        62
+     $and_1                         61
+     $dff_11                         1
+     $dff_14                         1
+     $dff_17                         1
+     $dff_2                          1
+     $dff_21                         1
+     $dff_25                         1
+     $dff_29                         1
+     $dff_5                          1
+     $dff_63                         9
+     $dff_64                        10
+     $dff_8                          1
+     $ge_64                         32
+     $logic_not_64                  32
+     $mux_32                        32
+     $mux_64                        63
+     $not_1                         31
+     $or_1                          32
+     $sdff_1                         9
+     $sub_64                        61
+
+=== design hierarchy ===
+
+   Absorber                          1
+     PhotonBlock1                   18
+     PhotonBlock2                   37
+     Sqrt_64b                        1
+
+   Number of wires:               1145
+   Number of wire bits:          28474
+   Number of public wires:         839
+   Number of public wire bits:   18975
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                655
+     $add_16                         1
+     $add_64                        64
+     $and_1                         61
+     $dff_1                          1
+     $dff_11                         1
+     $dff_14                         1
+     $dff_17                         1
+     $dff_2                          1
+     $dff_21                         1
+     $dff_25                         1
+     $dff_29                         1
+     $dff_5                          1
+     $dff_63                         9
+     $dff_64                        10
+     $dff_8                          1
+     $eq_3                           5
+     $eq_32                          4
+     $ge_32                          2
+     $ge_64                         32
+     $logic_and_1                    2
+     $logic_not_64                  32
+     $mul_64                         3
+     $mux_1                          1
+     $mux_16                         1
+     $mux_32                        45
+     $mux_64                        66
+     $not_1                         31
+     $or_1                          32
+     $pmux_32                        1
+     $sdff_1                         9
+     $sdffe_1                       74
+     $sdffe_16                       2
+     $sdffe_32                      91
+     $sdffe_64                       5
+     $sub_32                         1
+     $sub_64                        61
+

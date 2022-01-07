@@ -1,0 +1,59 @@
+
+5. Printing statistics.
+
+=== full_adder ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           8
+   Number of public wire bits:       8
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $or_1                           1
+     half_adder                      2
+
+=== half_adder ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $and_1                          1
+     $xor_1                          1
+
+=== ripple_adder_6bit ===
+
+   Number of wires:                 10
+   Number of wire bits:             25
+   Number of public wires:          10
+   Number of public wire bits:      25
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     full_adder                      6
+
+=== design hierarchy ===
+
+   ripple_adder_6bit                 1
+     full_adder                      6
+       half_adder                    2
+
+   Number of wires:                106
+   Number of wire bits:            121
+   Number of public wires:         106
+   Number of public wire bits:     121
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $and_1                         12
+     $or_1                           6
+     $xor_1                         12
+

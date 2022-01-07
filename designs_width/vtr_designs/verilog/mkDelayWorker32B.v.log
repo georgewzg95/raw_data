@@ -1,0 +1,556 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.10+12 (git sha1 32b3a71, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+
+
+-- Executing script file `out.ys' --
+
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v' to AST representation.
+Warning: Encountered `parallel_case' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using the Verilog `parallel_case' attribute or the SystemVerilog `unique' or `priority' keywords is recommended!
+Warning: Literal has a width of 3 bit, but value requires 4 bit. (/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6717)
+Generating RTLIL representation for module `\dual_port_ram'.
+Generating RTLIL representation for module `\mkDelayWorker32B'.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2246.3-2262.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2322.3-2332.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2333.3-2343.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2613.3-2621.10 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2628.3-2641.10 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2706.3-2714.10 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2720.3-2727.10 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2789.3-2802.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2812.3-2820.10 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2877.3-2885.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2916.3-2930.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2937.3-2950.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2985.3-3000.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3007.3-3022.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3050.3-3065.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3072.3-3086.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3222.3-3238.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3245.3-3262.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3397.3-3406.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3526.3-3565.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3566.3-3583.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3584.3-3593.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\ResetToBool'.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3915.1-3921.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\arSRLFIFO_a'.
+Generating RTLIL representation for module `\generic_fifo_sc_a'.
+Generating RTLIL representation for module `\arSRLFIFO_b'.
+Generating RTLIL representation for module `\generic_fifo_sc_b'.
+Generating RTLIL representation for module `\arSRLFIFO_c'.
+Generating RTLIL representation for module `\generic_fifo_sc_c'.
+Generating RTLIL representation for module `\arSRLFIFO_d'.
+Generating RTLIL representation for module `\generic_fifo_sc_d'.
+Generating RTLIL representation for module `\SizedFIFO_a'.
+Generating RTLIL representation for module `\generic_fifo_sc_f'.
+Generating RTLIL representation for module `\SizedFIFO_b'.
+Generating RTLIL representation for module `\generic_fifo_sc_g'.
+Generating RTLIL representation for module `\SizedFIFO_x'.
+Generating RTLIL representation for module `\generic_fifo_sc_x'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Finding top of design hierarchy..
+root of   1 design levels: generic_fifo_sc_x   
+root of   2 design levels: SizedFIFO_x         
+root of   1 design levels: generic_fifo_sc_g   
+root of   2 design levels: SizedFIFO_b         
+root of   1 design levels: generic_fifo_sc_f   
+root of   2 design levels: SizedFIFO_a         
+root of   1 design levels: generic_fifo_sc_d   
+root of   2 design levels: arSRLFIFO_d         
+root of   1 design levels: generic_fifo_sc_c   
+root of   2 design levels: arSRLFIFO_c         
+root of   1 design levels: generic_fifo_sc_b   
+root of   2 design levels: arSRLFIFO_b         
+root of   1 design levels: generic_fifo_sc_a   
+root of   2 design levels: arSRLFIFO_a         
+root of   0 design levels: ResetToBool         
+root of   3 design levels: mkDelayWorker32B    
+root of   0 design levels: dual_port_ram       
+Automatically selected mkDelayWorker32B as design top module.
+
+2.2. Analyzing design hierarchy..
+Top module:  \mkDelayWorker32B
+Used module:     \SizedFIFO_b
+Used module:         \generic_fifo_sc_g
+Used module:             \dual_port_ram
+Used module:     \ResetToBool
+Used module:     \SizedFIFO_x
+Used module:         \generic_fifo_sc_x
+Used module:     \arSRLFIFO_d
+Used module:         \generic_fifo_sc_d
+Used module:     \arSRLFIFO_c
+Used module:         \generic_fifo_sc_c
+Used module:     \SizedFIFO_a
+Used module:         \generic_fifo_sc_f
+Used module:     \arSRLFIFO_b
+Used module:         \generic_fifo_sc_b
+Used module:     \arSRLFIFO_a
+Used module:         \generic_fifo_sc_a
+Parameter \DATA_WIDTH = 256
+Parameter \ADDR_WIDTH = 10
+
+2.3. Executing AST frontend in derive mode using pre-parsed AST for module `\dual_port_ram'.
+Parameter \DATA_WIDTH = 256
+Parameter \ADDR_WIDTH = 10
+Generating RTLIL representation for module `$paramod$d85aaca54bcf0da34d73bd45e5702b091208a1fc\dual_port_ram'.
+Parameter \DATA_WIDTH = 256
+Parameter \ADDR_WIDTH = 10
+Found cached RTLIL representation for module `$paramod$d85aaca54bcf0da34d73bd45e5702b091208a1fc\dual_port_ram'.
+Parameter \DATA_WIDTH = 32
+Parameter \ADDR_WIDTH = 4
+
+2.4. Executing AST frontend in derive mode using pre-parsed AST for module `\dual_port_ram'.
+Parameter \DATA_WIDTH = 32
+Parameter \ADDR_WIDTH = 4
+Generating RTLIL representation for module `$paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram'.
+Parameter \DATA_WIDTH = 32
+Parameter \ADDR_WIDTH = 4
+Found cached RTLIL representation for module `$paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram'.
+Parameter \DATA_WIDTH = 128
+Parameter \ADDR_WIDTH = 4
+
+2.5. Executing AST frontend in derive mode using pre-parsed AST for module `\dual_port_ram'.
+Parameter \DATA_WIDTH = 128
+Parameter \ADDR_WIDTH = 4
+Generating RTLIL representation for module `$paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram'.
+Parameter \DATA_WIDTH = 128
+Parameter \ADDR_WIDTH = 4
+Found cached RTLIL representation for module `$paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram'.
+Parameter \DATA_WIDTH = 60
+Parameter \ADDR_WIDTH = 3
+
+2.6. Executing AST frontend in derive mode using pre-parsed AST for module `\dual_port_ram'.
+Parameter \DATA_WIDTH = 60
+Parameter \ADDR_WIDTH = 3
+Generating RTLIL representation for module `$paramod$17b29d3f804c36b130a09071f0e00c567b827562\dual_port_ram'.
+Parameter \DATA_WIDTH = 313
+Parameter \ADDR_WIDTH = 3
+
+2.7. Executing AST frontend in derive mode using pre-parsed AST for module `\dual_port_ram'.
+Parameter \DATA_WIDTH = 313
+Parameter \ADDR_WIDTH = 3
+Generating RTLIL representation for module `$paramod$204b100ee0c0bb69566d1d462d247eed36eba337\dual_port_ram'.
+Parameter \DATA_WIDTH = 131
+Parameter \ADDR_WIDTH = 2
+
+2.8. Executing AST frontend in derive mode using pre-parsed AST for module `\dual_port_ram'.
+Parameter \DATA_WIDTH = 131
+Parameter \ADDR_WIDTH = 2
+Generating RTLIL representation for module `$paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram'.
+
+2.9. Analyzing design hierarchy..
+Top module:  \mkDelayWorker32B
+Used module:     \SizedFIFO_b
+Used module:         \generic_fifo_sc_g
+Used module:             $paramod$204b100ee0c0bb69566d1d462d247eed36eba337\dual_port_ram
+Used module:     \ResetToBool
+Used module:     \SizedFIFO_x
+Used module:         \generic_fifo_sc_x
+Used module:             $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram
+Used module:     \arSRLFIFO_d
+Used module:         \generic_fifo_sc_d
+Used module:             $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram
+Used module:     \arSRLFIFO_c
+Used module:         \generic_fifo_sc_c
+Used module:     \SizedFIFO_a
+Used module:         \generic_fifo_sc_f
+Used module:             $paramod$17b29d3f804c36b130a09071f0e00c567b827562\dual_port_ram
+Used module:     \arSRLFIFO_b
+Used module:         \generic_fifo_sc_b
+Used module:             $paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram
+Used module:     \arSRLFIFO_a
+Used module:         \generic_fifo_sc_a
+Used module:     $paramod$d85aaca54bcf0da34d73bd45e5702b091208a1fc\dual_port_ram
+
+2.10. Analyzing design hierarchy..
+Top module:  \mkDelayWorker32B
+Used module:     \SizedFIFO_b
+Used module:         \generic_fifo_sc_g
+Used module:             $paramod$204b100ee0c0bb69566d1d462d247eed36eba337\dual_port_ram
+Used module:     \ResetToBool
+Used module:     \SizedFIFO_x
+Used module:         \generic_fifo_sc_x
+Used module:             $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram
+Used module:     \arSRLFIFO_d
+Used module:         \generic_fifo_sc_d
+Used module:             $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram
+Used module:     \arSRLFIFO_c
+Used module:         \generic_fifo_sc_c
+Used module:     \SizedFIFO_a
+Used module:         \generic_fifo_sc_f
+Used module:             $paramod$17b29d3f804c36b130a09071f0e00c567b827562\dual_port_ram
+Used module:     \arSRLFIFO_b
+Used module:         \generic_fifo_sc_b
+Used module:             $paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram
+Used module:     \arSRLFIFO_a
+Used module:         \generic_fifo_sc_a
+Used module:     $paramod$d85aaca54bcf0da34d73bd45e5702b091208a1fc\dual_port_ram
+Removing unused module `\dual_port_ram'.
+Removed 1 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:42$1513 in module $paramod$204b100ee0c0bb69566d1d462d247eed36eba337\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:33$1505 in module $paramod$204b100ee0c0bb69566d1d462d247eed36eba337\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:42$1495 in module $paramod$17b29d3f804c36b130a09071f0e00c567b827562\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:33$1487 in module $paramod$17b29d3f804c36b130a09071f0e00c567b827562\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:42$1477 in module $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:33$1469 in module $paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:42$1459 in module $paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:33$1451 in module $paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:42$1441 in module $paramod$d85aaca54bcf0da34d73bd45e5702b091208a1fc\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:33$1433 in module $paramod$d85aaca54bcf0da34d73bd45e5702b091208a1fc\dual_port_ram.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6735$1421 in module generic_fifo_sc_x.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6726$1411 in module generic_fifo_sc_x.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6712$1403 in module generic_fifo_sc_x.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6693$1386 in module generic_fifo_sc_x.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6684$1373 in module generic_fifo_sc_x.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6675$1367 in module generic_fifo_sc_x.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6660$1363 in module generic_fifo_sc_x.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6642$1355 in module generic_fifo_sc_x.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6632$1351 in module generic_fifo_sc_x.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6330$1341 in module generic_fifo_sc_g.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6321$1331 in module generic_fifo_sc_g.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6307$1323 in module generic_fifo_sc_g.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6288$1306 in module generic_fifo_sc_g.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6279$1293 in module generic_fifo_sc_g.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6270$1287 in module generic_fifo_sc_g.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6255$1283 in module generic_fifo_sc_g.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6237$1275 in module generic_fifo_sc_g.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6227$1271 in module generic_fifo_sc_g.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5928$1261 in module generic_fifo_sc_f.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5919$1251 in module generic_fifo_sc_f.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5905$1243 in module generic_fifo_sc_f.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5886$1226 in module generic_fifo_sc_f.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5877$1213 in module generic_fifo_sc_f.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5868$1207 in module generic_fifo_sc_f.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5853$1203 in module generic_fifo_sc_f.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5835$1195 in module generic_fifo_sc_f.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5825$1191 in module generic_fifo_sc_f.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5523$1181 in module generic_fifo_sc_d.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5514$1171 in module generic_fifo_sc_d.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5500$1163 in module generic_fifo_sc_d.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5481$1146 in module generic_fifo_sc_d.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5472$1133 in module generic_fifo_sc_d.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5463$1127 in module generic_fifo_sc_d.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5448$1123 in module generic_fifo_sc_d.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5430$1115 in module generic_fifo_sc_d.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5420$1111 in module generic_fifo_sc_d.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5119$1101 in module generic_fifo_sc_c.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5110$1091 in module generic_fifo_sc_c.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5096$1083 in module generic_fifo_sc_c.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5077$1066 in module generic_fifo_sc_c.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5068$1053 in module generic_fifo_sc_c.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5059$1047 in module generic_fifo_sc_c.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5044$1043 in module generic_fifo_sc_c.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5026$1035 in module generic_fifo_sc_c.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5016$1031 in module generic_fifo_sc_c.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4715$1021 in module generic_fifo_sc_b.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4706$1011 in module generic_fifo_sc_b.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4692$1003 in module generic_fifo_sc_b.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4673$986 in module generic_fifo_sc_b.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4664$973 in module generic_fifo_sc_b.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4655$967 in module generic_fifo_sc_b.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4640$963 in module generic_fifo_sc_b.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4622$955 in module generic_fifo_sc_b.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4612$951 in module generic_fifo_sc_b.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4315$941 in module generic_fifo_sc_a.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4306$931 in module generic_fifo_sc_a.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4292$923 in module generic_fifo_sc_a.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4273$906 in module generic_fifo_sc_a.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4264$893 in module generic_fifo_sc_a.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4255$887 in module generic_fifo_sc_a.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4240$883 in module generic_fifo_sc_a.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4222$875 in module generic_fifo_sc_a.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4212$871 in module generic_fifo_sc_a.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3915$869 in module ResetToBool.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3597$867 in module mkDelayWorker32B.
+Removed 1 dead cases from process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3584$866 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3584$866 in module mkDelayWorker32B.
+Removed 1 dead cases from process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3566$863 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3566$863 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3526$862 in module mkDelayWorker32B.
+Removed 1 dead cases from process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3397$790 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3397$790 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3245$741 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3222$736 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3072$666 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3050$661 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:3007$653 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2985$648 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2937$642 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2916$637 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2877$604 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2812$585 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2789$582 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2720$556 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2706$553 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2628$532 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2613$527 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2333$438 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2322$437 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:2246$402 in module mkDelayWorker32B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:42$1531 in module $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:33$1523 in module $paramod$8362091736f44a56020a5546c34621742906a62a\dual_port_ram.
+Removed a total of 3 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 59 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$204b100ee0c0bb69566d1d462d247eed36eba337\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:42$1513'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:44$1504_EN[312:0]$1519
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:44$1504_DATA[312:0]$1518
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:44$1504_ADDR[2:0]$1517
+     4/4: $0\out2[312:0]
+Creating decoders for process `$paramod$204b100ee0c0bb69566d1d462d247eed36eba337\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:33$1505'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:35$1503_EN[312:0]$1511
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:35$1503_DATA[312:0]$1510
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:35$1503_ADDR[2:0]$1509
+     4/4: $0\out1[312:0]
+Creating decoders for process `$paramod$17b29d3f804c36b130a09071f0e00c567b827562\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:42$1495'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:44$1486_EN[59:0]$1501
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:44$1486_DATA[59:0]$1500
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:44$1486_ADDR[2:0]$1499
+     4/4: $0\out2[59:0]
+Creating decoders for process `$paramod$17b29d3f804c36b130a09071f0e00c567b827562\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:33$1487'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:35$1485_EN[59:0]$1493
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:35$1485_DATA[59:0]$1492
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:35$1485_ADDR[2:0]$1491
+     4/4: $0\out1[59:0]
+Creating decoders for process `$paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:42$1477'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:44$1468_EN[127:0]$1483
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:44$1468_DATA[127:0]$1482
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:44$1468_ADDR[3:0]$1481
+     4/4: $0\out2[127:0]
+Creating decoders for process `$paramod$9d532e1247fd046db4594eb5930a19efcf851bc8\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:33$1469'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:35$1467_EN[127:0]$1475
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:35$1467_DATA[127:0]$1474
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:35$1467_ADDR[3:0]$1473
+     4/4: $0\out1[127:0]
+Creating decoders for process `$paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:42$1459'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:44$1450_EN[31:0]$1465
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:44$1450_DATA[31:0]$1464
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:44$1450_ADDR[3:0]$1463
+     4/4: $0\out2[31:0]
+Creating decoders for process `$paramod$20e56080ec181dbbbeb5e96c6443f519667f1b2d\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:33$1451'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:35$1449_EN[31:0]$1457
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:35$1449_DATA[31:0]$1456
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:35$1449_ADDR[3:0]$1455
+     4/4: $0\out1[31:0]
+Creating decoders for process `$paramod$d85aaca54bcf0da34d73bd45e5702b091208a1fc\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:42$1441'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:44$1432_EN[255:0]$1447
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:44$1432_DATA[255:0]$1446
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:44$1432_ADDR[9:0]$1445
+     4/4: $0\out2[255:0]
+Creating decoders for process `$paramod$d85aaca54bcf0da34d73bd45e5702b091208a1fc\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:33$1433'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:35$1431_EN[255:0]$1439
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:35$1431_DATA[255:0]$1438
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:35$1431_ADDR[9:0]$1437
+     4/4: $0\out1[255:0]
+Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6735$1421'.
+     1/1: $0\full_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6726$1411'.
+     1/1: $0\empty_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6712$1403'.
+     1/1: $0\cnt[2:0]
+Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6693$1386'.
+     1/1: $0\empty_r[0:0]
+Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6684$1373'.
+     1/1: $0\full_r[0:0]
+Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6675$1367'.
+     1/1: $0\gb2[0:0]
+Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6660$1363'.
+     1/1: $0\gb[0:0]
+Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6642$1355'.
+     1/1: $0\rp[1:0]
+Creating decoders for process `\generic_fifo_sc_x.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6632$1351'.
+     1/1: $0\wp[1:0]
+Creating decoders for process `\generic_fifo_sc_g.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6330$1341'.
+     1/1: $0\full_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_g.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6321$1331'.
+     1/1: $0\empty_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_g.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6307$1323'.
+     1/1: $0\cnt[3:0]
+Creating decoders for process `\generic_fifo_sc_g.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6288$1306'.
+     1/1: $0\empty_r[0:0]
+Creating decoders for process `\generic_fifo_sc_g.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6279$1293'.
+     1/1: $0\full_r[0:0]
+Creating decoders for process `\generic_fifo_sc_g.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6270$1287'.
+     1/1: $0\gb2[0:0]
+Creating decoders for process `\generic_fifo_sc_g.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6255$1283'.
+     1/1: $0\gb[0:0]
+Creating decoders for process `\generic_fifo_sc_g.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6237$1275'.
+     1/1: $0\rp[2:0]
+Creating decoders for process `\generic_fifo_sc_g.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:6227$1271'.
+     1/1: $0\wp[2:0]
+Creating decoders for process `\generic_fifo_sc_f.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5928$1261'.
+     1/1: $0\full_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_f.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5919$1251'.
+     1/1: $0\empty_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_f.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5905$1243'.
+     1/1: $0\cnt[3:0]
+Creating decoders for process `\generic_fifo_sc_f.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5886$1226'.
+     1/1: $0\empty_r[0:0]
+Creating decoders for process `\generic_fifo_sc_f.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5877$1213'.
+     1/1: $0\full_r[0:0]
+Creating decoders for process `\generic_fifo_sc_f.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5868$1207'.
+     1/1: $0\gb2[0:0]
+Creating decoders for process `\generic_fifo_sc_f.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5853$1203'.
+     1/1: $0\gb[0:0]
+Creating decoders for process `\generic_fifo_sc_f.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5835$1195'.
+     1/1: $0\rp[2:0]
+Creating decoders for process `\generic_fifo_sc_f.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5825$1191'.
+     1/1: $0\wp[2:0]
+Creating decoders for process `\generic_fifo_sc_d.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5523$1181'.
+     1/1: $0\full_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_d.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5514$1171'.
+     1/1: $0\empty_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_d.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5500$1163'.
+     1/1: $0\cnt[4:0]
+Creating decoders for process `\generic_fifo_sc_d.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5481$1146'.
+     1/1: $0\empty_r[0:0]
+Creating decoders for process `\generic_fifo_sc_d.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5472$1133'.
+     1/1: $0\full_r[0:0]
+Creating decoders for process `\generic_fifo_sc_d.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5463$1127'.
+     1/1: $0\gb2[0:0]
+Creating decoders for process `\generic_fifo_sc_d.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5448$1123'.
+     1/1: $0\gb[0:0]
+Creating decoders for process `\generic_fifo_sc_d.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5430$1115'.
+     1/1: $0\rp[3:0]
+Creating decoders for process `\generic_fifo_sc_d.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5420$1111'.
+     1/1: $0\wp[3:0]
+Creating decoders for process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5119$1101'.
+     1/1: $0\full_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5110$1091'.
+     1/1: $0\empty_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5096$1083'.
+     1/1: $0\cnt[4:0]
+Creating decoders for process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5077$1066'.
+     1/1: $0\empty_r[0:0]
+Creating decoders for process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5068$1053'.
+     1/1: $0\full_r[0:0]
+Creating decoders for process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5059$1047'.
+     1/1: $0\gb2[0:0]
+Creating decoders for process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5044$1043'.
+     1/1: $0\gb[0:0]
+Creating decoders for process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5026$1035'.
+     1/1: $0\rp[3:0]
+Creating decoders for process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:5016$1031'.
+     1/1: $0\wp[3:0]
+Creating decoders for process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4715$1021'.
+     1/1: $0\full_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4706$1011'.
+     1/1: $0\empty_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4692$1003'.
+     1/1: $0\cnt[4:0]
+Creating decoders for process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4673$986'.
+     1/1: $0\empty_r[0:0]
+Creating decoders for process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4664$973'.
+     1/1: $0\full_r[0:0]
+Creating decoders for process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4655$967'.
+     1/1: $0\gb2[0:0]
+Creating decoders for process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4640$963'.
+     1/1: $0\gb[0:0]
+Creating decoders for process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4622$955'.
+     1/1: $0\rp[3:0]
+Creating decoders for process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4612$951'.
+     1/1: $0\wp[3:0]
+Creating decoders for process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4315$941'.
+     1/1: $0\full_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4306$931'.
+     1/1: $0\empty_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4292$923'.
+     1/1: $0\cnt[4:0]
+Creating decoders for process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4273$906'.
+     1/1: $0\empty_r[0:0]
+Creating decoders for process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4264$893'.
+     1/1: $0\full_r[0:0]
+Creating decoders for process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4255$887'.
+     1/1: $0\gb2[0:0]
+Creating decoders for process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4240$883'.
+     1/1: $0\gb[0:0]
+Creating decoders for process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4222$875'.
+     1/1: $0\rp[3:0]
+Creating decoders for process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkDelayWorker32B.v:4212$871'.
+     1/1: $0\wp[3:0]
+Creating decoders 

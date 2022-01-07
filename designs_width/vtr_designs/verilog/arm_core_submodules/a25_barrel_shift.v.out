@@ -1,0 +1,86 @@
+
+5. Printing statistics.
+
+=== a25_barrel_shift ===
+
+   Number of wires:                 18
+   Number of wire bits:            181
+   Number of public wires:          16
+   Number of public wire bits:     179
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $and_1                          1
+     $dff_1                          2
+     $dff_32                         1
+     $logic_not_1                    1
+     $mux_1                          1
+     $mux_32                         1
+     $reduce_or_6                    1
+     a25_shifter_full                1
+     a25_shifter_quick               1
+
+=== a25_shifter_full ===
+
+   Number of wires:                210
+   Number of wire bits:           4632
+   Number of public wires:          11
+   Number of public wire bits:     209
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                204
+     $eq_2                           2
+     $eq_5                          30
+     $eq_8                          32
+     $logic_not_2                    1
+     $logic_not_5                    1
+     $logic_not_8                    1
+     $mux_33                       137
+
+=== a25_shifter_quick ===
+
+   Number of wires:                 34
+   Number of wire bits:            680
+   Number of public wires:          11
+   Number of public wire bits:     209
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 28
+     $eq_2                           4
+     $eq_8                           2
+     $logic_not_2                    2
+     $logic_not_8                    1
+     $mux_33                        19
+
+=== design hierarchy ===
+
+   a25_barrel_shift                  1
+     a25_shifter_full                1
+     a25_shifter_quick               1
+
+   Number of wires:                262
+   Number of wire bits:           5493
+   Number of public wires:          38
+   Number of public wire bits:     597
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                240
+     $and_1                          1
+     $dff_1                          2
+     $dff_32                         1
+     $eq_2                           6
+     $eq_5                          30
+     $eq_8                          34
+     $logic_not_1                    1
+     $logic_not_2                    3
+     $logic_not_5                    1
+     $logic_not_8                    2
+     $mux_1                          1
+     $mux_32                         1
+     $mux_33                       156
+     $reduce_or_6                    1
+

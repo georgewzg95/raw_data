@@ -1,0 +1,45 @@
+
+5. Printing statistics.
+
+=== half_adder ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $and_1                          1
+     $xor_1                          1
+
+=== vedic2x2 ===
+
+   Number of wires:                  8
+   Number of wire bits:             13
+   Number of public wires:           8
+   Number of public wire bits:      13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $and_1                          4
+     half_adder                      2
+
+=== design hierarchy ===
+
+   vedic2x2                          1
+     half_adder                      2
+
+   Number of wires:                 16
+   Number of wire bits:             21
+   Number of public wires:          16
+   Number of public wire bits:      21
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $and_1                          6
+     $xor_1                          2
+

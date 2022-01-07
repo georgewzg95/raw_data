@@ -1,0 +1,155 @@
+
+5. Printing statistics.
+
+=== gng_coef ===
+
+   Number of wires:                254
+   Number of wire bits:            363
+   Number of public wires:           6
+   Number of public wire bits:     115
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                252
+     $dff_17                         1
+     $dff_18                         2
+     $eq_8                         247
+     $logic_not_8                    1
+     $pmux_53                        1
+
+=== gng_interp ===
+
+   Number of wires:                 56
+   Number of wire bits:            640
+   Number of public wires:          33
+   Number of public wire bits:     513
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 48
+     $add_15                         1
+     $add_16                         1
+     $add_19                         1
+     $and_15                         1
+     $dff_15                         5
+     $dff_18                         6
+     $dff_19                         1
+     $dff_9                          1
+     $eq_6                          15
+     $mux_16                         1
+     $not_15                         1
+     $pmux_15                        1
+     $reduce_and_2                   1
+     $sdff_1                         2
+     $sdff_15                        3
+     $sdff_2                         1
+     $sdff_6                         1
+     $sdff_9                         1
+     gng_coef                        1
+     gng_lzd                         1
+     gng_smul_16_18                  1
+     gng_smul_16_18_sadd_37          1
+
+=== gng_lzd ===
+
+   Number of wires:                 71
+   Number of wire bits:            313
+   Number of public wires:          71
+   Number of public wire bits:     313
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                147
+     $mux_1                         15
+     $mux_2                          8
+     $mux_3                          4
+     $mux_4                          2
+     $mux_5                          1
+     $not_1                         61
+     $or_1                          56
+
+=== gng_smul_16_18 ===
+
+   Number of wires:                  8
+   Number of wire bits:            171
+   Number of public wires:           7
+   Number of public wire bits:     137
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $dff_16                         1
+     $dff_18                         1
+     $dff_34                         1
+     $mul_34                         1
+
+=== gng_smul_16_18_sadd_37 ===
+
+   Number of wires:                 12
+   Number of wire bits:            325
+   Number of public wires:          11
+   Number of public wire bits:     291
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add_38                         1
+     $dff_16                         1
+     $dff_18                         1
+     $dff_34                         1
+     $dff_37                         1
+     $dff_38                         1
+     $mul_34                         1
+
+=== design hierarchy ===
+
+   gng_interp                        1
+     gng_coef                        1
+     gng_lzd                         1
+     gng_smul_16_18                  1
+     gng_smul_16_18_sadd_37          1
+
+   Number of wires:                401
+   Number of wire bits:           1812
+   Number of public wires:         128
+   Number of public wire bits:    1369
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                454
+     $add_15                         1
+     $add_16                         1
+     $add_19                         1
+     $add_38                         1
+     $and_15                         1
+     $dff_15                         5
+     $dff_16                         2
+     $dff_17                         1
+     $dff_18                        10
+     $dff_19                         1
+     $dff_34                         2
+     $dff_37                         1
+     $dff_38                         1
+     $dff_9                          1
+     $eq_6                          15
+     $eq_8                         247
+     $logic_not_8                    1
+     $mul_34                         2
+     $mux_1                         15
+     $mux_16                         1
+     $mux_2                          8
+     $mux_3                          4
+     $mux_4                          2
+     $mux_5                          1
+     $not_1                         61
+     $not_15                         1
+     $or_1                          56
+     $pmux_15                        1
+     $pmux_53                        1
+     $reduce_and_2                   1
+     $sdff_1                         2
+     $sdff_15                        3
+     $sdff_2                         1
+     $sdff_6                         1
+     $sdff_9                         1
+

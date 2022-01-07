@@ -1,0 +1,192 @@
+
+5. Printing statistics.
+
+=== $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram ===
+
+   Number of wires:                  9
+   Number of wire bits:           1454
+   Number of public wires:           5
+   Number of public wire bits:     584
+   Number of memories:               1
+   Number of memory bits:         1728
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe_288                       1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux_1                          1
+     $mux_288                        1
+     $mux_6                          1
+
+=== counter_63_3 ===
+
+   Number of wires:                  7
+   Number of wire bits:             64
+   Number of public wires:           4
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $add_32                         1
+     $le_32                          1
+     $mux_14                         1
+     $sdffe_14                       1
+
+=== stage2_parameter_buffer_18_3_16_64 ===
+
+   Number of wires:                676
+   Number of wire bits:          12113
+   Number of public wires:         676
+   Number of public wire bits:   12113
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     counter_63_3                    1
+     weight_buffer_18_16_3_64_Wfc_0      1
+     weight_buffer_18_16_3_64_Wic_0      1
+     weight_buffer_18_16_3_64_Woc_0      1
+     weight_buffer_18_16_3_64_bc_0      1
+     weight_buffer_18_16_3_64_bf_0      1
+     weight_buffer_18_16_3_64_bi_0      1
+     weight_buffer_18_16_3_64_bo_0      1
+
+=== weight_buffer_18_16_3_64_Wfc_0 ===
+
+   Number of wires:                 62
+   Number of wire bits:           1784
+   Number of public wires:          60
+   Number of public wire bits:    1772
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_6                          2
+     $dff_6                          3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+
+=== weight_buffer_18_16_3_64_Wic_0 ===
+
+   Number of wires:                 62
+   Number of wire bits:           1784
+   Number of public wires:          60
+   Number of public wire bits:    1772
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_6                          2
+     $dff_6                          3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+
+=== weight_buffer_18_16_3_64_Woc_0 ===
+
+   Number of wires:                 62
+   Number of wire bits:           1784
+   Number of public wires:          60
+   Number of public wire bits:    1772
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_6                          2
+     $dff_6                          3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+
+=== weight_buffer_18_16_3_64_bc_0 ===
+
+   Number of wires:                 62
+   Number of wire bits:           1784
+   Number of public wires:          60
+   Number of public wire bits:    1772
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_6                          2
+     $dff_6                          3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+
+=== weight_buffer_18_16_3_64_bf_0 ===
+
+   Number of wires:                 62
+   Number of wire bits:           1784
+   Number of public wires:          60
+   Number of public wire bits:    1772
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_6                          2
+     $dff_6                          3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+
+=== weight_buffer_18_16_3_64_bi_0 ===
+
+   Number of wires:                 62
+   Number of wire bits:           1784
+   Number of public wires:          60
+   Number of public wire bits:    1772
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_6                          2
+     $dff_6                          3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+
+=== weight_buffer_18_16_3_64_bo_0 ===
+
+   Number of wires:                 62
+   Number of wire bits:           1784
+   Number of public wires:          60
+   Number of public wire bits:    1772
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_6                          2
+     $dff_6                          3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+
+=== design hierarchy ===
+
+   stage2_parameter_buffer_18_3_16_64      1
+     counter_63_3                    1
+     weight_buffer_18_16_3_64_Wfc_0      1
+       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+     weight_buffer_18_16_3_64_Wic_0      1
+       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+     weight_buffer_18_16_3_64_Woc_0      1
+       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+     weight_buffer_18_16_3_64_bc_0      1
+       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+     weight_buffer_18_16_3_64_bf_0      1
+       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+     weight_buffer_18_16_3_64_bi_0      1
+       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+     weight_buffer_18_16_3_64_bo_0      1
+       $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+
+   Number of wires:               1306
+   Number of wire bits:          55199
+   Number of public wires:        1205
+   Number of public wire bits:   36798
+   Number of memories:              21
+   Number of memory bits:        36288
+   Number of processes:              0
+   Number of cells:                165
+     $add_32                         1
+     $add_6                         14
+     $dff_6                         21
+     $dffe_288                      21
+     $le_32                          1
+     $memrd                         21
+     $memwr_v2                      21
+     $mux_1                         21
+     $mux_14                         1
+     $mux_288                       21
+     $mux_6                         21
+     $sdffe_14                       1
+

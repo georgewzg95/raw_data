@@ -1,0 +1,102 @@
+
+5. Printing statistics.
+
+=== buffer_16_12100_buffer_init_31 ===
+
+   Number of wires:                 12
+   Number of wire bits:            156
+   Number of public wires:          12
+   Number of public wire bits:     156
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $dff_14                         1
+     $dff_16                         2
+     dual_port_ram                   1
+
+=== dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            219
+   Number of public wires:           9
+   Number of public wire bits:      95
+   Number of memories:               1
+   Number of memory bits:          224
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe_16                        2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux_1                          2
+     $mux_14                         2
+     $mux_16                         2
+
+=== stream_buffer_1_3 ===
+
+   Number of wires:                 62
+   Number of wire bits:            500
+   Number of public wires:          33
+   Number of public wire bits:     261
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 45
+     $add_14                         4
+     $add_2                          4
+     $add_32                         4
+     $dff_1                          1
+     $eq_2                           2
+     $logic_and_1                    2
+     $logic_not_2                    2
+     $mux_1                          1
+     $mux_14                         4
+     $mux_16                         1
+     $mux_2                          4
+     $reduce_bool_2                  2
+     $reduce_or_3                    2
+     $sdff_1                         2
+     $sdff_14                        2
+     $sdff_2                         2
+     $sdffe_14                       2
+     $sdffe_2                        2
+     buffer_16_12100_buffer_init_31      2
+
+=== design hierarchy ===
+
+   stream_buffer_1_3                 1
+     buffer_16_12100_buffer_init_31      2
+       dual_port_ram                 1
+
+   Number of wires:                120
+   Number of wire bits:           1250
+   Number of public wires:          75
+   Number of public wire bits:     763
+   Number of memories:               2
+   Number of memory bits:          448
+   Number of processes:              0
+   Number of cells:                 73
+     $add_14                         4
+     $add_2                          4
+     $add_32                         4
+     $dff_1                          1
+     $dff_14                         2
+     $dff_16                         4
+     $dffe_16                        4
+     $eq_2                           2
+     $logic_and_1                    2
+     $logic_not_2                    2
+     $memrd                          4
+     $memwr_v2                       4
+     $mux_1                          5
+     $mux_14                         8
+     $mux_16                         5
+     $mux_2                          4
+     $reduce_bool_2                  2
+     $reduce_or_3                    2
+     $sdff_1                         2
+     $sdff_14                        2
+     $sdff_2                         2
+     $sdffe_14                       2
+     $sdffe_2                        2
+

@@ -1,0 +1,79 @@
+
+5. Printing statistics.
+
+=== $paramod\dual_port_ram\DATA_WIDTH=4'0111\ADDR_WIDTH=4'0100 ===
+
+   Number of wires:                 17
+   Number of wire bits:             89
+   Number of public wires:           9
+   Number of public wire bits:      39
+   Number of memories:               1
+   Number of memory bits:           28
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe_7                         2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux_1                          2
+     $mux_4                          2
+     $mux_7                          2
+
+=== addr_fifo ===
+
+   Number of wires:                 28
+   Number of wire bits:            117
+   Number of public wires:          13
+   Number of public wire bits:      53
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $add_32                         1
+     $add_4                          2
+     $dffe_4                         2
+     $dffe_5                         1
+     $dffe_7                         1
+     $eq_5                           1
+     $logic_and_1                    4
+     $logic_not_1                    2
+     $logic_not_5                    1
+     $mux_5                          2
+     $ne_5                           1
+     $paramod\dual_port_ram\DATA_WIDTH=4'0111\ADDR_WIDTH=4'0100      1
+     $reduce_bool_2                  1
+     $reduce_bool_5                  1
+     $sub_5                          1
+
+=== design hierarchy ===
+
+   addr_fifo                         1
+     $paramod\dual_port_ram\DATA_WIDTH=4'0111\ADDR_WIDTH=4'0100      1
+
+   Number of wires:                 45
+   Number of wire bits:            206
+   Number of public wires:          22
+   Number of public wire bits:      92
+   Number of memories:               1
+   Number of memory bits:           28
+   Number of processes:              0
+   Number of cells:                 33
+     $add_32                         1
+     $add_4                          2
+     $dffe_4                         2
+     $dffe_5                         1
+     $dffe_7                         3
+     $eq_5                           1
+     $logic_and_1                    4
+     $logic_not_1                    2
+     $logic_not_5                    1
+     $memrd                          2
+     $memwr_v2                       2
+     $mux_1                          2
+     $mux_4                          2
+     $mux_5                          2
+     $mux_7                          2
+     $ne_5                           1
+     $reduce_bool_2                  1
+     $reduce_bool_5                  1
+     $sub_5                          1
+

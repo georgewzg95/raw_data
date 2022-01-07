@@ -1,0 +1,77 @@
+
+5. Printing statistics.
+
+=== $paramod$3ba363c57e18702ead9096ac82e02dd89f68084a\processing_element ===
+
+   Number of wires:                 12
+   Number of wire bits:            146
+   Number of public wires:           7
+   Number of public wire bits:     122
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $add_20                         1
+     $eq_2                           1
+     $gt_20                          1
+     $logic_not_2                    1
+     $lt_20                          1
+     $mux_20                         4
+
+=== $paramod$ab59b465056463fc04d10aed504d582ed3f913f6\processing_element ===
+
+   Number of wires:                 12
+   Number of wire bits:            138
+   Number of public wires:           7
+   Number of public wire bits:     114
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $add_20                         1
+     $eq_2                           1
+     $gt_16                          1
+     $logic_not_2                    1
+     $lt_16                          1
+     $mux_16                         2
+     $mux_20                         2
+
+=== reduction_unit ===
+
+   Number of wires:                387
+   Number of wire bits:           7172
+   Number of public wires:         387
+   Number of public wire bits:    7172
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                256
+     $paramod$3ba363c57e18702ead9096ac82e02dd89f68084a\processing_element     64
+     $paramod$ab59b465056463fc04d10aed504d582ed3f913f6\processing_element     64
+     $sdff_20                      128
+
+=== design hierarchy ===
+
+   reduction_unit                    1
+     $paramod$3ba363c57e18702ead9096ac82e02dd89f68084a\processing_element     64
+     $paramod$ab59b465056463fc04d10aed504d582ed3f913f6\processing_element     64
+
+   Number of wires:               1923
+   Number of wire bits:          25348
+   Number of public wires:        1283
+   Number of public wire bits:   22276
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1280
+     $add_20                       128
+     $eq_2                         128
+     $gt_16                         64
+     $gt_20                         64
+     $logic_not_2                  128
+     $lt_16                         64
+     $lt_20                         64
+     $mux_16                       128
+     $mux_20                       384
+     $sdff_20                      128
+

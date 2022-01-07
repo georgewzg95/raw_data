@@ -1,5 +1,5 @@
-read_verilog -sv /home/zhigang/raw_data/raw_designs/opencores/arithmetic/ecg_submodules/func7.v;
+read_verilog -sv /home/zhigang/raw_data/designs_width/vtr_designs/verilog/ch_intrinsics_submodules/memory_controller.v;
 hierarchy -auto-top;
 proc; 
 opt;
-tee -o /home/zhigang/raw_data/raw_designs/opencores/arithmetic/ecg_submodules/func7.v.out stat -width;
+tee -o /home/zhigang/raw_data/designs_width/vtr_designs/verilog/ch_intrinsics_submodules/memory_controller.v.out stat -width;

@@ -1,0 +1,342 @@
+
+5. Printing statistics.
+
+=== FSM ===
+
+   Number of wires:                 58
+   Number of wire bits:            847
+   Number of public wires:          18
+   Number of public wire bits:     699
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 50
+     $add_9                          1
+     $dff_11                         1
+     $eq_2                           3
+     $eq_6                           6
+     $eq_9                           3
+     $logic_and_1                    4
+     $logic_not_2                    1
+     $logic_not_6                    1
+     $logic_not_9                    1
+     $mux_1                          2
+     $mux_6                          2
+     $mux_9                          4
+     $ne_2                           1
+     $pmux_11                        4
+     $pmux_6                         4
+     $reduce_and_2                   1
+     $reduce_bool_2                  1
+     $reduce_bool_5                  1
+     $reduce_or_2                    2
+     $sdff_1                         1
+     $sdffe_295                      2
+     $sdffe_6                        1
+     $sdffe_9                        2
+     $sub_9                          1
+
+=== PE ===
+
+   Number of wires:                 53
+   Number of wire bits:          39179
+   Number of public wires:          47
+   Number of public wire bits:   35614
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $mux_1186                       8
+     $mux_1188                       2
+     $not_1                          1
+     $reduce_bool_2                  1
+     $reduce_or_2                    1
+     $sdff_1186                      1
+     $sdffe_1186                     2
+     $sdffe_1188                     1
+     PPG                             3
+     f3m_add                         3
+     mod_p                           6
+     v0                              1
+     v1                              1
+     v2                              1
+
+=== PPG ===
+
+   Number of wires:                  3
+   Number of wire bits:           2374
+   Number of public wires:           3
+   Number of public wire bits:    2374
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                593
+     f3_mult                       593
+
+=== const_ ===
+
+   Number of wires:                 12
+   Number of wire bits:           2391
+   Number of public wires:           4
+   Number of public wire bits:    1196
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $dff_1                          1
+     $dff_1188                       1
+     $eq_6                           5
+     $mux_1                          1
+     $pmux_1188                      1
+     $reduce_or_5                    1
+
+=== f3_add ===
+
+   Number of wires:                 29
+   Number of wire bits:             32
+   Number of public wires:           9
+   Number of public wire bits:      12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and_1                         14
+     $not_1                          4
+     $or_1                           4
+
+=== f3_mult ===
+
+   Number of wires:                 21
+   Number of wire bits:             24
+   Number of public wires:           7
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 16
+     $and_1                         10
+     $not_1                          4
+     $or_1                           2
+
+=== f3_sub ===
+
+   Number of wires:                  3
+   Number of wire bits:              6
+   Number of public wires:           3
+   Number of public wire bits:       6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     f3_add                          1
+
+=== f3m_add ===
+
+   Number of wires:                  3
+   Number of wire bits:           3558
+   Number of public wires:           3
+   Number of public wire bits:    3558
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                593
+     f3_add                        593
+
+=== mod_p ===
+
+   Number of wires:                  5
+   Number of wire bits:           3564
+   Number of public wires:           5
+   Number of public wire bits:    3564
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     f3_mult                         2
+     f3_sub                          2
+
+=== muxer ===
+
+   Number of wires:                  4
+   Number of wire bits:           3565
+   Number of public wires:           4
+   Number of public wire bits:    3565
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $mux_1188                       1
+
+=== ram ===
+
+   Number of wires:                 20
+   Number of wire bits:          14315
+   Number of public wires:          10
+   Number of public wire bits:    4799
+   Number of memories:               1
+   Number of memory bits:        76032
+   Number of processes:              0
+   Number of cells:                 78
+     $dff_1188                       2
+     $meminit_v2                    64
+     $memrd                          2
+     $memwr_v2                       2
+     $mux_1                          2
+     $mux_1188                       4
+     $mux_6                          2
+
+=== rom ===
+
+   Number of wires:                460
+   Number of wire bits:            524
+   Number of public wires:           3
+   Number of public wire bits:      39
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                458
+     $dff_29                         1
+     $eq_9                         423
+     $logic_not_9                    1
+     $pmux_29                        1
+     $reduce_or_2                   25
+     $reduce_or_3                    6
+     $reduce_or_5                    1
+
+=== select ===
+
+   Number of wires:                  6
+   Number of wire bits:             21
+   Number of public wires:           6
+   Number of public wire bits:      21
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $and_1                          1
+     $mux_6                          1
+
+=== tiny ===
+
+   Number of wires:                 25
+   Number of wire bits:          10774
+   Number of public wires:          25
+   Number of public wire bits:   10774
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     FSM                             1
+     PE                              1
+     const_                          2
+     muxer                           2
+     ram                             1
+     rom                             1
+     select                          1
+
+=== v0 ===
+
+   Number of wires:                  2
+   Number of wire bits:           2372
+   Number of public wires:           2
+   Number of public wire bits:    2372
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== v1 ===
+
+   Number of wires:                  2
+   Number of wire bits:           2372
+   Number of public wires:           2
+   Number of public wire bits:    2372
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== v2 ===
+
+   Number of wires:                  2
+   Number of wire bits:           2372
+   Number of public wires:           2
+   Number of public wire bits:    2372
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== design hierarchy ===
+
+   tiny                              1
+     FSM                             1
+     PE                              1
+       PPG                           3
+         f3_mult                   593
+       f3m_add                       3
+         f3_add                    593
+       mod_p                         6
+         f3_mult                     2
+         f3_sub                      2
+           f3_add                    1
+       v0                            1
+       v1                            1
+       v2                            1
+     const_                          2
+     muxer                           2
+     ram                             1
+     rom                             1
+     select                          1
+
+   Number of wires:              90294
+   Number of wire bits:         224236
+   Number of public wires:       28871
+   Number of public wire bits:  147238
+   Number of memories:               1
+   Number of memory bits:        76032
+   Number of processes:              0
+   Number of cells:              68685
+     $add_9                          1
+     $and_1                      42985
+     $dff_1                          2
+     $dff_11                         1
+     $dff_1188                       4
+     $dff_29                         1
+     $eq_2                           3
+     $eq_6                          16
+     $eq_9                         426
+     $logic_and_1                    4
+     $logic_not_2                    1
+     $logic_not_6                    1
+     $logic_not_9                    2
+     $meminit_v2                    64
+     $memrd                          2
+     $memwr_v2                       2
+     $mux_1                          6
+     $mux_1186                       8
+     $mux_1188                       8
+     $mux_6                          5
+     $mux_9                          4
+     $ne_2                           1
+     $not_1                      14329
+     $or_1                       10746
+     $pmux_11                        4
+     $pmux_1188                      2
+     $pmux_29                        1
+     $pmux_6                         4
+     $reduce_and_2                   1
+     $reduce_bool_2                  2
+     $reduce_bool_5                  1
+     $reduce_or_2                   28
+     $reduce_or_3                    6
+     $reduce_or_5                    3
+     $sdff_1                         1
+     $sdff_1186                      1
+     $sdffe_1186                     2
+     $sdffe_1188                     1
+     $sdffe_295                      2
+     $sdffe_6                        1
+     $sdffe_9                        2
+     $sub_9                          1
+

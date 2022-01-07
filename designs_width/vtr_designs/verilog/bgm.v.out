@@ -1,0 +1,595 @@
+
+5. Printing statistics.
+
+=== add_sub27 ===
+
+   Number of wires:                  7
+   Number of wire bits:            139
+   Number of public wires:           5
+   Number of public wire bits:      83
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $add_28                         1
+     $mux_28                         1
+     $sub_28                         1
+
+=== b_left_shifter ===
+
+   Number of wires:                150
+   Number of wire bits:            296
+   Number of public wires:           3
+   Number of public wire bits:     102
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                148
+     $and_1                         48
+     $dlatch_48                      1
+     $eq_6                          48
+     $logic_not_6                    1
+     $not_1                         49
+     $pmux_48                        1
+
+=== b_left_shifter_new ===
+
+   Number of wires:                174
+   Number of wire bits:            344
+   Number of public wires:           3
+   Number of public wire bits:     118
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                172
+     $and_1                         56
+     $dlatch_56                      1
+     $eq_6                          56
+     $logic_not_6                    1
+     $not_1                         57
+     $pmux_56                        1
+
+=== b_right_shifter ===
+
+   Number of wires:                150
+   Number of wire bits:            296
+   Number of public wires:           3
+   Number of public wire bits:     102
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                148
+     $and_1                         48
+     $dlatch_48                      1
+     $eq_6                          48
+     $logic_not_6                    1
+     $not_1                         49
+     $pmux_48                        1
+
+=== b_right_shifter_new ===
+
+   Number of wires:                 87
+   Number of wire bits:            169
+   Number of public wires:           3
+   Number of public wire bits:      59
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 85
+     $and_1                         27
+     $dlatch_27                      1
+     $eq_5                          27
+     $logic_not_5                    1
+     $not_1                         28
+     $pmux_27                        1
+
+=== bgm ===
+
+   Number of wires:                 63
+   Number of wire bits:           1474
+   Number of public wires:          63
+   Number of public wire bits:    1474
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     delay5                         12
+     fpu_add                         9
+     fpu_mul                        11
+
+=== delay5 ===
+
+   Number of wires:                  4
+   Number of wire bits:             97
+   Number of public wires:           4
+   Number of public wire bits:      97
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $dff_32                         1
+
+=== except ===
+
+   Number of wires:                 61
+   Number of wire bits:            179
+   Number of public wires:          31
+   Number of public wire bits:     149
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 52
+     $and_1                         13
+     $dff_1                         22
+     $logic_not_1                    6
+     $or_1                           3
+     $reduce_and_8                   2
+     $reduce_or_22                   2
+     $reduce_or_23                   2
+     $reduce_or_8                    2
+
+=== fpu_add ===
+
+   Number of wires:                103
+   Number of wire bits:            654
+   Number of public wires:          78
+   Number of public wire bits:     599
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 61
+     $and_1                          8
+     $dff_1                         20
+     $dff_28                         1
+     $dff_31                         1
+     $dff_32                         3
+     $dff_8                          1
+     $logic_not_1                    7
+     $mux_1                          2
+     $mux_31                         2
+     $or_1                           9
+     $reduce_and_8                   1
+     $reduce_or_23                   1
+     $reduce_or_31                   1
+     add_sub27                       1
+     except                          1
+     post_norm                       1
+     pre_norm                        1
+
+=== fpu_mul ===
+
+   Number of wires:                151
+   Number of wire bits:            696
+   Number of public wires:          91
+   Number of public wire bits:     606
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                105
+     $and_1                         21
+     $dff_1                         21
+     $dff_2                          1
+     $dff_3                          1
+     $dff_31                         1
+     $dff_32                         3
+     $dff_8                          1
+     $eq_8                           1
+     $logic_not_1                   13
+     $logic_not_23                   1
+     $logic_not_8                    1
+     $mux_1                          1
+     $mux_31                         2
+     $or_1                          29
+     $reduce_and_8                   1
+     $reduce_bool_48                 1
+     $reduce_or_23                   1
+     $reduce_or_31                   1
+     except                          1
+     mul_r2                          1
+     post_norm                       1
+     pre_norm_fmul                   1
+
+=== mul_r2 ===
+
+   Number of wires:                  6
+   Number of wire bits:            193
+   Number of public wires:           5
+   Number of public wire bits:     145
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $dff_48                         2
+     $mul_48                         1
+
+=== post_norm ===
+
+   Number of wires:                458
+   Number of wire bits:           1475
+   Number of public wires:         133
+   Number of public wire bits:     995
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                435
+     $add_24                         1
+     $add_7                          1
+     $add_8                          4
+     $add_9                          2
+     $and_1                        169
+     $eq_1                           1
+     $eq_2                           3
+     $eq_3                           4
+     $eq_7                           1
+     $eq_8                           1
+     $gt_6                           1
+     $gt_8                           5
+     $gt_9                           1
+     $logic_not_1                   36
+     $logic_not_2                    1
+     $lt_5                           1
+     $lt_6                           1
+     $lt_7                           1
+     $lt_8                           6
+     $mux_1                         21
+     $mux_23                         4
+     $mux_24                         2
+     $mux_48                         3
+     $mux_8                         37
+     $mux_9                          3
+     $ne_8                           4
+     $or_1                          83
+     $pmux_23                        1
+     $pmux_8                         1
+     $reduce_and_23                  1
+     $reduce_and_7                   1
+     $reduce_and_8                   3
+     $reduce_or_2                    3
+     $reduce_or_23                   1
+     $reduce_or_24                   3
+     $reduce_or_25                   1
+     $reduce_or_48                   1
+     $reduce_or_7                    1
+     $reduce_or_8                    2
+     $sub_6                          2
+     $sub_7                          1
+     $sub_8                          9
+     $sub_9                          3
+     b_left_shifter                  1
+     b_left_shifter_new              1
+     b_right_shifter                 1
+     pri_encoder                     1
+
+=== pre_norm ===
+
+   Number of wires:                150
+   Number of wire bits:            580
+   Number of public wires:          52
+   Number of public wire bits:     482
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                135
+     $and_1                         13
+     $dff_1                          9
+     $dff_27                         2
+     $eq_1                           1
+     $eq_2                           1
+     $eq_23                          1
+     $eq_3                           7
+     $eq_5                          27
+     $eq_8                           1
+     $gt_27                          1
+     $gt_8                           2
+     $logic_not_1                    6
+     $logic_not_3                    1
+     $logic_not_5                    1
+     $lt_23                          1
+     $mux_1                          5
+     $mux_23                         1
+     $mux_27                         4
+     $mux_5                          1
+     $mux_8                          4
+     $not_1                          1
+     $or_1                           6
+     $pmux_1                         3
+     $reduce_or_10                   1
+     $reduce_or_11                   1
+     $reduce_or_12                   1
+     $reduce_or_13                   1
+     $reduce_or_14                   1
+     $reduce_or_15                   1
+     $reduce_or_16                   1
+     $reduce_or_17                   1
+     $reduce_or_18                   1
+     $reduce_or_19                   1
+     $reduce_or_2                    5
+     $reduce_or_20                   1
+     $reduce_or_21                   1
+     $reduce_or_22                   1
+     $reduce_or_23                   1
+     $reduce_or_24                   1
+     $reduce_or_3                    1
+     $reduce_or_4                    4
+     $reduce_or_5                    1
+     $reduce_or_6                    1
+     $reduce_or_7                    1
+     $reduce_or_8                    3
+     $reduce_or_9                    1
+     $sdff_8                         1
+     $sub_8                          2
+     b_right_shifter_new             1
+
+=== pre_norm_fmul ===
+
+   Number of wires:                 82
+   Number of wire bits:            349
+   Number of public wires:          34
+   Number of public wire bits:     227
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 75
+     $add_8                          2
+     $add_9                          2
+     $and_1                         15
+     $dff_1                          3
+     $dff_2                          1
+     $dff_3                          1
+     $dff_8                          1
+     $eq_2                           3
+     $eq_3                           1
+     $eq_8                           1
+     $gt_9                           1
+     $logic_not_1                    8
+     $logic_not_2                    1
+     $lt_8                           1
+     $mux_1                          3
+     $mux_8                          8
+     $mux_9                          2
+     $or_1                           8
+     $pmux_1                         1
+     $reduce_or_2                    2
+     $reduce_or_23                   2
+     $reduce_or_31                   2
+     $reduce_or_8                    2
+     $sub_8                          2
+     $sub_9                          2
+
+=== pri_encoder ===
+
+   Number of wires:               1371
+   Number of wire bits:           1663
+   Number of public wires:           3
+   Number of public wire bits:      60
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1369
+     $and_1                       1224
+     $dlatch_6                       1
+     $eq_10                          1
+     $eq_11                          1
+     $eq_12                          1
+     $eq_13                          1
+     $eq_14                          1
+     $eq_15                          1
+     $eq_16                          1
+     $eq_17                          1
+     $eq_18                          1
+     $eq_19                          1
+     $eq_2                           1
+     $eq_20                          1
+     $eq_21                          1
+     $eq_22                          1
+     $eq_23                          1
+     $eq_24                          1
+     $eq_25                          1
+     $eq_26                          1
+     $eq_27                          1
+     $eq_28                          1
+     $eq_29                          1
+     $eq_3                           1
+     $eq_30                          1
+     $eq_31                          1
+     $eq_32                          1
+     $eq_33                          1
+     $eq_34                          1
+     $eq_35                          1
+     $eq_36                          1
+     $eq_37                          1
+     $eq_38                          1
+     $eq_39                          1
+     $eq_4                           1
+     $eq_40                          1
+     $eq_41                          1
+     $eq_42                          1
+     $eq_43                          1
+     $eq_44                          1
+     $eq_45                          1
+     $eq_46                          1
+     $eq_47                          1
+     $eq_48                          1
+     $eq_5                           1
+     $eq_6                           1
+     $eq_7                           1
+     $eq_8                           1
+     $eq_9                           1
+     $logic_not_48                   1
+     $mux_6                         47
+     $not_1                         49
+
+=== design hierarchy ===
+
+   bgm                               1
+     delay5                         12
+     fpu_add                         9
+       add_sub27                     1
+       except                        1
+       post_norm                     1
+         b_left_shifter              1
+         b_left_shifter_new          1
+         b_right_shifter             1
+         pri_encoder                 1
+       pre_norm                      1
+         b_right_shifter_new         1
+     fpu_mul                        11
+       except                        1
+       mul_r2                        1
+       post_norm                     1
+         b_left_shifter              1
+         b_left_shifter_new          1
+         b_right_shifter             1
+         pri_encoder                 1
+       pre_norm_fmul                 1
+
+   Number of wires:              53143
+   Number of wire bits:         115194
+   Number of public wires:        6303
+   Number of public wire bits:   54923
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              50892
+     $add_24                        20
+     $add_28                         9
+     $add_7                         20
+     $add_8                        102
+     $add_9                         62
+     $and_1                      31988
+     $dff_1                        965
+     $dff_2                         22
+     $dff_27                        18
+     $dff_28                         9
+     $dff_3                         22
+     $dff_31                        20
+     $dff_32                        72
+     $dff_48                        22
+     $dff_8                         31
+     $dlatch_27                      9
+     $dlatch_48                     40
+     $dlatch_56                     20
+     $dlatch_6                      20
+     $eq_1                          29
+     $eq_10                         20
+     $eq_11                         20
+     $eq_12                         20
+     $eq_13                         20
+     $eq_14                         20
+     $eq_15                         20
+     $eq_16                         20
+     $eq_17                         20
+     $eq_18                         20
+     $eq_19                         20
+     $eq_2                         122
+     $eq_20                         20
+     $eq_21                         20
+     $eq_22                         20
+     $eq_23                         29
+     $eq_24                         20
+     $eq_25                         20
+     $eq_26                         20
+     $eq_27                         20
+     $eq_28                         20
+     $eq_29                         20
+     $eq_3                         174
+     $eq_30                         20
+     $eq_31                         20
+     $eq_32                         20
+     $eq_33                         20
+     $eq_34                         20
+     $eq_35                         20
+     $eq_36                         20
+     $eq_37                         20
+     $eq_38                         20
+     $eq_39                         20
+     $eq_4                          20
+     $eq_40                         20
+     $eq_41                         20
+     $eq_42                         20
+     $eq_43                         20
+     $eq_44                         20
+     $eq_45                         20
+     $eq_46                         20
+     $eq_47                         20
+     $eq_48                         20
+     $eq_5                         506
+     $eq_6                        3060
+     $eq_7                          40
+     $eq_8                          71
+     $eq_9                          20
+     $gt_27                          9
+     $gt_6                          20
+     $gt_8                         118
+     $gt_9                          31
+     $logic_not_1                 1188
+     $logic_not_2                   31
+     $logic_not_23                  11
+     $logic_not_3                    9
+     $logic_not_48                  20
+     $logic_not_5                   18
+     $logic_not_6                   60
+     $logic_not_8                   11
+     $lt_23                          9
+     $lt_5                          20
+     $lt_6                          20
+     $lt_7                          20
+     $lt_8                         131
+     $mul_48                        11
+     $mux_1                        527
+     $mux_23                        89
+     $mux_24                        40
+     $mux_27                        36
+     $mux_28                         9
+     $mux_31                        40
+     $mux_48                        60
+     $mux_5                          9
+     $mux_6                        940
+     $mux_8                        864
+     $mux_9                         82
+     $ne_8                          80
+     $not_1                       4341
+     $or_1                        2262
+     $pmux_1                        38
+     $pmux_23                       20
+     $pmux_27                        9
+     $pmux_48                       40
+     $pmux_56                       20
+     $pmux_8                        20
+     $reduce_and_23                 20
+     $reduce_and_7                  20
+     $reduce_and_8                 120
+     $reduce_bool_48                11
+     $reduce_or_10                   9
+     $reduce_or_11                   9
+     $reduce_or_12                   9
+     $reduce_or_13                   9
+     $reduce_or_14                   9
+     $reduce_or_15                   9
+     $reduce_or_16                   9
+     $reduce_or_17                   9
+     $reduce_or_18                   9
+     $reduce_or_19                   9
+     $reduce_or_2                  127
+     $reduce_or_20                   9
+     $reduce_or_21                   9
+     $reduce_or_22                  49
+     $reduce_or_23                 111
+     $reduce_or_24                  69
+     $reduce_or_25                  20
+     $reduce_or_3                    9
+     $reduce_or_31                  42
+     $reduce_or_4                   36
+     $reduce_or_48                  20
+     $reduce_or_5                    9
+     $reduce_or_6                    9
+     $reduce_or_7                   29
+     $reduce_or_8                  129
+     $reduce_or_9                    9
+     $sdff_8                         9
+     $sub_28                         9
+     $sub_6                         40
+     $sub_7                         20
+     $sub_8                        220
+     $sub_9                         82
+

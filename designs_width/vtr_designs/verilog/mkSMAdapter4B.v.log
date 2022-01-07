@@ -1,0 +1,872 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.10+12 (git sha1 32b3a71, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+
+
+-- Executing script file `out.ys' --
+
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v' to AST representation.
+Warning: Encountered `parallel_case' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using the Verilog `parallel_case' attribute or the SystemVerilog `unique' or `priority' keywords is recommended!
+Generating RTLIL representation for module `\single_port_ram'.
+Generating RTLIL representation for module `\dual_port_ram'.
+Generating RTLIL representation for module `\mkSMAdapter4B'.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:1900.3-1916.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2004.3-2021.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2258.3-2266.10 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2285.3-2297.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2304.3-2317.10 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2360.3-2368.10 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2375.3-2382.10 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2389.3-2397.10 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2414.3-2430.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2480.3-2488.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2519.3-2533.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2540.3-2553.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2576.3-2590.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2597.3-2610.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2626.3-2638.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2645.3-2657.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2680.3-2694.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2701.3-2714.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2786.3-2802.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2809.3-2825.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2992.3-3015.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3016.3-3031.6 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\SizedFIFO_a'.
+Generating RTLIL representation for module `\generic_fifo_sc_a'.
+Generating RTLIL representation for module `\SizedFIFO_b'.
+Generating RTLIL representation for module `\generic_fifo_sc_b'.
+Generating RTLIL representation for module `\SizedFIFO_c'.
+Generating RTLIL representation for module `\generic_fifo_sc_c'.
+Generating RTLIL representation for module `\ResetToBool'.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4488.1-4494.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Finding top of design hierarchy..
+root of   0 design levels: ResetToBool         
+root of   1 design levels: generic_fifo_sc_c   
+root of   2 design levels: SizedFIFO_c         
+root of   1 design levels: generic_fifo_sc_b   
+root of   2 design levels: SizedFIFO_b         
+root of   1 design levels: generic_fifo_sc_a   
+root of   2 design levels: SizedFIFO_a         
+root of   3 design levels: mkSMAdapter4B       
+root of   0 design levels: dual_port_ram       
+root of   0 design levels: single_port_ram     
+Automatically selected mkSMAdapter4B as design top module.
+
+2.2. Analyzing design hierarchy..
+Top module:  \mkSMAdapter4B
+Used module:     \SizedFIFO_c
+Used module:         \generic_fifo_sc_c
+Used module:             \dual_port_ram
+Used module:     \ResetToBool
+Used module:     \SizedFIFO_b
+Used module:         \generic_fifo_sc_b
+Used module:     \SizedFIFO_a
+Used module:         \generic_fifo_sc_a
+Parameter \DATA_WIDTH = 60
+Parameter \ADDR_WIDTH = 6
+
+2.3. Executing AST frontend in derive mode using pre-parsed AST for module `\dual_port_ram'.
+Parameter \DATA_WIDTH = 60
+Parameter \ADDR_WIDTH = 6
+Generating RTLIL representation for module `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram'.
+Parameter \DATA_WIDTH = 32
+Parameter \ADDR_WIDTH = 2
+
+2.4. Executing AST frontend in derive mode using pre-parsed AST for module `\dual_port_ram'.
+Parameter \DATA_WIDTH = 32
+Parameter \ADDR_WIDTH = 2
+Generating RTLIL representation for module `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram'.
+Parameter \DATA_WIDTH = 61
+Parameter \ADDR_WIDTH = 3
+
+2.5. Executing AST frontend in derive mode using pre-parsed AST for module `\dual_port_ram'.
+Parameter \DATA_WIDTH = 61
+Parameter \ADDR_WIDTH = 3
+Generating RTLIL representation for module `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram'.
+
+2.6. Analyzing design hierarchy..
+Top module:  \mkSMAdapter4B
+Used module:     \SizedFIFO_c
+Used module:         \generic_fifo_sc_c
+Used module:             $paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram
+Used module:     \ResetToBool
+Used module:     \SizedFIFO_b
+Used module:         \generic_fifo_sc_b
+Used module:             $paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram
+Used module:     \SizedFIFO_a
+Used module:         \generic_fifo_sc_a
+Used module:             $paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram
+
+2.7. Analyzing design hierarchy..
+Top module:  \mkSMAdapter4B
+Used module:     \SizedFIFO_c
+Used module:         \generic_fifo_sc_c
+Used module:             $paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram
+Used module:     \ResetToBool
+Used module:     \SizedFIFO_b
+Used module:         \generic_fifo_sc_b
+Used module:             $paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram
+Used module:     \SizedFIFO_a
+Used module:         \generic_fifo_sc_a
+Used module:             $paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram
+Removing unused module `\dual_port_ram'.
+Removing unused module `\single_port_ram'.
+Removed 2 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1038 in module $paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1030 in module $paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4488$1026 in module ResetToBool.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4470$1016 in module generic_fifo_sc_c.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4461$1006 in module generic_fifo_sc_c.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4447$998 in module generic_fifo_sc_c.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4428$981 in module generic_fifo_sc_c.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4419$968 in module generic_fifo_sc_c.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4410$962 in module generic_fifo_sc_c.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4395$958 in module generic_fifo_sc_c.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4377$950 in module generic_fifo_sc_c.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4367$946 in module generic_fifo_sc_c.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4065$936 in module generic_fifo_sc_b.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4056$926 in module generic_fifo_sc_b.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4042$918 in module generic_fifo_sc_b.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4023$901 in module generic_fifo_sc_b.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4014$888 in module generic_fifo_sc_b.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4005$882 in module generic_fifo_sc_b.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3990$878 in module generic_fifo_sc_b.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3972$870 in module generic_fifo_sc_b.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3962$866 in module generic_fifo_sc_b.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3661$856 in module generic_fifo_sc_a.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3652$846 in module generic_fifo_sc_a.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3638$838 in module generic_fifo_sc_a.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3619$821 in module generic_fifo_sc_a.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3610$808 in module generic_fifo_sc_a.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3601$802 in module generic_fifo_sc_a.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3586$798 in module generic_fifo_sc_a.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3568$790 in module generic_fifo_sc_a.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3558$786 in module generic_fifo_sc_a.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3016$783 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2992$782 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2809$706 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2786$701 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2701$662 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2680$657 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2645$649 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2626$644 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2597$637 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2576$632 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2540$629 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2519$624 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2480$591 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2414$571 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2389$561 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2375$557 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2360$554 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2304$537 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2285$532 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2258$521 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2004$433 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:1900$384 in module mkSMAdapter4B.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1074 in module $paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1066 in module $paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1056 in module $paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1048 in module $paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 41 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1038'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:135$1029_EN[59:0]$1044
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:135$1029_DATA[59:0]$1043
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:135$1029_ADDR[5:0]$1042
+     4/4: $0\out2[59:0]
+Creating decoders for process `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1030'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:126$1028_EN[59:0]$1036
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:126$1028_DATA[59:0]$1035
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:126$1028_ADDR[5:0]$1034
+     4/4: $0\out1[59:0]
+Creating decoders for process `\ResetToBool.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4488$1026'.
+     1/1: $1\VAL[0:0]
+Creating decoders for process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4470$1016'.
+     1/1: $0\full_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4461$1006'.
+     1/1: $0\empty_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4447$998'.
+     1/1: $0\cnt[3:0]
+Creating decoders for process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4428$981'.
+     1/1: $0\empty_r[0:0]
+Creating decoders for process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4419$968'.
+     1/1: $0\full_r[0:0]
+Creating decoders for process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4410$962'.
+     1/1: $0\gb2[0:0]
+Creating decoders for process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4395$958'.
+     1/1: $0\gb[0:0]
+Creating decoders for process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4377$950'.
+     1/1: $0\rp[2:0]
+Creating decoders for process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4367$946'.
+     1/1: $0\wp[2:0]
+Creating decoders for process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4065$936'.
+     1/1: $0\full_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4056$926'.
+     1/1: $0\empty_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4042$918'.
+     1/1: $0\cnt[2:0]
+Creating decoders for process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4023$901'.
+     1/1: $0\empty_r[0:0]
+Creating decoders for process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4014$888'.
+     1/1: $0\full_r[0:0]
+Creating decoders for process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4005$882'.
+     1/1: $0\gb2[0:0]
+Creating decoders for process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3990$878'.
+     1/1: $0\gb[0:0]
+Creating decoders for process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3972$870'.
+     1/1: $0\rp[1:0]
+Creating decoders for process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3962$866'.
+     1/1: $0\wp[1:0]
+Creating decoders for process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3661$856'.
+     1/1: $0\full_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3652$846'.
+     1/1: $0\empty_n_r[0:0]
+Creating decoders for process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3638$838'.
+     1/1: $0\cnt[6:0]
+Creating decoders for process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3619$821'.
+     1/1: $0\empty_r[0:0]
+Creating decoders for process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3610$808'.
+     1/1: $0\full_r[0:0]
+Creating decoders for process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3601$802'.
+     1/1: $0\gb2[0:0]
+Creating decoders for process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3586$798'.
+     1/1: $0\gb[0:0]
+Creating decoders for process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3568$790'.
+     1/1: $0\rp[5:0]
+Creating decoders for process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3558$786'.
+     1/1: $0\wp[5:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+     1/77: $0\zeroLengthMesg[0:0]
+     2/77: $0\wsiWordsRemain[11:0]
+     3/77: $0\wsiS_trafficSticky[0:0]
+     4/77: $0\wsiS_tBusyCount[31:0]
+     5/77: $0\wsiS_statusR[7:0]
+     6/77: $0\wsiS_reqFifo_countReg[1:0]
+     7/77: $0\wsiS_peerIsReady[0:0]
+     8/77: $0\wsiS_pMesgCount[31:0]
+     9/77: $0\wsiS_operateD[0:0]
+    10/77: $0\wsiS_iMesgCount[31:0]
+    11/77: $0\wsiS_errorSticky[0:0]
+    12/77: $0\wsiS_burstKind[1:0]
+    13/77: $0\wsiM_trafficSticky[0:0]
+    14/77: $0\wsiM_tBusyCount[31:0]
+    15/77: $0\wsiM_statusR[7:0]
+    16/77: $0\wsiM_sThreadBusy_d[0:0]
+    17/77: $0\wsiM_reqFifo_q_1[60:0]
+    18/77: $0\wsiM_reqFifo_q_0[60:0]
+    19/77: $0\wsiM_reqFifo_c_r[1:0]
+    20/77: $0\wsiM_peerIsReady[0:0]
+    21/77: $0\wsiM_pMesgCount[31:0]
+    22/77: $0\wsiM_operateD[0:0]
+    23/77: $0\wsiM_iMesgCount[31:0]
+    24/77: $0\wsiM_errorSticky[0:0]
+    25/77: $0\wsiM_burstKind[1:0]
+    26/77: $0\wmi_sThreadBusy_d[0:0]
+    27/77: $0\wmi_sFlagReg[31:0]
+    28/77: $0\wmi_sDataThreadBusy_d[0:0]
+    29/77: $0\wmi_reqF_q_1[31:0]
+    30/77: $0\wmi_reqF_q_0[31:0]
+    31/77: $0\wmi_reqF_c_r[1:0]
+    32/77: $0\wmi_peerIsReady[0:0]
+    33/77: $0\wmi_operateD[0:0]
+    34/77: $0\wmi_mFlagF_q_1[31:0]
+    35/77: $0\wmi_mFlagF_q_0[31:0]
+    36/77: $0\wmi_mFlagF_c_r[1:0]
+    37/77: $0\wmi_dhF_q_1[37:0]
+    38/77: $0\wmi_dhF_q_0[37:0]
+    39/77: $0\wmi_dhF_c_r[1:0]
+    40/77: $0\wmi_busyWithMessage[0:0]
+    41/77: $0\wci_sThreadBusy_d[0:0]
+    42/77: $0\wci_sFlagReg[0:0]
+    43/77: $0\wci_respF_q_1[33:0]
+    44/77: $0\wci_respF_q_0[33:0]
+    45/77: $0\wci_respF_c_r[1:0]
+    46/77: $0\wci_reqF_countReg[1:0]
+    47/77: $0\wci_nState[2:0]
+    48/77: $0\wci_illegalEdge[0:0]
+    49/77: $0\wci_ctlOpActive[0:0]
+    50/77: $0\wci_ctlAckReg[0:0]
+    51/77: $0\wci_cState[2:0]
+    52/77: $0\wci_cEdge[2:0]
+    53/77: $0\valExpect[31:0]
+    54/77: $0\unrollCnt[15:0]
+    55/77: $0\thisMesg[31:0]
+    56/77: $0\smaCtrl[31:0]
+    57/77: $0\readyToRequest[0:0]
+    58/77: $0\readyToPush[0:0]
+    59/77: $0\preciseBurst[0:0]
+    60/77: $0\opcode[8:0]
+    61/77: $0\mesgReqValid[0:0]
+    62/77: $0\mesgReqOK[0:0]
+    63/77: $0\mesgReqAddr[13:0]
+    64/77: $0\mesgPreRequest[0:0]
+    65/77: $0\mesgLengthSoFar[13:0]
+    66/77: $0\mesgLength[14:0]
+    67/77: $0\mesgCount[31:0]
+    68/77: $0\lastMesg[31:0]
+    69/77: $0\impreciseBurst[0:0]
+    70/77: $0\firstMsgReq[0:0]
+    71/77: $0\fabWordsRemain[13:0]
+    72/77: $0\fabWordsCurReq[13:0]
+    73/77: $0\fabRespCredit_value[3:0]
+    74/77: $0\errCount[31:0]
+    75/77: $0\endOfMessage[0:0]
+    76/77: $0\doAbort[0:0]
+    77/77: $0\abortCount[31:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3016$783'.
+     1/1: $1\value__h6065[31:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2992$782'.
+     1/1: $1\x_data__h15447[31:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2809$706'.
+     1/1: $1\wsiM_reqFifo_q_1__D_IN[60:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2786$701'.
+     1/1: $1\wsiM_reqFifo_q_0__D_IN[60:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2701$662'.
+     1/1: $1\wmi_reqF_q_1__D_IN[31:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2680$657'.
+     1/1: $1\wmi_reqF_q_0__D_IN[31:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2645$649'.
+     1/1: $1\wmi_mFlagF_q_1__D_IN[31:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2626$644'.
+     1/1: $1\wmi_mFlagF_q_0__D_IN[31:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2597$637'.
+     1/1: $1\wmi_dhF_q_1__D_IN[37:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2576$632'.
+     1/1: $1\wmi_dhF_q_0__D_IN[37:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2540$629'.
+     1/1: $1\wci_respF_q_1__D_IN[33:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2519$624'.
+     1/1: $1\wci_respF_q_0__D_IN[33:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2480$591'.
+     1/1: $1\wci_nState__D_IN[2:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2414$571'.
+     1/1: $1\thisMesg__D_IN[31:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2389$561'.
+     1/1: $1\readyToPush__D_IN[0:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2375$557'.
+     1/1: $1\preciseBurst__D_IN[0:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2360$554'.
+     1/1: $1\opcode__D_IN[8:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2304$537'.
+     1/1: $1\mesgLength__D_IN[14:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2285$532'.
+     1/1: $1\mesgCount__D_IN[31:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2258$521'.
+     1/1: $1\impreciseBurst__D_IN[0:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2004$433'.
+     1/1: $1\MUX_wmi_reqF_q_0__write_1__VAL_1[31:0]
+Creating decoders for process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:1900$384'.
+     1/1: $1\MUX_wci_respF_q_0__write_1__VAL_1[33:0]
+Creating decoders for process `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1074'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:135$1065_EN[60:0]$1080
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:135$1065_DATA[60:0]$1079
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:135$1065_ADDR[2:0]$1078
+     4/4: $0\out2[60:0]
+Creating decoders for process `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1066'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:126$1064_EN[60:0]$1072
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:126$1064_DATA[60:0]$1071
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:126$1064_ADDR[2:0]$1070
+     4/4: $0\out1[60:0]
+Creating decoders for process `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1056'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:135$1047_EN[31:0]$1062
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:135$1047_DATA[31:0]$1061
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:135$1047_ADDR[1:0]$1060
+     4/4: $0\out2[31:0]
+Creating decoders for process `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1048'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:126$1046_EN[31:0]$1054
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:126$1046_DATA[31:0]$1053
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:126$1046_ADDR[1:0]$1052
+     4/4: $0\out1[31:0]
+
+3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+Latch inferred for signal `\ResetToBool.\VAL' from process `\ResetToBool.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4488$1026': $auto$proc_dlatch.cc:427:proc_dlatch$1946
+No latch inferred for signal `\mkSMAdapter4B.\value__h6065' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3016$783'.
+No latch inferred for signal `\mkSMAdapter4B.\x_data__h15447' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2992$782'.
+No latch inferred for signal `\mkSMAdapter4B.\wsiM_reqFifo_q_1__D_IN' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2809$706'.
+No latch inferred for signal `\mkSMAdapter4B.\wsiM_reqFifo_q_0__D_IN' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2786$701'.
+No latch inferred for signal `\mkSMAdapter4B.\wmi_reqF_q_1__D_IN' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2701$662'.
+No latch inferred for signal `\mkSMAdapter4B.\wmi_reqF_q_0__D_IN' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2680$657'.
+No latch inferred for signal `\mkSMAdapter4B.\wmi_mFlagF_q_1__D_IN' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2645$649'.
+No latch inferred for signal `\mkSMAdapter4B.\wmi_mFlagF_q_0__D_IN' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2626$644'.
+No latch inferred for signal `\mkSMAdapter4B.\wmi_dhF_q_1__D_IN' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2597$637'.
+No latch inferred for signal `\mkSMAdapter4B.\wmi_dhF_q_0__D_IN' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2576$632'.
+No latch inferred for signal `\mkSMAdapter4B.\wci_respF_q_1__D_IN' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2540$629'.
+No latch inferred for signal `\mkSMAdapter4B.\wci_respF_q_0__D_IN' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2519$624'.
+No latch inferred for signal `\mkSMAdapter4B.\wci_nState__D_IN' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2480$591'.
+No latch inferred for signal `\mkSMAdapter4B.\thisMesg__D_IN' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2414$571'.
+No latch inferred for signal `\mkSMAdapter4B.\readyToPush__D_IN' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2389$561'.
+No latch inferred for signal `\mkSMAdapter4B.\preciseBurst__D_IN' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2375$557'.
+No latch inferred for signal `\mkSMAdapter4B.\opcode__D_IN' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2360$554'.
+No latch inferred for signal `\mkSMAdapter4B.\mesgLength__D_IN' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2304$537'.
+No latch inferred for signal `\mkSMAdapter4B.\mesgCount__D_IN' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2285$532'.
+No latch inferred for signal `\mkSMAdapter4B.\impreciseBurst__D_IN' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2258$521'.
+No latch inferred for signal `\mkSMAdapter4B.\MUX_wmi_reqF_q_0__write_1__VAL_1' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2004$433'.
+No latch inferred for signal `\mkSMAdapter4B.\MUX_wci_respF_q_0__write_1__VAL_1' from process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:1900$384'.
+
+3.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.\out2' using process `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1038'.
+  created $dff cell `$procdff$1947' with positive edge clock.
+Creating register for signal `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:135$1029_ADDR' using process `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1038'.
+  created $dff cell `$procdff$1948' with positive edge clock.
+Creating register for signal `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:135$1029_DATA' using process `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1038'.
+  created $dff cell `$procdff$1949' with positive edge clock.
+Creating register for signal `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:135$1029_EN' using process `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1038'.
+  created $dff cell `$procdff$1950' with positive edge clock.
+Creating register for signal `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.\out1' using process `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1030'.
+  created $dff cell `$procdff$1951' with positive edge clock.
+Creating register for signal `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:126$1028_ADDR' using process `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1030'.
+  created $dff cell `$procdff$1952' with positive edge clock.
+Creating register for signal `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:126$1028_DATA' using process `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1030'.
+  created $dff cell `$procdff$1953' with positive edge clock.
+Creating register for signal `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:126$1028_EN' using process `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1030'.
+  created $dff cell `$procdff$1954' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_c.\full_n_r' using process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4470$1016'.
+  created $dff cell `$procdff$1955' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_c.\empty_n_r' using process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4461$1006'.
+  created $dff cell `$procdff$1956' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_c.\cnt' using process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4447$998'.
+  created $dff cell `$procdff$1957' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_c.\empty_r' using process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4428$981'.
+  created $dff cell `$procdff$1958' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_c.\full_r' using process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4419$968'.
+  created $dff cell `$procdff$1959' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_c.\gb2' using process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4410$962'.
+  created $dff cell `$procdff$1960' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_c.\gb' using process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4395$958'.
+  created $dff cell `$procdff$1961' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_c.\rp' using process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4377$950'.
+  created $dff cell `$procdff$1962' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_c.\wp' using process `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4367$946'.
+  created $dff cell `$procdff$1963' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_b.\full_n_r' using process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4065$936'.
+  created $dff cell `$procdff$1964' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_b.\empty_n_r' using process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4056$926'.
+  created $dff cell `$procdff$1965' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_b.\cnt' using process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4042$918'.
+  created $dff cell `$procdff$1966' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_b.\empty_r' using process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4023$901'.
+  created $dff cell `$procdff$1967' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_b.\full_r' using process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4014$888'.
+  created $dff cell `$procdff$1968' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_b.\gb2' using process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4005$882'.
+  created $dff cell `$procdff$1969' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_b.\gb' using process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3990$878'.
+  created $dff cell `$procdff$1970' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_b.\rp' using process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3972$870'.
+  created $dff cell `$procdff$1971' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_b.\wp' using process `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3962$866'.
+  created $dff cell `$procdff$1972' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_a.\full_n_r' using process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3661$856'.
+  created $dff cell `$procdff$1973' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_a.\empty_n_r' using process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3652$846'.
+  created $dff cell `$procdff$1974' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_a.\cnt' using process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3638$838'.
+  created $dff cell `$procdff$1975' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_a.\empty_r' using process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3619$821'.
+  created $dff cell `$procdff$1976' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_a.\full_r' using process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3610$808'.
+  created $dff cell `$procdff$1977' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_a.\gb2' using process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3601$802'.
+  created $dff cell `$procdff$1978' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_a.\gb' using process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3586$798'.
+  created $dff cell `$procdff$1979' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_a.\rp' using process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3568$790'.
+  created $dff cell `$procdff$1980' with positive edge clock.
+Creating register for signal `\generic_fifo_sc_a.\wp' using process `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3558$786'.
+  created $dff cell `$procdff$1981' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\abortCount' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$1982' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\doAbort' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$1983' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\endOfMessage' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$1984' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\errCount' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$1985' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\fabRespCredit_value' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$1986' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\fabWordsCurReq' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$1987' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\fabWordsRemain' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$1988' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\firstMsgReq' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$1989' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\impreciseBurst' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$1990' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\lastMesg' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$1991' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\mesgCount' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$1992' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\mesgLength' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$1993' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\mesgLengthSoFar' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$1994' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\mesgPreRequest' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$1995' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\mesgReqAddr' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$1996' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\mesgReqOK' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$1997' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\mesgReqValid' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$1998' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\opcode' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$1999' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\preciseBurst' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2000' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\readyToPush' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2001' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\readyToRequest' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2002' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\smaCtrl' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2003' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\thisMesg' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2004' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\unrollCnt' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2005' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\valExpect' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2006' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wci_cEdge' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2007' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wci_cState' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2008' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wci_ctlAckReg' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2009' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wci_ctlOpActive' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2010' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wci_illegalEdge' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2011' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wci_nState' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2012' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wci_reqF_countReg' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2013' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wci_respF_c_r' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2014' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wci_respF_q_0' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2015' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wci_respF_q_1' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2016' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wci_sFlagReg' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2017' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wci_sThreadBusy_d' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2018' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wmi_busyWithMessage' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2019' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wmi_dhF_c_r' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2020' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wmi_dhF_q_0' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2021' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wmi_dhF_q_1' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2022' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wmi_mFlagF_c_r' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2023' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wmi_mFlagF_q_0' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2024' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wmi_mFlagF_q_1' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2025' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wmi_operateD' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2026' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wmi_peerIsReady' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2027' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wmi_reqF_c_r' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2028' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wmi_reqF_q_0' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2029' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wmi_reqF_q_1' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2030' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wmi_sDataThreadBusy_d' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2031' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wmi_sFlagReg' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2032' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wmi_sThreadBusy_d' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2033' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiM_burstKind' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2034' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiM_errorSticky' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2035' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiM_iMesgCount' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2036' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiM_operateD' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2037' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiM_pMesgCount' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2038' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiM_peerIsReady' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2039' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiM_reqFifo_c_r' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2040' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiM_reqFifo_q_0' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2041' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiM_reqFifo_q_1' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2042' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiM_sThreadBusy_d' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2043' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiM_statusR' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2044' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiM_tBusyCount' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2045' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiM_trafficSticky' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2046' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiS_burstKind' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2047' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiS_errorSticky' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2048' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiS_iMesgCount' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2049' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiS_operateD' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2050' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiS_pMesgCount' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2051' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiS_peerIsReady' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2052' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiS_reqFifo_countReg' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2053' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiS_statusR' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2054' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiS_tBusyCount' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2055' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiS_trafficSticky' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2056' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\wsiWordsRemain' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2057' with positive edge clock.
+Creating register for signal `\mkSMAdapter4B.\zeroLengthMesg' using process `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+  created $dff cell `$procdff$2058' with positive edge clock.
+Creating register for signal `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.\out2' using process `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1074'.
+  created $dff cell `$procdff$2059' with positive edge clock.
+Creating register for signal `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:135$1065_ADDR' using process `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1074'.
+  created $dff cell `$procdff$2060' with positive edge clock.
+Creating register for signal `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:135$1065_DATA' using process `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1074'.
+  created $dff cell `$procdff$2061' with positive edge clock.
+Creating register for signal `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:135$1065_EN' using process `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1074'.
+  created $dff cell `$procdff$2062' with positive edge clock.
+Creating register for signal `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.\out1' using process `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1066'.
+  created $dff cell `$procdff$2063' with positive edge clock.
+Creating register for signal `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:126$1064_ADDR' using process `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1066'.
+  created $dff cell `$procdff$2064' with positive edge clock.
+Creating register for signal `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:126$1064_DATA' using process `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1066'.
+  created $dff cell `$procdff$2065' with positive edge clock.
+Creating register for signal `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:126$1064_EN' using process `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1066'.
+  created $dff cell `$procdff$2066' with positive edge clock.
+Creating register for signal `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.\out2' using process `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1056'.
+  created $dff cell `$procdff$2067' with positive edge clock.
+Creating register for signal `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:135$1047_ADDR' using process `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1056'.
+  created $dff cell `$procdff$2068' with positive edge clock.
+Creating register for signal `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:135$1047_DATA' using process `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1056'.
+  created $dff cell `$procdff$2069' with positive edge clock.
+Creating register for signal `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:135$1047_EN' using process `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1056'.
+  created $dff cell `$procdff$2070' with positive edge clock.
+Creating register for signal `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.\out1' using process `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1048'.
+  created $dff cell `$procdff$2071' with positive edge clock.
+Creating register for signal `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:126$1046_ADDR' using process `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1048'.
+  created $dff cell `$procdff$2072' with positive edge clock.
+Creating register for signal `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:126$1046_DATA' using process `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1048'.
+  created $dff cell `$procdff$2073' with positive edge clock.
+Creating register for signal `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:126$1046_EN' using process `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1048'.
+  created $dff cell `$procdff$2074' with positive edge clock.
+
+3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1038'.
+Removing empty process `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1038'.
+Found and cleaned up 1 empty switch in `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1030'.
+Removing empty process `$paramod$4f6fbf01c70e70becc70c24cf01c3102aeeb79b9\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1030'.
+Found and cleaned up 1 empty switch in `\ResetToBool.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4488$1026'.
+Removing empty process `ResetToBool.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4488$1026'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4470$1016'.
+Removing empty process `generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4470$1016'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4461$1006'.
+Removing empty process `generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4461$1006'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4447$998'.
+Removing empty process `generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4447$998'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4428$981'.
+Removing empty process `generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4428$981'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4419$968'.
+Removing empty process `generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4419$968'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4410$962'.
+Removing empty process `generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4410$962'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4395$958'.
+Removing empty process `generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4395$958'.
+Found and cleaned up 3 empty switches in `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4377$950'.
+Removing empty process `generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4377$950'.
+Found and cleaned up 3 empty switches in `\generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4367$946'.
+Removing empty process `generic_fifo_sc_c.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4367$946'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4065$936'.
+Removing empty process `generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4065$936'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4056$926'.
+Removing empty process `generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4056$926'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4042$918'.
+Removing empty process `generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4042$918'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4023$901'.
+Removing empty process `generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4023$901'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4014$888'.
+Removing empty process `generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4014$888'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4005$882'.
+Removing empty process `generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:4005$882'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3990$878'.
+Removing empty process `generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3990$878'.
+Found and cleaned up 3 empty switches in `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3972$870'.
+Removing empty process `generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3972$870'.
+Found and cleaned up 3 empty switches in `\generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3962$866'.
+Removing empty process `generic_fifo_sc_b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3962$866'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3661$856'.
+Removing empty process `generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3661$856'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3652$846'.
+Removing empty process `generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3652$846'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3638$838'.
+Removing empty process `generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3638$838'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3619$821'.
+Removing empty process `generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3619$821'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3610$808'.
+Removing empty process `generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3610$808'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3601$802'.
+Removing empty process `generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3601$802'.
+Found and cleaned up 4 empty switches in `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3586$798'.
+Removing empty process `generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3586$798'.
+Found and cleaned up 3 empty switches in `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3568$790'.
+Removing empty process `generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3568$790'.
+Found and cleaned up 3 empty switches in `\generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3558$786'.
+Removing empty process `generic_fifo_sc_a.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3558$786'.
+Found and cleaned up 78 empty switches in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3035$784'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3016$783'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:3016$783'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2992$782'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2992$782'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2809$706'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2809$706'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2786$701'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2786$701'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2701$662'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2701$662'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2680$657'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2680$657'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2645$649'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2645$649'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2626$644'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2626$644'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2597$637'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2597$637'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2576$632'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2576$632'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2540$629'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2540$629'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2519$624'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2519$624'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2480$591'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2480$591'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2414$571'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2414$571'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2389$561'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2389$561'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2375$557'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2375$557'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2360$554'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2360$554'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2304$537'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2304$537'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2285$532'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2285$532'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2258$521'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2258$521'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2004$433'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:2004$433'.
+Found and cleaned up 1 empty switch in `\mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:1900$384'.
+Removing empty process `mkSMAdapter4B.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:1900$384'.
+Found and cleaned up 1 empty switch in `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1074'.
+Removing empty process `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1074'.
+Found and cleaned up 1 empty switch in `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1066'.
+Removing empty process `$paramod$9037a25c7de3434dc19a57f80b44249a49f93541\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1066'.
+Found and cleaned up 1 empty switch in `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1056'.
+Removing empty process `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:133$1056'.
+Found and cleaned up 1 empty switch in `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1048'.
+Removing empty process `$paramod$97bca1cfe2f6b17529eb5ca2ef48690d8700ec43\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/mkSMAdapter4B.v:124$1048'.
+Cleaned up 209 empty switches.
+
+3.11. Executing OPT_EXPR pass (perform const folding).

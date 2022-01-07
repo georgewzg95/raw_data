@@ -1,0 +1,133 @@
+
+5. Printing statistics.
+
+=== counter_63_1 ===
+
+   Number of wires:                  7
+   Number of wire bits:             64
+   Number of public wires:           4
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $add_32                         1
+     $le_32                          1
+     $mux_14                         1
+     $sdffe_14                       1
+
+=== counter_8_1 ===
+
+   Number of wires:                  7
+   Number of wire bits:             64
+   Number of public wires:           4
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $add_32                         1
+     $le_32                          1
+     $mux_14                         1
+     $sdffe_14                       1
+
+=== dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:           2907
+   Number of public wires:           9
+   Number of public wire bits:    1167
+   Number of memories:               1
+   Number of memory bits:         1728
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe_288                       2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux_1                          2
+     $mux_288                        2
+     $mux_6                          2
+
+=== ram_288_0_64 ===
+
+   Number of wires:                  8
+   Number of wire bits:           1166
+   Number of public wires:           8
+   Number of public wire bits:    1166
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     dual_port_ram                   1
+
+=== shift_register_unit_12 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $sdffe_1                        2
+
+=== stage2_mt_buffer_18_3_16_64_32 ===
+
+   Number of wires:                 72
+   Number of wire bits:           1234
+   Number of public wires:          50
+   Number of public wire bits:    1212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 35
+     $eq_14                          3
+     $logic_and_1                    9
+     $logic_not_14                   3
+     $mux_1                          5
+     $mux_6                          1
+     $not_1                          2
+     $reduce_bool_2                  2
+     $sdff_1                         1
+     $sdffe_1                        2
+     counter_63_1                    2
+     counter_8_1                     1
+     ram_288_0_64                    1
+     shift_register_unit_12          3
+
+=== design hierarchy ===
+
+   stage2_mt_buffer_18_3_16_64_32      1
+     counter_63_1                    2
+     counter_8_1                     1
+     ram_288_0_64                    1
+       dual_port_ram                 1
+     shift_register_unit_12          3
+
+   Number of wires:                139
+   Number of wire bits:           5520
+   Number of public wires:         100
+   Number of public wire bits:    3617
+   Number of memories:               1
+   Number of memory bits:         1728
+   Number of processes:              0
+   Number of cells:                 58
+     $add_32                         3
+     $dffe_288                       2
+     $eq_14                          3
+     $le_32                          3
+     $logic_and_1                    9
+     $logic_not_14                   3
+     $memrd                          2
+     $memwr_v2                       2
+     $mux_1                          7
+     $mux_14                         3
+     $mux_288                        2
+     $mux_6                          3
+     $not_1                          2
+     $reduce_bool_2                  2
+     $sdff_1                         1
+     $sdffe_1                        8
+     $sdffe_14                       3
+

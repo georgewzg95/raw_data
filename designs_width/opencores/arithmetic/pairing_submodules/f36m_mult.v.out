@@ -1,0 +1,364 @@
+
+5. Printing statistics.
+
+=== f32m_add ===
+
+   Number of wires:                  3
+   Number of wire bits:           1164
+   Number of public wires:           3
+   Number of public wire bits:    1164
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     f3m_add                         2
+
+=== f32m_add3 ===
+
+   Number of wires:                  5
+   Number of wire bits:           1940
+   Number of public wires:           5
+   Number of public wire bits:    1940
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     f32m_add                        2
+
+=== f32m_add4 ===
+
+   Number of wires:                  7
+   Number of wire bits:           2716
+   Number of public wires:           7
+   Number of public wire bits:    2716
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     f32m_add                        3
+
+=== f32m_mult ===
+
+   Number of wires:                 23
+   Number of wire bits:           3500
+   Number of public wires:          21
+   Number of public wire bits:    3498
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $dff_1                          1
+     $dffe_388                       1
+     $not_1                          1
+     $reduce_and_2                   1
+     $sdffe_1                        1
+     f3m_add                         3
+     f3m_mult3                       1
+     f3m_sub                         2
+     func6                           1
+
+=== f32m_mux6 ===
+
+   Number of wires:                 13
+   Number of wire bits:           2722
+   Number of public wires:          13
+   Number of public wire bits:    2722
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     f3m_mux6                        2
+
+=== f32m_neg ===
+
+   Number of wires:                  2
+   Number of wire bits:            776
+   Number of public wires:           2
+   Number of public wire bits:     776
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     f3m_neg                         2
+
+=== f36m_mult ===
+
+   Number of wires:                 57
+   Number of wire bits:          16710
+   Number of public wires:          53
+   Number of public wire bits:   16706
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 37
+     $dff_1                          2
+     $dff_388                        2
+     $dffe_1164                      1
+     $dffe_388                       6
+     $mux_1                          1
+     $not_1                          1
+     $or_1                           1
+     $reduce_and_2                   1
+     $sdff_1                         1
+     $sdffe_1                        1
+     $sdffe_7                        1
+     f32m_add                        8
+     f32m_add3                       3
+     f32m_add4                       1
+     f32m_mult                       1
+     f32m_mux6                       2
+     f32m_neg                        3
+     func6                           1
+
+=== f3_add ===
+
+   Number of wires:                 29
+   Number of wire bits:             32
+   Number of public wires:           9
+   Number of public wire bits:      12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and_1                         14
+     $not_1                          4
+     $or_1                           4
+
+=== f3_mult ===
+
+   Number of wires:                 21
+   Number of wire bits:             24
+   Number of public wires:           7
+   Number of public wire bits:      10
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 16
+     $and_1                         10
+     $not_1                          4
+     $or_1                           2
+
+=== f3_sub ===
+
+   Number of wires:                  3
+   Number of wire bits:              6
+   Number of public wires:           3
+   Number of public wire bits:       6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     f3_add                          1
+
+=== f3m_add ===
+
+   Number of wires:                  3
+   Number of wire bits:            582
+   Number of public wires:           3
+   Number of public wire bits:     582
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 97
+     f3_add                         97
+
+=== f3m_mult ===
+
+   Number of wires:                 17
+   Number of wire bits:           2366
+   Number of public wires:          15
+   Number of public wire bits:    1978
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $dff_188                        1
+     $dff_194                        1
+     $dffe_194                       1
+     $mux_194                        2
+     $sdff_194                       1
+     $sdff_34                        1
+     $sdff_6                         1
+     $sdffe_1                        1
+     f3m_add                         1
+     func7                           1
+     func8                           1
+
+=== f3m_mult3 ===
+
+   Number of wires:                 27
+   Number of wire bits:           2346
+   Number of public wires:          25
+   Number of public wire bits:    2344
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $dff_1                          2
+     $dffe_194                       3
+     $mux_1                          1
+     $or_1                           1
+     $sdff_1                         1
+     $sdffe_1                        1
+     $sdffe_4                        1
+     f3m_mult                        1
+     f3m_mux3                        2
+     func6                           1
+
+=== f3m_mux3 ===
+
+   Number of wires:                783
+   Number of wire bits:           1555
+   Number of public wires:           7
+   Number of public wire bits:     779
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                970
+     $and_1                        582
+     $or_1                         388
+
+=== f3m_mux6 ===
+
+   Number of wires:               1953
+   Number of wire bits:           3304
+   Number of public wires:          13
+   Number of public wire bits:    1364
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2134
+     $and_1                       1164
+     $or_1                         970
+
+=== f3m_neg ===
+
+   Number of wires:                  2
+   Number of wire bits:            388
+   Number of public wires:           2
+   Number of public wire bits:     388
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== f3m_sub ===
+
+   Number of wires:                  3
+   Number of wire bits:            582
+   Number of public wires:           3
+   Number of public wire bits:     582
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 97
+     f3_sub                         97
+
+=== func6 ===
+
+   Number of wires:                  8
+   Number of wire bits:             39
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $eq_2                           1
+     $mux_32                         1
+     $sdff_1                         2
+
+=== func7 ===
+
+   Number of wires:                  5
+   Number of wire bits:            394
+   Number of public wires:           5
+   Number of public wire bits:     394
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     f3_add                          3
+
+=== func8 ===
+
+   Number of wires:                491
+   Number of wire bits:           1370
+   Number of public wires:         491
+   Number of public wire bits:    1370
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                488
+     f3_add                        197
+     f3_mult                       291
+
+=== design hierarchy ===
+
+   f36m_mult                         1
+     f32m_add                        8
+       f3m_add                       2
+         f3_add                     97
+     f32m_add3                       3
+       f32m_add                      2
+         f3m_add                     2
+           f3_add                   97
+     f32m_add4                       1
+       f32m_add                      3
+         f3m_add                     2
+           f3_add                   97
+     f32m_mult                       1
+       f3m_add                       3
+         f3_add                     97
+       f3m_mult3                     1
+         f3m_mult                    1
+           f3m_add                   1
+             f3_add                 97
+           func7                     1
+             f3_add                  3
+           func8                     1
+             f3_add                197
+             f3_mult               291
+         f3m_mux3                    2
+         func6                       1
+       f3m_sub                       2
+         f3_sub                     97
+           f3_add                    1
+       func6                         1
+     f32m_mux6                       2
+       f3m_mux6                      2
+     f32m_neg                        3
+       f3m_neg                       2
+     func6                           1
+
+   Number of wires:             135272
+   Number of wire bits:         243541
+   Number of public wires:       40270
+   Number of public wire bits:  148060
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:             104946
+     $and_1                      65850
+     $dff_1                          5
+     $dff_188                        1
+     $dff_194                        1
+     $dff_388                        2
+     $dffe_1164                      1
+     $dffe_194                       4
+     $dffe_388                       7
+     $eq_2                           3
+     $mux_1                          2
+     $mux_194                        2
+     $mux_32                         3
+     $not_1                      17486
+     $or_1                       21560
+     $reduce_and_2                   2
+     $sdff_1                         8
+     $sdff_194                       1
+     $sdff_34                        1
+     $sdff_6                         1
+     $sdffe_1                        4
+     $sdffe_4                        1
+     $sdffe_7                        1
+

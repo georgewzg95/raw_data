@@ -1,0 +1,75 @@
+
+5. Printing statistics.
+
+=== $paramod$984ecd35e0f89596ee5f02ee0100f9125a86007a\myproject_mul_16s_9ns_25_2_0 ===
+
+   Number of wires:                  6
+   Number of wire bits:             53
+   Number of public wires:           6
+   Number of public wire bits:      53
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     myproject_mul_16s_9ns_25_2_0_MulnS_3      1
+
+=== myproject_mul_16s_9ns_25_2_0_MulnS_3 ===
+
+   Number of wires:                  6
+   Number of wire bits:             77
+   Number of public wires:           6
+   Number of public wire bits:      77
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $dffe_25                        1
+     $mul_25                         1
+
+=== normalize_ap_fixed_ap_fixed_config16_0_0_0_0_0_0_0_0_0_0 ===
+
+   Number of wires:                 58
+   Number of wire bits:            727
+   Number of public wires:          58
+   Number of public wire bits:     727
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $add_14                         1
+     $add_16                         4
+     $dff_1                          1
+     $dff_16                         5
+     $dffe_13                        2
+     $dffe_15                        4
+     $dffe_16                        5
+     $mux_1                          1
+     $mux_16                         5
+     $paramod$984ecd35e0f89596ee5f02ee0100f9125a86007a\myproject_mul_16s_9ns_25_2_0      4
+
+=== design hierarchy ===
+
+   normalize_ap_fixed_ap_fixed_config16_0_0_0_0_0_0_0_0_0_0      1
+     $paramod$984ecd35e0f89596ee5f02ee0100f9125a86007a\myproject_mul_16s_9ns_25_2_0      4
+       myproject_mul_16s_9ns_25_2_0_MulnS_3      1
+
+   Number of wires:                106
+   Number of wire bits:           1247
+   Number of public wires:         106
+   Number of public wire bits:    1247
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 36
+     $add_14                         1
+     $add_16                         4
+     $dff_1                          1
+     $dff_16                         5
+     $dffe_13                        2
+     $dffe_15                        4
+     $dffe_16                        5
+     $dffe_25                        4
+     $mul_25                         4
+     $mux_1                          1
+     $mux_16                         5
+

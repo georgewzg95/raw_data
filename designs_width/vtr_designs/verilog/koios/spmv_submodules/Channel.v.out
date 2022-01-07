@@ -1,0 +1,92 @@
+
+5. Printing statistics.
+
+=== $paramod$5cd9b7e6fbb280c6ce9be4ee5d1fdcbc34edf95e\dpram ===
+
+   Number of wires:                 17
+   Number of wire bits:            175
+   Number of public wires:           9
+   Number of public wire bits:      73
+   Number of memories:               1
+   Number of memory bits:          128
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe_16                        2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux_1                          2
+     $mux_16                         2
+     $mux_3                          2
+
+=== $paramod$67063290d49aa5357df1233608c088390b70212f\generic_fifo_sc_a ===
+
+   Number of wires:                 30
+   Number of wire bits:            106
+   Number of public wires:          16
+   Number of public wire bits:      84
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $add_3                          2
+     $adffe_1                        1
+     $adffe_3                        2
+     $and_1                          3
+     $eq_3                           2
+     $logic_not_1                    1
+     $mux_1                          3
+     $mux_3                          4
+     $paramod$5cd9b7e6fbb280c6ce9be4ee5d1fdcbc34edf95e\dpram      1
+     $reduce_bool_2                  2
+     $reduce_bool_3                  1
+
+=== Channel ===
+
+   Number of wires:                 27
+   Number of wire bits:             86
+   Number of public wires:          19
+   Number of public wire bits:      63
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $and_1                          5
+     $dff_1                          2
+     $dffe_16                        1
+     $mul_16                         1
+     $mux_1                          1
+     $not_1                          3
+     $paramod$67063290d49aa5357df1233608c088390b70212f\generic_fifo_sc_a      1
+
+=== design hierarchy ===
+
+   Channel                           1
+     $paramod$67063290d49aa5357df1233608c088390b70212f\generic_fifo_sc_a      1
+       $paramod$5cd9b7e6fbb280c6ce9be4ee5d1fdcbc34edf95e\dpram      1
+
+   Number of wires:                 74
+   Number of wire bits:            367
+   Number of public wires:          44
+   Number of public wire bits:     220
+   Number of memories:               1
+   Number of memory bits:          128
+   Number of processes:              0
+   Number of cells:                 46
+     $add_3                          2
+     $adffe_1                        1
+     $adffe_3                        2
+     $and_1                          8
+     $dff_1                          2
+     $dffe_16                        3
+     $eq_3                           2
+     $logic_not_1                    1
+     $memrd                          2
+     $memwr_v2                       2
+     $mul_16                         1
+     $mux_1                          6
+     $mux_16                         2
+     $mux_3                          6
+     $not_1                          3
+     $reduce_bool_2                  2
+     $reduce_bool_3                  1
+

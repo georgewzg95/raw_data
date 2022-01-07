@@ -1,0 +1,995 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.10+12 (git sha1 32b3a71, gcc 7.4.0-1ubuntu1~16.04~ppa1 -fPIC -Os)
+
+
+-- Executing script file `out.ys' --
+
+1. Executing Verilog-2005 frontend: /home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v
+Parsing SystemVerilog input from `/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v' to AST representation.
+Warning: Encountered `translate_off' comment! Such legacy hot comments are supported by Yosys, but are not part of any formal language specification. Using a portable and standards-compliant construct such as `ifdef is recommended!
+Generating RTLIL representation for module `\dual_port_ram'.
+Generating RTLIL representation for module `\LU64PEEng'.
+Generating RTLIL representation for module `\MarshallerController'.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:562.1-574.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\LU'.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:1278.1-1546.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\LUControl'.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2203.1-2393.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2395.1-2410.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2413.1-2436.4 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\ram'.
+Generating RTLIL representation for module `\ram1'.
+Generating RTLIL representation for module `\ram2'.
+Generating RTLIL representation for module `\ram3'.
+Generating RTLIL representation for module `\top_ram'.
+Generating RTLIL representation for module `\mult_add'.
+Generating RTLIL representation for module `\DataTransferUnit'.
+Generating RTLIL representation for module `\rfifo'.
+Generating RTLIL representation for module `\wfifo'.
+Generating RTLIL representation for module `\addr_fifo'.
+Generating RTLIL representation for module `\memcmd_fifo'.
+Generating RTLIL representation for module `\fpu_add'.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4270.2-4452.5 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4455.2-4495.5 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4500.2-4602.5 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\fpu_div'.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4638.2-4644.5 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4651.2-4653.5 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4656.2-4754.5 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\div_24b'.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803.2-4995.5 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\fpmul'.
+/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:5178: Warning: Identifier `\sign' is implicitly declared.
+Generating RTLIL representation for module `\preprocess'.
+Generating RTLIL representation for module `\special'.
+Generating RTLIL representation for module `\prenorm'.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:5448.2-5546.5 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:5551.2-5649.5 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\multiply_a'.
+Generating RTLIL representation for module `\exponent'.
+Generating RTLIL representation for module `\normalize'.
+Generating RTLIL representation for module `\shift'.
+Note: Assuming pure combinatorial block at /home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:5764.3-5894.5 in
+compliance with IEC 62142(E):2005 / IEEE Std. 1364.1(E):2002. Recommending
+use of @* instead of @(...) for better match of synthesis and simulation.
+Generating RTLIL representation for module `\round'.
+Generating RTLIL representation for module `\flag'.
+Generating RTLIL representation for module `\assemble'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Finding top of design hierarchy..
+root of   0 design levels: assemble            
+root of   0 design levels: flag                
+root of   0 design levels: round               
+root of   0 design levels: shift               
+root of   0 design levels: normalize           
+root of   0 design levels: exponent            
+root of   0 design levels: multiply_a          
+root of   0 design levels: prenorm             
+root of   0 design levels: special             
+root of   0 design levels: preprocess          
+root of   1 design levels: fpmul               
+root of   0 design levels: div_24b             
+root of   1 design levels: fpu_div             
+root of   0 design levels: fpu_add             
+root of   1 design levels: memcmd_fifo         
+root of   1 design levels: addr_fifo           
+root of   1 design levels: wfifo               
+root of   1 design levels: rfifo               
+root of   2 design levels: DataTransferUnit    
+root of   2 design levels: mult_add            
+root of   1 design levels: top_ram             
+root of   1 design levels: ram3                
+root of   1 design levels: ram2                
+root of   1 design levels: ram1                
+root of   1 design levels: ram                 
+root of   0 design levels: LUControl           
+root of   3 design levels: LU                  
+root of   0 design levels: MarshallerController
+root of   4 design levels: LU64PEEng           
+root of   0 design levels: dual_port_ram       
+Automatically selected LU64PEEng as design top module.
+
+2.2. Analyzing design hierarchy..
+Top module:  \LU64PEEng
+Used module:     \DataTransferUnit
+Used module:         \rfifo
+Used module:             \dual_port_ram
+Used module:         \addr_fifo
+Used module:         \wfifo
+Used module:         \memcmd_fifo
+Used module:     \LU
+Used module:         \mult_add
+Used module:             \fpu_add
+Used module:             \fpmul
+Used module:                 \assemble
+Used module:                 \flag
+Used module:                 \round
+Used module:                 \shift
+Used module:                 \normalize
+Used module:                 \exponent
+Used module:                 \multiply_a
+Used module:                 \prenorm
+Used module:                 \special
+Used module:                 \preprocess
+Used module:         \top_ram
+Used module:         \ram3
+Used module:         \ram2
+Used module:         \ram1
+Used module:         \ram
+Used module:         \fpu_div
+Used module:             \div_24b
+Used module:         \LUControl
+Used module:     \MarshallerController
+Parameter \DATA_WIDTH = 13'0100000000000
+Parameter \ADDR_WIDTH = 8
+
+2.3. Executing AST frontend in derive mode using pre-parsed AST for module `\dual_port_ram'.
+Parameter \DATA_WIDTH = 13'0100000000000
+Parameter \ADDR_WIDTH = 8
+Generating RTLIL representation for module `$paramod$0c2a62030f46137134e51c2592cc1d7f7989d344\dual_port_ram'.
+Parameter \DATA_WIDTH = 13'0100000000000
+Parameter \ADDR_WIDTH = 8
+Found cached RTLIL representation for module `$paramod$0c2a62030f46137134e51c2592cc1d7f7989d344\dual_port_ram'.
+Parameter \DATA_WIDTH = 13'0100000000000
+Parameter \ADDR_WIDTH = 8
+Found cached RTLIL representation for module `$paramod$0c2a62030f46137134e51c2592cc1d7f7989d344\dual_port_ram'.
+Parameter \DATA_WIDTH = 13'0100000000000
+Parameter \ADDR_WIDTH = 8
+Found cached RTLIL representation for module `$paramod$0c2a62030f46137134e51c2592cc1d7f7989d344\dual_port_ram'.
+Parameter \DATA_WIDTH = 32
+Parameter \ADDR_WIDTH = 14
+
+2.4. Executing AST frontend in derive mode using pre-parsed AST for module `\dual_port_ram'.
+Parameter \DATA_WIDTH = 32
+Parameter \ADDR_WIDTH = 14
+Generating RTLIL representation for module `$paramod$cf1e2d664a85d4fb7297a3862e3915a85240b607\dual_port_ram'.
+Parameter \DATA_WIDTH = 6'011100
+Parameter \ADDR_WIDTH = 4
+
+2.5. Executing AST frontend in derive mode using pre-parsed AST for module `\dual_port_ram'.
+Parameter \DATA_WIDTH = 6'011100
+Parameter \ADDR_WIDTH = 4
+Generating RTLIL representation for module `$paramod$4fd442b091a108698966967405a6589cbf6b5b5d\dual_port_ram'.
+Parameter \DATA_WIDTH = 13'0100000000000
+Parameter \ADDR_WIDTH = 4'0100
+
+2.6. Executing AST frontend in derive mode using pre-parsed AST for module `\dual_port_ram'.
+Parameter \DATA_WIDTH = 13'0100000000000
+Parameter \ADDR_WIDTH = 4'0100
+Generating RTLIL representation for module `$paramod\dual_port_ram\DATA_WIDTH=13'0100000000000\ADDR_WIDTH=4'0100'.
+Parameter \DATA_WIDTH = 5'01000
+Parameter \ADDR_WIDTH = 4'0100
+
+2.7. Executing AST frontend in derive mode using pre-parsed AST for module `\dual_port_ram'.
+Parameter \DATA_WIDTH = 5'01000
+Parameter \ADDR_WIDTH = 4'0100
+Generating RTLIL representation for module `$paramod\dual_port_ram\DATA_WIDTH=5'01000\ADDR_WIDTH=4'0100'.
+Parameter \DATA_WIDTH = 8'01000000
+Parameter \ADDR_WIDTH = 4
+
+2.8. Executing AST frontend in derive mode using pre-parsed AST for module `\dual_port_ram'.
+Parameter \DATA_WIDTH = 8'01000000
+Parameter \ADDR_WIDTH = 4
+Generating RTLIL representation for module `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram'.
+
+2.9. Analyzing design hierarchy..
+Top module:  \LU64PEEng
+Used module:     \DataTransferUnit
+Used module:         \rfifo
+Used module:             $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram
+Used module:         \addr_fifo
+Used module:             $paramod\dual_port_ram\DATA_WIDTH=5'01000\ADDR_WIDTH=4'0100
+Used module:         \wfifo
+Used module:             $paramod\dual_port_ram\DATA_WIDTH=13'0100000000000\ADDR_WIDTH=4'0100
+Used module:         \memcmd_fifo
+Used module:             $paramod$4fd442b091a108698966967405a6589cbf6b5b5d\dual_port_ram
+Used module:     \LU
+Used module:         \mult_add
+Used module:             \fpu_add
+Used module:             \fpmul
+Used module:                 \assemble
+Used module:                 \flag
+Used module:                 \round
+Used module:                 \shift
+Used module:                 \normalize
+Used module:                 \exponent
+Used module:                 \multiply_a
+Used module:                 \prenorm
+Used module:                 \special
+Used module:                 \preprocess
+Used module:         \top_ram
+Used module:             $paramod$cf1e2d664a85d4fb7297a3862e3915a85240b607\dual_port_ram
+Used module:         \ram3
+Used module:             $paramod$0c2a62030f46137134e51c2592cc1d7f7989d344\dual_port_ram
+Used module:         \ram2
+Used module:         \ram1
+Used module:         \ram
+Used module:         \fpu_div
+Used module:             \div_24b
+Used module:         \LUControl
+Used module:     \MarshallerController
+
+2.10. Analyzing design hierarchy..
+Top module:  \LU64PEEng
+Used module:     \DataTransferUnit
+Used module:         \rfifo
+Used module:             $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram
+Used module:         \addr_fifo
+Used module:             $paramod\dual_port_ram\DATA_WIDTH=5'01000\ADDR_WIDTH=4'0100
+Used module:         \wfifo
+Used module:             $paramod\dual_port_ram\DATA_WIDTH=13'0100000000000\ADDR_WIDTH=4'0100
+Used module:         \memcmd_fifo
+Used module:             $paramod$4fd442b091a108698966967405a6589cbf6b5b5d\dual_port_ram
+Used module:     \LU
+Used module:         \mult_add
+Used module:             \fpu_add
+Used module:             \fpmul
+Used module:                 \assemble
+Used module:                 \flag
+Used module:                 \round
+Used module:                 \shift
+Used module:                 \normalize
+Used module:                 \exponent
+Used module:                 \multiply_a
+Used module:                 \prenorm
+Used module:                 \special
+Used module:                 \preprocess
+Used module:         \top_ram
+Used module:             $paramod$cf1e2d664a85d4fb7297a3862e3915a85240b607\dual_port_ram
+Used module:         \ram3
+Used module:             $paramod$0c2a62030f46137134e51c2592cc1d7f7989d344\dual_port_ram
+Used module:         \ram2
+Used module:         \ram1
+Used module:         \ram
+Used module:         \fpu_div
+Used module:             \div_24b
+Used module:         \LUControl
+Used module:     \MarshallerController
+Removing unused module `\dual_port_ram'.
+Removed 1 unused modules.
+Mapping positional arguments of cell fpmul.assembler (assemble).
+Mapping positional arguments of cell fpmul.flager (flag).
+Mapping positional arguments of cell fpmul.rounder (round).
+Mapping positional arguments of cell fpmul.shifter (shift).
+Mapping positional arguments of cell fpmul.normalizer (normalize).
+Mapping positional arguments of cell fpmul.exponenter (exponent).
+Mapping positional arguments of cell fpmul.multiplier (multiply_a).
+Mapping positional arguments of cell fpmul.prenormer (prenorm).
+Mapping positional arguments of cell fpmul.specialer (special).
+Mapping positional arguments of cell fpmul.preprocesser (preprocess).
+Mapping positional arguments of cell LU.PE63 (mult_add).
+Mapping positional arguments of cell LU.PE62 (mult_add).
+Mapping positional arguments of cell LU.PE61 (mult_add).
+Mapping positional arguments of cell LU.PE60 (mult_add).
+Mapping positional arguments of cell LU.PE59 (mult_add).
+Mapping positional arguments of cell LU.PE58 (mult_add).
+Mapping positional arguments of cell LU.PE57 (mult_add).
+Mapping positional arguments of cell LU.PE56 (mult_add).
+Mapping positional arguments of cell LU.PE55 (mult_add).
+Mapping positional arguments of cell LU.PE54 (mult_add).
+Mapping positional arguments of cell LU.PE53 (mult_add).
+Mapping positional arguments of cell LU.PE52 (mult_add).
+Mapping positional arguments of cell LU.PE51 (mult_add).
+Mapping positional arguments of cell LU.PE50 (mult_add).
+Mapping positional arguments of cell LU.PE49 (mult_add).
+Mapping positional arguments of cell LU.PE48 (mult_add).
+Mapping positional arguments of cell LU.PE47 (mult_add).
+Mapping positional arguments of cell LU.PE46 (mult_add).
+Mapping positional arguments of cell LU.PE45 (mult_add).
+Mapping positional arguments of cell LU.PE44 (mult_add).
+Mapping positional arguments of cell LU.PE43 (mult_add).
+Mapping positional arguments of cell LU.PE42 (mult_add).
+Mapping positional arguments of cell LU.PE41 (mult_add).
+Mapping positional arguments of cell LU.PE40 (mult_add).
+Mapping positional arguments of cell LU.PE39 (mult_add).
+Mapping positional arguments of cell LU.PE38 (mult_add).
+Mapping positional arguments of cell LU.PE37 (mult_add).
+Mapping positional arguments of cell LU.PE36 (mult_add).
+Mapping positional arguments of cell LU.PE35 (mult_add).
+Mapping positional arguments of cell LU.PE34 (mult_add).
+Mapping positional arguments of cell LU.PE33 (mult_add).
+Mapping positional arguments of cell LU.PE32 (mult_add).
+Mapping positional arguments of cell LU.PE31 (mult_add).
+Mapping positional arguments of cell LU.PE30 (mult_add).
+Mapping positional arguments of cell LU.PE29 (mult_add).
+Mapping positional arguments of cell LU.PE28 (mult_add).
+Mapping positional arguments of cell LU.PE27 (mult_add).
+Mapping positional arguments of cell LU.PE26 (mult_add).
+Mapping positional arguments of cell LU.PE25 (mult_add).
+Mapping positional arguments of cell LU.PE24 (mult_add).
+Mapping positional arguments of cell LU.PE23 (mult_add).
+Mapping positional arguments of cell LU.PE22 (mult_add).
+Mapping positional arguments of cell LU.PE21 (mult_add).
+Mapping positional arguments of cell LU.PE20 (mult_add).
+Mapping positional arguments of cell LU.PE19 (mult_add).
+Mapping positional arguments of cell LU.PE18 (mult_add).
+Mapping positional arguments of cell LU.PE17 (mult_add).
+Mapping positional arguments of cell LU.PE16 (mult_add).
+Mapping positional arguments of cell LU.PE15 (mult_add).
+Mapping positional arguments of cell LU.PE14 (mult_add).
+Mapping positional arguments of cell LU.PE13 (mult_add).
+Mapping positional arguments of cell LU.PE12 (mult_add).
+Mapping positional arguments of cell LU.PE11 (mult_add).
+Mapping positional arguments of cell LU.PE10 (mult_add).
+Mapping positional arguments of cell LU.PE9 (mult_add).
+Mapping positional arguments of cell LU.PE8 (mult_add).
+Mapping positional arguments of cell LU.PE7 (mult_add).
+Mapping positional arguments of cell LU.PE6 (mult_add).
+Mapping positional arguments of cell LU.PE5 (mult_add).
+Mapping positional arguments of cell LU.PE4 (mult_add).
+Mapping positional arguments of cell LU.PE3 (mult_add).
+Mapping positional arguments of cell LU.PE2 (mult_add).
+Mapping positional arguments of cell LU.PE1 (mult_add).
+Mapping positional arguments of cell LU.PE0 (mult_add).
+Mapping positional arguments of cell LU.topBlock (top_ram).
+Mapping positional arguments of cell LU.leftBlock1 (ram3).
+Mapping positional arguments of cell LU.leftBlock0 (ram2).
+Mapping positional arguments of cell LU.currentBlock1 (ram1).
+Mapping positional arguments of cell LU.currentBlock0 (ram).
+Mapping positional arguments of cell LU.conBlock (LUControl).
+Mapping positional arguments of cell LU64PEEng.compBlock (LU).
+Mapping positional arguments of cell LU64PEEng.MC (MarshallerController).
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:61$1374 in module $paramod\dual_port_ram\DATA_WIDTH=5'01000\ADDR_WIDTH=4'0100.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:52$1366 in module $paramod\dual_port_ram\DATA_WIDTH=5'01000\ADDR_WIDTH=4'0100.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:61$1356 in module $paramod\dual_port_ram\DATA_WIDTH=13'0100000000000\ADDR_WIDTH=4'0100.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:52$1348 in module $paramod\dual_port_ram\DATA_WIDTH=13'0100000000000\ADDR_WIDTH=4'0100.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:61$1338 in module $paramod$4fd442b091a108698966967405a6589cbf6b5b5d\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:52$1330 in module $paramod$4fd442b091a108698966967405a6589cbf6b5b5d\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:61$1320 in module $paramod$cf1e2d664a85d4fb7297a3862e3915a85240b607\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:52$1312 in module $paramod$cf1e2d664a85d4fb7297a3862e3915a85240b607\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:61$1302 in module $paramod$0c2a62030f46137134e51c2592cc1d7f7989d344\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:52$1294 in module $paramod$0c2a62030f46137134e51c2592cc1d7f7989d344\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:5764$1204 in module shift.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:5551$1162 in module prenorm.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:5448$1137 in module prenorm.
+Marked 24 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992 in module div_24b.
+Marked 23 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4656$968 in module fpu_div.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4638$960 in module fpu_div.
+Marked 24 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4500$934 in module fpu_add.
+Marked 6 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4455$920 in module fpu_add.
+Marked 4 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4270$865 in module fpu_add.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4190$853 in module memcmd_fifo.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4116$835 in module addr_fifo.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4038$817 in module wfifo.
+Marked 32 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3967$783 in module wfifo.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3895$767 in module rfifo.
+Marked 32 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3824$733 in module rfifo.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3712$725 in module DataTransferUnit.
+Marked 6 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3643$696 in module DataTransferUnit.
+Marked 6 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3603$686 in module DataTransferUnit.
+Marked 7 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3063$636 in module LUControl.
+Marked 17 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2719$602 in module LUControl.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2705$599 in module LUControl.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2696$591 in module LUControl.
+Removed 1 dead cases from process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2439$544 in module LUControl.
+Marked 14 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2439$544 in module LUControl.
+Marked 5 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2413$530 in module LUControl.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2395$512 in module LUControl.
+Marked 26 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2203$471 in module LUControl.
+Marked 28 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2088$387 in module LUControl.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2053$378 in module LUControl.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:1771$371 in module LU.
+Removed 2 dead cases from process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:1278$239 in module LU.
+Marked 3 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:1278$239 in module LU.
+Marked 2 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:1264$235 in module LU.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:1201$228 in module LU.
+Marked 15 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:576$133 in module MarshallerController.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:562$132 in module MarshallerController.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:548$131 in module MarshallerController.
+Marked 24 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:392$94 in module MarshallerController.
+Marked 5 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:352$69 in module MarshallerController.
+Marked 10 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:281$49 in module MarshallerController.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:61$1392 in module $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.
+Marked 1 switch rules as full_case in process $proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:52$1384 in module $paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.
+Removed a total of 3 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 56 redundant assignments.
+Promoted 453 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `$paramod\dual_port_ram\DATA_WIDTH=5'01000\ADDR_WIDTH=4'0100.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:61$1374'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:63$1365_EN[7:0]$1380
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:63$1365_DATA[7:0]$1379
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:63$1365_ADDR[3:0]$1378
+     4/4: $0\out2[7:0]
+Creating decoders for process `$paramod\dual_port_ram\DATA_WIDTH=5'01000\ADDR_WIDTH=4'0100.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:52$1366'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:54$1364_EN[7:0]$1372
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:54$1364_DATA[7:0]$1371
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:54$1364_ADDR[3:0]$1370
+     4/4: $0\out1[7:0]
+Creating decoders for process `$paramod\dual_port_ram\DATA_WIDTH=13'0100000000000\ADDR_WIDTH=4'0100.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:61$1356'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:63$1347_EN[2047:0]$1362
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:63$1347_DATA[2047:0]$1361
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:63$1347_ADDR[3:0]$1360
+     4/4: $0\out2[2047:0]
+Creating decoders for process `$paramod\dual_port_ram\DATA_WIDTH=13'0100000000000\ADDR_WIDTH=4'0100.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:52$1348'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:54$1346_EN[2047:0]$1354
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:54$1346_DATA[2047:0]$1353
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:54$1346_ADDR[3:0]$1352
+     4/4: $0\out1[2047:0]
+Creating decoders for process `$paramod$4fd442b091a108698966967405a6589cbf6b5b5d\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:61$1338'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:63$1329_EN[27:0]$1344
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:63$1329_DATA[27:0]$1343
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:63$1329_ADDR[3:0]$1342
+     4/4: $0\out2[27:0]
+Creating decoders for process `$paramod$4fd442b091a108698966967405a6589cbf6b5b5d\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:52$1330'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:54$1328_EN[27:0]$1336
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:54$1328_DATA[27:0]$1335
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:54$1328_ADDR[3:0]$1334
+     4/4: $0\out1[27:0]
+Creating decoders for process `$paramod$cf1e2d664a85d4fb7297a3862e3915a85240b607\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:61$1320'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:63$1311_EN[31:0]$1326
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:63$1311_DATA[31:0]$1325
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:63$1311_ADDR[13:0]$1324
+     4/4: $0\out2[31:0]
+Creating decoders for process `$paramod$cf1e2d664a85d4fb7297a3862e3915a85240b607\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:52$1312'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:54$1310_EN[31:0]$1318
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:54$1310_DATA[31:0]$1317
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:54$1310_ADDR[13:0]$1316
+     4/4: $0\out1[31:0]
+Creating decoders for process `$paramod$0c2a62030f46137134e51c2592cc1d7f7989d344\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:61$1302'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:63$1293_EN[2047:0]$1308
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:63$1293_DATA[2047:0]$1307
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:63$1293_ADDR[7:0]$1306
+     4/4: $0\out2[2047:0]
+Creating decoders for process `$paramod$0c2a62030f46137134e51c2592cc1d7f7989d344\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:52$1294'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:54$1292_EN[2047:0]$1300
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:54$1292_DATA[2047:0]$1299
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:54$1292_ADDR[7:0]$1298
+     4/4: $0\out1[2047:0]
+Creating decoders for process `\shift.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:5764$1204'.
+     1/1: $1\postshift[95:0]
+Creating decoders for process `\prenorm.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:5551$1162'.
+     1/1: $1\shiftedb[23:0]
+Creating decoders for process `\prenorm.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:5448$1137'.
+     1/1: $1\shifteda[23:0]
+Creating decoders for process `\fpmul.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:5230$1044'.
+Creating decoders for process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+     1/47: $24\res[0:0]
+     2/47: $1\numer0[46:0]
+     3/47: $23\res[1:1]
+     4/47: $1\numer1[46:0]
+     5/47: $22\res[2:2]
+     6/47: $1\numer2[46:0]
+     7/47: $21\res[3:3]
+     8/47: $1\numer3[46:0]
+     9/47: $20\res[4:4]
+    10/47: $1\numer4[46:0]
+    11/47: $19\res[5:5]
+    12/47: $1\numer5[46:0]
+    13/47: $18\res[6:6]
+    14/47: $1\numer6[46:0]
+    15/47: $17\res[7:7]
+    16/47: $1\numer7[46:0]
+    17/47: $16\res[8:8]
+    18/47: $1\numer8[46:0]
+    19/47: $15\res[9:9]
+    20/47: $1\numer9[46:0]
+    21/47: $14\res[10:10]
+    22/47: $1\numer10[46:0]
+    23/47: $13\res[11:11]
+    24/47: $1\numer11[46:0]
+    25/47: $12\res[12:12]
+    26/47: $1\numer12[46:0]
+    27/47: $11\res[13:13]
+    28/47: $1\numer13[46:0]
+    29/47: $10\res[14:14]
+    30/47: $1\numer14[46:0]
+    31/47: $9\res[15:15]
+    32/47: $1\numer15[46:0]
+    33/47: $8\res[16:16]
+    34/47: $1\numer16[46:0]
+    35/47: $7\res[17:17]
+    36/47: $1\numer17[46:0]
+    37/47: $6\res[18:18]
+    38/47: $1\numer18[46:0]
+    39/47: $5\res[19:19]
+    40/47: $1\numer19[46:0]
+    41/47: $4\res[20:20]
+    42/47: $1\numer20[46:0]
+    43/47: $3\res[21:21]
+    44/47: $1\numer21[46:0]
+    45/47: $2\res[22:22]
+    46/47: $1\numer22[46:0]
+    47/47: $1\res[23:23]
+Creating decoders for process `\fpu_div.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4656$968'.
+     1/46: $23\div[30:0] [30:23]
+     2/46: $23\div[30:0] [22:0]
+     3/46: $22\div[30:0] [30:23]
+     4/46: $22\div[30:0] [22:0]
+     5/46: $21\div[30:0] [30:23]
+     6/46: $21\div[30:0] [22:0]
+     7/46: $20\div[30:0] [30:23]
+     8/46: $20\div[30:0] [22:0]
+     9/46: $19\div[30:0] [30:23]
+    10/46: $19\div[30:0] [22:0]
+    11/46: $18\div[30:0] [30:23]
+    12/46: $18\div[30:0] [22:0]
+    13/46: $17\div[30:0] [30:23]
+    14/46: $17\div[30:0] [22:0]
+    15/46: $16\div[30:0] [30:23]
+    16/46: $16\div[30:0] [22:0]
+    17/46: $15\div[30:0] [30:23]
+    18/46: $15\div[30:0] [22:0]
+    19/46: $14\div[30:0] [30:23]
+    20/46: $14\div[30:0] [22:0]
+    21/46: $13\div[30:0] [30:23]
+    22/46: $13\div[30:0] [22:0]
+    23/46: $12\div[30:0] [30:23]
+    24/46: $12\div[30:0] [22:0]
+    25/46: $11\div[30:0] [30:23]
+    26/46: $11\div[30:0] [22:0]
+    27/46: $10\div[30:0] [30:23]
+    28/46: $10\div[30:0] [22:0]
+    29/46: $9\div[30:0] [30:23]
+    30/46: $9\div[30:0] [22:0]
+    31/46: $8\div[30:0] [30:23]
+    32/46: $8\div[30:0] [22:0]
+    33/46: $7\div[30:0] [30:23]
+    34/46: $7\div[30:0] [22:0]
+    35/46: $6\div[30:0] [30:23]
+    36/46: $6\div[30:0] [22:0]
+    37/46: $5\div[30:0] [30:23]
+    38/46: $5\div[30:0] [22:0]
+    39/46: $4\div[30:0] [30:23]
+    40/46: $4\div[30:0] [22:0]
+    41/46: $3\div[30:0] [30:23]
+    42/46: $3\div[30:0] [22:0]
+    43/46: $2\div[30:0] [30:23]
+    44/46: $2\div[30:0] [22:0]
+    45/46: $1\div[30:0] [30:23]
+    46/46: $1\div[30:0] [22:0]
+Creating decoders for process `\fpu_div.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4651$966'.
+Creating decoders for process `\fpu_div.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4638$960'.
+     1/1: $1\div_exp[7:0]
+Creating decoders for process `\fpu_div.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4628$959'.
+Creating decoders for process `\fpu_add.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4500$934'.
+     1/48: $24\sum[30:0] [30:23]
+     2/48: $24\sum[30:0] [22:0]
+     3/48: $23\sum[30:0] [30:23]
+     4/48: $23\sum[30:0] [22:0]
+     5/48: $22\sum[30:0] [30:23]
+     6/48: $22\sum[30:0] [22:0]
+     7/48: $21\sum[30:0] [30:23]
+     8/48: $21\sum[30:0] [22:0]
+     9/48: $20\sum[30:0] [30:23]
+    10/48: $20\sum[30:0] [22:0]
+    11/48: $19\sum[30:0] [30:23]
+    12/48: $19\sum[30:0] [22:0]
+    13/48: $18\sum[30:0] [30:23]
+    14/48: $18\sum[30:0] [22:0]
+    15/48: $17\sum[30:0] [30:23]
+    16/48: $17\sum[30:0] [22:0]
+    17/48: $16\sum[30:0] [30:23]
+    18/48: $16\sum[30:0] [22:0]
+    19/48: $15\sum[30:0] [30:23]
+    20/48: $15\sum[30:0] [22:0]
+    21/48: $14\sum[30:0] [30:23]
+    22/48: $14\sum[30:0] [22:0]
+    23/48: $13\sum[30:0] [30:23]
+    24/48: $13\sum[30:0] [22:0]
+    25/48: $12\sum[30:0] [30:23]
+    26/48: $12\sum[30:0] [22:0]
+    27/48: $11\sum[30:0] [30:23]
+    28/48: $11\sum[30:0] [22:0]
+    29/48: $10\sum[30:0] [30:23]
+    30/48: $10\sum[30:0] [22:0]
+    31/48: $9\sum[30:0] [30:23]
+    32/48: $9\sum[30:0] [22:0]
+    33/48: $8\sum[30:0] [30:23]
+    34/48: $8\sum[30:0] [22:0]
+    35/48: $7\sum[30:0] [30:23]
+    36/48: $7\sum[30:0] [22:0]
+    37/48: $6\sum[30:0] [30:23]
+    38/48: $6\sum[30:0] [22:0]
+    39/48: $5\sum[30:0] [30:23]
+    40/48: $5\sum[30:0] [22:0]
+    41/48: $4\sum[30:0] [30:23]
+    42/48: $4\sum[30:0] [22:0]
+    43/48: $3\sum[30:0] [30:23]
+    44/48: $3\sum[30:0] [22:0]
+    45/48: $2\sum[30:0] [30:23]
+    46/48: $2\sum[30:0] [22:0]
+    47/48: $1\sum[30:0] [30:23]
+    48/48: $1\sum[30:0] [22:0]
+Creating decoders for process `\fpu_add.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4455$920'.
+     1/11: $5\sum[31:31]
+     2/11: $5\sum_man[24:0]
+     3/11: $4\sum[31:31]
+     4/11: $4\sum_man[24:0]
+     5/11: $3\sum_man[24:0]
+     6/11: $3\sum[31:31]
+     7/11: $2\sum[31:31]
+     8/11: $2\sum_man[24:0]
+     9/11: $1\sum[31:31]
+    10/11: $1\sum_man[24:0]
+    11/11: $1\smaller[0:0]
+Creating decoders for process `\fpu_add.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4270$865'.
+     1/10: $3\b_man[23:0]
+     2/10: $2\a_exp[7:0]
+     3/10: $2\b_man[23:0]
+     4/10: $3\a_man[23:0]
+     5/10: $2\temp[7:0]
+     6/10: $2\a_man[23:0]
+     7/10: $1\a_exp[7:0]
+     8/10: $1\b_man[23:0]
+     9/10: $1\a_man[23:0]
+    10/10: $1\temp[7:0]
+Creating decoders for process `\fpu_add.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4262$864'.
+Creating decoders for process `\memcmd_fifo.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4190$853'.
+     1/1: $0\status_cnt[4:0]
+Creating decoders for process `\memcmd_fifo.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4184$852'.
+     1/1: $0\q[27:0]
+Creating decoders for process `\memcmd_fifo.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4177$850'.
+     1/1: $0\rd_pointer[3:0]
+Creating decoders for process `\memcmd_fifo.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4170$848'.
+     1/1: $0\wr_pointer[3:0]
+Creating decoders for process `\addr_fifo.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4116$835'.
+     1/1: $0\status_cnt[4:0]
+Creating decoders for process `\addr_fifo.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4110$834'.
+     1/1: $0\q[7:0]
+Creating decoders for process `\addr_fifo.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4103$832'.
+     1/1: $0\rd_pointer[3:0]
+Creating decoders for process `\addr_fifo.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4096$830'.
+     1/1: $0\wr_pointer[3:0]
+Creating decoders for process `\wfifo.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4038$817'.
+     1/1: $0\status_cnt[4:0]
+Creating decoders for process `\wfifo.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3967$783'.
+     1/2: $0\counter[4:0]
+     2/2: $0\q[63:0]
+Creating decoders for process `\wfifo.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3960$781'.
+     1/1: $0\rd_pointer[3:0]
+Creating decoders for process `\wfifo.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3953$779'.
+     1/1: $0\wr_pointer[3:0]
+Creating decoders for process `\rfifo.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3895$767'.
+     1/1: $0\status_cnt[4:0]
+Creating decoders for process `\rfifo.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3824$733'.
+     1/33: $0\q[2047:0] [2047:1984]
+     2/33: $0\q[2047:0] [1983:1920]
+     3/33: $0\q[2047:0] [1919:1856]
+     4/33: $0\q[2047:0] [1855:1792]
+     5/33: $0\q[2047:0] [1791:1728]
+     6/33: $0\q[2047:0] [1727:1664]
+     7/33: $0\q[2047:0] [1663:1600]
+     8/33: $0\q[2047:0] [1599:1536]
+     9/33: $0\q[2047:0] [1535:1472]
+    10/33: $0\q[2047:0] [1471:1408]
+    11/33: $0\q[2047:0] [1407:1344]
+    12/33: $0\q[2047:0] [1343:1280]
+    13/33: $0\q[2047:0] [1279:1216]
+    14/33: $0\q[2047:0] [1215:1152]
+    15/33: $0\q[2047:0] [1151:1088]
+    16/33: $0\q[2047:0] [1087:1024]
+    17/33: $0\q[2047:0] [1023:960]
+    18/33: $0\q[2047:0] [959:896]
+    19/33: $0\q[2047:0] [895:832]
+    20/33: $0\q[2047:0] [831:768]
+    21/33: $0\q[2047:0] [767:704]
+    22/33: $0\q[2047:0] [703:640]
+    23/33: $0\q[2047:0] [639:576]
+    24/33: $0\q[2047:0] [575:512]
+    25/33: $0\q[2047:0] [511:448]
+    26/33: $0\q[2047:0] [447:384]
+    27/33: $0\q[2047:0] [383:320]
+    28/33: $0\q[2047:0] [319:256]
+    29/33: $0\q[2047:0] [255:192]
+    30/33: $0\q[2047:0] [191:128]
+    31/33: $0\q[2047:0] [127:64]
+    32/33: $0\q[2047:0] [63:0]
+    33/33: $0\counter[4:0]
+Creating decoders for process `\rfifo.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3817$731'.
+     1/1: $0\rd_pointer[3:0]
+Creating decoders for process `\rfifo.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3810$729'.
+     1/1: $0\wr_pointer[3:0]
+Creating decoders for process `\DataTransferUnit.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3712$725'.
+     1/25: $0\read_req_reg[3:0] [3]
+     2/25: $0\read_req_reg[3:0] [2]
+     3/25: $0\write_req_reg[3:0] [2]
+     4/25: $0\read_req_reg[3:0] [1]
+     5/25: $0\write_req_reg[3:0] [1]
+     6/25: $0\read_req_reg[3:0] [0]
+     7/25: $0\write_req_reg[3:0] [0]
+     8/25: $0\fifo_write_reg[3:0] [2]
+     9/25: $0\fifo_write_reg[3:0] [1]
+    10/25: $0\fifo_write_reg[3:0] [0]
+    11/25: $0\ram_addr3[7:0]
+    12/25: $0\ram_addr2[7:0]
+    13/25: $0\ram_addr1[7:0]
+    14/25: $0\ram_addr0[7:0]
+    15/25: $0\size_count3[1:0]
+    16/25: $0\size_count2[1:0]
+    17/25: $0\size_count1[1:0]
+    18/25: $0\size_count0[1:0]
+    19/25: $0\write_req_reg[3:0] [3]
+    20/25: $0\fifo_write_reg[3:0] [3]
+    21/25: $0\mem_addr4[23:0]
+    22/25: $0\mem_addr3[23:0]
+    23/25: $0\mem_addr2[23:0]
+    24/25: $0\mem_addr1[23:0]
+    25/25: $0\mem_addr0[23:0]
+Creating decoders for process `\DataTransferUnit.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3643$696'.
+     1/9: $0\fifo_write_reg[4:4]
+     2/9: $0\data_count[5:0]
+     3/9: $0\ram_addr4[7:0]
+     4/9: $0\size[7:0]
+     5/9: $0\size_count4[1:0]
+     6/9: $0\fifo_read_reg[0:0]
+     7/9: $0\read_req_reg[4:4]
+     8/9: $0\write_req_reg[4:4]
+     9/9: $0\mem_addr5[23:0]
+Creating decoders for process `\DataTransferUnit.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3603$686'.
+     1/1: $0\state[1:0]
+Creating decoders for process `\mult_add.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3341$661'.
+Creating decoders for process `\LUControl.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:3063$636'.
+     1/5: $0\done[0:0]
+     2/5: $0\MOEn[0:0]
+     3/5: $0\topReadAddr[13:0]
+     4/5: $0\leftReadAddr[7:0]
+     5/5: $0\curReadAddr[7:0]
+Creating decoders for process `\LUControl.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2719$602'.
+     1/16: $0\MOEnDelay[5:0] [5]
+     2/16: $0\topWriteSelDelay4[5:0]
+     3/16: $0\topWriteEnDelay[31:0] [4]
+     4/16: $0\topWriteAddrDelay4[13:0]
+     5/16: $0\leftWriteEnDelay[31:0] [31]
+     6/16: $0\leftWriteEnDelay[31:0] [15]
+     7/16: $0\leftWriteEnDelay[31:0] [4]
+     8/16: $0\leftWriteSelDelay[4:0] [4]
+     9/16: $0\curWriteEnDelay[31:0] [31]
+    10/16: $0\curWriteEnDelay[31:0] [15]
+    11/16: $0\curWriteSelDelay[15:0] [15]
+    12/16: $0\writeByteEnDelay15[255:0]
+    13/16: $0\writeByteEnDelay4[255:0]
+    14/16: $0\curWriteAddrDelay15[7:0]
+    15/16: $0\curWriteAddrDelay4[7:0]
+    16/16: $0\topSourceSelDelay[4:0] [4]
+Creating decoders for process `\LUControl.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2705$599'.
+     1/2: $0\currentRowState[1:0]
+     2/2: $0\currentState[3:0]
+Creating decoders for process `\LUControl.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2696$591'.
+     1/1: $0\byteEn[255:0]
+Creating decoders for process `\LUControl.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2439$544'.
+     1/10: $0\i1modkByteEn[255:0]
+     2/10: $0\counter[7:0]
+     3/10: $0\leftIdxCounter[7:0]
+     4/10: $0\msIdxCounter[7:0]
+     5/10: $0\diagIdxCounter[7:0]
+     6/10: $0\topIdxCounter[1:0]
+     7/10: $0\divCounter[5:0]
+     8/10: $0\topWriteCounter[7:0]
+     9/10: $0\readRowCounter[7:0]
+    10/10: $0\nextTopIdxCounter[13:0]
+Creating decoders for process `\LUControl.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2413$530'.
+     1/5: $5\nextRowState[1:0]
+     2/5: $4\nextRowState[1:0]
+     3/5: $3\nextRowState[1:0]
+     4/5: $2\nextRowState[1:0]
+     5/5: $1\nextRowState[1:0]
+Creating decoders for process `\LUControl.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2395$512'.
+     1/3: $1\loadRow[0:0]
+     2/3: $1\startFetchRow[0:0]
+     3/3: $1\doneFetchRow[0:0]
+Creating decoders for process `\LUControl.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2203$471'.
+     1/36: $26\nextState[3:0]
+     2/36: $25\nextState[3:0]
+     3/36: $24\nextState[3:0]
+     4/36: $10\updateCounter[0:0]
+     5/36: $23\nextState[3:0]
+     6/36: $22\nextState[3:0]
+     7/36: $9\updateCounter[0:0]
+     8/36: $21\nextState[3:0]
+     9/36: $20\nextState[3:0]
+    10/36: $8\updateCounter[0:0]
+    11/36: $19\nextState[3:0]
+    12/36: $7\updateCounter[0:0]
+    13/36: $18\nextState[3:0]
+    14/36: $6\updateCounter[0:0]
+    15/36: $17\nextState[3:0]
+    16/36: $16\nextState[3:0]
+    17/36: $5\updateCounter[0:0]
+    18/36: $15\nextState[3:0]
+    19/36: $14\nextState[3:0]
+    20/36: $13\nextState[3:0]
+    21/36: $4\updateCounter[0:0]
+    22/36: $12\nextState[3:0]
+    23/36: $11\nextState[3:0]
+    24/36: $3\updateCounter[0:0]
+    25/36: $10\nextState[3:0]
+    26/36: $2\updateCounter[0:0]
+    27/36: $9\nextState[3:0]
+    28/36: $8\nextState[3:0]
+    29/36: $7\nextState[3:0]
+    30/36: $6\nextState[3:0]
+    31/36: $5\nextState[3:0]
+    32/36: $4\nextState[3:0]
+    33/36: $3\nextState[3:0]
+    34/36: $2\nextState[3:0]
+    35/36: $1\updateCounter[0:0]
+    36/36: $1\nextState[3:0]
+Creating decoders for process `\LUControl.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2088$387'.
+     1/11: $0\waitCycles[7:0]
+     2/11: $0\i1modk[5:0]
+     3/11: $0\imodk[5:0]
+     4/11: $0\msIdx[7:0]
+     5/11: $0\leftIdx[7:0]
+     6/11: $0\diagIdx[7:0]
+     7/11: $0\topIdx[1:0]
+     8/11: $0\curTopIdx[13:0]
+     9/11: $0\nextTopIdx[13:0]
+    10/11: $0\j[7:0]
+    11/11: $0\i1[7:0]
+Creating decoders for process `\LUControl.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:2053$378'.
+     1/5: $0\stop[7:0]
+     2/5: $0\mode[1:0]
+     3/5: $0\loop[7:0]
+     4/5: $0\n[7:0]
+     5/5: $0\m[7:0]
+Creating decoders for process `\LU.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:1821$373'.
+Creating decoders for process `\LU.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:1771$371'.
+     1/10: $0\curWriteEn1Reg0[0:0]
+     2/10: $0\curWriteByteEn1Reg0[255:0]
+     3/10: $0\curReadAddr1Reg0[7:0]
+     4/10: $0\curWriteAddr1Reg0[7:0]
+     5/10: $0\curWriteData1Reg0[2047:0]
+     6/10: $0\curWriteEn0Reg0[0:0]
+     7/10: $0\curWriteByteEn0Reg0[255:0]
+     8/10: $0\curReadAddr0Reg0[7:0]
+     9/10: $0\curWriteAddr0Reg0[7:0]
+    10/10: $0\curWriteData0Reg0[2047:0]
+Creating decoders for process `\LU.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:1567$242'.
+Creating decoders for process `\LU.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:1548$241'.
+Creating decoders for process `\LU.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:1278$239'.
+     1/3: $3\topWriteDataLU[31:0]
+     2/3: $2\topWriteDataLU[31:0]
+     3/3: $1\topWriteDataLU[31:0]
+Creating decoders for process `\LU.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:1264$235'.
+     1/1: $0\multOperand[31:0]
+Creating decoders for process `\LU.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:1256$233'.
+     1/1: $0\diag[31:0]
+Creating decoders for process `\LU.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:1249$230'.
+Creating decoders for process `\LU.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:1201$228'.
+     1/8: $0\leftWriteEn1Reg0[0:0]
+     2/8: $0\leftWriteByteEn1Reg0[255:0]
+     3/8: $0\leftWriteAddr1Reg0[7:0]
+     4/8: $0\leftWriteData1Reg0[2047:0]
+     5/8: $0\leftWriteEn0Reg0[0:0]
+     6/8: $0\leftWriteByteEn0Reg0[255:0]
+     7/8: $0\leftWriteAddr0Reg0[7:0]
+     8/8: $0\leftWriteData0Reg0[2047:0]
+Creating decoders for process `\MarshallerController.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:576$133'.
+     1/20: $0\block_n[7:0]
+     2/20: $0\block_m[7:0]
+     3/20: $0\mem_write_size_buf[7:0]
+     4/20: $0\mem_write_size[7:0]
+     5/20: $0\mem_write_buf[23:0]
+     6/20: $0\mem_cur[23:0]
+     7/20: $0\mem_left[23:0]
+     8/20: $0\mem_write[23:0]
+     9/20: $0\mem_top[23:0]
+    10/20: $0\mem_base[23:0]
+    11/20: $0\no_left_switch[0:0]
+    12/20: $0\write_n_buf[7:0]
+    13/20: $0\write_n[7:0]
+    14/20: $0\ncount[19:0]
+    15/20: $0\mcount[19:0]
+    16/20: $0\comp_N[19:0]
+    17/20: $0\left_mem_sel[0:0]
+    18/20: $0\cur_mem_sel[0:0]
+    19/20: $0\loop[7:0]
+    20/20: $0\N[19:0]
+Creating decoders for process `\MarshallerController.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:562$132'.
+     1/1: $1\mode[1:0]
+Creating decoders for process `\MarshallerController.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:548$131'.
+     1/2: $0\cur_mem_state[3:0]
+     2/2: $0\cur_state[4:0]
+Creating decoders for process `\MarshallerController.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:392$94'.
+     1/1: $0\next_state[4:0]
+Creating decoders for process `\MarshallerController.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:352$69'.
+     1/5: $0\mem_read[1:0]
+     2/5: $0\mem_count[7:0]
+     3/5: $0\mem_addr[23:0]
+     4/5: $0\ram_addr[7:0]
+     5/5: $0\read_n[7:0]
+Creating decoders for process `\MarshallerController.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:281$49'.
+     1/1: $0\next_mem_state[3:0]
+Creating decoders for process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:61$1392'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:63$1383_EN[63:0]$1398
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:63$1383_DATA[63:0]$1397
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:63$1383_ADDR[3:0]$1396
+     4/4: $0\out2[63:0]
+Creating decoders for process `$paramod$ef0515f863cb1da1c6fa3654d4ff4adbb9145d5b\dual_port_ram.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:52$1384'.
+     1/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:54$1382_EN[63:0]$1390
+     2/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:54$1382_DATA[63:0]$1389
+     3/4: $1$memwr$\ram$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:54$1382_ADDR[3:0]$1388
+     4/4: $0\out1[63:0]
+
+3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\shift.\postshift' from process `\shift.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:5764$1204'.
+No latch inferred for signal `\prenorm.\shiftedb' from process `\prenorm.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:5551$1162'.
+No latch inferred for signal `\prenorm.\shifteda' from process `\prenorm.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:5448$1137'.
+No latch inferred for signal `\div_24b.\res' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer22' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer21' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer20' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer19' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer18' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer17' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer16' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer15' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer14' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer13' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer12' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer11' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer10' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer9' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer8' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer7' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer6' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer5' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer4' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer3' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer2' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'.
+No latch inferred for signal `\div_24b.\numer1' from process `\div_24b.$proc$/home/zhigang/raw_data/designs_width/vtr_designs/verilog/LU64PEEng.v:4803$992'

@@ -1,0 +1,102 @@
+
+5. Printing statistics.
+
+=== td_fused_top_td_fused_tdf4_fmaps ===
+
+   Number of wires:                 90
+   Number of wire bits:            895
+   Number of public wires:          47
+   Number of public wire bits:     785
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 71
+     $add_1                          2
+     $add_2                          1
+     $and_1                          4
+     $eq_2                           1
+     $logic_and_1                   10
+     $logic_not_1                    5
+     $logic_not_2                    1
+     $logic_or_1                     1
+     $mux_1                         18
+     $mux_14                         4
+     $mux_2                          2
+     $mux_64                         5
+     $not_1                          1
+     $reduce_bool_2                  3
+     $reduce_or_2                    1
+     $sdff_1                         2
+     $sdffe_1                        5
+     $sdffe_2                        1
+     $sdffe_64                       1
+     $sub_2                          1
+     td_fused_top_td_fused_tdf4_fmaps_memcore      2
+
+=== td_fused_top_td_fused_tdf4_fmaps_memcore ===
+
+   Number of wires:                  9
+   Number of wire bits:            161
+   Number of public wires:           9
+   Number of public wire bits:     161
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     td_fused_top_td_fused_tdf4_fmaps_memcore_ram      1
+
+=== td_fused_top_td_fused_tdf4_fmaps_memcore_ram ===
+
+   Number of wires:                 15
+   Number of wire bits:            508
+   Number of public wires:           8
+   Number of public wire bits:     160
+   Number of memories:               1
+   Number of memory bits:       802816
+   Number of processes:              0
+   Number of cells:                  9
+     $dffe_64                        1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux_1                          2
+     $mux_14                         2
+     $mux_64                         2
+
+=== design hierarchy ===
+
+   td_fused_top_td_fused_tdf4_fmaps      1
+     td_fused_top_td_fused_tdf4_fmaps_memcore      2
+       td_fused_top_td_fused_tdf4_fmaps_memcore_ram      1
+
+   Number of wires:                138
+   Number of wire bits:           2233
+   Number of public wires:          81
+   Number of public wire bits:    1427
+   Number of memories:               2
+   Number of memory bits:       1605632
+   Number of processes:              0
+   Number of cells:                 87
+     $add_1                          2
+     $add_2                          1
+     $and_1                          4
+     $dffe_64                        2
+     $eq_2                           1
+     $logic_and_1                   10
+     $logic_not_1                    5
+     $logic_not_2                    1
+     $logic_or_1                     1
+     $memrd                          2
+     $memwr_v2                       2
+     $mux_1                         22
+     $mux_14                         8
+     $mux_2                          2
+     $mux_64                         9
+     $not_1                          1
+     $reduce_bool_2                  3
+     $reduce_or_2                    1
+     $sdff_1                         2
+     $sdffe_1                        5
+     $sdffe_2                        1
+     $sdffe_64                       1
+     $sub_2                          1
+

@@ -1,0 +1,70 @@
+
+5. Printing statistics.
+
+=== $paramod$af5eb2417a99fbdccc048a055f25a88ec12c1790\single_port_ram ===
+
+   Number of wires:                  9
+   Number of wire bits:            182
+   Number of public wires:           5
+   Number of public wire bits:      76
+   Number of memories:               1
+   Number of memory bits:          320
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe_32                        1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux_1                          1
+     $mux_10                         1
+     $mux_32                         1
+
+=== LogCalc ===
+
+   Number of wires:                 93
+   Number of wire bits:           1259
+   Number of public wires:          12
+   Number of public wire bits:     191
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 87
+     $add_32                         2
+     $eq_6                          22
+     $ge_6                           2
+     $mul_32                         1
+     $mux_10                         1
+     $mux_32                        23
+     $mux_6                         31
+     $paramod$af5eb2417a99fbdccc048a055f25a88ec12c1790\single_port_ram      1
+     $sdffe_32                       1
+     $sdffe_6                        1
+     $sub_32                         2
+
+=== design hierarchy ===
+
+   LogCalc                           1
+     $paramod$af5eb2417a99fbdccc048a055f25a88ec12c1790\single_port_ram      1
+
+   Number of wires:                102
+   Number of wire bits:           1441
+   Number of public wires:          17
+   Number of public wire bits:     267
+   Number of memories:               1
+   Number of memory bits:          320
+   Number of processes:              0
+   Number of cells:                 92
+     $add_32                         2
+     $dffe_32                        1
+     $eq_6                          22
+     $ge_6                           2
+     $memrd                          1
+     $memwr_v2                       1
+     $mul_32                         1
+     $mux_1                          1
+     $mux_10                         2
+     $mux_32                        24
+     $mux_6                         31
+     $sdffe_32                       1
+     $sdffe_6                        1
+     $sub_32                         2
+

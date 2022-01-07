@@ -1,0 +1,86 @@
+
+5. Printing statistics.
+
+=== inverse_winograd_5 ===
+
+   Number of wires:                291
+   Number of wire bits:           7503
+   Number of public wires:         138
+   Number of public wire bits:    3511
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                275
+     $add_2                          1
+     $dff_1                         11
+     $dff_3                          1
+     $dff_30                        44
+     $dffe_30                       44
+     $eq_2                           1
+     $eq_3                           2
+     $logic_not_3                    1
+     $lt_32                          1
+     $mux_16                         4
+     $mux_3                          6
+     $mux_30                       132
+     $ne_2                           1
+     $ne_3                           1
+     $neg_30                         7
+     $not_1                          3
+     $reduce_and_3                   2
+     $reduce_and_4                   1
+     $reduce_bool_2                  2
+     $sdffe_1                        1
+     $sdffe_2                        1
+     inverse_winograd_adder_30_3      8
+
+=== inverse_winograd_adder_30_3 ===
+
+   Number of wires:                 19
+   Number of wire bits:            574
+   Number of public wires:          14
+   Number of public wire bits:     409
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $add_33                         5
+     $dff_33                         6
+
+=== design hierarchy ===
+
+   inverse_winograd_5                1
+     inverse_winograd_adder_30_3      8
+
+   Number of wires:                443
+   Number of wire bits:          12095
+   Number of public wires:         250
+   Number of public wire bits:    6783
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                355
+     $add_2                          1
+     $add_33                        40
+     $dff_1                         11
+     $dff_3                          1
+     $dff_30                        44
+     $dff_33                        48
+     $dffe_30                       44
+     $eq_2                           1
+     $eq_3                           2
+     $logic_not_3                    1
+     $lt_32                          1
+     $mux_16                         4
+     $mux_3                          6
+     $mux_30                       132
+     $ne_2                           1
+     $ne_3                           1
+     $neg_30                         7
+     $not_1                          3
+     $reduce_and_3                   2
+     $reduce_and_4                   1
+     $reduce_bool_2                  2
+     $sdffe_1                        1
+     $sdffe_2                        1
+

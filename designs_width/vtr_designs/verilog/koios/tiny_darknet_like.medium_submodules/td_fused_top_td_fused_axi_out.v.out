@@ -1,0 +1,130 @@
+
+5. Printing statistics.
+
+=== $paramod$6a718d018631f38c70b32ebbc300a5888ff0cde8\td_fused_top_mac_muladd_10s_9ns_8ns_16_4_1 ===
+
+   Number of wires:                  7
+   Number of wire bits:             46
+   Number of public wires:           7
+   Number of public wire bits:      46
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     td_fused_top_mac_muladd_10s_9ns_8ns_16_4_1_DSP48_0      1
+
+=== td_fused_top_mac_muladd_10s_9ns_8ns_16_4_1_DSP48_0 ===
+
+   Number of wires:                 16
+   Number of wire bits:            370
+   Number of public wires:          16
+   Number of public wire bits:     370
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $add_48                         1
+     $dffe_10                        1
+     $dffe_45                        1
+     $dffe_48                        1
+     $dffe_9                         1
+     $mul_45                         1
+
+=== td_fused_top_td_fused_axi_out ===
+
+   Number of wires:                211
+   Number of wire bits:            912
+   Number of public wires:         115
+   Number of public wire bits:     647
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                160
+     $add_10                         2
+     $add_12                         1
+     $add_16                         1
+     $add_4                          2
+     $and_1                         51
+     $dffe_1                         2
+     $dffe_10                        2
+     $dffe_12                        1
+     $dffe_16                        5
+     $dffe_4                         4
+     $dffe_8                         1
+     $eq_10                          1
+     $eq_12                          1
+     $eq_16                          1
+     $eq_6                           6
+     $mux_1                         12
+     $mux_10                         3
+     $mux_12                         3
+     $mux_16                         8
+     $mux_4                          8
+     $mux_6                          6
+     $not_1                         14
+     $or_1                          10
+     $paramod$6a718d018631f38c70b32ebbc300a5888ff0cde8\td_fused_top_mac_muladd_10s_9ns_8ns_16_4_1      1
+     $pmux_6                         1
+     $reduce_bool_2                  2
+     $reduce_or_2                    2
+     $sdff_1                         1
+     $sdff_6                         1
+     $sdffce_12                      1
+     $sdffce_2                       1
+     $sdffce_8                       1
+     $sdffe_1                        3
+     $sub_9                          1
+
+=== design hierarchy ===
+
+   td_fused_top_td_fused_axi_out      1
+     $paramod$6a718d018631f38c70b32ebbc300a5888ff0cde8\td_fused_top_mac_muladd_10s_9ns_8ns_16_4_1      1
+       td_fused_top_mac_muladd_10s_9ns_8ns_16_4_1_DSP48_0      1
+
+   Number of wires:                234
+   Number of wire bits:           1328
+   Number of public wires:         138
+   Number of public wire bits:    1063
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                165
+     $add_10                         2
+     $add_12                         1
+     $add_16                         1
+     $add_4                          2
+     $add_48                         1
+     $and_1                         51
+     $dffe_1                         2
+     $dffe_10                        3
+     $dffe_12                        1
+     $dffe_16                        5
+     $dffe_4                         4
+     $dffe_45                        1
+     $dffe_48                        1
+     $dffe_8                         1
+     $dffe_9                         1
+     $eq_10                          1
+     $eq_12                          1
+     $eq_16                          1
+     $eq_6                           6
+     $mul_45                         1
+     $mux_1                         12
+     $mux_10                         3
+     $mux_12                         3
+     $mux_16                         8
+     $mux_4                          8
+     $mux_6                          6
+     $not_1                         14
+     $or_1                          10
+     $pmux_6                         1
+     $reduce_bool_2                  2
+     $reduce_or_2                    2
+     $sdff_1                         1
+     $sdff_6                         1
+     $sdffce_12                      1
+     $sdffce_2                       1
+     $sdffce_8                       1
+     $sdffe_1                        3
+     $sub_9                          1
+

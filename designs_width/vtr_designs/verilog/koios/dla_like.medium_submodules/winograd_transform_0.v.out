@@ -1,0 +1,96 @@
+
+5. Printing statistics.
+
+=== winograd_adder_16_20_4 ===
+
+   Number of wires:                 49
+   Number of wire bits:            878
+   Number of public wires:          34
+   Number of public wire bits:     578
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 30
+     $add_20                        15
+     $dff_20                        15
+
+=== winograd_dsp_16 ===
+
+   Number of wires:                 51
+   Number of wire bits:            475
+   Number of public wires:          15
+   Number of public wire bits:     169
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 44
+     $eq_3                          14
+     $logic_not_3                    2
+     $mul_16                         2
+     $mux_16                        16
+     $reduce_or_2                    2
+     $sdff_14                        2
+     $sdff_16                        4
+     $sdff_2                         2
+
+=== winograd_transform_0 ===
+
+   Number of wires:                528
+   Number of wire bits:           8530
+   Number of public wires:         494
+   Number of public wire bits:    7924
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                269
+     $add_3                          1
+     $dff_1                         13
+     $dff_16                        42
+     $dff_20                        30
+     $dffe_16                        6
+     $dffe_20                        6
+     $eq_3                           1
+     $mux_1                          1
+     $mux_20                        30
+     $neg_16                        72
+     $reduce_or_2                    1
+     $sdff_1                         1
+     $sdff_3                         1
+     winograd_adder_16_20_4         36
+     winograd_dsp_16                28
+
+=== design hierarchy ===
+
+   winograd_transform_0              1
+     winograd_adder_16_20_4         36
+     winograd_dsp_16                28
+
+   Number of wires:               3720
+   Number of wire bits:          53438
+   Number of public wires:        2138
+   Number of public wire bits:   33464
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2517
+     $add_20                       540
+     $add_3                          1
+     $dff_1                         13
+     $dff_16                        42
+     $dff_20                       570
+     $dffe_16                        6
+     $dffe_20                        6
+     $eq_3                         393
+     $logic_not_3                   56
+     $mul_16                        56
+     $mux_1                          1
+     $mux_16                       448
+     $mux_20                        30
+     $neg_16                        72
+     $reduce_or_2                   57
+     $sdff_1                         1
+     $sdff_14                       56
+     $sdff_16                      112
+     $sdff_2                        56
+     $sdff_3                         1
+

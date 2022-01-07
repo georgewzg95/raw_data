@@ -1,0 +1,44 @@
+
+5. Printing statistics.
+
+=== and_latch ===
+
+   Number of wires:                  5
+   Number of wire bits:              5
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $and_1                          1
+     $dff_1                          1
+
+=== multiclock_separate_and_latch ===
+
+   Number of wires:                  5
+   Number of wire bits:              8
+   Number of public wires:           5
+   Number of public wire bits:       8
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     and_latch                       2
+
+=== design hierarchy ===
+
+   multiclock_separate_and_latch      1
+     and_latch                       2
+
+   Number of wires:                 15
+   Number of wire bits:             18
+   Number of public wires:          13
+   Number of public wire bits:      16
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $and_1                          2
+     $dff_1                          2
+

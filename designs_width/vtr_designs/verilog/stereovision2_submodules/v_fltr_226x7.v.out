@@ -1,0 +1,194 @@
+
+5. Printing statistics.
+
+=== fifo226 ===
+
+   Number of wires:                  6
+   Number of wire bits:             34
+   Number of public wires:           6
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $dffe_8                         3
+
+=== fltr_compute_f1 ===
+
+   Number of wires:                 24
+   Number of wire bits:            451
+   Number of public wires:          11
+   Number of public wire bits:     212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $add_20                         6
+     $dff_16                         1
+     $dff_17                         7
+     $dff_20                         1
+     $mul_17                         7
+
+=== fltr_compute_f2 ===
+
+   Number of wires:                 22
+   Number of wire bits:            417
+   Number of public wires:          11
+   Number of public wire bits:     212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $add_20                         6
+     $dff_16                         3
+     $dff_17                         3
+     $dff_20                         1
+     $dff_8                          2
+     $mul_16                         2
+     $mul_17                         3
+
+=== fltr_compute_f3 ===
+
+   Number of wires:                 22
+   Number of wire bits:            414
+   Number of public wires:          11
+   Number of public wire bits:     212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $add_20                         5
+     $dff_15                         4
+     $dff_16                         1
+     $dff_17                         2
+     $dff_20                         1
+     $mul_15                         4
+     $mul_17                         2
+
+=== fltr_compute_h1 ===
+
+   Number of wires:                 22
+   Number of wire bits:            414
+   Number of public wires:          11
+   Number of public wire bits:     212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $add_20                         5
+     $dff_16                         1
+     $dff_17                         6
+     $dff_20                         1
+     $mul_17                         6
+
+=== fltr_compute_h2 ===
+
+   Number of wires:                 22
+   Number of wire bits:            417
+   Number of public wires:          11
+   Number of public wire bits:     212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $add_20                         6
+     $dff_16                         3
+     $dff_17                         3
+     $dff_20                         1
+     $dff_8                          2
+     $mul_16                         2
+     $mul_17                         3
+
+=== fltr_compute_h3 ===
+
+   Number of wires:                 22
+   Number of wire bits:            414
+   Number of public wires:          11
+   Number of public wire bits:     212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $add_20                         5
+     $dff_14                         2
+     $dff_16                         1
+     $dff_17                         4
+     $dff_20                         1
+     $mul_14                         2
+     $mul_17                         4
+
+=== fltr_compute_h4 ===
+
+   Number of wires:                 24
+   Number of wire bits:            451
+   Number of public wires:          11
+   Number of public wire bits:     212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $add_20                         6
+     $dff_13                         2
+     $dff_15                         1
+     $dff_16                         3
+     $dff_17                         2
+     $dff_20                         1
+     $mul_13                         2
+     $mul_15                         1
+     $mul_16                         2
+     $mul_17                         2
+
+=== v_fltr_226x7 ===
+
+   Number of wires:                 18
+   Number of wire bits:            186
+   Number of public wires:          18
+   Number of public wire bits:     186
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     fifo226                         7
+     fltr_compute_f1                 1
+     fltr_compute_f2                 1
+     fltr_compute_f3                 1
+     fltr_compute_h1                 1
+     fltr_compute_h2                 1
+     fltr_compute_h3                 1
+     fltr_compute_h4                 1
+
+=== design hierarchy ===
+
+   v_fltr_226x7                      1
+     fifo226                         7
+     fltr_compute_f1                 1
+     fltr_compute_f2                 1
+     fltr_compute_f3                 1
+     fltr_compute_h1                 1
+     fltr_compute_h2                 1
+     fltr_compute_h3                 1
+     fltr_compute_h4                 1
+
+   Number of wires:                218
+   Number of wire bits:           3402
+   Number of public wires:         137
+   Number of public wire bits:    1908
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                162
+     $add_20                        39
+     $dff_13                         2
+     $dff_14                         2
+     $dff_15                         5
+     $dff_16                        13
+     $dff_17                        27
+     $dff_20                         7
+     $dff_8                          4
+     $dffe_8                        21
+     $mul_13                         2
+     $mul_14                         2
+     $mul_15                         5
+     $mul_16                         6
+     $mul_17                        27
+

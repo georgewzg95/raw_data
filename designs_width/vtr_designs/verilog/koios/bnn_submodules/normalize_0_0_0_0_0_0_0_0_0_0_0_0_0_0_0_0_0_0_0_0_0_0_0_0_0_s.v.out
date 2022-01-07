@@ -1,0 +1,109 @@
+
+5. Printing statistics.
+
+=== $paramod$06ed9e44535b073d8948b994de3cf7848819b6b5\myproject_mul_16s_10ns_26_2_0 ===
+
+   Number of wires:                  6
+   Number of wire bits:             55
+   Number of public wires:           6
+   Number of public wire bits:      55
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     myproject_mul_16s_10ns_26_2_0_MulnS_4      1
+
+=== $paramod$984ecd35e0f89596ee5f02ee0100f9125a86007a\myproject_mul_16s_9ns_25_2_0 ===
+
+   Number of wires:                  6
+   Number of wire bits:             53
+   Number of public wires:           6
+   Number of public wire bits:      53
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     myproject_mul_16s_9ns_25_2_0_MulnS_3      1
+
+=== myproject_mul_16s_10ns_26_2_0_MulnS_4 ===
+
+   Number of wires:                  6
+   Number of wire bits:             80
+   Number of public wires:           6
+   Number of public wire bits:      80
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $dffe_26                        1
+     $mul_26                         1
+
+=== myproject_mul_16s_9ns_25_2_0_MulnS_3 ===
+
+   Number of wires:                  6
+   Number of wire bits:             77
+   Number of public wires:           6
+   Number of public wire bits:      77
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $dffe_25                        1
+     $mul_25                         1
+
+=== normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s ===
+
+   Number of wires:                333
+   Number of wire bits:           4910
+   Number of public wires:         333
+   Number of public wire bits:    4910
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                197
+     $add_15                         1
+     $add_16                        31
+     $add_24                         1
+     $add_25                         2
+     $dff_1                          1
+     $dff_16                        32
+     $dffe_14                        2
+     $dffe_15                       26
+     $dffe_16                       39
+     $mux_1                          1
+     $mux_16                        32
+     $paramod$06ed9e44535b073d8948b994de3cf7848819b6b5\myproject_mul_16s_10ns_26_2_0      7
+     $paramod$984ecd35e0f89596ee5f02ee0100f9125a86007a\myproject_mul_16s_9ns_25_2_0     22
+
+=== design hierarchy ===
+
+   normalize_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_s      1
+     $paramod$06ed9e44535b073d8948b994de3cf7848819b6b5\myproject_mul_16s_10ns_26_2_0      7
+       myproject_mul_16s_10ns_26_2_0_MulnS_4      1
+     $paramod$984ecd35e0f89596ee5f02ee0100f9125a86007a\myproject_mul_16s_9ns_25_2_0     22
+       myproject_mul_16s_9ns_25_2_0_MulnS_3      1
+
+   Number of wires:                681
+   Number of wire bits:           8715
+   Number of public wires:         681
+   Number of public wire bits:    8715
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                226
+     $add_15                         1
+     $add_16                        31
+     $add_24                         1
+     $add_25                         2
+     $dff_1                          1
+     $dff_16                        32
+     $dffe_14                        2
+     $dffe_15                       26
+     $dffe_16                       39
+     $dffe_25                       22
+     $dffe_26                        7
+     $mul_25                        22
+     $mul_26                         7
+     $mux_1                          1
+     $mux_16                        32
+

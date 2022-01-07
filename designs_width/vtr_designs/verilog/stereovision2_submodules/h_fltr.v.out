@@ -1,0 +1,202 @@
+
+5. Printing statistics.
+
+=== h_fltr ===
+
+   Number of wires:                 42
+   Number of wire bits:            705
+   Number of public wires:          42
+   Number of public wire bits:     705
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 21
+     $dff_16                         6
+     $dffe_28                        7
+     my_fir_f1                       1
+     my_fir_f2                       1
+     my_fir_f3                       1
+     my_fir_h1                       1
+     my_fir_h2                       1
+     my_fir_h3                       1
+     my_fir_h4                       1
+     steer_fltr                      1
+
+=== my_fir_f1 ===
+
+   Number of wires:                 25
+   Number of wire bits:            560
+   Number of public wires:          11
+   Number of public wire bits:     143
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $add_32                         6
+     $dff_1                          1
+     $dffe_16                        6
+     $dffe_28                        1
+     $mul_32                         7
+     $mux_1                          1
+
+=== my_fir_f2 ===
+
+   Number of wires:                 23
+   Number of wire bits:            496
+   Number of public wires:          11
+   Number of public wire bits:     143
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $add_32                         6
+     $dff_1                          1
+     $dffe_16                        6
+     $dffe_28                        1
+     $mul_31                         2
+     $mul_32                         3
+     $mux_1                          1
+
+=== my_fir_f3 ===
+
+   Number of wires:                 23
+   Number of wire bits:            496
+   Number of public wires:          11
+   Number of public wire bits:     143
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $add_32                         5
+     $dff_1                          1
+     $dffe_16                        6
+     $dffe_28                        1
+     $mul_30                         4
+     $mul_32                         2
+     $mux_1                          1
+
+=== my_fir_h1 ===
+
+   Number of wires:                 23
+   Number of wire bits:            496
+   Number of public wires:          11
+   Number of public wire bits:     143
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $add_32                         5
+     $dff_1                          1
+     $dffe_16                        6
+     $dffe_28                        1
+     $mul_32                         6
+     $mux_1                          1
+
+=== my_fir_h2 ===
+
+   Number of wires:                 23
+   Number of wire bits:            496
+   Number of public wires:          11
+   Number of public wire bits:     143
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $add_32                         6
+     $dff_1                          1
+     $dffe_16                        6
+     $dffe_28                        1
+     $mul_31                         2
+     $mul_32                         3
+     $mux_1                          1
+
+=== my_fir_h3 ===
+
+   Number of wires:                 23
+   Number of wire bits:            496
+   Number of public wires:          11
+   Number of public wire bits:     143
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $add_32                         5
+     $dff_1                          1
+     $dffe_16                        6
+     $dffe_28                        1
+     $mul_29                         2
+     $mul_32                         4
+     $mux_1                          1
+
+=== my_fir_h4 ===
+
+   Number of wires:                 23
+   Number of wire bits:            496
+   Number of public wires:          11
+   Number of public wire bits:     143
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 20
+     $add_32                         5
+     $dff_1                          1
+     $dffe_16                        6
+     $dffe_28                        1
+     $mul_29                         2
+     $mul_32                         4
+     $mux_1                          1
+
+=== steer_fltr ===
+
+   Number of wires:                 51
+   Number of wire bits:           1363
+   Number of public wires:          37
+   Number of public wire bits:     937
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 42
+     $add_29                         4
+     $add_31                         7
+     $dff_16                         6
+     $dff_29                         9
+     $dff_31                         6
+     $dffe_28                        7
+     $sub_31                         3
+
+=== design hierarchy ===
+
+   h_fltr                            1
+     my_fir_f1                       1
+     my_fir_f2                       1
+     my_fir_f3                       1
+     my_fir_h1                       1
+     my_fir_h2                       1
+     my_fir_h3                       1
+     my_fir_h4                       1
+     steer_fltr                      1
+
+   Number of wires:                256
+   Number of wire bits:           5604
+   Number of public wires:         156
+   Number of public wire bits:    2643
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                197
+     $add_29                         4
+     $add_31                         7
+     $add_32                        38
+     $dff_1                          7
+     $dff_16                        12
+     $dff_29                         9
+     $dff_31                         6
+     $dffe_16                       42
+     $dffe_28                       21
+     $mul_29                         4
+     $mul_30                         4
+     $mul_31                         4
+     $mul_32                        29
+     $mux_1                          7
+     $sub_31                         3
+

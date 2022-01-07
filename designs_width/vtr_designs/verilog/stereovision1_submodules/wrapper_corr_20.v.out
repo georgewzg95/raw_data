@@ -1,0 +1,64 @@
+
+5. Printing statistics.
+
+=== corr ===
+
+   Number of wires:                 13
+   Number of wire bits:            146
+   Number of public wires:          10
+   Number of public wire bits:      98
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add_16                         1
+     $dff_16                         3
+     $dffe_16                        1
+     $mul_16                         2
+
+=== sh_reg ===
+
+   Number of wires:                  6
+   Number of wire bits:             34
+   Number of public wires:           6
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $dffe_8                         2
+
+=== wrapper_corr_20 ===
+
+   Number of wires:                 92
+   Number of wire bits:           1058
+   Number of public wires:          92
+   Number of public wire bits:    1058
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 64
+     $dffe_16                       21
+     corr                           21
+     sh_reg                         22
+
+=== design hierarchy ===
+
+   wrapper_corr_20                   1
+     corr                           21
+     sh_reg                         22
+
+   Number of wires:                497
+   Number of wire bits:           4872
+   Number of public wires:         434
+   Number of public wire bits:    3864
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                212
+     $add_16                        21
+     $dff_16                        63
+     $dffe_16                       42
+     $dffe_8                        44
+     $mul_16                        42
+

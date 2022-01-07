@@ -1,0 +1,150 @@
+
+5. Printing statistics.
+
+=== $paramod\randomwalkfilter\FilterResetValue=s32'00000000000000000000000000100000 ===
+
+   Number of wires:                 14
+   Number of wire bits:             97
+   Number of public wires:           6
+   Number of public wire bits:      13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $add_32                         1
+     $dff_1                          2
+     $eq_8                           2
+     $logic_or_1                     1
+     $mux_8                          2
+     $reduce_bool_2                  1
+     $sdffe_8                        1
+     $sub_32                         1
+
+=== dpll ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     freqdivider                     1
+     phasecomparator                 1
+     variableresetrandomwalkfilter      1
+
+=== freqdivider ===
+
+   Number of wires:                 13
+   Number of wire bits:             93
+   Number of public wires:           5
+   Number of public wire bits:      11
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $add_32                         2
+     $dffe_1                         1
+     $ge_32                          1
+     $logic_not_7                    1
+     $mux_7                          2
+     $ne_2                           1
+     $not_1                          1
+     $sdffe_7                        1
+
+=== phasecomparator ===
+
+   Number of wires:                 10
+   Number of wire bits:             11
+   Number of public wires:           7
+   Number of public wire bits:       8
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $dff_1                          2
+     $dff_2                          1
+     $eq_2                           1
+     $logic_and_1                    2
+     $not_1                          1
+
+=== variableresetrandomwalkfilter ===
+
+   Number of wires:                 44
+   Number of wire bits:            218
+   Number of public wires:          10
+   Number of public wire bits:      27
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 40
+     $add_32                         2
+     $dff_1                          2
+     $dffe_8                         1
+     $eq_4                           6
+     $eq_8                           2
+     $ge_32                          1
+     $gt_32                          2
+     $le_32                          1
+     $logic_and_1                    1
+     $logic_or_1                     3
+     $lt_32                          2
+     $mux_4                          4
+     $mux_8                          3
+     $ne_2                           1
+     $ne_3                           1
+     $paramod\randomwalkfilter\FilterResetValue=s32'00000000000000000000000000100000      1
+     $pmux_8                         1
+     $reduce_and_3                   1
+     $reduce_bool_2                  1
+     $reduce_bool_3                  1
+     $sdffe_4                        1
+     $sub_32                         2
+
+=== design hierarchy ===
+
+   dpll                              1
+     freqdivider                     1
+     phasecomparator                 1
+     variableresetrandomwalkfilter      1
+       $paramod\randomwalkfilter\FilterResetValue=s32'00000000000000000000000000100000      1
+
+   Number of wires:                 88
+   Number of wire bits:            426
+   Number of public wires:          35
+   Number of public wire bits:      66
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 67
+     $add_32                         5
+     $dff_1                          6
+     $dff_2                          1
+     $dffe_1                         1
+     $dffe_8                         1
+     $eq_2                           1
+     $eq_4                           6
+     $eq_8                           4
+     $ge_32                          2
+     $gt_32                          2
+     $le_32                          1
+     $logic_and_1                    3
+     $logic_not_7                    1
+     $logic_or_1                     4
+     $lt_32                          2
+     $mux_4                          4
+     $mux_7                          2
+     $mux_8                          5
+     $ne_2                           2
+     $ne_3                           1
+     $not_1                          2
+     $pmux_8                         1
+     $reduce_and_3                   1
+     $reduce_bool_2                  2
+     $reduce_bool_3                  1
+     $sdffe_4                        1
+     $sdffe_7                        1
+     $sdffe_8                        1
+     $sub_32                         3
+

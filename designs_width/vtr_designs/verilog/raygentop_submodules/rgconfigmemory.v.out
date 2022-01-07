@@ -1,0 +1,90 @@
+
+5. Printing statistics.
+
+=== $paramod$69ef3ba125364ac04d6727c81f3bd598500042c7\single_port_ram ===
+
+   Number of wires:                  9
+   Number of wire bits:            123
+   Number of public wires:           5
+   Number of public wire bits:      52
+   Number of memories:               1
+   Number of memory bits:          168
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe_21                        1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux_1                          1
+     $mux_21                         1
+     $mux_8                          1
+
+=== rgconfigmemory ===
+
+   Number of wires:                594
+   Number of wire bits:           1096
+   Number of public wires:          35
+   Number of public wire bits:     537
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                588
+     $and_1                        443
+     $dlatch_16                      9
+     $dlatch_28                      3
+     $eq_4                          13
+     $logic_and_1                   12
+     $mux_1                          2
+     $not_1                         13
+     $pmux_1                         1
+     $reduce_or_2                   78
+     $sdff_1                         1
+     $sdff_16                        9
+     $sdff_28                        3
+     spram21x4                       1
+
+=== spram21x4 ===
+
+   Number of wires:                  5
+   Number of wire bits:             52
+   Number of public wires:           5
+   Number of public wire bits:      52
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $dff_8                          1
+     $paramod$69ef3ba125364ac04d6727c81f3bd598500042c7\single_port_ram      1
+
+=== design hierarchy ===
+
+   rgconfigmemory                    1
+     spram21x4                       1
+       $paramod$69ef3ba125364ac04d6727c81f3bd598500042c7\single_port_ram      1
+
+   Number of wires:                608
+   Number of wire bits:           1271
+   Number of public wires:          45
+   Number of public wire bits:     641
+   Number of memories:               1
+   Number of memory bits:          168
+   Number of processes:              0
+   Number of cells:                594
+     $and_1                        443
+     $dff_8                          1
+     $dffe_21                        1
+     $dlatch_16                      9
+     $dlatch_28                      3
+     $eq_4                          13
+     $logic_and_1                   12
+     $memrd                          1
+     $memwr_v2                       1
+     $mux_1                          3
+     $mux_21                         1
+     $mux_8                          1
+     $not_1                         13
+     $pmux_1                         1
+     $reduce_or_2                   78
+     $sdff_1                         1
+     $sdff_16                        9
+     $sdff_28                        3
+

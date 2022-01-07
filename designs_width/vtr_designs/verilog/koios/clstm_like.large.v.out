@@ -1,0 +1,1637 @@
+
+5. Printing statistics.
+
+=== $paramod$9936372f316bf60d356d28d2b2dbe4757dd7b6b8\single_port_ram ===
+
+   Number of wires:                  9
+   Number of wire bits:            834
+   Number of public wires:           5
+   Number of public wire bits:     337
+   Number of memories:               1
+   Number of memory bits:         1782
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe_162                       1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux_1                          1
+     $mux_11                         1
+     $mux_162                        1
+
+=== $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram ===
+
+   Number of wires:                  9
+   Number of wire bits:           1454
+   Number of public wires:           5
+   Number of public wire bits:     584
+   Number of memories:               1
+   Number of memory bits:         1728
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe_288                       1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux_1                          1
+     $mux_288                        1
+     $mux_6                          1
+
+=== $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram ===
+
+   Number of wires:                  9
+   Number of wire bits:            836
+   Number of public wires:           5
+   Number of public wire bits:     338
+   Number of memories:               1
+   Number of memory bits:         1944
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe_162                       1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux_1                          1
+     $mux_12                         1
+     $mux_162                        1
+
+=== C_LSTM_datapath ===
+
+   Number of wires:               1647
+   Number of wire bits:          29255
+   Number of public wires:        1647
+   Number of public wire bits:   29255
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $and_1                          1
+     C_LSTM_stage_1_18_10_160_512_3_16_1      1
+     C_LSTM_stage_2_18_10_48_1       1
+     C_LSTM_stage_3_18_10_64_2048_3_16_1      1
+     pipelined_input_18_3_16         3
+     shift_register_group_18_16_3      1
+     shift_register_group_18_48_3      4
+     shift_register_unit_1_3         2
+     stage1_parameter_buffer_18_3_16_42_2688      1
+     stage2_Ct_buffer_18_3_16_64      1
+     stage2_mt_buffer_18_3_16_64_32      1
+     stage2_parameter_buffer_18_3_16_64      1
+     stage3_X_Y_buffer_18_16_3_10_32_64      1
+
+=== C_LSTM_stage_1_18_10_160_512_3_16_1 ===
+
+   Number of wires:                443
+   Number of wire bits:           7651
+   Number of public wires:         439
+   Number of public wire bits:    7647
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $and_1                          6
+     matrix_times_two_vectors_18_10_3_672_16_1      4
+
+=== C_LSTM_stage_2_18_10_48_1 ===
+
+   Number of wires:               2081
+   Number of wire bits:          36353
+   Number of public wires:        2081
+   Number of public wire bits:   36353
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                735
+     $and_1                          1
+     $sdffe_1                        2
+     $sdffe_18                     672
+     elementwise_add_core_18_18_48      1
+     elementwise_mult_core_18_18_10_48_1      3
+     lstm_gate_18_10_48_1            3
+     output_activation_18_10_48_1      1
+     shift_register_group_18_48_14      1
+     shift_register_group_18_48_18      2
+     shift_register_group_18_48_6      1
+     tanh_core_18_18_10_32_1        48
+
+=== C_LSTM_stage_3_18_10_64_2048_3_16_1 ===
+
+   Number of wires:                144
+   Number of wire bits:           2438
+   Number of public wires:         143
+   Number of public wire bits:    2421
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $sdff_1                         1
+     multiple_c_matrix_vec_mult_and_sum_18_10_16_1_3_64      1
+     shift_register_group_18_16_3      1
+     shift_register_unit_18_3        1
+     stage3_parameter_buffer_18_3_16_64_2048      1
+
+=== abs_unit_18 ===
+
+   Number of wires:                 11
+   Number of wire bits:             96
+   Number of public wires:          10
+   Number of public wire bits:      78
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux_18                         1
+     $neg_18                         1
+     $sdffe_1                        1
+     $sdffe_18                       1
+
+=== addfxp_18_1 ===
+
+   Number of wires:                  6
+   Number of wire bits:             91
+   Number of public wires:           5
+   Number of public wire bits:      73
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $add_18                         1
+     $dff_18                         1
+
+=== c_matrix_vec_mult_core_18_10_16_3_1 ===
+
+   Number of wires:                710
+   Number of wire bits:          12117
+   Number of public wires:         686
+   Number of public wire bits:   11736
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                221
+     $and_1                          9
+     $neg_18                        21
+     $not_1                          1
+     $sdffe_1                        4
+     $sdffe_18                     161
+     dft_16_top_18                   1
+     elementwise_add_core_18_18_9      3
+     elementwise_mult_core_18_1810_9_1     12
+     elementwise_sub_core_18_18_9      3
+     shift_register_group_18_910      6
+
+=== codeBlock88206_18 ===
+
+   Number of wires:                296
+   Number of wire bits:           5355
+   Number of public wires:         288
+   Number of public wire bits:    5099
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                182
+     $add_32                         4
+     $dffe_18                       80
+     $not_32                         4
+     $sdff_1                         1
+     addfxp_18_1                    40
+     multfix_alt_dsp_18             12
+     shiftRegFIFO_5_1                1
+     subfxp_18_1                    40
+
+=== codeBlock89324_18 ===
+
+   Number of wires:                197
+   Number of wire bits:           3461
+   Number of public wires:         197
+   Number of public wire bits:    3461
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 98
+     $dffe_18                       32
+     $sdff_1                         1
+     addfxp_18_1                    32
+     shiftRegFIFO_2_1                1
+     subfxp_18_1                    32
+
+=== codeBlock98050_18 ===
+
+   Number of wires:                296
+   Number of wire bits:           5355
+   Number of public wires:         288
+   Number of public wire bits:    5099
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                182
+     $add_32                         4
+     $dffe_18                       80
+     $not_32                         4
+     $sdff_1                         1
+     addfxp_18_1                    40
+     multfix_alt_dsp_18             12
+     shiftRegFIFO_5_1                1
+     subfxp_18_1                    40
+
+=== codeBlock99168_18 ===
+
+   Number of wires:                197
+   Number of wire bits:           3461
+   Number of public wires:         197
+   Number of public wire bits:    3461
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 98
+     $dffe_18                       32
+     $sdff_1                         1
+     addfxp_18_1                    32
+     shiftRegFIFO_2_1                1
+     subfxp_18_1                    32
+
+=== counter_20_1 ===
+
+   Number of wires:                  7
+   Number of wire bits:             64
+   Number of public wires:           4
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $add_32                         1
+     $le_32                          1
+     $mux_14                         1
+     $sdffe_14                       1
+
+=== counter_31_3 ===
+
+   Number of wires:                  7
+   Number of wire bits:             64
+   Number of public wires:           4
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $add_32                         1
+     $le_32                          1
+     $mux_14                         1
+     $sdffe_14                       1
+
+=== counter_41_1 ===
+
+   Number of wires:                  7
+   Number of wire bits:             64
+   Number of public wires:           4
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $add_32                         1
+     $le_32                          1
+     $mux_14                         1
+     $sdffe_14                       1
+
+=== counter_41_1_32 ===
+
+   Number of wires:                  7
+   Number of wire bits:             64
+   Number of public wires:           4
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $add_32                         1
+     $le_32                          1
+     $mux_14                         1
+     $sdffe_14                       1
+
+=== counter_63_1 ===
+
+   Number of wires:                  7
+   Number of wire bits:             64
+   Number of public wires:           4
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $add_32                         1
+     $le_32                          1
+     $mux_14                         1
+     $sdffe_14                       1
+
+=== counter_63_3 ===
+
+   Number of wires:                  7
+   Number of wire bits:             64
+   Number of public wires:           4
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $add_32                         1
+     $le_32                          1
+     $mux_14                         1
+     $sdffe_14                       1
+
+=== counter_8_1 ===
+
+   Number of wires:                  7
+   Number of wire bits:             64
+   Number of public wires:           4
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $add_32                         1
+     $le_32                          1
+     $mux_14                         1
+     $sdffe_14                       1
+
+=== dft_16_top_18 ===
+
+   Number of wires:                167
+   Number of wire bits:           2887
+   Number of public wires:         167
+   Number of public wire bits:    2887
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     codeBlock88206_18               1
+     codeBlock89324_18               1
+
+=== dsp_signed_mac_18_13_23_32 ===
+
+   Number of wires:                 18
+   Number of wire bits:            244
+   Number of public wires:          16
+   Number of public wire bits:     180
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $add_32                         1
+     $mul_32                         1
+     $sdff_13                        1
+     $sdff_18                        1
+     $sdff_23                        1
+     $sdff_32                        1
+     $sdffe_1                        3
+
+=== dsp_signed_mult_18x18_unit_18_18_1 ===
+
+   Number of wires:                 22
+   Number of wire bits:            374
+   Number of public wires:          20
+   Number of public wire bits:     300
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $mul_37                         2
+     $sdffe_1                        3
+     $sdffe_18                       4
+     $sdffe_37                       2
+
+=== dsp_signed_mult_18x18_unit_18_36_0 ===
+
+   Number of wires:                 18
+   Number of wire bits:            296
+   Number of public wires:          16
+   Number of public wire bits:     224
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $dff_36                         2
+     $mul_36                         2
+     $sdffe_1                        3
+
+=== dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:           2907
+   Number of public wires:           9
+   Number of public wire bits:    1167
+   Number of memories:               1
+   Number of memory bits:         1728
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe_288                       2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux_1                          2
+     $mux_288                        2
+     $mux_6                          2
+
+=== elementwise_add_core_18_18_48 ===
+
+   Number of wires:                345
+   Number of wire bits:           6057
+   Number of public wires:         297
+   Number of public wire bits:    5193
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                195
+     $add_18                        48
+     $and_1                          1
+     $sdffe_1                        2
+     $sdffe_18                     144
+
+=== elementwise_add_core_18_18_9 ===
+
+   Number of wires:                 72
+   Number of wire bits:           1143
+   Number of public wires:          63
+   Number of public wire bits:     981
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 39
+     $add_18                         9
+     $and_1                          1
+     $sdffe_1                        2
+     $sdffe_18                      27
+
+=== elementwise_mult_core_18_1810_9_1 ===
+
+   Number of wires:                 99
+   Number of wire bits:           1665
+   Number of public wires:          99
+   Number of public wire bits:    1665
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 34
+     $and_1                          1
+     $sdffe_1                        1
+     $sdffe_18                      18
+     dsp_signed_mult_18x18_unit_18_18_1      5
+     fp_rounding_unit_1_37_10        9
+
+=== elementwise_mult_core_18_18_10_48_1 ===
+
+   Number of wires:                489
+   Number of wire bits:           8841
+   Number of public wires:         489
+   Number of public wire bits:    8841
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                170
+     $and_1                          1
+     $sdffe_1                        1
+     $sdffe_18                      96
+     dsp_signed_mult_18x18_unit_18_18_1     24
+     fp_rounding_unit_1_37_10       48
+
+=== elementwise_sub_core_18_18_9 ===
+
+   Number of wires:                 72
+   Number of wire bits:           1143
+   Number of public wires:          63
+   Number of public wire bits:     981
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 39
+     $and_1                          1
+     $sdffe_1                        2
+     $sdffe_18                      27
+     $sub_18                         9
+
+=== fp_rounding_unit_1_32_11 ===
+
+   Number of wires:                 15
+   Number of wire bits:            232
+   Number of public wires:          14
+   Number of public wire bits:     200
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_32                         1
+     $mux_32                         1
+     $sdffe_1                        3
+     $sdffe_21                       1
+     $sdffe_32                       2
+
+=== fp_rounding_unit_1_37_10 ===
+
+   Number of wires:                 15
+   Number of wire bits:            267
+   Number of public wires:          14
+   Number of public wire bits:     230
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_37                         1
+     $mux_37                         1
+     $sdffe_1                        3
+     $sdffe_27                       1
+     $sdffe_37                       2
+
+=== idft_16_top_18 ===
+
+   Number of wires:                167
+   Number of wire bits:           2887
+   Number of public wires:         167
+   Number of public wire bits:    2887
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     codeBlock98050_18               1
+     codeBlock99168_18               1
+
+=== lstm_gate_18_10_48_1 ===
+
+   Number of wires:                589
+   Number of wire bits:           8749
+   Number of public wires:         589
+   Number of public wire bits:    8749
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 53
+     $and_1                          1
+     elementwise_add_core_18_18_48      2
+     elementwise_mult_core_18_18_10_48_1      1
+     shift_register_group_18_48_10      1
+     sigmoid_core_18_18_10_32_1     48
+
+=== matrix_times_two_vectors_18_10_3_672_16_1 ===
+
+   Number of wires:                125
+   Number of wire bits:           2131
+   Number of public wires:         125
+   Number of public wire bits:    2131
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     multiple_c_matrix_vec_mult_and_sum_18_10_16_1_3_42      1
+
+=== multfix_alt_dsp_18 ===
+
+   Number of wires:                 12
+   Number of wire bits:            218
+   Number of public wires:          12
+   Number of public wire bits:     218
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     dsp_signed_mult_18x18_unit_18_36_0      1
+
+=== multiple_c_matrix_vec_mult_and_sum_18_10_16_1_3_42 ===
+
+   Number of wires:                519
+   Number of wire bits:           9053
+   Number of public wires:         519
+   Number of public wire bits:    9053
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 64
+     $and_1                          1
+     $sdffe_1                        2
+     $sdffe_14                      48
+     c_matrix_vec_mult_core_18_10_16_3_1      1
+     idft_16_top_18                  3
+     shift_register_group_18_16_1      6
+     sum_complex_vector_unit_18_18_16_42      3
+
+=== multiple_c_matrix_vec_mult_and_sum_18_10_16_1_3_64 ===
+
+   Number of wires:                519
+   Number of wire bits:           9053
+   Number of public wires:         519
+   Number of public wire bits:    9053
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 64
+     $and_1                          1
+     $sdffe_1                        2
+     $sdffe_14                      48
+     c_matrix_vec_mult_core_18_10_16_3_1      1
+     idft_16_top_18                  3
+     shift_register_group_18_16_1      6
+     sum_complex_vector_unit_18_18_16_64      3
+
+=== output_activation_18_10_48_1 ===
+
+   Number of wires:                345
+   Number of wire bits:           4425
+   Number of public wires:         345
+   Number of public wire bits:    4425
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 50
+     $and_1                          1
+     elementwise_add_core_18_18_48      1
+     sigmoid_core_18_18_10_32_1     48
+
+=== pipelined_input_18_3_16 ===
+
+   Number of wires:                239
+   Number of wire bits:           4047
+   Number of public wires:         154
+   Number of public wire bits:    2602
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                170
+     $mux_1                          5
+     $mux_18                        80
+     $sdffe_1                        5
+     $sdffe_18                      80
+
+=== ram_288_0_42 ===
+
+   Number of wires:                  8
+   Number of wire bits:           1166
+   Number of public wires:           8
+   Number of public wire bits:    1166
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     dual_port_ram                   1
+
+=== ram_288_0_64 ===
+
+   Number of wires:                  8
+   Number of wire bits:           1166
+   Number of public wires:           8
+   Number of public wire bits:    1166
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     dual_port_ram                   1
+
+=== shiftRegFIFO_2_1 ===
+
+   Number of wires:                  6
+   Number of wire bits:              6
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $sdff_1                         2
+
+=== shiftRegFIFO_5_1 ===
+
+   Number of wires:                  9
+   Number of wire bits:              9
+   Number of public wires:           9
+   Number of public wire bits:       9
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $sdff_1                         5
+
+=== shift_register_group_18_16_1 ===
+
+   Number of wires:                 35
+   Number of wire bits:            579
+   Number of public wires:          35
+   Number of public wire bits:     579
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 16
+     shift_register_unit_18_1       16
+
+=== shift_register_group_18_16_3 ===
+
+   Number of wires:                 35
+   Number of wire bits:            579
+   Number of public wires:          35
+   Number of public wire bits:     579
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 16
+     shift_register_unit_18_3       16
+
+=== shift_register_group_18_48_10 ===
+
+   Number of wires:                 99
+   Number of wire bits:           1731
+   Number of public wires:          99
+   Number of public wire bits:    1731
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 48
+     shift_register_unit_18_18      48
+
+=== shift_register_group_18_48_14 ===
+
+   Number of wires:                 99
+   Number of wire bits:           1731
+   Number of public wires:          99
+   Number of public wire bits:    1731
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 48
+     shift_register_unit_18_14      48
+
+=== shift_register_group_18_48_18 ===
+
+   Number of wires:                 99
+   Number of wire bits:           1731
+   Number of public wires:          99
+   Number of public wire bits:    1731
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 48
+     shift_register_unit_18_18      48
+
+=== shift_register_group_18_48_3 ===
+
+   Number of wires:                 99
+   Number of wire bits:           1731
+   Number of public wires:          99
+   Number of public wire bits:    1731
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 48
+     shift_register_unit_18_3       48
+
+=== shift_register_group_18_48_6 ===
+
+   Number of wires:                 99
+   Number of wire bits:           1731
+   Number of public wires:          99
+   Number of public wire bits:    1731
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 48
+     shift_register_unit_18_6       48
+
+=== shift_register_group_18_910 ===
+
+   Number of wires:                 21
+   Number of wire bits:            327
+   Number of public wires:          21
+   Number of public wire bits:     327
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     shift_register_unit_18_10       9
+
+=== shift_register_unit_12 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $sdffe_1                        2
+
+=== shift_register_unit_18_1 ===
+
+   Number of wires:                  6
+   Number of wire bits:             57
+   Number of public wires:           6
+   Number of public wire bits:      57
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $sdffe_18                       1
+
+=== shift_register_unit_18_10 ===
+
+   Number of wires:                 15
+   Number of wire bits:            219
+   Number of public wires:          15
+   Number of public wire bits:     219
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $sdffe_18                      10
+
+=== shift_register_unit_18_14 ===
+
+   Number of wires:                 19
+   Number of wire bits:            291
+   Number of public wires:          19
+   Number of public wire bits:     291
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $sdffe_18                      14
+
+=== shift_register_unit_18_18 ===
+
+   Number of wires:                 23
+   Number of wire bits:            363
+   Number of public wires:          23
+   Number of public wire bits:     363
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     $sdffe_18                      18
+
+=== shift_register_unit_18_3 ===
+
+   Number of wires:                  8
+   Number of wire bits:             93
+   Number of public wires:           8
+   Number of public wire bits:      93
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $sdffe_18                       3
+
+=== shift_register_unit_18_6 ===
+
+   Number of wires:                 11
+   Number of wire bits:            147
+   Number of public wires:          11
+   Number of public wire bits:     147
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $sdffe_18                       6
+
+=== shift_register_unit_1_2 ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           7
+   Number of public wire bits:       7
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $sdffe_1                        2
+
+=== shift_register_unit_1_3 ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           8
+   Number of public wire bits:       8
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $sdffe_1                        3
+
+=== sigmoid_core_18_18_10_32_1 ===
+
+   Number of wires:                191
+   Number of wire bits:           1991
+   Number of public wires:          92
+   Number of public wire bits:    1117
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                114
+     $and_1                          1
+     $dffe_1                         1
+     $eq_5                          31
+     $ge_32                          1
+     $logic_not_5                    1
+     $mux_1                          1
+     $mux_13                        65
+     $mux_23                         1
+     $mux_32                         1
+     $not_1                          1
+     $reduce_and_2                   1
+     $sdffe_1                        2
+     $sdffe_18                       2
+     $sub_32                         1
+     abs_unit_18                     1
+     dsp_signed_mac_18_13_23_32      1
+     fp_rounding_unit_1_32_11        1
+     shift_register_unit_1_3         1
+
+=== stage1_parameter_buffer_18_3_16_42_2688 ===
+
+   Number of wires:                226
+   Number of wire bits:           3999
+   Number of public wires:         224
+   Number of public wire bits:    3935
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $add_32                         1
+     $and_1                          1
+     $eq_14                          1
+     $mul_31                         1
+     counter_41_1                    1
+     counter_63_3                    1
+     weight_buffer_18_9_42_3_2688Wcxr_imag_half_0      1
+     weight_buffer_18_9_42_3_2688Wcxr_real_half_0      1
+     weight_buffer_18_9_42_3_2688Wfxr_imag_half_0      1
+     weight_buffer_18_9_42_3_2688Wfxr_real_half_0      1
+     weight_buffer_18_9_42_3_2688Wixr_imag_half_0      1
+     weight_buffer_18_9_42_3_2688Wixr_real_half_0      1
+     weight_buffer_18_9_42_3_2688Woxr_imag_half_0      1
+     weight_buffer_18_9_42_3_2688Woxr_real_half_0      1
+
+=== stage2_Ct_buffer_18_3_16_64 ===
+
+   Number of wires:                 82
+   Number of wire bits:           2408
+   Number of public wires:          77
+   Number of public wire bits:    2341
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $add_32                         2
+     $lt_32                          3
+     $sdff_6                         3
+     counter_63_1                    1
+     ram_288_0_64                    3
+
+=== stage2_mt_buffer_18_3_16_64_32 ===
+
+   Number of wires:                 72
+   Number of wire bits:           1234
+   Number of public wires:          50
+   Number of public wire bits:    1212
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 35
+     $eq_14                          3
+     $logic_and_1                    9
+     $logic_not_14                   3
+     $mux_1                          5
+     $mux_6                          1
+     $not_1                          2
+     $reduce_bool_2                  2
+     $sdff_1                         1
+     $sdffe_1                        2
+     counter_63_1                    2
+     counter_8_1                     1
+     ram_288_0_64                    1
+     shift_register_unit_12          3
+
+=== stage2_parameter_buffer_18_3_16_64 ===
+
+   Number of wires:                676
+   Number of wire bits:          12113
+   Number of public wires:         676
+   Number of public wire bits:   12113
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     counter_63_3                    1
+     weight_buffer_18_16_3_64_Wfc_0      1
+     weight_buffer_18_16_3_64_Wic_0      1
+     weight_buffer_18_16_3_64_Woc_0      1
+     weight_buffer_18_16_3_64_bc_0      1
+     weight_buffer_18_16_3_64_bf_0      1
+     weight_buffer_18_16_3_64_bi_0      1
+     weight_buffer_18_16_3_64_bo_0      1
+
+=== stage3_X_Y_buffer_18_16_3_10_32_64 ===
+
+   Number of wires:                 98
+   Number of wire bits:           1799
+   Number of public wires:          82
+   Number of public wire bits:    1783
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 43
+     $eq_14                          2
+     $ge_32                          1
+     $logic_and_1                    6
+     $logic_not_14                   1
+     $mux_1                          5
+     $mux_18                        16
+     $not_1                          2
+     $reduce_bool_2                  2
+     $sdff_1                         1
+     $sdffe_1                        2
+     counter_20_1                    1
+     counter_41_1                    1
+     counter_41_1_32                 1
+     ram_288_0_42                    1
+     shift_register_unit_1_2         1
+
+=== stage3_parameter_buffer_18_3_16_64_2048 ===
+
+   Number of wires:                 63
+   Number of wire bits:           1051
+   Number of public wires:          61
+   Number of public wire bits:    1018
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add_32                         1
+     $and_1                          1
+     $eq_14                          1
+     counter_31_3                    1
+     counter_63_1                    1
+     weight_buffer_18_9_3_64_2048_Wym_imag_half_0      1
+     weight_buffer_18_9_3_64_2048_Wym_real_half_0      1
+
+=== subfxp_18_1 ===
+
+   Number of wires:                  6
+   Number of wire bits:             91
+   Number of public wires:           5
+   Number of public wire bits:      73
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $add_18                         1
+     $dff_18                         1
+
+=== sum_complex_vector_unit_18_18_16_42 ===
+
+   Number of wires:                171
+   Number of wire bits:           2948
+   Number of public wires:         104
+   Number of public wire bits:    1749
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                103
+     $add_18                        32
+     $add_32                         1
+     $and_1                          1
+     $eq_14                          1
+     $mux_14                         1
+     $mux_18                        32
+     $reduce_and_2                   1
+     $sdffe_1                        1
+     $sdffe_14                       1
+     $sdffe_18                      32
+
+=== sum_complex_vector_unit_18_18_16_64 ===
+
+   Number of wires:                171
+   Number of wire bits:           2948
+   Number of public wires:         104
+   Number of public wire bits:    1749
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                103
+     $add_18                        32
+     $add_32                         1
+     $and_1                          1
+     $eq_14                          1
+     $mux_14                         1
+     $mux_18                        32
+     $reduce_and_2                   1
+     $sdffe_1                        1
+     $sdffe_14                       1
+     $sdffe_18                      32
+
+=== tanh_core_18_18_10_32_1 ===
+
+   Number of wires:                191
+   Number of wire bits:           1991
+   Number of public wires:          92
+   Number of public wire bits:    1117
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                114
+     $and_1                          1
+     $dffe_1                         1
+     $eq_5                          31
+     $ge_32                          1
+     $logic_not_5                    1
+     $mux_1                          1
+     $mux_13                        65
+     $mux_23                         1
+     $mux_32                         1
+     $not_1                          1
+     $reduce_and_2                   1
+     $sdffe_1                        2
+     $sdffe_18                       2
+     $sub_32                         1
+     abs_unit_18                     1
+     dsp_signed_mac_18_13_23_32      1
+     fp_rounding_unit_1_32_11        1
+     shift_register_unit_1_3         1
+
+=== weight_buffer_18_16_3_64_Wfc_0 ===
+
+   Number of wires:                 62
+   Number of wire bits:           1784
+   Number of public wires:          60
+   Number of public wire bits:    1772
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_6                          2
+     $dff_6                          3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+
+=== weight_buffer_18_16_3_64_Wic_0 ===
+
+   Number of wires:                 62
+   Number of wire bits:           1784
+   Number of public wires:          60
+   Number of public wire bits:    1772
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_6                          2
+     $dff_6                          3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+
+=== weight_buffer_18_16_3_64_Woc_0 ===
+
+   Number of wires:                 62
+   Number of wire bits:           1784
+   Number of public wires:          60
+   Number of public wire bits:    1772
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_6                          2
+     $dff_6                          3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+
+=== weight_buffer_18_16_3_64_bc_0 ===
+
+   Number of wires:                 62
+   Number of wire bits:           1784
+   Number of public wires:          60
+   Number of public wire bits:    1772
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_6                          2
+     $dff_6                          3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+
+=== weight_buffer_18_16_3_64_bf_0 ===
+
+   Number of wires:                 62
+   Number of wire bits:           1784
+   Number of public wires:          60
+   Number of public wire bits:    1772
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_6                          2
+     $dff_6                          3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+
+=== weight_buffer_18_16_3_64_bi_0 ===
+
+   Number of wires:                 62
+   Number of wire bits:           1784
+   Number of public wires:          60
+   Number of public wire bits:    1772
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_6                          2
+     $dff_6                          3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+
+=== weight_buffer_18_16_3_64_bo_0 ===
+
+   Number of wires:                 62
+   Number of wire bits:           1784
+   Number of public wires:          60
+   Number of public wire bits:    1772
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_6                          2
+     $dff_6                          3
+     $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+
+=== weight_buffer_18_9_3_64_2048_Wym_imag_half_0 ===
+
+   Number of wires:                 41
+   Number of wire bits:           1073
+   Number of public wires:          39
+   Number of public wire bits:    1051
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_11                         2
+     $dff_11                         3
+     $paramod$9936372f316bf60d356d28d2b2dbe4757dd7b6b8\single_port_ram      3
+
+=== weight_buffer_18_9_3_64_2048_Wym_real_half_0 ===
+
+   Number of wires:                 41
+   Number of wire bits:           1073
+   Number of public wires:          39
+   Number of public wire bits:    1051
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_11                         2
+     $dff_11                         3
+     $paramod$9936372f316bf60d356d28d2b2dbe4757dd7b6b8\single_port_ram      3
+
+=== weight_buffer_18_9_42_3_2688Wcxr_imag_half_0 ===
+
+   Number of wires:                 41
+   Number of wire bits:           1082
+   Number of public wires:          39
+   Number of public wire bits:    1058
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_12                         2
+     $dff_12                         3
+     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
+
+=== weight_buffer_18_9_42_3_2688Wcxr_real_half_0 ===
+
+   Number of wires:                 41
+   Number of wire bits:           1082
+   Number of public wires:          39
+   Number of public wire bits:    1058
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_12                         2
+     $dff_12                         3
+     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
+
+=== weight_buffer_18_9_42_3_2688Wfxr_imag_half_0 ===
+
+   Number of wires:                 41
+   Number of wire bits:           1082
+   Number of public wires:          39
+   Number of public wire bits:    1058
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_12                         2
+     $dff_12                         3
+     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
+
+=== weight_buffer_18_9_42_3_2688Wfxr_real_half_0 ===
+
+   Number of wires:                 41
+   Number of wire bits:           1082
+   Number of public wires:          39
+   Number of public wire bits:    1058
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_12                         2
+     $dff_12                         3
+     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
+
+=== weight_buffer_18_9_42_3_2688Wixr_imag_half_0 ===
+
+   Number of wires:                 41
+   Number of wire bits:           1082
+   Number of public wires:          39
+   Number of public wire bits:    1058
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_12                         2
+     $dff_12                         3
+     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
+
+=== weight_buffer_18_9_42_3_2688Wixr_real_half_0 ===
+
+   Number of wires:                 41
+   Number of wire bits:           1082
+   Number of public wires:          39
+   Number of public wire bits:    1058
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_12                         2
+     $dff_12                         3
+     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
+
+=== weight_buffer_18_9_42_3_2688Woxr_imag_half_0 ===
+
+   Number of wires:                 41
+   Number of wire bits:           1082
+   Number of public wires:          39
+   Number of public wire bits:    1058
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_12                         2
+     $dff_12                         3
+     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
+
+=== weight_buffer_18_9_42_3_2688Woxr_real_half_0 ===
+
+   Number of wires:                 41
+   Number of wire bits:           1082
+   Number of public wires:          39
+   Number of public wire bits:    1058
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_12                         2
+     $dff_12                         3
+     $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
+
+=== design hierarchy ===
+
+   C_LSTM_datapath                   1
+     C_LSTM_stage_1_18_10_160_512_3_16_1      1
+       matrix_times_two_vectors_18_10_3_672_16_1      4
+         multiple_c_matrix_vec_mult_and_sum_18_10_16_1_3_42      1
+           c_matrix_vec_mult_core_18_10_16_3_1      1
+             dft_16_top_18           1
+               codeBlock88206_18      1
+                 addfxp_18_1        40
+                 multfix_alt_dsp_18     12
+                   dsp_signed_mult_18x18_unit_18_36_0      1
+                 shiftRegFIFO_5_1      1
+                 subfxp_18_1        40
+               codeBlock89324_18      1
+                 addfxp_18_1        32
+                 shiftRegFIFO_2_1      1
+                 subfxp_18_1        32
+             elementwise_add_core_18_18_9      3
+             elementwise_mult_core_18_1810_9_1     12
+               dsp_signed_mult_18x18_unit_18_18_1      5
+               fp_rounding_unit_1_37_10      9
+             elementwise_sub_core_18_18_9      3
+             shift_register_group_18_910      6
+               shift_register_unit_18_10      9
+           idft_16_top_18            3
+             codeBlock98050_18       1
+               addfxp_18_1          40
+               multfix_alt_dsp_18     12
+                 dsp_signed_mult_18x18_unit_18_36_0      1
+               shiftRegFIFO_5_1      1
+               subfxp_18_1          40
+             codeBlock99168_18       1
+               addfxp_18_1          32
+               shiftRegFIFO_2_1      1
+               subfxp_18_1          32
+           shift_register_group_18_16_1      6
+             shift_register_unit_18_1     16
+           sum_complex_vector_unit_18_18_16_42      3
+     C_LSTM_stage_2_18_10_48_1       1
+       elementwise_add_core_18_18_48      1
+       elementwise_mult_core_18_18_10_48_1      3
+         dsp_signed_mult_18x18_unit_18_18_1     24
+         fp_rounding_unit_1_37_10     48
+       lstm_gate_18_10_48_1          3
+         elementwise_add_core_18_18_48      2
+         elementwise_mult_core_18_18_10_48_1      1
+           dsp_signed_mult_18x18_unit_18_18_1     24
+           fp_rounding_unit_1_37_10     48
+         shift_register_group_18_48_10      1
+           shift_register_unit_18_18     48
+         sigmoid_core_18_18_10_32_1     48
+           abs_unit_18               1
+           dsp_signed_mac_18_13_23_32      1
+           fp_rounding_unit_1_32_11      1
+           shift_register_unit_1_3      1
+       output_activation_18_10_48_1      1
+         elementwise_add_core_18_18_48      1
+         sigmoid_core_18_18_10_32_1     48
+           abs_unit_18               1
+           dsp_signed_mac_18_13_23_32      1
+           fp_rounding_unit_1_32_11      1
+           shift_register_unit_1_3      1
+       shift_register_group_18_48_14      1
+         shift_register_unit_18_14     48
+       shift_register_group_18_48_18      2
+         shift_register_unit_18_18     48
+       shift_register_group_18_48_6      1
+         shift_register_unit_18_6     48
+       tanh_core_18_18_10_32_1      48
+         abs_unit_18                 1
+         dsp_signed_mac_18_13_23_32      1
+         fp_rounding_unit_1_32_11      1
+         shift_register_unit_1_3      1
+     C_LSTM_stage_3_18_10_64_2048_3_16_1      1
+       multiple_c_matrix_vec_mult_and_sum_18_10_16_1_3_64      1
+         c_matrix_vec_mult_core_18_10_16_3_1      1
+           dft_16_top_18             1
+             codeBlock88206_18       1
+               addfxp_18_1          40
+               multfix_alt_dsp_18     12
+                 dsp_signed_mult_18x18_unit_18_36_0      1
+               shiftRegFIFO_5_1      1
+               subfxp_18_1          40
+             codeBlock89324_18       1
+               addfxp_18_1          32
+               shiftRegFIFO_2_1      1
+               subfxp_18_1          32
+           elementwise_add_core_18_18_9      3
+           elementwise_mult_core_18_1810_9_1     12
+             dsp_signed_mult_18x18_unit_18_18_1      5
+             fp_rounding_unit_1_37_10      9
+           elementwise_sub_core_18_18_9      3
+           shift_register_group_18_910      6
+             shift_register_unit_18_10      9
+         idft_16_top_18              3
+           codeBlock98050_18         1
+             addfxp_18_1            40
+             multfix_alt_dsp_18     12
+               dsp_signed_mult_18x18_unit_18_36_0      1
+             shiftRegFIFO_5_1        1
+             subfxp_18_1            40
+           codeBlock99168_18         1
+             addfxp_18_1            32
+             shiftRegFIFO_2_1        1
+             subfxp_18_1            32
+         shift_register_group_18_16_1      6
+           shift_register_unit_18_1     16
+         sum_complex_vector_unit_18_18_16_64      3
+       shift_register_group_18_16_3      1
+         shift_register_unit_18_3     16
+       shift_register_unit_18_3      1
+       stage3_parameter_buffer_18_3_16_64_2048      1
+         counter_31_3                1
+         counter_63_1                1
+         weight_buffer_18_9_3_64_2048_Wym_imag_half_0      1
+           $paramod$9936372f316bf60d356d28d2b2dbe4757dd7b6b8\single_port_ram      3
+         weight_buffer_18_9_3_64_2048_Wym_real_half_0      1
+           $paramod$9936372f316bf60d356d28d2b2dbe4757dd7b6b8\single_port_ram      3
+     pipelined_input_18_3_16         3
+     shift_register_group_18_16_3      1
+       shift_register_unit_18_3     16
+     shift_register_group_18_48_3      4
+       shift_register_unit_18_3     48
+     shift_register_unit_1_3         2
+     stage1_parameter_buffer_18_3_16_42_2688      1
+       counter_41_1                  1
+       counter_63_3                  1
+       weight_buffer_18_9_42_3_2688Wcxr_imag_half_0      1
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
+       weight_buffer_18_9_42_3_2688Wcxr_real_half_0      1
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
+       weight_buffer_18_9_42_3_2688Wfxr_imag_half_0      1
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
+       weight_buffer_18_9_42_3_2688Wfxr_real_half_0      1
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
+       weight_buffer_18_9_42_3_2688Wixr_imag_half_0      1
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
+       weight_buffer_18_9_42_3_2688Wixr_real_half_0      1
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
+       weight_buffer_18_9_42_3_2688Woxr_imag_half_0      1
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
+       weight_buffer_18_9_42_3_2688Woxr_real_half_0      1
+         $paramod$d00916e4dfc2c0e171972116a153dab27e988efb\single_port_ram      3
+     stage2_Ct_buffer_18_3_16_64      1
+       counter_63_1                  1
+       ram_288_0_64                  3
+         dual_port_ram               1
+     stage2_mt_buffer_18_3_16_64_32      1
+       counter_63_1                  2
+       counter_8_1                   1
+       ram_288_0_64                  1
+         dual_port_ram               1
+       shift_register_unit_12        3
+     stage2_parameter_buffer_18_3_16_64      1
+       counter_63_3                  1
+       weight_buffer_18_16_3_64_Wfc_0      1
+         $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+       weight_buffer_18_16_3_64_Wic_0      1
+         $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+       weight_buffer_18_16_3_64_Woc_0      1
+         $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+       weight_buffer_18_16_3_64_bc_0      1
+         $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+       weight_buffer_18_16_3_64_bf_0      1
+         $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+       weight_buffer_18_16_3_64_bi_0      1
+         $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+       weight_buffer_18_16_3_64_bo_0      1
+         $paramod$9a21768ddbf01fde928fc9da848916fdaff2cb66\single_port_ram      3
+     stage3_X_Y_buffer_18_16_3_10_32_64      1
+       counter_20_1                  1
+       counter_41_1                  1
+       counter_41_1_32               1
+       ram_288_0_42                  1
+         dual_port_ram               1
+       shift_register_unit_1_2       1
+
+   Number of wires:             169938
+   Number of wire bits:         2522379
+   Number of public wires:      137582
+   Number of public wire bits:  2068519
+   Number of memories:              56
+   Number of memory bits:       102276
+   Number of processes:              0
+   Number of cells:              71912
+     $add_11                         4
+     $add_12                        16
+     $add_18                      3879
+     $add_32                       591
+     $add_37                       828
+     $add_6                         14
+     $and_1                        423
+     $dff_11                         6
+     $dff_12                        24
+     $dff_18                      2880
+     $dff_36                       480
+     $dff_6                         21
+     $dffe_1                       240
+     $dffe_162                      30
+     $dffe_18                     2240
+     $dffe_288                      31
+     $eq_14                         22
+     $eq_5                        7440
+     $ge_32                        241
+     $le_32                         12
+     $logic_and_1                   15
+     $logic_not_14                   4
+     $logic_not_5                  240
+     $lt_32                          3
+     $memrd                         61
+     $memwr_v2                      61
+     $mul_31                         1
+     $mul_32                       240
+     $mul_36                       480
+     $mul_37                       888
+     $mux_1                        326
+     $mux_11                         6
+     $mux_12                        24
+     $mux_13                     15600
+     $mux_14                        27
+     $mux_162                       30
+     $mux_18                       976
+     $mux_23                       240
+     $mux_288                       31
+     $mux_32                       480
+     $mux_37                       828
+     $mux_6                         32
+     $neg_18                       345
+     $not_1                        249
+     $not_32                        80
+     $reduce_and_2                 255
+     $reduce_bool_2                  4
+     $sdff_1                       183
+     $sdff_13                      240
+     $sdff_18                      240
+     $sdff_23                      240
+     $sdff_32                      240
+     $sdff_6                         3
+     $sdffe_1                     7638
+     $sdffe_14                     267
+     $sdffe_18                   17446
+     $sdffe_21                     240
+     $sdffe_27                     828
+     $sdffe_32                     480
+     $sdffe_37                    2544
+     $sub_18                       135
+     $sub_32                       240
+

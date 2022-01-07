@@ -1,0 +1,596 @@
+
+5. Printing statistics.
+
+=== $paramod$9b20c7c7990eeca2a248be4fd72c1393416d670c\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            343
+   Number of public wires:           9
+   Number of public wire bits:     141
+   Number of memories:               1
+   Number of memory bits:          160
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe_32                        2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux_1                          2
+     $mux_32                         2
+     $mux_5                          2
+
+=== or1200_alu ===
+
+   Number of wires:                109
+   Number of wire bits:           1801
+   Number of public wires:          28
+   Number of public wire bits:     385
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 95
+     $add_32                         1
+     $add_33                         2
+     $and_32                         2
+     $eq_2                           4
+     $eq_3                           5
+     $eq_32                          1
+     $eq_4                          13
+     $eq_5                           3
+     $logic_not_2                    2
+     $logic_not_3                    1
+     $logic_not_32                   3
+     $logic_not_4                    1
+     $lt_32                          1
+     $mux_1                          2
+     $mux_32                        34
+     $not_1                          3
+     $or_1                           1
+     $or_32                          2
+     $pmux_1                         3
+     $pmux_32                        4
+     $reduce_or_2                    1
+     $reduce_or_4                    1
+     $sub_32                         1
+     $xor_29                         2
+     $xor_32                         2
+
+=== or1200_cfgr ===
+
+   Number of wires:                 19
+   Number of wire bits:            112
+   Number of public wires:           2
+   Number of public wire bits:      64
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 27
+     $dlatch_20                      1
+     $eq_4                           6
+     $logic_not_4                    1
+     $mux_1                          9
+     $mux_8                          1
+     $reduce_or_2                    4
+     $reduce_or_28                   1
+     $reduce_or_3                    2
+     $reduce_or_4                    1
+     $reduce_or_5                    1
+
+=== or1200_ctrl ===
+
+   Number of wires:                147
+   Number of wire bits:            455
+   Number of public wires:          48
+   Number of public wire bits:     323
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                129
+     $and_1                          6
+     $eq_3                           4
+     $eq_4                           3
+     $eq_5                           4
+     $eq_6                          45
+     $eq_9                           2
+     $logic_and_1                    4
+     $logic_not_1                    2
+     $logic_not_6                    2
+     $mux_1                          2
+     $mux_16                         1
+     $mux_2                          5
+     $mux_21                         1
+     $mux_32                         1
+     $mux_5                          1
+     $or_1                           4
+     $pmux_2                         2
+     $pmux_3                         2
+     $pmux_4                         2
+     $reduce_or_10                   1
+     $reduce_or_14                   1
+     $reduce_or_2                    9
+     $reduce_or_3                    3
+     $reduce_or_5                    1
+     $reduce_or_6                    1
+     $reduce_or_8                    1
+     $sdff_2                         1
+     $sdffe_1                        5
+     $sdffe_16                       1
+     $sdffe_2                        1
+     $sdffe_3                        3
+     $sdffe_32                       3
+     $sdffe_4                        3
+     $sdffe_5                        2
+
+=== or1200_except ===
+
+   Number of wires:                176
+   Number of wire bits:           1194
+   Number of public wires:          62
+   Number of public wire bits:     494
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                162
+     $and_1                         45
+     $eq_3                           4
+     $logic_and_1                    3
+     $logic_not_1                    4
+     $logic_not_3                    1
+     $mux_1                          2
+     $mux_16                         4
+     $mux_3                          5
+     $mux_32                        17
+     $mux_4                          5
+     $ne_2                           5
+     $ne_3                           2
+     $ne_4                           1
+     $not_1                         20
+     $or_1                           8
+     $pmux_1                         1
+     $pmux_3                         1
+     $pmux_4                         1
+     $reduce_and_2                   1
+     $reduce_and_3                   3
+     $reduce_and_4                   1
+     $reduce_and_6                   1
+     $reduce_bool_2                  1
+     $reduce_bool_3                  4
+     $reduce_bool_4                  1
+     $reduce_bool_6                  1
+     $reduce_or_13                   1
+     $reduce_or_2                    2
+     $reduce_or_3                    2
+     $reduce_or_4                    1
+     $sdff_1                         1
+     $sdff_2                         1
+     $sdffe_1                        2
+     $sdffe_16                       1
+     $sdffe_3                        3
+     $sdffe_32                       5
+     $sdffe_4                        1
+
+=== or1200_flat ===
+
+   Number of wires:                143
+   Number of wire bits:           1691
+   Number of public wires:         143
+   Number of public wire bits:    1691
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 13
+     or1200_alu                      1
+     or1200_cfgr                     1
+     or1200_ctrl                     1
+     or1200_except                   1
+     or1200_freeze                   1
+     or1200_genpc                    1
+     or1200_if                       1
+     or1200_lsu                      1
+     or1200_mult_mac                 1
+     or1200_operandmuxes             1
+     or1200_rf                       1
+     or1200_sprs                     1
+     or1200_wbmux                    1
+
+=== or1200_freeze ===
+
+   Number of wires:                 41
+   Number of wire bits:             46
+   Number of public wires:          22
+   Number of public wire bits:      24
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 26
+     $and_1                          2
+     $logic_not_1                    1
+     $mux_1                          2
+     $mux_2                          2
+     $ne_2                           1
+     $not_1                          1
+     $or_1                          11
+     $reduce_bool_2                  1
+     $reduce_or_2                    2
+     $sdffe_1                        1
+     $sdffe_2                        1
+     $sub_2                          1
+
+=== or1200_genpc ===
+
+   Number of wires:                 69
+   Number of wire bits:            649
+   Number of public wires:          26
+   Number of public wire bits:     310
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 47
+     $add_30                         2
+     $and_1                          5
+     $dffe_30                        1
+     $eq_5                          14
+     $logic_not_1                    6
+     $logic_not_5                    1
+     $mux_1                          2
+     $mux_20                         1
+     $mux_30                         3
+     $mux_32                         3
+     $or_1                           3
+     $pmux_1                         1
+     $pmux_32                        1
+     $reduce_bool_3                  1
+     $reduce_or_12                   1
+     $reduce_or_8                    1
+     $sub_36                         1
+
+=== or1200_if ===
+
+   Number of wires:                 46
+   Number of wire bits:            421
+   Number of public wires:          21
+   Number of public wire bits:     210
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 35
+     $and_1                         11
+     $eq_4                           3
+     $logic_not_1                    4
+     $mux_1                          2
+     $mux_32                         8
+     $ne_2                           1
+     $or_1                           2
+     $reduce_or_2                    1
+     $sdffe_1                        1
+     $sdffe_32                       2
+
+=== or1200_lsu ===
+
+   Number of wires:                 70
+   Number of wire bits:            299
+   Number of public wires:          23
+   Number of public wire bits:     252
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 58
+     $add_32                         1
+     $and_1                          6
+     $eq_4                           9
+     $eq_6                          21
+     $mux_1                          1
+     $mux_4                          1
+     $or_1                           7
+     $pmux_4                         1
+     $reduce_or_2                    1
+     $reduce_or_3                    7
+     $reduce_or_4                    1
+     or1200_mem2reg                  1
+     or1200_reg2mem                  1
+
+=== or1200_mem2reg ===
+
+   Number of wires:                 57
+   Number of wire bits:            178
+   Number of public wires:          13
+   Number of public wire bits:     127
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 52
+     $and_1                          5
+     $dlatch_8                       1
+     $eq_4                          16
+     $eq_5                           8
+     $logic_not_4                    4
+     $not_1                          6
+     $pmux_4                         4
+     $pmux_8                         4
+     $reduce_or_2                    4
+
+=== or1200_mult_mac ===
+
+   Number of wires:                 94
+   Number of wire bits:           1494
+   Number of public wires:          31
+   Number of public wire bits:     511
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 82
+     $add_32                         3
+     $add_64                         1
+     $and_1                          7
+     $eq_2                           2
+     $eq_4                           3
+     $logic_and_1                    1
+     $logic_not_1                    2
+     $mul_64                         1
+     $mux_1                          2
+     $mux_32                        14
+     $mux_6                          2
+     $mux_64                         4
+     $ne_2                           1
+     $not_1                          2
+     $not_32                         3
+     $or_1                           7
+     $pmux_32                        1
+     $reduce_and_2                   3
+     $reduce_bool_2                  2
+     $reduce_bool_3                  1
+     $reduce_bool_4                  1
+     $reduce_bool_5                  1
+     $reduce_or_2                    4
+     $reduce_or_6                    1
+     $sdff_1                         1
+     $sdff_2                         3
+     $sdffe_1                        1
+     $sdffe_32                       2
+     $sdffe_6                        1
+     $sdffe_64                       1
+     $sub_32                         1
+     $sub_6                          1
+     $sub_64                         1
+     $xor_1                          1
+
+=== or1200_operandmuxes ===
+
+   Number of wires:                 49
+   Number of wire bits:            454
+   Number of public wires:          17
+   Number of public wire bits:     298
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 38
+     $eq_2                           5
+     $logic_and_1                    6
+     $logic_not_1                    4
+     $mux_1                          5
+     $mux_32                         4
+     $ne_2                           2
+     $pmux_32                        2
+     $reduce_and_2                   2
+     $reduce_bool_2                  2
+     $reduce_bool_3                  2
+     $sdffe_1                        2
+     $sdffe_32                       2
+
+=== or1200_reg2mem ===
+
+   Number of wires:                 12
+   Number of wire bits:            106
+   Number of public wires:           8
+   Number of public wire bits:     102
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq_6                           4
+     $mux_8                          2
+     $pmux_8                         1
+
+=== or1200_rf ===
+
+   Number of wires:                 55
+   Number of wire bits:            607
+   Number of public wires:          35
+   Number of public wire bits:     491
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $and_1                          8
+     $eq_6                           1
+     $logic_not_1                    3
+     $mux_32                         3
+     $mux_33                         3
+     $mux_5                          2
+     $ne_2                           2
+     $not_1                          2
+     $or_1                           2
+     $paramod$9b20c7c7990eeca2a248be4fd72c1393416d670c\dual_port_ram      2
+     $reduce_or_5                    1
+     $sdffe_1                        1
+     $sdffe_33                       2
+
+=== or1200_sprs ===
+
+   Number of wires:                142
+   Number of wire bits:           1496
+   Number of public wires:          59
+   Number of public wire bits:     871
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                114
+     $and_1                          8
+     $and_32                         9
+     $eq_11                          6
+     $eq_3                           1
+     $eq_4                           2
+     $eq_5                          31
+     $eq_6                           1
+     $logic_and_1                   13
+     $logic_not_5                    1
+     $logic_not_7                    1
+     $mux_1                          8
+     $mux_32                         5
+     $mux_4                          2
+     $mux_5                          2
+     $mux_9                          2
+     $not_1                          1
+     $or_1                           7
+     $or_32                          8
+     $pmux_32                        2
+     $reduce_and_2                   1
+     $reduce_or_2                    1
+     $sdffe_11                       1
+     $sdffe_5                        1
+
+=== or1200_wbmux ===
+
+   Number of wires:                 16
+   Number of wire bits:            235
+   Number of public wires:          11
+   Number of public wire bits:     199
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_32                         1
+     $eq_2                           3
+     $logic_not_2                    1
+     $pmux_32                        1
+     $sdffe_1                        1
+     $sdffe_32                       1
+
+=== design hierarchy ===
+
+   or1200_flat                       1
+     or1200_alu                      1
+     or1200_cfgr                     1
+     or1200_ctrl                     1
+     or1200_except                   1
+     or1200_freeze                   1
+     or1200_genpc                    1
+     or1200_if                       1
+     or1200_lsu                      1
+       or1200_mem2reg                1
+       or1200_reg2mem                1
+     or1200_mult_mac                 1
+     or1200_operandmuxes             1
+     or1200_rf                       1
+       $paramod$9b20c7c7990eeca2a248be4fd72c1393416d670c\dual_port_ram      2
+     or1200_sprs                     1
+     or1200_wbmux                    1
+
+   Number of wires:               1279
+   Number of wire bits:          11924
+   Number of public wires:         567
+   Number of public wire bits:    6634
+   Number of memories:               2
+   Number of memory bits:          320
+   Number of processes:              0
+   Number of cells:                932
+     $add_30                         2
+     $add_32                         6
+     $add_33                         2
+     $add_64                         1
+     $and_1                        103
+     $and_32                        11
+     $dffe_30                        1
+     $dffe_32                        4
+     $dlatch_20                      1
+     $dlatch_8                       1
+     $eq_11                          6
+     $eq_2                          14
+     $eq_3                          14
+     $eq_32                          1
+     $eq_4                          55
+     $eq_5                          60
+     $eq_6                          72
+     $eq_9                           2
+     $logic_and_1                   27
+     $logic_not_1                   26
+     $logic_not_2                    3
+     $logic_not_3                    2
+     $logic_not_32                   3
+     $logic_not_4                    6
+     $logic_not_5                    2
+     $logic_not_6                    2
+     $logic_not_7                    1
+     $lt_32                          1
+     $memrd                          4
+     $memwr_v2                       4
+     $mul_64                         1
+     $mux_1                         41
+     $mux_16                         5
+     $mux_2                          7
+     $mux_20                         1
+     $mux_21                         1
+     $mux_3                          5
+     $mux_30                         3
+     $mux_32                        93
+     $mux_33                         3
+     $mux_4                          8
+     $mux_5                          9
+     $mux_6                          2
+     $mux_64                         4
+     $mux_8                          3
+     $mux_9                          2
+     $ne_2                          12
+     $ne_3                           2
+     $ne_4                           1
+     $not_1                         35
+     $not_32                         3
+     $or_1                          52
+     $or_32                         10
+     $pmux_1                         5
+     $pmux_2                         2
+     $pmux_3                         3
+     $pmux_32                       11
+     $pmux_4                         8
+     $pmux_8                         5
+     $reduce_and_2                   7
+     $reduce_and_3                   3
+     $reduce_and_4                   1
+     $reduce_and_6                   1
+     $reduce_bool_2                  6
+     $reduce_bool_3                  8
+     $reduce_bool_4                  2
+     $reduce_bool_5                  1
+     $reduce_bool_6                  1
+     $reduce_or_10                   1
+     $reduce_or_12                   1
+     $reduce_or_13                   1
+     $reduce_or_14                   1
+     $reduce_or_2                   29
+     $reduce_or_28                   1
+     $reduce_or_3                   14
+     $reduce_or_4                    4
+     $reduce_or_5                    3
+     $reduce_or_6                    2
+     $reduce_or_8                    2
+     $sdff_1                         2
+     $sdff_2                         5
+     $sdffe_1                       14
+     $sdffe_11                       1
+     $sdffe_16                       2
+     $sdffe_2                        2
+     $sdffe_3                        6
+     $sdffe_32                      15
+     $sdffe_33                       2
+     $sdffe_4                        4
+     $sdffe_5                        3
+     $sdffe_6                        1
+     $sdffe_64                       1
+     $sub_2                          1
+     $sub_32                         2
+     $sub_36                         1
+     $sub_6                          1
+     $sub_64                         1
+     $xor_1                          1
+     $xor_29                         2
+     $xor_32                         2
+

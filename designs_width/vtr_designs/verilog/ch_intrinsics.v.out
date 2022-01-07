@@ -1,0 +1,117 @@
+
+5. Printing statistics.
+
+=== $paramod$bd8b0969ac295d564193c3d912540151d67604d4\single_port_ram ===
+
+   Number of wires:                  9
+   Number of wire bits:             52
+   Number of public wires:           5
+   Number of public wire bits:      23
+   Number of memories:               1
+   Number of memory bits:           40
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe_8                         1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux_1                          1
+     $mux_5                          1
+     $mux_8                          1
+
+=== memory_controller ===
+
+   Number of wires:                 13
+   Number of wire bits:            124
+   Number of public wires:          11
+   Number of public wire bits:     122
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $and_1                          1
+     $dff_1                          1
+     $dlatch_1                       1
+     $dlatch_5                       1
+     $dlatch_8                       2
+     $paramod$bd8b0969ac295d564193c3d912540151d67604d4\single_port_ram      1
+     $reduce_or_32                   2
+
+=== memset ===
+
+   Number of wires:                 60
+   Number of wire bits:            571
+   Number of public wires:          22
+   Number of public wire bits:     428
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 51
+     $and_32                         1
+     $dffe_1                         3
+     $dffe_32                        6
+     $dlatch_32                      2
+     $eq_32                          1
+     $eq_4                          14
+     $logic_not_4                    1
+     $mux_32                         1
+     $mux_4                          3
+     $ne_2                           1
+     $not_1                          1
+     $pmux_1                         1
+     $pmux_32                        1
+     $pmux_4                         1
+     $reduce_and_2                   7
+     $reduce_and_3                   1
+     $reduce_bool_15                 1
+     $reduce_bool_2                  2
+     $reduce_or_28                   1
+     $sdffe_4                        1
+     memory_controller               1
+
+=== design hierarchy ===
+
+   memset                            1
+     memory_controller               1
+       $paramod$bd8b0969ac295d564193c3d912540151d67604d4\single_port_ram      1
+
+   Number of wires:                 82
+   Number of wire bits:            747
+   Number of public wires:          38
+   Number of public wire bits:     573
+   Number of memories:               1
+   Number of memory bits:           40
+   Number of processes:              0
+   Number of cells:                 64
+     $and_1                          1
+     $and_32                         1
+     $dff_1                          1
+     $dffe_1                         3
+     $dffe_32                        6
+     $dffe_8                         1
+     $dlatch_1                       1
+     $dlatch_32                      2
+     $dlatch_5                       1
+     $dlatch_8                       2
+     $eq_32                          1
+     $eq_4                          14
+     $logic_not_4                    1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux_1                          1
+     $mux_32                         1
+     $mux_4                          3
+     $mux_5                          1
+     $mux_8                          1
+     $ne_2                           1
+     $not_1                          1
+     $pmux_1                         1
+     $pmux_32                        1
+     $pmux_4                         1
+     $reduce_and_2                   7
+     $reduce_and_3                   1
+     $reduce_bool_15                 1
+     $reduce_bool_2                  2
+     $reduce_or_28                   1
+     $reduce_or_32                   2
+     $sdffe_4                        1
+

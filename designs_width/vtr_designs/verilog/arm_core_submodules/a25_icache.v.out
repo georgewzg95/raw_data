@@ -1,0 +1,152 @@
+
+5. Printing statistics.
+
+=== a25_icache ===
+
+   Number of wires:                134
+   Number of wire bits:           2151
+   Number of public wires:          52
+   Number of public wire bits:    1438
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                136
+     $add_2                          1
+     $add_9                          1
+     $dff_1                          1
+     $dff_32                         1
+     $dffe_128                       1
+     $dffe_28                        1
+     $dffe_32                        2
+     $dffe_4                         3
+     $eq_20                          4
+     $eq_28                          1
+     $eq_3                           5
+     $eq_32                          1
+     $eq_4                           4
+     $logic_and_1                   28
+     $logic_not_1                    4
+     $logic_not_3                    1
+     $logic_not_4                    1
+     $logic_or_1                     7
+     $lt_32                          1
+     $mux_1                          6
+     $mux_128                        6
+     $mux_21                         1
+     $mux_32                         3
+     $mux_4                         13
+     $mux_8                          3
+     $ne_2                           4
+     $ne_32                          1
+     $not_1                          1
+     $pmux_4                         2
+     $reduce_and_2                   5
+     $reduce_and_3                   1
+     $reduce_and_4                   1
+     $reduce_bool_2                  2
+     $reduce_bool_5                  1
+     $reduce_or_2                    1
+     $reduce_or_4                    1
+     $sdffce_1                       2
+     $sdffce_2                       1
+     $sdffe_1                        1
+     $sdffe_4                        2
+     $sdffe_9                        1
+     $xor_1                          1
+     single_port_ram_128_8           4
+     single_port_ram_21_8            4
+
+=== single_port_ram_128_8 ===
+
+   Number of wires:                  9
+   Number of wire bits:            658
+   Number of public wires:           5
+   Number of public wire bits:     266
+   Number of memories:               1
+   Number of memory bits:        32768
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe_128                       1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux_1                          1
+     $mux_128                        1
+     $mux_8                          1
+
+=== single_port_ram_21_8 ===
+
+   Number of wires:                  9
+   Number of wire bits:            123
+   Number of public wires:           5
+   Number of public wire bits:      52
+   Number of memories:               1
+   Number of memory bits:         5376
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe_21                        1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux_1                          1
+     $mux_21                         1
+     $mux_8                          1
+
+=== design hierarchy ===
+
+   a25_icache                        1
+     single_port_ram_128_8           4
+     single_port_ram_21_8            4
+
+   Number of wires:                206
+   Number of wire bits:           5275
+   Number of public wires:          92
+   Number of public wire bits:    2710
+   Number of memories:               8
+   Number of memory bits:       152576
+   Number of processes:              0
+   Number of cells:                176
+     $add_2                          1
+     $add_9                          1
+     $dff_1                          1
+     $dff_32                         1
+     $dffe_128                       5
+     $dffe_21                        4
+     $dffe_28                        1
+     $dffe_32                        2
+     $dffe_4                         3
+     $eq_20                          4
+     $eq_28                          1
+     $eq_3                           5
+     $eq_32                          1
+     $eq_4                           4
+     $logic_and_1                   28
+     $logic_not_1                    4
+     $logic_not_3                    1
+     $logic_not_4                    1
+     $logic_or_1                     7
+     $lt_32                          1
+     $memrd                          8
+     $memwr_v2                       8
+     $mux_1                         14
+     $mux_128                       10
+     $mux_21                         5
+     $mux_32                         3
+     $mux_4                         13
+     $mux_8                         11
+     $ne_2                           4
+     $ne_32                          1
+     $not_1                          1
+     $pmux_4                         2
+     $reduce_and_2                   5
+     $reduce_and_3                   1
+     $reduce_and_4                   1
+     $reduce_bool_2                  2
+     $reduce_bool_5                  1
+     $reduce_or_2                    1
+     $reduce_or_4                    1
+     $sdffce_1                       2
+     $sdffce_2                       1
+     $sdffe_1                        1
+     $sdffe_4                        2
+     $sdffe_9                        1
+     $xor_1                          1
+

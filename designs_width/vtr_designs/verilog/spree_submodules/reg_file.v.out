@@ -1,0 +1,56 @@
+
+5. Printing statistics.
+
+=== $paramod$9b20c7c7990eeca2a248be4fd72c1393416d670c\single_port_ram ===
+
+   Number of wires:                  9
+   Number of wire bits:            172
+   Number of public wires:           5
+   Number of public wire bits:      71
+   Number of memories:               1
+   Number of memory bits:          160
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe_32                        1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux_1                          1
+     $mux_32                         1
+     $mux_5                          1
+
+=== reg_file ===
+
+   Number of wires:                 15
+   Number of wire bits:            263
+   Number of public wires:          14
+   Number of public wire bits:     262
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $and_1                          1
+     $paramod$9b20c7c7990eeca2a248be4fd72c1393416d670c\single_port_ram      2
+     $reduce_or_32                   1
+
+=== design hierarchy ===
+
+   reg_file                          1
+     $paramod$9b20c7c7990eeca2a248be4fd72c1393416d670c\single_port_ram      2
+
+   Number of wires:                 33
+   Number of wire bits:            607
+   Number of public wires:          24
+   Number of public wire bits:     404
+   Number of memories:               2
+   Number of memory bits:          320
+   Number of processes:              0
+   Number of cells:                 14
+     $and_1                          1
+     $dffe_32                        2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux_1                          2
+     $mux_32                         2
+     $mux_5                          2
+     $reduce_or_32                   1
+

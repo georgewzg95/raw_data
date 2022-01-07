@@ -1,0 +1,290 @@
+
+5. Printing statistics.
+
+=== a25_alu ===
+
+   Number of wires:                 56
+   Number of wire bits:            786
+   Number of public wires:          27
+   Number of public wire bits:     477
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 41
+     $add_33                         2
+     $and_32                         1
+     $eq_2                           1
+     $eq_4                           7
+     $logic_and_1                    5
+     $logic_not_1                    3
+     $logic_not_2                    1
+     $logic_not_4                    1
+     $logic_or_1                     1
+     $mux_1                          3
+     $mux_32                        11
+     $not_1                          1
+     $not_32                         1
+     $or_32                          1
+     $reduce_or_32                   1
+     $xor_32                         1
+
+=== a25_barrel_shift ===
+
+   Number of wires:                 18
+   Number of wire bits:            181
+   Number of public wires:          16
+   Number of public wire bits:     179
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 10
+     $and_1                          1
+     $dff_1                          2
+     $dff_32                         1
+     $logic_not_1                    1
+     $mux_1                          1
+     $mux_32                         1
+     $reduce_or_6                    1
+     a25_shifter_full                1
+     a25_shifter_quick               1
+
+=== a25_execute ===
+
+   Number of wires:                316
+   Number of wire bits:           2563
+   Number of public wires:         140
+   Number of public wire bits:    1520
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                250
+     $add_32                         4
+     $and_1                          3
+     $and_15                         2
+     $and_4                          2
+     $dff_32                         1
+     $dff_4                          1
+     $dffe_1                         8
+     $dffe_2                         3
+     $dffe_32                        5
+     $dffe_7                         1
+     $eq_1                           1
+     $eq_2                          12
+     $eq_3                          16
+     $eq_4                          25
+     $logic_and_1                   37
+     $logic_not_1                    8
+     $logic_not_2                    5
+     $logic_not_3                    4
+     $logic_not_4                    2
+     $logic_or_1                    22
+     $logic_or_4                     1
+     $mux_1                          6
+     $mux_15                         1
+     $mux_2                          5
+     $mux_32                        40
+     $mux_4                         17
+     $mux_8                          2
+     $ne_1                           1
+     $not_1                          1
+     $not_4                          1
+     $reduce_and_2                   1
+     $reduce_bool_2                  1
+     $reduce_bool_4                  2
+     $reduce_or_6                    1
+     $sdffce_2                       1
+     $sdffce_4                       2
+     $sub_32                         1
+     a25_alu                         1
+     a25_barrel_shift                1
+     a25_multiply                    1
+     a25_register_bank               1
+
+=== a25_multiply ===
+
+   Number of wires:                 46
+   Number of wire bits:            665
+   Number of public wires:          21
+   Number of public wire bits:     425
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 37
+     $add_33                         1
+     $add_34                         2
+     $add_6                          1
+     $dffe_1                         1
+     $dffe_32                        1
+     $dffe_6                         1
+     $eq_2                           2
+     $eq_6                           3
+     $le_6                           1
+     $logic_and_1                    3
+     $logic_not_1                    1
+     $logic_not_32                   1
+     $logic_not_6                    1
+     $logic_or_1                     1
+     $mux_34                         2
+     $mux_6                          3
+     $mux_68                         3
+     $ne_3                           1
+     $not_1                          1
+     $not_34                         1
+     $reduce_and_2                   1
+     $reduce_and_3                   1
+     $reduce_and_4                   1
+     $reduce_bool_3                  1
+     $sdffce_32                      1
+     $sdffce_4                       1
+
+=== a25_register_bank ===
+
+   Number of wires:                314
+   Number of wire bits:           5009
+   Number of public wires:          91
+   Number of public wire bits:    2012
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                280
+     $and_1                          3
+     $and_15                         2
+     $dffe_24                        1
+     $dffe_32                       26
+     $eq_2                           8
+     $eq_4                          57
+     $logic_and_1                   36
+     $logic_not_1                    1
+     $logic_not_2                    3
+     $logic_not_4                    4
+     $mux_24                         2
+     $mux_32                       104
+     $ne_2                           1
+     $not_1                          2
+     $pmux_15                        1
+     $pmux_32                        2
+     $reduce_bool_2                 27
+
+=== a25_shifter_full ===
+
+   Number of wires:                210
+   Number of wire bits:           4632
+   Number of public wires:          11
+   Number of public wire bits:     209
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                204
+     $eq_2                           2
+     $eq_5                          30
+     $eq_8                          32
+     $logic_not_2                    1
+     $logic_not_5                    1
+     $logic_not_8                    1
+     $mux_33                       137
+
+=== a25_shifter_quick ===
+
+   Number of wires:                 34
+   Number of wire bits:            680
+   Number of public wires:          11
+   Number of public wire bits:     209
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 28
+     $eq_2                           4
+     $eq_8                           2
+     $logic_not_2                    2
+     $logic_not_8                    1
+     $mux_33                        19
+
+=== design hierarchy ===
+
+   a25_execute                       1
+     a25_alu                         1
+     a25_barrel_shift                1
+       a25_shifter_full              1
+       a25_shifter_quick             1
+     a25_multiply                    1
+     a25_register_bank               1
+
+   Number of wires:                994
+   Number of wire bits:          14516
+   Number of public wires:         317
+   Number of public wire bits:    5031
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                844
+     $add_32                         4
+     $add_33                         3
+     $add_34                         2
+     $add_6                          1
+     $and_1                          7
+     $and_15                         4
+     $and_32                         1
+     $and_4                          2
+     $dff_1                          2
+     $dff_32                         2
+     $dff_4                          1
+     $dffe_1                         9
+     $dffe_2                         3
+     $dffe_24                        1
+     $dffe_32                       32
+     $dffe_6                         1
+     $dffe_7                         1
+     $eq_1                           1
+     $eq_2                          29
+     $eq_3                          16
+     $eq_4                          89
+     $eq_5                          30
+     $eq_6                           3
+     $eq_8                          34
+     $le_6                           1
+     $logic_and_1                   81
+     $logic_not_1                   14
+     $logic_not_2                   12
+     $logic_not_3                    4
+     $logic_not_32                   1
+     $logic_not_4                    7
+     $logic_not_5                    1
+     $logic_not_6                    1
+     $logic_not_8                    2
+     $logic_or_1                    24
+     $logic_or_4                     1
+     $mux_1                         10
+     $mux_15                         1
+     $mux_2                          5
+     $mux_24                         2
+     $mux_32                       156
+     $mux_33                       156
+     $mux_34                         2
+     $mux_4                         17
+     $mux_6                          3
+     $mux_68                         3
+     $mux_8                          2
+     $ne_1                           1
+     $ne_2                           1
+     $ne_3                           1
+     $not_1                          5
+     $not_32                         1
+     $not_34                         1
+     $not_4                          1
+     $or_32                          1
+     $pmux_15                        1
+     $pmux_32                        2
+     $reduce_and_2                   2
+     $reduce_and_3                   1
+     $reduce_and_4                   1
+     $reduce_bool_2                 28
+     $reduce_bool_3                  1
+     $reduce_bool_4                  2
+     $reduce_or_32                   1
+     $reduce_or_6                    2
+     $sdffce_2                       1
+     $sdffce_32                      1
+     $sdffce_4                       3
+     $sub_32                         1
+     $xor_32                         1
+

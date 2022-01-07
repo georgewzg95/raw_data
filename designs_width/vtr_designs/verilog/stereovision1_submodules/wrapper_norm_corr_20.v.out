@@ -1,0 +1,183 @@
+
+5. Printing statistics.
+
+=== corr ===
+
+   Number of wires:                 13
+   Number of wire bits:            146
+   Number of public wires:          10
+   Number of public wire bits:      98
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add_16                         1
+     $dff_16                         3
+     $dffe_16                        1
+     $mul_16                         2
+
+=== my_divider ===
+
+   Number of wires:                 53
+   Number of wire bits:            373
+   Number of public wires:          26
+   Number of public wire bits:     122
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 42
+     $add_32                         3
+     $eq_2                           2
+     $logic_not_2                    1
+     $logic_not_4                    1
+     $mux_1                          9
+     $mux_16                         2
+     $mux_2                          3
+     $mux_32                         1
+     $mux_8                          2
+     $not_1                          1
+     $not_32                         1
+     $or_16                          1
+     $or_8                           1
+     $pmux_1                         2
+     $pmux_2                         1
+     $reduce_bool_2                  2
+     $reduce_or_2                    3
+     $sdff_1                         1
+     $sdff_2                         1
+     $sdffe_16                       1
+     $sdffe_17                       1
+     $sdffe_4                        1
+     $sdffe_8                        1
+
+=== my_wrapper_divider ===
+
+   Number of wires:                 19
+   Number of wire bits:             67
+   Number of public wires:          12
+   Number of public wire bits:      59
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 12
+     $eq_2                           3
+     $logic_not_2                    1
+     $mux_2                          1
+     $pmux_1                         2
+     $pmux_2                         1
+     $reduce_or_3                    2
+     $sdff_2                         1
+     my_divider                      1
+
+=== sh_reg ===
+
+   Number of wires:                  6
+   Number of wire bits:             34
+   Number of public wires:           6
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $dffe_8                         2
+
+=== wrapper_corr_20 ===
+
+   Number of wires:                 92
+   Number of wire bits:           1058
+   Number of public wires:          92
+   Number of public wire bits:    1058
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 64
+     $dffe_16                       21
+     corr                           21
+     sh_reg                         22
+
+=== wrapper_norm ===
+
+   Number of wires:                 21
+   Number of wire bits:            292
+   Number of public wires:          15
+   Number of public wire bits:     195
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 18
+     $add_16                         1
+     $add_17                         1
+     $dff_15                         1
+     $dff_16                         5
+     $dff_17                         1
+     $dffe_16                        2
+     $mux_16                         2
+     $sdff_1                         1
+     $sub_16                         2
+     my_wrapper_divider              2
+
+=== wrapper_norm_corr_20 ===
+
+   Number of wires:                 31
+   Number of wire bits:            434
+   Number of public wires:          31
+   Number of public wire bits:     434
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     wrapper_corr_20                 1
+     wrapper_norm                    2
+
+=== design hierarchy ===
+
+   wrapper_norm_corr_20              1
+     wrapper_corr_20                 1
+       corr                         21
+       sh_reg                       22
+     wrapper_norm                    2
+       my_wrapper_divider            2
+         my_divider                  1
+
+   Number of wires:                858
+   Number of wire bits:           7650
+   Number of public wires:         647
+   Number of public wire bits:    5412
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                456
+     $add_16                        23
+     $add_17                         2
+     $add_32                        12
+     $dff_15                         2
+     $dff_16                        73
+     $dff_17                         2
+     $dffe_16                       46
+     $dffe_8                        44
+     $eq_2                          20
+     $logic_not_2                    8
+     $logic_not_4                    4
+     $mul_16                        42
+     $mux_1                         36
+     $mux_16                        12
+     $mux_2                         16
+     $mux_32                         4
+     $mux_8                          8
+     $not_1                          4
+     $not_32                         4
+     $or_16                          4
+     $or_8                           4
+     $pmux_1                        16
+     $pmux_2                         8
+     $reduce_bool_2                  8
+     $reduce_or_2                   12
+     $reduce_or_3                    8
+     $sdff_1                         6
+     $sdff_2                         8
+     $sdffe_16                       4
+     $sdffe_17                       4
+     $sdffe_4                        4
+     $sdffe_8                        4
+     $sub_16                         4
+

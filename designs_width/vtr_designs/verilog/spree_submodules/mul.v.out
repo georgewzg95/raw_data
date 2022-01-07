@@ -1,0 +1,73 @@
+
+5. Printing statistics.
+
+=== dummy_mult ===
+
+   Number of wires:                  6
+   Number of wire bits:            130
+   Number of public wires:           5
+   Number of public wire bits:      98
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $mul_32                         1
+     $sdff_32                        1
+
+=== mul ===
+
+   Number of wires:                 25
+   Number of wire bits:            253
+   Number of public wires:          20
+   Number of public wire bits:     248
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $and_1                          4
+     $mux_32                         1
+     $not_1                          1
+     $or_1                           1
+     $reduce_or_5                    2
+     dummy_mult                      1
+     onecyclestall                   1
+
+=== onecyclestall ===
+
+   Number of wires:                  7
+   Number of wire bits:              7
+   Number of public wires:           6
+   Number of public wire bits:       6
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $and_1                          1
+     $not_1                          1
+     $pmux_1                         1
+     $sdff_1                         1
+
+=== design hierarchy ===
+
+   mul                               1
+     dummy_mult                      1
+     onecyclestall                   1
+
+   Number of wires:                 38
+   Number of wire bits:            390
+   Number of public wires:          31
+   Number of public wire bits:     352
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and_1                          5
+     $mul_32                         1
+     $mux_32                         1
+     $not_1                          2
+     $or_1                           1
+     $pmux_1                         1
+     $reduce_or_5                    2
+     $sdff_1                         1
+     $sdff_32                        1
+

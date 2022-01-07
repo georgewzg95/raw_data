@@ -1,0 +1,121 @@
+
+5. Printing statistics.
+
+=== $paramod$77ff764a4267a648a0627d0b67f82ec67f8fdc0c\dpram ===
+
+   Number of wires:                 17
+   Number of wire bits:             95
+   Number of public wires:           9
+   Number of public wire bits:      41
+   Number of memories:               1
+   Number of memory bits:           64
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe_8                         2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux_1                          2
+     $mux_3                          2
+     $mux_8                          2
+
+=== $paramod$8f649395dea8fbb2ab37b257a4c27adb75bba46a\generic_fifo_sc_a ===
+
+   Number of wires:                 30
+   Number of wire bits:             74
+   Number of public wires:          16
+   Number of public wire bits:      52
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $add_3                          2
+     $adffe_1                        1
+     $adffe_3                        2
+     $and_1                          3
+     $eq_3                           2
+     $logic_not_1                    1
+     $mux_1                          3
+     $mux_3                          4
+     $paramod$77ff764a4267a648a0627d0b67f82ec67f8fdc0c\dpram      1
+     $reduce_bool_2                  2
+     $reduce_bool_3                  1
+
+=== $paramod$c5846c4e06878c36e812a0746f90a79309de398c\spram ===
+
+   Number of wires:                  9
+   Number of wire bits:             58
+   Number of public wires:           5
+   Number of public wire bits:      26
+   Number of memories:               1
+   Number of memory bits:         1024
+   Number of processes:              0
+   Number of cells:                  6
+     $dffe_8                         1
+     $memrd                          1
+     $memwr_v2                       1
+     $mux_1                          1
+     $mux_8                          2
+
+=== bvb ===
+
+   Number of wires:                 30
+   Number of wire bits:           1134
+   Number of public wires:          20
+   Number of public wire bits:     745
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 50
+     $add_32                         1
+     $adffe_5                        2
+     $and_1                          2
+     $dffe_1                         1
+     $dffe_32                        1
+     $dffe_8                         1
+     $not_1                          3
+     $paramod$8f649395dea8fbb2ab37b257a4c27adb75bba46a\generic_fifo_sc_a     32
+     $paramod$c5846c4e06878c36e812a0746f90a79309de398c\spram      1
+     $reduce_and_2                   1
+     $shl_32                         2
+     $shr_256                        1
+     $shr_32                         2
+
+=== design hierarchy ===
+
+   bvb                               1
+     $paramod$8f649395dea8fbb2ab37b257a4c27adb75bba46a\generic_fifo_sc_a     32
+       $paramod$77ff764a4267a648a0627d0b67f82ec67f8fdc0c\dpram      1
+     $paramod$c5846c4e06878c36e812a0746f90a79309de398c\spram      1
+
+   Number of wires:               1543
+   Number of wire bits:           6600
+   Number of public wires:         825
+   Number of public wire bits:    3747
+   Number of memories:              33
+   Number of memory bits:         3072
+   Number of processes:              0
+   Number of cells:               1079
+     $add_3                         64
+     $add_32                         1
+     $adffe_1                       32
+     $adffe_3                       64
+     $adffe_5                        2
+     $and_1                         98
+     $dffe_1                         1
+     $dffe_32                        1
+     $dffe_8                        66
+     $eq_3                          64
+     $logic_not_1                   32
+     $memrd                         65
+     $memwr_v2                      65
+     $mux_1                        161
+     $mux_3                        192
+     $mux_8                         66
+     $not_1                          3
+     $reduce_and_2                   1
+     $reduce_bool_2                 64
+     $reduce_bool_3                 32
+     $shl_32                         2
+     $shr_256                        1
+     $shr_32                         2
+

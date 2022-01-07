@@ -1,0 +1,163 @@
+
+5. Printing statistics.
+
+=== $paramod$2a1f131e11d1b2199ecce1cc3c4396a32c4d7a6f\countLeadingZerosfp16 ===
+
+   Number of wires:                 16
+   Number of wire bits:            145
+   Number of public wires:           4
+   Number of public wire bits:      35
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     $add_32                         1
+     $and_32                         1
+     $mux_4                         10
+     $not_10                         1
+     reverseFp16                     1
+
+=== $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\fNToRecFN ===
+
+   Number of wires:                 21
+   Number of wire bits:            253
+   Number of public wires:          13
+   Number of public wire bits:      79
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $add_32                         1
+     $eq_2                           1
+     $logic_and_1                    1
+     $logic_not_1                    1
+     $logic_not_10                   1
+     $logic_not_5                    1
+     $mux_10                         1
+     $mux_3                          2
+     $mux_32                         2
+     $or_32                          1
+     $paramod$2a1f131e11d1b2199ecce1cc3c4396a32c4d7a6f\countLeadingZerosfp16      1
+     $shl_10                         1
+     $xor_32                         1
+
+=== $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\isSigNaNRecFN ===
+
+   Number of wires:                  4
+   Number of wire bits:             20
+   Number of public wires:           3
+   Number of public wire bits:      19
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $eq_3                           1
+     $logic_and_1                    1
+     $logic_not_1                    1
+
+=== $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\recFNToRawFN ===
+
+   Number of wires:                 11
+   Number of wire bits:             58
+   Number of public wires:          10
+   Number of public wire bits:      57
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $eq_2                           1
+     $logic_and_1                    2
+     $logic_not_1                    2
+     $logic_not_32                   1
+
+=== comparator ===
+
+   Number of wires:                 16
+   Number of wire bits:             82
+   Number of public wires:          16
+   Number of public wire bits:      82
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $not_1                          1
+     $or_1                           2
+     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\fNToRecFN      2
+     compareRecFN_Fp16               1
+
+=== compareRecFN_Fp16 ===
+
+   Number of wires:                 57
+   Number of wire bits:            127
+   Number of public wires:          31
+   Number of public wire bits:     101
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 43
+     $eq_1                           1
+     $eq_12                          1
+     $eq_7                           1
+     $logic_and_1                   17
+     $logic_not_1                   10
+     $logic_or_1                     7
+     $lt_12                          1
+     $lt_7                           1
+     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\isSigNaNRecFN      2
+     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\recFNToRawFN      2
+
+=== reverseFp16 ===
+
+   Number of wires:                  2
+   Number of wire bits:             20
+   Number of public wires:           2
+   Number of public wire bits:      20
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  0
+
+=== design hierarchy ===
+
+   comparator                        1
+     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\fNToRecFN      2
+       $paramod$2a1f131e11d1b2199ecce1cc3c4396a32c4d7a6f\countLeadingZerosfp16      1
+         reverseFp16                 1
+     compareRecFN_Fp16               1
+       $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\isSigNaNRecFN      2
+       $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\recFNToRawFN      2
+
+   Number of wires:                181
+   Number of wire bits:           1201
+   Number of public wires:         111
+   Number of public wire bits:     603
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                114
+     $add_32                         4
+     $and_32                         2
+     $eq_1                           1
+     $eq_12                          1
+     $eq_2                           4
+     $eq_3                           2
+     $eq_7                           1
+     $logic_and_1                   25
+     $logic_not_1                   18
+     $logic_not_10                   2
+     $logic_not_32                   2
+     $logic_not_5                    2
+     $logic_or_1                     7
+     $lt_12                          1
+     $lt_7                           1
+     $mux_10                         2
+     $mux_3                          4
+     $mux_32                         4
+     $mux_4                         20
+     $not_1                          1
+     $not_10                         2
+     $or_1                           2
+     $or_32                          2
+     $shl_10                         2
+     $xor_32                         2
+

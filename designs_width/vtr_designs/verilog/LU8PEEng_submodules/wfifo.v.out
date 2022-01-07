@@ -1,0 +1,90 @@
+
+5. Printing statistics.
+
+=== $paramod\dual_port_ram\DATA_WIDTH=10'0100000000\ADDR_WIDTH=4'0100 ===
+
+   Number of wires:                 17
+   Number of wire bits:           2579
+   Number of public wires:           9
+   Number of public wire bits:    1035
+   Number of memories:               1
+   Number of memory bits:         1024
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe_256                       2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux_1                          2
+     $mux_256                        2
+     $mux_4                          2
+
+=== wfifo ===
+
+   Number of wires:                 39
+   Number of wire bits:           1411
+   Number of public wires:          14
+   Number of public wire bits:    1111
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 32
+     $add_2                          1
+     $add_4                          2
+     $add_5                          1
+     $dffe_4                         2
+     $dffe_5                         1
+     $dffe_64                        1
+     $eq_2                           3
+     $logic_and_1                    4
+     $logic_not_1                    2
+     $logic_not_2                    1
+     $logic_not_5                    1
+     $mux_5                          2
+     $mux_64                         4
+     $ne_5                           1
+     $paramod\dual_port_ram\DATA_WIDTH=10'0100000000\ADDR_WIDTH=4'0100      1
+     $reduce_bool_2                  1
+     $reduce_bool_4                  1
+     $reduce_bool_5                  1
+     $sdff_2                         1
+     $sub_5                          1
+
+=== design hierarchy ===
+
+   wfifo                             1
+     $paramod\dual_port_ram\DATA_WIDTH=10'0100000000\ADDR_WIDTH=4'0100      1
+
+   Number of wires:                 56
+   Number of wire bits:           3990
+   Number of public wires:          23
+   Number of public wire bits:    2146
+   Number of memories:               1
+   Number of memory bits:         1024
+   Number of processes:              0
+   Number of cells:                 43
+     $add_2                          1
+     $add_4                          2
+     $add_5                          1
+     $dffe_256                       2
+     $dffe_4                         2
+     $dffe_5                         1
+     $dffe_64                        1
+     $eq_2                           3
+     $logic_and_1                    4
+     $logic_not_1                    2
+     $logic_not_2                    1
+     $logic_not_5                    1
+     $memrd                          2
+     $memwr_v2                       2
+     $mux_1                          2
+     $mux_256                        2
+     $mux_4                          2
+     $mux_5                          2
+     $mux_64                         4
+     $ne_5                           1
+     $reduce_bool_2                  1
+     $reduce_bool_4                  1
+     $reduce_bool_5                  1
+     $sdff_2                         1
+     $sub_5                          1
+

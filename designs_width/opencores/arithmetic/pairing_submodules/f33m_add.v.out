@@ -1,0 +1,59 @@
+
+5. Printing statistics.
+
+=== f33m_add ===
+
+   Number of wires:                 12
+   Number of wire bits:           3492
+   Number of public wires:          12
+   Number of public wire bits:    3492
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     f3m_add                         3
+
+=== f3_add ===
+
+   Number of wires:                 29
+   Number of wire bits:             32
+   Number of public wires:           9
+   Number of public wire bits:      12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 22
+     $and_1                         14
+     $not_1                          4
+     $or_1                           4
+
+=== f3m_add ===
+
+   Number of wires:                  3
+   Number of wire bits:            582
+   Number of public wires:           3
+   Number of public wire bits:     582
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 97
+     f3_add                         97
+
+=== design hierarchy ===
+
+   f33m_add                          1
+     f3m_add                         3
+       f3_add                       97
+
+   Number of wires:               8460
+   Number of wire bits:          14550
+   Number of public wires:        2640
+   Number of public wire bits:    8730
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               6402
+     $and_1                       4074
+     $not_1                       1164
+     $or_1                        1164
+

@@ -1,0 +1,125 @@
+
+5. Printing statistics.
+
+=== $paramod$3b3093dce04cc215b30fddfb79efe68f534335c0\td_fused_top_td_fused_axi_in_p ===
+
+   Number of wires:                 18
+   Number of wire bits:             98
+   Number of public wires:          18
+   Number of public wire bits:      98
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     td_fused_top_td_fused_axi_in_p_ram      1
+
+=== td_fused_top_td_fused_axi_in ===
+
+   Number of wires:                148
+   Number of wire bits:            880
+   Number of public wires:         100
+   Number of public wire bits:     753
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                104
+     $add_10                         1
+     $add_16                         1
+     $add_18                         1
+     $add_2                          1
+     $add_8                          2
+     $and_1                         20
+     $dffe_1                         6
+     $dffe_10                        1
+     $dffe_16                        2
+     $dffe_18                        1
+     $dffe_2                         1
+     $dffe_8                         4
+     $eq_10                          1
+     $eq_18                          1
+     $eq_2                           2
+     $eq_3                           3
+     $mux_1                         16
+     $mux_10                         3
+     $mux_16                         1
+     $mux_18                         2
+     $mux_2                          3
+     $mux_3                          2
+     $mux_8                          8
+     $not_1                          7
+     $or_1                           2
+     $paramod$3b3093dce04cc215b30fddfb79efe68f534335c0\td_fused_top_td_fused_axi_in_p      1
+     $pmux_3                         1
+     $reduce_bool_2                  2
+     $reduce_or_2                    2
+     $sdff_1                         3
+     $sdff_3                         1
+     $sdffe_1                        1
+     $sub_16                         1
+
+=== td_fused_top_td_fused_axi_in_p_ram ===
+
+   Number of wires:                 27
+   Number of wire bits:            229
+   Number of public wires:          17
+   Number of public wire bits:      97
+   Number of memories:               4
+   Number of memory bits:          256
+   Number of processes:              0
+   Number of cells:                 18
+     $dffe_16                        4
+     $memrd                          4
+     $memwr_v2                       4
+     $mux_1                          2
+     $mux_16                         2
+     $mux_2                          2
+
+=== design hierarchy ===
+
+   td_fused_top_td_fused_axi_in      1
+     $paramod$3b3093dce04cc215b30fddfb79efe68f534335c0\td_fused_top_td_fused_axi_in_p      1
+       td_fused_top_td_fused_axi_in_p_ram      1
+
+   Number of wires:                193
+   Number of wire bits:           1207
+   Number of public wires:         135
+   Number of public wire bits:     948
+   Number of memories:               4
+   Number of memory bits:          256
+   Number of processes:              0
+   Number of cells:                121
+     $add_10                         1
+     $add_16                         1
+     $add_18                         1
+     $add_2                          1
+     $add_8                          2
+     $and_1                         20
+     $dffe_1                         6
+     $dffe_10                        1
+     $dffe_16                        6
+     $dffe_18                        1
+     $dffe_2                         1
+     $dffe_8                         4
+     $eq_10                          1
+     $eq_18                          1
+     $eq_2                           2
+     $eq_3                           3
+     $memrd                          4
+     $memwr_v2                       4
+     $mux_1                         18
+     $mux_10                         3
+     $mux_16                         3
+     $mux_18                         2
+     $mux_2                          5
+     $mux_3                          2
+     $mux_8                          8
+     $not_1                          7
+     $or_1                           2
+     $pmux_3                         1
+     $reduce_bool_2                  2
+     $reduce_or_2                    2
+     $sdff_1                         3
+     $sdff_3                         1
+     $sdffe_1                        1
+     $sub_16                         1
+

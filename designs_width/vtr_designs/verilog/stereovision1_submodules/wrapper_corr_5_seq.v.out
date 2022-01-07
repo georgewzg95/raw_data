@@ -1,0 +1,65 @@
+
+5. Printing statistics.
+
+=== corr_seq ===
+
+   Number of wires:                 17
+   Number of wire bits:            178
+   Number of public wires:          14
+   Number of public wire bits:     130
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $add_16                         1
+     $dff_16                         3
+     $dffe_16                        1
+     $dffe_8                         4
+     $mul_16                         2
+
+=== sh_reg ===
+
+   Number of wires:                  6
+   Number of wire bits:             34
+   Number of public wires:           6
+   Number of public wire bits:      34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $dffe_8                         2
+
+=== wrapper_corr_5_seq ===
+
+   Number of wires:                 32
+   Number of wire bits:            338
+   Number of public wires:          32
+   Number of public wire bits:     338
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 19
+     $dffe_16                        6
+     corr_seq                        6
+     sh_reg                          7
+
+=== design hierarchy ===
+
+   wrapper_corr_5_seq                1
+     corr_seq                        6
+     sh_reg                          7
+
+   Number of wires:                176
+   Number of wire bits:           1644
+   Number of public wires:         158
+   Number of public wire bits:    1356
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 86
+     $add_16                         6
+     $dff_16                        18
+     $dffe_16                       12
+     $dffe_8                        38
+     $mul_16                        12
+

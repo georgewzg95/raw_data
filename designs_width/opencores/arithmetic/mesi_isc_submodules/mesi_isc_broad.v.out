@@ -1,0 +1,112 @@
+
+5. Printing statistics.
+
+=== $paramod$089939ac0423498be06deb29cd3b3826a64addfd\mesi_isc_broad_cntl ===
+
+   Number of wires:                 65
+   Number of wire bits:            147
+   Number of public wires:          18
+   Number of public wire bits:      55
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 56
+     $adff_1                         1
+     $adffe_1                        1
+     $adffe_4                        2
+     $and_1                          9
+     $and_4                          2
+     $eq_2                           4
+     $logic_not_1                    2
+     $logic_not_2                    1
+     $mux_1                          7
+     $mux_3                         10
+     $mux_4                          7
+     $ne_2                           1
+     $not_1                          2
+     $not_4                          1
+     $pmux_4                         2
+     $reduce_and_2                   1
+     $reduce_bool_3                  1
+     $reduce_or_4                    2
+
+=== $paramod$99bf206c2597982ef9448cb8fcf80a42902f18e5\mesi_isc_basic_fifo ===
+
+   Number of wires:                 60
+   Number of wire bits:            557
+   Number of public wires:          21
+   Number of public wire bits:     296
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 51
+     $add_32                         2
+     $adff_41                        1
+     $adffe_1                        2
+     $adffe_2                        2
+     $adffe_41                       4
+     $and_1                          8
+     $eq_2                          11
+     $logic_not_1                    2
+     $logic_not_2                    4
+     $mux_1                          4
+     $mux_41                         2
+     $pmux_41                        2
+     $reduce_and_2                   4
+     $reduce_bool_2                  2
+     $sub_2                          1
+
+=== mesi_isc_broad ===
+
+   Number of wires:                 18
+   Number of wire bits:            137
+   Number of public wires:          18
+   Number of public wire bits:     137
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $paramod$089939ac0423498be06deb29cd3b3826a64addfd\mesi_isc_broad_cntl      1
+     $paramod$99bf206c2597982ef9448cb8fcf80a42902f18e5\mesi_isc_basic_fifo      1
+
+=== design hierarchy ===
+
+   mesi_isc_broad                    1
+     $paramod$089939ac0423498be06deb29cd3b3826a64addfd\mesi_isc_broad_cntl      1
+     $paramod$99bf206c2597982ef9448cb8fcf80a42902f18e5\mesi_isc_basic_fifo      1
+
+   Number of wires:                143
+   Number of wire bits:            841
+   Number of public wires:          57
+   Number of public wire bits:     488
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                107
+     $add_32                         2
+     $adff_1                         1
+     $adff_41                        1
+     $adffe_1                        3
+     $adffe_2                        2
+     $adffe_4                        2
+     $adffe_41                       4
+     $and_1                         17
+     $and_4                          2
+     $eq_2                          15
+     $logic_not_1                    4
+     $logic_not_2                    5
+     $mux_1                         11
+     $mux_3                         10
+     $mux_4                          7
+     $mux_41                         2
+     $ne_2                           1
+     $not_1                          2
+     $not_4                          1
+     $pmux_4                         2
+     $pmux_41                        2
+     $reduce_and_2                   5
+     $reduce_bool_2                  2
+     $reduce_bool_3                  1
+     $reduce_or_4                    2
+     $sub_2                          1
+

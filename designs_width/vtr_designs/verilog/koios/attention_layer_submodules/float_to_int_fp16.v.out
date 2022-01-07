@@ -1,0 +1,116 @@
+
+5. Printing statistics.
+
+=== align_t ===
+
+   Number of wires:                  6
+   Number of wire bits:             87
+   Number of public wires:           5
+   Number of public wire bits:      55
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $sub_32                         1
+
+=== am_shift_t ===
+
+   Number of wires:                  8
+   Number of wire bits:             87
+   Number of public wires:           4
+   Number of public wire bits:      56
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $ge_32                          1
+     $le_32                          1
+     $logic_and_1                    1
+     $mux_28                         1
+     $shr_28                         1
+
+=== final_out_t ===
+
+   Number of wires:                 10
+   Number of wire bits:            111
+   Number of public wires:           4
+   Number of public wire bits:      78
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq_5                           1
+     $gt_5                           1
+     $logic_and_1                    2
+     $mux_28                         2
+     $not_1                          1
+
+=== float_to_int_fp16 ===
+
+   Number of wires:                  8
+   Number of wire bits:            117
+   Number of public wires:           8
+   Number of public wire bits:     117
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     align_t                         1
+     am_shift_t                      1
+     final_out_t                     1
+     sub_t                           1
+     two_comp_t                      1
+
+=== sub_t ===
+
+   Number of wires:                  3
+   Number of wire bits:             44
+   Number of public wires:           2
+   Number of public wire bits:      12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $sub_32                         1
+
+=== two_comp_t ===
+
+   Number of wires:                  4
+   Number of wire bits:             85
+   Number of public wires:           3
+   Number of public wire bits:      57
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $mux_28                         1
+     $neg_28                         1
+
+=== design hierarchy ===
+
+   float_to_int_fp16                 1
+     align_t                         1
+     am_shift_t                      1
+     final_out_t                     1
+     sub_t                           1
+     two_comp_t                      1
+
+   Number of wires:                 39
+   Number of wire bits:            531
+   Number of public wires:          26
+   Number of public wire bits:     375
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 16
+     $eq_5                           1
+     $ge_32                          1
+     $gt_5                           1
+     $le_32                          1
+     $logic_and_1                    3
+     $mux_28                         4
+     $neg_28                         1
+     $not_1                          1
+     $shr_28                         1
+     $sub_32                         2
+

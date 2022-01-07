@@ -1,0 +1,166 @@
+
+5. Printing statistics.
+
+=== abs_unit_18 ===
+
+   Number of wires:                 11
+   Number of wire bits:             96
+   Number of public wires:          10
+   Number of public wire bits:      78
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $mux_18                         1
+     $neg_18                         1
+     $sdffe_1                        1
+     $sdffe_18                       1
+
+=== dsp_signed_mac_18_13_23_32 ===
+
+   Number of wires:                 18
+   Number of wire bits:            244
+   Number of public wires:          16
+   Number of public wire bits:     180
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $add_32                         1
+     $mul_32                         1
+     $sdff_13                        1
+     $sdff_18                        1
+     $sdff_23                        1
+     $sdff_32                        1
+     $sdffe_1                        3
+
+=== elementwise_add_core_18_18_32 ===
+
+   Number of wires:                233
+   Number of wire bits:           4041
+   Number of public wires:         201
+   Number of public wire bits:    3465
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                131
+     $add_18                        32
+     $and_1                          1
+     $sdffe_1                        2
+     $sdffe_18                      96
+
+=== fp_rounding_unit_1_32_11 ===
+
+   Number of wires:                 15
+   Number of wire bits:            232
+   Number of public wires:          14
+   Number of public wire bits:     200
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  8
+     $add_32                         1
+     $mux_32                         1
+     $sdffe_1                        3
+     $sdffe_21                       1
+     $sdffe_32                       2
+
+=== output_activation_18_10_32_1 ===
+
+   Number of wires:                233
+   Number of wire bits:           2953
+   Number of public wires:         233
+   Number of public wire bits:    2953
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 34
+     $and_1                          1
+     elementwise_add_core_18_18_32      1
+     sigmoid_core_18_18_10_32_1     32
+
+=== shift_register_unit_1_3 ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           8
+   Number of public wire bits:       8
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $sdffe_1                        3
+
+=== sigmoid_core_18_18_10_32_1 ===
+
+   Number of wires:                191
+   Number of wire bits:           1991
+   Number of public wires:          92
+   Number of public wire bits:    1117
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                114
+     $and_1                          1
+     $dffe_1                         1
+     $eq_5                          31
+     $ge_32                          1
+     $logic_not_5                    1
+     $mux_1                          1
+     $mux_13                        65
+     $mux_23                         1
+     $mux_32                         1
+     $not_1                          1
+     $reduce_and_2                   1
+     $sdffe_1                        2
+     $sdffe_18                       2
+     $sub_32                         1
+     abs_unit_18                     1
+     dsp_signed_mac_18_13_23_32      1
+     fp_rounding_unit_1_32_11        1
+     shift_register_unit_1_3         1
+
+=== design hierarchy ===
+
+   output_activation_18_10_32_1      1
+     elementwise_add_core_18_18_32      1
+     sigmoid_core_18_18_10_32_1     32
+       abs_unit_18                   1
+       dsp_signed_mac_18_13_23_32      1
+       fp_rounding_unit_1_32_11      1
+       shift_register_unit_1_3       1
+
+   Number of wires:               8242
+   Number of wire bits:          89266
+   Number of public wires:        4914
+   Number of public wire bits:   57074
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               4420
+     $add_18                        32
+     $add_32                        64
+     $and_1                         34
+     $dffe_1                        32
+     $eq_5                         992
+     $ge_32                         32
+     $logic_not_5                   32
+     $mul_32                        32
+     $mux_1                         32
+     $mux_13                      2080
+     $mux_18                        32
+     $mux_23                        32
+     $mux_32                        64
+     $neg_18                        32
+     $not_1                         32
+     $reduce_and_2                  32
+     $sdff_13                       32
+     $sdff_18                       32
+     $sdff_23                       32
+     $sdff_32                       32
+     $sdffe_1                      386
+     $sdffe_18                     192
+     $sdffe_21                      32
+     $sdffe_32                      64
+     $sub_32                        32
+

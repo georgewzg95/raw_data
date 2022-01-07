@@ -1,0 +1,124 @@
+
+5. Printing statistics.
+
+=== $paramod\fht_bfly\N=s32'00000000000000000000000000001001 ===
+
+   Number of wires:                234
+   Number of wire bits:            521
+   Number of public wires:         150
+   Number of public wire bits:     414
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                107
+     $and_1                         41
+     $eq_1                           2
+     $mux_1                          2
+     $not_1                          1
+     $not_9                          1
+     $or_1                          16
+     $sdffe_9                        2
+     $xor_1                         42
+
+=== $paramod\fht_bfly\N=s32'00000000000000000000000000001010 ===
+
+   Number of wires:                258
+   Number of wire bits:            569
+   Number of public wires:         164
+   Number of public wire bits:     449
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                119
+     $and_1                         46
+     $eq_1                           2
+     $mux_1                          2
+     $not_1                          1
+     $not_10                         1
+     $or_1                          18
+     $sdffe_10                       2
+     $xor_1                         47
+
+=== $paramod\fht_bfly_noFF\N=s32'00000000000000000000000000001000 ===
+
+   Number of wires:                205
+   Number of wire bits:            454
+   Number of public wires:         131
+   Number of public wire bits:     360
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 93
+     $and_1                         36
+     $eq_1                           2
+     $mux_1                          2
+     $not_1                          1
+     $not_8                          1
+     $or_1                          14
+     $xor_1                         37
+
+=== fht_1d_x8 ===
+
+   Number of wires:                 93
+   Number of wire bits:            730
+   Number of public wires:          70
+   Number of public wire bits:     536
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 66
+     $add_32                         1
+     $adff_1                         2
+     $adff_11                        1
+     $adff_14                        1
+     $adffe_11                       8
+     $adffe_3                        1
+     $adffe_8                       16
+     $and_11                         8
+     $eq_3                           1
+     $logic_and_1                    1
+     $mux_1                          1
+     $or_1                           7
+     $or_11                          7
+     $paramod\fht_bfly\N=s32'00000000000000000000000000001001      3
+     $paramod\fht_bfly\N=s32'00000000000000000000000000001010      4
+     $paramod\fht_bfly_noFF\N=s32'00000000000000000000000000001000      4
+
+=== design hierarchy ===
+
+   fht_1d_x8                         1
+     $paramod\fht_bfly\N=s32'00000000000000000000000000001001      3
+     $paramod\fht_bfly\N=s32'00000000000000000000000000001010      4
+     $paramod\fht_bfly_noFF\N=s32'00000000000000000000000000001000      4
+
+   Number of wires:               2647
+   Number of wire bits:           6385
+   Number of public wires:        1700
+   Number of public wire bits:    5014
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1224
+     $add_32                         1
+     $adff_1                         2
+     $adff_11                        1
+     $adff_14                        1
+     $adffe_11                       8
+     $adffe_3                        1
+     $adffe_8                       16
+     $and_1                        451
+     $and_11                         8
+     $eq_1                          22
+     $eq_3                           1
+     $logic_and_1                    1
+     $mux_1                         23
+     $not_1                         11
+     $not_10                         4
+     $not_8                          4
+     $not_9                          3
+     $or_1                         183
+     $or_11                          7
+     $sdffe_10                       8
+     $sdffe_9                        6
+     $xor_1                        462
+

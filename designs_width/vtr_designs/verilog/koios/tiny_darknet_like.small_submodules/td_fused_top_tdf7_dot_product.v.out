@@ -1,0 +1,234 @@
+
+5. Printing statistics.
+
+=== $paramod$446b85b08a7a06b40d768e83a34c90ce7206f74e\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1 ===
+
+   Number of wires:                 19
+   Number of wire bits:            169
+   Number of public wires:          19
+   Number of public wire bits:     169
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $dff_1                          1
+     $dff_16                         1
+     $dffe_16                        2
+     $mux_16                         1
+     td_fused_top_ap_hmul_2_max_dsp_16      1
+
+=== FPMult_16 ===
+
+   Number of wires:                 27
+   Number of wire bits:            348
+   Number of public wires:          27
+   Number of public wire bits:     348
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  9
+     $mux_21                         1
+     $mux_23                         1
+     $mux_32                         1
+     $mux_41                         1
+     $mux_48                         1
+     FPMult_ExecuteModule            1
+     FPMult_NormalizeModule          1
+     FPMult_PrepModule               1
+     FPMult_RoundModule              1
+
+=== FPMult_ExecuteModule ===
+
+   Number of wires:                 15
+   Number of wire bits:            103
+   Number of public wires:          12
+   Number of public wire bits:      95
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $add_6                          2
+     $and_1                          1
+     $mux_10                         1
+     $or_1                           1
+     $reduce_or_10                   1
+     $xor_1                          1
+
+=== FPMult_NormalizeModule ===
+
+   Number of wires:                  8
+   Number of wire bits:            114
+   Number of public wires:           6
+   Number of public wire bits:      50
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $sub_32                         2
+
+=== FPMult_PrepModule ===
+
+   Number of wires:                 23
+   Number of wire bits:             86
+   Number of public wires:          14
+   Number of public wire bits:      77
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 15
+     $and_1                          4
+     $logic_not_1                    2
+     $mul_22                         1
+     $or_1                           3
+     $reduce_and_5                   2
+     $reduce_or_10                   1
+     $reduce_or_5                    2
+
+=== FPMult_RoundModule ===
+
+   Number of wires:                 12
+   Number of wire bits:             90
+   Number of public wires:          12
+   Number of public wire bits:      90
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $mux_11                         2
+     $mux_6                          1
+
+=== td_fused_top_ap_hmul_2_max_dsp_16 ===
+
+   Number of wires:                 12
+   Number of wire bits:            117
+   Number of public wires:          12
+   Number of public wire bits:     117
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $dffe_16                        3
+     FPMult_16                       1
+
+=== td_fused_top_tdf7_dot_product ===
+
+   Number of wires:                176
+   Number of wire bits:            689
+   Number of public wires:         123
+   Number of public wire bits:     587
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                136
+     $add_2                          2
+     $add_4                          3
+     $add_6                          1
+     $add_8                          1
+     $add_9                          2
+     $and_1                         18
+     $dff_1                          5
+     $dff_4                          5
+     $dff_5                          5
+     $dffe_1                         4
+     $dffe_16                        3
+     $dffe_2                         5
+     $dffe_4                         1
+     $dffe_5                         2
+     $dffe_6                         2
+     $dffe_8                         1
+     $dffe_9                         1
+     $eq_3                           3
+     $eq_6                           1
+     $eq_8                           1
+     $eq_9                           1
+     $mux_1                         12
+     $mux_2                          8
+     $mux_3                          3
+     $mux_4                          3
+     $mux_6                          3
+     $mux_8                          3
+     $mux_9                          2
+     $not_1                         12
+     $or_1                           3
+     $paramod$446b85b08a7a06b40d768e83a34c90ce7206f74e\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1      1
+     $pmux_3                         1
+     $reduce_bool_2                  3
+     $reduce_or_2                    2
+     $sdff_1                         8
+     $sdff_3                         1
+     $sdffe_1                        1
+     $sub_4                          3
+
+=== design hierarchy ===
+
+   td_fused_top_tdf7_dot_product      1
+     $paramod$446b85b08a7a06b40d768e83a34c90ce7206f74e\td_fused_top_hmul_16ns_16ns_16_4_max_dsp_1      1
+       td_fused_top_ap_hmul_2_max_dsp_16      1
+         FPMult_16                   1
+           FPMult_ExecuteModule      1
+           FPMult_NormalizeModule      1
+           FPMult_PrepModule         1
+           FPMult_RoundModule        1
+
+   Number of wires:                292
+   Number of wire bits:           1716
+   Number of public wires:         225
+   Number of public wire bits:    1533
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                175
+     $add_2                          2
+     $add_4                          3
+     $add_6                          3
+     $add_8                          1
+     $add_9                          2
+     $and_1                         23
+     $dff_1                          6
+     $dff_16                         1
+     $dff_4                          5
+     $dff_5                          5
+     $dffe_1                         4
+     $dffe_16                        8
+     $dffe_2                         5
+     $dffe_4                         1
+     $dffe_5                         2
+     $dffe_6                         2
+     $dffe_8                         1
+     $dffe_9                         1
+     $eq_3                           3
+     $eq_6                           1
+     $eq_8                           1
+     $eq_9                           1
+     $logic_not_1                    2
+     $mul_22                         1
+     $mux_1                         12
+     $mux_10                         1
+     $mux_11                         2
+     $mux_16                         1
+     $mux_2                          8
+     $mux_21                         1
+     $mux_23                         1
+     $mux_3                          3
+     $mux_32                         1
+     $mux_4                          3
+     $mux_41                         1
+     $mux_48                         1
+     $mux_6                          4
+     $mux_8                          3
+     $mux_9                          2
+     $not_1                         12
+     $or_1                           7
+     $pmux_3                         1
+     $reduce_and_5                   2
+     $reduce_bool_2                  3
+     $reduce_or_10                   2
+     $reduce_or_2                    2
+     $reduce_or_5                    2
+     $sdff_1                         8
+     $sdff_3                         1
+     $sdffe_1                        1
+     $sub_32                         2
+     $sub_4                          3
+     $xor_1                          1
+

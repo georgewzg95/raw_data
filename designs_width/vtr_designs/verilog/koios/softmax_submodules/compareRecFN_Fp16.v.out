@@ -1,0 +1,79 @@
+
+5. Printing statistics.
+
+=== $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\isSigNaNRecFN ===
+
+   Number of wires:                  4
+   Number of wire bits:             20
+   Number of public wires:           3
+   Number of public wire bits:      19
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $eq_3                           1
+     $logic_and_1                    1
+     $logic_not_1                    1
+
+=== $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\recFNToRawFN ===
+
+   Number of wires:                 11
+   Number of wire bits:             58
+   Number of public wires:          10
+   Number of public wire bits:      57
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $eq_2                           1
+     $logic_and_1                    2
+     $logic_not_1                    2
+     $logic_not_32                   1
+
+=== compareRecFN_Fp16 ===
+
+   Number of wires:                 57
+   Number of wire bits:            127
+   Number of public wires:          31
+   Number of public wire bits:     101
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 43
+     $eq_1                           1
+     $eq_12                          1
+     $eq_7                           1
+     $logic_and_1                   17
+     $logic_not_1                   10
+     $logic_or_1                     7
+     $lt_12                          1
+     $lt_7                           1
+     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\isSigNaNRecFN      2
+     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\recFNToRawFN      2
+
+=== design hierarchy ===
+
+   compareRecFN_Fp16                 1
+     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\isSigNaNRecFN      2
+     $paramod$9e98c8b57b69a62ae23148e1bd6c526f9a7e6d2f\recFNToRawFN      2
+
+   Number of wires:                 87
+   Number of wire bits:            283
+   Number of public wires:          57
+   Number of public wire bits:     253
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 57
+     $eq_1                           1
+     $eq_12                          1
+     $eq_2                           2
+     $eq_3                           2
+     $eq_7                           1
+     $logic_and_1                   23
+     $logic_not_1                   16
+     $logic_not_32                   2
+     $logic_or_1                     7
+     $lt_12                          1
+     $lt_7                           1
+

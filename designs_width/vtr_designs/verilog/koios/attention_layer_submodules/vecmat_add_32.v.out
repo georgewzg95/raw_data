@@ -1,0 +1,44 @@
+
+5. Printing statistics.
+
+=== qadd2 ===
+
+   Number of wires:                  3
+   Number of wire bits:             48
+   Number of public wires:           3
+   Number of public wire bits:      48
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  1
+     $add_16                         1
+
+=== vecmat_add_32 ===
+
+   Number of wires:                 43
+   Number of wire bits:           1154
+   Number of public wires:          43
+   Number of public wire bits:    1154
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 40
+     $dffe_16                        9
+     qadd2                          31
+
+=== design hierarchy ===
+
+   vecmat_add_32                     1
+     qadd2                          31
+
+   Number of wires:                136
+   Number of wire bits:           2642
+   Number of public wires:         136
+   Number of public wire bits:    2642
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 40
+     $add_16                        31
+     $dffe_16                        9
+

@@ -1,0 +1,100 @@
+
+5. Printing statistics.
+
+=== $paramod$8c402cffd162a5c8c105cf483e4b83a2df542b7b\dual_port_ram ===
+
+   Number of wires:                 17
+   Number of wire bits:            223
+   Number of public wires:           9
+   Number of public wire bits:      97
+   Number of memories:               1
+   Number of memory bits:          240
+   Number of processes:              0
+   Number of cells:                 12
+     $dffe_16                        2
+     $memrd                          2
+     $memwr_v2                       2
+     $mux_1                          2
+     $mux_15                         2
+     $mux_16                         2
+
+=== buffer_16_24200_buffer_init_04 ===
+
+   Number of wires:                 12
+   Number of wire bits:            159
+   Number of public wires:          12
+   Number of public wire bits:     159
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $dff_15                         1
+     $dff_16                         2
+     $paramod$8c402cffd162a5c8c105cf483e4b83a2df542b7b\dual_port_ram      1
+
+=== stream_buffer_4_0 ===
+
+   Number of wires:                 62
+   Number of wire bits:            514
+   Number of public wires:          33
+   Number of public wire bits:     269
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 45
+     $add_15                         4
+     $add_2                          4
+     $add_32                         4
+     $dff_1                          1
+     $eq_2                           4
+     $logic_and_1                    2
+     $mux_1                          1
+     $mux_15                         4
+     $mux_16                         1
+     $mux_2                          4
+     $reduce_bool_2                  2
+     $reduce_or_3                    2
+     $sdff_1                         2
+     $sdff_15                        2
+     $sdff_2                         2
+     $sdffe_15                       2
+     $sdffe_2                        2
+     buffer_16_24200_buffer_init_04      2
+
+=== design hierarchy ===
+
+   stream_buffer_4_0                 1
+     buffer_16_24200_buffer_init_04      2
+       $paramod$8c402cffd162a5c8c105cf483e4b83a2df542b7b\dual_port_ram      1
+
+   Number of wires:                120
+   Number of wire bits:           1278
+   Number of public wires:          75
+   Number of public wire bits:     781
+   Number of memories:               2
+   Number of memory bits:          480
+   Number of processes:              0
+   Number of cells:                 73
+     $add_15                         4
+     $add_2                          4
+     $add_32                         4
+     $dff_1                          1
+     $dff_15                         2
+     $dff_16                         4
+     $dffe_16                        4
+     $eq_2                           4
+     $logic_and_1                    2
+     $memrd                          4
+     $memwr_v2                       4
+     $mux_1                          5
+     $mux_15                         8
+     $mux_16                         5
+     $mux_2                          4
+     $reduce_bool_2                  2
+     $reduce_or_3                    2
+     $sdff_1                         2
+     $sdff_15                        2
+     $sdff_2                         2
+     $sdffe_15                       2
+     $sdffe_2                        2
+

@@ -1,0 +1,72 @@
+
+5. Printing statistics.
+
+=== full_adder ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           8
+   Number of public wire bits:       8
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $or_1                           1
+     half_adder                      2
+
+=== half_adder ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $and_1                          1
+     $xor_1                          1
+
+=== ripple_adder_12bit ===
+
+   Number of wires:                  6
+   Number of wire bits:             39
+   Number of public wires:           6
+   Number of public wire bits:      39
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     ripple_adder_6bit               2
+
+=== ripple_adder_6bit ===
+
+   Number of wires:                 10
+   Number of wire bits:             25
+   Number of public wires:          10
+   Number of public wire bits:      25
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     full_adder                      6
+
+=== design hierarchy ===
+
+   ripple_adder_12bit                1
+     ripple_adder_6bit               2
+       full_adder                    6
+         half_adder                  2
+
+   Number of wires:                218
+   Number of wire bits:            281
+   Number of public wires:         218
+   Number of public wire bits:     281
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 60
+     $and_1                         24
+     $or_1                          12
+     $xor_1                         24
+

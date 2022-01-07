@@ -1,0 +1,93 @@
+
+5. Printing statistics.
+
+=== or1200_lsu ===
+
+   Number of wires:                 70
+   Number of wire bits:            299
+   Number of public wires:          23
+   Number of public wire bits:     252
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 58
+     $add_32                         1
+     $and_1                          6
+     $eq_4                           9
+     $eq_6                          21
+     $mux_1                          1
+     $mux_4                          1
+     $or_1                           7
+     $pmux_4                         1
+     $reduce_or_2                    1
+     $reduce_or_3                    7
+     $reduce_or_4                    1
+     or1200_mem2reg                  1
+     or1200_reg2mem                  1
+
+=== or1200_mem2reg ===
+
+   Number of wires:                 57
+   Number of wire bits:            178
+   Number of public wires:          13
+   Number of public wire bits:     127
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 52
+     $and_1                          5
+     $dlatch_8                       1
+     $eq_4                          16
+     $eq_5                           8
+     $logic_not_4                    4
+     $not_1                          6
+     $pmux_4                         4
+     $pmux_8                         4
+     $reduce_or_2                    4
+
+=== or1200_reg2mem ===
+
+   Number of wires:                 12
+   Number of wire bits:            106
+   Number of public wires:           8
+   Number of public wire bits:     102
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     $eq_6                           4
+     $mux_8                          2
+     $pmux_8                         1
+
+=== design hierarchy ===
+
+   or1200_lsu                        1
+     or1200_mem2reg                  1
+     or1200_reg2mem                  1
+
+   Number of wires:                139
+   Number of wire bits:            583
+   Number of public wires:          44
+   Number of public wire bits:     481
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                115
+     $add_32                         1
+     $and_1                         11
+     $dlatch_8                       1
+     $eq_4                          25
+     $eq_5                           8
+     $eq_6                          25
+     $logic_not_4                    4
+     $mux_1                          1
+     $mux_4                          1
+     $mux_8                          2
+     $not_1                          6
+     $or_1                           7
+     $pmux_4                         5
+     $pmux_8                         5
+     $reduce_or_2                    5
+     $reduce_or_3                    7
+     $reduce_or_4                    1
+

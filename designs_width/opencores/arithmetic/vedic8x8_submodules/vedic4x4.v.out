@@ -1,0 +1,104 @@
+
+5. Printing statistics.
+
+=== full_adder ===
+
+   Number of wires:                  8
+   Number of wire bits:              8
+   Number of public wires:           8
+   Number of public wire bits:       8
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $or_1                           1
+     half_adder                      2
+
+=== half_adder ===
+
+   Number of wires:                  4
+   Number of wire bits:              4
+   Number of public wires:           4
+   Number of public wire bits:       4
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  2
+     $and_1                          1
+     $xor_1                          1
+
+=== ripple_adder_4bit ===
+
+   Number of wires:                  8
+   Number of wire bits:             17
+   Number of public wires:           8
+   Number of public wire bits:      17
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     full_adder                      4
+
+=== ripple_adder_6bit ===
+
+   Number of wires:                 10
+   Number of wire bits:             25
+   Number of public wires:          10
+   Number of public wire bits:      25
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     full_adder                      6
+
+=== vedic2x2 ===
+
+   Number of wires:                  8
+   Number of wire bits:             13
+   Number of public wires:           8
+   Number of public wire bits:      13
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  6
+     $and_1                          4
+     half_adder                      2
+
+=== vedic4x4 ===
+
+   Number of wires:                 13
+   Number of wire bits:             51
+   Number of public wires:          13
+   Number of public wire bits:      51
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  7
+     ripple_adder_4bit               1
+     ripple_adder_6bit               2
+     vedic2x2                        4
+
+=== design hierarchy ===
+
+   vedic4x4                          1
+     ripple_adder_4bit               1
+       full_adder                    4
+         half_adder                  2
+     ripple_adder_6bit               2
+       full_adder                    6
+         half_adder                  2
+     vedic2x2                        4
+       half_adder                    2
+
+   Number of wires:                361
+   Number of wire bits:            458
+   Number of public wires:         361
+   Number of public wire bits:     458
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                112
+     $and_1                         56
+     $or_1                          16
+     $xor_1                         40
+

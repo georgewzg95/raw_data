@@ -1,0 +1,88 @@
+
+5. Printing statistics.
+
+=== td_fused_top_fifo_w1_d12_S ===
+
+   Number of wires:                 46
+   Number of wire bits:            131
+   Number of public wires:          17
+   Number of public wire bits:      24
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 35
+     $add_5                          1
+     $and_1                          4
+     $and_32                         2
+     $eq_32                          2
+     $eq_5                           1
+     $logic_and_1                    2
+     $logic_not_32                   2
+     $logic_not_5                    1
+     $mux_1                          3
+     $mux_4                          1
+     $mux_5                          2
+     $ne_2                           1
+     $not_1                          2
+     $or_1                           2
+     $reduce_and_2                   2
+     $reduce_bool_2                  1
+     $reduce_or_2                    1
+     $sdffe_1                        2
+     $sdffe_5                        1
+     $sub_5                          1
+     td_fused_top_fifo_w1_d12_S_shiftReg      1
+
+=== td_fused_top_fifo_w1_d12_S_shiftReg ===
+
+   Number of wires:                 28
+   Number of wire bits:             31
+   Number of public wires:          17
+   Number of public wire bits:      20
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 24
+     $dffe_1                        12
+     $eq_4                          10
+     $logic_not_4                    1
+     $pmux_1                         1
+
+=== design hierarchy ===
+
+   td_fused_top_fifo_w1_d12_S        1
+     td_fused_top_fifo_w1_d12_S_shiftReg      1
+
+   Number of wires:                 74
+   Number of wire bits:            162
+   Number of public wires:          34
+   Number of public wire bits:      44
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 58
+     $add_5                          1
+     $and_1                          4
+     $and_32                         2
+     $dffe_1                        12
+     $eq_32                          2
+     $eq_4                          10
+     $eq_5                           1
+     $logic_and_1                    2
+     $logic_not_32                   2
+     $logic_not_4                    1
+     $logic_not_5                    1
+     $mux_1                          3
+     $mux_4                          1
+     $mux_5                          2
+     $ne_2                           1
+     $not_1                          2
+     $or_1                           2
+     $pmux_1                         1
+     $reduce_and_2                   2
+     $reduce_bool_2                  1
+     $reduce_or_2                    1
+     $sdffe_1                        2
+     $sdffe_5                        1
+     $sub_5                          1
+
