@@ -1433,7 +1433,7 @@ wire [BROAD_TYPE_WIDTH-1:0] broad_snoop_type;  // Type of broadcast snooping
 wire [1:0]              broad_snoop_cpu_id; // ID of initiator of broadcast
                                           // snooping
 wire [BROAD_ID_WIDTH-1:0] broad_snoop_id; // Broadcast snooping ID
-\
+
 // assign
 //================================
 assign cbus_addr_o[ADDR_WIDTH-1:0] = broad_snoop_addr[ADDR_WIDTH-1:0];

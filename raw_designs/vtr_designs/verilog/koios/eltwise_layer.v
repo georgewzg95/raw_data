@@ -1638,7 +1638,7 @@ module processing_element(
 
  seq_mul u_mul(.a(in_a), .b(in_b), .out(out_mul), .reset(reset), .clk(clk));
  seq_add u_add(.a(in_a), .b(in_b), .out(out_sum), .reset(reset), .clk(clk));
- seq_sub u_sub(.a(in_a), .b(in_b), .out(out_sum), .reset(reset), .clk(clk));
+ seq_sub u_sub(.a(in_a), .b(in_b), .out(out_sub), .reset(reset), .clk(clk));
 
 endmodule
 

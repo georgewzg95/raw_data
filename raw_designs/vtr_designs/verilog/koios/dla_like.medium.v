@@ -4,9 +4,9 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 //A CNN accelerator overlay called DLA from Intel based on the paper:
-//U. Aydonat et al., “An OpenCL Deep Learning Accelerator on Arria10,” in International Symposium on Field-Programmable Gate Arrays (FPGA), 2017.
+//U. Aydonat et al., “An OpenCL Deep Learning Accelerator on Arria10,�? in International Symposium on Field-Programmable Gate Arrays (FPGA), 2017.
 //This design was also used in this paper: 
-//A. Boutros et al., “You Cannot Improve What You Do Not Measure: FPGA vs. ASIC Efficiency Gaps for Convolutional Neural Network Inference,” ACM Transactions on Reconfigurable Technology Systems (TRETS), vol. 11, no. 3, 2018
+//A. Boutros et al., “You Cannot Improve What You Do Not Measure: FPGA vs. ASIC Efficiency Gaps for Convolutional Neural Network Inference,�? ACM Transactions on Reconfigurable Technology Systems (TRETS), vol. 11, no. 3, 2018
 //
 //Some properties of the design are:
 //1. 16-bit fixed point for activations, 8-bit fixed point for weights 
@@ -25233,9 +25233,13 @@ module weight_cache_2048_8_0_weight_init_21 (
 );
 
 reg [10:0] addr0_reg;
+wire [10:0] addr0_wire;
 reg [7:0] data0_reg;
+wire [7:0] data0_wire;
 reg [10:0] addr1_reg;
+wire [10:0] addr1_wire;
 reg [7:0] data1_reg;
+wire [7:0] data1_wire;
 reg [7:0] pipeline0_reg_0;
 reg [7:0] pipeline1_reg_0;
 always @(posedge clk) begin
@@ -25244,21 +25248,24 @@ always @(posedge clk) begin
 	pipeline0_reg_0 <= data0_reg;
 	pipeline1_reg_0 <= data1_reg;
 end
+assign addr0_wire = addr0_reg;
+assign addr1_wire = addr1_reg;
+assign data0_wire = data0_reg;
+assign data1_wire = data1_reg;
 
 `ifdef SIMULATION_MEMORY
 defparam u_dual_port_ram.DATA_WIDTH = 8;
 defparam u_dual_port_ram.ADDR_WIDTH = 11;
 `endif
-
 dual_port_ram u_dual_port_ram(
-	.addr1(addr0_reg),
+	.addr1(addr0_wire),
 	.we1(wen0),
 	.data1(wdata0),
-	.out1(data0_reg),
-	.addr2(addr1_reg),
+	.out1(data0_wire),
+	.addr2(addr1_wire),
 	.we2(wen1),
 	.data2(wdata1),
-	.out2(data1_reg),
+	.out2(data1_wire),
 	.clk(clk)
 );
 
@@ -25280,9 +25287,13 @@ module weight_cache_2048_8_0_weight_init_20 (
 );
 
 reg [10:0] addr0_reg;
+wire [10:0] addr0_wire;
 reg [7:0] data0_reg;
+wire [7:0] data0_wire;
 reg [10:0] addr1_reg;
+wire [10:0] addr1_wire;
 reg [7:0] data1_reg;
+wire [7:0] data1_wire;
 reg [7:0] pipeline0_reg_0;
 reg [7:0] pipeline1_reg_0;
 always @(posedge clk) begin
@@ -25291,20 +25302,24 @@ always @(posedge clk) begin
 	pipeline0_reg_0 <= data0_reg;
 	pipeline1_reg_0 <= data1_reg;
 end
+assign addr0_wire = addr0_reg;
+assign addr1_wire = addr1_reg;
+assign data0_wire = data0_reg;
+assign data1_wire = data1_reg;
 
 `ifdef SIMULATION_MEMORY
 defparam u_dual_port_ram.DATA_WIDTH = 8;
 defparam u_dual_port_ram.ADDR_WIDTH = 11;
 `endif
 dual_port_ram u_dual_port_ram(
-	.addr1(addr0_reg),
+	.addr1(addr0_wire),
 	.we1(wen0),
 	.data1(wdata0),
-	.out1(data0_reg),
-	.addr2(addr1_reg),
+	.out1(data0_wire),
+	.addr2(addr1_wire),
 	.we2(wen1),
 	.data2(wdata1),
-	.out2(data1_reg),
+	.out2(data1_wire),
 	.clk(clk)
 );
 
@@ -25326,9 +25341,13 @@ module weight_cache_2048_8_0_weight_init_23 (
 );
 
 reg [10:0] addr0_reg;
+wire [10:0] addr0_wire;
 reg [7:0] data0_reg;
+wire [7:0] data0_wire;
 reg [10:0] addr1_reg;
+wire [10:0] addr1_wire;
 reg [7:0] data1_reg;
+wire [7:0] data1_wire;
 reg [7:0] pipeline0_reg_0;
 reg [7:0] pipeline1_reg_0;
 always @(posedge clk) begin
@@ -25337,20 +25356,24 @@ always @(posedge clk) begin
 	pipeline0_reg_0 <= data0_reg;
 	pipeline1_reg_0 <= data1_reg;
 end
+assign addr0_wire = addr0_reg;
+assign addr1_wire = addr1_reg;
+assign data0_wire = data0_reg;
+assign data1_wire = data1_reg;
 
 `ifdef SIMULATION_MEMORY
 defparam u_dual_port_ram.DATA_WIDTH = 8;
 defparam u_dual_port_ram.ADDR_WIDTH = 11;
 `endif
 dual_port_ram u_dual_port_ram(
-	.addr1(addr0_reg),
+	.addr1(addr0_wire),
 	.we1(wen0),
 	.data1(wdata0),
-	.out1(data0_reg),
-	.addr2(addr1_reg),
+	.out1(data0_wire),
+	.addr2(addr1_wire),
 	.we2(wen1),
 	.data2(wdata1),
-	.out2(data1_reg),
+	.out2(data1_wire),
 	.clk(clk)
 );
 
@@ -25372,9 +25395,13 @@ module weight_cache_2048_8_0_weight_init_22 (
 );
 
 reg [10:0] addr0_reg;
+wire [10:0] addr0_wire;
 reg [7:0] data0_reg;
+wire [7:0] data0_wire;
 reg [10:0] addr1_reg;
+wire [10:0] addr1_wire;
 reg [7:0] data1_reg;
+wire [7:0] data1_wire;
 reg [7:0] pipeline0_reg_0;
 reg [7:0] pipeline1_reg_0;
 always @(posedge clk) begin
@@ -25383,20 +25410,24 @@ always @(posedge clk) begin
 	pipeline0_reg_0 <= data0_reg;
 	pipeline1_reg_0 <= data1_reg;
 end
+assign addr0_wire = addr0_reg;
+assign addr1_wire = addr1_reg;
+assign data0_wire = data0_reg;
+assign data1_wire = data1_reg;
 
 `ifdef SIMULATION_MEMORY
 defparam u_dual_port_ram.DATA_WIDTH = 8;
 defparam u_dual_port_ram.ADDR_WIDTH = 11;
 `endif
 dual_port_ram u_dual_port_ram(
-	.addr1(addr0_reg),
+	.addr1(addr0_wire),
 	.we1(wen0),
 	.data1(wdata0),
-	.out1(data0_reg),
-	.addr2(addr1_reg),
+	.out1(data0_wire),
+	.addr2(addr1_wire),
 	.we2(wen1),
 	.data2(wdata1),
-	.out2(data1_reg),
+	.out2(data1_wire),
 	.clk(clk)
 );
 
@@ -25418,9 +25449,13 @@ module weight_cache_2048_8_0_weight_init_25 (
 );
 
 reg [10:0] addr0_reg;
+wire [10:0] addr0_wire;
 reg [7:0] data0_reg;
+wire [7:0] data0_wire;
 reg [10:0] addr1_reg;
+wire [10:0] addr1_wire;
 reg [7:0] data1_reg;
+wire [7:0] data1_wire;
 reg [7:0] pipeline0_reg_0;
 reg [7:0] pipeline1_reg_0;
 always @(posedge clk) begin
@@ -25429,20 +25464,24 @@ always @(posedge clk) begin
 	pipeline0_reg_0 <= data0_reg;
 	pipeline1_reg_0 <= data1_reg;
 end
+assign addr0_wire = addr0_reg;
+assign addr1_wire = addr1_reg;
+assign data0_wire = data0_reg;
+assign data1_wire = data1_reg;
 
 `ifdef SIMULATION_MEMORY
 defparam u_dual_port_ram.DATA_WIDTH = 8;
 defparam u_dual_port_ram.ADDR_WIDTH = 11;
 `endif
 dual_port_ram u_dual_port_ram(
-	.addr1(addr0_reg),
+	.addr1(addr0_wire),
 	.we1(wen0),
 	.data1(wdata0),
-	.out1(data0_reg),
-	.addr2(addr1_reg),
+	.out1(data0_wire),
+	.addr2(addr1_wire),
 	.we2(wen1),
 	.data2(wdata1),
-	.out2(data1_reg),
+	.out2(data1_wire),
 	.clk(clk)
 );
 
@@ -25464,9 +25503,13 @@ module weight_cache_2048_8_0_weight_init_24 (
 );
 
 reg [10:0] addr0_reg;
+wire [10:0] addr0_wire;
 reg [7:0] data0_reg;
+wire [7:0] data0_wire;
 reg [10:0] addr1_reg;
+wire [10:0] addr1_wire;
 reg [7:0] data1_reg;
+wire [7:0] data1_wire;
 reg [7:0] pipeline0_reg_0;
 reg [7:0] pipeline1_reg_0;
 always @(posedge clk) begin
@@ -25475,20 +25518,24 @@ always @(posedge clk) begin
 	pipeline0_reg_0 <= data0_reg;
 	pipeline1_reg_0 <= data1_reg;
 end
+assign addr0_wire = addr0_reg;
+assign addr1_wire = addr1_reg;
+assign data0_wire = data0_reg;
+assign data1_wire = data1_reg;
 
 `ifdef SIMULATION_MEMORY
 defparam u_dual_port_ram.DATA_WIDTH = 8;
 defparam u_dual_port_ram.ADDR_WIDTH = 11;
 `endif
 dual_port_ram u_dual_port_ram(
-	.addr1(addr0_reg),
+	.addr1(addr0_wire),
 	.we1(wen0),
 	.data1(wdata0),
-	.out1(data0_reg),
-	.addr2(addr1_reg),
+	.out1(data0_wire),
+	.addr2(addr1_wire),
 	.we2(wen1),
 	.data2(wdata1),
-	.out2(data1_reg),
+	.out2(data1_wire),
 	.clk(clk)
 );
 
@@ -25731,9 +25778,13 @@ module weight_cache_2048_8_0_weight_init_02 (
 );
 
 reg [10:0] addr0_reg;
+wire [10:0] addr0_wire;
 reg [7:0] data0_reg;
+wire [7:0] data0_wire;
 reg [10:0] addr1_reg;
+wire [10:0] addr1_wire;
 reg [7:0] data1_reg;
+wire [7:0] data1_wire;
 reg [7:0] pipeline0_reg_0;
 reg [7:0] pipeline1_reg_0;
 always @(posedge clk) begin
@@ -25742,20 +25793,24 @@ always @(posedge clk) begin
 	pipeline0_reg_0 <= data0_reg;
 	pipeline1_reg_0 <= data1_reg;
 end
+assign addr0_wire = addr0_reg;
+assign addr1_wire = addr1_reg;
+assign data0_wire = data0_reg;
+assign data1_wire = data1_reg;
 
 `ifdef SIMULATION_MEMORY
 defparam u_dual_port_ram.DATA_WIDTH = 8;
 defparam u_dual_port_ram.ADDR_WIDTH = 11;
 `endif
 dual_port_ram u_dual_port_ram(
-	.addr1(addr0_reg),
+	.addr1(addr0_wire),
 	.we1(wen0),
 	.data1(wdata0),
-	.out1(data0_reg),
-	.addr2(addr1_reg),
+	.out1(data0_wire),
+	.addr2(addr1_wire),
 	.we2(wen1),
 	.data2(wdata1),
-	.out2(data1_reg),
+	.out2(data1_wire),
 	.clk(clk)
 );
 
@@ -25777,9 +25832,13 @@ module weight_cache_2048_8_0_weight_init_03 (
 );
 
 reg [10:0] addr0_reg;
+wire [10:0] addr0_wire;
 reg [7:0] data0_reg;
+wire [7:0] data0_wire;
 reg [10:0] addr1_reg;
+wire [10:0] addr1_wire;
 reg [7:0] data1_reg;
+wire [7:0] data1_wire;
 reg [7:0] pipeline0_reg_0;
 reg [7:0] pipeline1_reg_0;
 always @(posedge clk) begin
@@ -25788,20 +25847,24 @@ always @(posedge clk) begin
 	pipeline0_reg_0 <= data0_reg;
 	pipeline1_reg_0 <= data1_reg;
 end
+assign addr0_wire = addr0_reg;
+assign addr1_wire = addr1_reg;
+assign data0_wire = data0_reg;
+assign data1_wire = data1_reg;
 
 `ifdef SIMULATION_MEMORY
 defparam u_dual_port_ram.DATA_WIDTH = 8;
 defparam u_dual_port_ram.ADDR_WIDTH = 11;
 `endif
 dual_port_ram u_dual_port_ram(
-	.addr1(addr0_reg),
+	.addr1(addr0_wire),
 	.we1(wen0),
 	.data1(wdata0),
-	.out1(data0_reg),
-	.addr2(addr1_reg),
+	.out1(data0_wire),
+	.addr2(addr1_wire),
 	.we2(wen1),
 	.data2(wdata1),
-	.out2(data1_reg),
+	.out2(data1_wire),
 	.clk(clk)
 );
 
@@ -25868,9 +25931,13 @@ module weight_cache_2048_8_0_weight_init_01 (
 );
 
 reg [10:0] addr0_reg;
+wire [10:0] addr0_wire;
 reg [7:0] data0_reg;
+wire [7:0] data0_wire;
 reg [10:0] addr1_reg;
+wire [10:0] addr1_wire;
 reg [7:0] data1_reg;
+wire [7:0] data1_wire;
 reg [7:0] pipeline0_reg_0;
 reg [7:0] pipeline1_reg_0;
 always @(posedge clk) begin
@@ -25879,20 +25946,24 @@ always @(posedge clk) begin
 	pipeline0_reg_0 <= data0_reg;
 	pipeline1_reg_0 <= data1_reg;
 end
+assign addr0_wire = addr0_reg;
+assign addr1_wire = addr1_reg;
+assign data0_wire = data0_reg;
+assign data1_wire = data1_reg;
 
 `ifdef SIMULATION_MEMORY
 defparam u_dual_port_ram.DATA_WIDTH = 8;
 defparam u_dual_port_ram.ADDR_WIDTH = 11;
 `endif
 dual_port_ram u_dual_port_ram(
-	.addr1(addr0_reg),
+	.addr1(addr0_wire),
 	.we1(wen0),
 	.data1(wdata0),
-	.out1(data0_reg),
-	.addr2(addr1_reg),
+	.out1(data0_wire),
+	.addr2(addr1_wire),
 	.we2(wen1),
 	.data2(wdata1),
-	.out2(data1_reg),
+	.out2(data1_wire),
 	.clk(clk)
 );
 
@@ -25914,9 +25985,13 @@ module weight_cache_2048_8_0_weight_init_00 (
 );
 
 reg [10:0] addr0_reg;
+wire [10:0] addr0_wire;
 reg [7:0] data0_reg;
+wire [7:0] data0_wire;
 reg [10:0] addr1_reg;
+wire [10:0] addr1_wire;
 reg [7:0] data1_reg;
+wire [7:0] data1_wire;
 reg [7:0] pipeline0_reg_0;
 reg [7:0] pipeline1_reg_0;
 always @(posedge clk) begin
@@ -25925,20 +26000,24 @@ always @(posedge clk) begin
 	pipeline0_reg_0 <= data0_reg;
 	pipeline1_reg_0 <= data1_reg;
 end
+assign addr0_wire = addr0_reg;
+assign addr1_wire = addr1_reg;
+assign data0_wire = data0_reg;
+assign data1_wire = data1_reg;
 
 `ifdef SIMULATION_MEMORY
 defparam u_dual_port_ram.DATA_WIDTH = 8;
 defparam u_dual_port_ram.ADDR_WIDTH = 11;
 `endif
 dual_port_ram u_dual_port_ram(
-	.addr1(addr0_reg),
+	.addr1(addr0_wire),
 	.we1(wen0),
 	.data1(wdata0),
-	.out1(data0_reg),
-	.addr2(addr1_reg),
+	.out1(data0_wire),
+	.addr2(addr1_wire),
 	.we2(wen1),
 	.data2(wdata1),
-	.out2(data1_reg),
+	.out2(data1_wire),
 	.clk(clk)
 );
 
@@ -25960,9 +26039,13 @@ module weight_cache_2048_8_0_weight_init_05 (
 );
 
 reg [10:0] addr0_reg;
+wire [10:0] addr0_wire;
 reg [7:0] data0_reg;
+wire [7:0] data0_wire;
 reg [10:0] addr1_reg;
+wire [10:0] addr1_wire;
 reg [7:0] data1_reg;
+wire [7:0] data1_wire;
 reg [7:0] pipeline0_reg_0;
 reg [7:0] pipeline1_reg_0;
 always @(posedge clk) begin
@@ -25971,20 +26054,24 @@ always @(posedge clk) begin
 	pipeline0_reg_0 <= data0_reg;
 	pipeline1_reg_0 <= data1_reg;
 end
+assign addr0_wire = addr0_reg;
+assign addr1_wire = addr1_reg;
+assign data0_wire = data0_reg;
+assign data1_wire = data1_reg;
 
 `ifdef SIMULATION_MEMORY
 defparam u_dual_port_ram.DATA_WIDTH = 8;
 defparam u_dual_port_ram.ADDR_WIDTH = 11;
 `endif
 dual_port_ram u_dual_port_ram(
-	.addr1(addr0_reg),
+	.addr1(addr0_wire),
 	.we1(wen0),
 	.data1(wdata0),
-	.out1(data0_reg),
-	.addr2(addr1_reg),
+	.out1(data0_wire),
+	.addr2(addr1_wire),
 	.we2(wen1),
 	.data2(wdata1),
-	.out2(data1_reg),
+	.out2(data1_wire),
 	.clk(clk)
 );
 
@@ -26006,9 +26093,13 @@ module weight_cache_2048_8_0_weight_init_04 (
 );
 
 reg [10:0] addr0_reg;
+wire [10:0] addr0_wire;
 reg [7:0] data0_reg;
+wire [7:0] data0_wire;
 reg [10:0] addr1_reg;
+wire [10:0] addr1_wire;
 reg [7:0] data1_reg;
+wire [7:0] data1_wire;
 reg [7:0] pipeline0_reg_0;
 reg [7:0] pipeline1_reg_0;
 always @(posedge clk) begin
@@ -26017,20 +26108,24 @@ always @(posedge clk) begin
 	pipeline0_reg_0 <= data0_reg;
 	pipeline1_reg_0 <= data1_reg;
 end
+assign addr0_wire = addr0_reg;
+assign addr1_wire = addr1_reg;
+assign data0_wire = data0_reg;
+assign data1_wire = data1_reg;
 
 `ifdef SIMULATION_MEMORY
 defparam u_dual_port_ram.DATA_WIDTH = 8;
 defparam u_dual_port_ram.ADDR_WIDTH = 11;
 `endif
 dual_port_ram u_dual_port_ram(
-	.addr1(addr0_reg),
+	.addr1(addr0_wire),
 	.we1(wen0),
 	.data1(wdata0),
-	.out1(data0_reg),
-	.addr2(addr1_reg),
+	.out1(data0_wire),
+	.addr2(addr1_wire),
 	.we2(wen1),
 	.data2(wdata1),
-	.out2(data1_reg),
+	.out2(data1_wire),
 	.clk(clk)
 );
 
