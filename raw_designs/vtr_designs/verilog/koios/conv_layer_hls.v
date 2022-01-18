@@ -2457,7 +2457,7 @@ input clk;
 input [DATA_WIDTH-1:0] data;
 input ce;
 input [ADDR_WIDTH-1:0] a;
-output [DATA_WIDTH-1:0] q;
+output reg [DATA_WIDTH-1:0] q;
 
 reg [DATA_WIDTH-1:0] sr_0, sr_1, sr_2, sr_3, sr_4, sr_5;
 integer i;
@@ -2596,7 +2596,7 @@ input clk;
 input [DATA_WIDTH-1:0] data;
 input ce;
 input [ADDR_WIDTH-1:0] a;
-output [DATA_WIDTH-1:0] q;
+output reg [DATA_WIDTH-1:0] q;
 
 reg[DATA_WIDTH-1:0] sr_0, sr_1;
 integer i;
@@ -2726,7 +2726,7 @@ input clk;
 input [DATA_WIDTH-1:0] data;
 input ce;
 input [ADDR_WIDTH-1:0] a;
-output [DATA_WIDTH-1:0] q;
+output reg [DATA_WIDTH-1:0] q;
 
 reg [DATA_WIDTH-1:0] sr_0, sr_1;
 
@@ -2857,7 +2857,7 @@ input clk;
 input [DATA_WIDTH-1:0] data;
 input ce;
 input [ADDR_WIDTH-1:0] a;
-output [DATA_WIDTH-1:0] q;
+output reg [DATA_WIDTH-1:0] q;
 
 //reg[DATA_WIDTH-1:0] SRL_SIG [DEPTH-1:0];
 reg [DATA_WIDTH-1:0] sr_0, sr_1, sr_2, sr_3, sr_4, sr_5;

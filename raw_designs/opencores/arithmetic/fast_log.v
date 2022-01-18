@@ -23,8 +23,8 @@ July 27, 2010, Kitchener, Ontario, Canada
 
 // Comprises 3 main blocks: priority encoder, barrel shifter, and LUT
 
-wire	[3:0]	priencout1;
-wire	[3:0]	LUTout; 
+reg	[3:0]	priencout1;
+reg	[3:0]	LUTout; 
 
 assign	DOUT	=	{priencout1, LUTout};	// Basic top-level connectivity
 

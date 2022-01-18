@@ -2087,7 +2087,7 @@ endmodule
 // The Modified Duursma-Lee Algorithm
 // out == e_({xp,yp}, {xr,yr})
 module duursma_lee_algo(clk, reset, xp, yp, xr, yr, done, out);
-    input clk, reset;
+    input wire clk, reset;
     input [`WIDTH:0] xp, yp, xr, yr;
     output reg done;
     output reg [`W6:0] out;
@@ -2170,7 +2170,7 @@ endmodule
 
 // do Tate pairing, hahahaha
 module tate_pairing(clk, reset, x1, y1, x2, y2, done, out);
-    input clk, reset;
+    input wire clk, reset;
     input [`WIDTH:0] x1, y1, x2, y2;
     output reg done;
     output reg [`W6:0] out;
